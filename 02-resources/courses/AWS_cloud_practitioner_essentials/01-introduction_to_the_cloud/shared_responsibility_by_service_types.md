@@ -9,7 +9,7 @@ The AWS shared responsibility model changes depending on the type of service bei
 ## Service responsibility levels
 
 |                 responsibility area                  | unmanaged services | managed services | fully managed services |
-|:----------------------------------------------------:|:------------------:|:----------------:|:----------------------:|
+| :--------------------------------------------------: | :----------------: | :--------------: | :--------------------: |
 |                    Customer data                     |      Customer      |     Customer     |        Customer        |
 |               Customer data encryption               |      Customer      |     Customer     |        Customer        |
 |                Server-side encryption                |      Customer      |     Customer     |          AWS           |

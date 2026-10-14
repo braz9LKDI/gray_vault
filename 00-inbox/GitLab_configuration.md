@@ -11,7 +11,6 @@ A solid project-level setup is this:
 1. Go to "Project" -> "Settings" -> "Repository" -> "Branch rules" -> "Add branch rule".
 
 2. Create the following rule for `main` and `develop`:
-
     - Set "Allowed to merge" (controls who can click the Merge button on a merge request whose target branch is protected) to "Maintainers only".
 
     - Set "Allowed to push and merge" (controls who can update the protected branch directly with Git) to "No one".
@@ -23,13 +22,11 @@ Required approval rules are a premium/ultimate feature; on GitLab free, approval
 1. Go to "Project" -> "Settings" -> "Merge requests" -> "Merge request approvals" -> "Add approval rule".
 
 2. Create the following rule:
-
     - Set "Approvals required" to "1 or more".
 
 3. Go to "Project" -> "Settings" -> "Merge requests" -> "Approval settings".
 
 4. Keep or enable:
-
     - "Prevent approval by merge request creator".
 
     - "Prevent approvals by users who add commits".
@@ -43,7 +40,6 @@ Required approval rules are a premium/ultimate feature; on GitLab free, approval
 1. Go to "Settings" -> "Merge requests" -> "Merge checks".
 
 2. Enable:
-
     - "Pipelines must succeed": this requires a successful pipeline to exist, not just "no failed pipeline", so your CI should run for every merge request.
 
     - "All threads must be resolved": open review threads block the merge.

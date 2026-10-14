@@ -16,4 +16,4 @@ A practical consequence of packing is that `.git/objects/XX/` may look empty eve
 
 ## Related readings
 
-- 
+-

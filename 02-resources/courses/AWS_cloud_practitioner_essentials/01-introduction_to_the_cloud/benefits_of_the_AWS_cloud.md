@@ -31,4 +31,3 @@ The AWS cloud provides access to technology resources on demand, without the nee
     AWS has global infrastructure. This allows applications to be deployed close to users, which can improve availability and reduce latency.
 
 The main idea is that AWS makes it possible to use technology resources in a flexible, scalable and on-demand way.
-

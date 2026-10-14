@@ -26,7 +26,7 @@ Systems using AMD Zen 4 or Zen 5 CPUs may benefit from the CachyOS `znver4` repo
 
     curl -LO https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-keyring-20240331-1-any.pkg.tar.zst
     curl -LO https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-v4-mirrorlist-27-1-any.pkg.tar.zst
-    
+
     sudo pacman -U ./cachyos-keyring-20240331-1-any.pkg.tar.zst ./cachyos-v4-mirrorlist-27-1-any.pkg.tar.zst
     ```
 
@@ -44,10 +44,10 @@ Systems using AMD Zen 4 or Zen 5 CPUs may benefit from the CachyOS `znver4` repo
     # CachyOS Zen 4/5 optimized repositories
     [cachyos-znver4]
     Include = /etc/pacman.d/cachyos-v4-mirrorlist
-    
+
     [cachyos-core-znver4]
     Include = /etc/pacman.d/cachyos-v4-mirrorlist
-    
+
     [cachyos-extra-znver4]
     Include = /etc/pacman.d/cachyos-v4-mirrorlist
     ```

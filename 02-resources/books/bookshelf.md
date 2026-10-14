@@ -1,7 +1,5 @@
 ---
-
 kanban-plugin: board
-
 ---
 
 ## pending
@@ -23,7 +21,6 @@ kanban-plugin: board
 - [ ] Hold me tight: seven conversations for a lifetime of love - Sue Johnson
 - [ ] ACT with love - Russ Harris
 
-
 ## reading
 
 - [ ] Crime and punishment - Fyodor Dostoevsky
@@ -32,19 +29,18 @@ kanban-plugin: board
 - [ ] Sex for dummies - Dr. Ruth K. Westheimer
 - [ ] No more mr. nice guy - Robert A. Glover
 
-
 ## read
 
-
-
-***
+---
 
 ## Archive
 
 - [ ] What Does It All Mean? - Thomas Nagel
 
 %% kanban:settings
+
 ```
 {"kanban-plugin":"board","list-collapse":[false,false,false],"show-checkboxes":true}
 ```
+
 %%

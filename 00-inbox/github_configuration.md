@@ -19,30 +19,26 @@ For newer repositories, repository rulesets are usually cleaner because multiple
 1. Go to "Repository" -> "Settings" -> "Rules" -> "Rulesets" -> "New ruleset" -> "New branch ruleset".
 
 2. Set the target branches to:
+    - `main`.
 
-   - `main`.
-
-   - `develop`.
+    - `develop`.
 
 3. Enable the following rules:
-
-   - "Restrict updates" if only specific users, teams, or apps should be able to update these branches.
+    - "Restrict updates" if only specific users, teams, or apps should be able to update these branches.
 
     - "Restrict deletions".
 
-   - "Require a pull request before merging", with the followings rules set:
-
+    - "Require a pull request before merging", with the followings rules set:
         - Set "Required approvals" count to `1` or more.
 
         - "Require conversation resolution before merging".
 
         To reduce the risk of someone approving a pull request and then having the code changed afterward, enable:
-
         - "Dismiss stale pull request approvals when new commits are pushed".
 
         - "Require approval of the most recent reviewable push".
 
-   - "Block force pushes".
+    - "Block force pushes".
 
 4. Keep the bypass list empty unless there is a strong reason to allow specific admins, teams, or automation apps to bypass the rules.
 
@@ -57,7 +53,6 @@ For newer repositories, repository rulesets are usually cleaner because multiple
     ```
 
 2. In the branch protection rule or ruleset, enable:
-
     - "Require status checks to pass".
 
 3. Select the checks that must pass before a pull request can be merged.
@@ -92,19 +87,19 @@ If using GitHub Actions with merge queue, include the `merge_group` event:
 name: CI
 
 on:
-  pull_request:
-  merge_group:
+    pull_request:
+    merge_group:
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
+    test:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
 
-      - name: Run tests
-        run: echo "Run your test command here"
+            - name: Run tests
+              run: echo "Run your test command here"
 ```
 
 Without the `merge_group` event, required checks may not run correctly for merge queue entries.

@@ -13,4 +13,3 @@ Subscribers can include Amazon SQS queues, AWS Lambda functions, HTTP or HTTPS e
 SNS is useful when the same message needs to be sent to multiple destinations. This pattern is called fanout when a message is published once and delivered to several subscribers.
 
 The main idea is that Amazon SNS broadcasts messages from one publisher to one or more subscribers.
-

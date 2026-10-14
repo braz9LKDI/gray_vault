@@ -52,7 +52,6 @@ After rebase:
 A - B - E - C' - D'   main
 ```
 
-
 # Comparison
 
 Choosing between merging and rebasing depends on history management preferences:

@@ -27,4 +27,3 @@ A job queue stores jobs until they can be scheduled. Jobs wait in the queue unti
 ### Compute environment
 
 A compute environment defines where jobs run. AWS batch can use compute options such as [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2|Amazon EC2]], [[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/fargate|Fargate]], [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2_pricing#Spot instances|spot instances]] or [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2_pricing#On-demand instances|on-demand instances]].
-
