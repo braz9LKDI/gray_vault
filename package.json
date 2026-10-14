@@ -3,6 +3,7 @@
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "lint:style": "bash style_check.sh",
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
     "lint": "npm run lint:md",
     "fix": "prettier --write . && markdownlint-cli2 --fix \"**/*.md\" \"#node_modules\"",

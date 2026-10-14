@@ -8,6 +8,8 @@ This document describes the writing and formatting conventions used in this vaul
 
 The goal is to keep notes clear, portable, easy to edit and comfortable to read in plain Markdown.
 
+Kanban boards (notes with `kanban-plugin` in their frontmatter) follow the format of the Kanban plugin and are exempt from these rules.
+
 ## General writing style
 
 - Notes use valid Markdown.
@@ -183,6 +185,26 @@ The goal is to keep notes clear, portable, easy to edit and comfortable to read 
     ```md
     Markdown is portable (especially when notes are stored as plain text).
     ```
+
+- Dashes are not used as separators either. Headings carry no number prefix and quote attributions go in parentheses.
+
+    Bad:
+
+    ```md
+    ## 35 - Seleccionar columnas
+
+    > "Write code that is easy to delete, not easy to extend." - Tef, Programming is Terrible
+    ```
+
+    Good:
+
+    ```md
+    ## Seleccionar columnas
+
+    > "Write code that is easy to delete, not easy to extend." (Tef, Programming is Terrible)
+    ```
+
+- Quotations keep their original wording. The voice and punctuation rules apply to my own text, not to the words of others.
 
 ## Lists
 
