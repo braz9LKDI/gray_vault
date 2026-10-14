@@ -1,6 +1,6 @@
 set clipboard=unnamed
 
-" -------------------------------- Normal mode ------------------------------- "
+" -------------------------------- NORMAL MODE ------------------------------- "
 
 " Navigation
 nnoremap n h
@@ -30,7 +30,7 @@ nnoremap J E
 nnoremap k n
 nnoremap K N
 
-" -------------------------------- Visual mode ------------------------------- "
+" -------------------------------- VISUAL MODE ------------------------------- "
 
 " Navigation
 vnoremap n h
@@ -60,7 +60,7 @@ vnoremap J E
 vnoremap k n
 vnoremap K N
 
-" --------------------------- Operator pending mode -------------------------- "
+" --------------------------- OPERATOR PENDING MODE -------------------------- "
 
 " Navigation
 onoremap n h

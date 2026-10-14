@@ -26,6 +26,20 @@ The goal is to keep notes clear, portable, easy to edit and comfortable to read 
     Git controls file versions.
     ```
 
+- The tone is formal but not stiff. Plain words are preferred over ceremonial ones.
+
+    Bad:
+
+    ```md
+    The configuration file is required to be modified prior to execution.
+    ```
+
+    Good:
+
+    ```md
+    The configuration file must be changed before running the program.
+    ```
+
 - Connected paragraphs are preferred when they make an explanation easier to follow.
 
     Bad:
@@ -94,21 +108,47 @@ The goal is to keep notes clear, portable, easy to edit and comfortable to read 
     The `grep` command can be used to search text inside files.
     ```
 
-- Existing mixtures of English and Spanish are part of the note's original context and voice.
+- First person is allowed, and welcome, for my own choices, opinions and artifacts, such as my dotfiles or my other notes. The impersonal rule governs instructions and descriptions, not references to my own work.
 
     Bad:
 
     ```md
-    El comando `ls` muestra los archivos del directorio actual.
+    The default configuration is used by the author of this note.
     ```
 
     Good:
 
     ```md
-    El comando `ls` muestra los archivos del current directory.
+    Personally, I use the default configuration.
     ```
 
-    The mixed wording is kept when it already belongs to the original note. It is changed only when the note is being intentionally translated or normalized.
+- Existing mixtures of English and Spanish are part of the note's original context and voice, so they are kept. This covers deliberate bilingual content, not stray untranslated words: a lone Spanish heading in an English note is a leftover and gets translated.
+
+    Bad, a deliberate mixture normalized to one language:
+
+    ```md
+    El comando `ls` muestra los archivos del directorio actual, también llamado working directory.
+    ```
+
+    ```md
+    El comando `ls` muestra los archivos del directorio actual, también llamado directorio de trabajo.
+    ```
+
+    Bad, a leftover kept:
+
+    ```md
+    ## Instalación
+
+    The package is installed with `apt`.
+    ```
+
+    Good:
+
+    ```md
+    ## Installation
+
+    The package is installed with `apt`.
+    ```
 
 - Bold text is rare and reserved for emphasis that is genuinely necessary.
 
@@ -124,7 +164,7 @@ The goal is to keep notes clear, portable, easy to edit and comfortable to read 
     Git is a version control system used to track changes.
     ```
 
-- Em dashes are not used for parenthetical information.
+- Parenthetical information uses commas, parentheses or a colon, never dashes.
 
     Bad:
 
@@ -166,7 +206,7 @@ The goal is to keep notes clear, portable, easy to edit and comfortable to read 
     - Third item.
     ```
 
-- List items end with a period, unless the item already contains a question mark.
+- List items end with a period, unless the item ends with a question mark.
 
     Bad:
 
@@ -186,6 +226,28 @@ The goal is to keep notes clear, portable, easy to edit and comfortable to read 
     - Second item.
 
     - Is this a question?
+    ```
+
+- Sibling items share one shape. If one item in a list has an explanatory sentence, every item in that list has one.
+
+    Bad:
+
+    ```md
+    - `ls`: lists the contents of a directory.
+
+    - `cd`.
+
+    - `pwd`: prints the current directory.
+    ```
+
+    Good:
+
+    ```md
+    - `ls`: lists the contents of a directory.
+
+    - `cd`: changes the current directory.
+
+    - `pwd`: prints the current directory.
     ```
 
 ## Capitalization
@@ -224,7 +286,7 @@ Capital letters are used only in the following cases:
     Plain text works well with version control.
     ```
 
-- At the start of a list item.
+- At the start of a list item, except when the item continues the sentence that introduces the list. An item continues that sentence when the sentence is grammatically incomplete without it.
 
     Bad:
 
@@ -241,8 +303,6 @@ Capital letters are used only in the following cases:
 
     - This one also starts with a capital letter.
     ```
-
-- At the start of a list item, except when the item continues a previous sentence.
 
     Bad:
 
@@ -268,18 +328,140 @@ Capital letters are used only in the following cases:
     - easy editing.
     ```
 
-- For proper names.
+- In headings, which use sentence case.
 
     Bad:
 
     ```md
-    obsidian, linux, github and python are proper names.
+    ## Installing The Package Manager
     ```
 
     Good:
 
     ```md
-    Obsidian, Linux, GitHub and Python are proper names.
+    ## Installing the package manager
+    ```
+
+- For proper names, including package and product names, spelled as their authors spell them.
+
+    Bad:
+
+    ```md
+    obsidian, linux, Github, MacOS and NPM are proper names.
+    ```
+
+    Good:
+
+    ```md
+    Obsidian, Linux, GitHub, macOS and npm are proper names.
+    ```
+
+## Code
+
+- Code examples use fenced blocks with triple backticks, and every fence is tagged with its language.
+
+    Bad:
+
+    ````md
+    ```
+    ls -la
+    ```
+    ````
+
+    Good:
+
+    ````md
+    ```bash
+    ls -la
+    ```
+    ````
+
+- Each language has one lowercase tag, without synonyms: `bash` for shell, `ps1` for PowerShell, `javascript`, `dockerfile`, `md` for Markdown and `text` for key sequences and other non-languages.
+
+    Bad:
+
+    ````md
+    ```SH
+    ls -la
+    ```
+    ````
+
+    Good:
+
+    ````md
+    ```bash
+    ls -la
+    ```
+    ````
+
+- Placeholders are written as `<hyphenated-lowercase>`. Uppercase is reserved for key names and acronyms, such as `<SSID>`, `<ENTER>` or `<ARROW>`.
+
+    Bad:
+
+    ```bash
+    git clone <REPO_URL>
+    ```
+
+    Good:
+
+    ```bash
+    git clone <repo-url>
+    ```
+
+- Placeholders referenced in text, outside code blocks, are written in italics with escaped angle brackets, so Markdown does not read them as HTML tags.
+
+    Bad:
+
+    ```md
+    Replace <repo-url> with the address of the repository.
+    ```
+
+    Good:
+
+    ```md
+    Replace _\<repo-url\>_ with the address of the repository.
+    ```
+
+## Mathematics
+
+- Inline mathematics uses single dollar signs, only when the notation is genuinely mathematical. Units and plain numbers are written as normal text.
+
+    Bad:
+
+    ```md
+    The file weighs $5$ MB.
+    ```
+
+    Good:
+
+    ```md
+    The file weighs 5 MB and the search runs in $O(n \log n)$.
+    ```
+
+## Characters
+
+- Notes use only ASCII, plus the characters Spanish needs: `á é í ó ú ü ñ`, their capitals, `¿` and `¡`. Box-drawing characters (`├ ─ │ └`) are also allowed, for `tree` output in code blocks.
+
+- Everything else is excluded, especially characters that are invisible or look like an ASCII twin: non-breaking spaces, soft hyphens, non-breaking hyphens, zero-width characters, curly quotes, em and en dashes, the ellipsis character and the Unicode minus sign. They break commands when a reader copies them.
+
+    Bad, with an en dash:
+
+    ```bash
+    ls –la
+    ```
+
+    Good:
+
+    ```bash
+    ls -la
+    ```
+
+- Symbols without an ASCII form are written as mathematics when they are mathematics (`$\Omega$`) and as words otherwise (`ohm`). Proper names keep their spelling.
+
+- A note passes this rule when the following command prints nothing:
+
+    ```bash
+    grep -nP '[^\x00-\x7FáéíóúüñÁÉÍÓÚÜÑ¿¡\x{2500}-\x{257F}]' <file>
     ```
 
 ## Assets

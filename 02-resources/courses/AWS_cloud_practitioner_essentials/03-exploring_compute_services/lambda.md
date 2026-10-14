@@ -12,6 +12,6 @@ Lambda automatically manages the infrastructure needed to run the function. This
 
 A lambda function is usually designed to perform a specific task. For example, it can process an uploaded file, respond to an API request, read messages from Amazon SQS or react to changes in a database.
 
-Lambda is commonly used with services such as Amazon API Gateway, Amazon S3, Amazon[[02-resources/courses/AWS_cloud_practitioner_essentials/02-compute_in_the_cloud/eventbridge|amazon EventBridge]], [[02-resources/courses/AWS_cloud_practitioner_essentials/02-compute_in_the_cloud/sqs|Amazon SQS]] and Amazon DynamoDB.
+Lambda is commonly used with services such as Amazon API Gateway, Amazon S3, Amazon[[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/eventbridge|amazon EventBridge]], [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/sqs|Amazon SQS]] and Amazon DynamoDB.
 
 The main idea is that AWS Lambda runs code in response to events without requiring direct server management.
