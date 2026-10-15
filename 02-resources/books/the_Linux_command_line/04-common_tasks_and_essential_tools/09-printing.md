@@ -18,7 +18,7 @@ reviewed_on: "2025-07-25"
 
 ### Character-based printers
 
-The second, and more important characteristic of early printers was that printers used a fixed set of characters that were intrinsic to the device...This made the printers much like high-speed typewriters. As with most typewriters, they printed using monospaced font (fixed width) fonts...Printing was done at fixed position on the page, and the printable are of a page contained a fixed number of characters. Most printers printed then characters per inch (CPI) horizontally and six lines per inch (LPI) vertically. Using this scheme, a US-letter sheet of paper is 85 characters wide and 66 lines high. Taking into account a small margin on each side, 80 characters was considered the maximum width of a print line. This ex­plains why terminal displays (and our terminal emulators) are normally 80 characters wide. Using a monospaced font and and an 80 character wide terminal provides a **what you see is what you g et** (**WYSIWYG**) view of printed output.
+The second, and more important characteristic of early printers was that printers used a fixed set of characters that were intrinsic to the device...This made the printers much like high-speed typewriters. As with most typewriters, they printed using monospaced font (fixed width) fonts...Printing was done at fixed position on the page, and the printable are of a page contained a fixed number of characters. Most printers printed then characters per inch (CPI) horizontally and six lines per inch (LPI) vertically. Using this scheme, a US-letter sheet of paper is 85 characters wide and 66 lines high. Taking into account a small margin on each side, 80 characters was considered the maximum width of a print line. This explains why terminal displays (and our terminal emulators) are normally 80 characters wide. Using a monospaced font and and an 80 character wide terminal provides a **what you see is what you g et** (**WYSIWYG**) view of printed output.
 
 ### Graphical printers
 
@@ -37,13 +37,13 @@ $$
 Many of the slow PC networks simply could not handle the nearly one megabyte of data required to print a full page on a laser printer, so it was clear that a clever invention was needed.
 
 That invention turned out to be the page description language (PDL). A page description language is a programming language that describes the contents of a page...At first, support for PostScript was built into
-the printers themselves. This solved the data transmission problem. While the typical PostScript program was very verbose in comparison to the simple byte stream of charac­ter-based printers, it was much smaller than the number of bytes required to represent the entire printed page.
+the printers themselves. This solved the data transmission problem. While the typical PostScript program was very verbose in comparison to the simple byte stream of character-based printers, it was much smaller than the number of bytes required to represent the entire printed page.
 
 The generic name for the process of rendering something into a large bit pattern (called **bitmap**) is **raster image processor** (RIP).
 
 ## Printing with Linux
 
-Modern Linux systems employ two software suites to perform and manage printing. The first, Common Unix Printing System (CUPS) provides print drivers and print-job man­agement, and the second, Ghostscript, a PostScript interpreter, acts as a RIP.
+Modern Linux systems employ two software suites to perform and manage printing. The first, Common Unix Printing System (CUPS) provides print drivers and print-job management, and the second, Ghostscript, a PostScript interpreter, acts as a RIP.
 
 ## Preparing file for printing
 
@@ -94,7 +94,7 @@ Like `lpr`, it accepts either files or standard input for printing.
 
 ### Another option (`a2ps`)
 
-...now its name means "anything to PostScript". While its name suggests a format-conversion program, it is actually a printing program. It sends its default output to the system's default printer rather than standard output. The program’s default behavior is that of a “pretty printer,” meaning that it improves the appearance of output.
+...now its name means "anything to PostScript". While its name suggests a format-conversion program, it is actually a printing program. It sends its default output to the system's default printer rather than standard output. The program's default behavior is that of a "pretty printer," meaning that it improves the appearance of output.
 
 ## `a2ps` Options
 
@@ -104,17 +104,17 @@ Like `lpr`, it accepts either files or standard input for printing.
 |     `--columns=<n>`     | arrange pages into _n_ columns.                               |
 |    `--footer=<text>`    | set page footer to _text_.                                    |
 |        `--guess`        | report the types of files given as arguments.                 |
-| `--left-footer=<text>`  | set the left‑page footer to _text_.                           |
-|  `--left-title=<text>`  | set the left‑page title to _text_.                            |
+| `--left-footer=<text>`  | set the left-page footer to _text_.                           |
+|  `--left-title=<text>`  | set the left-page title to _text_.                            |
 |  `--line-numbers=<n>`   | number lines of output every _n_ lines.                       |
 |    `--list=defaults`    | display default settings.                                     |
 |    `--pages=<range>`    | print pages in _range_.                                       |
-| `--right-footer=<text>` | set the right‑page footer to _text_.                          |
-| `--right-title=<text>`  | set the right‑page title to _text_.                           |
+| `--right-footer=<text>` | set the right-page footer to _text_.                          |
+| `--right-title=<text>`  | set the right-page title to _text_.                           |
 |      `--rows=<n>`       | arrange pages into _n_ rows.                                  |
 |          `-B`           | no page headers.                                              |
 |       `-b <text>`       | set the page header to _text_.                                |
-|       `-f <size>`       | use _size_‑point font.                                        |
+|       `-f <size>`       | use _size_-point font.                                        |
 |        `-l <n>`         | set characters per line to _n_.                               |
 |        `-L <n>`         | set lines per page to _n_.                                    |
 |       `-M <name>`       | use media _text_.                                             |
@@ -128,7 +128,7 @@ Like `lpr`, it accepts either files or standard input for printing.
 
 ## Monitoring and controlling print jobs
 
-Each printer is given a **print queue**, where jobs are parked until they can be **spooled** to the printer. CUPS supplies several command line pro­grams that are used to manage printer status and print queues.
+Each printer is given a **print queue**, where jobs are parked until they can be **spooled** to the printer. CUPS supplies several command line programs that are used to manage printer status and print queues.
 
 ### `lpstat` display print system status
 

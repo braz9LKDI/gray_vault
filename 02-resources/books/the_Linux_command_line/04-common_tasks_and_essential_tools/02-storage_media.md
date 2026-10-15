@@ -37,7 +37,7 @@ A file named `/etc/fstab` (short for "file system table") lists the devices (typ
 
 Entering `mount` without arguments will display a list of the file systems currently mounted.
 
-The formatting of the listing is as follows `<device> on <mount point> type <filesystem type> (<options>)`.
+The formatting of the listing is as follows `<device> on <mount-point> type <filesystem-type> (<options>)`.
 
 ---
 

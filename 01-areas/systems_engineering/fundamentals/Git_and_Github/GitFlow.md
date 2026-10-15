@@ -60,7 +60,7 @@ The base of the hotfix branch should be your main branch and should be merged ba
 
     This creates a new **release** branch from the **develop** branch.
 
-5. Release finalization: `git flow release finish <release version>`.
+5. Release finalization: `git flow release finish <release-version>`.
 
     This merges the **release** branch to **main** and **develop**, tags the **main** branch and deletes the **release** branch.
 
@@ -68,6 +68,6 @@ The base of the hotfix branch should be your main branch and should be merged ba
 
     This creates a new **hotfix** branch from **main** and switch to it automatically.
 
-7. Hotfix finalization: `git flow finish <hotfix version>`.
+7. Hotfix finalization: `git flow finish <hotfix-version>`.
 
     This merges the **hotfix** branch to **main** and **develop**, tags the **main** branch and deletes the **hotfix** branch.

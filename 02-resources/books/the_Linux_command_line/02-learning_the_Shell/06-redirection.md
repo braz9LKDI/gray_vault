@@ -73,7 +73,7 @@ Redirecting standard error lacks the ease of a dedicated redirection operator. T
 - `2`: standard error.
 
 ```bash
-# <command> <file stream>> <name>
+# <command> <file-stream>> <name>
 
 ls -l /bin/usr 2> ls-error.txt
 ```

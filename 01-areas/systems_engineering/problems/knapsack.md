@@ -11,9 +11,9 @@ Given a set of items, each with a weight and a benefit, and a knapsack with a ma
 ## Input
 
 - A set of $n$ items, where for each item $i$ (with $1 \leq i \leq n$):
-    - A weight $w_i$
+    - A weight $w_i$.
 
-    - A benefit $b_i$
+    - A benefit $b_i$.
 
 - A knapsack with a maximum weight capacity $M$.
 

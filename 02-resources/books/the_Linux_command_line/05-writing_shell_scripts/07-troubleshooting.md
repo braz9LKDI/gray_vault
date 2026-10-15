@@ -21,7 +21,7 @@ Unlike syntactic errors, **logical** errors do not prevent a script from running
 
 - Incorrect conditional expressions: it is easy to incorrectly code an `if`/`then`/`else` and have the wrong logic carried out. Sometimes the logic will be reversed, or it will be incomplete.
 
-- "Off by one" errors: when coding loops that employ counters, it is possible to overlook that the loop may require that the counting start with zero, rather than one, for the count to conclude at the correct point. These kinds of errors result in either a loop “going off the end” by counting too far or a loop missing the last it­eration by terminating one iteration too soon.
+- "Off by one" errors: when coding loops that employ counters, it is possible to overlook that the loop may require that the counting start with zero, rather than one, for the count to conclude at the correct point. These kinds of errors result in either a loop "going off the end" by counting too far or a loop missing the last iteration by terminating one iteration too soon.
 
 - Unanticipated situations: most logic errors result from a program encountering data or situations that were unforeseen by the programmer.
 
@@ -65,11 +65,11 @@ Using `./` will prevent a filename starting with a hyphen from being interpreted
 
 ### Portable filenames
 
-To ensure that a filename is portable between multiple platforms (i.e., different types of computers and operating systems), care must be taken to limit which characters are included in a filename. There is a standard called the POSIX Porta­ble Filename Character Set that can be used to maximize the chances that a file­name will work across different systems. The standard is pretty simple. The only characters allowed are the uppercase letters A-Z, the lowercase letters a-z, the nu­merals 0-9, period (`.`), hyphen (`-`), and underscore (`_`). The standard further sug­gests that filenames should not begin with a hyphen.
+To ensure that a filename is portable between multiple platforms (i.e., different types of computers and operating systems), care must be taken to limit which characters are included in a filename. There is a standard called the POSIX Portable Filename Character Set that can be used to maximize the chances that a filename will work across different systems. The standard is pretty simple. The only characters allowed are the uppercase letters A-Z, the lowercase letters a-z, the numerals 0-9, period (`.`), hyphen (`-`), and underscore (`_`). The standard further suggests that filenames should not begin with a hyphen.
 
 ## Testing
 
-Testing is an important step in every kind of software development, including scripts. There is a saying in the open-source world, "release early, release often," that reflects this fact. By releasing early and often, software gets more exposure to use and testing. Experi­ence has shown that bugs are much easier to find, and much less expensive to fix, if they are found early in the development cycle.
+Testing is an important step in every kind of software development, including scripts. There is a saying in the open-source world, "release early, release often," that reflects this fact. By releasing early and often, software gets more exposure to use and testing. Experience has shown that bugs are much easier to find, and much less expensive to fix, if they are found early in the development cycle.
 
 ## Debugging
 

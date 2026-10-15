@@ -46,6 +46,7 @@ $$
     & S_n = \frac{ n }{ 2 } (2 a_1 + (n - 1) d) \quad (4)
 \end{align}
 
+
 $$
 
 Rewriting $(4)$.
@@ -55,6 +56,7 @@ $$
     & S_n = n \frac{ a_1 + a_1 + (n - 1) d }{ 2 } \\
     & = n \frac{ a_1 + a_n }{ 2 }
 \end{align}
+
 
 $$
 
@@ -70,7 +72,7 @@ $$
 
 - $a_1$: initial term of a geometric sequence.
 
-- $r$: the **ratio** of a geometric sequence.
+- $r$: the ratio of a geometric sequence.
 
 This sequence follows the recursive relation.
 

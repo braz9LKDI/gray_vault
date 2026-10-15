@@ -1,5 +1,5 @@
 ```text
-’|“|”|‘|’
+'|"|"|'|'
 ```
 
 # Scribbles
@@ -12,18 +12,18 @@
 
 - Regex for lines ending without a final dot: `[^\.$:\]?]$`.
 
-- Regex for comments without the beginning space: `[^\s]\\\\`
+- Regex for comments without the beginning space: `[^\s]\\\\`.
 
 - Search for spaces in:
     - `for(`.
 
-    - `while(`
+    - `while(`.
 
-    - `switch(`
+    - `switch(`.
 
     - `if(`.
 
-    - `}else`
+    - `}else`.
 
     - `){`.
 
@@ -33,9 +33,9 @@
 
 ## Useful commands
 
-- Convert PNG to JPG: `magick mogrify -format jpg <PNG file>`.
+- Convert PNG to JPG: `magick mogrify -format jpg <png-file>`.
 
-- Find files except in a directory: `find . -name <dir> -type d -prune -o -type f -name <file_pattern> -print`.
+- Find files except in a directory: `find . -name <dir> -type d -prune -o -type f -name <file-pattern> -print`.
 
 - Create symbolic links (PowerShell): `New-Item -ItemType SymbolicLink -Path <target> -Value <source>`.
 
@@ -47,11 +47,11 @@
 
 - Compile and run JavaFX programs.
 
-    ```powershell
-    javac -d out --module-path <JavaFX lib folder> --add-modules javafx.controls,javafx.fxml YourApp.java
+    ```ps1
+    javac -d out --module-path <java-fx-lib-folder> --add-modules javafx.controls,javafx.fxml YourApp.java
     $(Get-ChildItem -Filter "*.java" -Recurse)
     cp src/main/resources/* out
-    java -cp out --module-path  <JavaFX lib folder> --add-modules javafx.controls,javafx.fxml <main>
+    java -cp out --module-path  <java-fx-lib-folder> --add-modules javafx.controls,javafx.fxml <main>
     ```
 
 ## Folders to check
@@ -89,15 +89,15 @@
 
     - Hangman.
 
-6. Exceptions and error patterns
+6. Exceptions and error patterns.
 
     try/catch/finally, using / await using
 
     When to throw, custom exceptions
 
-    “Result” style patterns (when you don’t want exceptions)
+    "Result" style patterns (when you don't want exceptions)
 
-7. Generics and constraints
+7. Generics and constraints.
 
     Generic methods/classes
 
@@ -105,7 +105,7 @@
 
     Variance basics: out, in (useful with interfaces/delegates)
 
-8. Delegates, events, and lambdas
+8. Delegates, events, and lambdas.
 
     Func<>, Action<>, custom delegates
 
@@ -113,7 +113,7 @@
 
     Lambdas, closures (common gotchas)
 
-9. Async/await (the modern C# must-have)
+9. Async/await (the modern C# must-have).
 
     Task / Task<T> / ValueTask (at least know it exists)
 
@@ -123,7 +123,7 @@
 
     Common pitfall: blocking with .Result / .Wait()
 
-10. Interfaces, DI, and “how C# apps are structured”
+10. Interfaces, DI, and "how C# apps are structured".
 
     Interfaces + implementations
 
@@ -131,7 +131,7 @@
 
     Common lifetimes: transient/scoped/singleton (just concepts)
 
-11. Files, IDisposable, and using
+11. Files, IDisposable, and using.
 
     IDisposable and why it exists
 
@@ -139,7 +139,7 @@
 
     Streams and basic file I/O
 
-12. NuGet + package management
+12. NuGet + package management.
 
     What NuGet is, adding packages
 

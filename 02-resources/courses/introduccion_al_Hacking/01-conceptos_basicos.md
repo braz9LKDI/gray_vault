@@ -1,6 +1,6 @@
 # Conceptos básicos
 
-## 1 - Direcciones IP (IPV4 e IPV6)
+## Direcciones IP (IPV4 e IPV6)
 
 ### IP
 
@@ -16,7 +16,7 @@ uses 128-bit (which consists of eight groups of four hexadecimal digits) address
 
 > The ratio between a hexadecimal digit and a binary digit is 4, so we can represent $2^{ 128 }$ ($2^{ 4 * 4 * 8 }$) addresses in IPv6, which is equal to $2^{ 96 } = \frac{ 2^{ 128 } }{ 2^{ 32 } }$ times IPv4.
 
-## 2 - Direcciones MAC (OUI y NIC)
+## Direcciones MAC (OUI y NIC)
 
 A MAC address, which stands for Media Access Control Address, is a unique 48-bit (12 hexadecimal numbers) hardware number of a computer that is embedded into a network card (known as a Network Interface Card) during manufacturing. The MAC Address is also known as the Physical Address of a network device.
 
@@ -28,7 +28,7 @@ The MAC address is represented by Colon-Hexadecimal (`XX:XX:XX:XX:XX:XX`) notati
 
 > With the `macchanger` package, we can print known vendors with the `-l` (`macchanger -l`) option.
 
-## 3 - Protocolos comunes (TCP, UDP) y el famoso Three-Way Handshake
+## Protocolos comunes (TCP, UDP) y el famoso Three-Way Handshake
 
 Both protocols let two hosts connect and exchange data streams.
 
@@ -48,7 +48,7 @@ It is used together with IP for sending data when transmission speed and efficie
 
 UDP uses a simple connectionless communication model with a minimum of protocol mechanisms. UDP provides checksums for data integrity and port numbers for addressing different functions at the source and destination of the datagram. It has no handshaking dialogues and thus exposes the user's program to any unreliability of the underlying network; There is no guarantee of delivery, ordering, or duplicate protection.
 
-## 4 - El modelo OSI – ¿En qué consiste y cómo se estructura la actividad de red en capas?
+## El modelo OSI – ¿En qué consiste y cómo se estructura la actividad de red en capas?
 
 The OSI (Open Systems Interconnection) model, created in 1984 by the ISO (International Organization for Standardization), is a reference framework that explains the process of transmitting data between computers. It is divided into seven layers that work together to carry out specialized network functions, **allowing for a more systematic approach to networking**.
 
@@ -62,7 +62,7 @@ The OSI (Open Systems Interconnection) model, created in 1984 by the ISO (Intern
 
 5. Session Layer: is responsible for the establishment of connections, maintenance of sessions, and authentication, and also ensures security.
 
-6. Presentation Layer: is also called the **Translation layer**. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network. .
+6. Presentation Layer: is also called the Translation layer. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network. .
 
 7. Application Layer: is implemented by the network applications. These applications produce the data, which has to be transferred over the network. This layer also serves as a window for the application services to access the network and for displaying the received information to the user.
 
@@ -76,7 +76,7 @@ The OSI (Open Systems Interconnection) model, created in 1984 by the ISO (Intern
 |    2     |  Data Link Layer   |                                  Node to node delivery of messages.                                   |            Frame             |        Switch, Bridge        |
 |    1     |   Physical Layer   |                          Establishing physical connections between devices.                           |             Bits             | Hub, repeater, modem, cables |
 
-## 5 - Subnetting – ¿Qué es y cómo se interpreta una máscara de red?
+## Subnetting – ¿Qué es y cómo se interpreta una máscara de red?
 
 ### Subnetting
 
@@ -162,7 +162,7 @@ The problem with this classful addressing method is that millions of class A and
 
 Since there are these problems, Classful networking was replaced by Classless Inter-Domain Routing (CIDR) in 1993.
 
-## 6 - Problems with Classful Addressing
+## Problems with Classful Addressing
 
 ### Classless Addressing
 
@@ -190,7 +190,7 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 
 - Block size must be the power of 2 ($2^n$).
 
-## 7 - Subnetting – Máscaras de subred, tipos de clase e interpretación de prefijos de red
+## Subnetting – Máscaras de subred, tipos de clase e interpretación de prefijos de red
 
 ### No class and subnet mask `X.0.0.0`
 
@@ -257,7 +257,7 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 | `/7`, `/15`, `/23` y `/31` | 254 |
 | `/8`, `/19`, `/24` y `/32` | 255 |
 
-## 9 - Subnetting – Redes extrañas y casos particulares
+## Subnetting – Redes extrañas y casos particulares
 
 Exercises
 

@@ -34,7 +34,7 @@ Inside shell functions, it is often desirable to have **local variables** instea
 
 Local variables are defined by preceding the variable name with the word "local". This creates a variable that is local to the shell function in which it is defined. Once outside the shell function, the variable no longer exists.
 
-This feature allows shell functions to be written so that they remain independent of each other and of the script in which they appear. This is valuable, because it helps prevent one part of a program from interfering with another. It also allows shell functions to be writ­ten so that they can be portable. That is, they may be cut and pasted from script to script, as needed.
+This feature allows shell functions to be written so that they remain independent of each other and of the script in which they appear. This is valuable, because it helps prevent one part of a program from interfering with another. It also allows shell functions to be written so that they can be portable. That is, they may be cut and pasted from script to script, as needed.
 
 ## Shell functions and redirection
 

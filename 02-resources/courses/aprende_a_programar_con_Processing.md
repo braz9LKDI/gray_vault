@@ -6,7 +6,7 @@ Processing is a free graphical library and integrated development environment (I
 
 ## Coordinate display
 
-```JAVA
+```java
 void setup() {
     size(400, 400);
 }
@@ -19,7 +19,7 @@ void draw() {
 
 ## Circle moving horizontally
 
-```JAVA
+```java
 int position_x = 50;
 
 
@@ -37,7 +37,7 @@ void draw() {
 
 ## Coloring sections of a 2x2 canvas
 
-```JAVA
+```java
 void setup() {
     size(600, 600);
 }
@@ -60,7 +60,7 @@ void draw() {
 
 ## Drawing lines in the middle of a 1x3 canvas
 
-```JAVA
+```java
 int section_width;
 
 
@@ -77,7 +77,7 @@ void draw() {
 
 ## Coloring the background and drawing shapes (circle or square)
 
-```JAVA
+```java
 boolean is_circle, is_increasing;
 int color_value;
 
@@ -110,7 +110,7 @@ void mouseClicked() {
 
 ## Drawing custom shapes
 
-```JAVA
+```java
 void setup() {
     size(600, 600);
     custom_square(width / 4 - 50, height / 2 - 50, 100);
@@ -134,7 +134,7 @@ void custom_circle(float x, float y, float diameter) {
 
 ## Drawing a grid
 
-```JAVA
+```java
 void setup() {
     size(600, 600);
 
@@ -147,7 +147,7 @@ void setup() {
 
 ## Drawing a circle grid with gradient
 
-```JAVA
+```java
 void setup() {
     size(600, 600);
 }
@@ -165,7 +165,7 @@ void draw() {
 
 ## Electron trajectory
 
-```JAVA
+```java
 PImage nucleus, electron;
 float x, y, r;
 
@@ -191,7 +191,7 @@ void draw() {
 
 ## Spraying with the mouse buttons
 
-```JAVA
+```java
 boolean is_painting;
 float range;
 
@@ -225,7 +225,7 @@ void mouseReleased() {
 
 ## Sniper reticle
 
-```JAVA
+```java
 float x, y, d;
 
 
@@ -264,7 +264,7 @@ void keyPressed() {
 
 ## Interactive ellipse
 
-```JAVA
+```java
 color[] colors = { color(255, 0, 0), color(0, 255, 0), color(0, 0, 255) };
 float ellipse_width, ellipse_height;
 int ellipse_color;
@@ -288,7 +288,7 @@ void draw() {
 
 ## Resistor app
 
-```JAVA
+```java
 color[] colors = {
     color(0, 0, 0), // Black
     color(98, 50, 50), // Brown
@@ -367,7 +367,7 @@ void mouseReleased() {
 
 ## Calculation game
 
-```JAVA
+```java
 float x, y, side, margin;
 int number_1, number_2, operator, answer, user_operator;
 
@@ -466,7 +466,7 @@ void mousePressed() {
 
 ## Interactive Cartesian Plane
 
-```JAVA
+```java
 float x, y_1, y_2, side, slider_m, slider_b, m , b, grid_size;
 boolean is_moving_m, is_moving_b;
 

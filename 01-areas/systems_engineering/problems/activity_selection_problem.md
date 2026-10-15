@@ -34,6 +34,6 @@ $$
 
 such that:
 
-- The activities in $A$ are **mutually compatible** (no overlaps).
+- The activities in $A$ are mutually compatible (no overlaps).
 
 - The number of selected activities $k$ ($|A|$) is maximized.

@@ -53,7 +53,7 @@ grep [OPTIONS] REGEX [FILE...]
 
 All other characters are considered **literals**, though the backslash character is used in a few cases to create **meta sequences**, as well as allowing the metacharacters to be escaped and treated as literals instead of being interpreted as metacharacters.
 
-> ...When we pass regular expressions containing metacharacters on the command line, it is vi­tal that they be enclosed in quotes to prevent the shell from attempting to expand them.
+> ...When we pass regular expressions containing metacharacters on the command line, it is vital that they be enclosed in quotes to prevent the shell from attempting to expand them.
 
 ## Anchors
 
@@ -61,13 +61,13 @@ The caret (`^`) and dollar sign (`$`) characters are treated as anchors in regul
 
 ## Bracket expressions and character classes
 
-In addition to matching any character at a given position in our regular expression, we can also match a single character from a specified set of characters by using **bracket ex­pressions**. With bracket expressions, we can specify a set of characters (including charac­ters that would otherwise be interpreted as metacharacters) to be matched.
+In addition to matching any character at a given position in our regular expression, we can also match a single character from a specified set of characters by using **bracket expressions**. With bracket expressions, we can specify a set of characters (including characters that would otherwise be interpreted as metacharacters) to be matched.
 
-A set may contain any number of characters, and metacharacters lose their special mean­ing when placed within brackets. However, there are two cases in which metacharacters are used within bracket expressions and have different meanings. The first is the caret (`^`), which is used to indicate negation; the second is the dash (`-`), which is used to indi­cate a character range.
+A set may contain any number of characters, and metacharacters lose their special meaning when placed within brackets. However, there are two cases in which metacharacters are used within bracket expressions and have different meanings. The first is the caret (`^`), which is used to indicate negation; the second is the dash (`-`), which is used to indicate a character range.
 
 ### Negation
 
-The caret character only invokes negation if it is the first character within a bracket ex­pression; otherwise, it loses its special meaning and becomes an ordinary character in the set.
+The caret character only invokes negation if it is the first character within a bracket expression; otherwise, it loses its special meaning and becomes an ordinary character in the set.
 
 ### Traditional character ranges
 
@@ -111,7 +111,7 @@ This differs from proper dictionary order, which is like this:
 aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ
 ```
 
-As the popularity of Unix spread beyond the United States, there grew a need to support characters not found in U.S. English. The ASCII table was expanded to use a full eight bits, adding characters 128-255, which accommodated many more languages. To support this ability, the POSIX standards introduced a concept called a **locale**, which could be ad­justed to select the character set needed for a particular location.
+As the popularity of Unix spread beyond the United States, there grew a need to support characters not found in U.S. English. The ASCII table was expanded to use a full eight bits, adding characters 128-255, which accommodated many more languages. To support this ability, the POSIX standards introduced a concept called a **locale**, which could be adjusted to select the character set needed for a particular location.
 
 ```bash
 echo $LANG
@@ -120,7 +120,7 @@ echo $LANG
 
 With this setting, POSIX-compliant applications will use a dictionary collation order rather than ASCII order.
 
-To partially work around this problem, the POSIX standard includes a number of charac­ter classes that provide useful ranges of characters.
+To partially work around this problem, the POSIX standard includes a number of character classes that provide useful ranges of characters.
 
 | character class | description                                                                                                                                 |
 | :-------------: | :------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -218,7 +218,7 @@ echo "abc  d" | grep -E '^([[:alpha:]]+ ?)+$'
 
 ### `{` and `}` math an element a specific number of times
 
-The `{` and `}` metacharacters are used to express minimum and maximum numbers of re­quired matches.
+The `{` and `}` metacharacters are used to express minimum and maximum numbers of required matches.
 
 |  specifier  | meaning                                                                               |
 | :---------: | :------------------------------------------------------------------------------------ |
@@ -246,7 +246,7 @@ grep -Ev '^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$'
 
 ### Finding ugly filenames with `find`
 
-Whereas `grep` will print a line when the line contains a string that matches an expres­sion, `find` requires that the pathname exactly match the regular expression.
+Whereas `grep` will print a line when the line contains a string that matches an expression, `find` requires that the pathname exactly match the regular expression.
 
 ```bash
 find . -regex '.*[^-_./0-9a-zA-Z].*'
@@ -258,7 +258,7 @@ find . -regex '.*[^-_./0-9a-zA-Z].*'
 
 ### Searching for text with `less` and `vim`
 
-`less` and `vim` both share the same method of searching for text. Pressing `/` fol­lowed by a regular expression will perform a search.
+`less` and `vim` both share the same method of searching for text. Pressing `/` followed by a regular expression will perform a search.
 
 `less` supports extended regular expressions, but `vim` does not.
 

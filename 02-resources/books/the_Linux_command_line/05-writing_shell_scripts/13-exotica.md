@@ -133,7 +133,7 @@ eval "$cmd | tee >(wc -l)"
 
 ## Traps
 
-When we design a large, complicated script, it is important to consider what happens if the user logs off or shuts down the computer while the script is running. When such an event occurs, a signal will be sent to all affected processes. In turn, the programs repre­senting those processes can perform actions to ensure a proper and orderly termination of the program.
+When we design a large, complicated script, it is important to consider what happens if the user logs off or shuts down the computer while the script is running. When such an event occurs, a signal will be sent to all affected processes. In turn, the programs representing those processes can perform actions to ensure a proper and orderly termination of the program.
 
 `bash` provided a mechanism for this purpose known as a **trap**. Traps are implemented with `trap`. `trap` uses the following syntax:
 
@@ -159,9 +159,9 @@ tempfile=/tmp/$(basename $0).$$.$RANDOM
 
 > `$$` obtains the PID.
 
-This will create a filename consisting of the program’s name, followed by its process ID (PID), followed by a random integer.
+This will create a filename consisting of the program's name, followed by its process ID (PID), followed by a random integer.
 
-A better way is to use the `mktemp` (not to be confused with the mktemp standard library function) to both name and create the temporary file. `mk­temp` accepts a template as an argument that is used to build the file­name. The template should include a series of "X" characters, which are replaced by a corresponding number of random letters and numbers.
+A better way is to use the `mktemp` (not to be confused with the mktemp standard library function) to both name and create the temporary file. `mktemp` accepts a template as an argument that is used to build the filename. The template should include a series of "X" characters, which are replaced by a corresponding number of random letters and numbers.
 
 ```bash
 tempfile=$(mktemp /tmp/foobar.$$.XXXXXXXXXX)

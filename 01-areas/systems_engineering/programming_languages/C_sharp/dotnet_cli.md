@@ -28,20 +28,20 @@ dotnet new <template> -n <name> -o <directory>
 ## [[personal/systems_engineering/programming_languajes/C_sharp/solution_vs_project#Solution (`.sln`)|Solution]] management
 
 ```bash
-dotnet sln <sln_or_slnx_file> list
+dotnet sln <sln-or-slnx-file> list
 
-dotnet sln <sln_or_slnx_file> add <csproj_file>
-dotnet sln <sln_or_slnx_file> add <csproj_file> --solution-folder <folder>
+dotnet sln <sln-or-slnx-file> add <csproj-file>
+dotnet sln <sln-or-slnx-file> add <csproj-file> --solution-folder <folder>
 
-dotnet sln <sln_or_slnx_file> remove <csproj_file>
+dotnet sln <sln-or-slnx-file> remove <csproj-file>
 ```
 
 ## [[personal/systems_engineering/programming_languajes/C_sharp/solution_vs_project#Project (`.csproj`)|Project]] references
 
 ```bash
-dotnet reference add <referenced_csproj> --project <target_csproj>
+dotnet reference add <referenced-csproj> --project <target-csproj>
 
-dotnet reference remove <referenced_csproj> --project <target_csproj>
+dotnet reference remove <referenced-csproj> --project <target-csproj>
 ```
 
 If shared code is intended, a class library project is usually the right shape, rather than an executable project repurposed as a dependency.
@@ -53,15 +53,15 @@ If shared code is intended, a class library project is usually the right shape, 
 Package references can be managed with:
 
 ```bash
-dotnet package add <package_name> --project <csproj_file>
-dotnet package add <package_name> --version <version> --project <csproj_file>
-dotnet package remove <package_name> --project <csproj_file>
-dotnet package list --project <project_or_solution_file>
-dotnet package list --project <project_or_solution_file> --outdated
-dotnet package list --project <project_or_solution_file> --vulnerable
-dotnet package list --project <project_or_solution_file> --include-transitive
-dotnet package update --project <csproj_file>
-dotnet package update --project <csproj_file> --vulnerable
+dotnet package add <package-name> --project <csproj-file>
+dotnet package add <package-name> --version <version> --project <csproj-file>
+dotnet package remove <package-name> --project <csproj-file>
+dotnet package list --project <project-or-solution-file>
+dotnet package list --project <project-or-solution-file> --outdated
+dotnet package list --project <project-or-solution-file> --vulnerable
+dotnet package list --project <project-or-solution-file> --include-transitive
+dotnet package update --project <csproj-file>
+dotnet package update --project <csproj-file> --vulnerable
 ```
 
 > For .NET 9 SDK and earlier, the equivalent forms are `dotnet add package`, `dotnet remove package` and `dotnet list package`.
@@ -72,26 +72,26 @@ Common workflow commands:
 
 ```bash
 dotnet restore
-dotnet restore <project_or_solution_file>
+dotnet restore <project-or-solution-file>
 
 dotnet build
-dotnet build <project_or_solution_file>
-dotnet build <project_or_solution_file> -c Release
+dotnet build <project-or-solution-file>
+dotnet build <project-or-solution-file> -c Release
 
 dotnet clean
-dotnet clean <project_or_solution_file>
+dotnet clean <project-or-solution-file>
 
 dotnet run
-dotnet run --project <csproj_file>
+dotnet run --project <csproj-file>
 
-dotnet watch run --project <csproj_file>
+dotnet watch run --project <csproj-file>
 
 dotnet test
-dotnet test <project_or_solution_file>
+dotnet test <project-or-solution-file>
 
-dotnet publish <csproj_file> -c Release -o <publish_dir>
+dotnet publish <csproj-file> -c Release -o <publish-dir>
 
-dotnet pack <csproj_file> -c Release
+dotnet pack <csproj-file> -c Release
 ```
 
 In most cases, `dotnet restore` is implicit because `dotnet new`, `dotnet build`, `dotnet run`, `dotnet test`, `dotnet publish` and `dotnet pack` restore automatically when needed.
@@ -118,15 +118,15 @@ NuGet sources can be inspected and configured with:
 
 ```bash
 dotnet nuget list source
-dotnet nuget add source <source_url> -n <name>
+dotnet nuget add source <source-url> -n <name>
 ```
 
 Local tools can be handled with:
 
 ```bash
 dotnet new tool-manifest
-dotnet tool install <package_id>
+dotnet tool install <package-id>
 dotnet tool list --local
 dotnet tool restore
-dotnet tool run <command_name>
+dotnet tool run <command-name>
 ```

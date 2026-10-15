@@ -60,7 +60,7 @@ vi file1 file2 file3...
 :bn Switch from one file to the next
 :bp Move back to the previous file
 :buffers View a list of files being edited
-:buffer <buffer number> Switch to a specified buffer (file)
+:buffer <buffer-number> Switch to a specified buffer (file)
 ```
 
 ### Opening additional files for editing

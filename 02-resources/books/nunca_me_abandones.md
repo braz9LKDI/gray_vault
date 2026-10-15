@@ -4,7 +4,7 @@ reviewed_on: "2024-12-31"
 
 # Nunca me abandones
 
-- ...Al principio yo lo achacaba a los fármacos, pero luego me di cuenta de que seguía teniendo la mente clara. Lo que quería no era solo oír cosas de Hailsham, sino **recordar** Hailsham como si se hubiera tratado de su propia infancia. Sabía que se hallaba a punto de "completar", y eso era precisamente lo que pretendía: que yo le describiera las cosas, de forma que pudiera asimilarlas en profundidad, de forma que en las noches insomnes, con los fármacos y el dolor y la extenuación, acaso llegara a hacerse desvaída la línea entre mis recuerdos y los suyos...
+- ...Al principio yo lo achacaba a los fármacos, pero luego me di cuenta de que seguía teniendo la mente clara. Lo que quería no era solo oír cosas de Hailsham, sino recordar Hailsham como si se hubiera tratado de su propia infancia. Sabía que se hallaba a punto de "completar", y eso era precisamente lo que pretendía: que yo le describiera las cosas, de forma que pudiera asimilarlas en profundidad, de forma que en las noches insomnes, con los fármacos y el dolor y la extenuación, acaso llegara a hacerse desvaída la línea entre mis recuerdos y los suyos...
 
 - Pero cuando pienso ahora en todo ello, la imagen de nuestro grupo aquel primer día, hechos una piña delante de la casa, no me resulta tan chocante, después de todo. Porque, en cierto modo, quizá no habíamos dejado atrás nuestro pasado de un modo tan rotundo como imaginábamos. Porque en algún rincón de nuestro interior, una parte de nosotros mismos seguía no solo asustada ante el mundo que nos rodeaba, sino —por mucho que nos despreciáramos por ello— totalmente incapaz de liberarse de su dependencia de los demás.
 

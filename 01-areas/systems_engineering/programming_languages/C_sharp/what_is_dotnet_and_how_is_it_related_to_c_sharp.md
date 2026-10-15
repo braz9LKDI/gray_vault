@@ -8,11 +8,11 @@ reviewed_on: "2026-02-21"
 
 .NET is a **software platform** (ecosystem) that provides:
 
-1. A **runtime** (the engine that runs the code).
+1. A runtime (the engine that runs the code).
 
-2. A large set of **libraries** (ready-made code for common tasks.
+2. A large set of libraries (ready-made code for common tasks.
 
-3. **Tools** to build and run apps (like `dotnet`).
+3. Tools to build and run apps (like `dotnet`).
 
 So, .NET is not a language by itself, it is the **environment** and **toolkit**
 
@@ -26,10 +26,10 @@ Most of the time, you use C# **to build .NET applications**. So, C# is the used 
 
 2. A compiler turns it into LM (intermediate language).
 
-3. The **.NET runtime** executes it (often using just-in-time compilation to machine code).
+3. The .NET runtime executes it (often using just-in-time compilation to machine code).
 
 4. While running, .NET also provides services like:
-    - **Garbage collection** (automatic memory management).
+    - Garbage collection (automatic memory management).
 
     - Exception handling, threading, etc.
 

@@ -12,7 +12,7 @@ reviewed_on: "2025-10-28"
 
 The most immediately visible part of a programming language is its **syntax**, or notation. A **parser** is a program that reads a piece of text and produces a data structure that reflects the structure of the program contained in that text...
 
-```js
+```javascript
 do(define(x, 10),
     if(>(x, 5),
         print("large"),

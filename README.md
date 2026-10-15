@@ -16,9 +16,9 @@ All Obsidian-related configuration lives in `.obsidian`.
 
 This vault separates two things:
 
-1. **Where I learned something**.
+1. Where I learned something.
 
-2. **What the thing is actually about**.
+2. What the thing is actually about.
 
 A class note preserves the context where I learned something.
 

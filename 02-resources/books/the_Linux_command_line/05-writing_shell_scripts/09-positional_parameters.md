@@ -45,11 +45,11 @@ It expands into the list of positional parameters, starting with 1. When surroun
 It expands into the list of positional parameters, starting with 1. When surrounded by double quotes, it expands each positional parameter into a separate word as if it was surrounded by double quotes.
 
 ```text
-<script> <arg_1> <arg_2> ... <arg_n>
-$* = <arg_1> <arg_2> ... <arg_n>
-"$*" = "<arg_1> <arg_2> ... <arg_n>"
-$@ = <arg_1> <arg_2> ... <arg_n>
-"$@" = "<arg_1>" "<arg_2>" ... "<arg_n>"
+<script> <arg-1> <arg-2> ... <arg-n>
+$* = <arg-1> <arg-2> ... <arg-n>
+"$*" = "<arg-1> <arg-2> ... <arg-n>"
+$@ = <arg-1> <arg-2> ... <arg-n>
+"$@" = "<arg-1>" "<arg-2>" ... "<arg-n>"
 ```
 
 `"$@"` is by far the most useful for most situations because it preserves the integrity of each positional parameter.

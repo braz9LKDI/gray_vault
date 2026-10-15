@@ -228,6 +228,17 @@ Kanban boards (notes with `kanban-plugin` in their frontmatter) follow the forma
     - Third item.
     ```
 
+    A nested list starts on the line right after its parent item, without an empty line, because Prettier removes it.
+
+    ```md
+    - Parent item:
+        - First nested item.
+
+        - Second nested item.
+
+    - Next item.
+    ```
+
 - List items end with a period, unless the item ends with a question mark.
 
     Bad:

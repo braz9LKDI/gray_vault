@@ -26,7 +26,7 @@ reviewed_on: "2025-05-05"
 
 ## C++ Implementation
 
-```c++
+```cpp
 #include <vector>
 
 

@@ -12,7 +12,7 @@ The shell is somewhat unique, in that is both a powerful command line interface 
 
 ## How to write a shell script
 
-1. Write a script: shell scripts are ordinary text files
+1. Write a script: shell scripts are ordinary text files.
 
 2. Make the script executable.
 
@@ -33,7 +33,7 @@ The `#!` character sequence is, in fact, a special construct called a **shebang*
 
 ### Good locations for scripts
 
-The `~/bin` directory is a good place to put scripts intended for personal use. If we write a script that everyone on a system is allowed to use, the traditional location is `/usr/local/bin`. Scripts intended for use by the system administrator are often located in `/usr/local/sbin`. In most cases, locally supplied software, whether scripts or com­piled programs, should be placed in the `/usr/local` hierarchy and not in `/bin` or `/usr/bin`. These directories are specified by the Linux Filesystem Hierarchy Standard to contain only files supplied and maintained by the Linux distributor.
+The `~/bin` directory is a good place to put scripts intended for personal use. If we write a script that everyone on a system is allowed to use, the traditional location is `/usr/local/bin`. Scripts intended for use by the system administrator are often located in `/usr/local/sbin`. In most cases, locally supplied software, whether scripts or compiled programs, should be placed in the `/usr/local` hierarchy and not in `/bin` or `/usr/bin`. These directories are specified by the Linux Filesystem Hierarchy Standard to contain only files supplied and maintained by the Linux distributor.
 
 ## More formatting tricks
 

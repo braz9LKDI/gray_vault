@@ -5,7 +5,7 @@ reviewed_on: "2026-04-08"
 # Commit message conventions
 
 ```text
-<type>[(<scope>)]: <short_summary>
+<type>[(<scope>)]: <short-summary>
 
 [<body>]
 ```
@@ -28,7 +28,7 @@ It says **what kind of change** it is:
 
 - `build`.
 
-- `chore`: maintenance tasks. It does not add a user-facing feature (so not feat) nor does fix a user-facing bug (so no fix), It is usually **internal**.
+- `chore`: maintenance tasks. It does not add a user-facing feature (so not feat) nor does fix a user-facing bug (so no fix), It is usually internal.
 
     > "Keeping the project healthy".
 

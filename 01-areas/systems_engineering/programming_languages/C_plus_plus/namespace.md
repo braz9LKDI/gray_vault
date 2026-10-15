@@ -20,8 +20,8 @@ A namespace is designed to overcome the name collision error and is used as addi
 
 A namespace definition begins with the namespace keyword followed by the namespace name as follows:
 
-```c++
-namespace  namespace_name {
+```cpp
+namespace  namespace_name {
     // Code declarations
 }
 ```
@@ -32,7 +32,7 @@ namespace  namespace_name {
 
 This directive tells the compiler that the subsequent code is making use of names in the specified namespace.
 
-```c++
+```cpp
 using namespace <namespace>;
 
 // Follwing code
@@ -40,7 +40,7 @@ using namespace <namespace>;
 
 ## Usage example
 
-```c++
+```cpp
 #include <iostream>
 #include <string>
 

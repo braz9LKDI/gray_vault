@@ -106,7 +106,7 @@ history | greq /usr/bin # Display all commands we executed that contains the pat
 | `!<string>`  | repeat last history list item starting with _string_. |
 | `!?<string>` | repeat last history list item containing _string_.    |
 
-Use caution with the `!string` and `!?string` forms unless you are absolutely sure of the contents of the history list items. We can mitigate this problem somewhat by ap­ pending `:p` to our expansion. This tells the shell to print the result of the expansion and place it into the command history.
+Use caution with the `!string` and `!?string` forms unless you are absolutely sure of the contents of the history list items. We can mitigate this problem somewhat by ap pending `:p` to our expansion. This tells the shell to print the result of the expansion and place it into the command history.
 
 #### `script`
 

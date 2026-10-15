@@ -1,6 +1,6 @@
 # Scripting en Bash
 
-## 1 - Scripting en Bash
+## Scripting en Bash
 
 We will build a terminal browser for the Hack The Box machines stored on the [htbmachines](https://htbmachines.github.io) page.
 
@@ -14,7 +14,7 @@ We will build a terminal browser for the Hack The Box machines stored on the [ht
 
 2. `cat bundle.js | js-beautify | sponge bundle.js`: beautify the `bundle.js` with the "js-beautify" tool.
 
-## 7 - Scripting en Bash
+## Scripting en Bash
 
 ### Martingala
 

@@ -1,6 +1,6 @@
 # Temario
 
-## 01 - Comandos básicos de Linux
+## Comandos básicos de Linux
 
 - `id [OPTION]... [USER]...`: print user and group information for each specified USER, or (when USER omitted) for the current process.
 
@@ -8,7 +8,7 @@
 
 - `/etc/groups`: defines the groups in the system. There is one entry per line, with the following format:
 
-    ```BASH
+    ```bash
       group_name:password:GID:user_list
     ```
 
@@ -23,11 +23,11 @@
 
     > These days, many people run some version of the shadow password suite, where `/etc/passwd` has an `x` in the password field, and the encrypted passwords are in `/etc/shadow`, which is readable by the superuser only.
 
-## 02 - Comandos básicos de Linux
+## Comandos básicos de Linux
 
 - `/etc/passwd`: describes user login accounts for the system. Each line of the file describes a single user, and contains seven colon-separated fields:
 
-    ```BASH
+    ```bash
       name:password:UID:GID:GECOS:directory:shell
     ```
 
@@ -54,11 +54,11 @@
 
 - `/etc/shells`: is a text file that contains the full pathnames of valid login shells.
 
-## 03 - Control del flujo stderr-stdout, operadores y procesos en segundo plano
+## Control del flujo stderr-stdout, operadores y procesos en segundo plano
 
 - `/etc/hots`: is a simple text file that associates IP addresses with hostnames, one line per IP address. For each host, a single line should be present with the following information:
 
-    ```BASH
+    ```bash
       IP_address canonical_hostname [aliases...]
     ```
 
@@ -96,7 +96,7 @@ Are a way of manipulating the input and output of commands in a shell script or 
 
 - `disown`: is used to remove jobs from the job table or keep them running even after you close the terminal window.
 
-## 04 - Descriptores de archivo
+## Descriptores de archivo
 
 Are used to represent open files, sockets, pipes, and other input and output streams. A file descriptor is a non-negative integer value that serves as a unique identifier for a file or input/output channel that a process has opened.
 
@@ -115,11 +115,11 @@ Are used to represent open files, sockets, pipes, and other input and output str
 
     - `exec 4[<>]&3-`: make file descriptor `4` a copy of file descriptor `3` and close file descriptor `3`.
 
-## 05 - Lectura e interpretación de permisos
+## Lectura e interpretación de permisos
 
 By executing `ls -l`, we can list the files using a long list format, which will show us the security of the files or directories. An example of this is:
 
-```BASH
+```bash
 drwxr-xr-x 2 Brandon Brandon 4096 Jan 27 15:01 temp
 ```
 
@@ -182,7 +182,7 @@ user    group   other
 
 - `a` (all): all three (owner, groups, others).
 
-## 07 - Asignación de permisos
+## Asignación de permisos
 
 To change the security permissions on files, we use `chmod`, which stands for "change mode", because the nine security characters are collectively called the security mode of the file.
 
@@ -208,7 +208,7 @@ To change the security permissions on files, we use `chmod`, which stands for "c
 
     - `-D`.
 
-    - `-D [options]`
+    - `-D [options]`.
 
 - `groupadd [OPTIONS] NEWGROUP`: create a new group.
 
@@ -222,7 +222,7 @@ To change the security permissions on files, we use `chmod`, which stands for "c
 
 - `useradd -m test`: create a user called "test" (with his respectively group) and create his home directory.
 
-## 9 - Notación octal de permisos
+## Notación octal de permisos
 
 | octal | binary | file mode |
 | :---: | :----: | :-------: |
@@ -237,7 +237,7 @@ To change the security permissions on files, we use `chmod`, which stands for "c
 
 Using the octal notations table instead of `r`, `w`, and `x`. Each digit octal notation can be used for either of the group `u`, `g`, or `o`. Executing `chmod ugo+rwx file.txt` is equal to `chmod 777 file.txt`.
 
-## 10 - Permisos especiales – Sticky Bit, 11 - Control de atributos de ficheros en Linux – Chattr y Lsattr y 12 - Permisos especiales – SUID y SGID
+## Permisos especiales – Sticky Bit, 11 - Control de atributos de ficheros en Linux – Chattr y Lsattr y 12 - Permisos especiales – SUID y SGID
 
 ### The setuid bit
 
@@ -265,7 +265,7 @@ When a directory has the sticky bit set, its files can be deleted or renamed onl
 
 - Remove the sticky bit: `chmod -t <file>` or `chmod --- <file>`.
 
-## 13 - Capabilities (privilegios especiales)
+## Capabilities (privilegios especiales)
 
 For the purpose of performing permission checks, traditional UNIX implementations distinguish two categories of processes: privileged processes (whose effective user ID is 0, referred to as superuser or root), and unprivileged processes (whose effective UID is nonzero). Starting with Linux 2.2, Linux divides the privileges traditionally associated with the superuser into distinct units, known as **capabilities**, which can be independently enabled and disabled.
 
@@ -307,7 +307,7 @@ Examples of usage:
 
 - `setcap "all+pe cap_chown-pe" file`: add all capabilities in the Permitted and Effective sets of an executable, except for the `CAP_CHOWN` capability.
 
-## 14 - Estructura de directorios del sistema
+## Estructura de directorios del sistema
 
 In Linux/Unix operating system, everything is a file; even directories are files, files are files, and devices like mouse, keyboard, printer, etc. are also files.
 
@@ -344,7 +344,7 @@ The Linux/Unix file system hierarchy base begins at the root, and everything sta
 |    `/srv`     |                                      Contains server-specific and server-related files.                                       |
 |    `/sys`     | A virtual file system for modern Linux distributions to store and allows modification of the devices connected to the system. |
 
-## 18 - Búsquedas a nivel de sistema
+## Búsquedas a nivel de sistema
 
 - `find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]`: search for files in a directory hierarchy.
 
@@ -386,7 +386,7 @@ Examples of usage:
 
 - `find / -name passwd 2>/dev/null | xargs -ls`: build and execute command lines from standard input.
 
-## 19 - Conexiones SSH
+## Conexiones SSH
 
 SSH (Secure Shell) is an access credential that is used in the SSH Protocol. In other words, it is a cryptographic network protocol that is used for transferring encrypted data over a network.
 
@@ -432,7 +432,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit1` is `NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`.
 
-## 20 - Lectura de archivos especiales
+## Lectura de archivos especiales
 
 ### Bandit level 2
 
@@ -440,7 +440,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit2` is `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`.
 
-## 21 - Lectura de archivos especiales
+## Lectura de archivos especiales
 
 ### Bandit level 3
 
@@ -448,7 +448,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit3` is `aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`.
 
-## 22 - Directorios y archivos ocultos
+## Directorios y archivos ocultos
 
 ### Bandit level 4
 
@@ -456,7 +456,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit4` is `2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`.
 
-## 23 - Detección del tipo y formato de archivos
+## Detección del tipo y formato de archivos
 
 ### Bandit level 5
 
@@ -468,7 +468,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit5` is `lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR`.
 
-## 24 - Búsquedas precisas de archivos
+## Búsquedas precisas de archivos
 
 ### Bandit level 6
 
@@ -480,7 +480,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit6` is `P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU`.
 
-## 25 - Búsquedas precisas de archivos
+## Búsquedas precisas de archivos
 
 ### Bandit level 7
 
@@ -492,7 +492,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit7` is `z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S`.
 
-## 26 - Métodos de filtrado de datos
+## Métodos de filtrado de datos
 
 ### Bandit level 8
 
@@ -500,21 +500,21 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit8` is `TESKZC0XvTetK0S9xNwm25STk5iWrBvP`.
 
-## 27 - Métodos de filtrado de datos
+## Métodos de filtrado de datos
 
 - `sort`: write sorted concatenation of all FILE(s) to standard output.
 
     > With no FILE, or when FILE is `-`, read standard input.
     - `[OPTION]... [FILE]...`.
 
-    - `[OPTION]... --files0-from=F`
+    - `[OPTION]... --files0-from=F`.
 
 - `uniq [OPTION]... [INPUT [OUTPUT]]`: filter adjacent matching lines from INPUT (or standard input), writing to OUTPUT (or standard output).
 
     > With no options, matching lines are merged into the first occurrence.
     - `-u` or `--unique`: only print unique lines.
 
-## 28 - Métodos de filtrado de datos
+## Métodos de filtrado de datos
 
 ### Bandit level 9
 
@@ -522,7 +522,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit9` is `EN632PlfYiZbn3PhVK3XOGSlNInNE00t`.
 
-## 29 - Interpretación de archivos binarios
+## Interpretación de archivos binarios
 
 - `string`: print the sequences of printable characters in files.
     - `[-afovV] [-min-len]`.
@@ -551,7 +551,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit10` is `G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s`.
 
-## 30 - Codificación y decodificación en base64
+## Codificación y decodificación en base64
 
 - `base64 [OPTION]... [FILE]`: encode or decode FILE, or standard input, to standard output.
 
@@ -565,7 +565,7 @@ It is an encoding scheme that converts binary data into text format so that enco
 
     > The password for `bandit11` is `6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM`.
 
-## 31 - Cifrado césar y uso de `tr` para la traducción de caracteres
+## Cifrado césar y uso de `tr` para la traducción de caracteres
 
 ![`tr` description](01-areas/systems_engineering/linux/useful_commands_for_creating_scripts.md#tr)
 
@@ -577,7 +577,7 @@ The entire alphabet is `abcdefghijklmnopqrstuvwxyz` translates into `nopqrstuvwx
 
     > The password for `bandit12` is `JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv`.
 
-## 32 - Creamos un descompresor recursivo automático de archivos en Bash
+## Creamos un descompresor recursivo automático de archivos en Bash
 
 - `tee [OPTION]... [FILE]...`: read from standard input and write to standard output and files.
 
@@ -598,7 +598,7 @@ The entire alphabet is `abcdefghijklmnopqrstuvwxyz` translates into `nopqrstuvwx
 
 To automate the decompression of files, we will create a script.
 
-```BASH
+```bash
 #!/bin/bash
 
 function ctrl_c() {
@@ -624,7 +624,7 @@ rm {data2,data6}
 
 > The password for `bandit13` is `wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw`.
 
-## 33 - Manejo de pares de claves y conexiones SSH
+## Manejo de pares de claves y conexiones SSH
 
 After creating an ssh key with the command `ssh-keygen`.
 
@@ -634,7 +634,7 @@ After creating an ssh key with the command `ssh-keygen`.
 
 1. Save the public key in the authorized keys file (`authorized_keys`) and share the private key.
 
-2. Share only the private key after running `ssh-copy-id -i <private key> <user>@<hostname>`.
+2. Share only the private key after running `ssh-copy-id -i <private-key> <user>@<hostname>`.
 
 ### Bandit level 14
 
@@ -644,7 +644,7 @@ After creating an ssh key with the command `ssh-keygen`.
 
     > The password for `bandit14` is `fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq`.
 
-## 34 - Uso de netcat para realizar conexiones
+## Uso de netcat para realizar conexiones
 
 - `nc [OPTION]...`: is used for just about anything under the sun involving TCP, UDP, or UNIX-domain sockets. It can open TCP connections, send UDP packets, listen on arbitrary TCP and UDP ports, do port scanning, and deal with both IPv4 and IPv6.
     - `[destination] [port]`.
@@ -676,7 +676,7 @@ After creating an ssh key with the command `ssh-keygen`.
 
     > The password for `bandit15` is `jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt`.
 
-## 35 - Uso de conexiones encriptadas
+## Uso de conexiones encriptadas
 
 ### OpenSSL
 
@@ -691,7 +691,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
     > The password for `bandit16` is `JQttfApK4SeyHwDlI9SXGR50qclOAil1`.
 
-## 36 - Creando nuestros propios escáneres en Bash
+## Creando nuestros propios escáneres en Bash
 
 - `mktemp`: make a unique temporary filename.
 
@@ -701,7 +701,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 2. Write a scan scrip in the temporary file.
 
-    ```BASH
+    ```bash
     #!/bin/bash
 
     for port in $(seq 31000 32000); do
@@ -709,19 +709,19 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
     done;
     ```
 
-3. `<temporary file>`: execute the script.
+3. `<temporary-file>`: execute the script.
 
 4. `openssl s_client -connect localhost:31790`: returns a private RSA key if the `bandit16` password is provided.
 
 5. In the previous temporary file, paste the private RSA key content.
 
-6. `ssh -i <temporary file> bandit16@localhost -p 2220`: uses the private RSA key to establish an SSH connection to the `bandit16` on the localhost via SSH on port 2220.
+6. `ssh -i <temporary-file> bandit16@localhost -p 2220`: uses the private RSA key to establish an SSH connection to the `bandit16` on the localhost via SSH on port 2220.
 
 7. `cat /etc/bandit_pass/bandit17`: displays the password for `bandit17`.
 
     > The password for `bandit17` is `VwOSWtCA7lRKkTfbr2IDh6awj9RNZM5e`.
 
-## 37 - Detección de diferencias entre archivos
+## Detección de diferencias entre archivos
 
 - `diff [OPTION]... FILES`: compare files line by line.
 
@@ -731,7 +731,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
     > The password for `bandit18` is `hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg`.
 
-## 38 - Ejecución de comandos por SSH
+## Ejecución de comandos por SSH
 
 ### Bandit level 19
 
@@ -739,7 +739,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
     > The password for `bandit19` is `awhqfNnAbc1naukrpqDYcF95h7HoMTrC`.
 
-## 39 - Abusando de privilegio SUID para migrar de usuario
+## Abusando de privilegio SUID para migrar de usuario
 
 ### Bandit level 20
 
@@ -747,7 +747,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
     > The password for `bandit20` is `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`.
 
-## 40 - Jugando con conexiones
+## Jugando con conexiones
 
 ### Bandit level 21
 
@@ -764,7 +764,7 @@ Having two terminals, in the first one we will have `nc` listening to port 4646 
 
 > The password for `bandit21` is `NvEJF7oVjkddltPSrdKEFOllh9V1IBcq`.
 
-## 41 - Abusando de tareas Cron
+## Abusando de tareas Cron
 
 ### Cron
 
@@ -807,7 +807,7 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit22` is `WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff`.
 
-## 42 - Abusando de tareas Cron
+## Abusando de tareas Cron
 
 - `md5sum [OPTION]... [FILE]...`: compute and check the MD5 message digest.
     - `-t`: Read in text mode.
@@ -826,7 +826,7 @@ Based on the values specified for each of the components above, complex schedule
 
 > The password for `bandit23` is `QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G`.
 
-## 43 - Abusando de tareas Cron
+## Abusando de tareas Cron
 
 - `watch [options] command`: execute a program periodically, showing output full screen.
 
@@ -836,7 +836,7 @@ Based on the values specified for each of the components above, complex schedule
 
 2. `cat /usr/bin/cronjob_bandit24.sh`: displays the content of the shell script (`cronjob_bandit24.sh`) referenced in the cron job configuration.
 
-    ```BASH
+    ```bash
     #!/bin/bash
 
     # Get the current username
@@ -873,24 +873,24 @@ Based on the values specified for each of the components above, complex schedule
 
 3. `chmod o+w $(mktemp -d)`: creates a temporary directory and grants write permissions to others on it.
 
-4. `touch <temp dir>/script && chmod u+x <temp dir>/script`: creates an executable script in the temporary directory.
+4. `touch <temp-dir>/script && chmod u+x <temp-dir>/script`: creates an executable script in the temporary directory.
 
 5. Obtain the password through the execution of the `script` as `bandit24`.
 
-    ```BASH
+    ```bash
     #!/bin/bash
 
     cp /etc/bandit_pass/bandit24 /tmp/tmp.3qnXYcGAz3
     chmod o+r /tmp/tmp.3qnXYcGAz3/bandit24
     ```
 
-6. `cp <temp dir>/script /var/spool/bandit24/foo`: copies the script to the directory where the cron job executes.
+6. `cp <temp-dir>/script /var/spool/bandit24/foo`: copies the script to the directory where the cron job executes.
 
-7. `cat <temp dir>/bandit24`: displays the content of the temporary file containing the password for `bandit24`.
+7. `cat <temp-dir>/bandit24`: displays the content of the temporary file containing the password for `bandit24`.
 
     > The password for `bandit24` is `VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar`.
 
-## 44 - Fuerza bruta aplicada a conexiones
+## Fuerza bruta aplicada a conexiones
 
 ### Bandit level 25
 
@@ -899,7 +899,7 @@ Based on the values specified for each of the components above, complex schedule
 2. Brute force approach.
     - Direct.
 
-        ```BASH
+        ```bash
           #!/bin/bash
 
           for pin in {0000..9999}; do
@@ -916,7 +916,7 @@ Based on the values specified for each of the components above, complex schedule
 
     - Indirect.
 
-        ```BASH
+        ```bash
           #!/bin/bash
 
           if [ -f combinations.txt ]; then
@@ -948,13 +948,13 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit25` is `p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d`.
 
-## 45 - Escapando del contexto de un comando
+## Escapando del contexto de un comando
 
 ### Bandit level 26
 
 1. `cat /usr/bin/showtext`: displays the content of `/usr/bin/showtext`.
 
-    ```SH
+    ```bash
     #!/bin/sh
 
     export TERM=linux
@@ -983,7 +983,7 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit27` is `YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS`.
 
-## 46 - Operando con proyectos de Github
+## Operando con proyectos de Github
 
 ### Bandit level 28
 
@@ -995,7 +995,7 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit28` is `AVanL161y9rsbcJIsFHuw35rjaOM19nR`.
 
-## 47 - Operando con proyectos de Github
+## Operando con proyectos de Github
 
 ### Bandit level 29
 
@@ -1005,11 +1005,11 @@ Based on the values specified for each of the components above, complex schedule
 
 3. `git log --oneline`: displays a concise history of commits.
 
-4. `git show <leak info commit id>`: displays the content of the changes made in the info leak commit.
+4. `git show <leak-info-commit-id>`: displays the content of the changes made in the info leak commit.
 
     > The password for `bandit29` is `tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S`.
 
-## 48 - Operando con proyectos de Github
+## Operando con proyectos de Github
 
 ### Bandit level 30
 
@@ -1025,7 +1025,7 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit30` is `xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS`.
 
-## 49 - Operando con proyectos de Github
+## Operando con proyectos de Github
 
 ### Bandit level 31
 
@@ -1039,7 +1039,7 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit31` is `OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt`.
 
-## 50 - Operando con proyectos de Github
+## Operando con proyectos de Github
 
 ### Bandit level 32
 
@@ -1066,7 +1066,7 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit32` is `rmCBvG56y58BXzv98yZGdO7ATVL5dW8y`.
 
-## 51 - Argumentos posicionales en Bash
+## Argumentos posicionales en Bash
 
 ### Bandit level 33
 

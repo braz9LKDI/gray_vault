@@ -28,7 +28,7 @@ This is called a **shell prompt**, and it will appear whenever the shell is read
 
 - `cal`: display the calendar of the current month.
 
-- `uptime`: displays how long the system has been run­ning and the average number of processes running over various periods of time.
+- `uptime`: displays how long the system has been running and the average number of processes running over various periods of time.
 
 - `df`: display the current amount of free space on our disk drives.
 

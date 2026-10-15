@@ -4,7 +4,7 @@ reviewed_on: "2025-09-26"
 
 # Bugs and errors
 
-> "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it." - Brian Kernighan and P.J. Plauger, The Elements of Programming Style.
+> "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it." - Brian Kernighan and P.J. Plauger, The Elements of Programming Style.
 
 If a program is crystallized thought, we can roughly categorize bugs into those caused by the thoughts being confused and those caused by mistakes introduced while converting a thought to code. The former type is generally harder to diagnose and fix than the latter.
 

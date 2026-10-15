@@ -18,7 +18,7 @@ Given a boolean formula in Conjunctive Normal Form (CNF), the goal is to determi
     c_1 \pand c_2 \pand \dots c_m
     $$
 
-- Each clause $c_i$ is a disjunction (OR) of one or more **literals**. A literal is a variable $x_j$ or its negation $\lnot x_j$.
+- Each clause $c_i$ is a disjunction (OR) of one or more literals. A literal is a variable $x_j$ or its negation $\lnot x_j$.
 
 ## Output
 

@@ -12,7 +12,7 @@ CachyOS also provides a script to automate this process. However, that script re
 
 Systems using AMD Zen 4 or Zen 5 CPUs may benefit from the CachyOS `znver4` repositories, which provide precompiled packages optimized for those architectures.
 
-1. Import the CachyOS signing key
+1. Import the CachyOS signing key.
 
     ```bash
     sudo pacman-key --recv-keys F3B607488DB35A47 --keyserver keyserver.ubuntu.com
@@ -40,7 +40,7 @@ Systems using AMD Zen 4 or Zen 5 CPUs may benefit from the CachyOS `znver4` repo
 
     Add the following entries above the Arch repositories, such as `[core]`, `[extra]` and `[multilib]`:
 
-    ```txt
+    ```text
     # CachyOS Zen 4/5 optimized repositories
     [cachyos-znver4]
     Include = /etc/pacman.d/cachyos-v4-mirrorlist
@@ -62,7 +62,7 @@ After the CachyOS repositories have been configured, the CachyOS kernel and head
 
 A new bootloader entry should then be created. The following example assumes `systemd-boot` is being used with an EFI system partition. Create a new entry under `/boot/loader/entries/`:
 
-```txt
+```text
 title   Arch Linux (CachyOS kernel)
 linux   /vmlinuz-linux-cachyos
 initrd  /amd-ucode.img

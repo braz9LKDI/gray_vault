@@ -6,9 +6,9 @@ reviewed_on: "2025-07-25"
 
 So why compile software?
 
-1. Availability: despite the number of precompiled programs in distribution reposi­tories, some distributions may not include all the desired applications. In this case, the only way to get the desired program is to compile it from source.
+1. Availability: despite the number of precompiled programs in distribution repositories, some distributions may not include all the desired applications. In this case, the only way to get the desired program is to compile it from source.
 
-2. Timeliness: while some distributions specialize in cutting-edge versions of pro­grams, many do not. This means that to have the latest version of a program, com­piling is necessary.
+2. Timeliness: while some distributions specialize in cutting-edge versions of programs, many do not. This means that to have the latest version of a program, compiling is necessary.
 
 - `make`: utility to maintain programs.
 
@@ -49,7 +49,7 @@ Most programs build with a simple, two-command sequence.
 make
 ```
 
-`configure` is a shell script that is supplied with the source tree. Its job is to analyze the **build environment**. Most source code is designed to be portable. That is, it is designed to build on more than one kind of Unix-like system. But to do that, the source code may need to undergo slight adjustments during the build to accommodate differ­ences between systems. `configure` also checks to see that necessary external tools and components are installed.
+`configure` is a shell script that is supplied with the source tree. Its job is to analyze the **build environment**. Most source code is designed to be portable. That is, it is designed to build on more than one kind of Unix-like system. But to do that, the source code may need to undergo slight adjustments during the build to accommodate differences between systems. `configure` also checks to see that necessary external tools and components are installed.
 
 `make` takes as input a **makefile** (which is normally named "Makefile") which describes the relationships and dependencies among the components that comprise the finished program.
 

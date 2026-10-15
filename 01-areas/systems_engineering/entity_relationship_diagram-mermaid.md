@@ -11,7 +11,7 @@ Each entity is defined by its name, typically in uppercase. It can have attribut
 Relationships are defined using the following structure:
 
 ```text
-<first-entity> [<relationship> <second entity> : <relationship label>]
+<first-entity> [<relationship> <second-entity> : <relationship-label>]
 ```
 
 Relationships can have the following types of cardinality:
@@ -28,7 +28,7 @@ Solid lines indicate identifying relationships (`|--|`), while dashed lines indi
 
 ## Example
 
-```MERMAID
+```mermaid
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ LINE-ITEM : contains

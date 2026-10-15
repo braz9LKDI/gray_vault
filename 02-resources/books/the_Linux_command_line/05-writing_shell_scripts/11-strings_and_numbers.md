@@ -171,7 +171,7 @@ Note that there are also corresponding assignment operators for all but bitwise 
 |             `!=`             |                  |
 |             `&&`             |                  |
 |             \|\|             |                  |
-| `<expr_1>?<expr_2>:<expr_3>` | ternary operator |
+| `<expr-1>?<expr-2>:<expr-3>` | ternary operator |
 
 Performing assignment within the expressions of the ternary operator is not straightforward, those expressions must be surrounded by parentheses.
 

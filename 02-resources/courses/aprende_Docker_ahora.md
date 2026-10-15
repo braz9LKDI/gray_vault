@@ -11,7 +11,9 @@ sources:
 ## Permite
 
 - Desarrolla en equipo con un ambiente controlado (lo que genera menos bugs).
+
 - Instalar dependencias rápidamente.
+
 - Hacer despliegues de una forma simple.
 
 ## ¿Qué es un contenedor?
@@ -30,8 +32,9 @@ Las personas que trabajaban en un proyecto usaban sus propios computadores, lo q
 
 Es un empaquetado que contiene:
 
-- Dependencias
-- Código
+- Dependencias.
+
+- Código.
 
 Finalmente, esto es lo que se comparte
 
@@ -49,15 +52,17 @@ Docker usa el kernel del sistema operativo en el que se está ejecutando, lo que
 
 Existen tres tipos de virtualización:
 
-- Para virtualización (alto)
-- Virtualización parcial (medio)
-- Virtualización completa (ninguno)
+- Para virtualización (alto).
+
+- Virtualización parcial (medio).
+
+- Virtualización completa (ninguno).
 
 Haciendo referencia a como el hardware del **anfitrión** se conecta con el del **cliente**.
 
 ## ¿Qué es Docker Desktop?
 
-- Una máquina virtual (corre Linux y ejecuta **contenedores**).
+- Una máquina virtual (corre Linux y ejecuta contenedores).
 
 - Permite acceder al sistema de archivos y a la red (tanto interna como externa).
 
@@ -76,30 +81,32 @@ Entramos a la [página](https://www.docker.com/) y seleccionamos la version corr
 Debemos asegurarnos de que Docker esté ejecutándose.
 
 - `docker images`: muestra las imágenes que hemos descargado.
+
 - `docker pull <image>:<version>`: descargar una imagen.
+
 - `docker image rm <image>:<version>`: eliminar una imagen.
 
 ### Contadores
 
 - `docker create <image>`: crear un contenedor.
 
-    > `--name <container name>`: asignarle un nombre al contenedor.
+    > `--name <container-name>`: asignarle un nombre al contenedor.
 
-- `docker start <container ID or name>`: ejecutar un contenedor.
+- `docker start <container-id-or-name>`: ejecutar un contenedor.
 
 - `docker ps`: ver la lista de contenedores ejecutándose.
 
     > Para verlos todos (los que están y no están corriendo) agregamos el modificador `-a`.
 
-- `docker stop <container ID or name>`: detener la ejecución de un contenedor.
+- `docker stop <container-id-or-name>`: detener la ejecución de un contenedor.
 
-- `docker rm <container ID or name>`: eliminar un contenedor.
+- `docker rm <container-id-or-name>`: eliminar un contenedor.
 
-- `docker logs <container ID or name>`: ver los **logs** de un contenedor (después de hacerlo nos devuelve el prompt).
+- `docker logs <container-id-or-name>`: ver los logs de un contenedor (después de hacerlo nos devuelve el prompt).
 
     > Con el modificador `--follow` nos quedamos a la escucha.
 
-- `docker run <container ID or name>`: si el contenedor existe, ejecutará el existente, en el caso contrario, descargará la imagen, creará un contenedor con la imagen descargada y lo ejecutará.
+- `docker run <container-id-or-name>`: si el contenedor existe, ejecutará el existente, en el caso contrario, descargará la imagen, creará un contenedor con la imagen descargada y lo ejecutará.
 
     > Con el modificador `-d` (detached) hacemos que nos devuelva el prompt (no se quede a la escucha de logs).
 
@@ -111,7 +118,7 @@ Debemos asegurarnos de que Docker esté ejecutándose.
 
 ## Port mapping
 
-Consiste en asignar puertos de nuestra máquina (**anfitrión**) a los puertos de los contenedores (**huéspedes**). Esto se hace con el siguiente modificador en la creación del contenedor `-p <host port>:<guest port>` o `-p <guest port>` (para dejar que Docker decida), los "enlaces" que hagamos se verán cuando listemos los contenedores.
+Consiste en asignar puertos de nuestra máquina (**anfitrión**) a los puertos de los contenedores (**huéspedes**). Esto se hace con el siguiente modificador en la creación del contenedor `-p <host-port>:<guest-port>` o `-p <guest-port>` (para dejar que Docker decida), los "enlaces" que hagamos se verán cuando listemos los contenedores.
 
 ## Configuración de contenedores
 
@@ -124,25 +131,26 @@ La documentación de los contenedores se encuentra en su respectiva página dent
     > `-e` es para pasar variables de entorno.
 
 2. `docker ps -a`.
+
 3. `docker start monguito`.
 
 ### Dockerfile
 
 Con el propósito de personalizar el despliegue de nuestros contenedores está el archivo `Dockerfile`, su estructura es la siguiente:
 
-```Dockerfile
-FROM <image>:<image version or label>
+```dockerfile
+FROM <image>:<image-version-or-label>
 
 RUN mkdir -p /home/app  ## Esta ruta se creara dentro del contenedor
 
-COPY <host directory> ## Estamos copiando el código fuente (del host) al contenedor
+COPY <host-directory> ## Estamos copiando el código fuente (del host) al contenedor
 
 CMD [<command>, <argument>]
 ```
 
 #### Ejemplo
 
-```Dockerfile
+```dockerfile
 FROM node:18
 
 RUN mkdir -p /home/app
@@ -162,13 +170,13 @@ Llamamos red a un conjunto de contenedores que están comunicados entre sí.
 
 - `docker network ls`: listar las redes.
 
-- `docker network create <network name>`: crear una red con el nombre especificado.
+- `docker network create <network-name>`: crear una red con el nombre especificado.
 
-- `docker network rm <network name>`: eliminar una red con el nombre especificado.
+- `docker network rm <network-name>`: eliminar una red con el nombre especificado.
 
-- `docker build -t <image name>:<image version or label> <Dockerfile path>` crear una red con base a un archivo `Dockerfile`.
+- `docker build -t <image-name>:<image-version-or-label> <dockerfile-path>` crear una red con base a un archivo `Dockerfile`.
 
-- Para crear un contenedor vinculado a una red en específico, hacemos uso del comando normal con el modificador `--network <network name>`
+- Para crear un contenedor vinculado a una red en específico, hacemos uso del comando normal con el modificador `--network <network-name>`.
 
 ### Ejemplo
 
@@ -178,7 +186,7 @@ Con el fin de tener una [aplicación](https://github.com/nschurmann/mongoapp-cur
 
 2. Cambiar la ruta donde hacemos la conexión a la base de datos.
 
-    ```js
+    ```javascript
     mongoose.connect(
         "mongodb://nico:password@localhost:27017/miapp?authSource=admin",
     );
@@ -188,11 +196,11 @@ Con el fin de tener una [aplicación](https://github.com/nschurmann/mongoapp-cur
     );
     ```
 
-3. Construimos la imagen para nuestra aplicación: `docker built -t miapp:1 .`
+3. Construimos la imagen para nuestra aplicación: `docker built -t miapp:1 .`.
 
     > El `.` hace referencia a la ruta donde esta el **Dockerfile**.
 
-4. Crear los contenedores: `docker create docker create -p 27017:27017 --network mired --name monguito -e MONGO_INITDB_ROOT_USERNAME=nico -e MONGO_INITDB_ROOT_PASSWORD=password mongo` y `docker create -p 3000:3000 --name chanchito --network mired myapp:1`
+4. Crear los contenedores: `docker create docker create -p 27017:27017 --network mired --name monguito -e MONGO_INITDB_ROOT_USERNAME=nico -e MONGO_INITDB_ROOT_PASSWORD=password mongo` y `docker create -p 3000:3000 --name chanchito --network mired myapp:1`.
 
 > Después de hacer estos pasos deberíamos tener conexión a la aplicación a traves de nuestro puerto 3000.
 
@@ -200,25 +208,25 @@ Con el fin de tener una [aplicación](https://github.com/nschurmann/mongoapp-cur
 
 Es una herramienta que nos facilita la tarea de crear un contenedor, es un archivo llamado `docker-compose.yml` y tiene la siguiente estructura:
 
-```docker-compose
+```yaml
 version: "<version>"
 services:
-    <container name>:
-        build: <dockerfile directory>
+    <container-name>:
+        build: <dockerfile-directory>
         ports:
-            - "<host port>:<guest port>"
+            - "<host-port>:<guest-port>"
             ..
         links:
-            - <container name>
+            - <container-name>
             ...
         environment:
-            - <environment configuration>
+            - <environment-configuration>
             ...
 ```
 
 ### Ejemplo
 
-```docker-compose
+```yaml
 version: "3.9"
 services:
     chanchito:
@@ -256,7 +264,7 @@ Responde a la necesidad de conservar información y manifestar cambios de nuestr
 
 ### Ejemplo
 
-```docker-compose
+```yaml
 version: "3.9"
 services:
     chanchito:
@@ -273,7 +281,7 @@ services:
             - MONGO_INITDB_ROOT_USERNAME=nico
             - MONGO_INITDB_ROOT_PASSWORD=password
         volumes:
-        - mongo-data:/data/db
+            - mongo-data:/data/db
 volumes:
     mongo-data:
 ```
@@ -284,7 +292,7 @@ Consiste en tener varios **Dockerfile** según nuestro propósito.
 
 ### Ejemplo (desarrollo)
 
-```Dockerfile
+```dockerfile
 FROM node:18
 
 RUN npm -i -g nodemon
@@ -297,7 +305,7 @@ EXPOSE 3000
 CMD ["nodemon", "index.js"]
 ```
 
-```docker-compose
+```yaml
 version: "3.9"
 services:
     chanchito:
@@ -318,7 +326,7 @@ services:
             - MONGO_INITDB_ROOT_USERNAME=nico
             - MONGO_INITDB_ROOT_PASSWORD=password
         volumes:
-        - mongo-data:/data/db
+            - mongo-data:/data/db
 volumes:
     mongo-data:
 ```

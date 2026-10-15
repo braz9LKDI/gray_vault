@@ -30,7 +30,7 @@ Son un par de números algebraicos que tienen el mismo valor absoluto, pero difi
 
 - Número racional: puede expresarse como el cociente de dos enteros.
 
-- Número irracional: **no** puede expresarse como el cociente de dos enteros.
+- Número irracional: no puede expresarse como el cociente de dos enteros.
 
 Obviamente, el significado semántico de los vocablos racional e irracional no se acomoda en manera alguna a los números aquí estudiados. Todo se debe a un error de traducción. En efecto, Euclides al clasificar sistemáticamente los números los dividió en dos grandes grupos que llamo **symmetros** (con medida) y **asymmetros** (sin medida) respectivamente. Y para señalar el hecho de que los números asymmetros no tenían expresión, los designo con la voz **alogos**. Gerardo de Cremona (1114 - 1187) al traducir un comentario árabe sobre Euclides, tomo los vocablos logos y alogos en su acepción de **razón** y no la de **palabra**, como quiso Euclides, y empleo erróneamente los términos **rationalis** e **irrationalis** para designar unos y otros. Este error se difundió durante toda la edad media hasta llegar a nosotros.
 
@@ -173,11 +173,13 @@ Llamamos como en las igualdades **primer miembro** a la expresión que está a l
 #### Propiedades de las desigualdades
 
 - La desigualdad no varía si a los dos miembros de la desigualdad se:
+
     - suma o resta una misma cantidad.
 
     - multiplica o divide por una misma cantidad positiva.
 
 - La desigualdad cambia de sentido si a los dos miembros de la desigualdad se:
+
     - multiplica o divide por una misma cantidad negativa.
 
     - cambian por sus inversos.
@@ -188,13 +190,13 @@ Llamamos como en las igualdades **primer miembro** a la expresión que está a l
 
 - Si ambos miembros de una desigualdad, son negativos y se elevan a una misma potencia par positiva, la desigualdad cambia de signo.
 
-- Si los miembros de una desigualdad tienen diferente signo y se elevan a una misma potencia par positiva, la desigualdad **puede** cambiar de signo.
+- Si los miembros de una desigualdad tienen diferente signo y se elevan a una misma potencia par positiva, la desigualdad puede cambiar de signo.
 
 - Si los miembros de una desigualdad son positivos y se les extrae una misma raíz positiva, la desigualdad permanece.
 
 - Si dos o más desigualdades de igual signo se multiplican o suman miembro a miembro, resulta una desigualdad del mismo signo.
 
-- Al restar o dividir miembro a miembro dos desigualdades de igual signo **puede** resultar una igualdad o una desigualdad de diferente signo.
+- Al restar o dividir miembro a miembro dos desigualdades de igual signo puede resultar una igualdad o una desigualdad de diferente signo.
 
 ### Inecuaciones
 
@@ -1415,7 +1417,7 @@ $$
 El segundo miembro de la igualdad anterior es la suma de una progresión geométrica cuya razón es $(1 + r)$.
 
 $$
-C = \frac{ a (1 + r)^t (1 + r) - a (1 + r) }{ r } = \frac{ a((1 + r)^{ t + 1 } - (1 + r)) }{ r }  \\[10 pt]
+C = \frac{ a (1 + r)^t (1 + r) - a (1 + r) }{ r } = \frac{ a((1 + r)^{ t + 1 } - (1 + r)) }{ r }  \\[10 pt]
 
 a = \frac{ r C }{ (1 + r)^{ t + 1 } - (1 + r) }
 $$

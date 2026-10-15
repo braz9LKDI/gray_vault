@@ -32,7 +32,7 @@ $$
 
 ## C++ implementation
 
-```c++
+```cpp
 #include <vector>
 
 

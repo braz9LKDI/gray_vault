@@ -4,7 +4,7 @@ reviewed_on: "2025-10-02"
 
 # Modules
 
-> "Write code that is easy to delete, not easy to extend." - Tef, Programming is Terrible.
+> "Write code that is easy to delete, not easy to extend." - Tef, Programming is Terrible.
 
 ## Modular programs
 

@@ -169,7 +169,7 @@ xlogo
 
 # ----------------------------------------------------------------------- #
 
-bg %1 # Resume the pro­gram's execution in the background
+bg %1 # Resume the program's execution in the background
 
 # [1]+ xlogo &
 ```
@@ -184,7 +184,7 @@ Why would we want to launch a graphical program from the command line? There are
 
 ### Changing process priority
 
-Niceness can be ad­justed with the `nice` and `renice`. It is important to remember that only the superuser may increase the priority of a process and that regular users may only decrease the priority of processes that they own.
+Niceness can be adjusted with the `nice` and `renice`. It is important to remember that only the superuser may increase the priority of a process and that regular users may only decrease the priority of processes that they own.
 
 `nice` launches a process with a specified niceness. Niceness adjustments are expressed from $-20$ (the most favorable) to 19 (the least favorable) with a default of value of zero (no adjustment).
 
@@ -249,7 +249,7 @@ If no signal is specified on the command line, then the TERM (terminate) signal 
 
 ...Note that signals may be specified either by number or by name, including the name prefixed with the letters `SIG`.
 
-Processes, like files, have owners, and you must be the owner of a process (or the supe­ruser) to send it signals with `kill`.
+Processes, like files, have owners, and you must be the owner of a process (or the superuser) to send it signals with `kill`.
 
 ```bash
 kill -SIGINT 28401

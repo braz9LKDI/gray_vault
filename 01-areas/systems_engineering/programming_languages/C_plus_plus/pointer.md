@@ -12,7 +12,7 @@ A pointer is a type of variable for storing a memory address. It enables program
 
 ## Syntax
 
-```c++
+```cpp
 datatype* var_name;
 ```
 
@@ -22,7 +22,7 @@ Consider a two-dimensional array `A[i][j]`. A pointer notation can be used to ac
 
 ### Usage example (advanced pointer notation)
 
-```c++
+```cpp
 int A[2][3]  =  {
     { 16, 18, 20 },
     { 25, 26, 27 }
@@ -68,7 +68,7 @@ for (int i = 0; i < 2; i++) {
 
 Because a pointer is a variable, you can create a pointer to a pointer, forming a chain of pointers.
 
-```c++
+```cpp
 char a;
 char* b;
 char** c;
@@ -83,7 +83,7 @@ Void pointers are pointers that point to a value that has no type (and thus also
 
 ### Usage example (Void pointers)
 
-```c++
+```cpp
 void increase(void* data, int ptr_size) {
     if (ptr_size == sizeof(char)) {
         char* ptr_char;

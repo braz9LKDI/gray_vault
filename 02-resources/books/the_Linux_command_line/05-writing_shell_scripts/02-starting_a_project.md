@@ -6,7 +6,7 @@ reviewed_on: "2025-07-28"
 
 ## First stage: minimal document
 
-When writing programs, it is always a good idea to strive for simplicity and clarity. Main­tenance is easier when a program is easy to read and understand, not to mention that it can make the program easier to write by reducing the amount of typing.
+When writing programs, it is always a good idea to strive for simplicity and clarity. Maintenance is easier when a program is easy to read and understand, not to mention that it can make the program easier to write by reducing the amount of typing.
 
 ## Variables and constants
 

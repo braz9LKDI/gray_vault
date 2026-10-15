@@ -54,7 +54,7 @@ reviewed_on: "2025-07-16"
 |  `-f`  |        `--ignore-case`         | make sorting case-insensitive.                                                                     |
 |  `-n`  |        `--numeric-sort`        | perform sorting base on the numeric evaluation of a string.                                        |
 |  `-r`  |          `--reverse`           |                                                                                                    |
-|  `-k`  | `--key=<field_1>,[,<field_2>]` | sort base on a key field located from `<field_1>` to `<field_2>`.                                  |
+|  `-k`  | `--key=<field-1>,[,<field-2>]` | sort base on a key field located from `<field-1>` to `<field-2>`.                                  |
 |  `-m`  |           `--merge`            | treat each argument as the name of a presorted file.                                               |
 |  `-o`  |     `--output=<filename>`      | send sorted output to `<filename>` rather than standard output.                                    |
 |  `-t`  |   `--field-separator=<char>`   | by default fields are separated by spaces or tabs.                                                 |
@@ -238,11 +238,11 @@ e" > file_2.txt
 
 In the default output format, each group of changes is preceded by a **change command** in the form of `<range><operation><range>` to describe the positions and types of changes required to convert the first file to the second file.
 
-|    change     | description                                                                                                        |
-| :-----------: | :----------------------------------------------------------------------------------------------------------------- |
-| `<r_1>a<r_2>` | append the lines at the position _r_2_ in the second file to the position _r_1_ in the first file.                 |
-| `<r_1>c<r_2>` | change (replace) the lines at position _r_1_ with the lines at the position _r_2_ in the second file.              |
-| `<r_1>d<r_2>` | delete the lines in the first file at position _r_1_, which would have appeared at range _r_2_ in the second file. |
+|    change     | description                                                                                                                |
+| :-----------: | :------------------------------------------------------------------------------------------------------------------------- |
+| `<r-1>a<r-2>` | append the lines at the position _\<r-2\>_ in the second file to the position _\<r-1\>_ in the first file.                 |
+| `<r-1>c<r-2>` | change (replace) the lines at position _\<r-1\>_ with the lines at the position _\<r-2\>_ in the second file.              |
+| `<r-1>d<r-2>` | delete the lines in the first file at position _\<r-1\>_, which would have appeared at range _\<r-2\>_ in the second file. |
 
 When using **context** format (`-c`), we will se this:
 
@@ -363,24 +363,24 @@ Most commands in `sed` may be preceded by an **address**, which specifies which 
 |        `<n>`        | a line number where _n_ is a positive integer.                                                                                                                                                                              |
 |         `$`         | the last line.                                                                                                                                                                                                              |
 |    `/<regexp>/`     | lines matching a POSIX basic regular expression. Optionally, the regular expression may be delimited by and alternate character, by specifying the expression with `\<c><regexp><c>`, where _c_ is the alternate character. |
-| `<addr_1>,<addr_2>` | a range of line from _addr_1_ to _addr_2_, inclusive.                                                                                                                                                                       |
+| `<addr-1>,<addr-2>` | a range of line from _\<addr-1\>_ to _\<addr-2\>_, inclusive.                                                                                                                                                               |
 |  `<first>~<step>`   | match the line represented by the number _first_, then each subsequent line at _step_ intervals.                                                                                                                            |
-|   `<addr_1>,+<n>`   | math _addr_1_ an the following _n_ lines.                                                                                                                                                                                   |
+|   `<addr-1>,+<n>`   | math _\<addr-1\>_ an the following _n_ lines.                                                                                                                                                                               |
 |      `<addr>!`      | match all lines except _addr_.                                                                                                                                                                                              |
 
 `-n` (no auto-print) causes `sed` not to print every line which is the default.
 
-|          command           | description                                                                                                                                                   |
-| :------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|            `=`             | output the current line number.                                                                                                                               |
-|            `a`             | append text after the current line.                                                                                                                           |
-|            `d`             | delete the current line.                                                                                                                                      |
-|            `i`             | insert text in front of the current line.                                                                                                                     |
-|            `p`             | print the current line.                                                                                                                                       |
-|            `q`             | exit `sed` without processing any more lines. If the `-n` is not specified, output the current line.                                                          |
-|            `Q`             | exit `sed` without processing any more lines.                                                                                                                 |
-| `s/<regex>/<replacement>/` | substitute the contents of _replacement_ wherever _regexp_ is found.                                                                                          |
-|    `y/<set_1>/<set_2>`     | perform transliteration by converting character from _set_1_ to the corresponding characters in _set_2_. `sed` requires that both sets be of the same length. |
+|          command           | description                                                                                                                                                           |
+| :------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|            `=`             | output the current line number.                                                                                                                                       |
+|            `a`             | append text after the current line.                                                                                                                                   |
+|            `d`             | delete the current line.                                                                                                                                              |
+|            `i`             | insert text in front of the current line.                                                                                                                             |
+|            `p`             | print the current line.                                                                                                                                               |
+|            `q`             | exit `sed` without processing any more lines. If the `-n` is not specified, output the current line.                                                                  |
+|            `Q`             | exit `sed` without processing any more lines.                                                                                                                         |
+| `s/<regex>/<replacement>/` | substitute the contents of _replacement_ wherever _regexp_ is found.                                                                                                  |
+|    `y/<set-1>/<set-2>`     | perform transliteration by converting character from _\<set-1\>_ to the corresponding characters in _\<set-2\>_. `sed` requires that both sets be of the same length. |
 
 ```bash
 sed 's/\([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$/\3-\1-\2/' distros.txt # Convert date from MM/DD/YYYY to YYYY-MM-DD format
@@ -405,7 +405,7 @@ aspell check TEXT_FILE
 
 `aspell` is interactive in the check mode. At the top of the display, we see our text with a suspiciously spelled word highlighted. In the middle, we see ten spelling suggestions numbered zero through nine, followed by a list of other possible actions. Finally, at the bottom, we see a prompt ready to accept our choice.
 
-Unless told otherwise via the command line `--dont-backup`, `aspell` creates a backup file containing the original text by appending the extension `.bak` to the file­ name.
+Unless told otherwise via the command line `--dont-backup`, `aspell` creates a backup file containing the original text by appending the extension `.bak` to the file name.
 
 When checking HTML files `aspell` will see the contents of the HTML tags as misspelled. This problem can be overcome by including `-H` checking mode. In this mode, the contents of HTML tags are ignored and not checked for spelling. However, the contents of `ALT` tags, which benefit from checking, are checked in this mode.
 

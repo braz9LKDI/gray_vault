@@ -4,17 +4,17 @@ reviewed_on: "2025-09-06"
 
 # Stage 5
 
-## 13 - Describe relaciones, usa el tiempo pasado
+## Describe relaciones, usa el tiempo pasado
 
 Para hablar de algo que solías hacer en el pasado pero que ya no haces, usa "used to" seguido por la forma base del verbo.
 
 Para hablar de algo que empezó en el pasado y que todavía está pasando ahora, usa el presente perfecto con "have"/"has".
 
-## 28 - Narra un viaje, formula el tiempo pasado
+## Narra un viaje, formula el tiempo pasado
 
 Muchos verbos tienen formas irregulares en el pretérito. Algunos de ellos usan la misma forma en el presente perfecto, ¡pero algunos tienen formas diferentes!
 
-## 36 - Habla de tecnología, usa verbos frasales
+## Habla de tecnología, usa verbos frasales
 
 ¡Hablemos de los Verbos Frasales!
 
@@ -24,7 +24,7 @@ En algunos verbos de dos palabras, las palabras pueden separarse o quedarse junt
 
 ¡Otros verbos de dos palabras no se separan nunca!
 
-## 45 - Opina sobre música, usa infinitivos y gerundios
+## Opina sobre música, usa infinitivos y gerundios
 
 ¡Hablemos de los Verbos!
 

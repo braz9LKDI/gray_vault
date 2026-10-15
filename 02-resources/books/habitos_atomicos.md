@@ -46,13 +46,13 @@ reviewed_on: "2024-12-31"
 
 - ...La mente consciente le pasa a la mente inconsciente las tareas para que las ejecute de manera automática sin hacer uso de la conciencia. Eso es justamente lo que pasa cuando se forma un hábito. Los hábitos reducen la carga cognitiva y liberan la capacidad mental, lo que permite dedicar la atención consciente a otras tareas.
 
-- Los hábitos no restringen la libertad. En realidad la promueven. De hecho, las personas que no tienen sus hábitos bajo control son aquellas que disfrutan de **menos** libertad...
+- Los hábitos no restringen la libertad. En realidad la promueven. De hecho, las personas que no tienen sus hábitos bajo control son aquellas que disfrutan de menos libertad...
 
 - La señal consiste en darse cuenta de cuál será la recompensa. El anhelo consiste en desear obtener la recompensa. La respuesta consiste en obtener la recompensa...
 
 - En resumen, la señal desencadena el anhelo, el anhelo motiva la obtención de una respuesta y la respuesta nos brinda una recompensa. La recompensa satisface el anhelo y, finalmente, queda asociada con la señal que desencadena el ciclo...
 
-- ...Como el psicólogo Carl G. Jung decía: "mientras no logres transformar lo inconsciente en consciente, lo inconsciente guiará tu vida y tú lo llamarás destino".
+- ...Como el psicólogo Carl G. Jung decía: "mientras no logres transformar lo inconsciente en consciente, lo inconsciente guiará tu vida y tú lo llamarás destino".
 
 - ...Nos decimos a nosotros mismos: "voy a comer de manera más saludable" o "voy a escribir con mayor frecuencia", pero nunca nos decimos cuándo y dónde van a suceder estos hábitos. Lo dejamos al azar y esperamos que "nos acordaremos de hacerlo" o nos sentiremos motivados cuando llegue el momento correcto...
 
@@ -74,7 +74,7 @@ reviewed_on: "2024-12-31"
 
 - ...Seguimos teniendo el mismo cerebro que nuestros ancestros, pero ahora tenemos que enfrentar tentaciones que ellos nunca conocieron.
 
-- Es muy interesante saber que el sistema de recompensas que se activa en el cerebro cuando **recibes** una recompensa es el mismo sistema que se activa cuando **anticipas** dicha recompensa...
+- Es muy interesante saber que el sistema de recompensas que se activa en el cerebro cuando recibes una recompensa es el mismo sistema que se activa cuando anticipas dicha recompensa...
 
 - ...Como escribió el filósofo Michel de Montaigne: "las costumbres y prácticas de la vida en sociedad nos arrastran con ellas".
 
@@ -141,13 +141,13 @@ reviewed_on: "2024-12-31"
 
 - El proceso de cambio de conductas siempre inicia al tomar conciencia. Debes estar consciente de tus hábitos antes de que puedas cambiarlos.
 
-- La estrategia **pointing and calling** eleva el nivel de tu conciencia y lleva tus hábitos desde un punto en que son inconscientes hasta un punto consciente mediante la verbalización de tus acciones.
+- La estrategia pointing and calling eleva el nivel de tu conciencia y lleva tus hábitos desde un punto en que son inconscientes hasta un punto consciente mediante la verbalización de tus acciones.
 
-- El **registro de hábitos** es un simple ejercicio que puedes usar para adquirir conciencia de tu conducta.
+- El registro de hábitos es un simple ejercicio que puedes usar para adquirir conciencia de tu conducta.
 
 ### La mejor manera de comenzar un nuevo hábito
 
-- La primera ley del cambio de conducta es **hacerlo obvio**.
+- La primera ley del cambio de conducta es hacerlo obvio.
 
 - Las señales más comunes son el tiempo y lugar.
 
@@ -173,7 +173,7 @@ reviewed_on: "2024-12-31"
 
 ### El secreto el autocontrol
 
-- La primera ley del cambio de conducta invertida es **hacerlo invisible**.
+- La primera ley del cambio de conducta invertida es hacerlo invisible.
 
 - Una vez que un hábito está formado, es poco probable que se olvide.
 
@@ -185,7 +185,7 @@ reviewed_on: "2024-12-31"
 
 ### Como lograr que un hábito sea irresistible
 
-- La segunda ley del cambio de conducta es **hacerlo atractivo**.
+- La segunda ley del cambio de conducta es hacerlo atractivo.
 
 - Entre más atractiva sea una oportunidad, existen más probabilidades de que produzca la formación de nuevos hábitos.
 
@@ -214,7 +214,7 @@ reviewed_on: "2024-12-31"
 
 ### Cómo localizar y arreglar las causas de tus malos hábitos
 
-- La inversión de la segunda ley del cambio de conducta es **hacerlo poco atractivo**.
+- La inversión de la segunda ley del cambio de conducta es hacerlo poco atractivo.
 
 - Cada conducta tiene un anhelo o deseo superficial y un motivo subyacente.
 
@@ -228,7 +228,7 @@ reviewed_on: "2024-12-31"
 
 ### Avanza despacio, pero no des marcha atrás
 
-- La tercera ley del cambio de conducta es **hacerlo sencillo**.
+- La tercera ley del cambio de conducta es hacerlo sencillo.
 
 - La manera más efectiva de aprender es practicar, no planear.
 
@@ -262,7 +262,7 @@ reviewed_on: "2024-12-31"
 
 ### Cómo hacer inevitables los buenos hábitos e imposibles los malos hábitos
 
-- La inversión de la tercera ley del cambio de conducta es **hacerlo difícil**.
+- La inversión de la tercera ley del cambio de conducta es hacerlo difícil.
 
 - Un mecanismo de compromiso es una elección que haces en el presente para garantizar un mejor comportamiento en el futuro.
 
@@ -274,17 +274,17 @@ reviewed_on: "2024-12-31"
 
 ### La regla cardinal del cambio de conducta
 
-- La cuarta ley del cambio de conducta es **hacerlo satisfactorio**.
+- La cuarta ley del cambio de conducta es hacerlo satisfactorio.
 
 - Tendemos a repetir una conducta cuando la experiencia es satisfactoria.
 
 - El cerebro humano evolucionó para priorizar las recompensas inmediatas sobre las recompensas retardadas.
 
-- La regla cardinal del cambio de conducta es: **lo que es inmediatamente recompensado se repite. Lo que es inmediatamente castigado se evita**.
+- La regla cardinal del cambio de conducta es: lo que es inmediatamente recompensado se repite. Lo que es inmediatamente castigado se evita.
 
 - Para lograr mantener un hábito, necesitas sentirte exitoso de manera inmediata (aunque solo sea de manera modesta).
 
-- Las primeras tres leyes del cambio de conducta (**hacerlo obvio**, **hacerlo atractivo** y **hacerlo sencillo**) incrementan las posibilidades de que una conducta sea realizada en esta ocasión. La cuarta ley del cambio de conducta (**hacerlo satisfactorio**) aumenta las posibilidades de que una conducta sea repetida en la siguiente ocasión.
+- Las primeras tres leyes del cambio de conducta (hacerlo obvio, hacerlo atractivo y hacerlo sencillo) incrementan las posibilidades de que una conducta sea realizada en esta ocasión. La cuarta ley del cambio de conducta (hacerlo satisfactorio) aumenta las posibilidades de que una conducta sea repetida en la siguiente ocasión.
 
 ### Cómo mantener los buenos hábitos todos los días
 
@@ -302,7 +302,7 @@ reviewed_on: "2024-12-31"
 
 ### Cómo un socio corresponsable puede cambiarlo todo
 
-- La inversión de la cuarta ley del cambio de conducta es **hacerlo insatisfactorio**.
+- La inversión de la cuarta ley del cambio de conducta es hacerlo insatisfactorio.
 
 - Es menos probable que repitamos un mal hábito si este es doloroso e insatisfactorio.
 
@@ -324,7 +324,7 @@ reviewed_on: "2024-12-31"
 
 - Participa en un juego que favorezca tus fortalezas. Si no puedes encontrar un juego que te favorezca, crea uno nuevo.
 
-- Los genes no eliminan la necesidad de trabajar duro. Determinan y muestran lo que hay que hacer. Nos dicen en **qué** debemos trabajar duro.
+- Los genes no eliminan la necesidad de trabajar duro. Determinan y muestran lo que hay que hacer. Nos dicen en qué debemos trabajar duro.
 
 ### La regla de Ricitos de Oro: cómo mantenerte motivado en la vida y el trabajo
 

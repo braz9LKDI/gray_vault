@@ -20,7 +20,7 @@ reviewed_on: "2025-05-05"
 
 ## C++ implementation
 
-```c++
+```cpp
 #include <vector>
 
 

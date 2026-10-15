@@ -6,7 +6,7 @@ reviewed_on: "2024-12-27"
 
 ## Capítulo 1 (la lógica)
 
-Finalmente, y luego de tantas definiciones, busqué a mi padre. Un hombre del campo para quien los avances tecnológicos le corrían por la espalda porque no eran su afán. Me miraba sin parpadear cada que yo iniciaba algunas de mis disertaciones sobre la tecnología y su relación con el mundo moderno. Para él el mundo moderno no era sino un cúmulo de problemas en vez de soluciones. Yo pensaba lo contrario. Sin embargo, me arriesgué a preguntarle Papá, para usted qué es la lógica...  y él mirándome con la extrañeza de la pregunta me dijo Pues es la forma más **obvia** y más **fácil** de hacer algo. Y vi que todas las definiciones que hasta el momento había recibido, unas provenientes de la vida cotidiana y otras extractadas de libros especializados en el tema, se resumían en esta última. Eso es la **lógica**.
+Finalmente, y luego de tantas definiciones, busqué a mi padre. Un hombre del campo para quien los avances tecnológicos le corrían por la espalda porque no eran su afán. Me miraba sin parpadear cada que yo iniciaba algunas de mis disertaciones sobre la tecnología y su relación con el mundo moderno. Para él el mundo moderno no era sino un cúmulo de problemas en vez de soluciones. Yo pensaba lo contrario. Sin embargo, me arriesgué a preguntarle Papá, para usted qué es la lógica... y él mirándome con la extrañeza de la pregunta me dijo Pues es la forma más **obvia** y más **fácil** de hacer algo. Y vi que todas las definiciones que hasta el momento había recibido, unas provenientes de la vida cotidiana y otras extractadas de libros especializados en el tema, se resumían en esta última. Eso es la **lógica**.
 
 ### Conceptos básicos de informática
 
@@ -22,7 +22,7 @@ Un **archivo** es un conjunto de registros que tienen la misma estructura y que 
 
 Una **base de datos** es un conjunto de archivos que están interrelacionados.
 
-La **informática**  es la ciencia que estudia, aplica y optimiza el tratamiento eficiente de la información. Con tratamiento eficiente de la información a la ciencia que se ocupa de que la información, cualquiera que sea su procedencia o su destinación, cumpla con dos objetivos:
+La **informática** es la ciencia que estudia, aplica y optimiza el tratamiento eficiente de la información. Con tratamiento eficiente de la información a la ciencia que se ocupa de que la información, cualquiera que sea su procedencia o su destinación, cumpla con dos objetivos:
 
 - Veracidad: "toda información debe ser verdad (es decir, veraz)".
 

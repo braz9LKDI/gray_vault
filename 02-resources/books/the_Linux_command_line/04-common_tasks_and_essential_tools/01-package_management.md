@@ -25,8 +25,7 @@ Programs are seldom "stand alone"; rather, they rely on the presence of other so
 
 ### High and low level package tools
 
-- Low-level tools: that handle tasks such as installing and removing
-  package files.
+- Low-level tools: that handle tasks such as installing and removing package files.
 
 - High-level tools that perform metadata searching and dependency resolution.
 
@@ -56,7 +55,7 @@ In the discussion that follows, the term `package_name` refers to the actual nam
 
 ### Distribution-independent package formats
 
-Over the last several years distribution vendors have come out with universal package formats that are not tied to a particular Linux distribution. These include Snaps (developed and promoted by Canonical), Flatpaks (pioneered by Red Hat, but now widely available) and AppImages. Though they each work a little differ­ently, their goal is to have an application and all of its dependencies bundled to­gether and installed in a single piece.
+Over the last several years distribution vendors have come out with universal package formats that are not tied to a particular Linux distribution. These include Snaps (developed and promoted by Canonical), Flatpaks (pioneered by Red Hat, but now widely available) and AppImages. Though they each work a little differently, their goal is to have an application and all of its dependencies bundled together and installed in a single piece.
 
 There are some benefits to this packing approach:
 

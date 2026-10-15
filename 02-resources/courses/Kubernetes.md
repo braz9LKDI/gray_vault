@@ -6,15 +6,15 @@ Also known as **k8**, is a container orchestration system.
 
 ### Functions (What is Kubernetes?)
 
-- **Automatic deployment** of the containerized applications across different servers.
+- Automatic deployment of the containerized applications across different servers.
 
-- **Distribution of the load** across multiple servers.
+- Distribution of the load across multiple servers.
 
-- **Auto-scaling** of the deployed applications.
+- Auto-scaling of the deployed applications.
 
-- **Monitoring** and **health check** of the containers.
+- Monitoring and health check of the containers.
 
-- **Replacement** of the failed containers.
+- Replacement of the failed containers.
 
 ### Supported container runtimes
 
@@ -72,7 +72,7 @@ It is a separate command-line tool that allows you to connect to a specific Kube
 
 - `minikube ip`: shows the Kubernetes node IP.
 
-- `ssh docker@<Kubernetes node IP>`: logs into the Kubernetes node.
+- `ssh docker@<kubernetes-node-ip>`: logs into the Kubernetes node.
 
     > This only works if a driver other than `docker` is selected.
     >
@@ -94,11 +94,11 @@ It is a separate command-line tool that allows you to connect to a specific Kube
 
 ## Creating just a single Pod
 
-- `kubectl run <pod name> --image=<docker image>`: runs a specified image in a pod called `<pod name>`.
+- `kubectl run <pod-name> --image=<docker-image>`: runs a specified image in a pod called `<pod-name>`.
 
 ## Exploring Kubernetes Pod
 
-- `kubectl describe <resource name>`: shows detailed information about a specific resource.
+- `kubectl describe <resource-name>`: shows detailed information about a specific resource.
 
 - `kubectl delete <resource> <resource name`: deletes a specific resource within the Kubernetes cluster.
 
@@ -106,31 +106,31 @@ It is a separate command-line tool that allows you to connect to a specific Kube
 
 The replicas of a Deployment are managed by a Replica set, and the name of the pods created will contain the ID of the Replica set and an ID of its own.
 
-- `kubectl create deployment <deployment name> --image=<Docker image>`: creates a new deployment in the Kubernetes cluster with the specified name and using the specified Docker image.
+- `kubectl create deployment <deployment-name> --image=<docker-image>`: creates a new deployment in the Kubernetes cluster with the specified name and using the specified Docker image.
 
 - `kubectl get deployments`: shows information about all deployments in the Kubernetes cluster.
 
-- `kubectl scale deployment <deployment name> --replicas=<number of replicas>`: scales the specified deployment by adjusting the number of replicas to the desired count.
+- `kubectl scale deployment <deployment-name> --replicas=<number-of-replicas>`: scales the specified deployment by adjusting the number of replicas to the desired count.
 
 ## Creating and exploring ClusterIP Service
 
 The exposed IP using a Cluster IP is only available to all Kubernetes nodes.
 
-- `kubectl expose deployment <deployment name> --port=<port> --target-port=<port>`: exposes the specified deployment to the inside of the Kubernetes node by creating a Cluster IP service.
+- `kubectl expose deployment <deployment-name> --port=<port> --target-port=<port>`: exposes the specified deployment to the inside of the Kubernetes node by creating a Cluster IP service.
 
 A ClusterIP service facilitates internal communication within the Kubernetes cluster by providing a standardized and reliable way to access Pods running specific applications or services.
 
 ## Creating NodePort Service
 
-- `kubectl expose <deployment name> --type=NodePort --port=<port> --target-port=<port>`: creates a service in Kubernetes that allows external access to the deployment using a specific port on each node (NodePort), forwarding traffic to the target port on the pods belonging to the deployment.
+- `kubectl expose <deployment-name> --type=NodePort --port=<port> --target-port=<port>`: creates a service in Kubernetes that allows external access to the deployment using a specific port on each node (NodePort), forwarding traffic to the target port on the pods belonging to the deployment.
 
-- `minikube service <deployment name>`: exposes a Kubernetes deployment as a service and opens the service in a web browser or outputs the service URL.
+- `minikube service <deployment-name>`: exposes a Kubernetes deployment as a service and opens the service in a web browser or outputs the service URL.
 
     > `--url` to prevent Minikube from opening the URL.
 
 ## Creating LoadBalancer service
 
-- `kubectl expose <deployment name> --type=LoadBalancer --port=<port> --target-port=<port>`: creates a new service in Kubernetes and exposes it to the outside world using a cloud provider's load balancer.
+- `kubectl expose <deployment-name> --type=LoadBalancer --port=<port> --target-port=<port>`: creates a new service in Kubernetes and exposes it to the outside world using a cloud provider's load balancer.
 
 ## Rolling update of the deployment
 
@@ -138,9 +138,9 @@ A rolling update allows a Deployment update to take place with zero downtime. It
 
 > This is the default strategy to update Pods images.
 
-- `kubectl set image deployment <deployment name> <containers name>:<image>`: updates the image of a container(s) within a deployment in Kubernetes.
+- `kubectl set image deployment <deployment-name> <containers-name>:<image>`: updates the image of a container(s) within a deployment in Kubernetes.
 
-- `kubectl rollup status <deployment name>`: checks the status of a rollout for a deployment in Kubernetes.
+- `kubectl rollup status <deployment-name>`: checks the status of a rollout for a deployment in Kubernetes.
 
 ## Creating YAML deployment specification file
 
@@ -148,4 +148,4 @@ A rolling update allows a Deployment update to take place with zero downtime. It
 
 ## Resolving Service name to IP address
 
-- `kubectl exec <pod name> -- <command>`: executes a command directly inside a running container within a pod.
+- `kubectl exec <pod-name> -- <command>`: executes a command directly inside a running container within a pod.

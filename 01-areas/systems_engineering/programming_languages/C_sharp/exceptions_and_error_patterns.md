@@ -152,7 +152,7 @@ public static void setAge(int age)
 
 A useful rule is this: exceptions are usually for exceptional situations, not for expected outcomes that happen often during normal logic.
 
-For example, “user typed a wrong password” or “search returned no rows” is often better modeled as normal control flow, not as an exception.
+For example, "user typed a wrong password" or "search returned no rows" is often better modeled as normal control flow, not as an exception.
 
 ## When not to throw
 
@@ -219,7 +219,7 @@ In many cases, using an existing framework exception is better than inventing a 
 
 `ArgumentNullException`, `InvalidOperationException`, `NotSupportedException`, and `TimeoutException` already communicate common meanings clearly.
 
-A custom exception tends to make more sense when the failure belongs to the application’s own domain, such as `paymentDeclinedException` or `orderValidationException`.
+A custom exception tends to make more sense when the failure belongs to the application's own domain, such as `paymentDeclinedException` or `orderValidationException`.
 
 ## Result-style patterns
 
@@ -300,7 +300,7 @@ The difference is mostly about what kind of failure is being modeled.
 
 - exceptions interrupt control flow automatically.
 
-- result values keep failure visible in the method’s return type.
+- result values keep failure visible in the method's return type.
 
 A useful practical split is this: domain validation and user-facing expected failures often fit result-style code, while programming errors and infrastructure failures often fit exceptions.
 

@@ -67,7 +67,7 @@ Some of the **tests** that support this command are:
 |    `-cnewer <file>`    | files or directories whose contents or attributes were last modified more recently than those of `<file>`. |
 |      `-ctime <n>`      | files or directories whose contents or attributes were last modified $n * 24 \text{hours}$ ago.            |
 |        `-empty`        | empty files and directories.                                                                               |
-| `-group <name or GID>` | files or directories belonging to `<name or GID>` group.                                                   |
+| `-group <name-or-gid>` | files or directories belonging to `<name-or-gid>` group.                                                   |
 |   `-iname <pattern>`   | like `-name` but case-insensitive.                                                                         |
 |       `inum <n>`       | files with inode number _n_.                                                                               |
 |      `-mmin <n>`       | files or directories whose contents were last modifies $n \text{minutes}$ ago.                             |
@@ -115,7 +115,7 @@ Actions should go at the end of the command, because the **order** of tests and 
 
 ### User-defined Actions
 
-In addition to the predefined actions, we can also invoke arbitrary commands. The tradi­tional way of doing this is with the `-exec` action.
+In addition to the predefined actions, we can also invoke arbitrary commands. The traditional way of doing this is with the `-exec` action.
 
 ```bash
 -exec rm '{}' ';'
@@ -137,7 +137,7 @@ find ~ -type f -name "foo*" -exec ls -l '{}' ';' +
 
 ### `xargs`
 
-...It accepts input from standard in­put and converts it into an argument list for a specified command.
+...It accepts input from standard input and converts it into an argument list for a specified command.
 
 ```bash
 find ~ -type f -name "foo*" -print | xargs ls -l
@@ -145,7 +145,7 @@ find ~ -type f -name "foo*" -print | xargs ls -l
 
 #### Dealing with funny filenames
 
-Unix-like systems allow embedded spaces (and even newlines!) in filenames. This causes problems for programs like `xargs` that construct argument lists for other programs. An embedded space will be treated as a delimiter, and the result­ing command will interpret each space-separated word as a separate argument. To overcome this, `find` and `xargs` allow the optional use of a null character as an argument separator. A null character is defined in ASCII as the character repre­sented by the number zero (as opposed to, for example, the space character, which is defined in ASCII as the character represented by the number 32). `find` provides the action `-print0`, which produces null-separated output, and `xargs` has the `--null` (or `-0`) option, which accepts null separated input.
+Unix-like systems allow embedded spaces (and even newlines!) in filenames. This causes problems for programs like `xargs` that construct argument lists for other programs. An embedded space will be treated as a delimiter, and the resulting command will interpret each space-separated word as a separate argument. To overcome this, `find` and `xargs` allow the optional use of a null character as an argument separator. A null character is defined in ASCII as the character represented by the number zero (as opposed to, for example, the space character, which is defined in ASCII as the character represented by the number 32). `find` provides the action `-print0`, which produces null-separated output, and `xargs` has the `--null` (or `-0`) option, which accepts null separated input.
 
 ### Options
 

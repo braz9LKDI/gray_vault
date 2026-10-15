@@ -4,9 +4,9 @@ reviewed_on: "2025-05-05"
 
 # Quick
 
-1. Choose an element from the set of elements to be sorted, which we will call the **pivot**.
+1. Choose an element from the set of elements to be sorted, which we will call the pivot.
 
-2. Resituate the other elements of the list on each side of the pivot, so that on one side are all the elements smaller than the pivot, and on the other side are all the elements larger than the pivot. At this point, **the pivot occupies exactly the place that will correspond to it in the ordered list**.
+2. Resituate the other elements of the list on each side of the pivot, so that on one side are all the elements smaller than the pivot, and on the other side are all the elements larger than the pivot. At this point, the pivot occupies exactly the place that will correspond to it in the ordered list.
 
 3. The list is separated into two sublists, one formed by the elements to the left of the pivot and the other by the elements to the right of the pivot.
 

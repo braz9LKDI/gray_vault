@@ -18,7 +18,7 @@ If `read` receive fewer than the expected number, the extra variables are empty,
 
 | option            | description                                                                                                          |
 | ----------------- | :------------------------------------------------------------------------------------------------------------------- |
-| `-a <array_name>` | assign the input into an array _array_name_.                                                                         |
+| `-a <array-name>` | assign the input into an array _\<array-name\>_.                                                                     |
 | `-d <delimiter>`  | the first character in the string _delimiter_ is used to indicate the end of input, rather than a newline character. |
 | `-e`              | use Readline to handle input. This permits input editing in the same manner as the command line.                     |
 | `-i <string>`     | use _string_ as a default reply if the user simply press `ENTER`. Requires `-e`.                                     |

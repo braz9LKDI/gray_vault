@@ -1,14 +1,14 @@
 # Examen Final
 
 1. Si quiero asignar el permiso 123 en octal a un fichero, ¿cómo quedarán representados los permisos finales para este fichero?
-    - `.--x-w--wx`. pending
+    - `.--x-w--wx`. Pending.
 
 2. Si quiero asignar el permiso 676 en octal a un directorio, ¿cómo quedarán representados los permisos finales para este directorio?
     - `drw-rwxrw-`.
 
 3. ¿Qué conseguiremos con este comando?
 
-    ```BASH
+    ```bash
     touch file.{summary,report,results}
     ```
 
@@ -16,7 +16,7 @@
 
 4. ¿Qué representación en octal sería la equivalente a los siguientes permisos mostrados en el archivo?
 
-    ```BASH
+    ```bash
     .rw-r--r-x
     ```
 
@@ -52,7 +52,7 @@
 
 11. ¿De qué manera podría rápidamente ejecutar el comando anteriormente indicado pero esta vez como el usuario "root"?
 
-    ```BASH
+    ```bash
     touch file
     touch: cannot touch 'file': Permission denied
     ```
@@ -61,14 +61,14 @@
 
 12. ¿Cuál es la representación en octal del siguiente permiso?
 
-    ```BASH
+    ```bash
     .-w-rwx--x
     ```
 
     - `271`.
 
 13. ¿De qué forma puedo indicar que quiero ejecutar una tarea cron a las 02:10 AM, cada 2 días de la semana?
-    - `10 2 */2 * *`. Pending
+    - `10 2 */2 * *`. Pending.
 
     - `10 2 * * 1,3,5`.?
 
@@ -93,7 +93,7 @@
 
 19. ¿Qué pasará cuando ejecute el último comando?
 
-    ```BASH
+    ```bash
     exec 3<> file
     exec 4>&3-
     abc 2>&3
@@ -109,7 +109,7 @@
 
 22. ¿Se almacenará así el stderr del comando indicado entre paréntesis en el archivo "file"?
 
-    ```BASH
+    ```bash
     (whoam 3>&1 1>&2 2>&3) > file
     ```
 
@@ -123,7 +123,7 @@
 
 25. ¿Qué se estará mostrando por consola una vez ejecutado el último comando?
 
-    ```BASH
+    ```bash
     cat /etc/hosts
 
     ::1        localhost ip6-localhost ip6-loopback
@@ -141,7 +141,7 @@
 
 27. ¿Se almacenará así el stderr del comando indicado entre paréntesis en el archivo "file"?
 
-    ```BASH
+    ```bash
     (whoam 3>&1 1>&2 2>&3) 2> file
     ```
 
@@ -149,7 +149,7 @@
 
 28. ¿Cómo puedo indicar en una misma línea que el stderr del último comando a ejecutar se introduzca en el archivo "file" y el stdout en el archivo "file_two"?
 
-    ```BASH
+    ```bash
     exec 8<> file
     exec 7<> file_two
     whoam
@@ -164,7 +164,7 @@
 
 30. ¿Qué se va a almacenar en el archivo "file" tras ejecutar el comando indicado?
 
-    ```BASH
+    ```bash
     (whoami 3>&1 2>&3) > file
     ```
 
@@ -181,7 +181,7 @@
 
 34. ¿Qué se mostrará por consola una vez ejecute el script?
 
-    ```BASH
+    ```bash
     ls
 
     example.sh
@@ -197,7 +197,7 @@
 
     - El nombre del script.
 
-35. ¿De qué forma puedo iterar sobre las líneas de un archivo tras aplicar un cat sobre este e incorporar un pipe al final de la misma línea? (Consideremos almacenar el valor de cada línea por cada iteración en una variable con nombre "value"). pending
+35. ¿De qué forma puedo iterar sobre las líneas de un archivo tras aplicar un cat sobre este e incorporar un pipe al final de la misma línea? (Consideremos almacenar el valor de cada línea por cada iteración en una variable con nombre "value"). Pending.
     - `while read value; do echo $value; done`.
 
 36. ¿Cómo puedo mostrar por consola únicamente la versión de kernel que tengo?
@@ -208,7 +208,7 @@
 
 38. ¿Cuál es la forma más rápida para meterme al directorio previamente creado?
 
-    ```BASH
+    ```bash
     mkdir test
     ls
 
@@ -231,7 +231,7 @@
 
 43. ¿Qué se estará almacenando en el archivo "file" tras la ejecución del último comando?
 
-    ```BASH
+    ```bash
     exec 3<> file
     exec 4>&3
     whoami 2>&1 >&4
@@ -241,7 +241,7 @@
 
 44. ¿Cuál es la representación en octal del siguiente permiso?
 
-    ```BASH
+    ```bash
     .--x-----x
     ```
 
@@ -252,7 +252,7 @@
 
 46. ¿Qué se mostrará por consola una vez se ejecute el siguiente comando?
 
-    ```BASH
+    ```bash
     whoam && echo test || echo test2
     ```
 
@@ -266,7 +266,7 @@
 
 49. ¿Qué estaré mostrando por consola con este comando?
 
-    ```BASH
+    ```bash
     echo $HOME
     ```
 
@@ -275,7 +275,7 @@
 50. ¿Cómo puedo ejecutar un proceso en segundo plano?
     - Incorporando un `&` al final de mi instrucción.
 
-51. Empareja cada permiso con su representación octal correspondiente
+51. Empareja cada permiso con su representación octal correspondiente.
 
     |  permisos   | octal |
     | :---------: | :---: |
@@ -312,7 +312,7 @@
 
 58. ¿Qué se almacenará en el archivo file?
 
-    ```BASH
+    ```bash
     exec 3<> file
     whoam 2>&3
     ```

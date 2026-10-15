@@ -30,7 +30,7 @@ check() {
             }
             prev_item = 0; next
         }
-        /<[A-Za-z0-9_-]*(_[A-Za-z0-9]|[a-z][A-Z]|[A-Z][a-z])[A-Za-z0-9_-]*>/ {
+        /<[A-Za-z0-9_-]*(_[A-Za-z0-9]|[a-z][A-Z]|[A-Z][a-z])[A-Za-z0-9_-]*>|<[A-Za-z0-9]+( [A-Za-z0-9]+)+>/ {
             if (fence == "" || !(tag in source)) flag("placeholder")
         }
         fence != "" { prev_item = 0; next }
@@ -58,7 +58,9 @@ check() {
             if (is_item) {
                 if ($0 !~ /[.?:][ \t]*$/) flag("list-period")
                 if (line ~ /\*\*|__/) flag("list-bold")
-                if (prev_item) flag("list-blank-line")
+                indent = match(line, /[^ \t]/) - 1
+                if (prev_item && indent <= prev_indent) flag("list-blank-line") # a nested first child follows its parent directly
+                prev_indent = indent
             }
             prev_item = is_item
         }

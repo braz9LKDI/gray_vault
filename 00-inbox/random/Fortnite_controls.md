@@ -60,7 +60,7 @@ The following list includes the modified bindings; the default bindings are not 
 
 ### Weapon (save the world)
 
-- Consumible slot: `CTRL`
+- Consumible slot: `CTRL`.
 
 - Gadget slot 1: `4`.
 

@@ -83,7 +83,7 @@ All the options (except for `-r`) that we discussed for `gzip` are also supporte
 
 ## Archiving files
 
-A common file-management task often used in conjunction with compression is **archiv­ing**. Archiving is the process of gathering up many files and bundling them together into a single large file...
+A common file-management task often used in conjunction with compression is **archiving**. Archiving is the process of gathering up many files and bundling them together into a single large file...
 
 ### `tar`
 
@@ -133,7 +133,7 @@ find playground -name "file-A" | tar cf - --files-from=- | gzip > playground.tgz
 
 > The `.tgz` extension is the conventional extension given to gzip-compressed tar files. The extension `.tar.gz` is also used some times.
 
-While we used `gzip` externally to produce our compressed archive in the above example, modern versions of GNU `tar` support both `gzip` and `bzip2` compres­sion directly with the use of the `z` and `j`, respectively.
+While we used `gzip` externally to produce our compressed archive in the above example, modern versions of GNU `tar` support both `gzip` and `bzip2` compression directly with the use of the `z` and `j`, respectively.
 
 ```bash
 find playground -name "file-A" | tar czf | playground.tgz -T -
@@ -173,13 +173,13 @@ zip -r playground.zip playground
 
 Extracting the contents of a zip file is straightforward when using `unzip`.
 
-One thing to note about `zip` (as opposed to `tar`) is that if an existing archive is speci­fied, it is updated rather than replaced. This means the existing archive is preserved, but new files are added and matching files are replaced.
+One thing to note about `zip` (as opposed to `tar`) is that if an existing archive is specified, it is updated rather than replaced. This means the existing archive is preserved, but new files are added and matching files are replaced.
 
 ```bash
 unzip -l playground.zip playground/dir-087/file-Z
 ```
 
-Using `-l` causes unzip to merely list the contents of the archive without ex­tracting the file.
+Using `-l` causes unzip to merely list the contents of the archive without extracting the file.
 
 Like `tar`, `zip` can make use of standard input and output, though its implementation is somewhat less useful. It is possible to pipe a list of filenames to `zip` via `-@`.
 
@@ -203,7 +203,7 @@ unzip -p ls-etc.zip | less
 
 ## Synchronizing files and directories
 
-In the Unix-like world, the preferred tool for this task is `rsync`. This program can syn­chronize both local and remote directories by using the **rsync remote-update protocol**, which allows `rsync` to quickly detect the differences between two directories and per­form the minimum amount of copying required to bring them into sync...
+In the Unix-like world, the preferred tool for this task is `rsync`. This program can synchronize both local and remote directories by using the **rsync remote-update protocol**, which allows `rsync` to quickly detect the differences between two directories and perform the minimum amount of copying required to bring them into sync...
 
 ```text
 rsync OPTIONS SOURCE DESTINATION
@@ -235,7 +235,7 @@ The first way to do it is with another system that has `rsync` installed, along 
 sudo rsync -av --delete --rsh=ssh /etc /home /usr/local remote-sys:/backup
 ```
 
-The second way is by using an `rsync` server. `rsync` can be configured to run as a daemon and listen to incoming re­ quests for synchronization...
+The second way is by using an `rsync` server. `rsync` can be configured to run as a daemon and listen to incoming re quests for synchronization...
 
 ```bash
 rsync -av delete rsync://archive.linux.duke.edu/ fedora/linux/development/rawhide/Everything/x86_64/os/ fedora-devel

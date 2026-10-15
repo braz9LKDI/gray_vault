@@ -6,17 +6,17 @@ reviewed_on: "2025-02-03"
 
 - Nodes: represent the verification of a condition on an attribute.
 
-- Branches: represent the value of the condition checked in the **node** from which they derive.
+- Branches: represent the value of the condition checked in the node from which they derive.
 
 - Leaf node: represents the class labels.
 
 ## Basic (greedy) Algorithm
 
-- The tree is built in a **top-down** recursive manner using **divide and conquer**.
+- The tree is built in a top-down recursive manner using divide and conquer.
 
 - Initially, all tuples are at the root.
 
-- The attributes must be **categorical**; if they are continuous values, they must be **discretized** beforehand.
+- The attributes must be categorical; if they are continuous values, they must be discretized beforehand.
 
 - The tuples are recursively divided based on the selected attribute.
 
@@ -38,7 +38,7 @@ $$
     \text{entropy}_\text{max} = -0.5 \log_2 0.5 - (-0.5 \log_2 0.5) = 1
     $$
 
-- Minimum (**pure node**): when all the probability is in one class.
+- Minimum (pure node): when all the probability is in one class.
 
     $$
     \text{entropy}_\text{min} = -1 \log_2 1 = 0

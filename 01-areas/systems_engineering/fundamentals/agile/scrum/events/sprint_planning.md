@@ -12,7 +12,7 @@ Sprint planning addresses the following topics:
 
 2. What can be done this sprint?
 
-3. How will the chosen work get done
+3. How will the chosen work get done?
 
 ## Input
 

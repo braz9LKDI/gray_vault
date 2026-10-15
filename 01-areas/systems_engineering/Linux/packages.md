@@ -30,25 +30,25 @@ It is a collection of software that contains precompiled packages, installation 
 
 - Updating: `sudo apt upgrade -y`.
 
-- Installing a package: `sudo apt install <package name>`.
+- Installing a package: `sudo apt install <package-name>`.
 
     > This command can be used with the `-y` to avoid confirmation.
 
 - Uninstalling a package.
-    - Without removing its configuration files: `sudo apt remove <installed package name>`.
+    - Without removing its configuration files: `sudo apt remove <installed-package-name>`.
 
-    - Removing its configuration files: `sudo apt purge <installed package name>`.
+    - Removing its configuration files: `sudo apt purge <installed-package-name>`.
 
-    - Removing packages trash: `sudo apt autoremove`
+    - Removing packages trash: `sudo apt autoremove`.
 
 ### `dpgk`
 
-- Installing a package: `dpkg -i <deb package>`.
+- Installing a package: `dpkg -i <deb-package>`.
 
 - Uninstalling a package.
-    - Without removing its configuration files: `dpkg -r <installed package name>`.
+    - Without removing its configuration files: `dpkg -r <installed-package-name>`.
 
-    - Removing its configuration files: `dpkg -P <installed package name>`.
+    - Removing its configuration files: `dpkg -P <installed-package-name>`.
 
         > You can also write `--purge`.
 

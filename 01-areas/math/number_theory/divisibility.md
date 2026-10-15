@@ -12,9 +12,9 @@ $$
 
 We say that:
 
-- $n$ is a **divisor** of $m$.
+- $n$ is a divisor of $m$.
 
-- $m$ is a **multiple** of $n$.
+- $m$ is a multiple of $n$.
 
 ## Properties
 

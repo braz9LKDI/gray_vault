@@ -27,11 +27,11 @@ The shell stores two basic types of data in the environment...They are **environ
 ```bash
 printenv | less # See all environment variable through less
 
-# printenv <environment variable> # See the content of a environment variable
+# printenv <environment-variable> # See the content of a environment variable
 
 set | less # Display both the shell and environment variables, as well as any defined shell functions.
 
-#echo $<environment variable>  See the content of a environment variable
+#echo $<environment-variable>  See the content of a environment variable
 ```
 
 One element of the environment that neither `set` nor `printenv` displays is aliases (but you can see them with `alias`).
@@ -78,7 +78,7 @@ Non-login shells read one or more startup files as shown in the following table:
 | `/etc/profile` | a global configuration script that applies to all users. |
 |   `~/bashrc`   | a user's personal startup file.                          |
 
-In addition to reading the startup files in the above table, non-login shells inherit the environ­ment variables from their parent process, usually a login shell.
+In addition to reading the startup files in the above table, non-login shells inherit the environment variables from their parent process, usually a login shell.
 
 ### What is in a startup file?
 
@@ -113,7 +113,7 @@ Shell variables are local to the current instance of the shell and are not copie
 Another handy trick the shell provides is the ability to execute a command and give it a temporary environment variable.
 
 ```bash
-# <environment variable>=<environment variable value> <command>
+# <environment-variable>=<environment-variable-value> <command>
 MANWIDTH=75 man ls
 ```
 

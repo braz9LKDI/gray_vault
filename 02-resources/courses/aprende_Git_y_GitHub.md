@@ -24,9 +24,9 @@ Es un servicio de hosting que nos permite almacenar proyectos de desarrollo de s
 
 ## Configurar usuario y correo electrónico
 
-- Usuario: `git config --goblal user.name "<user name>"`.
+- Usuario: `git config --goblal user.name "<user-name>"`.
 
-- Correo: `git config --goblal user.email "<user email>"`.
+- Correo: `git config --goblal user.email "<user-email>"`.
 
     > Es recomendable no poner un correo personal, sino uno que te proporciona GitHub.
 
@@ -34,7 +34,7 @@ Es un servicio de hosting que nos permite almacenar proyectos de desarrollo de s
 
 Para ver los campos configurados, podemos escribir `git user.<attibute>`
 
-- Rama creada por defecto: `git config --global init.defaultBranch "<branch name>"`.
+- Rama creada por defecto: `git config --global init.defaultBranch "<branch-name>"`.
 
 ## Crear repositorio
 
@@ -150,15 +150,15 @@ En cada commit veremos fecha, hora, usuario y correo.
 
 ## Cambiar el nombre de una rama
 
-- `git branch -m "<name>"`: cambiar el nombre de la rama actual a `<branch name>`.
+- `git branch -m "<name>"`: cambiar el nombre de la rama actual a `<branch-name>`.
 
-- `git branch -m "<branch name>" "<name>"`: cambiar el nombre de la rama `<branch name>` a `<name>`.
+- `git branch -m "<branch-name>" "<name>"`: cambiar el nombre de la rama `<branch-name>` a `<name>`.
 
 > `-m` de modify.
 
 ## Eliminar una rama
 
-- `git branch -d "<branch name>"`: eliminar la rama llamada `<branch name>`.
+- `git branch -d "<branch-name>"`: eliminar la rama llamada `<branch-name>`.
 
     > `-d` de delete.
 
@@ -172,7 +172,7 @@ En cada commit veremos fecha, hora, usuario y correo.
 
 Proceso que permite combinar varias líneas independientes de desarrollo en una sola rama.
 
-- `git merge "<branch name>"`: recibir los cambios de la rama `<branch name>` en la rama actual.
+- `git merge "<branch-name>"`: recibir los cambios de la rama `<branch-name>` en la rama actual.
 
 Esta operación puede ocasionar **conflictos** cuando se editan las mismas líneas de los mismos archivos de las dos ramas al mismo tiempo.
 
@@ -212,7 +212,7 @@ En `Settings > Developer settings > Personal access tokes > Tokens` podemos crea
 
 ## Incorporar cambios con git pull
 
-- `git pull <source> <branch name>`: descargar el contenido de un repositorio remoto e **inmediatamente actualizar** un repositorio local para que ambos tengan la misma información.
+- `git pull <source> <branch-name>`: descargar el contenido de un repositorio remoto e inmediatamente actualizar un repositorio local para que ambos tengan la misma información.
 
 > Normalmente, usamos origin como `<source>`.
 
@@ -258,12 +258,12 @@ Se pueden ver como una lista de pendientes (errores y mejoras) para un repositor
 
 Queremos traer una rama remota a nuestro repositorio local, podemos usar los siguientes enfoques:
 
-1. Crear una rama local (con el mismo nombre que la rama creada remotamente) y hacer un `git pull origin <branch name>`.
+1. Crear una rama local (con el mismo nombre que la rama creada remotamente) y hacer un `git pull origin <branch-name>`.
 
-2. Hacer un `git fetch origin` y cambiar a la rama `git checkout <branch name>`.
+2. Hacer un `git fetch origin` y cambiar a la rama `git checkout <branch-name>`.
 
 ## Eliminar ramas
 
-1. `git branch -d <branch name>`: eliminar la rama del repositorio local.
+1. `git branch -d <branch-name>`: eliminar la rama del repositorio local.
 
-2. `git push origin -d <branch name> && cd repo`: eliminar la rama del repositorio remoto.
+2. `git push origin -d <branch-name> && cd repo`: eliminar la rama del repositorio remoto.

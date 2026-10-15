@@ -161,13 +161,13 @@ A AND operation is performed between the "original file mode" and NOT "mask" (wi
 
 ...in addition to read, write, and execute permissions, there are some other, less used, permissions settings.
 
-- setuid bit (octal 4000): when applied to an executable file, it changes the **effective user ID** from that of the real user (the user actually running the program) to that of the program's owner.
+- setuid bit (octal 4000): when applied to an executable file, it changes the effective user ID from that of the real user (the user actually running the program) to that of the program's owner.
 
     This is useful when the executable file needs access to files or directories (or both) that a normal user would normally be prohibited from accessing.
 
     Because this raises security concerns, the number of setuid programs must be held to an absolute minimum.
 
-- setgid bit (octal 2000): changes the **effective group ID** from the real group ID of the real user to that of the file owner.
+- setgid bit (octal 2000): changes the effective group ID from the real group ID of the real user to that of the file owner.
 
     If the setgid bit is set on a directory, newly created files in the directory will be given the group ownership of the directory rather of the group ownership of the file's creator.
 

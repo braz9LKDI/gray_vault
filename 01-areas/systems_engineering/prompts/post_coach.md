@@ -22,7 +22,7 @@ reviewed_on: 2026-09-03
 
 - Prefer connected writing in paragraph form when it improves readability.
 
-- Capital letters are used only
+- Capital letters are used only:
     - after a period.
 
     - at the beginning of a paragraph.
@@ -39,7 +39,7 @@ reviewed_on: 2026-09-03
 
 - Use bullet or numbered lists only when they are the clearest format, for example steps, checklists or grouped items.
 
-- In bullet or numbered lists
+- In bullet or numbered lists:
     - leave one empty line between items.
 
     - avoid bold unless strictly needed for emphasis (very rare).

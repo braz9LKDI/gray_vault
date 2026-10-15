@@ -21,7 +21,7 @@ Prisma ORM (Object-Relational Mapping) is a modern database toolkit for Node.js 
 4. `npx prisma init --datasource-provider sqlite`.
     - Creates a `prisma/` folder containing `schema.prisma`.
 
-        ```js
+        ```javascript
         // This is your Prisma schema file,
         // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
@@ -93,7 +93,7 @@ When deploying a Prisma project to a production environment, you need to configu
 
     For example:
 
-    ```env
+    ```ini
     DATABASE_URL="postgresql://user:password@your-production-db-host:5432/database"
     ```
 

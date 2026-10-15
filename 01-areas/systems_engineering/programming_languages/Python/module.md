@@ -31,7 +31,7 @@ Whenever a module is imported, the interpreter looks for several locations. Firs
 
 ## Module creation
 
-In the `setup.py` we will store information about the package, namely the package name, its version, platform dependencies and so on. To build the distributable package, we will use the `python <setup file> sdist bdist_wheel` command.
+In the `setup.py` we will store information about the package, namely the package name, its version, platform dependencies and so on. To build the distributable package, we will use the `python <setup-file> sdist bdist_wheel` command.
 
 - `sdist`: creates a source distribution.
 
