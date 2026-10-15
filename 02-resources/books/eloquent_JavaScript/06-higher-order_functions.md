@@ -14,7 +14,7 @@ A large program is a costly program, and not just because of the time it takes t
 
 ...Abstractions give us the ability to talk about problems at a higher (or more abstract) level, without getting sidetracked by uninteresting details.
 
-It is a useful skill, in programming, to notice when you are working at too low a level of abstraction.
+It is a useful skill, in programming, to notice when the work is at too low a level of abstraction.
 
 ## Higher-order functions (section)
 
@@ -68,11 +68,11 @@ function reduce(array, combine, start) {
 }
 ```
 
-`reduce`, which of course corresponds to this function, has an added convenience. If your array contains at least one element, you are allowed to leave off the start argument. The method will take the first element of the array as its start value and start reducing at the second element.
+`reduce`, which of course corresponds to this function, has an added convenience. If the array contains at least one element, the start argument can be left off. The method will take the first element of the array as its start value and start reducing at the second element.
 
 ## Strings and character codes
 
-...JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. A Unicode character code was initially supposed to fit within such a unit (which gives you a little over 65,000 characters). When it became clear that was not going to be enough, many people balked at the need to use more memory per character. To address these concerns, UTF-16, the format also used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit but uses a pair of two such units for others.
+...JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. A Unicode character code was initially supposed to fit within such a unit (which gives a little over 65,000 characters). When it became clear that was not going to be enough, many people balked at the need to use more memory per character. To address these concerns, UTF-16, the format also used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit but uses a pair of two such units for others.
 
 ## Summary
 

@@ -66,7 +66,7 @@ for (int i = 0; i < 2; i++) {
 
 ### Usage example (pointers to pointers)
 
-Because a pointer is a variable, you can create a pointer to a pointer, forming a chain of pointers.
+Because a pointer is a variable, a pointer to a pointer can be created, forming a chain of pointers.
 
 ```cpp
 char a;

@@ -8,7 +8,7 @@ reviewed_on: "2025-10-02"
 >
 > "When you cut against the grain of the wood, much strength is needed. When you program against the grain of the problem, much code is needed." (Master Yuan-Ma, The Book of Programming)
 
-Regular expressions are both terribly awkward and extremely useful. Their syntax is cryptic and the programming interface JavaScript provides for them is clumsy. But they are a powerful tool for inspecting and processing strings. Properly understanding regular expressions will make you a more effective programmer.
+Regular expressions are both terribly awkward and extremely useful. Their syntax is cryptic and the programming interface JavaScript provides for them is clumsy. But they are a powerful tool for inspecting and processing strings. Properly understanding regular expressions makes for a more effective programmer.
 
 ## Creating a regular expression
 
@@ -21,7 +21,7 @@ let re_2 = /abc/;
 
 ## Testing for matches
 
-Regular expression objects have a number of methods. The simplest one is `test`. If you pass it a string, it will return a Boolean telling you whether the string contains a match of the pattern in the expression.
+Regular expression objects have a number of methods. The simplest one is `test`. If a string is passed to it, it will return a Boolean telling whether the string contains a match of the pattern in the expression.
 
 ```javascript
 console.log(/abc/.test("abcde")); // true
@@ -34,25 +34,25 @@ In a regular expression, putting a set of characters between square brackets mak
 
 A number of common character groups have their own built-in shortcuts.
 
-|      |                         meaning                          |
-| :--: | :------------------------------------------------------: |
-| `\d` |                          digit.                          |
-| `\w` |                      alphanumeric.                       |
-| `\s` | whitespace character (space, tab, newline, and similar). |
-| `\D` |                       not a digit.                       |
-| `\W` |                     nonalphanumeric.                     |
-| `\S` |                      nonwhitespace.                      |
-| `.`  |            any character except for newline.             |
+|      |                         meaning                         |
+| :--: | :-----------------------------------------------------: |
+| `\d` |                         digit.                          |
+| `\w` |                      alphanumeric.                      |
+| `\s` | whitespace character (space, tab, newline and similar). |
+| `\D` |                      not a digit.                       |
+| `\W` |                    nonalphanumeric.                     |
+| `\S` |                     nonwhitespace.                      |
+| `.`  |            any character except for newline.            |
 
-To **invert** a set of characters (that is, to express that you want to match any character except the ones in the set) you can write a caret (`^`) character after the opening bracket.
+To **invert** a set of characters (that is, to match any character except the ones in the set) a caret (`^`) character can be written after the opening bracket.
 
 ## International characters
 
-...as far as JavaScript's regular expressions are concerned, a "word character" is only one of the 26 characters in the Latin alphabet (uppercase or lowercase), decimal digits, and, for some reason, the underscore character.
+...as far as JavaScript's regular expressions are concerned, a "word character" is only one of the 26 characters in the Latin alphabet (uppercase or lowercase), decimal digits and, for some reason, the underscore character.
 
 ## Matches and groups
 
-`test` is the absolute simplest way to match a regular expression. It tells you only whether it matched and nothing else. Regular expressions also have an `exec` (execute) that will return `null` if no match was found and return an object with information about the match otherwise.
+`test` is the absolute simplest way to match a regular expression. It tells only whether it matched and nothing else. Regular expressions also have an `exec` (execute) that will return `null` if no match was found and return an object with information about the match otherwise.
 
 ```javascript
 let match = /\d+/.exec("one two 100");
@@ -62,7 +62,7 @@ console.log(match.index); // 8
 
 When the regular expression contains subexpressions grouped with parentheses, the text that matched those groups will also show up in the array.
 
-If you want to use parentheses purely for grouping, without having them show up in the array of matches, you can put `?:` after the opening parenthesis.
+To use parentheses purely for grouping, without having them show up in the array of matches, `?:` can be put after the opening parenthesis.
 
 ```javascript
 console.log(/(?:na)+/.exec("banana")); // ["nana"]
@@ -78,7 +78,7 @@ console.log(new Date(2009, 11, 9, 12, 59, 59, 999)); // Wed Dec 09 2009 12:59:59
 
 JavaScript uses a convention where month numbers start at zero (so December is 11), yet day numbers start at one.
 
-Timestamps are stored as the number of milliseconds since the start of 1970, in the UTC time zone. This follows a convention set by "Unix time", which was invented around that time. You can use negative numbers for times before 1970.
+Timestamps are stored as the number of milliseconds since the start of 1970, in the UTC time zone. This follows a convention set by "Unix time", which was invented around that time. Negative numbers can be used for times before 1970.
 
 ## Boundaries and look-ahead
 
@@ -99,7 +99,7 @@ console.log(/a(?! )/.exec("a b")); // null
 
 ## The mechanics of matching
 
-Conceptually, when you use `exec` or `test`, the regular expression engine looks for a match in your string by trying to match the expression first from the start of the string, then from the second character, and so on until it finds a match or reaches the end of the string. It will either return the first match that can be found or fail to find any match at all.
+Conceptually, when `exec` or `test` is used, the regular expression engine looks for a match in the string by trying to match the expression first from the start of the string, then from the second character and so on until it finds a match or reaches the end of the string. It will either return the first match that can be found or fail to find any match at all.
 
 ## Backtracking
 
@@ -125,7 +125,7 @@ console.log(
 
 ## Greed
 
-We say the repetition operators (`+`, `*`, `?`, and `{}`) are **greedy**, meaning they match as much as they can and backtrack from there. If you put a question mark after them (`+?`, `*?`, `??`, `{}?`), they become nongreedy and start by matching as little as possible, matching more only when the remaining pattern does not fit the smaller match.
+We say the repetition operators (`+`, `*`, `?` and `{}`) are **greedy**, meaning they match as much as they can and backtrack from there. If a question mark is put after them (`+?`, `*?`, `??`, `{}?`), they become nongreedy and start by matching as little as possible, matching more only when the remaining pattern does not fit the smaller match.
 
 ## The `lastIndex` property
 
@@ -170,7 +170,7 @@ The exact rules for the INI format are as follows:
 
 Another design mistake that is been standardized in JavaScript regular expressions is that by default, operators like `.` or `?` work on code units..., not actual characters. This means characters that are composed of two code units behave strangely.
 
-You must add the `u` (Unicode) option to your regular expression to make it treat such characters properly.
+The `u` (Unicode) option must be added to the regular expression to make it treat such characters properly.
 
 ## Summary
 

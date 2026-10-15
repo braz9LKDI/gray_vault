@@ -8,10 +8,10 @@
 | :---: | :----------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
 |   7   | Application  |                                                     Provides interfaces for applications.                                                     |
 |   6   | Presentation | Translates data formats to ensure that the application-layer data of one system can be identified by the application layer of another system. |
-|   5   |   Session    |                                 Establishes, manages, and terminates sessions between communicating parties.                                  |
+|   5   |   Session    |                                  Establishes, manages and terminates sessions between communicating parties.                                  |
 |   4   |  Transport   |     Establishes, maintains and cancels an end-to-end data transmission process; controls transmission speeds and adjusts data sequences.      |
 |   3   |   Network    |                                  Defines logical addresses and transfers data from sources to destinations.                                   |
-|   2   |  Data Link   |                    Encapsulates packets into frames, transmits frames in P2P or P2MP mode, and implements error checking.                     |
+|   2   |  Data Link   |                     Encapsulates packets into frames, transmits frames in P2P or P2MP mode and implements error checking.                     |
 |   1   |   Physical   |                       Transmits bitstreams over transmission media and defines electrical and physical specifications.                        |
 
 ### TCP/IP reference model
@@ -50,7 +50,7 @@ It provides interfaces for application software so that applications can use net
 
 ### Transport layer
 
-It receives data from an application layer protocol, encapsulates the data with the corresponding transport layer protocol header, and helps establish an end-to-end (port-to-port) connection
+It receives data from an application layer protocol, encapsulates the data with the corresponding transport layer protocol header and helps establish an end-to-end (port-to-port) connection
 
 > PDUs transmitted at the transport layer are called **segments**.
 
@@ -76,11 +76,11 @@ It receives data from an application layer protocol, encapsulates the data with 
 
 - Reserved: this field is reserved and must be set to 0.
 
-- Control bits: it includes FIN, ACK, and SYN flags, indicating TCP data segments in different states.
+- Control bits: it includes FIN, ACK and SYN flags, indicating TCP data segments in different states.
 
 - Window: used for TCP flow control. The value is the maximum number of bytes that are allowed by the receiver. The maximum window size is 65535 bytes.
 
-- Checksum: a mandatory field. It is calculated, stored by the sender, and verified by the receiver. During checksum computation, the TCP header and TCP data are included, and a 12-byte pseudo header is added before the TCP segment.
+- Checksum: a mandatory field. It is calculated, stored by the sender and verified by the receiver. During checksum computation, the TCP header and TCP data are included, and a 12-byte pseudo header is added before the TCP segment.
 
 - Urgent: indicates the urgent pointer. The urgent pointer is valid only when the URG flag is set. The Urgent field indicates that the sender transmits data in emergency mode. The urgent pointer indicates the number of urgent data bytes in a segment (urgent data is placed at the beginning of the segment).
 

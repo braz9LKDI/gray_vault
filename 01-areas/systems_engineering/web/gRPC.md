@@ -12,7 +12,7 @@ This means that the interface is explicit and strongly typed, and that the same 
 
 ## Service definition and protocol buffers
 
-By default, gRPC uses protocol buffers as both the interface definition language and the message format. Services, methods, request messages, and response messages are described in a `.proto` file.
+By default, gRPC uses protocol buffers as both the interface definition language and the message format. Services, methods, request messages and response messages are described in a `.proto` file.
 
 From that definition, code can be generated for clients and servers. The client receives a stub with the available remote methods, while the server implements the service defined in the contract.
 
@@ -28,7 +28,7 @@ From that definition, code can be generated for clients and servers. The client 
 
 ## Why is it used?
 
-gRPC is often chosen when efficient communication, strong contracts, and code generation are important. It is especially common in distributed systems where many backend services must communicate reliably and with low overhead.
+gRPC is often chosen when efficient communication, strong contracts and code generation are important. It is especially common in distributed systems where many backend services must communicate reliably and with low overhead.
 
 It also provides features such as streaming, authentication, load balancing, tracing and health checking.
 

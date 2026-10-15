@@ -8,7 +8,7 @@ sources:
 
 # GitFlow
 
-Git flow is a popular Git branching strategy aimed at simplifying release management, and was introduced by software developer Vincent Driessen in 2010. Fundamentally, Git flow involves isolating your work into different types of Git branches.
+Git flow is a popular Git branching strategy aimed at simplifying release management, and was introduced by software developer Vincent Driessen in 2010. Fundamentally, Git flow involves isolating work into different types of Git branches.
 
 In the Git flow workflow, there are two principal branches and three supporting branches.
 
@@ -30,9 +30,9 @@ Newly-created features should be based off the develop branch, and then merged b
 
 ### Feature
 
-It is used when adding new features to your code.
+It is used when adding new features to the code.
 
-When working on a new feature, you will start a feature branch off the develop branch, and then merge your changes back into the develop branch when the feature is completed and properly reviewed.
+When working on a new feature, a feature branch is started off the develop branch, and the changes are merged back into the develop branch when the feature is completed and properly reviewed.
 
 ### Release
 
@@ -40,9 +40,9 @@ The release branch should be used when preparing new production releases. Typica
 
 ### Hotfix
 
-It is used to quickly address necessary changes in your main branch.
+It is used to quickly address necessary changes in the main branch.
 
-The base of the hotfix branch should be your main branch and should be merged back into both the main and develop branches. Merging the changes from your hotfix branch back into the develop branch is critical to ensure the fix persists the next time the main branch is released.
+The base of the hotfix branch should be the main branch and it should be merged back into both the main and develop branches. Merging the changes from the hotfix branch back into the develop branch is critical to ensure the fix persists the next time the main branch is released.
 
 ## How to use it
 

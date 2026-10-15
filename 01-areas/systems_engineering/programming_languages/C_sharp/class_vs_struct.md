@@ -38,7 +38,7 @@ b.value = 5;
 Console.WriteLine(a.Value) // 1
 ```
 
-Passing to methods follows the same rule: structs are copied by default, classes are not. `ref`, `in`, and `out` can change that behavior for structs.
+Passing to methods follows the same rule: structs are copied by default, classes are not. `ref`, `in` and `out` can change that behavior for structs.
 
 ```cs
 static void increment(counter c) { c.value++; }

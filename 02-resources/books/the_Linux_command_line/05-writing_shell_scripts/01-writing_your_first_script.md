@@ -2,7 +2,7 @@
 reviewed_on: "2025-07-25"
 ---
 
-# Writing your first script
+# Writing the first script
 
 ## What are shell scripts?
 

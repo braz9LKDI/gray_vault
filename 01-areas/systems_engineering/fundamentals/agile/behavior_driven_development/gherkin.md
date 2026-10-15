@@ -14,7 +14,7 @@ Given a certain _scenario_ (context), when an _action_ takes place (event), then
 
 ## Keywords
 
-- Feature: the high-level capability or behavior being described (the "what" you want from the system).
+- Feature: the high-level capability or behavior being described (the "what" wanted from the system).
 
 - Scenario: a specific example that shows one behavior of the feature in a concrete situation, written as steps.
 

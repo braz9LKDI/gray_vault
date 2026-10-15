@@ -12,7 +12,7 @@ reviewed_on: "2025-08-31"
 
 ## On programming
 
-...Programming, it turns out, is hard. The fundamental rules are simple and clear, but programs built on top of these rules tend to become complex enough to introduce their own rules and complexity. You are building your own maze, in a way, and you can easily get lost in it.
+...Programming, it turns out, is hard. The fundamental rules are simple and clear, but programs built on top of these rules tend to become complex enough to introduce their own rules and complexity. Programming builds its own maze, in a way, and it is easy to get lost in it.
 
 > "When action grows unprofitable, gather information; when information grows unprofitable, sleep." (Ursula K. Le Guin, The Left Hand of Darkness)
 

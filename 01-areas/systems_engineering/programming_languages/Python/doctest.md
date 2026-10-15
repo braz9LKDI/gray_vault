@@ -22,7 +22,7 @@ sources:
 
 5. Call `testmod` with the name of the function to test and set `verbose` to `True` as arguments.
 
-    > You can achieve a similar behavior using `-v` in the script execution.
+    > A similar behavior can be achieved using `-v` in the script execution.
     >
     > If `verbose` is set to `False` (default), output will be shown in case of failure only, not in case of success.
 

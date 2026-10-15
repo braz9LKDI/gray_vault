@@ -179,7 +179,7 @@ On the other hand, it is very accurate and concise, as well as being extremely c
 
 The GNU Project provides an alternative to man pages for their programs, called "info". Info manuals are displayed with a reader program named, appropriately enough, "info". Info pages are **hyperlinked** much like web pages.
 
-`info` reads **info files**, which are tree structured into individual **nodes**, each containing a single topic. Info files contain hyperlinks that can move you from node to node. A hyperlink can be identified by its leading asterisk and is activated by placing the cursor upon it and pressing `ENTER`.
+`info` reads **info files**, which are tree structured into individual **nodes**, each containing a single topic. Info files contain hyperlinks that lead from node to node. A hyperlink can be identified by its leading asterisk and is activated by placing the cursor upon it and pressing `ENTER`.
 
 ```text
 info <command>

@@ -14,4 +14,4 @@ A sequence of $n$ matrices $A_1, A_2, \dots, A_n$. Each matrix $A_i$ has dimensi
 
 ## Output
 
-An optimal parenthesization of the matrix sequence that minimizes the number of scalar multiplications, from what you can get the minimum number of scalar multiplications required to compute the product.
+An optimal parenthesization of the matrix sequence that minimizes the number of scalar multiplications, from which the minimum number of scalar multiplications required to compute the product can be obtained.

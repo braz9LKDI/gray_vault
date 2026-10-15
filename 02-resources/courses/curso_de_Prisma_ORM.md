@@ -53,7 +53,7 @@ After defining a model we must run `npx prisma migrate dev`, this command
 
 ## Prisma studio
 
-Prisma Studio is a graphical user interface (GUI) that allows you to view, edit, and manage your database records visually. It is useful for quickly inspecting and modifying data without writing SQL queries.
+Prisma Studio is a graphical user interface (GUI) to view, edit and manage database records visually. It is useful for quickly inspecting and modifying data without writing SQL queries.
 
 To open Prisma Studio, we must run `npx prisma studio`.
 
@@ -87,7 +87,7 @@ To create a project that uses TypeScript, we mush follow the following instructi
 
 ## Deploy in external services
 
-When deploying a Prisma project to a production environment, you need to configure the database and apply migrations properly.
+When deploying a Prisma project to a production environment, the database must be configured and migrations applied properly.
 
 1. Modify `.env` to use a production database instead of a local one.
 

@@ -26,13 +26,13 @@ It is a **greedy** algorithm that finds the shortest path from a starting vertex
 
 ## Path reconstruction
 
-To find the shortest path from the source to a destination vertex, you can work backward from the destination using the stored previous vertex information:
+To find the shortest path from the source to a destination vertex, the path can be traced backward from the destination using the stored previous vertex information:
 
 1. Start at the destination vertex.
 
 2. Repeatedly move to the previous vertex store for the current one.
 
-3. Continue until you reach the source vertex.
+3. Continue until the source vertex is reached.
 
 ## Complexity
 

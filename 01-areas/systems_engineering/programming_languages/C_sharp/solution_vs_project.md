@@ -30,4 +30,4 @@ The `.csproj` file defines a single buildable unit. it declares:
 
 ### Practical implications (project)
 
-Build and restore happen at the project level. when you run `dotnet build` or `dotnet test`, you are ultimately building projects; the solution is just a convenient way to point to multiple projects at once.
+Build and restore happen at the project level. when `dotnet build` or `dotnet test` is run, projects are what is ultimately built; the solution is just a convenient way to point to multiple projects at once.

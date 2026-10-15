@@ -16,7 +16,7 @@ Concentrate on the **most important** (the one that brings more value to the cli
 
 ## Openness
 
-Be transparent about work, progress, and problems.
+Be transparent about work, progress and problems.
 
 ## Respect
 

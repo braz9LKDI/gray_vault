@@ -22,7 +22,7 @@ If the optional `in <words>` portion of `for` is omitted, `for` defaults to proc
 
 ### Why i?
 
-The basis of this tradition comes from the Fortran programming language. In Fortran, undeclared variables starting with the letters `I`, `J`, `K`, `L` and `M` are automatically typed as integers, while variables beginning with any other letter are typed as reals. This behavior led programmers to use the variables `I`, `J`, and `K` for loop variables since it was less work to use them when a temporary variable was needed.
+The basis of this tradition comes from the Fortran programming language. In Fortran, undeclared variables starting with the letters `I`, `J`, `K`, `L` and `M` are automatically typed as integers, while variables beginning with any other letter are typed as reals. This behavior led programmers to use the variables `I`, `J` and `K` for loop variables since it was less work to use them when a temporary variable was needed.
 
 It also led to the following Fortran-based witticism:
 
@@ -36,7 +36,7 @@ for (( expression_1; expression_2; expression_3 )); do
 done
 ```
 
-Here _expression_1_, _expression_2_, and _expression_3_ are arithmetic expression and _commands_ are the commands to be performed during each iteration of the loop.
+Here _expression_1_, _expression_2_ and _expression_3_ are arithmetic expression and _commands_ are the commands to be performed during each iteration of the loop.
 
 In terms of behavior, this form is equivalent to the following construct:
 
@@ -48,7 +48,7 @@ while (( expression_2 )); do
 done
 ```
 
-_expression_1_ is used to initialize conditions for the loop, _expression_2_ is used to determine when the loop is finished, and _expression_3_ is carried out at the end of each iteration of the loop.
+_expression_1_ is used to initialize conditions for the loop, _expression_2_ is used to determine when the loop is finished and _expression_3_ is carried out at the end of each iteration of the loop.
 
 ## Summing up
 

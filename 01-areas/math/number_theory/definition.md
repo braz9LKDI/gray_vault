@@ -4,9 +4,9 @@ reviewed_on: "2025-02-03"
 
 # Definition
 
-Number theory is a branch of mathematics that studies numbers, particularly whole numbers, and their properties and relationships. It explores patterns, structures, and the behaviors of numbers in different situations. Number theory deals with the following key concepts:
+Number theory is a branch of mathematics that studies numbers, particularly whole numbers, and their properties and relationships. It explores patterns, structures and the behaviors of numbers in different situations. Number theory deals with the following key concepts:
 
-- [[01-areas/math/number_theory/prime_number|prime_number|Prime numbers]]: properties, distribution, and applications of prime numbers.
+- [[01-areas/math/number_theory/prime_number|prime_number|Prime numbers]]: properties, distribution and applications of prime numbers.
 
 - [[01-areas/math/number_theory/divisibility|divisibility|Divisibility]]: rules and relationships of numbers dividing each other.
 
@@ -14,6 +14,6 @@ Number theory is a branch of mathematics that studies numbers, particularly whol
 
 - Modular arithmetic: remainders and "clock arithmetic".
 
-- Number patterns: squares, cubes, and other numerical sequences.
+- Number patterns: squares, cubes and other numerical sequences.
 
 - [[01-areas/math/number_theory/congruence|congruence|Congruences]]: relationships between numbers in modular systems.

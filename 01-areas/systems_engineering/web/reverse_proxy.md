@@ -12,4 +12,4 @@ A reverse proxy is placed in front of the backend so that direct access to inter
 
 ## Benefits
 
-The application performance is improved because caching, compression, connection reuse, and load balancing can be handled by the proxy. As a result, backend servers can focus more on application logic and less on repetitive network tasks.
+The application performance is improved because caching, compression, connection reuse and load balancing can be handled by the proxy. As a result, backend servers can focus more on application logic and less on repetitive network tasks.

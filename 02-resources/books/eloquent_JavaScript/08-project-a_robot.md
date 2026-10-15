@@ -12,7 +12,7 @@ reviewed_on: "2025-09-14"
 
 ## The task
 
-...The fact that something sounds like an object does not automatically mean that it should be an object in your program. Reflexively writing classes for every concept in your application tends to leave you with a collection of interconnected objects that each have their own internal, changing state. Such programs are often hard to understand and thus easy to break.
+...The fact that something sounds like an object does not automatically mean that it should be an object in your program. Reflexively writing classes for every concept in an application tends to leave a collection of interconnected objects that each have their own internal, changing state. Such programs are often hard to understand and thus easy to break.
 
 ## Persistent data
 
@@ -24,7 +24,7 @@ object.value = 10;
 console.log(object.value); // 5
 ```
 
-Unfortunately, although understanding a system built on persistent data structures is easier, **designing** one, especially when your programming language is not helping, can be a little harder.
+Unfortunately, although understanding a system built on persistent data structures is easier, **designing** one, especially when the programming language is not helping, can be a little harder.
 
 ## Pathfinding
 

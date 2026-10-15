@@ -18,7 +18,7 @@ There are three special values in JavaScript that are considered numbers but do 
 
 ...a backslash (`\`) inside quoted text indicates that the character after it has a special meaning. This is called escaping the character. A quote that is preceded by a backslash will not end the string but will be part of it. When an `n` occurs after a backslash, it is interpreted as a newline. Similarly, a `t` after a backslash means a tab character...
 
-When you write something inside `${}` in a **template literal** (backtick-quoted strings), its result will be computed, converted to a string, and included at that position....
+When you write something inside `${}` in a **template literal** (backtick-quoted strings), its result will be computed, converted to a string and included at that position....
 
 ```javascript
 `half of 100 is ${100 / 2}`; // half of 100 is 50
@@ -28,7 +28,7 @@ When you write something inside `${}` in a **template literal** (backtick-quoted
 
 ### Comparison
 
-The way strings are ordered is roughly alphabetic but not really what you would expect to see in a dictionary: uppercase letters are always "less" than lowercase ones, so $\text{Z} < \text{a}$, and nonalphabetic characters (`!`, `-`, and so on) are also included in the ordering. When comparing strings, JavaScript goes over the characters from left to right, comparing the Unicode codes one by one.
+The way strings are ordered is roughly alphabetic but not really what would be expected in a dictionary: uppercase letters are always "less" than lowercase ones, so $\text{Z} < \text{a}$, and nonalphabetic characters (`!`, `-` and so on) are also included in the ordering. When comparing strings, JavaScript goes over the characters from left to right, comparing the Unicode codes one by one.
 
 ```javascript
 console.log("Aardvark" < "Zoroaster"); // true
@@ -48,9 +48,9 @@ Many operations in the language that do not produce a meaningful value yield `un
 
 ## Automatic type conversion
 
-When an operator is applied to the "wrong" type of value, JavaScript will quietly convert that value to the type it needs, using a set of rules that often are not what you want or expect. This is called **type coercion**...
+When an operator is applied to the "wrong" type of value, JavaScript will quietly convert that value to the type it needs, using a set of rules that often are not what is wanted or expected. This is called **type coercion**...
 
-When comparing values of the same type using `==`, the outcome is easy to predict: you should get true when both values are the same, except in the case of `NaN`. But when the types differ, JavaScript uses a complicated and confusing set of rules to determine what to do. In most cases, it just tries to convert one of the values to the other value's type. However, when `null` or `undefined` occurs on either side of the operator, it produces true only if both sides are one of `null` or `undefined`.
+When comparing values of the same type using `==`, the outcome is easy to predict: it is true when both values are the same, except in the case of `NaN`. But when the types differ, JavaScript uses a complicated and confusing set of rules to determine what to do. In most cases, it just tries to convert one of the values to the other value's type. However, when `null` or `undefined` occurs on either side of the operator, it produces true only if both sides are one of `null` or `undefined`.
 
 ## Short-circuiting of logical operators
 

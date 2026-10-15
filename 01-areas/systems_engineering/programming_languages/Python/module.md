@@ -11,7 +11,7 @@ sources:
 
 # Module
 
-It is a file containing definitions and statements. A module can define functions, classes, and variables. It can also include runnable code.
+It is a file containing definitions and statements. A module can define functions, classes and variables. It can also include runnable code.
 
 ## Importing a module
 

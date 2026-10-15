@@ -34,7 +34,7 @@ When a system starts up, the kernel initiates a few of its own activities as pro
 
 The fact that a program can launch other programs is expressed in the process scheme as a **parent process** producing a **child process**.
 
-...Like files, processes also have owners and user IDs, effective user IDs, and so on.
+...Like files, processes also have owners and user IDs, effective user IDs and so on.
 
 ## Viewing processes
 
@@ -178,7 +178,7 @@ As with `fg`, the jobspec is optional if there is only one job.
 
 Why would we want to launch a graphical program from the command line? There are two reasons:
 
-- The program you want to run might not be listed on the window manager's menus.
+- The program to run might not be listed on the window manager's menus.
 
 - By launching a program from the command line, you might be able to see error messages that would otherwise be invisible if the program were launched graphically...
 
@@ -249,7 +249,7 @@ If no signal is specified on the command line, then the TERM (terminate) signal 
 
 ...Note that signals may be specified either by number or by name, including the name prefixed with the letters `SIG`.
 
-Processes, like files, have owners, and you must be the owner of a process (or the superuser) to send it signals with `kill`.
+Processes, like files, have owners, and only the owner of a process (or the superuser) can send it signals with `kill`.
 
 ```bash
 kill -SIGINT 28401
@@ -257,7 +257,7 @@ kill -SIGINT 28401
 # [1]+  Interrupt               xlogo
 ```
 
-Processes, like files, have owners, and you must be the owner of a process (or the superuser) to send it signals with `kill`.
+Processes, like files, have owners, and only the owner of a process (or the superuser) can send it signals with `kill`.
 
 ### Making a process hang up proof
 
@@ -302,4 +302,4 @@ The process of shutting down the system involves the orderly termination of all 
 
 - `shutdown`.
 
-`poweroff`, `reboot`, and `halt` take the same options.
+`poweroff`, `reboot` and `halt` take the same options.

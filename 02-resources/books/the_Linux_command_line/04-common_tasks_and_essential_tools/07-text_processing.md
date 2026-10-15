@@ -211,7 +211,7 @@ It compares two text files and displays the lines that are unique to each one an
 comm FILE FILE
 ```
 
-It produces three columns of output. The first column contains lines unique to the first file argument, the second column contains the line unique to the second file argument, and the third column contains the lines shred by both files.
+It produces three columns of output. The first column contains lines unique to the first file argument, the second column contains the line unique to the second file argument and the third column contains the lines shred by both files.
 
 `-<n>` can be provide to suppress the _n_ column.
 

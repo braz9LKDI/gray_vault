@@ -32,7 +32,7 @@ reviewed_on: "2025-06-30"
 | `/Line/line/` | specifies the search pattern and the replacement text.                                                             |
 |      `g`      | "global" in the sense that the search-and-replace is performed on every instance of the search string in the line. |
 
-A `c` can be added after `g` if you want it to ask for confirmation after each substitution.
+A `c` can be added after `g` to ask for confirmation after each substitution.
 
 ```text
 :%s/Line/line/gc

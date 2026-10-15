@@ -8,11 +8,11 @@ reviewed_on: "2025-08-31"
 
 ## Expressions and statements
 
-In some cases, JavaScript allows you to omit the semicolon at the end of a statement. In other cases, it has to be there, or the next line will be treated as part of the same statement. The rules for when it can be safely omitted are somewhat complex and error-prone...
+In some cases, JavaScript allows the semicolon at the end of a statement to be omitted. In other cases, it has to be there, or the next line will be treated as part of the same statement. The rules for when it can be safely omitted are somewhat complex and error-prone...
 
 ## Bindings
 
-You should imagine bindings as tentacles rather than boxes. They do not **contain** values; they **grasp** them (two bindings can refer to the same value). A program can access only the values to which it still has a reference. When you need to remember something, you either grow a tentacle to hold on to it or reattach one of your existing tentacles to it.
+Bindings are better imagined as tentacles rather than boxes. They do not **contain** values; they **grasp** them (two bindings can refer to the same value). A program can access only the values to which it still has a reference. When something must be remembered, a tentacle is either grown to hold on to it or one of the existing tentacles is reattached to it.
 
 The words "var" and "const" can also be used to create bindings, similarly to "let".
 

@@ -88,7 +88,7 @@ Based on their geographical coverage, networks can be classified into local area
 
 It is a network that consists of computers, servers and network devices in a geographic area. The coverage of a LAN is generally several thousand square meters.
 
-Typical LANs include a company's office network, a cyber bar network, and a home network.
+Typical LANs include a company's office network, a cyber bar network and a home network.
 
 #### MAN
 

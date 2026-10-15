@@ -9,7 +9,7 @@
 
 ## ¿Qué son exactamente los comandos?
 
-- `man [OPTION] [COMMAND]` (manual): allows users to access detailed information about various commands, utilities, and system calls.
+- `man [OPTION] [COMMAND]` (manual): allows users to access detailed information about various commands, utilities and system calls.
 
     Manual pages are organized into different sections, each serving a specific purpose. The primary sections include:
     1. "NAME": provides the name and a brief description of the command.
@@ -24,6 +24,7 @@
 
     6. "SEE ALSO": suggests related commands or resources.
 
+    Its most useful options are:
     - `-f` or `--whatis`: Approximately equivalent to `whatis`. Display a short description from the manual page, if it is available.
 
     - `-K` or `--global-apropos`: search for text in all manual pages.

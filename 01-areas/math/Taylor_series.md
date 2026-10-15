@@ -4,7 +4,7 @@ reviewed_on: "2024-09-24"
 
 # Taylor serie
 
-Suppose that $f \in C^{ n + 1 } [a,b]$, $f^{ n + 1 }$ exists on $[a,b]$, and $x_0 \in [a,b]$. For every $x \in [a,b]$, there exists a number $\xi(x)$ between $x_0$ and $x$ such that:
+Suppose that $f \in C^{ n + 1 } [a,b]$, $f^{ n + 1 }$ exists on $[a,b]$ and $x_0 \in [a,b]$. For every $x \in [a,b]$, there exists a number $\xi(x)$ between $x_0$ and $x$ such that:
 
 > $f \in C^{ n + 1 } [a,b]$ means that the function and its first $n + 1$ derivatives are continuous on that interval.
 

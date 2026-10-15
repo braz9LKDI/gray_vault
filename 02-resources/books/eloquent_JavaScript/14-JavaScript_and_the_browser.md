@@ -36,7 +36,7 @@ Machines connected to the internet get an **IP address**, a number that can be u
 
 ## HTML
 
-HTML, which stands for HyperText Markup Language, is the document format used for web pages. An HTML document contains text, as well as **tags** that give structure to the text, describing things such as links, paragraphs, and headings.
+HTML, which stands for HyperText Markup Language, is the document format used for web pages. An HTML document contains text, as well as **tags** that give structure to the text, describing things such as links, paragraphs and headings.
 
 HTML documents have a head and a body. The head contains information about the document, and the body contains the document itself...
 
@@ -44,4 +44,4 @@ Tags come in several forms...Some opening tags, such as the one for the link (`<
 
 To be able to include angle brackets in the text of a document even though they have a special meaning in HTML, yet another form of special notation has to be introduced. A plain opening angle bracket is written as `&lt;` ("less than"), and a closing bracket is written as `&gt;` ("greater than"). In HTML, an ampersand (`&`) character followed by a name or character code and a semicolon (`;`) is called an **entity** and will be replaced by the character it encodes.
 
-HTML is parsed in a remarkably error-tolerant way. When tags that should be there are missing, the browser automatically adds them. The way this is done has been standardized, and you can rely on all modern browsers to do it in the same way.
+HTML is parsed in a remarkably error-tolerant way. When tags that should be there are missing, the browser automatically adds them. The way this is done has been standardized, and all modern browsers can be relied on to do it in the same way.

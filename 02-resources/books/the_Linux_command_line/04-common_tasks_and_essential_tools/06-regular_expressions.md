@@ -122,21 +122,21 @@ With this setting, POSIX-compliant applications will use a dictionary collation 
 
 To partially work around this problem, the POSIX standard includes a number of character classes that provide useful ranges of characters.
 
-| character class | description                                                                                                                                 |
-| :-------------: | :------------------------------------------------------------------------------------------------------------------------------------------ |
-|   `[:alnum:]`   | alphanumeric characters. In ASCII, equivalent to `[A-Za-z0-9]`.                                                                             |
-|   `[:word:]`    | the same as `[:alnum:]`, with the addition of the underscore (`_`) character.                                                               |
-|   `[:alpha:]`   | the alphabetic characters. In ASCII, equivalent to `[A-Za-z]`.                                                                              |
-|   `[:blank:]`   | includes the space and tab characters.                                                                                                      |
-|   `[:cntrl:]`   | ASCII control codes. Includes the ASCII characters 0 through 31 and 127.                                                                    |
-|   `[:digit:]`   | the numerals 0 through 9.                                                                                                                   |
-|   `[:graph:]`   | visible characters. In ASCII, it includes character 33 through 126.                                                                         |
-|   `[:lower:]`   | lowercase letters.                                                                                                                          |
-|   `[:punct:]`   | punctuation characters.                                                                                                                     |
-|   `[:print:]`   | printable characters. All the characters in `[:graph:]` plus the space character.                                                           |
-|   `[:space:]`   | whitespace characters including space, tab, carriage return, newline, vertical tab, and form feed. In ASCII, equivalent to `[ \t\r\n\v\f]`. |
-|   `[:upper:]`   | uppercase characters.                                                                                                                       |
-|  `[:xdigit:]`   | characters used to express hexadecimal numbers. In ASCII, equivalent to `[0-9A-Fa-f]`.                                                      |
+| character class | description                                                                                                                                |
+| :-------------: | :----------------------------------------------------------------------------------------------------------------------------------------- |
+|   `[:alnum:]`   | alphanumeric characters. In ASCII, equivalent to `[A-Za-z0-9]`.                                                                            |
+|   `[:word:]`    | the same as `[:alnum:]`, with the addition of the underscore (`_`) character.                                                              |
+|   `[:alpha:]`   | the alphabetic characters. In ASCII, equivalent to `[A-Za-z]`.                                                                             |
+|   `[:blank:]`   | includes the space and tab characters.                                                                                                     |
+|   `[:cntrl:]`   | ASCII control codes. Includes the ASCII characters 0 through 31 and 127.                                                                   |
+|   `[:digit:]`   | the numerals 0 through 9.                                                                                                                  |
+|   `[:graph:]`   | visible characters. In ASCII, it includes character 33 through 126.                                                                        |
+|   `[:lower:]`   | lowercase letters.                                                                                                                         |
+|   `[:punct:]`   | punctuation characters.                                                                                                                    |
+|   `[:print:]`   | printable characters. All the characters in `[:graph:]` plus the space character.                                                          |
+|   `[:space:]`   | whitespace characters including space, tab, carriage return, newline, vertical tab and form feed. In ASCII, equivalent to `[ \t\r\n\v\f]`. |
+|   `[:upper:]`   | uppercase characters.                                                                                                                      |
+|  `[:xdigit:]`   | characters used to express hexadecimal numbers. In ASCII, equivalent to `[0-9A-Fa-f]`.                                                     |
 
 Even with the character classes, there is still no convenient way to express partial ranges.
 
@@ -178,7 +178,7 @@ All other characters are considered literals. With ERE, the following metacharac
 
 - `|`.
 
-However, the `(`, `)`, `{`, and `}` characters are treated as metacharacters in BRE if the are escaped with a backslash, whereas with ERE, preceding any metacharacter with a backslash causes it to be treated as a literal.
+However, the `(`, `)`, `{` and `}` characters are treated as metacharacters in BRE if the are escaped with a backslash, whereas with ERE, preceding any metacharacter with a backslash causes it to be treated as a literal.
 
 ...the GNU version of `grep` also supports extended regular expressions when `-E` is used.
 

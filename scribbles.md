@@ -95,7 +95,7 @@
 
     When to throw, custom exceptions
 
-    "Result" style patterns (when you don't want exceptions)
+    "Result" style patterns (when exceptions are not wanted)
 
 7. Generics and constraints.
 
@@ -105,7 +105,7 @@
 
     Variance basics: out, in (useful with interfaces/delegates)
 
-8. Delegates, events, and lambdas.
+8. Delegates, events and lambdas.
 
     Func<>, Action<>, custom delegates
 
@@ -123,7 +123,7 @@
 
     Common pitfall: blocking with .Result / .Wait()
 
-10. Interfaces, DI, and "how C# apps are structured".
+10. Interfaces, DI and "how C# apps are structured".
 
     Interfaces + implementations
 
@@ -131,7 +131,7 @@
 
     Common lifetimes: transient/scoped/singleton (just concepts)
 
-11. Files, IDisposable, and using.
+11. Files, IDisposable and using.
 
     IDisposable and why it exists
 

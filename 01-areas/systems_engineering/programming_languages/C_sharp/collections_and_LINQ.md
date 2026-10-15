@@ -4,7 +4,7 @@ reviewed_on: 2026-03-15
 
 # Collections and LINQ
 
-Collections are used to store groups of values. The most common day-to-day workflow is: store data in a collection, shape it with LINQ, and materialize the final result when needed.
+Collections are used to store groups of values. The most common day-to-day workflow is: store data in a collection, shape it with LINQ and materialize the final result when needed.
 
 ## `List<T>`
 
@@ -200,7 +200,7 @@ foreach (var group in byCity)
 
 Each group has a key and the matching elements for that key.
 
-This is useful for summaries, reports, and aggregation.
+This is useful for summaries, reports and aggregation.
 
 ## Deferred execution
 

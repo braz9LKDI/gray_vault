@@ -10,7 +10,7 @@ reviewed_on: "2025-07-02"
 
 - `ip`: show / manipulate routing, devices, policy routing and tunnels.
 
-- `netstat`: print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+- `netstat`: print network connections, routing tables, interface statistics, masquerade connections and multicast memberships.
 
 - `ftp`: internet file transfer program.
 
@@ -54,7 +54,7 @@ FTP (in its original form) is not secure because it sends account names and pass
 
 ### `lftp` a better `ftp`
 
-It works much like the traditional ftp program but has many additional convenience features including multiple-protocol support (including HTTP), automatic retry on failed downloads, background processes, tab completion of path names, and many more.
+It works much like the traditional ftp program but has many additional convenience features including multiple-protocol support (including HTTP), automatic retry on failed downloads, background processes, tab completion of path names and many more.
 
 ### `curl` transfer a URL
 
@@ -64,7 +64,7 @@ curl [OPTION]... URL [URL]...
 
 We specify a URL and `curl` downloads the first page of the URL and outputs it to standard output. Multiple URLs can be specified.
 
-`curl` supports most network protocols including HTTP, HTTPS, FTP, IMAP, POP3, SFTP, SMB, and others.
+`curl` supports most network protocols including HTTP, HTTPS, FTP, IMAP, POP3, SFTP, SMB and others.
 
 |                  option                  | description                                                            |
 | :--------------------------------------: | :--------------------------------------------------------------------- |
@@ -76,7 +76,7 @@ We specify a URL and `curl` downloads the first page of the URL and outputs it t
 
 ### `wget` non-interactive network downloader
 
-It is useful for downloading content from both web and FTP sites. Single files, multiple files, and even entire sites can be downloaded.
+It is useful for downloading content from both web and FTP sites. Single files, multiple files and even entire sites can be downloaded.
 
 ```text
 wget [OPTION]... URL [URL]...

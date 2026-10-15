@@ -44,17 +44,17 @@ console.log(day_name.dayName(3)); // Wednesday
 
 ## Packages
 
-One of the advantages of building a program out of separate pieces and being able to run some of those pieces on their own is that you might be able to use the same piece in different programs.
+One of the advantages of building a program out of separate pieces and being able to run some of those pieces on their own is that the same piece might be usable in different programs.
 
 ...A package is a chunk of code that can be distributed (copied and installed). It may contain one or more modules and has information about which other packages it depends on. A package also usually comes with documentation explaining what it does so that people who did not write it might still be able to use it.
 
 We need a place to store and find packages and a convenient way to install and upgrade them. In the JavaScript world, this infrastructure is provided by [NPM](https://npmjs.com).
 
-NPM is two things: an online service where you can download (and upload) packages, and a program (bundled with Node.js) that helps you install and manage them.
+NPM is two things: an online service where packages can be downloaded (and uploaded), and a program (bundled with Node.js) that helps install and manage them.
 
 ## CommonJS modules
 
-A CommonJS module looks like a regular script, but it has access to two bindings that it uses to interact with other modules. The first is a function called `require`. When you call this with the module name of your dependency, it makes sure the module is loaded and returns its interface. The second is an object named `exports`, which is the interface object for the module...
+A CommonJS module looks like a regular script, but it has access to two bindings that it uses to interact with other modules. The first is a function called `require`. When this is called with the module name of a dependency, it makes sure the module is loaded and returns its interface. The second is an object named `exports`, which is the interface object for the module...
 
 CommonJS is implemented with a module loader that, when loading a module, wraps its code in a function (giving it its own local scope) and passes the require and exports bindings to that function as arguments.
 
@@ -77,8 +77,8 @@ An important difference between this system and ES modules is that ES module imp
 
 Because fetching a single big file tends to be faster than fetching a lot of tiny ones, web programmers have started using tools that combine their programs (which they painstakingly split into modules) into a single big file before they publish it to the web. Such tools are called **bundlers**.
 
-...Apart from the number of files, the **size** of the files also determines how fast they can be transferred over the network. Thus, the JavaScript community has invented **minifiers**. These are tools that take a JavaScript program and make it smaller by automatically removing comments and whitespace, renaming bindings, and replacing pieces of code with equivalent code that take up less space.
+...Apart from the number of files, the **size** of the files also determines how fast they can be transferred over the network. Thus, the JavaScript community has invented **minifiers**. These are tools that take a JavaScript program and make it smaller by automatically removing comments and whitespace, renaming bindings and replacing pieces of code with equivalent code that take up less space.
 
 ## Module design
 
-Designing a fitting module structure for a program can be difficult. In the phase where you are still exploring the problem, trying different things to see what works, you might want to not worry about it too much, since keeping everything organized can be a big distraction. Once you have something that feels solid, that is a good time to take a step back and organize it.
+Designing a fitting module structure for a program can be difficult. In the phase of still exploring the problem, trying different things to see what works, it might be better not to worry about it too much, since keeping everything organized can be a big distraction. Once something feels solid, that is a good time to take a step back and organize it.

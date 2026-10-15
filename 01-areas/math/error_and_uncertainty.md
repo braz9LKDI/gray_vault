@@ -12,24 +12,24 @@ sources:
 
 ### Types of uncertainties
 
-Uncertainty in a measurement can arise from three possible origins: the measuring device, the procedure of how you measure, and the observed quantity itself...
+Uncertainty in a measurement can arise from three possible origins: the measuring device, the procedure of how you measure and the observed quantity itself...
 
 #### Systematic uncertainties
 
-Systematic uncertainties or systematic errors always bias results in one specific direction. They will cause your measurement to consistently be higher or lower than the accepted value.
+Systematic uncertainties or systematic errors always bias results in one specific direction. They will cause the measurement to consistently be higher or lower than the accepted value.
 
 Systematic errors are usually due to imperfections in the equipment, improper or biased observation, or the presence of additional physical effects not taken into account...
 
 #### Random uncertainties
 
-In contrast to systematic uncertainties, random uncertainties are an unavoidable result of measurement, no matter how well designed and calibrated the tools you are using.
+In contrast to systematic uncertainties, random uncertainties are an unavoidable result of measurement, no matter how well designed and calibrated the tools being used are.
 
 ### Accuracy and precision
 
 An important distinction in physics is the difference between the **accuracy** and the **precision** of a measurement. Accuracy refers to the closeness of a measured value to
 a standard or known value...
 
-**Precision** refers to the closeness of two or more measurements to each other...Precision is independent of accuracy. You can be very precise but inaccurate, as described above. You can also be accurate but imprecise.
+**Precision** refers to the closeness of two or more measurements to each other...Precision is independent of accuracy. A measurement can be very precise but inaccurate, as described above. It can also be accurate but imprecise.
 
 ### Propagation of uncertainties
 

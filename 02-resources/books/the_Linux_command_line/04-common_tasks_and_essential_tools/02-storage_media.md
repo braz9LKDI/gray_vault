@@ -63,11 +63,11 @@ mount -t vfat /dev/sdc /mnt/flash
 
 Now we can examine the contents of the USB via the new mount point.
 
-> If you want to unmount the device, make sure you are not using it first.
+> To unmount the device, make sure it is not in use first.
 
 #### Why unmounting is important
 
-This idea of buffering is used extensively in computers to make them faster. Do not let the need to occasionally read or write data to or from slow devices impede the speed of the system. Operating systems store data that has been read from and is to be written to storage devices in memory for as long as possible before actually having to interact with the slower device. On a Linux system, for example, you will notice that the system seems to fill up memory the longer it is used. This does not mean Linux is "using" all the memory; it means that Linux is taking advantage of all the available memory to do as much buffering as it can.
+This idea of buffering is used extensively in computers to make them faster. Do not let the need to occasionally read or write data to or from slow devices impede the speed of the system. Operating systems store data that has been read from and is to be written to storage devices in memory for as long as possible before actually having to interact with the slower device. On a Linux system, for example, the system seems to fill up memory the longer it is used. This does not mean Linux is "using" all the memory; it means that Linux is taking advantage of all the available memory to do as much buffering as it can.
 
 Unmounting a device entails writing all the remaining data to the device so that it can be safely removed. If the device is removed without unmounting it first, the possibility exists that not all the data destined for the device has been transferred. In some cases, this data may include vital directory updates, which will lead to **file system corruption**, one of the worst things that can happen on a computer.
 

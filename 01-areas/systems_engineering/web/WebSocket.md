@@ -10,7 +10,7 @@ A connection is established once and then kept open so messages can be exchanged
 
 ## Browser API
 
-In browser code, a `WebSocket` object is created for a URL. Once the connection is open, messages can be sent with `send()`, and incoming data is handled through events such as `open`, `message`, `error`, and `close`.
+In browser code, a `WebSocket` object is created for a URL. Once the connection is open, messages can be sent with `send()`, and incoming data is handled through events such as `open`, `message`, `error` and `close`.
 
 ## Why is it used?
 

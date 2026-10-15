@@ -10,7 +10,7 @@ Django provides a structured way to build web applications without assembling ev
 
 ## Project and app
 
-A Django project is the overall web application and contains the main configuration. It usually includes files such as `settings.py`, `urls.py`, `asgi.py`, and `wsgi.py`.
+A Django project is the overall web application and contains the main configuration. It usually includes files such as `settings.py`, `urls.py`, `asgi.py` and `wsgi.py`.
 
 A Django app is a Python package that provides a specific set of features. Apps can often be reused across different projects and are usually registered in `INSTALLED_APPS`.
 
@@ -42,4 +42,4 @@ Django is often described with the MVT pattern: model, view and template. In tha
 
 ## Why is it used?
 
-Django is often chosen because many important features are included by default. It helps development move quickly, encourages an organized structure, and reduces the need to rebuild common web features from scratch.
+Django is often chosen because many important features are included by default. It helps development move quickly, encourages an organized structure and reduces the need to rebuild common web features from scratch.

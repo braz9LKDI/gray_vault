@@ -93,35 +93,35 @@ The less program was designed as an improved replacement of an earlier Unix prog
 
 The file system layout on a Linux system is much like that found on other Unix-like systems. The design is actually specified in a published standard called the **Linux Filesystem Hierarchy Standard**. Not all Linux distributions conform to the standard exactly, but most come pretty close.
 
-|         directory          | description                                                                                                                                                                            |
-| :------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|            `/`             | root directory.                                                                                                                                                                        |
-|           `/bin`           | contains binaries (programs) that must be present for the system to boot and run.                                                                                                      |
-|          `/boot`           | contains the Linux kernel, initial RAM disk image (for drivers needed at boot time), and the bootloader.                                                                               |
-|           `/dev`           | contains **device nodes**.                                                                                                                                                             |
-|           `/etc`           | contains all the system-wide configuration files.                                                                                                                                      |
-|          `/home`           | in normal configurations, each user is given a directory in `/home`.                                                                                                                   |
-|           `/lib`           | contains shared library files used by the core system programs.                                                                                                                        |
-|       `/lost+found`        | each formatted partition or device using a Linux file system, such as ext4, will have this directory.                                                                                  |
-|          `/media`          | on modern Linux systems, the `/media` directory will contain the mount points for removable media such as USB drives, CD-ROMs, and so on, that are mounted automatically at insertion. |
-|           `/mnt`           | on older Linux systems, the `/mnt` directory contains mount points for removable devices that have been mounted manually.                                                              |
-|           `/opt`           | it is used to install "optional" software.                                                                                                                                             |
-|          `/proc`           | it is not a real file system in the sense of files stored on your hard drive. Rather, it is a virtual file system maintained by the Linux kernel.                                      |
-|          `/root`           | this is the home directory for the root account.                                                                                                                                       |
-|           `run`            | This is a modern replacement for the traditional `/tmp` directory.                                                                                                                     |
-|          `/sbin`           | contains "system" binaries.                                                                                                                                                            |
-|           `/sys`           | contains information about devices that have been detected by the kernel.                                                                                                              |
-|           `/tmp`           | is intended for the storage of temporary, transient files created by various programs.                                                                                                 |
-|           `/usr`           | it contains all the programs and support files used by regular users.                                                                                                                  |
-|         `/usr/bin`         | contains the executable programs installed by the Linux distribution.                                                                                                                  |
-|         `/usr/lib`         | the shared libraries for the programs in `/usr/bin`.                                                                                                                                   |
-|        `/usr/local`        | is where programs that are not included with the distribution but are intended for system-wide use are installed.                                                                      |
-|        `/usr/sbin`         | contains more system administration programs.                                                                                                                                          |
-|        `/usr/share`        | contains all the shared data used by programs in `/usr/bin`.                                                                                                                           |
-|      `/usr/share/doc`      | most packages installed on the system will include some kind of documentation.                                                                                                         |
-|           `/var`           | contains files whose size or contents are expected to change while the system is running.                                                                                              |
-|         `/var/log`         | contains **log files**, records of various system activity.                                                                                                                            |
-| `~/.config` and `~/.local` | store user-specific configuration data for desktop applications.                                                                                                                       |
+|         directory          | description                                                                                                                                                                           |
+| :------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|            `/`             | root directory.                                                                                                                                                                       |
+|           `/bin`           | contains binaries (programs) that must be present for the system to boot and run.                                                                                                     |
+|          `/boot`           | contains the Linux kernel, initial RAM disk image (for drivers needed at boot time) and the bootloader.                                                                               |
+|           `/dev`           | contains **device nodes**.                                                                                                                                                            |
+|           `/etc`           | contains all the system-wide configuration files.                                                                                                                                     |
+|          `/home`           | in normal configurations, each user is given a directory in `/home`.                                                                                                                  |
+|           `/lib`           | contains shared library files used by the core system programs.                                                                                                                       |
+|       `/lost+found`        | each formatted partition or device using a Linux file system, such as ext4, will have this directory.                                                                                 |
+|          `/media`          | on modern Linux systems, the `/media` directory will contain the mount points for removable media such as USB drives, CD-ROMs and so on, that are mounted automatically at insertion. |
+|           `/mnt`           | on older Linux systems, the `/mnt` directory contains mount points for removable devices that have been mounted manually.                                                             |
+|           `/opt`           | it is used to install "optional" software.                                                                                                                                            |
+|          `/proc`           | it is not a real file system in the sense of files stored on the hard drive. Rather, it is a virtual file system maintained by the Linux kernel.                                      |
+|          `/root`           | this is the home directory for the root account.                                                                                                                                      |
+|           `run`            | This is a modern replacement for the traditional `/tmp` directory.                                                                                                                    |
+|          `/sbin`           | contains "system" binaries.                                                                                                                                                           |
+|           `/sys`           | contains information about devices that have been detected by the kernel.                                                                                                             |
+|           `/tmp`           | is intended for the storage of temporary, transient files created by various programs.                                                                                                |
+|           `/usr`           | it contains all the programs and support files used by regular users.                                                                                                                 |
+|         `/usr/bin`         | contains the executable programs installed by the Linux distribution.                                                                                                                 |
+|         `/usr/lib`         | the shared libraries for the programs in `/usr/bin`.                                                                                                                                  |
+|        `/usr/local`        | is where programs that are not included with the distribution but are intended for system-wide use are installed.                                                                     |
+|        `/usr/sbin`         | contains more system administration programs.                                                                                                                                         |
+|        `/usr/share`        | contains all the shared data used by programs in `/usr/bin`.                                                                                                                          |
+|      `/usr/share/doc`      | most packages installed on the system will include some kind of documentation.                                                                                                        |
+|           `/var`           | contains files whose size or contents are expected to change while the system is running.                                                                                             |
+|         `/var/log`         | contains **log files**, records of various system activity.                                                                                                                           |
+| `~/.config` and `~/.local` | store user-specific configuration data for desktop applications.                                                                                                                      |
 
 ## Symbolic links
 

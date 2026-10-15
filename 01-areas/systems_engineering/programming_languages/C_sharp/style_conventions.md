@@ -4,11 +4,11 @@ reviewed_on: 2026-03-01
 
 # Style conventions
 
-A consistent style improves scanning, reduces merge conflicts, and makes intent obvious. Modern C# codebases often follow conventions close to the framework design guidelines while also aligning with team preferences and analyzers.
+A consistent style improves scanning, reduces merge conflicts and makes intent obvious. Modern C# codebases often follow conventions close to the framework design guidelines while also aligning with team preferences and analyzers.
 
 ## Naming
 
-Public APIs typically use pascal case for namespaces, types, methods, properties, and events. Private fields are often camel case with a leading underscore, while local variables and parameters remain camel case. Constants are usually pascal case.
+Public APIs typically use pascal case for namespaces, types, methods, properties and events. Private fields are often camel case with a leading underscore, while local variables and parameters remain camel case. Constants are usually pascal case.
 
 ## File layout
 

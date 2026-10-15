@@ -4,7 +4,7 @@ reviewed_on: "2025-06-27"
 
 # Introduction
 
-Many people speak of "freedom" with regard to Linux, but I do not think most people know what this freedom really means. Freedom is the power to decide what your computer does, and the only way to have this freedom is to know what your computer is doing. Freedom is a computer that is without secrets, one where everything can be known if you care enough to find out.
+Many people speak of "freedom" with regard to Linux, but I do not think most people know what this freedom really means. Freedom is the power to decide what a computer does, and the only way to have this freedom is to know what the computer is doing. Freedom is a computer that is without secrets, one where everything can be known by anyone who cares enough to find out.
 
 ## Why use the command line?
 

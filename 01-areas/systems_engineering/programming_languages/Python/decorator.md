@@ -31,7 +31,7 @@ def my_function():
 my_function_decorator = my_decorator(my_function)
 ```
 
-When you want to "decorate" a function that receives arguments, you can specify these arguments through `*args` and `**kwargs`.
+When a function that receives arguments is "decorated", these arguments can be specified through `*args` and `**kwargs`.
 
 ## Usage examples
 

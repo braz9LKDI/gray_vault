@@ -24,9 +24,9 @@ reviewed_on: "2025-06-30"
 
 - `passwd`: change a user's password.
 
-## Owners, group members, and everybody else
+## Owners, group members and everybody else
 
-In the Unix security model, a user may **own** files and directories. When a user **owns** a file or directory, the user has control over its access. Users can, in turn, belong to a group consisting of one or more users who are given access to files and directories by their owners. In addition to granting access to a group, an owner may also grant some set of access rights to everybody, which in Unix terms is referred to as the **world**. To find out information about your identity, use the `id` command.
+In the Unix security model, a user may **own** files and directories. When a user **owns** a file or directory, the user has control over its access. Users can, in turn, belong to a group consisting of one or more users who are given access to files and directories by their owners. In addition to granting access to a group, an owner may also grant some set of access rights to everybody, which in Unix terms is referred to as the **world**. To find out information about the current identity, use the `id` command.
 
 ```bash
 id
@@ -50,7 +50,7 @@ id
 
 - login shell.
 
-## Reading, writing, and executing
+## Reading, writing and executing
 
 Access rights to files and directories are defined in terms of read access, write access, and execution access...
 
@@ -71,12 +71,12 @@ The first 10 characters of the listing are the **file attributes**. The first of
 |    `c`    | **character special file** |
 |    `b`    | **block special file**     |
 
-The remaining 9 characters of the file attributes, called the **file mode**, represent the read, write, and execute permissions for the file's owner, the file's group owner, and everybody else.
+The remaining 9 characters of the file attributes, called the **file mode**, represent the read, write and execute permissions for the file's owner, the file's group owner and everybody else.
 
 | attribute | file                                                                                                                                                                                             | directories                                                                                                                |
 | :-------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 |    `r`    | allows a file to be opened and read.                                                                                                                                                             | allows a directory's contents to be listed, but no file information is available unless the execute attribute is also set. |
-|    `w`    | allows a file to be written to or truncated; however, this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes. | allows files within a directory to be created, deleted, and renamed if the execute attribute is also set.                  |
+|    `w`    | allows a file to be written to or truncated; however, this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes. | allows files within a directory to be created, deleted and renamed if the execute attribute is also set.                   |
 |    `x`    | allows a file to be treated as a program and executed.                                                                                                                                           | allows a directory to be entered.                                                                                          |
 
 ### `chmod` change file mode
@@ -96,7 +96,7 @@ It is used to change the mode (permissions) of a file or directory, it supports 
 |   6   |  110   |   `rw-`   |
 |   7   |  111   |   `rwx`   |
 
-By using three octal digits, we can set the file mode for the owner, group owner, and world.
+By using three octal digits, we can set the file mode for the owner, group owner and world.
 
 ```bash
 chmod 600 foo.txt
@@ -113,12 +113,12 @@ ls -l foo.txt
 
 - What permission will be set.
 
-| symbol | meaning                                                      |
-| :----: | :----------------------------------------------------------- |
-|  `u`   | short for "user" but means the file or directory owner.      |
-|  `g`   | group owner.                                                 |
-|  `o`   | short for "others" but means world.                          |
-|  `a`   | short for "all". This is a combination of `u`, `g`, and `o`. |
+| symbol | meaning                                                     |
+| :----: | :---------------------------------------------------------- |
+|  `u`   | short for "user" but means the file or directory owner.     |
+|  `g`   | group owner.                                                |
+|  `o`   | short for "others" but means world.                         |
+|  `a`   | short for "all". This is a combination of `u`, `g` and `o`. |
 
 If no character is specified, "all" will be assumed. The operation may be `a+` indicating that a permission is to be added, `a-` indicating that a permission is to be taken away, or `a=` indicating that only the specified permissions are to be applied and that all others are to be removed.
 
@@ -128,7 +128,7 @@ Permissions are specified with the "r", "w", and "x" characters...
 chmod u+x,go=rw file
 ```
 
-Symbolic notation does offer the advantage of allowing you to set a single attribute without disturbing any of the others (in octal you must specify all permissions).
+Symbolic notation does offer the advantage of setting a single attribute without disturbing any of the others (in octal all permissions must be specified).
 
 An option of caution is `--recursive`: it acts on both files and directories, so it is not as useful as we would hope since we rarely want files and directories to have the same permissions.
 
@@ -312,7 +312,7 @@ ls -l /usr/local/share/Music
 
 The one remaining issue is umask. The necessary setting lasts only until the end of session and must be reset.
 
-## Changing your password
+## Changing the password
 
 To set or change a password, `passwd` is used.
 
@@ -320,7 +320,7 @@ To set or change a password, `passwd` is used.
 passwd [USER]
 ```
 
-`passwd`, `addgroup`, and `usermod` are part of a suite of commands in the shadow-utils package.
+`passwd`, `addgroup` and `usermod` are part of a suite of commands in the shadow-utils package.
 
 |  command   | description                                                    |
 | :--------: | :------------------------------------------------------------- |

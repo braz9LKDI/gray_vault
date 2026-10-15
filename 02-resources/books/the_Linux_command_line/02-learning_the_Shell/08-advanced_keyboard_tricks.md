@@ -46,7 +46,7 @@ The `readline` documentation uses the terms **killing** and **yanking** to refer
 
 #### The meta key
 
-If you venture into the Readline documentation, which can be found in the "READLINE" section of the bash man page, you will encounter the term meta key. On modern keyboards this maps to `ALT` but it was not always so.
+The Readline documentation, which can be found in the "READLINE" section of the bash man page, uses the term meta key. On modern keyboards this maps to `ALT` but it was not always so.
 
 ...While the Alt key serves as the meta key on modern keyboards, you can also press and release `ESC` key to get the same effect as holding down the Alt key if you are using a terminal...
 
@@ -54,16 +54,16 @@ If you venture into the Readline documentation, which can be found in the "READL
 
 ....Completion occurs when you press the `TAB` while typing a command...
 
-...completion will also work on variables (if the beginning of the word is a `$`), usernames (if the word begins with `~`), commands (if the word is the first word on the line), and hostnames (if the beginning of the word is `@`). Hostname completion only works for hostnames listed in `/etc/hosts`.
+...completion will also work on variables (if the beginning of the word is a `$`), usernames (if the word begins with `~`), commands (if the word is the first word on the line) and hostnames (if the beginning of the word is `@`). Hostname completion only works for hostnames listed in `/etc/hosts`.
 
-|    key    | action                                                                                                                                       |
-| :-------: | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ALT + ?` | display a list of possible completions. On most systems, you can also do this by pressing the `TAB` key a second time, which is much easier. |
-| `ALT + *` | insert all possible completions.                                                                                                             |
+|    key    | action                                                                                                                                        |
+| :-------: | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ALT + ?` | display a list of possible completions. On most systems, this can also be done by pressing the `TAB` key a second time, which is much easier. |
+| `ALT + *` | insert all possible completions.                                                                                                              |
 
 ### Programmable completion
 
-Recent versions of `bash` have a facility called **programmable completion**. Programmable completion allows you to add additional completion rules. To see them, `set` can be used.
+Recent versions of `bash` have a facility called **programmable completion**. Programmable completion allows additional completion rules to be added. To see them, `set` can be used.
 
 ## Using history
 
@@ -85,7 +85,7 @@ history | greq /usr/bin # Display all commands we executed that contains the pat
 
 `bash` will expand `!88` into the contents of the 88th line in the history list (this is called **history expansion**).
 
-`bash` also provides the ability to search the history list incrementally. This means we can tell bash to search the history list as we enter characters, with each additional character further refining our search. To start incremental search, press `CTRL + r` followed by the text you are looking for. When you find it, you can either press `ENTER` to execute the command or press `CTRL + j` to copy the line from the history list to the current command line. To find the next occurrence of the text (moving "up" the history list), press `CTRL + r` again. To quit searching, press either `CTRL + g` or `CTRL + c`.
+`bash` also provides the ability to search the history list incrementally. This means we can tell bash to search the history list as we enter characters, with each additional character further refining our search. To start incremental search, press `CTRL + r` followed by the text being looked for. Once it is found, either press `ENTER` to execute the command or press `CTRL + j` to copy the line from the history list to the current command line. To find the next occurrence of the text (moving "up" the history list), press `CTRL + r` again. To quit searching, press either `CTRL + g` or `CTRL + c`.
 
 |    key     | action                                                                    |
 | :--------: | :------------------------------------------------------------------------ |
@@ -106,7 +106,7 @@ history | greq /usr/bin # Display all commands we executed that contains the pat
 | `!<string>`  | repeat last history list item starting with _string_. |
 | `!?<string>` | repeat last history list item containing _string_.    |
 
-Use caution with the `!string` and `!?string` forms unless you are absolutely sure of the contents of the history list items. We can mitigate this problem somewhat by ap pending `:p` to our expansion. This tells the shell to print the result of the expansion and place it into the command history.
+Use caution with the `!string` and `!?string` forms unless the contents of the history list items are absolutely certain. We can mitigate this problem somewhat by ap pending `:p` to our expansion. This tells the shell to print the result of the expansion and place it into the command history.
 
 #### `script`
 

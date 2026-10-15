@@ -45,8 +45,6 @@ $$
         \end{array} \\
     & S_n = \frac{ n }{ 2 } (2 a_1 + (n - 1) d) \quad (4)
 \end{align}
-
-
 $$
 
 Rewriting $(4)$.
@@ -56,8 +54,6 @@ $$
     & S_n = n \frac{ a_1 + a_1 + (n - 1) d }{ 2 } \\
     & = n \frac{ a_1 + a_n }{ 2 }
 \end{align}
-
-
 $$
 
 [[personal/math/serie/proofs#$ forall{ n } in mathbb{ N } *$ satisfied that $ sum_{ k = 1 } n k = frac{ n (n + 1) }{ 2 }$ (arithmetic series)|Gauss sum]]

@@ -36,19 +36,19 @@ Most event objects have a `target` property that refers to the node where they o
 
 ## Default actions
 
-Many events have a default action. If you click a link, you will be taken to the link's target. If you press the down arrow, the browser will scroll the page down. If you right-click, you will get a context menu. And so on.
+Many events have a default action. Clicking a link leads to the link's target. Pressing the down arrow makes the browser scroll the page down. Right-clicking opens a context menu. And so on.
 
 For most types of events, the JavaScript event handlers are called **before** the default behavior takes place. If the handler does not want this normal behavior to happen, typically because it has already taken care of handling the event, it can call the `preventDefault` method on the event object.
 
 ## Key events
 
-When a key on the keyboard is pressed, your browser fires a `keydown` event. When it is released, you get a `keyup` event.
+When a key on the keyboard is pressed, the browser fires a `keydown` event. When it is released, a `keyup` event fires.
 
 Despite its name, "keydown" fires not only when the key is physically pushed down. When a key is pressed and held, the event fires again every time the key **repeats**.
 
-Modifier keys such as `SHIFT`, `CTRL` and `ALT` generate key events just like normal keys. When looking for key combinations, you can also find out whether these keys are held down by looking at the `shiftKey`, `ctrlKey` and `altKey` properties of keyboard and mouse events.
+Modifier keys such as `SHIFT`, `CTRL` and `ALT` generate key events just like normal keys. When looking for key combinations, whether these keys are held down can also be found by looking at the `shiftKey`, `ctrlKey` and `altKey` properties of keyboard and mouse events.
 
-The DOM node where a key event originates depends on the element that has focus when the key is pressed. Most nodes cannot have focus unless you give them a `tabindex` attribute, but things like links, buttons, and form fields can.
+The DOM node where a key event originates depends on the element that has focus when the key is pressed. Most nodes cannot have focus unless they are given a `tabindex` attribute, but things like links, buttons and form fields can.
 
 ## Pointers events
 
@@ -84,14 +84,14 @@ Elements such as images and script tags that load an external file also have a "
 
 ...browser event handlers behave like other asynchronous notifications. They are scheduled when the event occurs but must wait for other scripts that are running to finish before they get a chance to run.
 
-For cases where you **really** do want to do some time-consuming thing in the background without freezing the page, browsers provide something called **web workers**. A worker is a JavaScript process that runs alongside the main script, on its own timeline.
+For cases where some time-consuming thing **really** must be done in the background without freezing the page, browsers provide something called **web workers**. A worker is a JavaScript process that runs alongside the main script, on its own timeline.
 
 ## Timers
 
-The `setTimeout` function schedules another function to be called later, after a given number of milliseconds. Sometimes you need to cancel a function you have scheduled. You can do this by storing the value returned by `setTimeout` and calling `clearTimeout` on it.
+The `setTimeout` function schedules another function to be called later, after a given number of milliseconds. Sometimes a scheduled function must be canceled. This can be done by storing the value returned by `setTimeout` and calling `clearTimeout` on it.
 
 ## Debouncing
 
-Some types of events have the potential to fire rapidly many times in a row, such as the "mousemove" and "scroll" events. When handling such events, you must be careful not to do anything too time-consuming or your handler will take up so much time that interaction with the document starts to feel slow.
+Some types of events have the potential to fire rapidly many times in a row, such as the "mousemove" and "scroll" events. When handling such events, care must be taken not to do anything too time-consuming or the handler will take up so much time that interaction with the document starts to feel slow.
 
-If you do need to do something nontrivial in such a handler, you can use `setTimeout` to make sure you are not doing it too often. This is usually called **debouncing** the event. There are several slightly different approaches to this.
+If something nontrivial must be done in such a handler, `setTimeout` can be used to make sure it is not done too often. This is usually called **debouncing** the event. There are several slightly different approaches to this.

@@ -73,9 +73,9 @@ mv item... <directory> # Move one or more items from one directory to another.
 
 #### Be carefully with `rm`
 
-Unix-like operating systems such as Linux do not have an undelete command. Once you delete something with `rm`, it is gone. Linux assumes you are smart and you know what you are doing.
+Unix-like operating systems such as Linux do not have an undelete command. Once something is deleted with `rm`, it is gone. Linux assumes the user is smart and knows what they are doing.
 
-Here is a useful tip: whenever you use wildcards with `rm`, test the wildcard first with `ls`.
+Here is a useful tip: whenever wildcards are used with `rm`, test the wildcard first with `ls`.
 
 ## `ln` (create links)
 
@@ -92,7 +92,7 @@ Hard links are the original Unix way of creating links, compared to symbolic lin
 
 2. A hard link may not reference a directory.
 
-A hard link is indistinguishable from the file itself. Unlike a symbolic link, when you list a directory containing a hard link, you will see no special indication of the link. When a hard link is deleted, the link is removed, but the contents of the file itself continue to exist (that is, its space is not deallocated) until all links to the file are deleted.
+A hard link is indistinguishable from the file itself. Unlike a symbolic link, when a directory containing a hard link is listed, there is no special indication of the link. When a hard link is deleted, the link is removed, but the contents of the file itself continue to exist (that is, its space is not deallocated) until all links to the file are deleted.
 
 ### Symbolic links
 
@@ -130,4 +130,4 @@ ln -s file item link
 
 Most Linux distributions configure `ls` to display broken links. The presence of a broken link is not in and of itself dangerous, but it is rather messy. If we try to use a broken link, we will see the `No such file or directory` error.
 
-One thing to remember about symbolic links is that most file operations are carried out on the link's target, not the link itself. `rm` is an exception. When you delete a link, it is the link that is deleted, not the target.
+One thing to remember about symbolic links is that most file operations are carried out on the link's target, not the link itself. `rm` is an exception. When a link is deleted, it is the link that is deleted, not the target.

@@ -26,4 +26,4 @@ For example, a request to `GET /products` may return a list of products, while `
 
 ## Important characteristics
 
-A REST API follows standard HTTP conventions, which makes communication predictable. Status codes such as `200`, `201`, `404`, and `500` help indicate whether a request succeeded or failed and what kind of result was produced.
+A REST API follows standard HTTP conventions, which makes communication predictable. Status codes such as `200`, `201`, `404` and `500` help indicate whether a request succeeded or failed and what kind of result was produced.

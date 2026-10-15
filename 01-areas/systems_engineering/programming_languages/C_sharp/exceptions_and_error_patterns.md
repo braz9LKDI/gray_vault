@@ -4,7 +4,7 @@ reviewed_on: 2026-03-15
 
 # Exceptions and error patterns
 
-## `try`, `catch`, and `finally`
+## `try`, `catch` and `finally`
 
 A `try` block contains code that may fail. a `catch` block handles a matching exception. a `finally` block runs whether an exception happened or not, which makes it useful for cleanup work.
 
@@ -124,7 +124,7 @@ The main idea is the same: cleanup happens reliably, even when an exception is t
 
 Exceptions are usually appropriate when something unexpected, invalid, or impossible for normal flow happens.
 
-Examples include invalid arguments, missing required state, unsupported operations, and infrastructure failures such as file or network problems.
+Examples include invalid arguments, missing required state, unsupported operations and infrastructure failures such as file or network problems.
 
 ```cs
 public static int divide(int a, int b)
@@ -138,7 +138,7 @@ public static int divide(int a, int b)
 }
 ```
 
-For argument validation, exceptions such as `ArgumentNullException`, `ArgumentException`, and `ArgumentOutOfRangeException` are commonly used.
+For argument validation, exceptions such as `ArgumentNullException`, `ArgumentException` and `ArgumentOutOfRangeException` are commonly used.
 
 ```cs
 public static void setAge(int age)
@@ -217,7 +217,7 @@ public class orderValidationException : Exception
 
 In many cases, using an existing framework exception is better than inventing a new one.
 
-`ArgumentNullException`, `InvalidOperationException`, `NotSupportedException`, and `TimeoutException` already communicate common meanings clearly.
+`ArgumentNullException`, `InvalidOperationException`, `NotSupportedException` and `TimeoutException` already communicate common meanings clearly.
 
 A custom exception tends to make more sense when the failure belongs to the application's own domain, such as `paymentDeclinedException` or `orderValidationException`.
 
@@ -312,8 +312,8 @@ This keeps the inner logic explicit while still allowing unexpected failures to 
 
 ## Quick summary
 
-`try`, `catch`, and `finally` are the core exception-handling tools. `using` and `await using` are structured cleanup tools that are closely related to `finally`.
+`try`, `catch` and `finally` are the core exception-handling tools. `using` and `await using` are structured cleanup tools that are closely related to `finally`.
 
-Exceptions are best for exceptional failures, invalid state, and infrastructure problems. custom exceptions are useful when a domain-specific failure needs its own meaning.
+Exceptions are best for exceptional failures, invalid state and infrastructure problems. custom exceptions are useful when a domain-specific failure needs its own meaning.
 
 When failure is expected and common, a result-style pattern often leads to clearer control flow than throwing exceptions.

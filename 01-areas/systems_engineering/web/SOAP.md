@@ -6,7 +6,7 @@ reviewed_on: 2026-03-17
 
 It is a protocol for exchanging structured information in a decentralized, distributed environment. It uses XML to define an extensible messaging framework and the exchanged messages can be bound to different underlying protocols.
 
-In SOAP, communication is centered on XML messages with a defined structure. Instead of being organized mainly around resource URLs, the interaction is described through messages, processing rules, and service contracts.
+In SOAP, communication is centered on XML messages with a defined structure. Instead of being organized mainly around resource URLs, the interaction is described through messages, processing rules and service contracts.
 
 ## Message structure
 

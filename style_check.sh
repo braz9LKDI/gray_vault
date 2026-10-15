@@ -3,7 +3,7 @@
 # Usage: bash style_check.sh [note.md ...]   (no arguments: every note outside 99-archive)
 #        bash style_check.sh --test           (self-check against a planted fixture)
 # Output: file:line: rule: text. Rules marked "candidate" need a human decision.
-# A reviewed candidate is kept by adding "<file><TAB><exact line>" to .style_check_accept.
+# A reviewed line (a quotation, a kept candidate) is skipped by adding "<file><TAB><exact line>" to .style_check_accept.
 set -euo pipefail
 export LC_ALL=C.UTF-8 # grep -P only reads á and \x{...} correctly in a UTF-8 locale
 
@@ -14,7 +14,7 @@ check() {
     { grep -nHP "$allowed_chars" -- "$@" | sed -E 's/^([^:]+:[0-9]+):/\1: characters: /' || true
       gawk -v accept="$accept" '
         function flag(rule) {
-            if (rule ~ /candidate/ && (FILENAME "\t" $0) in accepted) return
+            if ((FILENAME "\t" $0) in accepted) return
             printf "%s:%d: %s: %s\n", FILENAME, FNR, rule, $0 }
         BEGIN {
             while ((getline l < accept) > 0) accepted[l]

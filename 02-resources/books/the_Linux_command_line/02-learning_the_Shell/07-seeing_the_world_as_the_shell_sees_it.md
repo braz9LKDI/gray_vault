@@ -206,9 +206,9 @@ If we place text inside double quotes, all the special characters used by the sh
 
 - `` ` `` (backtick).
 
-This means that word-splitting, pathname expansion, tilde expansion, and brace expansion are suppressed, but parameter expansion, arithmetic expansion, and command substitution are still carried out...
+This means that word-splitting, pathname expansion, tilde expansion and brace expansion are suppressed, but parameter expansion, arithmetic expansion and command substitution are still carried out...
 
-By default, word splitting looks for the presence of spaces, tabs, and newlines (line feed characters) and treats them as **delimiters** between words...
+By default, word splitting looks for the presence of spaces, tabs and newlines (line feed characters) and treats them as **delimiters** between words...
 
 ```bash
 echo $(df -h)
@@ -254,7 +254,7 @@ echo "The balance for user $USER is: \$5.00"
 # The balance for user me is: $5.00
 ```
 
-It is possible to use characters in filenames that normally have special meaning to the shell. These would include `$`, `!`, `&`, spaces, and others. To include a special character in a filename, we can do this:
+It is possible to use characters in filenames that normally have special meaning to the shell. These would include `$`, `!`, `&`, spaces and others. To include a special character in a filename, we can do this:
 
 ```bash
 mv bas\&filename good_filename
@@ -276,7 +276,7 @@ In addition to its role as the escape character, the backslash is used as part o
 |      `\r`       | carriage return.                                          |
 |      `\t`       | tab.                                                      |
 
-Adding the `-e` option to echo will enable interpretation of escape sequences. You can also place them inside `$' '`.
+Adding the `-e` option to echo will enable interpretation of escape sequences. They can also be placed inside `$' '`.
 
 ```bash
 sleep 10; echo -e "Time is up\a"

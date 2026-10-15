@@ -26,7 +26,7 @@ namespace  namespace_name {
 }
 ```
 
-> You can nest namespaces.
+> Namespaces can be nested.
 
 ## `using`
 

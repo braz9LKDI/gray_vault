@@ -179,13 +179,13 @@ Performing assignment within the expressions of the ternary operator is not stra
 
 If more complex mathematical calculations are required, `bash` cannot handle them, so it is necessary to use an external program. That program can be `bc`.
 
-`bc` reads a file written in its own C-like language and executes it. A `bc` script may be a separate file, or it may be read from standard input. `bc` language supports quite a few features including variables, loops, and programmer-defined functions.
+`bc` reads a file written in its own C-like language and executes it. A `bc` script may be a separate file, or it may be read from standard input. `bc` language supports quite a few features including variables, loops and programmer-defined functions.
 
 ### Using `bc`
 
 The copyright message can be suppressed with `-q`.
 
-The ability to take standard input means that we can use **here documents**, **here string**, and pipes to pass scripts.
+The ability to take standard input means that we can use **here documents**, **here string** and pipes to pass scripts.
 
 ## Extra credit
 

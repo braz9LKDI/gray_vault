@@ -8,13 +8,13 @@ reviewed_on: "2025-06-30"
 
 When using a graphical user interface (GUI), we need another program called a **terminal emulator** to interact with the shell...
 
-## Making your first keystrokes
+## Making the first keystrokes
 
 ```text
 [me@linuxbox ~]$
 ```
 
-This is called a **shell prompt**, and it will appear whenever the shell is ready to accept input. While it might vary in appearance somewhat depending on the distribution, it will typically include your `username@machinename`, followed by the current working directory and a dollar sign.
+This is called a **shell prompt**, and it will appear whenever the shell is ready to accept input. While it might vary in appearance somewhat depending on the distribution, it will typically include the `username@machinename`, followed by the current working directory and a dollar sign.
 
 > If the last character of the prompt is a pound sign (`#`) rather than a dollar sign, the terminal session has **superuser** privileges...
 
@@ -36,7 +36,7 @@ This is called a **shell prompt**, and it will appear whenever the shell is read
 
 ## Ending a terminal session
 
-- `exit`: close the terminal emulator window or you can also use `CTLR-D`.
+- `exit`: close the terminal emulator window, which `CTRL-D` also does.
 
 ### The console behind the curtain
 

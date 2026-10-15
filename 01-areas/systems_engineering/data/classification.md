@@ -20,7 +20,7 @@ Has some organization through tags or keys, but no rigid table schema. it is fle
 
 ### Unstructured
 
-No predefined structure. it is rich in content but harder to search, label, and analyze without specialized tools.
+No predefined structure. it is rich in content but harder to search, label and analyze without specialized tools.
 
 ## Sensitivity
 
@@ -52,4 +52,4 @@ Collected first-hand for a specific purpose. it can be more relevant, but it cos
 
 ### Secondary
 
-Collected by others and reused. it is faster to get, but you must verify quality, context, and allowed usage.
+Collected by others and reused. It is faster to get, but quality, context and allowed usage must be verified.

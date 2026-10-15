@@ -13,7 +13,7 @@ of shell syntax. The shell will stop executing a script when it encounters this 
 
 - Missing or unexpected tokens.
 
-- Unanticipated expansions: add quotes to your variables unless word splitting is needed.
+- Unanticipated expansions: add quotes to variables unless word splitting is needed.
 
 ## Logical errors
 
@@ -41,7 +41,7 @@ Place the following commands near the beginning of the script:
 
 Using this features is not recommended. It is better to design proper error handling and not rely on `set -e` as a substitute for good coding practices.
 
-## ShellCheck is your friend
+## Use ShellCheck
 
 `shellcheck` performs analysis of shell scripts and will detect many kinds of faults and poor scripting practices.
 
@@ -65,7 +65,7 @@ Using `./` will prevent a filename starting with a hyphen from being interpreted
 
 ### Portable filenames
 
-To ensure that a filename is portable between multiple platforms (i.e., different types of computers and operating systems), care must be taken to limit which characters are included in a filename. There is a standard called the POSIX Portable Filename Character Set that can be used to maximize the chances that a filename will work across different systems. The standard is pretty simple. The only characters allowed are the uppercase letters A-Z, the lowercase letters a-z, the numerals 0-9, period (`.`), hyphen (`-`), and underscore (`_`). The standard further suggests that filenames should not begin with a hyphen.
+To ensure that a filename is portable between multiple platforms (i.e., different types of computers and operating systems), care must be taken to limit which characters are included in a filename. There is a standard called the POSIX Portable Filename Character Set that can be used to maximize the chances that a filename will work across different systems. The standard is pretty simple. The only characters allowed are the uppercase letters A-Z, the lowercase letters a-z, the numerals 0-9, period (`.`), hyphen (`-`) and underscore (`_`). The standard further suggests that filenames should not begin with a hyphen.
 
 ## Testing
 

@@ -40,7 +40,7 @@ The `.` notation refers to the working directory, and the `..` notation refers t
 
 |     shortcut      |                               result                                |
 | :---------------: | :-----------------------------------------------------------------: |
-|       `cd`        |        changes the working directory to your home directory.        |
+|       `cd`        |        changes the working directory to the home directory.         |
 |      `cd -`       |  changes the working directory to the previous working directory.   |
 | `cd ~<user-name>` | changes the working directory to the home directory of `user_name`. |
 

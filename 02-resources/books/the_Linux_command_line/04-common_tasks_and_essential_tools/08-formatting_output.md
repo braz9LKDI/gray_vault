@@ -22,7 +22,7 @@ reviewed_on: "2025-07-20"
 
 It is rather arcane tool used to perform a simple task. It numbers lines. In its simplest use, it resembles `cat -n`.
 
-`nl` supports a concept called "logical pages" when numbering. This allows `nl` to reset (start over) the numerical sequence when numbering. Using options, it is possible to set the starting number to a specific value and, to a limited extent, its format. A logical page is further broken down into a **header**, **body**, and **footer**. Withing each of these sections, line numbering may be reset and/or be assigned a different style. If `nl` is given multiple files, it treats them as a single stream of text.
+`nl` supports a concept called "logical pages" when numbering. This allows `nl` to reset (start over) the numerical sequence when numbering. Using options, it is possible to set the starting number to a specific value and, to a limited extent, its format. A logical page is further broken down into a **header**, **body** and **footer**. Withing each of these sections, line numbering may be reset and/or be assigned a different style. If `nl` is given multiple files, it treats them as a single stream of text.
 
 |  markup  | meaning                       |
 | :------: | :---------------------------- |
@@ -91,7 +91,7 @@ sort -k 1,1 -k 2,2n distros.txt | sed -f distros_nl.sed | nl
 
 It also folds text, plus a lot more. It accepts either files or standard input and performs paragraph formatting on the text stream.
 
-By default, blank lines, spaces between words, and indentation are preserved in the output; successive input lines with different indentation are not joined; tabs are expanded on input and introduced on output.
+By default, blank lines, spaces between words and indentation are preserved in the output; successive input lines with different indentation are not joined; tabs are expanded on input and introduced on output.
 
 `fmt` prefers breaking lines at the end of a sentence, and tries to avoid line breaks after the first word of a sentence or before the last words of a sentence. A "sequence break" is defined as either the end of a paragraph or a word ending in any of `.?!`, followed by two spaces or end of line, ignoring any intervening parentheses or quotes.
 
@@ -122,7 +122,7 @@ print f [-v VAR] STRING ARGUMENTS
 
 The formatted result is sent to standard output unless `-v` is specified in which case the formatted result is stored in a variable.
 
-The format string may contain literal text, escape sequences, and sequences beginning with `%`, which are called **conversion specifications**.
+The format string may contain literal text, escape sequences and sequences beginning with `%`, which are called **conversion specifications**.
 
 | specifier | description                                                                      |
 | :-------: | :------------------------------------------------------------------------------- |

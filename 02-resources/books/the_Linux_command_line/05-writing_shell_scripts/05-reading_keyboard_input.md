@@ -31,7 +31,7 @@ If `read` receive fewer than the expected number, the extra variables are empty,
 
 ### `IFS`
 
-Normally, the shell performs word splitting on the input provided to `read`...This behavior is configured by a shell variable named "IFS" (for internal field separator). The default value of `IFS` contains a space, a tab, and a newline character, each of which will separate items from one another.
+Normally, the shell performs word splitting on the input provided to `read`...This behavior is configured by a shell variable named "IFS" (for internal field separator). The default value of `IFS` contains a space, a tab and a newline character, each of which will separate items from one another.
 
 ```bash
 #!/bin/bash
@@ -59,7 +59,7 @@ fi
 
 `<<<` indicates a **here string**. A here string is like a here document, only shorter, consisting of a single string.
 
-### You cannot pipe `read`
+### `read` cannot be piped
 
 In `bash` (and other shells such `sh`), pipelines creates **subshells**. These are copies of the shell and its environment that are used to execute the command pipeline.
 

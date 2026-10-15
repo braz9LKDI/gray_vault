@@ -10,7 +10,7 @@ A connection is opened to an endpoint that keeps sending events over time. Commu
 
 ## Event stream
 
-The stream is sent with the `text/event-stream` format. Each message can contain `data`, may declare a custom `event` name, and is decoded as UTF-8 text. The default event type is `message`.
+The stream is sent with the `text/event-stream` format. Each message can contain `data`, may declare a custom `event` name and is decoded as UTF-8 text. The default event type is `message`.
 
 ## Why is it used?
 

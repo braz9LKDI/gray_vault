@@ -40,7 +40,7 @@ It says **where the change happened**, while the type stays generic:
 
 ### Code areas
 
-- `api`: the "edge" of your app that receives requests and returns responses.
+- `api`: the "edge" of the app that receives requests and returns responses.
 
     > Routes, controllers, request handlers and endpoint definitions.
 

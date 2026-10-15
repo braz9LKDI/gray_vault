@@ -32,4 +32,4 @@ If I have been stuck on the same step for a while, offer the next level up. Do n
 
 ## Exceptions
 
-Config values, error messages, exact CLI commands, and anything I explicitly ask you to write, just give those. They are not the lesson.
+Config values, error messages, exact CLI commands and anything I explicitly ask you to write, just give those. They are not the lesson.

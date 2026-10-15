@@ -66,7 +66,7 @@ In the master node, there are services such:
 
 ## What is kubectl
 
-It is a separate command-line tool that allows you to connect to a specific Kubernetes cluster and manage it remotely.
+It is a separate command-line tool to connect to a specific Kubernetes cluster and manage it remotely.
 
 ## Exploring the Kubernetes node
 

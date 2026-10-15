@@ -8,9 +8,9 @@ A package in Linux consists of a collection of files that allow the installation
 
 ## What is a package manager?
 
-They are utilities present in each distribution that automate the process, list other packages available in the repository, and display information about their dependencies.
+They are utilities present in each distribution that automate the process, list other packages available in the repository and display information about their dependencies.
 
-Regardless of the specific package manager, the software maintenance process on a Linux-based computer is generally the same. You launch a software catalog that reads from one or more repositories (software files optimized for a given platform).
+Regardless of the specific package manager, the software maintenance process on a Linux-based computer is generally the same. The user launches a software catalog that reads from one or more repositories (software files optimized for a given platform).
 
 ## What is a repository?
 
@@ -22,7 +22,7 @@ It is a collection of software that contains precompiled packages, installation 
 
 ### `apt`
 
-- Synchronization: synchronize your local copy of the available packages and their versions with that of the repositories.
+- Synchronization: synchronize the local copy of the available packages and their versions with that of the repositories.
 
     > The synchronization command should be executed before any other command involving changes to packages, such as upgrading.
 
@@ -50,7 +50,7 @@ It is a collection of software that contains precompiled packages, installation 
 
     - Removing its configuration files: `dpkg -P <installed-package-name>`.
 
-        > You can also write `--purge`.
+        > `--purge` can also be written.
 
 - List installed packages: `dpkg -l`.
 

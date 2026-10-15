@@ -40,10 +40,10 @@ Required approval rules are a premium/ultimate feature; on GitLab free, approval
 1. Go to "Settings" -> "Merge requests" -> "Merge checks".
 
 2. Enable:
-    - "Pipelines must succeed": this requires a successful pipeline to exist, not just "no failed pipeline", so your CI should run for every merge request.
+    - "Pipelines must succeed": this requires a successful pipeline to exist, not just "no failed pipeline", so the CI should run for every merge request.
 
     - "All threads must be resolved": open review threads block the merge.
 
 ---
 
-If you want to test the merged result before merging, enable merged results pipelines under "Settings" -> "Merge requests" -> "Merge options"; this is premium/ultimate. If you use third-party controls, GitLab Ultimate also supports external status checks, and you can block merges unless those checks pass by enabling "Status checks must succeed".
+To test the merged result before merging, enable merged results pipelines under "Settings" -> "Merge requests" -> "Merge options"; this is premium/ultimate. With third-party controls, GitLab Ultimate also supports external status checks, and merges can be blocked unless those checks pass by enabling "Status checks must succeed".

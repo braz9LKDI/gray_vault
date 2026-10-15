@@ -48,9 +48,9 @@ Because the three commands share one open file stream, they do not each start at
 
 ## Keep scripts running
 
-A **stub** function is simply a **placeholder function**, an empty (or nearly empty) version of a function you plan to fill in later.
+A **stub** function is simply a **placeholder function**, an empty (or nearly empty) version of a function planned to be filled in later.
 
-> In programming, a stub is a small piece of code that stands in for some other component or function that you have not implemented yet (or that lives "elsewhere", like on another server). It lets you build and test the rest of your system without waiting for every part to be finished.
+> In programming, a stub is a small piece of code that stands in for some other component or function that has not been implemented yet (or that lives "elsewhere", like on another server). It allows building and testing the rest of the system without waiting for every part to be finished.
 
 ---
 

@@ -12,7 +12,7 @@ $$
 
 ## Visual interpretation
 
-For an even function, if you pick any point $(x,f(x))$ on the graph, the point $(-x,f(x))$ will also be on the graph. This is the essence of $y$-axis symmetry.
+For an even function, if any point $(x,f(x))$ is picked on the graph, the point $(-x,f(x))$ will also be on the graph. This is the essence of $y$-axis symmetry.
 
 ## Properties
 

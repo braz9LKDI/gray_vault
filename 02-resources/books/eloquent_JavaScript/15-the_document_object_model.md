@@ -8,7 +8,7 @@ reviewed_on: "2025-11-08"
 
 ## Trees
 
-We call a data structure a **tree** when it has a branching structure, no cycles (a node may not contain itself, directly or indirectly), and a single, well-defined root. In the case of the DOM, `document.documentElement` serves as the root.
+We call a data structure a **tree** when it has a branching structure, no cycles (a node may not contain itself, directly or indirectly) and a single, well-defined root. In the case of the DOM, `document.documentElement` serves as the root.
 
 ## The standard
 
@@ -26,15 +26,15 @@ There is also the children property, which is like `childNodes` but contains onl
 
 HTML allows you to set any attribute you want on nodes...To read or change custom attributes, which are not available as regular object properties, you have to use the `getAttribute` and `setAttribute` methods.
 
-There is a commonly used attribute, class, which is a keyword in the JavaScript language. For historical reasons (some old JavaScript implementations could not handle property names that matched keywords) the property used to access this attribute is called `className`. You can also access it under its real name, "class", with the `getAttribute` and `setAttribute` methods.
+There is a commonly used attribute, class, which is a keyword in the JavaScript language. For historical reasons (some old JavaScript implementations could not handle property names that matched keywords) the property used to access this attribute is called `className`. It can also be accessed under its real name, "class", with the `getAttribute` and `setAttribute` methods.
 
 ## Layout
 
 ...Some, such as paragraphs (`<p>`) or headings (`<h1>`), take up the whole width of the document and are rendered on separate lines. These are called **block** elements. Others, such as links (`<a>`) or the `<strong>` element, are rendered on the same line with their surrounding text. Such elements are called **inline** elements.
 
-The size and position of an element can be accessed from JavaScript. The `offsetWidth` and `offsetHeight` properties give you the space the element takes up in **pixels**. A pixel is the basic unit of measurement in the browser. It traditionally corresponds to the smallest dot that the screen can draw, but on modern displays, which can draw **very** small dots, that may no longer be the case, and a browser pixel may span multiple display dots.
+The size and position of an element can be accessed from JavaScript. The `offsetWidth` and `offsetHeight` properties give the space the element takes up in **pixels**. A pixel is the basic unit of measurement in the browser. It traditionally corresponds to the smallest dot that the screen can draw, but on modern displays, which can draw **very** small dots, that may no longer be the case, and a browser pixel may span multiple display dots.
 
-Similarly, `clientWidth` and `clientHeight` give you the size of the space **inside** the element, ignoring border width.
+Similarly, `clientWidth` and `clientHeight` give the size of the space **inside** the element, ignoring border width.
 
 $$
 \begin{align}
@@ -49,7 +49,7 @@ $$
 
 A style attribute may contain one or more **declarations**, which are a property followed by a colon and a value. When there is more than one declaration, they must be separated by semicolons.
 
-Some style property names contain hyphens, such as `font-family`. Because such property names are awkward to work with in JavaScript (you would have to say `style["font-family"]`), the property names in the style object for such properties have their hyphens removed and the letters after them capitalized (`style.fontFamily`).
+Some style property names contain hyphens, such as `font-family`. Because such property names are awkward to work with in JavaScript (`style["font-family"]` would be needed), the property names in the style object for such properties have their hyphens removed and the letters after them capitalized (`style.fontFamily`).
 
 ## Cascading styles
 

@@ -28,7 +28,7 @@ En algunos verbos de dos palabras, las palabras pueden separarse o quedarse junt
 
 ¡Hablemos de los Verbos!
 
-Después de "like", "love", and "hate", puedes usar el infinitivo o la forma `ing` del verbo!
+Después de "like", "love" and "hate", puedes usar el infinitivo o la forma `ing` del verbo!
 
 Pero después de algunos verbos como "need" y "want", solo se puede usar el infinitivo.
 

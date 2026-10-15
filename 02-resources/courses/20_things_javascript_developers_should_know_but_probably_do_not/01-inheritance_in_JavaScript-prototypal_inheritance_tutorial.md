@@ -22,7 +22,7 @@ you.talk();
 
 The problem with this approach is that it lends itself to repetitive and unmaintainable code.
 
-> Imagine that you have to update the function definition, you must modify all the objects.
+> Imagine having to update the function definition: all the objects must be modified.
 
 ## `prototype` And `__proto__`
 

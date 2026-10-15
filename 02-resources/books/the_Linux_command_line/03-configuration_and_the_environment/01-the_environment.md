@@ -34,7 +34,7 @@ set | less # Display both the shell and environment variables, as well as any de
 #echo $<environment-variable>  See the content of a environment variable
 ```
 
-One element of the environment that neither `set` nor `printenv` displays is aliases (but you can see them with `alias`).
+One element of the environment that neither `set` nor `printenv` displays is aliases (but they can be seen with `alias`).
 
 ### Some interesting variables
 
@@ -50,7 +50,7 @@ One element of the environment that neither `set` nor `printenv` displays is ali
 |  `PATH`   | colon-separated list of directories that are searched when we enter the name of a executable program. |
 |   `PS1`   | stands for "prompt string 1".                                                                         |
 |   `PWD`   | current working directory.                                                                            |
-|  `TERM`   | name of your terminal type.                                                                           |
+|  `TERM`   | name of the terminal type.                                                                            |
 |   `TZ`    | specifies our time zone.                                                                              |
 |  `USER`   | our username.                                                                                         |
 

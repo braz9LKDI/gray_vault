@@ -36,11 +36,11 @@ Both protocols let two hosts connect and exchange data streams.
 
 It guarantees the delivery of data and packets in the same order as they were sent.
 
-TCP's role is to ensure the packets are reliably delivered and error-free. TCP implements congestion control, which means the initial requests start small and increase in size according to the levels of bandwidth the computers, servers, and network can support.
+TCP's role is to ensure the packets are reliably delivered and error-free. TCP implements congestion control, which means the initial requests start small and increase in size according to the levels of bandwidth the computers, servers and network can support.
 
 #### Three-way handshake
 
-The three messages transmitted by TCP to negotiate and start a TCP session are nicknamed **SYN**, **SYN-ACK**, and **ACK** for SYNchronize, SYNchronize-ACKnowledgement, and ACKnowledge respectively. The three-message mechanism is designed so that two computers that want to pass information back and forth to each other can negotiate the parameters of the connection before transmitting data.
+The three messages transmitted by TCP to negotiate and start a TCP session are nicknamed **SYN**, **SYN-ACK** and **ACK** for SYNchronize, SYNchronize-ACKnowledgement and ACKnowledge respectively. The three-message mechanism is designed so that two computers that want to pass information back and forth to each other can negotiate the parameters of the connection before transmitting data.
 
 ### UDP (User Datagram Protocol)
 
@@ -60,7 +60,7 @@ The OSI (Open Systems Interconnection) model, created in 1984 by the ISO (Intern
 
 4. Transport Layer: provides services to the application layer and takes services from the network layer. The data in the transport layer is referred to as Segments. It is responsible for the End to End Delivery of the complete message. The transport layer also provides acknowledgment of successful data transmission and re-transmits the data if an error is found.
 
-5. Session Layer: is responsible for the establishment of connections, maintenance of sessions, and authentication, and also ensures security.
+5. Session Layer: is responsible for the establishment of connections, maintenance of sessions and authentication, and also ensures security.
 
 6. Presentation Layer: is also called the Translation layer. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network. .
 
@@ -70,7 +70,7 @@ The OSI (Open Systems Interconnection) model, created in 1984 by the ISO (Intern
 | :------: | :----------------: | :---------------------------------------------------------------------------------------------------: | :--------------------------: | :--------------------------: |
 |    7     | Application Layer  |                   Helps in identifying the client and synchronizing communication.                    |           Message            |             SMTP             |
 |    6     | Presentation Layer | Data from the Application Layer is extracted and manipulated in the required format for transmission. |           Message            |       JPEG, MPEG, GIF        |
-|    5     |   Session Layer    |          Establishes connection, maintenance, ensures authentication, and ensures security.           |           Message            |           Gateway            |
+|    5     |   Session Layer    |           Establishes connection, maintenance, ensures authentication and ensures security.           |           Message            |           Gateway            |
 |    4     |  Transport Layer   |               Take service from Network Layer and provide it to the Application Layer.                |           Segment            |           Firewall           |
 |    3     |   Network Layer    |             Transmission of data from one host to another, located in different networks.             |            Packet            |            Router            |
 |    2     |  Data Link Layer   |                                  Node to node delivery of messages.                                   |            Frame             |        Switch, Bridge        |

@@ -30,7 +30,7 @@ Variables are assigned values this way:
 variable=value
 ```
 
-Where _variable_ is the name of the variable and _value_ is a string. Unlike some other programming languages, the shell does not care about the type of data assigned to a variable; it treats them all as string. You can force the shell to restrict the assignment to integers by using `declare` with `-i`, but, like setting variables as read-only, this is rarely done.
+Where _variable_ is the name of the variable and _value_ is a string. Unlike some other programming languages, the shell does not care about the type of data assigned to a variable; it treats them all as string. The shell can be forced to restrict the assignment to integers by using `declare` with `-i`, but, like setting variables as read-only, this is rarely done.
 
 Multiple variable assignments may be done on a single line.
 
@@ -66,7 +66,7 @@ A common convention is to use `_EOF_` (meaning **end of file**) as token. Note t
 
 In a here document, the shell pay no attention to the quotation marks. It treats them as ordinary characters.
 
-The text within a here document undergoes parameter expansion, command substitution, arithmetic expansion, and the literal characters `$` and `\` must be escaped.
+The text within a here document undergoes parameter expansion, command substitution, arithmetic expansion and the literal characters `$` and `\` must be escaped.
 
 However when we enclose the starting token in quotes:
 

@@ -10,7 +10,7 @@ If a program is crystallized thought, we can roughly categorize bugs into those 
 
 ## Language
 
-Often, however, your nonsense computation will merely produce `NaN` or an `undefined`, while the program happily continues, convinced that it is doing something meaningful. The mistake will manifest itself only later, after the bogus value has traveled through several functions. It might not trigger an error at all, but silently cause the program's output to be wrong. Finding the source of such problems can be difficult.
+Often, however, a nonsense computation will merely produce `NaN` or an `undefined`, while the program happily continues, convinced that it is doing something meaningful. The mistake will manifest itself only later, after the bogus value has traveled through several functions. It might not trigger an error at all, but silently cause the program's output to be wrong. Finding the source of such problems can be difficult.
 
 ## Strict mode
 
@@ -23,7 +23,7 @@ function can_you_spot_the_problem() {
 can_you_spot_the_problem(); // ReferenceError: counter is not defined
 ```
 
-Normally, when you forget to put `let` in front of your binding, as with `counter` in the example, JavaScript quietly creates a global binding and uses that. In strict mode, an error is reported instead....
+Normally, when `let` is forgotten in front of a binding, as with `counter` in the example, JavaScript quietly creates a global binding and uses that. In strict mode, an error is reported instead....
 
 Another change in strict mode is that `this` holds the value `undefined` in functions that are not called as methods. When making such a call outside of strict mode, this refers to the global scope object, which is an object whose properties are the global bindings...
 
@@ -31,7 +31,7 @@ Fortunately, constructors created with `class` will always complain if they are 
 
 ## Error propagation
 
-If you are programming only for yourself, you can afford to just ignore such problems until they occur. But if you build something that is going to be used by anybody else, you usually want the program to do better than just crash. Sometimes the right thing to do is take the bad input in stride and continue running. In other cases, it is better to report to the user what went wrong and then give up. In either situation the program has to actively do something in response to the problem.
+When programming only for oneself, such problems can just be ignored until they occur. But when building something that is going to be used by anybody else, the program usually should do better than just crash. Sometimes the right thing to do is take the bad input in stride and continue running. In other cases, it is better to report to the user what went wrong and then give up. In either situation the program has to actively do something in response to the problem.
 
 ## Exceptions
 
@@ -47,7 +47,7 @@ Writing programs that operate reliably even when exceptions pop up in unexpected
 
 When a `catch` body is entered, all we know is that something in our `try` body caused an exception. But we do not know what did or which exception it caused.
 
-JavaScript (in a rather glaring omission) does not provide direct support for selectively catching exceptions: either you catch them all or you do not catch any. This makes it tempting to **assume** that the exception you get is the one you were thinking about when you wrote the `catch` block.
+JavaScript (in a rather glaring omission) does not provide direct support for selectively catching exceptions: either all of them are caught or none is. This makes it tempting to **assume** that the exception caught is the one that was in mind when the `catch` block was written.
 
 ## Assertions
 

@@ -18,11 +18,11 @@ So, .NET is not a language by itself, it is the **environment** and **toolkit**
 
 ## How they connect
 
-Most of the time, you use C# **to build .NET applications**. So, C# is the used language and .NET is the platform that runs it.
+Most of the time, C# is used **to build .NET applications**. So, C# is the used language and .NET is the platform that runs it.
 
-## What actually happens when you run a C# program?
+## What actually happens when a C# program runs?
 
-1. You write C# code.
+1. C# code is written.
 
 2. A compiler turns it into LM (intermediate language).
 

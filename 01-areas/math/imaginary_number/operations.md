@@ -6,7 +6,7 @@ reviewed_on: "2025-02-06"
 
 ## Addition
 
-For two numbers, $a + b i$, and $c + d i$ when the addition is performed, then the real parts and the imaginary parts are added separately and then simplified.
+For two numbers, $a + b i$ and $c + d i$ when the addition is performed, then the real parts and the imaginary parts are added separately and then simplified.
 
 $$
 (a + b i) + (c + d i) = (a + c) + (b + d) i
@@ -14,7 +14,7 @@ $$
 
 ## Subtraction
 
-For two numbers, $a + b i$, and $c + d i$ when the subtraction is performed, then the real parts and the imaginary parts are subtracted separately and then simplified.
+For two numbers, $a + b i$ and $c + d i$ when the subtraction is performed, then the real parts and the imaginary parts are subtracted separately and then simplified.
 
 $$
 (a + b i) - (c + d i) = (a - c) + (b - d) i
@@ -22,7 +22,7 @@ $$
 
 ## Multiplication
 
-For two numbers, $a + b i$, and $c + d i$ when the multiplication is performed, then the basic rule of multiplication and the distributive property of multiplication is used.
+For two numbers, $a + b i$ and $c + d i$ when the multiplication is performed, then the basic rule of multiplication and the distributive property of multiplication is used.
 
 $$
 \begin{align}
@@ -34,7 +34,7 @@ $$
 
 ## Division
 
-For two numbers, $a + b i$, and $c + d i$ when the division is performed, then the basic rule of division and finding the conjugate of the imaginary number is used.
+For two numbers, $a + b i$ and $c + d i$ when the division is performed, then the basic rule of division and finding the conjugate of the imaginary number is used.
 
 $$
 \begin{align}

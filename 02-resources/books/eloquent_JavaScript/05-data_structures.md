@@ -8,7 +8,7 @@ reviewed_on: "2025-09-02"
 
 ---
 
-Numbers, Booleans, and strings are the atoms from which data structures are built. Many types of information require more than one atom, though. **Objects** allow us to group values (including other objects) to build more complex structures.
+Numbers, Booleans and strings are the atoms from which data structures are built. Many types of information require more than one atom, though. **Objects** allow us to group values (including other objects) to build more complex structures.
 
 ## Datasets
 
@@ -32,7 +32,7 @@ It is possible to assign a value to a property expression with `=` . This will r
 
 ...binary `in` operator, when applied to a string and an object, tells you whether that object has a property with that name...
 
-To find out what properties an object has, you can use `Object.keys`. Give the function an object and it will return an array of strings (the object's property names).
+To find out what properties an object has, `Object.keys` can be used. Give the function an object and it will return an array of strings (the object's property names).
 
 `Object.assign` copies all properties from one object into another:
 
@@ -46,7 +46,7 @@ When you compare objects with `==`, it compares by identity: it will produce `tr
 
 ## The lycanthrope's log
 
-...Correlation between variables is usually expressed as a value that ranges from $-1$ to 1. Zero correlation means the variables are not related. A correlation of 1 indicates that the two are perfectly related (if you know one, you also know the other). Negative 1 also means that the variables are perfectly related but are opposites (when one is true, the other is false).
+...Correlation between variables is usually expressed as a value that ranges from $-1$ to 1. Zero correlation means the variables are not related. A correlation of 1 indicates that the two are perfectly related (knowing one means also knowing the other). Negative 1 also means that the variables are perfectly related but are opposites (when one is true, the other is false).
 
 To compute the measure of correlation between two Boolean variables, we can use the **phi coefficient** ($\phi$). This is a formula whose input is a frequency table containing the number of times the different combinations of the variables were observed. The output of the formula is a number between $-1$ and 1 that describes the correlation.
 
@@ -56,7 +56,7 @@ $$
 
 ## Strings and their properties
 
-Values of type string, number, and Boolean are not objects, and though the language does not complain if you try to set new properties on them, it does not actually store those properties...
+Values of type string, number and Boolean are not objects, and though the language does not complain if you try to set new properties on them, it does not actually store those properties...
 
 ## Rest parameters
 
@@ -64,7 +64,7 @@ It can be useful for a function to accept any number of arguments...To write suc
 
 When such a function is called, the **rest parameter** is bound to an array containing all further arguments. If there are other parameters before it, their values are not part of that array...
 
-You can use a similar three-dot notation to call a function with an array of arguments.
+A similar three-dot notation can be used to call a function with an array of arguments.
 
 Square bracket array notation similarly allows the triple-dot operator to spread another array into the new array.
 
@@ -78,13 +78,13 @@ Though computers are deterministic machines (they always react the same way if g
 
 ## Destructuring
 
-If you know that the value you are binding is an array, you can use square brackets to "look inside" of the value, binding its contents.
+If the value being bound is known to be an array, square brackets can be used to "look inside" of the value, binding its contents.
 
 A similar trick works for objects, using braces instead of square brackets.
 
 ## Optional property access
 
-When you are not sure whether a given value produces an object, but still want to read a property from it when it does, you can use a variant of the dot notation: `object?.property`.
+When it is not certain whether a given value produces an object, but a property should still be read from it when it does, a variant of the dot notation can be used: `object?.property`.
 
 The expression `a?.b` means the same as `a.b` when `a` is not `null` or `undefined`. When it is, it evaluates to `undefined`...
 

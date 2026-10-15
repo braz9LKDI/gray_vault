@@ -25,9 +25,9 @@ white_rabbit.speak("Oh my fur and whiskers"); // The white rabbit says "Oh my fu
 hungry_rabbit.speak("Got any carrots?"); // The hungry rabbit says "Got any carrots?"
 ```
 
-Since each function has its own `this` whose value depends on the way it is called, you cannot refer to the `this` of the wrapping scope in a regular function defined with the function keyword.
+Since each function has its own `this` whose value depends on the way it is called, the `this` of the wrapping scope cannot be referred to in a regular function defined with the function keyword.
 
-Arrow functions are different, they do not bind their own `this` but can see the `this` binding of the scope around them. Thus, you can do something like the following code, which references this from inside a local function:
+Arrow functions are different, they do not bind their own `this` but can see the `this` binding of the scope around them. Thus, something like the following code is possible, which references this from inside a local function:
 
 ```javascript
 let finder = {
@@ -45,7 +45,7 @@ Objects can be linked to other objects, to magically get all the properties that
 
 When an object gets a request for a property that it does not have, its prototype will be searched for the property. If that does not have it, the prototype's prototype is searched, and so on until an object without prototype is reached (`Object.prototype`).
 
-You can use `Object.create` to create an object with a specific prototype:
+`Object.create` can be used to create an object with a specific prototype:
 
 ```javascript
 let rabbit_prototype = {
@@ -77,9 +77,9 @@ class Rabbit {
 
 The `class` starts a class declaration, which allows us to define a constructor and a set of methods together. Any number of methods may be written inside the declaration's braces.
 
-This function cannot be called like a normal function. Constructors, in JavaScript, are called by putting `new` in front of them. Doing so creates a fresh instance object whose prototype is the object from the function's prototype property, then runs the function with `this` bound to the new object, and finally returns the object.
+This function cannot be called like a normal function. Constructors, in JavaScript, are called by putting `new` in front of them. Doing so creates a fresh instance object whose prototype is the object from the function's prototype property, then runs the function with `this` bound to the new object and finally returns the object.
 
-Like `function`, `class` can be used both in statements and in expressions. When used as an expression, it does not define a binding but just produces the constructor as a value. You are allowed to omit the class name in a class expression.
+Like `function`, `class` can be used both in statements and in expressions. When used as an expression, it does not define a binding but just produces the constructor as a value. The class name can be omitted in a class expression.
 
 ```javascript
 let object = new (class {
@@ -94,25 +94,25 @@ console.log(object.get_word()); // hello
 
 To declare a private method, put a `#` in front of its name. Such methods can be called only from inside the class declaration that defines them.
 
-To use private instance properties, you must declare them. Regular properties can be created by just assigning to them, but private properties **must** be declared in the class declaration to be available at all.
+To use private instance properties, they must be declared. Regular properties can be created by just assigning to them, but private properties **must** be declared in the class declaration to be available at all.
 
 ## Overriding derived properties
 
-When you add a property to an object, whether it is present in the prototype or not, the property is added to the object **itself**. If there was already a property with the same name in the prototype, this property will no longer affect the object, as it is now hidden behind the object's own property.
+When a property is added to an object, whether it is present in the prototype or not, the property is added to the object **itself**. If there was already a property with the same name in the prototype, this property will no longer affect the object, as it is now hidden behind the object's own property.
 
 ## Maps
 
 A **map** (noun) is a data structure that associates values (the keys) with other values.
 
-For this reason, using plain objects as maps is dangerous. There are several possible ways to avoid this problem. First, you can create objects with no prototype. If you pass null to Object.create, the resulting object will not derive from Object.prototype and can be safely used as a map.
+For this reason, using plain objects as maps is dangerous. There are several possible ways to avoid this problem. First, objects with no prototype can be created. If null is passed to Object.create, the resulting object will not derive from Object.prototype and can be safely used as a map.
 
-> The reason refers to the fact of calling unwanted keys of the objects (a key that you did not declare).
+> The reason refers to the fact of calling unwanted keys of the objects (a key that was not declared).
 
 ```javascript
 console.log("toString" in Object.create(null)); // false
 ```
 
-Object property names must be strings. If you need a map whose keys cannot easily be converted to strings (such as objects) you cannot use an object as your map.
+Object property names must be strings. If a map is needed whose keys cannot easily be converted to strings (such as objects), an object cannot be used as the map.
 
 Fortunately, JavaScript comes with a class called "Map" that is written for this exact purpose. It stores a mapping and allows any type of keys.
 
@@ -127,7 +127,7 @@ console.log("Is Jack's age known?", ages.has("Jack")); // Is Jack's age known? f
 console.log(ages.has("toString")); // false
 ```
 
-If you do have a plain object that you need to treat as a map for some reason, it is useful to know that `Object.keys` returns only an object's own keys, not those in the prototype. As an alternative to the `in`, you can use the `Object.hasOwn`, which ignores the object's prototype.
+If a plain object must be treated as a map for some reason, it is useful to know that `Object.keys` returns only an object's own keys, not those in the prototype. As an alternative to the `in`, `Object.hasOwn` can be used, which ignores the object's prototype.
 
 ```javascript
 console.log(Object.hasOwn({ x: 1 }, "x")); // true
@@ -179,4 +179,4 @@ When called, that method should return an object that provides a second interfac
 
 ## Inheritance
 
-Whereas encapsulation and polymorphism can be used to **separate** pieces of code from one another, reducing the tangledness of the overall program, inheritance fundamentally ties classes together, creating **more** tangle. When inheriting from a class, you usually have to know more about how it works than when simply using it. Inheritance can be a useful tool to make some types of programs more succinct, but it should not be the first tool you reach for, and you probably should not actively go looking for opportunities to construct class hierarchies (family trees of classes).
+Whereas encapsulation and polymorphism can be used to **separate** pieces of code from one another, reducing the tangledness of the overall program, inheritance fundamentally ties classes together, creating **more** tangle. When inheriting from a class, more usually has to be known about how it works than when simply using it. Inheritance can be a useful tool to make some types of programs more succinct, but it should not be the first tool reached for, and opportunities to construct class hierarchies (family trees of classes) should probably not be actively sought.

@@ -10,7 +10,7 @@ An ASGI application is usually an async callable with the form `application(scop
 
 ## Why is it used?
 
-ASGI extends the older request-response model so that data can be sent and received at any time. It is designed to support HTTP, HTTP/2, and WebSocket through a common interface.
+ASGI extends the older request-response model so that data can be sent and received at any time. It is designed to support HTTP, HTTP/2 and WebSocket through a common interface.
 
 ## Best fit
 

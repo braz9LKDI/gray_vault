@@ -18,13 +18,13 @@ Combining multiple data types can reveal richer insights, but integration gets h
 
 ## Velocity
 
-The **speed** at which data is generated, collected, and processed.
+The **speed** at which data is generated, collected and processed.
 
 > Some use cases need real-time or near-real-time decisions.
 
 ## Veracity
 
-The **quality, accuracy, and reliability** of data, how much you can trust it.
+The **quality, accuracy and reliability** of data, how much it can be trusted.
 
 > Bad data leads to bad decisions ("garbage in, garbage out").
 

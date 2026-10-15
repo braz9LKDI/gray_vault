@@ -8,4 +8,4 @@ reviewed_on: "2026-04-08"
 git stash
 ```
 
-> Optional, you can add a message adding `save <message>`.
+> Optionally, a message can be added with `save <message>`.

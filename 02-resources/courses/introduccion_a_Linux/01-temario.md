@@ -80,7 +80,7 @@ Often referred to as ENVs, are dynamic values that wield significant influence o
 
 ### Bash redirections
 
-Are a way of manipulating the input and output of commands in a shell script or a terminal. By default, a command takes input from the keyboard and outputs it to the screen, but redirections allow you to change the source and destination of the data.
+Are a way of manipulating the input and output of commands in a shell script or a terminal. By default, a command takes input from the keyboard and outputs it to the screen, but redirections allow changing the source and destination of the data.
 
 - `cmd > file`: redirects the standard output (stdout) of `cmd` to `file`.
 
@@ -92,13 +92,13 @@ Are a way of manipulating the input and output of commands in a shell script or 
 
 - `cmd &`: run a command in the background.
 
-- `disown`: is used to remove jobs from the job table or keep them running even after you close the terminal window.
+- `disown`: is used to remove jobs from the job table or keep them running even after the terminal window is closed.
 
 ## Descriptores de archivo
 
-Are used to represent open files, sockets, pipes, and other input and output streams. A file descriptor is a non-negative integer value that serves as a unique identifier for a file or input/output channel that a process has opened.
+Are used to represent open files, sockets, pipes and other input and output streams. A file descriptor is a non-negative integer value that serves as a unique identifier for a file or input/output channel that a process has opened.
 
-- `exec [command [argument...]]`: shall open, close, and/or copy file descriptors as specified by any redirections as part of the command.
+- `exec [command [argument...]]`: shall open, close and/or copy file descriptors as specified by any redirections as part of the command.
 
     > If `exec` is specified with command, it shall replace the shell with command without creating a new process. If arguments are specified, they shall be arguments to the command.
 
@@ -233,7 +233,7 @@ To change the security permissions on files, we use `chmod`, which stands for "c
 |   6   |  110   |   `rw-`   |
 |   7   |  111   |   `rwx`   |
 
-Using the octal notations table instead of `r`, `w`, and `x`. Each digit octal notation can be used for either of the group `u`, `g`, or `o`. Executing `chmod ugo+rwx file.txt` is equal to `chmod 777 file.txt`.
+Using the octal notations table instead of `r`, `w` and `x`. Each digit octal notation can be used for either of the group `u`, `g`, or `o`. Executing `chmod ugo+rwx file.txt` is equal to `chmod 777 file.txt`.
 
 ## Permisos especiales y atributos de ficheros: sticky bit, `chattr`, `lsattr`, SUID y SGID
 
@@ -307,7 +307,7 @@ Examples of usage:
 
 ## Estructura de directorios del sistema
 
-In Linux/Unix operating system, everything is a file; even directories are files, files are files, and devices like mouse, keyboard, printer, etc. are also files.
+In Linux/Unix operating system, everything is a file; even directories are files, files are files and devices like mouse, keyboard, printer, etc. are also files.
 
 ### Types of files in the Linux system
 
@@ -376,9 +376,9 @@ The Linux/Unix file system hierarchy base begins at the root, and everything sta
 
 - `xargs [options] [command [initial-arguments]]`: build and execute command lines from standard input.
 
-    Because Unix filenames can contain blanks and newlines, this default behavior is often problematic; filenames containing blanks and/or newlines are incorrectly processed by xargs. In these situations, it is better to use the `-0` option, which prevents such problems. When using this option, you will need to ensure that the program which produces the input for xargs also uses a null character as a separator.
+    Because Unix filenames can contain blanks and newlines, this default behavior is often problematic; filenames containing blanks and/or newlines are incorrectly processed by xargs. In these situations, it is better to use the `-0` option, which prevents such problems. When using this option, the program which produces the input for xargs must also use a null character as a separator.
 
-    > If that program is GNU find for example, the `-print0` option does this for you.
+    > If that program is GNU find for example, the `-print0` option does this.
 
 Examples of usage:
 
@@ -628,7 +628,7 @@ After creating an ssh key with the command `ssh-keygen`.
 
 ### Bandit level 14
 
-1. `ssh -i sshkey.private bandit14@localhost -p 2220`: uses the private SSH key (`sshkey.private`) to connect to the "bandit14" user on the localhost (the machine you are currently working on) via SSH on port 2220.
+1. `ssh -i sshkey.private bandit14@localhost -p 2220`: uses the private SSH key (`sshkey.private`) to connect to the "bandit14" user on the localhost (the machine currently in use) via SSH on port 2220.
 
 2. `cat /etc/bandit_pass/bandit14`.
 
@@ -636,7 +636,7 @@ After creating an ssh key with the command `ssh-keygen`.
 
 ## Uso de netcat para realizar conexiones
 
-- `nc [OPTION]...`: is used for just about anything under the sun involving TCP, UDP, or UNIX-domain sockets. It can open TCP connections, send UDP packets, listen on arbitrary TCP and UDP ports, do port scanning, and deal with both IPv4 and IPv6.
+- `nc [OPTION]...`: is used for just about anything under the sun involving TCP, UDP, or UNIX-domain sockets. It can open TCP connections, send UDP packets, listen on arbitrary TCP and UDP ports, do port scanning and deal with both IPv4 and IPv6.
     - `[destination] [port]`.
 
 - `ss [options] [ FILTER ]`: utility to investigate sockets.
@@ -733,7 +733,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 ### Bandit level 20
 
-1. `./bandit20-do cat /etc/bandit_pass/bandit20`: executes the setuid `bandit20-do` with the `cat /etc/bandit_pass/bandit20`. The setuid binary runs with the permissions of the owner (in this case, bandit20), allowing you to read the password file.
+1. `./bandit20-do cat /etc/bandit_pass/bandit20`: executes the setuid `bandit20-do` with the `cat /etc/bandit_pass/bandit20`. The setuid binary runs with the permissions of the owner (in this case, bandit20), which allows reading the password file.
 
     > The password for `bandit20` is `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`.
 
@@ -965,7 +965,7 @@ Based on the values specified for each of the components above, complex schedule
 
 ### Bandit level 27
 
-1. `./bandit27-do cat /etc/bandit_pass/bandit27`: executes the setuid `bandit27-do` with the `cat /etc/bandit_pass/bandit27`. The setuid binary runs with the permissions of the owner (in this case, bandit27), allowing you to read the password file.
+1. `./bandit27-do cat /etc/bandit_pass/bandit27`: executes the setuid `bandit27-do` with the `cat /etc/bandit_pass/bandit27`. The setuid binary runs with the permissions of the owner (in this case, bandit27), which allows reading the password file.
 
     > The password for `bandit27` is `YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS`.
 

@@ -12,7 +12,7 @@ reviewed_on: "2025-06-30"
 
 - `grep`: print lines matching a pattern.
 
-- `wc`: print newline, word, and byte counts for each file.
+- `wc`: print newline, word and byte counts for each file.
 
 - `head`: output the first part of a file.
 
@@ -20,7 +20,7 @@ reviewed_on: "2025-06-30"
 
 - `tee`: read from standard input and write to standard output and files.
 
-## Standard input, output, and error
+## Standard input, output and error
 
 Keeping with the Unix theme of "everything is a file", programs such as `ls` actually send their results to a special file called **standard output** (often expressed as **stdout**) and their status messages to another file called **standard error** (**stderr**). By default, both standard output and standard error are linked to the screen and not saved into a disk file.
 
@@ -168,7 +168,7 @@ command | filters | command
 ls /bin /usr/bin | sort | less
 ```
 
-The command above is to make a combined list of all the executable programs in `/bin` and `/usr/bin`, put them in sorted order, and view the resulting list.
+The command above is to make a combined list of all the executable programs in `/bin` and `/usr/bin`, put them in sorted order and view the resulting list.
 
 #### `uniq` report or omit repeated lines
 
@@ -184,9 +184,9 @@ ls /bin /usr/bin | sort | uniq | less    # See the uniques elements
 ls /bin /usr/bin | sort | uniq -d | less # See the duplicates elements
 ```
 
-#### `wc` print line, word, and byte counts
+#### `wc` print line, word and byte counts
 
-It is used to display the number of lines, words, and bytes contained in files.
+It is used to display the number of lines, words and bytes contained in files.
 
 ```bash
 wc ls-output.txt
@@ -194,7 +194,7 @@ wc ls-output.txt
 7902 64566 503634 ls-output.txt
 ```
 
-In this case, it prints out three numbers: lines, words, and bytes contained in `ls-out put.txt`...The `-l` option limits its output to report only lines. Adding it to a pipeline is a handy way to count things...
+In this case, it prints out three numbers: lines, words and bytes contained in `ls-out put.txt`...The `-l` option limits its output to report only lines. Adding it to a pipeline is a handy way to count things...
 
 ```bash
 ls /bin /usr/bin | sort | uniq | wc -l # See the number of items we have in our sorted list
@@ -242,9 +242,9 @@ The `head` command prints the first 10 lines of a file, and the `tail` command p
 
 The `-n` option when used with head allows a negative value which causes all but the last _n_ lines to be output. Similarly, the `-n` option with tail allows a plus sign causing all but the first _n_ lines to be output.
 
-`tail` has an option that allows you to view the file in real time (`-f`). This is incredibly useful when you are monitoring log files.
+`tail` has an option to view the file in real time (`-f`). This is incredibly useful when monitoring log files.
 
-> The prompt will not be available until you press `CTRL + c`.
+> The prompt will not be available until `CTRL + c` is pressed.
 
 ### `tea` read from stdin and output to stdout and files
 

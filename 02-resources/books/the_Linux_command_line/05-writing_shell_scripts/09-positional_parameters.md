@@ -68,7 +68,7 @@ _opt_string_ is a string that defines the valid option characters:
 
 - A colon following a character signifies that the option requires an argument.
 
-- A colon at the very beginning of the string enables "silent mode," giving you control over error handling.
+- A colon at the very beginning of the string enables "silent mode," giving control over error handling.
 
 - Options can be grouped.
 
@@ -78,7 +78,7 @@ _var_ is the name of a variable that will hold the parsed option character on ea
 
 `OPTIND` is an index variable, automatically managed by `getopts`, that points to the next positional parameter to be processed.
 
-By default, `getopts` processes the script's positional parameters (`$@`), but you can supply your own list of arguments after _var_.
+By default, `getopts` processes the script's positional parameters (`$@`), but a custom list of arguments can be supplied after _var_.
 
 The while loop continues as long as `getopts` successfully finds an option. When an error occurs in silent mode:
 

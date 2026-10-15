@@ -8,7 +8,7 @@ reviewed_on: "2025-08-31"
 
 ---
 
-...The concept of wrapping a piece of program in a value has many uses. It gives us a way to structure larger programs, to reduce repetition, to associate names with subprograms, and to isolate these subprograms from each other.
+...The concept of wrapping a piece of program in a value has many uses. It gives us a way to structure larger programs, to reduce repetition, to associate names with subprograms and to isolate these subprograms from each other.
 
 ## Bindings and scopes
 
@@ -42,7 +42,7 @@ The preceding code works, even though the function is defined **below** the code
 
 The arrow comes **after** the list of parameters and is followed by the function's body...
 
-When there is only one parameter name, you can omit the parentheses around the parameter list. If the body is a single expression, rather than a block in braces, that expression will be returned from the function...
+When there is only one parameter name, the parentheses around the parameter list can be omitted. If the body is a single expression, rather than a block in braces, that expression will be returned from the function...
 
 ## The call stack
 
@@ -50,7 +50,7 @@ The place where the computer stores this context is the **call stack**. Every ti
 
 ## Optional arguments
 
-JavaScript is extremely broad-minded about the number of arguments you can pass to a function. If you pass too many, the extra ones are ignored. If you pass too few, the missing parameters are assigned `undefined`.
+JavaScript is extremely broad-minded about the number of arguments that can be passed to a function. If too many are passed, the extra ones are ignored. If too few are passed, the missing parameters are assigned `undefined`.
 
 If you write an `=` after a parameter, followed by an expression, the value of that expression will replace the argument when it is not given...
 
@@ -60,13 +60,13 @@ This feature (being able to reference a specific instance of a local binding in 
 
 ## Recursion
 
-The dilemma of speed versus elegance is an interesting one. You can see it as a kind of continuum between human friendliness and machine friendliness. Almost any program can be made faster by making it bigger and more convoluted. The programmer has to find an appropriate balance.
+The dilemma of speed versus elegance is an interesting one. It can be seen as a kind of continuum between human friendliness and machine friendliness. Almost any program can be made faster by making it bigger and more convoluted. The programmer has to find an appropriate balance.
 
 Recursion is not always just an inefficient alternative to looping. Some problems really are easier to solve with recursion than with loops. Most often these are problems that require exploring or processing several "branches", each of which might branch out again into even more branches.
 
 ## Growing functions
 
-A useful principle is to refrain from adding cleverness unless you are absolutely sure you are going to need it. It can be tempting to write general "frameworks" for every bit of functionality you come across. Resist that urge. You will not get any real work done (you will be too busy writing code that you never use).
+A useful principle is to refrain from adding cleverness unless it is absolutely certain to be needed. It can be tempting to write general "frameworks" for every bit of functionality that comes up. Resist that urge. No real work gets done (the time goes into writing code that is never used).
 
 ## Functions and side effects
 

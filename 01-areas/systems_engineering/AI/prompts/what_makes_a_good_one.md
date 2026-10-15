@@ -6,7 +6,7 @@ reviewed_on: "2026-02-21"
 
 - Clear and specific: provide context and avoid irrelevant information.
 
-- Role and tone: guide the model to generate a response appropriate to your audience or purpose.
+- Role and tone: guide the model to generate a response appropriate to the audience or purpose.
 
     > If tone is unclear, try defining the audience instead.
 
@@ -16,9 +16,9 @@ reviewed_on: "2026-02-21"
 
 - Being too vague or general, because the AI gets no clear direction on topic, depth, or focus.
 
-- Not providing context or purpose, because the answer may not fit your specific use case.
+- Not providing context or purpose, because the answer may not fit the specific use case.
 
-- Not specifying the audience or knowledge level, because the language or complexity might not match your audience.
+- Not specifying the audience or knowledge level, because the language or complexity might not match the audience.
 
 - Not defining the response format.
 

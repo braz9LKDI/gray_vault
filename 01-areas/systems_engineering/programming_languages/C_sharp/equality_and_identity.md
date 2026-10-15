@@ -36,7 +36,7 @@ bool sameText = (s1 == s2); // true
 bool sameIdentity = object.ReferenceEquals(s1, s2); // not the main question here
 ```
 
-## `==`, `Equals`, and `ReferenceEquals`
+## `==`, `Equals` and `ReferenceEquals`
 
 These three checks are related, but they do not mean the same thing.
 

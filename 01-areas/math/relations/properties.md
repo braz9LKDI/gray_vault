@@ -58,7 +58,7 @@ $$
 \end{multline}
 $$
 
-> That is, it is **reflexive**, **symmetric**, and **transitive**.
+> That is, it is **reflexive**, **symmetric** and **transitive**.
 
 ## Partial order
 
@@ -71,4 +71,4 @@ $$
 \end{multline}
 $$
 
-> That is, it is **reflexive**, **antisymmetric**, and **transitive**.
+> That is, it is **reflexive**, **antisymmetric** and **transitive**.

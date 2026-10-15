@@ -4,7 +4,7 @@
 
 Each entity is defined by its name, typically in uppercase. It can have attributes listed within `{}` in the format type name.
 
-> You can include data types in the attributes.
+> Data types can be included in the attributes.
 
 ## Relationships between entities
 

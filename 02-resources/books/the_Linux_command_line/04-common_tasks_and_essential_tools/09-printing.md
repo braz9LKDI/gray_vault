@@ -18,7 +18,7 @@ reviewed_on: "2025-07-25"
 
 ### Character-based printers
 
-The second, and more important characteristic of early printers was that printers used a fixed set of characters that were intrinsic to the device...This made the printers much like high-speed typewriters. As with most typewriters, they printed using monospaced font (fixed width) fonts...Printing was done at fixed position on the page, and the printable are of a page contained a fixed number of characters. Most printers printed then characters per inch (CPI) horizontally and six lines per inch (LPI) vertically. Using this scheme, a US-letter sheet of paper is 85 characters wide and 66 lines high. Taking into account a small margin on each side, 80 characters was considered the maximum width of a print line. This explains why terminal displays (and our terminal emulators) are normally 80 characters wide. Using a monospaced font and and an 80 character wide terminal provides a **what you see is what you g et** (**WYSIWYG**) view of printed output.
+The second, and more important characteristic of early printers was that printers used a fixed set of characters that were intrinsic to the device...This made the printers much like high-speed typewriters. As with most typewriters, they printed using monospaced font (fixed width) fonts...Printing was done at fixed position on the page, and the printable are of a page contained a fixed number of characters. Most printers printed then characters per inch (CPI) horizontally and six lines per inch (LPI) vertically. Using this scheme, a US-letter sheet of paper is 85 characters wide and 66 lines high. Taking into account a small margin on each side, 80 characters was considered the maximum width of a print line. This explains why terminal displays (and our terminal emulators) are normally 80 characters wide. Using a monospaced font and an 80 character wide terminal provides a **what you see is what you get** (**WYSIWYG**) view of printed output.
 
 ### Graphical printers
 
@@ -69,12 +69,12 @@ Modern Linux systems employ two software suites to perform and manage printing. 
 
 It can be used to send files to the printer. It may also be used in pipelines, as it accepts standard input.
 
-|     option     | description                                                                                                                                                     |
-| :------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    `-# <n>`    | set number of copies to _n_.                                                                                                                                    |
-|      `-p`      | print each page with a shaded header with the date, time, job name, and page number. This so-called "pretty print" option can be used when printing text files. |
-| `-P <printer>` | specify the name of the printer used for output.                                                                                                                |
-|      `-r`      | delete files after printing.                                                                                                                                    |
+|     option     | description                                                                                                                                                    |
+| :------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    `-# <n>`    | set number of copies to _n_.                                                                                                                                   |
+|      `-p`      | print each page with a shaded header with the date, time, job name and page number. This so-called "pretty print" option can be used when printing text files. |
+| `-P <printer>` | specify the name of the printer used for output.                                                                                                               |
+|      `-r`      | delete files after printing.                                                                                                                                   |
 
 ### `lp` print files (System V style)
 
