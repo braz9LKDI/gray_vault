@@ -4,7 +4,7 @@ reviewed_on: "2025-10-30"
 
 # JavaScript and the browser
 
-> "The dream behind the web is of a common information space in which we communicate by sharing information. Its universality is essential: the fact that a hypertext link can point to anything, be it personal, local or global, be it draft or highly polished." - Tim Berners-Lee, The World Wide Web: A Very Short Personal Pistory.
+> "The dream behind the web is of a common information space in which we communicate by sharing information. Its universality is essential: the fact that a hypertext link can point to anything, be it personal, local or global, be it draft or highly polished." (Tim Berners-Lee, The World Wide Web: A Very Short Personal Pistory)
 
 ## Networks and the Internet
 
@@ -20,7 +20,7 @@ A TCP connection works as follows: one computer must be waiting, or **listening*
 
 Another computer can then establish a connection by connecting to the target machine using the correct port number. If the target machine can be reached and is listening on that port, the connection is successfully created. The listening computer is called the **server**, and the connecting computer is called the **client**.
 
-## The Web
+## The web
 
 The World Wide Web (not to be confused with the internet as a whole) is a set of protocols and formats that allow us to visit web pages in a browser...
 

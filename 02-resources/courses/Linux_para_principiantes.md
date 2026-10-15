@@ -7,7 +7,7 @@
 
     > A `FILE` that does not exist is created empty, unless`-c` or `-h` is supplied.
 
-## ¿Que Son exactamente los comandos?
+## ¿Qué son exactamente los comandos?
 
 - `man [OPTION] [COMMAND]` (manual): allows users to access detailed information about various commands, utilities, and system calls.
 
@@ -23,6 +23,7 @@
     5. "EXAMPLES": provides practical examples demonstrating command usage.
 
     6. "SEE ALSO": suggests related commands or resources.
+
     - `-f` or `--whatis`: Approximately equivalent to `whatis`. Display a short description from the manual page, if it is available.
 
     - `-K` or `--global-apropos`: search for text in all manual pages.
@@ -43,6 +44,6 @@
     |    8    |  System administration commands (usually only for root)  |
     |    9    |                   Kernel documentation                   |
 
-## Los Alias
+## Los alias
 
 - `type name...`: write a description of command type.

@@ -30,4 +30,4 @@ The **quality, accuracy, and reliability** of data, how much you can trust it.
 
 ## Value
 
-The **usefulness** of data—turning it into measurable benefits (better decisions, efficiency, revenue, or reduced risk).
+The **usefulness** of data: turning it into measurable benefits (better decisions, efficiency, revenue, or reduced risk).

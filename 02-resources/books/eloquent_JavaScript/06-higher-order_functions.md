@@ -4,7 +4,7 @@ reviewed_on: "2025-09-06"
 
 # Higher-order functions
 
-> "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies." - C.A.R. Hoare, 1980 ACM Turing Award Lecture.
+> "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies." (C.A.R. Hoare, 1980 ACM Turing Award Lecture)
 
 ---
 
@@ -72,7 +72,7 @@ function reduce(array, combine, start) {
 
 ## Strings and character codes
 
-...JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. A Unicode character code was initially supposed to fit within such a unit (which gives you a little over $65,000$ characters). When it became clear that was not going to be enough, many people balked at the need to use more memory per character. To address these concerns, UTF-16, the format also used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit but uses a pair of two such units for others.
+...JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. A Unicode character code was initially supposed to fit within such a unit (which gives you a little over 65,000 characters). When it became clear that was not going to be enough, many people balked at the need to use more memory per character. To address these concerns, UTF-16, the format also used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit but uses a pair of two such units for others.
 
 ## Summary
 

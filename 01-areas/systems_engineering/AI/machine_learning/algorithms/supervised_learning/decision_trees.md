@@ -10,7 +10,7 @@ reviewed_on: "2025-02-03"
 
 - Leaf node: represents the class labels.
 
-## Basic (greedy) Algorithm
+## Basic (greedy) algorithm
 
 - The tree is built in a top-down recursive manner using divide and conquer.
 
@@ -22,7 +22,7 @@ reviewed_on: "2025-02-03"
 
 - The condition attributes are selected based on statistics or using statistical measures.
 
-## Information Gain
+## Information gain
 
 To select the attribute with the highest information gain, consider two classes $P$ and $N$. Let the set of examples $S$ contain $p$ elements of class $P$ and $n$ elements of class $N$. The amount of information needed to decide whether any given sample from $S$ belongs to $P$ or $N$ is defined as:
 

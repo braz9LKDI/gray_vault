@@ -4,7 +4,7 @@ reviewed_on: "2025-11-08"
 
 # The document object model
 
-> "Too bad! Same old story! Once you've finished building your house you notice you've accidentally learned something that you really should have known-before you started." - Friedrich Nietzsche, Beyond Good and Evil.
+> "Too bad! Same old story! Once you've finished building your house you notice you've accidentally learned something that you really should have known-before you started." (Friedrich Nietzsche, Beyond Good and Evil)
 
 ## Trees
 

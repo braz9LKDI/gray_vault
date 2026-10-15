@@ -4,7 +4,7 @@ reviewed_on: "2025-09-06"
 
 # Stage 3
 
-## 1 Habla de planes
+## Habla de planes
 
 En inglés dirías "I am eating" o "I am playing" para hablar de algo que está sucediendo ahora mismo.
 

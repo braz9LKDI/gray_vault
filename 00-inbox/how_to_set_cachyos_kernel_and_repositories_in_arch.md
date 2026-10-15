@@ -2,7 +2,7 @@
 reviewed on: 2026-05-28
 ---
 
-# How to Set the CachyOS Kernel and Repositories in Arch
+# How to set the CachyOS kernel and repositories in Arch
 
 This guide provides a streamlined version of the steps documented in the [official CachyOS guide](https://github.com/CachyOS/linux-cachyos/blob/master/README.md). If any command fails or behaves unexpectedly, the upstream documentation should be checked, as repository names, package versions, or mirrorlist details may have changed.
 

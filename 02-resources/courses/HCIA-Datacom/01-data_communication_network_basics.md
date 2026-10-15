@@ -112,8 +112,8 @@ A structures layout presented using transmission media (such as twisted pairs an
 
 Are classified into star, bus, ring, tree, full-mesh and partial mesh network topologies.
 
-## Network Engineering and Network Engineers
+## Network engineering and network engineers
 
-### Network Engineering
+### Network engineering
 
 It refers to planning and designing feasible solutions based on network application requirements and computer network system standards, specifications and technologies under the guidance of information system engineering methods and complete organizations, as well as integrating computer network hardware devices, software and technologies to form a cost-effective network system that meets the user requirements.

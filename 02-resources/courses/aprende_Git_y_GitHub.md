@@ -1,10 +1,10 @@
 # Aprende Git y GitHub
 
-## ¿Qué Es Git?
+## ¿Qué es Git?
 
 Es un sistema de control de versiones que nos permite rastrear los cambios que hemos hecho en un conjunto de archivos.
 
-## ¿Qué Es GitHub?
+## ¿Qué es GitHub?
 
 Es un servicio de hosting que nos permite almacenar proyectos de desarrollo de software y control de versiones usando Git.
 

@@ -24,7 +24,7 @@ $$
 \text{precision} = \frac{ \text{true positives} }{ \text{true positives} + \text{false positive} }
 $$
 
-## F1 Score
+## F1 score
 
 Although useful, neither precision nor recall can fully evaluate a model. Separately, these two metrics are **useless**, if the model always predicts "positives", recall will be high; on the contrary, if the model never predicts "positives", the precision will be high.
 
@@ -48,7 +48,7 @@ $$
 
 ## ROC and AUC
 
-### ROC (Receiver Operating Characteristic) Curve
+### ROC (receiver operating characteristic) curve
 
 The ROC curve is a graphical representation of a model's diagnostic ability. It plots the **true positive rate** (recall) against the false positive rate ($1 - \text{specificity}$) at various threshold settings. The curve illustrates the trade-off between sensitivity and specificity.
 
@@ -56,7 +56,7 @@ $$
 1 - \text{specificity} = \frac{ \text{false positives} }{ \text{true negatives} + \text{false positives} }
 $$
 
-### AUC (Area Under the Curve)
+### AUC (area under the curve)
 
 The AUC is a single scalar value that summarizes the performance of a model across all threshold values. It represents the area under the ROC curve. The AUC value ranges from 0 to 1, where:
 

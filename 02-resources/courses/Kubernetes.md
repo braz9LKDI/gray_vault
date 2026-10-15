@@ -4,7 +4,7 @@
 
 Also known as **k8**, is a container orchestration system.
 
-### Functions (What is Kubernetes?)
+### Functions (what is Kubernetes?)
 
 - Automatic deployment of the containerized applications across different servers.
 
@@ -36,7 +36,7 @@ It is the smallest unit in the Kubernetes world. Inside of it, there are:
 
 > One container per pod is the most common use case.
 
-## Kubernetes Cluster and Nodes
+## Kubernetes cluster and nodes
 
 ### Nodes
 

@@ -113,7 +113,7 @@ find ~ \( -type f -not -perm 0600 \) -or \( -type d  -not -perm 0700 \)
 
 Actions should go at the end of the command, because the **order** of tests and actions determines which of them are executed.
 
-### User-defined Actions
+### User-defined actions
 
 In addition to the predefined actions, we can also invoke arbitrary commands. The traditional way of doing this is with the `-exec` action.
 

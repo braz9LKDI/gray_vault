@@ -32,7 +32,7 @@ reviewed_on: "2024-10-06"
 
 - ...Para mí dominar algo significa que el estado químico interior de uno prevalece por encima de cualquier cosa del mundo exterior. Eres un experto en ello cuando cuentas con los pensamientos y sentimientos elegidos, cuando has memorizado los estados emocionales/químicos deseados y en tu vida no hay nada que te aparte de tus objetivos. Ninguna persona, cosa, ni experiencia deben alterar en ningún momento ni lugar tu coherencia química interior. Puedes pensar, actuar y sentir de distinta manera siempre que lo desees.
 
-- Si me drogo o bebo lo suficiente, esta sensación desaparecerá. Este objeto exterior me producirá un cambio químico interior y me hará sentir de maravilla. Me compraré un montón de cosas, porque cuando lo hago —aunque no tenga demasiado dinero— me olvido de lo vacío que me siento. Miraré pornografía...Me divertiré con videojuegos...Me iré al casino...Comeré hasta reventar. Sea cual sea la adicción, seguimos creyendo que algo exterior eliminará ese molesto sentimiento interior...
+- Si me drogo o bebo lo suficiente, esta sensación desaparecerá. Este objeto exterior me producirá un cambio químico interior y me hará sentir de maravilla. Me compraré un montón de cosas, porque cuando lo hago, aunque no tenga demasiado dinero, me olvido de lo vacío que me siento. Miraré pornografía...Me divertiré con videojuegos...Me iré al casino...Comeré hasta reventar. Sea cual sea la adicción, seguimos creyendo que algo exterior eliminará ese molesto sentimiento interior...
 
 - La cuestión es que la verdadera felicidad no tiene nada que ver con el placer, porque depender de cosas tan estimulantes para sentirnos bien solo nos aleja de la auténtica dicha.
 

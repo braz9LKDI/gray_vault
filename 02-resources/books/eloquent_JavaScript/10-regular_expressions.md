@@ -4,9 +4,9 @@ reviewed_on: "2025-10-02"
 
 # Regular expressions
 
-> "Some people, when confronted with a problem, think 'I know, I will use regular expressions.' Now they have two problems." - Jamie Zawinski.
+> "Some people, when confronted with a problem, think 'I know, I will use regular expressions.' Now they have two problems." (Jamie Zawinski)
 >
-> "When you cut against the grain of the wood, much strength is needed. When you program against the grain of the problem, much code is needed." - Master Yuan-Ma, The Book of Programming.
+> "When you cut against the grain of the wood, much strength is needed. When you program against the grain of the problem, much code is needed." (Master Yuan-Ma, The Book of Programming)
 
 Regular expressions are both terribly awkward and extremely useful. Their syntax is cryptic and the programming interface JavaScript provides for them is clumsy. But they are a powerful tool for inspecting and processing strings. Properly understanding regular expressions will make you a more effective programmer.
 

@@ -4,7 +4,7 @@ reviewed_on: "2025-02-03"
 
 # Greatest common divisor
 
-## Greatest Common Divisor (GCD)
+## Greatest common divisor (GCD)
 
 Let $a$ and $b$ be nonzero integers. The largest integer $d$ such that $d \mid a$ and $d \mid b$ is called the greatest common divisor of $a$ and $b$, and it is denoted by $\operatorname{ GCD }(a,b)$.
 

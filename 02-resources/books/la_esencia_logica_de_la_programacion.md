@@ -76,7 +76,7 @@ Una estructura se define como un esquema que nos permite representar de manera s
 
 A nivel informal la variabilidad de ópticas en cuanto a la concepción del mundo es lo que le ha permitido a este avanzar y es de allí que se ha podido extractar tecnologías, modas, teorías y muchos avances del mundo moderno, pero a nivel técnico si resulta ser muy importante que la lógica para desarrollar un algoritmo computacional sea tan clara que y tan estándar que un programa desarrollado por una persona sea fácilmente entendible por cualquier otra, dado que haciendo uso de la lógica propia de cada uno podemos llegar a encontrarnos con programas tan confusos que solo llegarían a ser entendibles por su creador.
 
-### Consideraciones Algorítmicas sobre el pensamiento humano
+### Consideraciones algorítmicas sobre el pensamiento humano
 
 ...cualquier acción o conjunto de acciones que usted haga siempre estarán enmarcadas en estas tres estructuras.
 

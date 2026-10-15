@@ -74,7 +74,7 @@ function Person() {
 
 The problem with this is that every time we create a person the `talk` is being copied, which leads to the same problem as the first approach.
 
-## Extending Classes
+## Extending classes
 
 ```javascript
 class Person {
@@ -98,7 +98,7 @@ console.log(you.fly);
 console.log(you.talk);
 ```
 
-## 3 Ways to create an inheritance chain
+## 3 ways to create an inheritance chain
 
 ### Inheritance using pure objects with `Object.create`
 

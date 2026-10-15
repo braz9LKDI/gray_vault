@@ -4,7 +4,7 @@ reviewed_on: "2025-10-07"
 
 # Asynchronous programming
 
-> "Who can wait quietly while the mud settles? Who can remain still until the moment of action?" - Laozi, Tao Te Ching.
+> "Who can wait quietly while the mud settles? Who can remain still until the moment of action?" (Laozi, Tao Te Ching)
 
 ## Callbacks
 

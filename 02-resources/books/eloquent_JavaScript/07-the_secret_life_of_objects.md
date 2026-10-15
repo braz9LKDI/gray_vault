@@ -4,7 +4,7 @@ reviewed_on: "2025-09-13"
 
 # The secret life of objects
 
-> "An abstract data type is realized by writing a special kind of program \[...\] which defines the type in terms of the operations which can be performed on it." - Barbara Liskov, Programming with Abstract Data Types.
+> "An abstract data type is realized by writing a special kind of program \[...\] which defines the type in terms of the operations which can be performed on it." (Barbara Liskov, Programming with Abstract Data Types)
 
 ## Abstract data types
 

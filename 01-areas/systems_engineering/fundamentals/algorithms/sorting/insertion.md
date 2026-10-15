@@ -24,7 +24,7 @@ reviewed_on: "2025-05-05"
 
 - Average case: $O(n^2)$.
 
-## C++ Implementation
+## C++ implementation
 
 ```cpp
 #include <vector>

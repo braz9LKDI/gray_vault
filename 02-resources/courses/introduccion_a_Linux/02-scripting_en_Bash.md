@@ -1,6 +1,6 @@
 # Scripting en Bash
 
-## Scripting en Bash
+## Buscador de máquinas de Hack The Box
 
 We will build a terminal browser for the Hack The Box machines stored on the [htbmachines](https://htbmachines.github.io) page.
 
@@ -14,9 +14,7 @@ We will build a terminal browser for the Hack The Box machines stored on the [ht
 
 2. `cat bundle.js | js-beautify | sponge bundle.js`: beautify the `bundle.js` with the "js-beautify" tool.
 
-## Scripting en Bash
-
-### Martingala
+## Martingala
 
 The Martingale system is a betting strategy based on recovering your losses. The idea is that with every losing roulette spin, you double your wager. In theory, this means that if you eventually win again, you will recover any previous losses plus gain a small profit.
 

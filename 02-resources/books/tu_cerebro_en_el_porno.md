@@ -4,7 +4,7 @@ reviewed_on: "2024-12-25"
 
 # Tu cerebro en el porno
 
-- "Considero más valiente al que vence sus deseos que al que vence a sus enemigos; porque la victoria más difícil es sobre el yo." - Aristóteles.
+- "Considero más valiente al que vence sus deseos que al que vence a sus enemigos; porque la victoria más difícil es sobre el yo." (Aristóteles).
 
 - ...Puede hacernos hiper-alentar por nuestras seducciones favoritas, de tal manera que los deseos inmediatos pesen más de lo que deberían en relación con los deseos a largo plazo. También puede agriar nuestro disfrute de los placeres cotidianos y nuestra capacidad de respuesta a los mismos. Puede llevarnos a buscar una estimulación más extrema. O causar síntomas de abstinencia tan severos que hacen que hasta los más decididos de nosotros salgan corriendo en busca de alivio. También puede alterar nuestro estado de ánimo, nuestra percepción y nuestras prioridades, todo ello sin nuestra conciencia consciente.
 

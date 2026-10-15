@@ -60,7 +60,7 @@ $$
 
 > That is, it is **reflexive**, **symmetric**, and **transitive**.
 
-## Partial Order
+## Partial order
 
 A relation $R$ defined on the set $A$ is a partial order if:
 

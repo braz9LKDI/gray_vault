@@ -12,7 +12,7 @@ reviewed_on: "2026-XX-XX"
 
 ## Academy
 
-### Object Oriented Programming
+### Object oriented programming
 
 ### Solid principles
 

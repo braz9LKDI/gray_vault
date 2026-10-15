@@ -339,11 +339,11 @@ void draw() {
     int value = (bands[0] * 10 + bands[1]) * (int) pow(10, bands[2]);
 
     if (value >= 1000000)
-        text(value / 1000000 + " MΩ", 0.25 * width, 0.75 * height);
+        text(value / 1000000 + " MOhm", 0.25 * width, 0.75 * height);
     else if (value >= 1000)
-        text(value / 1000 + " KΩ", 0.25 * width, 0.75 * height);
+        text(value / 1000 + " kOhm", 0.25 * width, 0.75 * height);
     else
-        text(value + " Ω", 0.25 * width, 0.75 * height);
+        text(value + " Ohm", 0.25 * width, 0.75 * height);
 }
 
 void mousePressed() {
@@ -464,7 +464,7 @@ void mousePressed() {
 }
 ```
 
-## Interactive Cartesian Plane
+## Interactive Cartesian plane
 
 ```java
 float x, y_1, y_2, side, slider_m, slider_b, m , b, grid_size;

@@ -2,9 +2,9 @@
 reviewed_on: "2025-10-28"
 ---
 
-# Project: a Programming Language
+# Project: a programming language
 
-> "The evaluator, which determines the meaning of expressions in a programming language, is just another program." - Hal Abelson and Gerald Sussman, Structure and Interpretation of Computer Programs.
+> "The evaluator, which determines the meaning of expressions in a programming language, is just another program." (Hal Abelson and Gerald Sussman, Structure and Interpretation of Computer Programs)
 
 ...there is no magic involved in building a programming language. I have often felt that some human inventions were so immensely clever and complicated that I would never be able to understand them. But with a little reading and experimenting, they often turn out to be quite mundane.
 

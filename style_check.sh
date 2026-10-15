@@ -3,16 +3,21 @@
 # Usage: bash style_check.sh [note.md ...]   (no arguments: every note outside 99-archive)
 #        bash style_check.sh --test           (self-check against a planted fixture)
 # Output: file:line: rule: text. Rules marked "candidate" need a human decision.
+# A reviewed candidate is kept by adding "<file><TAB><exact line>" to .style_check_accept.
 set -euo pipefail
 export LC_ALL=C.UTF-8 # grep -P only reads á and \x{...} correctly in a UTF-8 locale
 
+accept="$(dirname "$0")/.style_check_accept"
 allowed_chars='[^\x00-\x7FáéíóúüñÁÉÍÓÚÜÑ¿¡\x{2500}-\x{257F}]'
 
 check() {
     { grep -nHP "$allowed_chars" -- "$@" | sed -E 's/^([^:]+:[0-9]+):/\1: characters: /' || true
-      gawk '
-        function flag(rule) { printf "%s:%d: %s: %s\n", FILENAME, FNR, rule, $0 }
+      gawk -v accept="$accept" '
+        function flag(rule) {
+            if (rule ~ /candidate/ && (FILENAME "\t" $0) in accepted) return
+            printf "%s:%d: %s: %s\n", FILENAME, FNR, rule, $0 }
         BEGIN {
+            while ((getline l < accept) > 0) accepted[l]
             split("bash ps1 javascript dockerfile md text python c cpp cs java mermaid json yaml xml ini http", t)
             for (i in t) tags[t[i]]
             # Generics and includes look like placeholders, so these fences skip that check.
@@ -49,14 +54,14 @@ check() {
             voice = line
             gsub(/"[^"]*"/, "", voice) # quotations keep their original wording
             if (tolower(voice) ~ /\y(you|your|yours|yourself|yourselves)\y/) flag("second-person")
-            if (voice ~ /, and\y/) flag("oxford-comma (candidate)")
+            if (voice ~ /,[^,.;:]+, and\y/) flag("oxford-comma (candidate)")
             if (text ~ /[^ ] +--? +[^ ]/) flag("dash")
             if (match(line, /^#+[ \t]+/)) {
                 n = split(substr(line, RLENGTH + 1), w, /[ \t]+/)
-                for (i = 2; i <= n; i++) if (w[i] ~ /^[A-Z][a-z]/) { flag("heading-case (candidate)"); break }
+                for (i = 2; i <= n; i++) if (w[i] ~ /^[A-Z][a-z]/ && w[i - 1] !~ /\.$/) { flag("heading-case (candidate)"); break }
             }
             if (is_item) {
-                if ($0 !~ /[.?:][ \t]*$/) flag("list-period")
+                if ($0 !~ /([.?:]|\?\]\])[ \t]*$/) flag("list-period")
                 if (line ~ /\*\*|__/) flag("list-bold")
                 indent = match(line, /[^ \t]/) - 1
                 if (prev_item && indent <= prev_indent) flag("list-blank-line") # a nested first child follows its parent directly
@@ -78,7 +83,7 @@ sources:
 
 # Installing The Package
 
-You can do it, and it works – fast.
+You, me, and them – fast.
 
 The file weighs $5$ MB and `you` stays quiet - here.
 

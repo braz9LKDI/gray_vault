@@ -23,8 +23,6 @@
 
     > These days, many people run some version of the shadow password suite, where `/etc/passwd` has an `x` in the password field, and the encrypted passwords are in `/etc/shadow`, which is readable by the superuser only.
 
-## Comandos básicos de Linux
-
 - `/etc/passwd`: describes user login accounts for the system. Each line of the file describes a single user, and contains seven colon-separated fields:
 
     ```bash
@@ -80,7 +78,7 @@ Often referred to as ENVs, are dynamic values that wield significant influence o
 
     > A value of 0 means success, while any other value means failure.
 
-### Bash Redirections
+### Bash redirections
 
 Are a way of manipulating the input and output of commands in a shell script or a terminal. By default, a command takes input from the keyboard and outputs it to the screen, but redirections allow you to change the source and destination of the data.
 
@@ -237,7 +235,7 @@ To change the security permissions on files, we use `chmod`, which stands for "c
 
 Using the octal notations table instead of `r`, `w`, and `x`. Each digit octal notation can be used for either of the group `u`, `g`, or `o`. Executing `chmod ugo+rwx file.txt` is equal to `chmod 777 file.txt`.
 
-## Permisos especiales – Sticky Bit, 11 - Control de atributos de ficheros en Linux – Chattr y Lsattr y 12 - Permisos especiales – SUID y SGID
+## Permisos especiales y atributos de ficheros: sticky bit, `chattr`, `lsattr`, SUID y SGID
 
 ### The setuid bit
 
@@ -440,8 +438,6 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit2` is `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`.
 
-## Lectura de archivos especiales
-
 ### Bandit level 3
 
 1. `cat "spaces in the filename"`: displays the content of `spaces in the filename`.
@@ -480,8 +476,6 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit6` is `P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU`.
 
-## Búsquedas precisas de archivos
-
 ### Bandit level 7
 
 1. `find / -type f -size 33c -user bandit7 -group bandit6 2> /dev/null | xargs file`: find files that have 33 bytes, belonging to user "bandit7" and group "bandit6", to see which of them is human readable.
@@ -500,8 +494,6 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > The password for `bandit8` is `TESKZC0XvTetK0S9xNwm25STk5iWrBvP`.
 
-## Métodos de filtrado de datos
-
 - `sort`: write sorted concatenation of all FILE(s) to standard output.
 
     > With no FILE, or when FILE is `-`, read standard input.
@@ -513,8 +505,6 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
     > With no options, matching lines are merged into the first occurrence.
     - `-u` or `--unique`: only print unique lines.
-
-## Métodos de filtrado de datos
 
 ### Bandit level 9
 
@@ -764,7 +754,7 @@ Having two terminals, in the first one we will have `nc` listening to port 4646 
 
 > The password for `bandit21` is `NvEJF7oVjkddltPSrdKEFOllh9V1IBcq`.
 
-## Abusando de tareas Cron
+## Abusando de tareas cron
 
 ### Cron
 
@@ -807,8 +797,6 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit22` is `WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff`.
 
-## Abusando de tareas Cron
-
 - `md5sum [OPTION]... [FILE]...`: compute and check the MD5 message digest.
     - `-t`: Read in text mode.
 
@@ -825,8 +813,6 @@ Based on the values specified for each of the components above, complex schedule
 3. `cat /temp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)`: displays the content of the file described in the `/usr/bin/cronjob_bandit23.sh` script.
 
 > The password for `bandit23` is `QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G`.
-
-## Abusando de tareas Cron
 
 - `watch [options] command`: execute a program periodically, showing output full screen.
 
@@ -983,7 +969,7 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit27` is `YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS`.
 
-## Operando con proyectos de Github
+## Operando con proyectos de GitHub
 
 ### Bandit level 28
 
@@ -994,8 +980,6 @@ Based on the values specified for each of the components above, complex schedule
 3. `cat repo/README`: displays the content of `README`.
 
     > The password for `bandit28` is `AVanL161y9rsbcJIsFHuw35rjaOM19nR`.
-
-## Operando con proyectos de Github
 
 ### Bandit level 29
 
@@ -1008,8 +992,6 @@ Based on the values specified for each of the components above, complex schedule
 4. `git show <leak-info-commit-id>`: displays the content of the changes made in the info leak commit.
 
     > The password for `bandit29` is `tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S`.
-
-## Operando con proyectos de Github
 
 ### Bandit level 30
 
@@ -1025,8 +1007,6 @@ Based on the values specified for each of the components above, complex schedule
 
     > The password for `bandit30` is `xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS`.
 
-## Operando con proyectos de Github
-
 ### Bandit level 31
 
 1. `cd $(mktemp -d)`: creates a temporary directory and moves to it.
@@ -1038,8 +1018,6 @@ Based on the values specified for each of the components above, complex schedule
 4. `git show <tag>`: displays the contents of the `<tag>` tag.
 
     > The password for `bandit31` is `OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt`.
-
-## Operando con proyectos de Github
 
 ### Bandit level 32
 

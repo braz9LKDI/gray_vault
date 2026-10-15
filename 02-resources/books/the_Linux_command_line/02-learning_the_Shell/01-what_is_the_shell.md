@@ -20,7 +20,7 @@ This is called a **shell prompt**, and it will appear whenever the shell is read
 
 ### Command history
 
-...Most Linux distributions remember the last $1,000$ commands by default...
+...Most Linux distributions remember the last 1,000 commands by default...
 
 ## Try some simple commands
 

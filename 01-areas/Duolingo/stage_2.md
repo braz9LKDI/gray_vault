@@ -58,6 +58,6 @@ Pero si el verbo termina con `o`, `ch` o `sh`, necesitas agregarle `es`.
 
 Otra manera de pedir algo es "I would like", que es una forma más cortés de decir "I want".
 
-## Describe personas
+## Describe personas, usa comparativos
 
 Para decir que algo es "más" que otra cosa. Modificamos el adjetivo, si la palabra ya termina con `e` (como "nice"), solo necesitas agregarle `r`.

@@ -14,7 +14,7 @@
 |   2   |  Data Link   |                    Encapsulates packets into frames, transmits frames in P2P or P2MP mode, and implements error checking.                     |
 |   1   |   Physical   |                       Transmits bitstreams over transmission media and defines electrical and physical specifications.                        |
 
-### TCP/IP Reference model
+### TCP/IP reference model
 
 The OSI protocol stack is complex, and the TCP and IP protocols are widely used in the industry. Therefore, the TCP/IP reference model has become the mainstream reference model of the Internet.
 

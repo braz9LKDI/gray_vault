@@ -16,7 +16,7 @@
 
 - Petición: acción de pedir recursos a un servidor.
 
-## ¿Qué Es HTML?
+## ¿Qué es HTML?
 
 - Es un lenguaje de marcado de hipertexto (Hyper Text Markup Languaje). No es un lenguaje de programación, es un lenguaje de.
   estructura.
@@ -37,7 +37,7 @@
 
 - 1998: HTML 4 (versión que más duró de HTML).
 
-- 1999: HTML 4.1 — XHTML (actualización del estándar HTML4).
+- 1999: HTML 4.1, XHTML (actualización del estándar HTML4).
 
 - 2004: creación de la WHATWG.
 
@@ -271,7 +271,7 @@ Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampe
 >
 > En esta [página](https://www.ascii-code.com) se pueden encontrar el HTML **number** y **name** de todos los caracteres.
 
-## Estructura básica de un Formulario
+## Estructura básica de un formulario
 
 - `<form>...</form>`: representa una sección de un documento que contiene controles interactivos que le permiten al usuario enviar información a un servidor web.
 
@@ -463,7 +463,7 @@ Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampe
 - `<input>`.
     - `name=...`: el nombre del control, el cual es enviado con los datos del formulario.
 
-## ¿Qué Es el contenido embebido?
+## ¿Qué es el contenido embebido?
 
 Es el que se inserta dentro de una página web, como videos, imágenes o audios, y que se puede reproducir directamente desde el sitio web.
 
@@ -508,9 +508,9 @@ Para cargar una imagen SVG podemos usar la etiqueta `<img>` o también `<svg>`, 
 
 > El contenido de las imágenes SVG directamente es una etiqueta `<svg>`.
 
-## Device Pixel Ratio
+## Device pixel ratio
 
-### DPR (Device Pixel Ratio)
+### DPR (device pixel ratio)
 
 Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CSSo del viewport) de una pantalla.
 
@@ -533,7 +533,7 @@ Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CS
 
             > Solo podemos escoger **uno**.
 
-## Etiqueta Picture
+## Etiqueta picture
 
 - `<picture>...</picture>`: es un contenedor usado para especificar múltiples elementos `<source>` y un elemento `<img>` contenido en él para proveer versiones de una imagen para diferentes escenarios de dispositivos.
     - `media=...`: permite especificar una media query que el agente de usuario evaluará para seleccionar un elemento `<source>`.
@@ -541,7 +541,7 @@ Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CS
 - `<source>`: especifica recursos de medios múltiples para los elementos `<picture>`, `<audio>`, o `<video>`.
     - [[`srcset=...`|courses.HTML5#59---atributo-srcset]].
 
-## Etiqueta Audio
+## Etiqueta audio
 
 - `<audio>...</audio>`: se usa para insertar contenido de audio.
     - `src=..`: la URL del audio.
@@ -580,7 +580,7 @@ Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CS
 
     - `width=...`: el ancho del frame en píxeles CSS.
 
-## Etiqueta Figure
+## Etiqueta figure
 
 - `<figure>...</figure>`: representa contenido independiente, a menudo con un título. Si bien se relaciona con el flujo principal, su posición es independiente de este.
 
@@ -596,7 +596,7 @@ Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CS
 
         - `description`: resumen breve y preciso del contenido de la página.
 
-## Favicon - Creación y uso
+## Favicon: creación y uso
 
 ### Favicon (favorite icon)
 

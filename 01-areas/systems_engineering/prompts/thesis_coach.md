@@ -45,7 +45,7 @@ The structure of the project is as follows:
 │   ├── 09_4_1-functional_testing.tex
 │   ├── 09_4_2-integration_testing.tex
 │   └── 09_4_3-validation.tex
-├──  docs
+├── docs
 │   ├── project-understanding
 │   ├── database_schema.md
 │   ├── ER_diagram.svg

@@ -1,0 +1,74 @@
+00-inbox/how_to_set_cachyos_kernel_and_repositories_in_arch.md	# How to set the CachyOS kernel and repositories in Arch
+00-inbox/learn_git.md	# Learn Git
+01-areas/math/007-Newton_Raphson_method.md	# Newton Raphson method
+01-areas/systems_engineering/entity_relationship_diagram-mermaid.md	# Entity relation diagram with Mermaid
+01-areas/systems_engineering/fundamentals/agile/scrum/accountabilities/developers.md	## How the developers shows up in the Scrum events
+01-areas/systems_engineering/fundamentals/agile/scrum/accountabilities/product_owner.md	## How the PO shows up in the Scrum events
+01-areas/systems_engineering/fundamentals/agile/scrum/accountabilities/scrum_master.md	## How the Scrum master shows up in the Scrum events
+01-areas/systems_engineering/fundamentals/agile/scrum/definition.md	## Why does Scrum exist?
+01-areas/systems_engineering/Linux/packages.md	## Package management in Debian-based distributions?
+02-resources/books/algebra_3o_y_4o_enseñanza_media.md	### Binomio de Newton
+02-resources/books/algebra_3o_y_4o_enseñanza_media.md	### Determinantes de tercer orden y regla de Sarrus
+02-resources/books/algebra_3o_y_4o_enseñanza_media.md	### Logaritmos vulgares o de Briggs
+02-resources/books/algebra_3o_y_4o_enseñanza_media.md	### Regla de los coeficientes o de Ruffini
+02-resources/books/algebra_3o_y_4o_enseñanza_media.md	### Solución de ecuaciones de tercer grado y regla de Kramen
+02-resources/books/eloquent_JavaScript/05-data_structures.md	## The Math object
+02-resources/books/eloquent_JavaScript/14-JavaScript_and_the_browser.md	## Networks and the Internet
+02-resources/books/habitos_atomicos.md	### La regla de Ricitos de Oro: cómo mantenerte motivado en la vida y el trabajo
+02-resources/books/the_Linux_command_line/04-common_tasks_and_essential_tools/09-printing.md	## Printing with Linux
+02-resources/courses/20_things_javascript_developers_should_know_but_probably_do_not/01-inheritance_in_JavaScript-prototypal_inheritance_tutorial.md	# Inheritance in JavaScript
+02-resources/courses/aprende_a_programar_con_Processing.md	# Aprende a programar con Processing
+02-resources/courses/aprende_a_programar_con_Processing.md	## Interactive Cartesian plane
+02-resources/courses/aprende_Docker_ahora.md	# Aprende Docker ahora
+02-resources/courses/aprende_Docker_ahora.md	### Ejemplo (conexión a una base de datos de Mongo)
+02-resources/courses/aprende_Docker_ahora.md	## ¿Qué es Docker Desktop?
+02-resources/courses/aprende_Git_y_GitHub.md	# Aprende Git y GitHub
+02-resources/courses/aprende_Git_y_GitHub.md	## Crear ramas en GitHub
+02-resources/courses/aprende_Git_y_GitHub.md	## Crear una rama en Git
+02-resources/courses/aprende_Git_y_GitHub.md	## Enviar cambios a GitHub (push)
+02-resources/courses/aprende_Git_y_GitHub.md	## Enviar repositorio local a GitHub
+02-resources/courses/aprende_Git_y_GitHub.md	## Fusionar ramas en Git
+02-resources/courses/aprende_Git_y_GitHub.md	## Introducción a GitHub
+02-resources/courses/aprende_Git_y_GitHub.md	## Issues en GitHub
+02-resources/courses/aprende_Git_y_GitHub.md	## Las tres áreas de Git
+02-resources/courses/aprende_Git_y_GitHub.md	## Ocultar tu correo en GitHub
+02-resources/courses/aprende_Git_y_GitHub.md	## ¿Qué es Git?
+02-resources/courses/aprende_Git_y_GitHub.md	## ¿Qué es GitHub?
+02-resources/courses/AWS_cloud_practitioner_essentials/03-exploring_compute_services/elastic_beanstalk.md	# Elastic Beanstalk
+02-resources/courses/AWS_cloud_practitioner_essentials/03-exploring_compute_services/lightsail.md	# Amazon Lightsail
+02-resources/courses/building_web_applications_in_Java_with_Spring_Boot_3.md	# Building web applications in Java with Spring Boot 3
+02-resources/courses/curso_de_Prisma_ORM.md	# Curso de Prisma ORM
+02-resources/courses/curso_de_Prisma_ORM.md	## Prisma and TypeScript
+02-resources/courses/HTML5_desde_cero.md	### ARIA (Accessible Rich Internet Applications)
+02-resources/courses/index.md	## [20 things JavaScript developers should know but probably do not](./20_Things_JavaScript_Developers_Should_Know_but_Probably_Dont)
+02-resources/courses/index.md	## [Aprende a programar con Processing](02-resources/courses/aprende_a_programar_con_processing.md)
+02-resources/courses/index.md	## [Aprende Git y GitHub](02-resources/courses/aprende_git_y_github.md)
+02-resources/courses/index.md	## [Building web applications in Java with Spring Boot 3](02-resources/courses/building_web_applications_in_java_with_spring_boot_3.md)
+02-resources/courses/index.md	## [Introducción al Hacking](./introduccion_al_Hacking)
+02-resources/courses/index.md	## [Introducción a Linux](./introduccion_a_Linux)
+02-resources/courses/index.md	## [Personalización de entorno en Linux](02-resources/courses/linux_para_principiantes.md)
+02-resources/courses/introduccion_al_Hacking/01-conceptos_basicos.md	### TCP (Transmission Control Protocol)
+02-resources/courses/introduccion_al_Hacking/01-conceptos_basicos.md	### UDP (User Datagram Protocol)
+02-resources/courses/introduccion_a_Linux/01-temario.md	## Argumentos posicionales en Bash
+02-resources/courses/introduccion_a_Linux/01-temario.md	## Comandos básicos de Linux
+02-resources/courses/introduccion_a_Linux/01-temario.md	## Creamos un descompresor recursivo automático de archivos en Bash
+02-resources/courses/introduccion_a_Linux/01-temario.md	## Creando nuestros propios escáneres en Bash
+02-resources/courses/introduccion_a_Linux/01-temario.md	## Operando con proyectos de GitHub
+02-resources/courses/introduccion_a_Linux/01-temario.md	### Types of files in the Linux system
+02-resources/courses/introduccion_a_Linux/01-temario.md	### What are the three kinds of file permissions in Linux?
+02-resources/courses/introduccion_a_Linux/01-temario.md	### What are the three permission groups in Linux?
+02-resources/courses/introduccion_a_Linux/02-scripting_en_Bash.md	## Buscador de máquinas de Hack The Box
+02-resources/courses/introduccion_a_Linux/02-scripting_en_Bash.md	### Inverse Labouchere
+02-resources/courses/introduccion_a_Linux/02-scripting_en_Bash.md	# Scripting en Bash
+02-resources/courses/Kubernetes.md	## Creating and exploring ClusterIP Service
+02-resources/courses/Kubernetes.md	## Creating and exploring Deployment
+02-resources/courses/Kubernetes.md	## Creating just a single Pod
+02-resources/courses/Kubernetes.md	## Creating LoadBalancer service
+02-resources/courses/Kubernetes.md	## Creating NodePort Service
+02-resources/courses/Kubernetes.md	## Exploring Kubernetes Pod
+02-resources/courses/Kubernetes.md	## Exploring the Kubernetes node
+02-resources/courses/Kubernetes.md	### Functions (what is Kubernetes?)
+02-resources/courses/Kubernetes.md	## Kubernetes Services
+02-resources/courses/Kubernetes.md	## Resolving Service name to IP address
+02-resources/courses/Kubernetes.md	## What is Kubernetes?
+02-resources/courses/Python_Django_full_course_for_beginners.md	# Python Django full course for beginners

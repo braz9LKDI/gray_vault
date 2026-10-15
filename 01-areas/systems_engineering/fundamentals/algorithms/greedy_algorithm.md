@@ -6,7 +6,7 @@ sources:
       language: English
 ---
 
-# Greedy Algorithm
+# Greedy algorithm
 
 Greedy is an algorithmic paradigm that builds up a solution **piece by piece**, always choosing the next piece that offers the most obvious and immediate benefit. Greedy algorithms are used for optimization problems.
 

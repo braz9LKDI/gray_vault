@@ -4,7 +4,7 @@ reviewed_on: "2025-12-19"
 
 # Handling events
 
-> "You have power over your mind-not outside events. Realize this, and you will find strength." - Marcus Aurelius, Meditations.
+> "You have power over your mind-not outside events. Realize this, and you will find strength." (Marcus Aurelius, Meditations)
 
 ## Event handlers
 

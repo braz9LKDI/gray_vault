@@ -98,7 +98,7 @@ Besides the normal (0) and bold (1) character attributes, text may be given unde
 
 |    sequence     | action                                                                                                         |
 | :-------------: | :------------------------------------------------------------------------------------------------------------- |
-| `\033[<l>;<c>H` | move cursor to line "l", column "c" (1-based). If you omit both numbers the cursor goes to $1,1$ (upper-left). |
+| `\033[<l>;<c>H` | move cursor to line "l", column "c" (1-based). If you omit both numbers the cursor goes to 1,1 (upper-left). |
 |   `\033[<n>A`   | move the cursor up "n" lines. Default $n = 1$.                                                                 |
 |   `\033[<n>B`   | move the cursor down "n" lines. Default $n = 1$.                                                               |
 |   `\033[<n>C`   | move the cursor forward "n" characters. Default $n = 1$.                                                       |

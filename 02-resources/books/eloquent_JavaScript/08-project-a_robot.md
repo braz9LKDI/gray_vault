@@ -2,9 +2,9 @@
 reviewed_on: "2025-09-14"
 ---
 
-# Project: A Robot
+# Project: a robot
 
-> "The question of whether Machines Can Think \[...\] is about as relevant as the question of whether Submarines Can Swim." - Edsger Dijkstra, The Threats to Computing Science.
+> "The question of whether Machines Can Think \[...\] is about as relevant as the question of whether Submarines Can Swim." (Edsger Dijkstra, The Threats to Computing Science)
 
 ---
 
