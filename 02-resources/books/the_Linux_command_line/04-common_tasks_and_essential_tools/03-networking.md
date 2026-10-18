@@ -4,7 +4,7 @@ reviewed_on: "2025-07-02"
 
 # Networking
 
-- `ping`: sen an `ICMP ECHO_REQUEST` to network hosts.
+- `ping`: send an `ICMP ECHO_REQUEST` to network hosts.
 
 - `traceroute`: print the route packets trace to a network host.
 
@@ -12,13 +12,13 @@ reviewed_on: "2025-07-02"
 
 - `netstat`: print network connections, routing tables, interface statistics, masquerade connections and multicast memberships.
 
-- `ftp`: internet file transfer program.
+- `ftp`: Internet file transfer program.
 
 - `curl`: transfer a URL.
 
 - `wget`: non-interactive network downloader.
 
-- `ssh`: `OpenSSH` SHH client (remote login program).
+- `ssh`: OpenSSH SSH client (remote login program).
 
 ## Examining and monitoring a network
 
@@ -50,13 +50,13 @@ ip [-OPTIONS] object [COMMAND]
 
 ### `ftp`
 
-FTP (in its original form) is not secure because it sends account names and passwords in **cleartext**. This means they are not encrypted and anyone sniffing the network can see them. Because of this, almost all FTP done over the Internet is done by anonymous FTP servers. An anonymous server allows anyone to log in using the login name "anonymous" and a meaningless password.
+FTP (in its original form) is not secure because it sends account names and passwords in cleartext. This means they are not encrypted and anyone sniffing the network can see them. Because of this, almost all FTP done over the Internet is done by anonymous FTP servers. An anonymous server allows anyone to log in using the login name "anonymous" and a meaningless password.
 
-### `lftp` a better `ftp`
+### `lftp`: a better `ftp`
 
 It works much like the traditional ftp program but has many additional convenience features including multiple-protocol support (including HTTP), automatic retry on failed downloads, background processes, tab completion of path names and many more.
 
-### `curl` transfer a URL
+### `curl`: transfer a URL
 
 ```text
 curl [OPTION]... URL [URL]...
@@ -68,13 +68,13 @@ We specify a URL and `curl` downloads the first page of the URL and outputs it t
 
 |                  option                  | description                                                            |
 | :--------------------------------------: | :--------------------------------------------------------------------- |
-|       `-o`, `--ouput` `<filename>`       | send output to the specified file rather than standard output.         |
+|      `-o`, `--output` `<filename>`       | send output to the specified file rather than standard output.         |
 |          `-O`, `--remote-name`           | like `-o` but name local file the same as the name of the remote file. |
 |             `-s`, `--silent`             | suppress the progress meter and error messages.                        |
 | `-u`, `--proxy-user` `<user>:<password>` | specify a user name/password combination.                              |
 |            `-v`, `--verbose`             | display verbose messages as it executes.                               |
 
-### `wget` non-interactive network downloader
+### `wget`: non-interactive network downloader
 
 It is useful for downloading content from both web and FTP sites. Single files, multiple files and even entire sites can be downloaded.
 
@@ -104,7 +104,7 @@ me@remote-sys's password: Last login: Mon Sep 08 13:23:11 2016
 $ xload
 ```
 
-### `scp` and `sftp`
+### `scp`: and `sftp`
 
 The OpenSSH package also includes two programs that can make use of an SSH-encrypted tunnel to copy files across the network. The first, `scp` (secure copy) is used much like the familiar `cp` to copy files. The most notable difference is that the source or destination pathnames may be preceded with the name of a remote host, followed by a colon character...
 

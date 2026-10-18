@@ -6,7 +6,7 @@ reviewed_on: "2025-07-10"
 
 ## `grep`
 
-The name "grep" is actually derived from the phrase "global regular expression print"...`grep` searches text files for the occurrence text matching a specified regular expression and outputs any line containing a match to standard output.
+The name "grep" is actually derived from the phrase "global regular expression print"...`grep` searches text files for the occurrence of text matching a specified regular expression and outputs any line containing a match to standard output.
 
 ```text
 grep [OPTIONS] REGEX [FILE...]
@@ -14,11 +14,11 @@ grep [OPTIONS] REGEX [FILE...]
 
 | option | long option             | description                                                                        |
 | ------ | ----------------------- | ---------------------------------------------------------------------------------- |
-| `-i`   | `--ignore-case`         |                                                                                    |
-| `-v`   | `--invert-match`        |                                                                                    |
-| `-c`   | `--count`               |                                                                                    |
+| `-i`   | `--ignore-case`         | ignore case.                                                                       |
+| `-v`   | `--invert-match`        | print the lines that do not match.                                                 |
+| `-c`   | `--count`               | print the number of matches instead of the lines.                                  |
 | `-l`   | `--files-with-matches`  | print the name of each file that contains a match instead of the lines themselves. |
-| `-L`   | `--files-without-match` | like `-l`,but print only the names of files that do not contain matches.           |
+| `-L`   | `--files-without-match` | like `-l`, but print only the names of files that do not contain matches.          |
 | `-n`   | `--line-number`         | prefix each matching line with the number of the line within the file.             |
 | `-h`   | `--no-filename`         | for multi-file searches, suppress the output of filenames.                         |
 | `-q`   | `--quiet`, `--silent`   | suppress all output.                                                               |
@@ -51,7 +51,7 @@ grep [OPTIONS] REGEX [FILE...]
 
 - `\`.
 
-All other characters are considered **literals**, though the backslash character is used in a few cases to create **meta sequences**, as well as allowing the metacharacters to be escaped and treated as literals instead of being interpreted as metacharacters.
+All other characters are considered literals, though the backslash character is used in a few cases to create meta sequences, as well as allowing the metacharacters to be escaped and treated as literals instead of being interpreted as metacharacters.
 
 > ...When we pass regular expressions containing metacharacters on the command line, it is vital that they be enclosed in quotes to prevent the shell from attempting to expand them.
 
@@ -61,7 +61,7 @@ The caret (`^`) and dollar sign (`$`) characters are treated as anchors in regul
 
 ## Bracket expressions and character classes
 
-In addition to matching any character at a given position in our regular expression, we can also match a single character from a specified set of characters by using **bracket expressions**. With bracket expressions, we can specify a set of characters (including characters that would otherwise be interpreted as metacharacters) to be matched.
+In addition to matching any character at a given position in our regular expression, we can also match a single character from a specified set of characters by using bracket expressions. With bracket expressions, we can specify a set of characters (including characters that would otherwise be interpreted as metacharacters) to be matched.
 
 A set may contain any number of characters, and metacharacters lose their special meaning when placed within brackets. However, there are two cases in which metacharacters are used within bracket expressions and have different meanings. The first is the caret (`^`), which is used to indicate negation; the second is the dash (`-`), which is used to indicate a character range.
 
@@ -91,15 +91,15 @@ ls /usr/sbin/[A-Z]*
 # /usr/sbin/console-kit-daemon
 ```
 
-Back when Unix was first developed, it knew only about ASCII characters
+Back when Unix was first developed, it knew only about ASCII characters:
 
 - 0-31 are control codes (things such as tabs, backspace and carriage returns).
 
 - 32-63 contain printable characters, including most punctuation characters and the numerals 0-9.
 
-- $64-95$ contain the uppercase letters and a few more punctuation symbols.
+- 64-95 contain the uppercase letters and a few more punctuation symbols.
 
-Based on this arrangement, systems using ASCII used a **collation order** that looks like this:
+Based on this arrangement, systems using ASCII used a collation order that looks like this:
 
 ```text
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
@@ -111,7 +111,7 @@ This differs from proper dictionary order, which is like this:
 aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ
 ```
 
-As the popularity of Unix spread beyond the United States, there grew a need to support characters not found in U.S. English. The ASCII table was expanded to use a full eight bits, adding characters 128-255, which accommodated many more languages. To support this ability, the POSIX standards introduced a concept called a **locale**, which could be adjusted to select the character set needed for a particular location.
+As the popularity of Unix spread beyond the United States, there grew a need to support characters not found in U.S. English. The ASCII table was expanded to use a full eight bits, adding characters 128-255, which accommodated many more languages. To support this ability, the POSIX standards introduced a concept called a locale, which could be adjusted to select the character set needed for a particular location.
 
 ```bash
 echo $LANG
@@ -152,9 +152,9 @@ export LANG=POSIX
 
 ## POSIX basic vs. extended regular expressions
 
-POSIX splits regular expression implementations into two kinds: **basic regular expressions** (BRE) and **extended regular expressions** (ERE).
+POSIX splits regular expression implementations into two kinds: basic regular expressions (BRE) and extended regular expressions (ERE).
 
-With BRE, the following metacharacters are recognized
+With BRE, the following metacharacters are recognized:
 
 - `^`.
 
@@ -178,7 +178,7 @@ All other characters are considered literals. With ERE, the following metacharac
 
 - `|`.
 
-However, the `(`, `)`, `{` and `}` characters are treated as metacharacters in BRE if the are escaped with a backslash, whereas with ERE, preceding any metacharacter with a backslash causes it to be treated as a literal.
+However, the `(`, `)`, `{` and `}` characters are treated as metacharacters in BRE if they are escaped with a backslash, whereas with ERE, preceding any metacharacter with a backslash causes it to be treated as a literal.
 
 ...the GNU version of `grep` also supports extended regular expressions when `-E` is used.
 
@@ -193,15 +193,15 @@ grep -Eh '^bz|gz|zip' dirlist*.txt # Match any filename that begins with bz or c
 
 ## Quantifiers
 
-### `?` match an element zero or one time
+### `?`: match an element zero or one time
 
 This quantifier means, in effect, "Make the preceding element optional".
 
-### `*` match an element zero or more times
+### `*`: match an element zero or more times
 
 Like the `?` metacharacter, the `*` is used to denote an optional item; however, unlike the `?`, the item may occur any number of times, not just once.
 
-### `+` match an element one or more times
+### `+`: match an element one or more times
 
 The `+` metacharacter works much like the `*`, except it requires at least one instance of the preceding element to cause a match.
 
@@ -216,16 +216,16 @@ echo "abc  d" | grep -E '^([[:alpha:]]+ ?)+$'
 #
 ```
 
-### `{` and `}` math an element a specific number of times
+### `{`: and `}`: match an element a specific number of times
 
 The `{` and `}` metacharacters are used to express minimum and maximum numbers of required matches.
 
-|  specifier  | meaning                                                                               |
-| :---------: | :------------------------------------------------------------------------------------ |
-|   `{<n>}`   | math the preceding element if it occurs exactly _n_ times.                            |
-| `{<n>,<m>}` | math the preceding element if it occurs at least _n_ time but no more than _m_ times. |
-|  `{<n>,}`   | match the preceding element if it occurs _n_ or more times.                           |
-|  `{,<m>}`   | math the preceding element if it occur no more than _m_ times.                        |
+|  specifier  | meaning                                                                                 |
+| :---------: | :-------------------------------------------------------------------------------------- |
+|   `{<n>}`   | match the preceding element if it occurs exactly _n_ times.                             |
+| `{<n>,<m>}` | match the preceding element if it occurs at least _n_ times but no more than _m_ times. |
+|  `{<n>,}`   | match the preceding element if it occurs _n_ or more times.                             |
+|  `{,<m>}`   | match the preceding element if it occurs no more than _m_ times.                        |
 
 ```text
 ^\(?[0-9][0-9][0-9]\)?  [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$

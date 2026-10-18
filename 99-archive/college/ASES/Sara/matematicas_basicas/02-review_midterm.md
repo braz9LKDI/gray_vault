@@ -171,7 +171,6 @@ reviewed_on: "2025-08-08"
                     & x < 3 \quad x > 2 \quad x \in (2,3) \\
                     & x \in (-\infty,2) \cap (2,3) \quad x \in \emptyset
                 \end{align}
-
             $$
             - $x - 3 > 0 \quad x - 2 < 0$.
 
@@ -180,7 +179,6 @@ reviewed_on: "2025-08-08"
                     & x > 3 \quad x < 2 \quad x \in \emptyset \\
                     & x \in \emptyset
                 \end{align}
-
             $$
 
         No hay solución en este caso.

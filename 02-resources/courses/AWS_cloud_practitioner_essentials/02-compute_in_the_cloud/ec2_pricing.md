@@ -26,9 +26,7 @@ Spot instances allow unused EC2 capacity to be used at a lower price. This optio
 
 ## Dedicated hosts
 
-Dedicated Hosts provide a physical server dedicated to one customer. This option is useful for compliance requirements or software licenses tied to physical servers.
-
-The main idea is that Amazon EC2 offers multiple pricing options so compute costs can be matched to workload needs, flexibility requirements and budget.
+Dedicated hosts provide a physical server dedicated to one customer. This option is useful for compliance requirements or software licenses tied to physical servers.
 
 ## Dedicated instances
 
@@ -36,4 +34,6 @@ Dedicated instances are Amazon EC2 instances that run on hardware dedicated to a
 
 Dedicated instances are different from dedicated hosts. With dedicated instances, billing is based on the instance. With dedicated hosts, billing is based on the physical host and there is more control over instance placement.
 
-The main idea is that Dedicated Instances provide dedicated hardware for EC2 instances without requiring management of the full physical host.
+In short, dedicated instances provide dedicated hardware for EC2 instances without requiring management of the full physical host.
+
+The main idea is that Amazon EC2 offers multiple pricing options so compute costs can be matched to workload needs, flexibility requirements and budget.

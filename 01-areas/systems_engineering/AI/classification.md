@@ -4,7 +4,7 @@ reviewed_on: "2026-02-12"
 
 # Classification
 
-It can be classified in different ways depending on the context (**capabilities**, **behavior** or **how it learns**).
+It can be classified in different ways depending on the context (capabilities, behavior or how it learns).
 
 ## Capability
 
@@ -12,11 +12,11 @@ It can be classified in different ways depending on the context (**capabilities*
 
 Specialized systems built for a specific task or domain.
 
-### General
+### General (AGI)
 
 A system that can perform a wide range of tasks at human level, adapting flexibly across domains.
 
-### Superintelligence
+### Superintelligence (ASI)
 
 Beyond human intelligence (hypothetical).
 
@@ -24,18 +24,18 @@ Beyond human intelligence (hypothetical).
 
 ### Generative
 
-Models that can **produce new content** similar to the data they learned from.
+Models that can produce new content similar to the data they learned from.
 
 ### Non-generative
 
-Models that **predict a label, value or action** rather than generating rich new content.
+Models that predict a label, value or action rather than generating rich new content.
 
 ## Approach
 
-## Rule-based
+### Rule-based
 
 Explicit human-written rules.
 
-## Learning-based ([[01-areas/systems_engineering/ai/machine_learning/definition|machine learning]])
+### Learning-based ([[01-areas/systems_engineering/ai/machine_learning/definition|machine learning]])
 
-Learns from data rather than fixed ruled.
+Learns from data rather than fixed rules.

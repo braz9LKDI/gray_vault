@@ -8,17 +8,17 @@ sources:
 
 # `namespace`
 
-It provides the space where we can define or declare an identifier, in other words, we can define the space or context in which identifiers are defined.
+It defines a scope, or context, in which identifiers are declared and defined.
 
 ## Why use it?
 
 A namespace is designed to overcome the name collision error and is used as additional information to differentiate functions, classes, similar variables, etc.
 
-> Different libraries with the same bindings.
+> For example, different libraries that use the same names.
 
 ## Declaring a namespace
 
-A namespace definition begins with the namespace keyword followed by the namespace name as follows:
+A namespace definition begins with the `namespace` keyword followed by the namespace name as follows:
 
 ```cpp
 namespace  namespace_name {
@@ -35,7 +35,7 @@ This directive tells the compiler that the subsequent code is making use of name
 ```cpp
 using namespace <namespace>;
 
-// Follwing code
+// Following code
 ```
 
 ## Usage example

@@ -6,8 +6,4 @@ reviewed_on: "2026-04-08"
 
 - `git stash pop`: the stashed changes are removed after they are applied to the working code.
 
-    ```bash
-    git stash pop
-    ```
-
 - `git stash apply`: the stashed changes are not removed after they are applied to the working code.

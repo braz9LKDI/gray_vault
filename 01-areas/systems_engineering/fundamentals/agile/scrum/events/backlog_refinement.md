@@ -4,7 +4,7 @@ reviewed_on: "2026-02-17"
 
 # Backlog refinement
 
-It is the activity of **adding detail, estimates and prioritization** to items in the [[personal/systems_engineering/fundametals/agile/scrum/artifacts/product_backlog|product backlog]], with the goal of making items "ready enough" (talking about specification) for future work.
+It is the activity of adding detail, estimates and prioritization to items in the [[01-areas/systems_engineering/fundamentals/agile/scrum/artifacts/product_backlog|product backlog]], with the goal of making items "ready enough" (clearly specified) for future work.
 
 > It is not a formal Scrum event.
 
@@ -16,6 +16,6 @@ It is the activity of **adding detail, estimates and prioritization** to items i
 
 ## Output
 
-- Top product backlog items ready for [[personal/systems_engineering/fundametals/agile/scrum/events/sprint_planning|sprint planning]].
+- Top product backlog items ready for [[01-areas/systems_engineering/fundamentals/agile/scrum/events/sprint_planning|sprint planning]].
 
 - Better shared understanding that supports more accurate estimation and clearer "next work".

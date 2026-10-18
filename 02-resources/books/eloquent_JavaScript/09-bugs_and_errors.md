@@ -23,9 +23,9 @@ function can_you_spot_the_problem() {
 can_you_spot_the_problem(); // ReferenceError: counter is not defined
 ```
 
-Normally, when `let` is forgotten in front of a binding, as with `counter` in the example, JavaScript quietly creates a global binding and uses that. In strict mode, an error is reported instead....
+Normally, when `let` is forgotten in front of a binding, as with `counter` in the example, JavaScript quietly creates a global binding and uses that. In strict mode, an error is reported instead...
 
-Another change in strict mode is that `this` holds the value `undefined` in functions that are not called as methods. When making such a call outside of strict mode, this refers to the global scope object, which is an object whose properties are the global bindings...
+Another change in strict mode is that `this` holds the value `undefined` in functions that are not called as methods. When making such a call outside of strict mode, `this` refers to the global scope object, which is an object whose properties are the global bindings...
 
 Fortunately, constructors created with `class` will always complain if they are called without `new`, making this less of a problem even in nonstrict mode.
 
@@ -35,9 +35,9 @@ When programming only for oneself, such problems can just be ignored until they 
 
 ## Exceptions
 
-When a function cannot proceed normally, what we would often **like** to do is just stop what we are doing and immediately jump to a place that knows how to handle the problem. This is what **exception handling** does.
+When a function cannot proceed normally, what we would often like to do is just stop what we are doing and immediately jump to a place that knows how to handle the problem. This is what exception handling does.
 
-Exceptions are a mechanism that makes it possible for code that runs into a problem to **raise** (or **throw**) an exception. An exception can be any value. Raising one somewhat resembles a super-charged return from a function: it jumps out of not just the current function but also its callers, all the way down to the first call that started the current execution. This is called **unwinding the stack**.
+Exceptions are a mechanism that makes it possible for code that runs into a problem to raise (or throw) an exception. An exception can be any value. Raising one somewhat resembles a super-charged return from a function: it jumps out of not just the current function but also its callers, all the way down to the first call that started the current execution. This is called unwinding the stack.
 
 ## Cleaning up after exceptions
 
@@ -47,7 +47,7 @@ Writing programs that operate reliably even when exceptions pop up in unexpected
 
 When a `catch` body is entered, all we know is that something in our `try` body caused an exception. But we do not know what did or which exception it caused.
 
-JavaScript (in a rather glaring omission) does not provide direct support for selectively catching exceptions: either all of them are caught or none is. This makes it tempting to **assume** that the exception caught is the one that was in mind when the `catch` block was written.
+JavaScript (in a rather glaring omission) does not provide direct support for selectively catching exceptions: either all of them are caught or none is. This makes it tempting to assume that the exception caught is the one that was in mind when the `catch` block was written.
 
 ## Assertions
 

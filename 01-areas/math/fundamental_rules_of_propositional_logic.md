@@ -8,7 +8,7 @@ reviewed_on: "2025-05-16"
 
 - $p \pand T \equiv p$.
 
-- $p \por T \equiv p$.
+- $p \por F \equiv p$.
 
 ## Domination
 
@@ -52,7 +52,7 @@ $$
 
 - $p \pand (p \por q) \equiv p$.
 
-## Morgan's
+## De Morgan's laws
 
 - $\neg(p \pand q) \equiv \neg p \por \neg q$.
 

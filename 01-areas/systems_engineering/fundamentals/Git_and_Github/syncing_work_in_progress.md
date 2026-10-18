@@ -4,9 +4,9 @@ reviewed_on: 2026-07-09
 
 # Syncing work in progress
 
-The recommended default workflow is to use a normal feature branch, make small work-in-progress commits, push that branch to "origin", pull it on the other computer and clean the commit history before the merging it.
+The recommended default workflow is to use a normal feature branch, make small work-in-progress commits, push that branch to `origin`, pull it on the other computer and clean the commit history before merging it.
 
-## recommended default workflow
+## Recommended default workflow
 
 The safest general workflow is:
 
@@ -14,7 +14,7 @@ The safest general workflow is:
 
 2. Commit work in small work-in-progress commits.
 
-3. Push the feature branch to "origin".
+3. Push the feature branch to `origin`.
 
 4. Pull the same feature branch on the other computer.
 
@@ -67,36 +67,35 @@ The important rule is that unfinished work can be pushed to the feature branch, 
 
 ## Patch files using `git diff > work.patch` and `git apply work.patch`
 
-1. Create a patch from unstaged changes: `git diff > work.patch`.
+1. Create the patch with one of these commands:
+    - `git diff > work.patch` takes the unstaged changes. Plain `git diff` only includes tracked files, so new untracked files are not included unless they are staged first or handled separately.
 
-    Plain `git diff` only includes tracked files. New untracked files are not included unless they are staged first or handled separately.
+    - `git diff --cached > work.patch` takes the staged changes.
 
-2. Create a patch from staged changes: `git diff --cached > work.patch`.
+    - `git diff HEAD > work.patch` takes both staged and unstaged tracked changes.
 
-3. Create a patch from both staged and unstaged tracked changes: `git diff HEAD > work.patch`.
+2. Copy `work.patch` to the other computer.
 
-4. Copy `work.patch` to the other computer.
-
-5. On the other computer, confirm the branch and working tree:
+3. On the other computer, confirm the branch and working tree:
 
     ```bash
     git switch feature/my-work
     git status
     ```
 
-6. Check whether the patch can apply cleanly:
+4. Check whether the patch can apply cleanly:
 
     ```bash
     git apply --check work.patch
     ```
 
-7. Apply the patch:
+5. Apply the patch:
 
     ```bash
     git apply work.patch
     ```
 
-8. Review the result:
+6. Review the result:
 
     ```bash
     git status

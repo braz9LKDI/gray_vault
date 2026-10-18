@@ -12,7 +12,7 @@ reviewed_on: "2026-04-08"
 
 ## Types
 
-It says **what kind of change** it is:
+The type says what kind of change a commit makes:
 
 - `feat`: new feature.
 
@@ -24,11 +24,11 @@ It says **what kind of change** it is:
 
 - `perf`: performance improvement.
 
-- `test`.
+- `test`: new or corrected tests.
 
-- `build`.
+- `build`: build system or external dependencies.
 
-- `chore`: maintenance tasks. It does not add a user-facing feature (so not feat) nor does fix a user-facing bug (so no fix), It is usually internal.
+- `chore`: maintenance tasks that neither add a user-facing feature (`feat`) nor fix a user-facing bug (`fix`). They are usually internal.
 
     > "Keeping the project healthy".
 
@@ -36,7 +36,7 @@ It says **what kind of change** it is:
 
 ## Scopes
 
-It says **where the change happened**, while the type stays generic:
+The scope says where the change happened, while the type stays generic:
 
 ### Code areas
 
@@ -64,16 +64,16 @@ It says **where the change happened**, while the type stays generic:
 
 ### Quality and maintenance
 
-- `test`.
+- `test`: test suites and test helpers.
 
-- `docs`.
+- `docs`: documentation files.
 
 - `lint`: linting/formatting config.
 
 - `deps`: dependency updates.
 
-- `build`.
+- `build`: build scripts and packaging.
 
 - `ci`: pipelines/workflows.
 
-- `release`.
+- `release`: version bumps and changelogs.

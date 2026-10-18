@@ -4,7 +4,7 @@ reviewed_on: 2026-03-17
 
 # WSGI
 
-It stands for web server gateway interface. It is the Python standard interface between a web server and a web application or framework.
+It stands for Web Server Gateway Interface. It is the Python standard interface between a web server and a web application or framework.
 
 A server invokes the application once for each HTTP request. The application receives request data through `environ`, starts the response through `start_response` and returns an iterable that provides the response body.
 

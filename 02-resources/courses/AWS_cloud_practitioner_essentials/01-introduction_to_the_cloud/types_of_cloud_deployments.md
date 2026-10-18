@@ -6,7 +6,7 @@ reviewed_on: 2026-05-14
 
 Cloud deployments describe where cloud resources are located and how they are managed. Different deployment types are used depending on security needs, control requirements, cost and scalability.
 
-There are three common cloud deployment models:
+There are three common cloud deployment models.
 
 ## Cloud-based
 

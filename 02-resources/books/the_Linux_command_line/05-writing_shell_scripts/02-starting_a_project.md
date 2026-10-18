@@ -12,7 +12,7 @@ When writing programs, it is always a good idea to strive for simplicity and cla
 
 There are some rules about variable names:
 
-1. May consist of alphanumeric characters (letters and numbers) and underscore characters.
+1. Names may consist of alphanumeric characters (letters and numbers) and underscore characters.
 
 2. The first character of a variable name must be either a letter or an underscore.
 
@@ -30,7 +30,7 @@ Variables are assigned values this way:
 variable=value
 ```
 
-Where _variable_ is the name of the variable and _value_ is a string. Unlike some other programming languages, the shell does not care about the type of data assigned to a variable; it treats them all as string. The shell can be forced to restrict the assignment to integers by using `declare` with `-i`, but, like setting variables as read-only, this is rarely done.
+Where _variable_ is the name of the variable and _value_ is a string. Unlike some other programming languages, the shell does not care about the type of data assigned to a variable; it treats them all as strings. The shell can be forced to restrict the assignment to integers by using `declare` with `-i`, but, like setting variables as read-only, this is rarely done.
 
 Multiple variable assignments may be done on a single line.
 
@@ -38,7 +38,7 @@ Multiple variable assignments may be done on a single line.
 variable=value variable=value
 ```
 
-During expansion, variable names may be surrounded by optional curly braces (`{` and `}`). This is useful in cases where a variable name becomes ambiguous of its surrounding context.
+During expansion, variable names may be surrounded by optional curly braces (`{` and `}`). This is useful in cases where a variable name becomes ambiguous because of its surrounding context.
 
 ```bash
 filename="my_file"
@@ -52,7 +52,7 @@ mv "$filename" "${filename}1"
 
 ## Here documents
 
-A **here document** or **here script** is an additional form of I/O redirection in which we embed a body of text into our script and feed it into the standard input of a command.
+A here document or here script is an additional form of I/O redirection in which we embed a body of text into our script and feed it into the standard input of a command.
 
 ```bash
 command << token
@@ -62,13 +62,13 @@ token
 
 where _token_ is a string used to indicate the end of the embedded text.
 
-A common convention is to use `_EOF_` (meaning **end of file**) as token. Note that the token mush appear alone and that there must not be trailing spaces on the line.
+A common convention is to use `_EOF_` (meaning end of file) as the token. Note that the token must appear alone and that there must not be trailing spaces on the line.
 
-In a here document, the shell pay no attention to the quotation marks. It treats them as ordinary characters.
+In a here document, the shell pays no attention to the quotation marks. It treats them as ordinary characters.
 
-The text within a here document undergoes parameter expansion, command substitution, arithmetic expansion and the literal characters `$` and `\` must be escaped.
+The text within a here document undergoes parameter expansion, command substitution and arithmetic expansion, so the literal characters `$` and `\` must be escaped.
 
-However when we enclose the starting token in quotes:
+However, when we enclose the starting token in quotes:
 
 ```bash
 cat << '_EOF_'

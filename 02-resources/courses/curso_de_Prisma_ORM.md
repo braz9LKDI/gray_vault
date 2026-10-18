@@ -12,9 +12,9 @@ Prisma ORM (Object-Relational Mapping) is a modern database toolkit for Node.js 
 
 ## Project configuration
 
-1. `npm init -y`: initialize a Node.js project:.
+1. `npm init -y`: initialize a Node.js project.
 
-2. `npm install @prisma/client`: install the module in charge of interact with the database.
+2. `npm install @prisma/client`: install the module in charge of interacting with the database.
 
 3. `npm i -D prisma`: install the module `prisma` as a development dependency.
 
@@ -43,7 +43,7 @@ Prisma ORM (Object-Relational Mapping) is a modern database toolkit for Node.js 
 
 In Prisma, models define the structure of database tables. Each model represents a table, and its fields map to table columns. Models are written inside the `schema.prisma`.
 
-After defining a model we must run `npx prisma migrate dev`, this command
+After defining a model we must run `npx prisma migrate dev`. This command:
 
 - generates a new migration file inside `prisma/migrations/`.
 
@@ -51,7 +51,7 @@ After defining a model we must run `npx prisma migrate dev`, this command
 
 - keeps track of schema changes for version control.
 
-## Prisma studio
+## Prisma Studio
 
 Prisma Studio is a graphical user interface (GUI) to view, edit and manage database records visually. It is useful for quickly inspecting and modifying data without writing SQL queries.
 
@@ -59,7 +59,7 @@ To open Prisma Studio, we must run `npx prisma studio`.
 
 ## Prisma and TypeScript
 
-To create a project that uses TypeScript, we mush follow the following instructions:
+To create a project that uses TypeScript, the following steps are needed:
 
 1. `npm init -y`.
 
@@ -72,15 +72,14 @@ To create a project that uses TypeScript, we mush follow the following instructi
 
 3. `npm install @prisma/client`.
 
-4. `npx tsc --init`: creates `tsconfig.json` (TypeScript settings for the project.
-   ) file.
+4. `npx tsc --init`: creates the `tsconfig.json` file (TypeScript settings for the project).
 
 5. Edit `tsconfig.json`.
-    1. `"rootDir" = "./src"`: sets `src/` as the folder for TypeScript files.
+    1. `"rootDir": "./src"`: sets `src/` as the folder for TypeScript files.
 
     2. `"outDir": "./dist"`: compiled JavaScript files will be placed in `dist/`.
 
-6. Edit `package.json`: in scripts, add `"dev": "ts-node-dev -respawn src/index.ts"`.
+6. Edit `package.json`: in scripts, add `"dev": "ts-node-dev --respawn src/index.ts"`.
     - `ts-node-dev`: runs TypeScript files automatically with hot reloading.
 
     - `--respawn`: restarts the process when files change.

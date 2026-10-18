@@ -20,13 +20,13 @@ reviewed_on: "2025-07-02"
 
 ## Mounting and unmounting storage devices
 
-The first step in managing a storage device is attaching the device to the file system tree. This process, called **mounting**, allows the device to interact with the operating system. This contrasts with other operating systems such as Windows that maintain separate file system trees for each device.
+The first step in managing a storage device is attaching the device to the file system tree. This process, called mounting, allows the device to interact with the operating system. This contrasts with other operating systems such as Windows that maintain separate file system trees for each device.
 
 A file named `/etc/fstab` (short for "file system table") lists the devices (typically hard disk partitions) that are to be mounted at boot time.
 
 | field |     contents     | description                                                                              |
 | :---: | :--------------: | :--------------------------------------------------------------------------------------- |
-|   1   |      device      | identifies what the file system to mount                                                 |
+|   1   |      device      | identifies the file system to mount.                                                     |
 |   2   |   mount point    | the directory where the device is attached to the file system tree.                      |
 |   3   | file system type | Linux allows many file system types to be mounted.                                       |
 |   4   |     options      |                                                                                          |
@@ -37,7 +37,7 @@ A file named `/etc/fstab` (short for "file system table") lists the devices (typ
 
 Entering `mount` without arguments will display a list of the file systems currently mounted.
 
-The formatting of the listing is as follows `<device> on <mount-point> type <filesystem-type> (<options>)`.
+The formatting of the listing is as follows: `<device> on <mount-point> type <filesystem-type> (<options>)`.
 
 ---
 
@@ -52,7 +52,7 @@ mount | grep /dev/sd
 # /dev/sdc on /media/me/C911-C314 type vfat (rw,nosuid,nodev,relatime,  uid=1000,gid=1000,fmask=0022,dmask=0022,codepage=437,iocharset=iso885 9-1,shortname=mixed,showexec,utf8,flush,errors=remount-ro)
 ```
 
-The disk has been mounted on `/media/me/C911-C314`, path that can be change with the following commands:
+The disk has been mounted on `/media/me/C911-C314`, a path that can be changed with the following commands:
 
 ```bash
 su -
@@ -69,13 +69,13 @@ Now we can examine the contents of the USB via the new mount point.
 
 This idea of buffering is used extensively in computers to make them faster. Do not let the need to occasionally read or write data to or from slow devices impede the speed of the system. Operating systems store data that has been read from and is to be written to storage devices in memory for as long as possible before actually having to interact with the slower device. On a Linux system, for example, the system seems to fill up memory the longer it is used. This does not mean Linux is "using" all the memory; it means that Linux is taking advantage of all the available memory to do as much buffering as it can.
 
-Unmounting a device entails writing all the remaining data to the device so that it can be safely removed. If the device is removed without unmounting it first, the possibility exists that not all the data destined for the device has been transferred. In some cases, this data may include vital directory updates, which will lead to **file system corruption**, one of the worst things that can happen on a computer.
+Unmounting a device entails writing all the remaining data to the device so that it can be safely removed. If the device is removed without unmounting it first, the possibility exists that not all the data destined for the device has been transferred. In some cases, this data may include vital directory updates, which will lead to file system corruption, one of the worst things that can happen on a computer.
 
 ### Determining device names
 
-|   patter   | device                                                                                     |
+|  pattern   | device                                                                                     |
 | :--------: | :----------------------------------------------------------------------------------------- |
-| `/dev/fd*` | Floppy disk drives.                                                                        |
+| `/dev/fd*` | floppy disk drives.                                                                        |
 | `/dev/hd*` | IDE (PATA) disks on older systems.                                                         |
 | `/dev/lp*` | printers.                                                                                  |
 | `/dev/sd*` | SCSI disks. On modern Linux systems, the kernel treats all disk-like devices as this type. |
@@ -89,7 +89,7 @@ On modern systemd-based systems use this command to follow the systemd journal:
 sudo journalctl -f
 ```
 
-There is a another way we can determine a device name...We can use `lsblk` . This command lists all of the block devices attached to the system regardless if they are mounted or not.
+There is another way we can determine a device name...We can use `lsblk`. This command lists all of the block devices attached to the system regardless if they are mounted or not.
 
 ## Creating new file systems
 
@@ -109,8 +109,7 @@ In addition to checking the integrity of file systems, `fsck` can also repair co
 
 ## Moving data directly to and from devices
 
-While we usually think of data on our computers as being organized into files, it is also possible to think of the data in "raw" form. If we look at a disk
-drive, for example, we see that it consists of a large number of "blocks" of data that the operating system sees as directories and files...
+While we usually think of data on our computers as being organized into files, it is also possible to think of the data in "raw" form. If we look at a disk drive, for example, we see that it consists of a large number of "blocks" of data that the operating system sees as directories and files...
 
 The `dd` copies blocks of data from one place to another.
 
@@ -120,12 +119,12 @@ dd if=input_file of=output_file [bs=block_size [count=blocks]]
 
 > `dd` is very powerful. Though its name derives from "data definition", it is sometimes called "destroy disk" because users often mistype either the `if` or `of`...
 
-## Writing CD-ROOM images
+## Writing CD-ROM images
 
 ### Mounting an ISO image directly
 
-We can mount an ISO image while it is still on our hard disk and treat it as though it were already on optical media. By adding the `-o loop` option to `mount`.
+We can mount an ISO image while it is still on our hard disk and treat it as though it were already on optical media, by adding the `-o loop` option to `mount`.
 
 ## Verifying data
 
-`sha256sum` is a tool we can use to verify the integrity of file we download.
+`sha256sum` is a tool we can use to verify the integrity of files we download.

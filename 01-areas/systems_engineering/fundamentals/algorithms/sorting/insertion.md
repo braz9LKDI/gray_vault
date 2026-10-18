@@ -14,7 +14,7 @@ reviewed_on: "2025-05-05"
 
 5. Insert the ($k + 1$)-th element in its correct position.
 
-> Repeat step 1 if the number of elements is less equal to $k + 1$.
+> Steps 2 to 5 repeat until every element is sorted.
 
 ## Complexity
 

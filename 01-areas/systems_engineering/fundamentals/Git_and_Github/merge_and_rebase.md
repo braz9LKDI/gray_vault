@@ -8,7 +8,7 @@ reviewed_on: 2026-09-24
 
 ## Merge
 
-The `git merge` command combines two branches by preserving the exact chronological sequence of commits.
+The `git merge` command combines two branches with a merge commit whose parents are the tips of both branches, so the history of each branch is preserved.
 
 ```bash
 git switch main
@@ -18,16 +18,20 @@ git merge <feature-branch>
 Before merge:
 
 ```text
-      C feature
+      C - D feature
      /
-A - B   main
+A - B - E   main
 ```
 
 After merge:
 
 ```text
-A - B - C main
+      C - D
+     /     \
+A - B - E - M   main
 ```
+
+> If `main` has no new commits since the branch was created, Git moves `main` forward to `D` instead of creating `M`. This is a fast-forward merge.
 
 ## Rebase
 
@@ -52,7 +56,7 @@ After rebase:
 A - B - E - C' - D'   main
 ```
 
-# Comparison
+## Comparison
 
 Choosing between merging and rebasing depends on history management preferences:
 

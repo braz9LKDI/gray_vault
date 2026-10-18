@@ -6,11 +6,11 @@ reviewed_on: "2025-08-04"
 
 ## Accessing the command line
 
-The shell provides a set of variables called **positional parameters** that contain the individual words on the command line. The variables are name `0` through `9`.
+The shell provides a set of variables called positional parameters that contain the individual words on the command line. The variables are named `0` through `9`.
 
 Even when no arguments are provided, `0` will always contain the pathname of the program being executed.
 
-> Actually, more than nine can be accessed by enclosing the number in braces (`${<number>})`.
+> Actually, more than nine can be accessed by enclosing the number in braces (`${<number>}`).
 
 ### Determining the number of arguments
 
@@ -18,7 +18,7 @@ The shell also provides a variable, `#`, that contains the number of arguments o
 
 ### `shift`: getting access to many arguments
 
-The shell provides a method, albeit a clumsy, to process many command arguments. `shift` causes all the parameters to "move down one" each time it is executed.
+The shell provides a method, albeit a clumsy one, to process many command arguments. `shift` causes all the parameters to "move down one" each time it is executed.
 
 ### Simple applications
 
@@ -28,7 +28,7 @@ The shell provides a method, albeit a clumsy, to process many command arguments.
 
 Just as positional parameters are used to pass arguments to shell scripts, they can also be used to pass arguments to shell functions.
 
-`FUNCNAME` variable keeps track of the currently executed shell function.
+The `FUNCNAME` variable keeps track of the currently executed shell function.
 
 ## Handling positional parameters en masse
 
@@ -38,7 +38,7 @@ The shell provides two special parameters for this purpose.
 
 ### `$*`
 
-It expands into the list of positional parameters, starting with 1. When surrounded by double quotes, it expands into a double-quoted string containing all of the positional parameters, each separated by the first character of `IEF` shell variable (by default a space character).
+It expands into the list of positional parameters, starting with 1. When surrounded by double quotes, it expands into a double-quoted string containing all of the positional parameters, each separated by the first character of the `IFS` shell variable (by default a space character).
 
 ### `$@`
 

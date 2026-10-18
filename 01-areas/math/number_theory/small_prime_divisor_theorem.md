@@ -12,8 +12,8 @@ $$
 
 ## Proof
 
-A composite number is a number that has at least one prime divisor other than itself and 1. If $n$ is a composite number, then it has at least one pair of divisors, say $a$ and $b$, such that $n = a * b$.
+A composite number is a positive integer greater than 1 that has a divisor other than itself and 1. If $n$ is a composite number, then it can be written as $n = a * b$ with $1 < a < n$ and $1 < b < n$.
 
 If both $a$ and $b$ were greater than $\sqrt{ n }$, then $a * b$ would be greater than $n$, which is a contradiction. Similarly, if both $a$ and $b$ were less than $\sqrt{ n }$, then $a * b$ would be less than $n$, which is also a contradiction.
 
-Therefore, if $n = a * b$ for some pair of numbers $a$ and $b$, then necessarily one of them must be less than or equal to $\sqrt{ n }$ and the other must be greater than or equal to $\sqrt{ n }$. Since $n$ is composite, at least one of these numbers, $a$ or $b$, must be a prime number. Hence, $n$ has a prime divisor less than or equal to $\sqrt{ n }$.
+Therefore, one of the two factors, say $a$, is less than or equal to $\sqrt{ n }$. Since $a > 1$, the [[01-areas/math/number_theory/fundamental_theorem_of_arithmetic|fundamental theorem of arithmetic]] gives it a prime factor $p$, with $p \leq a \leq \sqrt{ n }$. Because $p \mid a$ and $a \mid n$, also $p \mid n$. Hence, $n$ has a prime divisor less than or equal to $\sqrt{ n }$.

@@ -4,11 +4,11 @@ reviewed_on: 2026-03-13
 
 # `class` vs `struct`
 
-`class` and `struct` define user-defined types with different default semantics. the main practical differences are copy behavior, allocation and common usage patterns.
+`class` and `struct` define user-defined types with different default semantics. The main practical differences are copy behavior, allocation and common usage patterns.
 
 ## Copy semantics
 
-A `class` is a [[personal/systems_engineering/programming_languajes/C_sharp/value_types_vs_reference_types#Reference types|reference type]]. Assignment copies the reference, so multiple variables can point to the same instance.
+A `class` is a [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Reference types|reference type]]. Assignment copies the reference, so multiple variables can point to the same instance.
 
 ```cs
 class Counter
@@ -19,11 +19,11 @@ class Counter
 var a = new Counter { Value = 1 };
 var b = a;
 
-b.value = 5;
-Console.WriteLine(a.Value) // 5
+b.Value = 5;
+Console.WriteLine(a.Value); // 5
 ```
 
-A `struct` is a [[personal/systems_engineering/programming_languajes/C_sharp/value_types_vs_reference_types#Value types|value type]]. Assignment copies the data, so each variable gets its own copy.
+A `struct` is a [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Value types|value type]]. Assignment copies the data, so each variable gets its own copy.
 
 ```cs
 struct Counter
@@ -34,15 +34,15 @@ struct Counter
 var a = new Counter { Value = 1 };
 var b = a;
 
-b.value = 5;
-Console.WriteLine(a.Value) // 1
+b.Value = 5;
+Console.WriteLine(a.Value); // 1
 ```
 
 Passing to methods follows the same rule: structs are copied by default, classes are not. `ref`, `in` and `out` can change that behavior for structs.
 
 ```cs
-static void increment(counter c) { c.value++; }
-static void incrementRef(ref counter c) { c.value++; }
+static void Increment(Counter c) { c.Value++; }
+static void IncrementRef(ref Counter c) { c.Value++; }
 ```
 
 ## When each is typically used

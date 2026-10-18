@@ -4,9 +4,7 @@ reviewed_on: "2025-06-21"
 
 # Enfócate
 
-- .
-
-    ...trabajar a fondo no es una reivindicación nostálgica de escritores y filósofos de comienzos del siglo XX. Es una destreza que tiene gran valor en la vida moderna.
+- ...trabajar a fondo no es una reivindicación nostálgica de escritores y filósofos de comienzos del siglo XX. Es una destreza que tiene gran valor en la vida moderna.
 
     Dos razones explican este valor. La primera está relacionada con el aprendizaje. Vivimos en una economía de la información que se basa en sistemas complejos que cambian rápidamente...
 
@@ -14,21 +12,19 @@ reviewed_on: "2025-06-21"
 
 - ...la ausencia de distracciones en mi vida hace que desaparezca ese trasfondo de energía mental nerviosa que caracteriza la vida cotidiana de mucha gente. No me incomoda estar aburrido, y esta es una destreza muy gratificante, sobre todo en las noches de verano en la ciudad de Washington, en las que oigo por la radio los partidos de béisbol de los Nationals.
 
-- ...Como subraya Ericsson: "La atención dispersa es prácticamente la antítesis de la atención concentrada que se requiere en la práctica deliberad".
+- ...Como subraya Ericsson: "La atención dispersa es prácticamente la antítesis de la atención concentrada que se requiere en la práctica deliberada".
 
 - El problema que la investigadora identifica en este tipo de estrategia laboral es que, al pasar de la Tarea A a la Tarea B, la atención de la persona no engrana inmediatamente, sino que un residuo de atención sigue pensando en la tarea original. Este residuo se vuelve especialmente denso si el trabajo que la persona hacía en la Tarea A no tenía límites claros y era de baja intensidad. Sin embargo, aunque la persona termine la Tarea A antes de pasar a la otra, su atención sigue estando dividida durante un rato..."Las personas que tienen residuos de atención tras cambiar de tarea tendrán un bajo desempeño en la siguiente tarea", y cuanto más intenso sea el residuo, peor será el desempeño.
 
 - Hago particular referencia a la conectividad permanente como estudio de caso en la presente discusión, pero este es solo uno de los ejemplos de comportamiento en el ámbito empresarial que son contrarios a la profundidad y pueden reducir el valor de los resultados financieros de la compañía, pero que prosperan porque, a falta de mediciones, la mayoría de gente termina haciendo lo que le resulta más fácil.
 
-- .
-
-    **El estado de ocupación como sustituto de la productividad**: A falta de indicadores claros respecto a lo que significa ser productivo y valioso en un empleo, muchos trabajadores del conocimiento acuden a un indicador industrial de la productividad: hacer muchas cosas, de una manera visible.
+- El estado de ocupación como sustituto de la productividad: A falta de indicadores claros respecto a lo que significa ser productivo y valioso en un empleo, muchos trabajadores del conocimiento acuden a un indicador industrial de la productividad: hacer muchas cosas, de una manera visible.
 
     Esta mentalidad es otra explicación para la popularidad de muchos comportamientos que destruyen la profundidad. Si usted envía y responde correos electrónicos a todas horas, si programa reuniones y asiste a ellas constantemente, si envía sus contribuciones en sistemas de mensajería instantánea como Hall pocos segundos después de que alguien plantea una nueva pregunta, o si se pasea por todo el espacio de la oficina abierta lanzando ideas a todas las personas con las que se encuentra, esos comportamientos darán la apariencia pública de que usted está ocupado. Si usted usa ese estado de ocupación como sustituto de la productividad, esos comportamientos le parecerán cruciales para convencerse a sí mismo y a los demás de que está haciendo bien su trabajo.
 
 - Según la crítica de Morozov, hemos convertido "la Internet" en sinónimo del futuro revolucionario de los negocios y el gobierno. Hacer que su empresa esté a tono con "la Internet" equivale a ir con los tiempos e ignorar estas tendencias es como seguir produciendo herraduras en la era del automóvil. Ya no vemos las herramientas de Internet como productos lanzados por compañías que buscan el lucro, financiadas por inversionistas que esperan obtener ganancias y administradas por jóvenes de veintitantos años que muchas veces improvisan. Por el contrario, nos precipitamos a poner en un pedestal esos adminículos digitales como estandartes del progreso y precursores de un nuevo mundo (me atrevo a decir) feliz.
 
-- ... Así lo resume Gallagher: "Quién es usted, qué piensa, siente y hace, y qué le gusta son producto de la sumatoria de aquello en lo que usted se concentra".
+- ...Así lo resume Gallagher: "Quién es usted, qué piensa, siente y hace, y qué le gusta son producto de la sumatoria de aquello en lo que usted se concentra".
 
 - ...El psicólogo Mihaly Csikszentmihalyi, a quien retomaremos en la siguiente sección, explícitamente identifica esta ventaja al hablar de cultivar "una concentración tan intensa que no queda espacio para pensar en nada irrelevante ni para preocuparse por otros problemas"...
 

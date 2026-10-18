@@ -14,9 +14,9 @@ reviewed_on: "2025-07-02"
 
 - `stat`: display file or file system status.
 
-## `locate` Find diles the easy way
+## `locate`: find files the easy way
 
-`locate` performs a rapid database search of pathnames, and the outputs ever name that matches a given substring.
+`locate` performs a rapid database search of pathnames, and outputs every name that matches a given substring.
 
 ```text
 locate PATTERN [PATTERN...]
@@ -28,9 +28,9 @@ locate PATTERN [PATTERN...]
 
 ...`locate` database is created by `updatedb`. Usually, it is run periodically as a cron job, that is, a task performed at regular intervals by the cron daemon. Most systems equipped with locate run `updatedb` once a day...
 
-## `find` Find files the hard way
+## `find`: find files the hard way
 
-...`find` searches a given directory (and its subdirectories) for files based on a variety of atributes...
+...`find` searches a given directory (and its subdirectories) for files based on a variety of attributes...
 
 ```text
 find [DIRECTORY...] [EXPRESSION]
@@ -38,7 +38,7 @@ find [DIRECTORY...] [EXPRESSION]
 
 ### Tests
 
-Some of the **tests** that support this command are:
+Some of the tests that support this command are:
 
 - `-type`.
 
@@ -50,7 +50,7 @@ Some of the **tests** that support this command are:
     |    `f`    |         regular file          |
     |    `l`    |         symbolic link         |
 
-- `size`.
+- `-size`.
 
     | character |                             unit                              |
     | :-------: | :-----------------------------------------------------------: |
@@ -63,23 +63,23 @@ Some of the **tests** that support this command are:
 
 |          test          | description                                                                                                |
 | :--------------------: | :--------------------------------------------------------------------------------------------------------- |
-|      `-cmin <n>`       | files or directories whose content or attributes were last modified exactly $n \text{minutes}$ ago.        |
+|      `-cmin <n>`       | files or directories whose content or attributes were last modified exactly _n_ minutes ago.               |
 |    `-cnewer <file>`    | files or directories whose contents or attributes were last modified more recently than those of `<file>`. |
-|      `-ctime <n>`      | files or directories whose contents or attributes were last modified $n * 24 \text{hours}$ ago.            |
+|      `-ctime <n>`      | files or directories whose contents or attributes were last modified _n_ \* 24 hours ago.                  |
 |        `-empty`        | empty files and directories.                                                                               |
 | `-group <name-or-gid>` | files or directories belonging to `<name-or-gid>` group.                                                   |
 |   `-iname <pattern>`   | like `-name` but case-insensitive.                                                                         |
-|       `inum <n>`       | files with inode number _n_.                                                                               |
-|      `-mmin <n>`       | files or directories whose contents were last modifies $n \text{minutes}$ ago.                             |
-|    `-name <patter>`    | Match files and directories with the specified wildcard `<pattern>`.                                       |
+|      `-inum <n>`       | files with inode number _n_.                                                                               |
+|      `-mmin <n>`       | files or directories whose contents were last modified _n_ minutes ago.                                    |
+|   `-name <pattern>`    | match files and directories with the specified wildcard `<pattern>`.                                       |
 |    `-newer <file>`     | files and directories whose contents were modified more recently than the specified `<file>`.              |
-|       `-nouser`        | file and directories that do not belong to a valid user.                                                   |
+|       `-nouser`        | files and directories that do not belong to a valid user.                                                  |
 |       `-nogroup`       | files and directories that do not belong to a valid group.                                                 |
 |     `-perm <mode>`     | files or directories that have permissions set to _mode_.                                                  |
 |   `-samefile <file>`   | similar to the `-inum`. Match files that share the same inode number as _file_.                            |
 |     `-user <name>`     | files or directories belonging to user _name_.                                                             |
 
-A numeric argument _n_ can be specified to tests (like `-amin`, `-mtime`, `-gid`, `-inum`, `-links`, `-size`, `-uid` and `-used`) as
+A numeric argument _n_ can be specified to tests (like `-amin`, `-mtime`, `-gid`, `-inum`, `-links`, `-size`, `-uid` and `-used`) as:
 
 - `+n` for greater than _n_.
 
@@ -109,9 +109,9 @@ find ~ \( -type f -not -perm 0600 \) -or \( -type d  -not -perm 0700 \)
 | `-delete` | delete the currently matching file.                               |
 |   `-ls`   | perform the equivalent of `ls -dils` on the matching file.        |
 | `-print`  | output the full pathname of the matching file to standard output. |
-|  `-quit`  | quit once a match has been mande.                                 |
+|  `-quit`  | quit once a match has been made.                                  |
 
-Actions should go at the end of the command, because the **order** of tests and actions determines which of them are executed.
+Actions should go at the end of the command, because the order of tests and actions determines which of them are executed.
 
 ### User-defined actions
 
@@ -129,7 +129,7 @@ It is also possible to execute a user-defined action interactively. By using the
 
 When the `-exec` action is used, it launches a new instance of the specified command each time a matching file is found. There are times when we might prefer to combine all of the search results and launch a single instance of the command.
 
-The traditional way to combine arguments is using the external command `xargs` and the alternate way, using a new feature in find itself.
+The traditional way to combine arguments is the external command `xargs`; the alternative is a newer feature of `find` itself.
 
 ```bash
 find ~ -type f -name "foo*" -exec ls -l '{}' ';' +
@@ -151,10 +151,10 @@ Unix-like systems allow embedded spaces (and even newlines!) in filenames. This 
 
 The options are used to control the scope of a `find` search. They may be included with other tests and actions when constructing `find` expressions.
 
-|        option        | description                                                                                              |
-| :------------------: | :------------------------------------------------------------------------------------------------------- |
-|       `-depth`       | process a directory's files before the directory itself.                                                 |
-| `-maxdepth <levels>` | set the maximum number of levels it will descend into a directory tree when performing test and actions. |
-| `-mindepth <levels>` | set the minimum number of levels it will descend into a directory tree when performing test and actions. |
-|       `-mount`       | do not traverse into directories that are mounted on other file system.                                  |
-|      `-noleaf`       | do not optimize its search based on the assumption that is searching a Unix-like file system.            |
+|        option        | description                                                                                               |
+| :------------------: | :-------------------------------------------------------------------------------------------------------- |
+|       `-depth`       | process a directory's files before the directory itself.                                                  |
+| `-maxdepth <levels>` | set the maximum number of levels it will descend into a directory tree when performing tests and actions. |
+| `-mindepth <levels>` | set the minimum number of levels it will descend into a directory tree when performing tests and actions. |
+|       `-mount`       | do not traverse into directories that are mounted on other file systems.                                  |
+|      `-noleaf`       | do not optimize its search based on the assumption that it is searching a Unix-like file system.          |

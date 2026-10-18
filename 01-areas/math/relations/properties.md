@@ -33,11 +33,18 @@ $$
 A relation $R$ defined on the set $A$ is antisymmetric if:
 
 $$
-\begin{align}
-    & \forall a,b \quad ((a,b) \in R \implies (b,a) \notin R) \\
-    & \forall a,b \quad (((a,b) \in R \pand (b,a) \in R) \implies a = b)
-\end{align}
+\forall a,b \quad (((a,b) \in R \pand (b,a) \in R) \implies a = b)
 $$
+
+## Asymmetric
+
+A relation $R$ defined on the set $A$ is asymmetric if:
+
+$$
+\forall a,b \quad ((a,b) \in R \implies (b,a) \notin R)
+$$
+
+> An asymmetric relation is antisymmetric and irreflexive.
 
 ## Transitive
 
@@ -58,7 +65,7 @@ $$
 \end{multline}
 $$
 
-> That is, it is **reflexive**, **symmetric** and **transitive**.
+> That is, it is reflexive, symmetric and transitive.
 
 ## Partial order
 
@@ -66,9 +73,9 @@ A relation $R$ defined on the set $A$ is a partial order if:
 
 $$
 \begin{multline}
-    (\forall a \in A \quad (a,a) \in R) \pand (\forall a,b \quad ((a,b) \in R \implies (b,a) \notin R)) \; \pand \\
+    (\forall a \in A \quad (a,a) \in R) \pand (\forall a,b \quad (((a,b) \in R \pand (b,a) \in R) \implies a = b)) \; \pand \\
     (\forall a,b,c \quad (((a,b) \in R \pand (b,c) \in R) \implies (a,c) \in R))
 \end{multline}
 $$
 
-> That is, it is **reflexive**, **antisymmetric** and **transitive**.
+> That is, it is reflexive, antisymmetric and transitive.

@@ -6,7 +6,7 @@ reviewed_on: 2026-06-19
 
 Amazon Lightsail is an AWS service designed to make it easier to launch and manage simple cloud projects.
 
-Lightsail provides virtual private servers, also called **instances**, with a simpler setup experience than [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2|Amazon EC2]]. It is commonly used for websites, web applications, small business applications, blogs and development environments.
+Lightsail provides virtual private servers, also called instances, with a simpler setup experience than [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2|Amazon EC2]]. It is commonly used for websites, web applications, small business applications, blogs and development environments.
 
 Lightsail includes common cloud resources in one place, such as instances, storage, networking, DNS, snapshots, load balancers and managed databases. This makes it useful when a project needs a simpler and more guided AWS experience.
 

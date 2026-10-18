@@ -10,7 +10,7 @@ reviewed_on: 2026-06-05
 
 - [DataCamp](https://education.github.com/pack/redeem/datacamp-student): data science, data analysis, data fluency, statistics, machine learning and data tools.
 
-- [Educative](https://www.educative.io/github-students): Web development, Python, Java, machine learning, hands-on coding labs and practical software engineering topics.
+- [Educative](https://www.educative.io/github-students): web development, Python, Java, machine learning, hands-on coding labs and practical software engineering topics.
 
 - [FrontendMasters](https://education.github.com/pack/redeem/frontendmasters-student): JavaScript, Node.js, frontend engineering, web development and advanced frontend architecture.
 

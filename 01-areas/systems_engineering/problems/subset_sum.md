@@ -10,7 +10,7 @@ Given a set of non-negative integers and a target sum, the goal is to determine 
 
 ## Input
 
-- A set of array of $n$ non-negative integers, $A = \{a_1,a_2,\dots,a_n\}$.
+- A set of $n$ non-negative integers, $A = \{a_1,a_2,\dots,a_n\}$.
 
 - A target integer sum, $S$.
 

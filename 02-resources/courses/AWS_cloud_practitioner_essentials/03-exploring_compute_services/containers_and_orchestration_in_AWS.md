@@ -6,7 +6,7 @@ reviewed_on: 2026-06-18
 
 In AWS, [[01-areas/systems_engineering/fundamentals/containers/definition|containers]] can be stored, deployed, managed and scaled through container-related services.
 
-[[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/ecr|Amazon ECR]] stores container images. [[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/ecs|Amazon ECS]] and [[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/eks|Amazon EKS]] orchestrate containers. [[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/fargate|Amazon Fargate]] provides serverless compute capacity for containers.
+[[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/ecr|Amazon ECR]] stores container images. [[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/ecs|Amazon ECS]] and [[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/eks|Amazon EKS]] orchestrate containers. [[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/fargate|AWS Fargate]] provides serverless compute capacity for containers.
 
 ## How the services fit together
 

@@ -18,7 +18,7 @@ datatype* var_name;
 
 ## Advanced pointer notation
 
-Consider a two-dimensional array `A[i][j]`. A pointer notation can be used to access the element in row `i` and column `j` with `*(*(*(A + i) + j)`.
+Consider a two-dimensional array `A[i][j]`. A pointer notation can be used to access the element in row `i` and column `j` with `*(*(A + i) + j)`.
 
 ### Usage example (advanced pointer notation)
 
@@ -81,7 +81,7 @@ c = &b;
 
 Void pointers are pointers that point to a value that has no type (and thus also an undetermined length and undetermined dereferencing properties). This means that void pointers have great flexibility, as they can point to any data type. There is a payoff for this flexibility. These pointers cannot be directly dereferenced. They have to first be transformed into some other pointer type that points to a concrete data type before being dereferenced.
 
-### Usage example (Void pointers)
+### Usage example (void pointers)
 
 ```cpp
 void increase(void* data, int ptr_size) {
@@ -98,7 +98,7 @@ void increase(void* data, int ptr_size) {
     }
 }
 
-void main() {
+int main() {
     char c = 'x';
     int i = 10;
 
@@ -107,5 +107,7 @@ void main() {
 
     increase(&i, sizeof(i));
     std::cout << "The new value of i is: " << i << "\n";
+
+    return 0;
 }
 ```

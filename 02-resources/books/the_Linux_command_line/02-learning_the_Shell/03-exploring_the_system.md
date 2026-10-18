@@ -4,17 +4,17 @@ reviewed_on: "2025-06-30"
 
 # Exploring the system
 
-- `file`: determinate file type.
+- `file`: determine file type.
 
 - `less`: view file contents.
 
-## Having more fun with ls
+## Having more fun with `ls`
 
 ### Options and arguments
 
-...Commands are often followed by one or more **options** that modify their behavior and, further, by one or more **arguments**...
+...Commands are often followed by one or more options that modify their behavior and, further, by one or more arguments...
 
-Most commands use options which consist of a single character preceded by a dash...Many commands, however, including those from the GNU Project, also support **long options**, consisting of a word preceded by two dashes. Also, many commands allow multiple short options to be strung together...
+Most commands use options which consist of a single character preceded by a dash...Many commands, however, including those from the GNU Project, also support long options, consisting of a word preceded by two dashes. Also, many commands allow multiple short options to be strung together...
 
 > Command options, like filenames on Linux, are case-sensitive.
 
@@ -42,7 +42,7 @@ The long format contains a great deal of useful information. Here is an example 
 
 |       field        | meaning                                        |
 | :----------------: | :--------------------------------------------- |
-|    `-rw-r-r--`     | access rights to the file.                     |
+|    `-rw-r--r--`    | access rights to the file.                     |
 |        `1`         | file's number of hard links.                   |
 |       `root`       | the username of the file's owner.              |
 |       `root`       | the name of the group that owns the file.      |
@@ -50,7 +50,7 @@ The long format contains a great deal of useful information. Here is an example 
 | `2017-04-03 11:05` | date and time of the file's last modification. |
 | `oo-cd-cover.odf`  | name of the file.                              |
 
-## Determining a file's type with file
+## Determining a file's type with `file`
 
 ```bash
 file <file> # Will print a brief description of the file's contents
@@ -68,7 +68,7 @@ There are many ways to represent information on a computer. All methods involve 
 
 Some of these representation systems are very complex (such as compressed video files), while others are rather simple. One of the earliest and simplest is called ASCII text. ASCII (pronounced "as-key") is short for American Standard Code for Information Interchange. This is a simple encoding scheme that was first used on Teletype machines to map keyboard characters to numbers.
 
-Once started, the `less` allows us to scroll forward and backward through a text file.
+Once started, `less` allows us to scroll forward and backward through a text file.
 
 |        command         | action                                                 |
 | :--------------------: | :----------------------------------------------------- |
@@ -91,14 +91,14 @@ The less program was designed as an improved replacement of an earlier Unix prog
 
 ## Taking a guided tour
 
-The file system layout on a Linux system is much like that found on other Unix-like systems. The design is actually specified in a published standard called the **Linux Filesystem Hierarchy Standard**. Not all Linux distributions conform to the standard exactly, but most come pretty close.
+The file system layout on a Linux system is much like that found on other Unix-like systems. The design is actually specified in a published standard called the Linux Filesystem Hierarchy Standard. Not all Linux distributions conform to the standard exactly, but most come pretty close.
 
 |         directory          | description                                                                                                                                                                           |
 | :------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |            `/`             | root directory.                                                                                                                                                                       |
 |           `/bin`           | contains binaries (programs) that must be present for the system to boot and run.                                                                                                     |
 |          `/boot`           | contains the Linux kernel, initial RAM disk image (for drivers needed at boot time) and the bootloader.                                                                               |
-|           `/dev`           | contains **device nodes**.                                                                                                                                                            |
+|           `/dev`           | contains device nodes.                                                                                                                                                                |
 |           `/etc`           | contains all the system-wide configuration files.                                                                                                                                     |
 |          `/home`           | in normal configurations, each user is given a directory in `/home`.                                                                                                                  |
 |           `/lib`           | contains shared library files used by the core system programs.                                                                                                                       |
@@ -108,7 +108,7 @@ The file system layout on a Linux system is much like that found on other Unix-l
 |           `/opt`           | it is used to install "optional" software.                                                                                                                                            |
 |          `/proc`           | it is not a real file system in the sense of files stored on the hard drive. Rather, it is a virtual file system maintained by the Linux kernel.                                      |
 |          `/root`           | this is the home directory for the root account.                                                                                                                                      |
-|           `run`            | This is a modern replacement for the traditional `/tmp` directory.                                                                                                                    |
+|           `/run`           | this is a modern replacement for the traditional `/tmp` directory.                                                                                                                    |
 |          `/sbin`           | contains "system" binaries.                                                                                                                                                           |
 |           `/sys`           | contains information about devices that have been detected by the kernel.                                                                                                             |
 |           `/tmp`           | is intended for the storage of temporary, transient files created by various programs.                                                                                                |
@@ -120,7 +120,7 @@ The file system layout on a Linux system is much like that found on other Unix-l
 |        `/usr/share`        | contains all the shared data used by programs in `/usr/bin`.                                                                                                                          |
 |      `/usr/share/doc`      | most packages installed on the system will include some kind of documentation.                                                                                                        |
 |           `/var`           | contains files whose size or contents are expected to change while the system is running.                                                                                             |
-|         `/var/log`         | contains **log files**, records of various system activity.                                                                                                                           |
+|         `/var/log`         | contains log files, records of various system activity.                                                                                                                               |
 | `~/.config` and `~/.local` | store user-specific configuration data for desktop applications.                                                                                                                      |
 
 ## Symbolic links
@@ -129,7 +129,7 @@ The file system layout on a Linux system is much like that found on other Unix-l
 lrwxrwxrwx 1 root root 11 2018-08-11 07:34 libc.so.6 -> libc-2.6.so
 ```
 
-Notice how the first letter of the listing is `l` and the entry seems to have two filenames? This is a special kind of file called a **symbolic link** (also known as a **soft link** or **symlink**). In most Unix-like systems, it is possible to have a file referenced by multiple names.
+Notice how the first letter of the listing is `l` and the entry seems to have two filenames? This is a special kind of file called a symbolic link (also known as a soft link or symlink). In most Unix-like systems, it is possible to have a file referenced by multiple names.
 
 ## Hard links
 

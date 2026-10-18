@@ -4,7 +4,7 @@ reviewed_on: "2026-02-16"
 
 # Pillars
 
-Scrum is based on empiricism: making decisions based on what is observed and learned. Empiricism in scrum stands on three pillars: transparency, inspection and adaptation.
+Scrum is based on empiricism: making decisions based on what is observed and learned. Empiricism in Scrum stands on three pillars: transparency, inspection and adaptation.
 
 ## Transparency
 

@@ -2,13 +2,13 @@
 
 ## Create the project
 
-We will use the [Spring Initializr page](https://start.spring.io/;) to create and download ready-to-run Spring Boot applications.In the group section, it is normal to put the domain in reverse order.
+We will use the [Spring Initializr page](https://start.spring.io/) to create and download ready-to-run Spring Boot applications. In the group section, it is normal to put the domain in reverse order.
 
-> For this project we will use the dependencies "Spring Web" and "Spring Boot dev tools".
+> For this project we will use the dependencies "Spring Web" and "Spring Boot DevTools".
 
 ---
 
-If we are using meaven as a project manager, we can use the `mvnw` to run the project using the command `./mvnw spring-boot:run`.
+If we are using Maven as a project manager, we can use the `mvnw` to run the project using the command `./mvnw spring-boot:run`.
 
 > If the command does not work, make sure that it is available in the "Plugins" section.
 
@@ -18,7 +18,7 @@ Records are immutable data classes that require only the type and name of fields
 
 ## REST API
 
-Java Dependency Injection design pattern allows us to remove the hard-coded dependencies and make our application loosely coupled, extendable and maintainable. We can implement dependency injection in java to move the dependency resolution from compile-time to runtime.
+Java Dependency Injection design pattern allows us to remove the hard-coded dependencies and make our application loosely coupled, extendable and maintainable. We can implement dependency injection in Java to move the dependency resolution from compile-time to runtime.
 
 ## Working with databases
 
@@ -28,7 +28,7 @@ To have a database we will include the dependency "h2" in our project. When we e
 
 ---
 
-For creating the schemes, we will create a `schema.sql` in the resources folder.
+For creating the schemas, we will create a `schema.sql` in the resources folder.
 
 ---
 

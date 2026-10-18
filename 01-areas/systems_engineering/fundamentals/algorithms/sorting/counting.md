@@ -8,15 +8,15 @@ reviewed_on: "2025-05-05"
 
 2. Traverse all elements to count how many times each value appears.
 
-3. Calculate the relative frequency for each value.
+3. Turn the counts into cumulative counts: each position holds how many elements are less than or equal to that value, which is the final position of the last occurrence of the value.
 
-4. Place each value into the output array according to its frequency, decrementing its count after each placement.
+4. Traverse the input from the end, placing each element at the position given by its cumulative count and decrementing that count after each placement.
 
 ## Complexity
 
 - All cases: $O(N + M)$.
 
-    where $N$ and $M$ are the size of the input and frequencies arrays respectively.
+    where $N$ and $M$ are the sizes of the input and counts arrays respectively.
 
 ## C++ implementation
 
@@ -44,19 +44,19 @@ std::vector <T> counting_sort(const std::vector <T> &input) {
             max = number_representation;
     }
 
-    std::vector <int> relative_frequencies(max + 1, 0);
+    std::vector <int> cumulative_counts(max + 1, 0);
 
     for (int i = 0; i < (int) input.size(); i++)
-        relative_frequencies[get_number_representation(input[i])]++;
+        cumulative_counts[get_number_representation(input[i])]++;
 
     for (int i = 1; i <= max; i++)
-        relative_frequencies[i] += relative_frequencies[i - 1];
+        cumulative_counts[i] += cumulative_counts[i - 1];
 
     std::vector <T> output(input.size());
     for (int i = input.size() - 1; i >= 0; i--) {
         int number_representation = get_number_representation(input[i]);
-        output[relative_frequencies[number_representation] - 1] = input[i];
-        relative_frequencies[number_representation]--;
+        output[cumulative_counts[number_representation] - 1] = input[i];
+        cumulative_counts[number_representation]--;
     }
 
     return output;

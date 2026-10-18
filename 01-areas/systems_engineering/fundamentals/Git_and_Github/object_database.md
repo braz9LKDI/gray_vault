@@ -8,7 +8,7 @@ A Git repository is built on a content-addressed object database stored under `.
 
 Loose objects are laid out by splitting the hash: the first two hexadecimal characters become a directory name and the remaining characters become the file name inside it.
 
-```
+```bash
 ls -al .git/objects/5b/
 ```
 

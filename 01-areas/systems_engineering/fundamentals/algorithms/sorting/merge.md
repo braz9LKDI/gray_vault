@@ -4,13 +4,13 @@ reviewed_on: "2025-05-05"
 
 # Merge
 
-1. Divide: divide the list or array recursively into two halves until it can no more be divided.
+1. Divide: divide the list or array recursively into two halves until it can no longer be divided.
 
 2. Conquer: each subarray is sorted individually using the merge sort algorithm.
 
 3. Merge: the sorted subarrays are merged back together in sorted order. The process continues until all elements from both subarrays have been merged.
 
-The recurrence relation of is:
+The recurrence relation of merge sort is:
 
 $$
 T(n) =

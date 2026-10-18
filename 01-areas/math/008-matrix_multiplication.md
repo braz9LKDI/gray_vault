@@ -18,10 +18,10 @@ A = {
     ,\quad
 B = {
         \begin{pmatrix}
-        c_{ 11 } & c_{ 12 } & \cdots & c_{ 1n } \\
-        c_{ 21 } & c_{ 22 } & \cdots & c_{ 2n } \\
+        b_{ 11 } & b_{ 12 } & \cdots & b_{ 1p } \\
+        b_{ 21 } & b_{ 22 } & \cdots & b_{ 2p } \\
         \vdots   & \vdots   & \ddots & \vdots \\
-        c_{ m1 } & c_{ m2 } & \cdots & c_{ mn }
+        b_{ n1 } & b_{ n2 } & \cdots & b_{ np }
         \end{pmatrix}
     }
 $$
@@ -33,10 +33,10 @@ The matrix product $C = A B$ (denoted without multiplication signs or dots) is d
 $$
 C = {
         \begin{pmatrix}
-        b_{ 11 } & b_{ 12 } & \cdots & b_{ 1p } \\
-        b_{ 21 } & b_{ 22 } & \cdots & b_{ 2p } \\
+        c_{ 11 } & c_{ 12 } & \cdots & c_{ 1p } \\
+        c_{ 21 } & c_{ 22 } & \cdots & c_{ 2p } \\
         \vdots   & \vdots   & \ddots & \vdots \\
-        b_{ m1 } & b_{ m2 } & \cdots & b_{ mp }
+        c_{ m1 } & c_{ m2 } & \cdots & c_{ mp }
         \end{pmatrix}
     }
 $$

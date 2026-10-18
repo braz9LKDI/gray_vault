@@ -4,7 +4,7 @@ reviewed_on: "2025-03-18"
 
 # Activity selection problem
 
-Given a set of $n$ activities, each with a **start time** and an **end time**, the goal is to select the **maximum number of non-overlapping activities**.
+Given a set of $n$ activities, each with a start time and an end time, the goal is to select the maximum number of non-overlapping activities.
 
 Each activity $a_i$ is represented by:
 
@@ -12,7 +12,7 @@ Each activity $a_i$ is represented by:
 
 - A finish time $f_i$, where $s_i < f_i$.
 
-The activities are **sorted in ascending order** by their **finish time**.
+The activities are sorted in ascending order by their finish time.
 
 ## Input
 

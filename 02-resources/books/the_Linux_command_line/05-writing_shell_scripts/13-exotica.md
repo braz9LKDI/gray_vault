@@ -6,7 +6,7 @@ reviewed_on: "2025-08-15"
 
 ## Group commands and subshells
 
-Subshell uses this syntax:
+A subshell uses this syntax:
 
 ```bash
 (command_1; command_2; ...;command_n)
@@ -24,7 +24,7 @@ For processes that produce standard output, it looks like this:
 <(list)
 ```
 
-or, for processes that intake standard input, it looks like this:
+or, for processes that take standard input, it looks like this:
 
 ```bash
 >(list)
@@ -53,7 +53,7 @@ There are certain cases in shell scripting where we need to construct a command 
 
 ### Be careful with `eval`
 
-`eval` has a bad reputation. This stems from concern over how easy it is to add security vulnerabilities to a shell script with `eval`. If the string given to `eval` come from an external source, care must be taken to ensure there are no unauthorized commands embedded in the string (called a **code injection attack**)...
+`eval` has a bad reputation. This stems from concern over how easy it is to add security vulnerabilities to a shell script with `eval`. If the string given to `eval` comes from an external source, care must be taken to ensure there are no unauthorized commands embedded in the string (called a code injection attack)...
 
 ### A wordle helper
 
@@ -135,7 +135,7 @@ eval "$cmd | tee >(wc -l)"
 
 When we design a large, complicated script, it is important to consider what happens if the user logs off or shuts down the computer while the script is running. When such an event occurs, a signal will be sent to all affected processes. In turn, the programs representing those processes can perform actions to ensure a proper and orderly termination of the program.
 
-`bash` provided a mechanism for this purpose known as a **trap**. Traps are implemented with `trap`. `trap` uses the following syntax:
+`bash` provides a mechanism for this purpose known as a trap. Traps are implemented with `trap`. `trap` uses the following syntax:
 
 ```text
 trap ARGUMENT SIGNAL [SIGNAL...]
@@ -145,13 +145,13 @@ where _argument_ is a string that will be read and treated as a command and _sig
 
 Constructing a string to form a useful sequence of commands can be awkward, so it is a common practice to specify a shell function as the command.
 
-Besides the signal that are available on all programs, `trap` also supports several internal and bash-specific ones. Of particular interest are `EXIT` and `ERR`. As one might expect, the `EXIT` trap is activated when a script terminates. The `ERR` activates whenever a command (with certain exceptions) exists with a non-zero exit status.
+Besides the signals that are available on all programs, `trap` also supports several internal and bash-specific ones. Of particular interest are `EXIT` and `ERR`. As one might expect, the `EXIT` trap is activated when a script terminates. The `ERR` trap activates whenever a command (with certain exceptions) exits with a non-zero exit status.
 
 ### Temporary files
 
-...it is important to give temporary files nonpredictable file-names. This avoid and exploit known as a **temp race attack**. One way to create a nonpredictable (but still descriptive) name is with:
+...it is important to give temporary files nonpredictable file-names. This avoids an exploit known as a temp race attack. One way to create a nonpredictable (but still descriptive) name is with:
 
-> A temp race attack is a type of security exploit that targets the brief window of time between when a program checks for the existence of a temporary file and when it actually creates or uses that file. By winning this "race," an attacker can manipulate the program's behavior, potentially leading to unauthorized file access, data corruption, or privilege escalation.
+> A temp race attack is a type of security exploit that targets the brief window of time between when a program checks for the existence of a temporary file and when it actually creates or uses that file. By winning this "race," an attacker can manipulate the program's behavior, potentially leading to unauthorized file access, data corruption or privilege escalation.
 
 ```bash
 tempfile=/tmp/$(basename $0).$$.$RANDOM
@@ -161,7 +161,7 @@ tempfile=/tmp/$(basename $0).$$.$RANDOM
 
 This will create a filename consisting of the program's name, followed by its process ID (PID), followed by a random integer.
 
-A better way is to use the `mktemp` (not to be confused with the mktemp standard library function) to both name and create the temporary file. `mktemp` accepts a template as an argument that is used to build the filename. The template should include a series of "X" characters, which are replaced by a corresponding number of random letters and numbers.
+A better way is to use the `mktemp` program (not to be confused with the mktemp standard library function) to both name and create the temporary file. `mktemp` accepts a template as an argument that is used to build the filename. The template should include a series of "X" characters, which are replaced by a corresponding number of random letters and numbers.
 
 ```bash
 tempfile=$(mktemp /tmp/foobar.$$.XXXXXXXXXX)
@@ -171,7 +171,7 @@ For scripts that are executed by regular users, it may be wise to avoid the use 
 
 ## Asynchronous execution
 
-bash has a built-in command to help manage asynchronous execution such as this. `wait` causes a parent script to pause until a specified process (i.e., the child script) finishes.
+`bash` has a built-in command to help manage asynchronous execution such as this. `wait` causes a parent script to pause until a specified process (i.e., the child script) finishes.
 
 ### `wait`
 
@@ -211,7 +211,7 @@ The `$!` shell parameter contains the process ID of the last job put into the ba
 
 ## Named pipes
 
-In most Unix-like systems, it is possible to create a special type of file called a **named pipe**. Named pipes are used to create a connection between two processes and can be used just like other types of files.
+In most Unix-like systems, it is possible to create a special type of file called a named pipe. Named pipes are used to create a connection between two processes and can be used just like other types of files.
 
 Named pipes behave like files but actually form first-in first-out (FIFO) buffers. As with ordinary (unnamed) pipes, data goes in one end and emerges out the other. With named pipes, it is possible to set up something like this:
 

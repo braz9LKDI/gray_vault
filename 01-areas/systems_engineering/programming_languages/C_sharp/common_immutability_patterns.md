@@ -19,12 +19,12 @@ var person = new Person
 {
     Name = "name",
     Email = "test@domain.com"
-}
+};
 ```
 
 This is often described as shallow immutability.
 
-## `readony` fields
+## `readonly` fields
 
 A `readonly` field can be assigned in the constructor and then not changed later.
 

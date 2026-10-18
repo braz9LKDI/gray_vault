@@ -8,9 +8,9 @@ sources:
 
 # `filter`
 
-Filters the given sequence with the help of a function that tests each element in the sequence to be true or not.
+It filters the given sequence with the help of a function that tests each element in the sequence to be true or not.
 
-## Filters syntax
+## Syntax
 
 ```python
 filter(function, sequence)
@@ -18,7 +18,7 @@ filter(function, sequence)
 
 - `function`: function that tests if each element of a sequence is true or not.
 
-- `sequence`: sequence that needs to be filtered; it can be sets, lists, tuples, or containers of any iterators.
+- `sequence`: sequence that needs to be filtered; it can be a set, list, tuple or any other iterable.
 
 It returns an iterator that is already filtered.
 

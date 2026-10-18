@@ -8,7 +8,7 @@ reviewed_on: "2025-06-30"
 
 ## Expansion
 
-...With **expansion**, we enter something, and it is expanded into something else before the shell acts upon it...
+...With expansion, we enter something, and it is expanded into something else before the shell acts upon it...
 
 ```bash
 echo this is a test
@@ -28,7 +28,7 @@ Desktop Documents ls-output.txt Music Pictures Public Templates Videos
 
 ### Pathname expansion
 
-The mechanism by which wildcards work is called **pathname expansion**...
+The mechanism by which wildcards work is called pathname expansion...
 
 #### Pathname expansion of hidden files
 
@@ -37,7 +37,7 @@ echo .*      # Includes the `.` (actual) and `..` (parent) directories
 echo  .[!.]* # Now excludes the two directories mentioned in the command above, but also files with multiple leading periods
 ```
 
-The second command will exclude files (or directories) named with multiple leading periods. `ls -A` provide a correct listing of hidden files.
+The second command will exclude files (or directories) named with multiple leading periods. `ls -A` provides a correct listing of hidden files.
 
 ### Tilde expansion
 
@@ -75,7 +75,7 @@ Arithmetic expansion supports only integers...
 | :------: | :-------------------------------------- |
 |   `+`    | addition.                               |
 |   `-`    | subtraction.                            |
-|   `*`    | multiplication                          |
+|   `*`    | multiplication.                         |
 |   `/`    | division (results are integers).        |
 |   `%`    | modulo, which simply means "remainder". |
 |   `**`   | exponentiation.                         |
@@ -83,7 +83,7 @@ Arithmetic expansion supports only integers...
 Spaces are not significant in arithmetic expressions, and expressions may be nested...
 
 ```bash
-echo $(($((5 ** 2)) * 3)) # Is equal to $(((5 ** 2) * 3))
+echo $(($((5  2)) * 3)) # Is equal to $(((5  2) * 3))
 
 # 75
 
@@ -110,7 +110,7 @@ echo Front-{A,B,C}-Back
 # Front-A-Back Front-B-Back Front-C-Back
 ```
 
-Patterns to be brace expanded may contain a leading portion called a **preamble** and a trailing portion called a **postscript**. The pattern may not contain unquoted whitespace.
+Patterns to be brace expanded may contain a leading portion called a preamble and a trailing portion called a postscript. The pattern may not contain unquoted whitespace.
 
 ```bash
 echo Number_{1..5}
@@ -152,7 +152,7 @@ ls
 
 ### Parameter expansion
 
-...Many of its capabilities have to do with the system's ability to store small chunks of data and to give each chunk a name. Many such chunks, more properly called **variables**, are available for your examination...
+...Many of its capabilities have to do with the system's ability to store small chunks of data and to give each chunk a name. Many such chunks, more properly called variables, are available for your examination...
 
 ```bash
 echo $USER
@@ -194,7 +194,7 @@ echo The total is $100.00
 # The total is 00.00
 ```
 
-...The shell provides a mechanism called **quoting** to selectively suppress unwanted expansions.
+...The shell provides a mechanism called quoting to selectively suppress unwanted expansions.
 
 ### Double quotes
 
@@ -208,7 +208,7 @@ If we place text inside double quotes, all the special characters used by the sh
 
 This means that word-splitting, pathname expansion, tilde expansion and brace expansion are suppressed, but parameter expansion, arithmetic expansion and command substitution are still carried out...
 
-By default, word splitting looks for the presence of spaces, tabs and newlines (line feed characters) and treats them as **delimiters** between words...
+By default, word splitting looks for the presence of spaces, tabs and newlines (line feed characters) and treats them as delimiters between words...
 
 ```bash
 echo $(df -h)
@@ -224,7 +224,7 @@ echo "$(df -h)" # Well display output
 
 ### Single quotes
 
-If we need to suppress **all** expansions, we use **single quotes**...
+If we need to suppress all expansions, we use single quotes...
 
 ```bash
 echo text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER
@@ -246,7 +246,7 @@ echo 'text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER'
 
 ### Escaping characters
 
-To **escape a character**, we can precede that character with a backslash.
+To escape a character, we can precede that character with a backslash.
 
 ```bash
 echo "The balance for user $USER is: \$5.00"
@@ -266,7 +266,7 @@ Another use of the backslash escape is suppressing aliases.
 
 #### Backslash escape sequences
 
-In addition to its role as the escape character, the backslash is used as part of a notation to represent certain special characters called **control codes**. The first 32 characters in the ASCII coding scheme are used to transmit commands to teletype-like devices...
+In addition to its role as the escape character, the backslash is used as part of a notation to represent certain special characters called control codes. The first 32 characters in the ASCII coding scheme are used to transmit commands to teletype-like devices...
 
 | escape sequence | meaning                                                   |
 | :-------------: | :-------------------------------------------------------- |

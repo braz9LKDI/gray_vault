@@ -16,7 +16,7 @@ reviewed_on: "2025-09-14"
 
 ## Persistent data
 
-In JavaScript, just about everything **can** be changed, so working with values that are supposed to be persistent requires some restraint. There is `Object.freeze` that changes an object so that writing to its properties is ignored.
+In JavaScript, just about everything can be changed, so working with values that are supposed to be persistent requires some restraint. There is a function, `Object.freeze`, that changes an object so that writing to its properties is ignored.
 
 ```javascript
 let object = Object.freeze({ value: 5 });
@@ -24,10 +24,10 @@ object.value = 10;
 console.log(object.value); // 5
 ```
 
-Unfortunately, although understanding a system built on persistent data structures is easier, **designing** one, especially when the programming language is not helping, can be a little harder.
+Unfortunately, although understanding a system built on persistent data structures is easier, designing one, especially when the programming language is not helping, can be a little harder.
 
 ## Pathfinding
 
-The problem of finding a route through a graph is a typical **search problem**. We can tell whether a given solution (a route) is valid, but we cannot directly compute the solution the way we could for $2 + 2$. Instead, we have to keep creating potential solutions until we find one that works.
+The problem of finding a route through a graph is a typical search problem. We can tell whether a given solution (a route) is valid, but we cannot directly compute the solution the way we could for $2 + 2$. Instead, we have to keep creating potential solutions until we find one that works.
 
 The number of possible routes through a graph is infinite. But when searching for a route from $A$ to $B$, we are interested only in the ones that start at $A$. We also do not care about routes that visit the same place twice (those are definitely not the most efficient route anywhere). So that cuts down on the number of routes that the route finder has to consider.

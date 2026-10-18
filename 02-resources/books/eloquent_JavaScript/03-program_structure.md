@@ -12,19 +12,19 @@ In some cases, JavaScript allows the semicolon at the end of a statement to be o
 
 ## Bindings
 
-Bindings are better imagined as tentacles rather than boxes. They do not **contain** values; they **grasp** them (two bindings can refer to the same value). A program can access only the values to which it still has a reference. When something must be remembered, a tentacle is either grown to hold on to it or one of the existing tentacles is reattached to it.
+Bindings are better imagined as tentacles rather than boxes. They do not contain values; they grasp them (two bindings can refer to the same value). A program can access only the values to which it still has a reference. When something must be remembered, a tentacle is either grown to hold on to it or one of the existing tentacles is reattached to it.
 
-The words "var" and "const" can also be used to create bindings, similarly to "let".
+The words `var` and `const` can also be used to create bindings, similarly to `let`.
 
-The first of these, "var" (short for "variable"), is the way bindings were declared in pre-2015 JavaScript, when "let" did not exist yet...For now, remember that it mostly does the same thing...
+The first of these, `var` (short for "variable"), is the way bindings were declared in pre-2015 JavaScript, when `let` did not exist yet...For now, remember that it mostly does the same thing...
 
 ## The environment
 
-The collection of bindings and their values that exist at a given time is called the **environment**. When a program starts up, this environment is not empty. It always contains bindings that are part of the language standard, and most of the time, it also has bindings that provide ways to interact with the surrounding system...
+The collection of bindings and their values that exist at a given time is called the environment. When a program starts up, this environment is not empty. It always contains bindings that are part of the language standard, and most of the time, it also has bindings that provide ways to interact with the surrounding system...
 
 ## Functions
 
-...A function is a piece of program wrapped in a value. Such values can be applied in order to run the wrapped program....
+...A function is a piece of program wrapped in a value. Such values can be applied in order to run the wrapped program...
 
 ## The `console.log` function
 

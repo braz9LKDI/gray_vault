@@ -4,7 +4,7 @@ reviewed_on: "2024-12-31"
 
 # Hábitos atómicos
 
-## Quotes
+## Citas
 
 - Mientras mis compañeros se desvelaban jugando videojuegos, yo desarrollé buenos hábitos de sueño y todas las noches me iba a dormir temprano. En el desordenado mundo del dormitorio universitario, yo me propuse mantener mi habitación limpia y ordenada. Estas mejoras no eran muy significativas, pero me hacían sentir que tenía control sobre mi vida. Comencé a sentirme seguro nuevamente y a creer en mí...
 
@@ -114,9 +114,9 @@ reviewed_on: "2024-12-31"
 
 - ...Como apuntó Aristóteles: "es fácil decepcionar a la juventud porque la juventud es rápida para tener esperanzas"...
 
-## Chapter summaries
+## Resúmenes de capítulos
 
-### Como construir mejores hábitos en cuatro sencillos pasos
+### Cómo construir mejores hábitos en cuatro sencillos pasos
 
 - Un hábito es una conducta que se ha repetido el suficiente número de veces para convertirse en una acción automática.
 
@@ -171,7 +171,7 @@ reviewed_on: "2024-12-31"
 
 - Es más sencillo construir nuevos hábitos en un nuevo ambiente porque no tendrás que estar luchando en contra de antiguas señales y disparadores.
 
-### El secreto el autocontrol
+### El secreto del autocontrol
 
 - La primera ley del cambio de conducta invertida es hacerlo invisible.
 
@@ -183,7 +183,7 @@ reviewed_on: "2024-12-31"
 
 - El autocontrol es una estrategia de corto plazo, no de largo plazo.
 
-### Como lograr que un hábito sea irresistible
+### Cómo lograr que un hábito sea irresistible
 
 - La segunda ley del cambio de conducta es hacerlo atractivo.
 
@@ -338,11 +338,11 @@ reviewed_on: "2024-12-31"
 
 - Los profesionales mantienen un horario, los aficionados dejan que la vida se entrometa en el camino.
 
-## El inconveniente de crear buenos hábitos
+### El inconveniente de crear buenos hábitos
 
 - La ventaja de los hábitos es que podemos hacer cosas sin pensar. La desventaja es que podemos dejar de poner atención en los pequeños errores.
 
-- $\text{hábitos} + \text{práctica deliberada} = \text{maestría}$.
+- Hábitos + práctica deliberada = maestría.
 
 - La reflexión y la revisión son procesos que te permiten permanecer consciente de tu desempeño a lo largo del tiempo.
 

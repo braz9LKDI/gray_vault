@@ -8,7 +8,7 @@ Amazon EC2 instance types define the hardware profile of an EC2 instance. Each i
 
 Instance types are grouped into families. Each family is optimized for a different kind of workload.
 
-1. General purpose instances: provide a balance of compute, memory and networking resources. They are useful for applications that need a balanced amount of resources, such as web servers, development environments and small databases.
+1. General purpose instances: they provide a balance of compute, memory and networking resources. They are useful for applications that need a balanced amount of resources, such as web servers, development environments and small databases.
 
 2. Compute optimized instances: they are designed for workloads that need strong processor performance. They are useful for batch processing, media transcoding, high-performance web servers and other CPU-intensive tasks.
 

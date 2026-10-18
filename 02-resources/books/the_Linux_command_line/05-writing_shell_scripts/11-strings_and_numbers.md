@@ -6,9 +6,9 @@ reviewed_on: "2025-08-10"
 
 ## Parameter expansion
 
-### Expansions to manage empty variable
+### Expansions to manage empty variables
 
-Several parameters expansions are intended to deal with nonexistent and empty variables. These expansions are handy for handling missing positional parameters and assigning default values to parameters.
+Several parameter expansions are intended to deal with nonexistent and empty variables. These expansions are handy for handling missing positional parameters and assigning default values to parameters.
 
 ```bash
 ${parameter:-word}
@@ -41,7 +41,7 @@ ${!prefix*}
 ${!prefix@}
 ```
 
-This expansion returns the names of existing variables with names beginning with _prefix_, according to the `bash` documentation, both forms of this expansion perform identically.
+This expansion returns the names of existing variables with names beginning with _prefix_. According to the `bash` documentation, both forms of this expansion perform identically.
 
 ### String operations
 
@@ -49,7 +49,7 @@ This expansion returns the names of existing variables with names beginning with
 ${#parameter}
 ```
 
-Expands into the length of the string contained by _parameter_. Normally, _parameter_ is a string; however, if _parameter_ is either `@` or `*`, then the expansion results in the number of positional parameters.
+It expands into the length of the string contained by _parameter_. Normally, _parameter_ is a string; however, if _parameter_ is either `@` or `*`, then the expansion results in the number of positional parameters.
 
 ```bash
 ${parameter:offset}
@@ -67,7 +67,7 @@ ${parameter#pattern}
 ${parameter##pattern}
 ```
 
-These expansions remove a leading portion of the string contained in _parameter_ defined by _pattern_. _pattern_ is a wildcard patter like those use in [[02-resources/books/the_linux_command_line/02-learning_the_shell/07-seeing_the_world_as_the_shell_sees_it#Pathname expansion|pathname expansion]]. The difference in the two forms is that the `#` form removes the shortest match, while the `##` form removes the longest match.
+These expansions remove a leading portion of the string contained in _parameter_ defined by _pattern_. _pattern_ is a wildcard pattern like those used in [[02-resources/books/the_linux_command_line/02-learning_the_shell/07-seeing_the_world_as_the_shell_sees_it#Pathname expansion|pathname expansion]]. The difference in the two forms is that the `#` form removes the shortest match, while the `##` form removes the longest match.
 
 ```bash
 ${parameter%pattern}
@@ -83,7 +83,7 @@ ${parameter/#pattern/string}
 ${parameter/%pattern/string}
 ```
 
-This expansion performs a search-and-replace operation upon the contents of _parameter_. If text is found matching wildcard _pattern_, it is replace with the contents of _string_. In the normal form, only the first occurrence of _pattern_ is replaced. In the `//` form, all occurrences are replaced. The `/#` form requires that the match occur at the beginning of the string, and the `/%` form requires the match to occur at the end of the string. In every form, `/<string>` may be omitted, causing the text matched by _pattern_ to be deleted.
+This expansion performs a search-and-replace operation upon the contents of _parameter_. If text is found matching wildcard _pattern_, it is replaced with the contents of _string_. In the normal form, only the first occurrence of _pattern_ is replaced. In the `//` form, all occurrences are replaced. The `/#` form requires that the match occur at the beginning of the string, and the `/%` form requires the match to occur at the end of the string. In every form, `/<string>` may be omitted, causing the text matched by _pattern_ to be deleted.
 
 ### Case conversion
 
@@ -95,12 +95,12 @@ This expansion performs a search-and-replace operation upon the contents of _par
 
 In addition to `declare`, there are four parameter expansions that perform upper/lower-case conversion.
 
-|            format            | result                                                                                                                                    |
-| :--------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| `${<parameter,,<?pattern>}`  | expand the value of _parameter_ into all lowercase. _pattern_ is an optional shell pattern that will limit which character are converted. |
-| `${<parameter>,<?pattern>}`  | expand the value of _parameter_, changing only the first character to lowercase.                                                          |
-| `${<parameter>^^<?pattern>}` | expand the value of _parameter_ into all uppercase letters.                                                                               |
-|  `${<parameter>^<pattern>}`  | expand the value of _parameter_, changing only the first character to uppercase.                                                          |
+|            format            | result                                                                                                                                     |
+| :--------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| `${<parameter>,,<?pattern>}` | expand the value of _parameter_ into all lowercase. _pattern_ is an optional shell pattern that will limit which characters are converted. |
+| `${<parameter>,<?pattern>}`  | expand the value of _parameter_, changing only the first character to lowercase.                                                           |
+| `${<parameter>^^<?pattern>}` | expand the value of _parameter_ into all uppercase letters.                                                                                |
+| `${<parameter>^<?pattern>}`  | expand the value of _parameter_, changing only the first character to uppercase.                                                           |
 
 ## Arithmetic evaluation and expansion
 
@@ -117,7 +117,7 @@ In arithmetic expressions, the shell supports integer constants in any base.
 
 ### Unary operators
 
-There are two unary operator, `+` and `-`, which are used to indicate whether a number is positive or negative, respectively.
+There are two unary operators, `+` and `-`, which are used to indicate whether a number is positive or negative, respectively.
 
 ### Simple arithmetic
 
@@ -137,8 +137,8 @@ There are two unary operator, `+` and `-`, which are used to indicate whether a 
 | `<parameter> += <value>` |        addition         |
 | `<parameter> -= <value>` |       subtraction       |
 | `<parameter> *= <value>` |     multiplication      |
-| `<parameter /= <value>`  |    integer division     |
-| `<paramter> %= <value>`  |         modulo          |
+| `<parameter> /= <value>` |    integer division     |
+| `<parameter> %= <value>` |         modulo          |
 |     `<parameter>++`      | variable post-increment |
 |     `<parameter>--`      | variable post-decrement |
 |     `++<parameter>`      | variable pre-increment  |
@@ -161,19 +161,19 @@ Note that there are also corresponding assignment operators for all but bitwise 
 
 `(( ))` supports the following logic operators:
 
-|           operator           |   description    |
-| :--------------------------: | :--------------: |
-|             `<=`             |                  |
-|             `>=`             |                  |
-|             `<`              |                  |
-|             `>`              |                  |
-|             `==`             |                  |
-|             `!=`             |                  |
-|             `&&`             |                  |
-|             \|\|             |                  |
-| `<expr-1>?<expr-2>:<expr-3>` | ternary operator |
+|           operator           |       description        |
+| :--------------------------: | :----------------------: |
+|             `<=`             |  less than or equal to   |
+|             `>=`             | greater than or equal to |
+|             `<`              |        less than         |
+|             `>`              |       greater than       |
+|             `==`             |         equal to         |
+|             `!=`             |       not equal to       |
+|             `&&`             |       logical AND        |
+|             \|\|             |        logical OR        |
+| `<expr-1>?<expr-2>:<expr-3>` |     ternary operator     |
 
-Performing assignment within the expressions of the ternary operator is not straightforward, those expressions must be surrounded by parentheses.
+Performing assignment within the expressions of the ternary operator is not straightforward: those expressions must be surrounded by parentheses.
 
 ## `bc`: an arbitrary precision calculator language
 
@@ -185,7 +185,7 @@ If more complex mathematical calculations are required, `bash` cannot handle the
 
 The copyright message can be suppressed with `-q`.
 
-The ability to take standard input means that we can use **here documents**, **here string** and pipes to pass scripts.
+The ability to take standard input means that we can use here documents, here strings and pipes to pass scripts.
 
 ## Extra credit
 

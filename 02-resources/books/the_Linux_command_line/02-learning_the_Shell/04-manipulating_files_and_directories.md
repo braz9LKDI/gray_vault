@@ -10,7 +10,7 @@ reviewed_on: "2025-06-30"
 
 ## Wildcards
 
-Since the shell uses filenames so much, it provides special characters to help us rapidly specify groups of filenames. These special characters are called **wildcards**. Using wildcards (which is also known as **globbing**) allows us to select filenames based on patterns of characters...
+Since the shell uses filenames so much, it provides special characters to help us rapidly specify groups of filenames. These special characters are called wildcards. Using wildcards (which is also known as globbing) allows us to select filenames based on patterns of characters...
 
 |              wildcard              | meaning                                                     |
 | :--------------------------------: | :---------------------------------------------------------- |
@@ -71,7 +71,7 @@ mv item... <directory> # Move one or more items from one directory to another.
 |    `-f`, `--force`    | ignore nonexistent files and do not prompt.                         |
 |   `-v`, `--verbose`   | display informative messages as the deletion is performed.          |
 
-#### Be carefully with `rm`
+#### Be careful with `rm`
 
 Unix-like operating systems such as Linux do not have an undelete command. Once something is deleted with `rm`, it is gone. Linux assumes the user is smart and knows what they are doing.
 
@@ -110,19 +110,19 @@ When thinking about hard links, it is helpful to imagine that files are made up 
 
 2. The name part that holds the file's name.
 
-When we create hard links, we are actually creating additional name parts that all refer to the same data part. The system assigns a chain of disk blocks to what is called an **inode**, which is then associated with the name part. Each hard link therefore refers to a specific inode containing the file's contents.
+When we create hard links, we are actually creating additional name parts that all refer to the same data part. The system assigns a chain of disk blocks to what is called an inode, which is then associated with the name part. Each hard link therefore refers to a specific inode containing the file's contents.
 
 The `ls` command has a way to reveal this information. It is invoked with the `-i` option (in this version of the listing, the first field is the inode number).
 
 ### Creating symbolic links
 
-Notice that the length of the symbolic link file is the number of characters in the string to the file to which it is pointing (**path**).
+Notice that the length of the symbolic link file is the number of characters in the string to the file to which it is pointing (path).
 
 ```bash
 ln -s file item link
 ```
 
-> The `link`, can be a relative (of the item path) or absolute path.
+> The link can be a relative path (from the link's location) or an absolute path.
 
 ...In most cases, using relative pathnames is more desirable because it allows a directory tree containing symbolic links and their referenced files to be renamed and/or moved without breaking the links.
 

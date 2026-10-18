@@ -8,23 +8,17 @@ reviewed_on: "2024-12-25"
 
 - ...Puede hacernos hiper-alentar por nuestras seducciones favoritas, de tal manera que los deseos inmediatos pesen más de lo que deberían en relación con los deseos a largo plazo. También puede agriar nuestro disfrute de los placeres cotidianos y nuestra capacidad de respuesta a los mismos. Puede llevarnos a buscar una estimulación más extrema. O causar síntomas de abstinencia tan severos que hacen que hasta los más decididos de nosotros salgan corriendo en busca de alivio. También puede alterar nuestro estado de ánimo, nuestra percepción y nuestras prioridades, todo ello sin nuestra conciencia consciente.
 
-- .
-
-    La masturbación/porno puede causar eyaculación precoz especialmente cuando se empieza a hacer desde joven. Quieres llegar al clímax/golpe rápidamente por el miedo a ser atrapado. Así que le enseñas a tu mente que cuando eres duro tu trabajo es correrte rápidamente y no disfrutar de la sensación interina.
+- La masturbación/porno puede causar eyaculación precoz especialmente cuando se empieza a hacer desde joven. Quieres llegar al clímax/golpe rápidamente por el miedo a ser atrapado. Así que le enseñas a tu mente que cuando eres duro tu trabajo es correrte rápidamente y no disfrutar de la sensación interina.
 
     Para otros, la pornografía puede convertirse en un poderoso desencadenante debido a la fuerte asociación entre la pornografía y la eyaculación. Esta respuesta automática de alta excitación es similar a la del perro de Pavlov salivando al sonido de una campana.
 
-- .
-
-    Los cerebros son de plástico. La verdad es que siempre estamos entrenando nuestros cerebros (con o sin nuestra participación consciente). De los innumerables informes se desprende que no es raro que los usuarios de pornografía pasen de un género a otro, llegando a menudo a lugares que les resultan personalmente inquietantes y confusos. ¿Qué podría estar detrás de este fenómeno?
+- Los cerebros son de plástico. La verdad es que siempre estamos entrenando nuestros cerebros (con o sin nuestra participación consciente). De los innumerables informes se desprende que no es raro que los usuarios de pornografía pasen de un género a otro, llegando a menudo a lugares que les resultan personalmente inquietantes y confusos. ¿Qué podría estar detrás de este fenómeno?
 
     Una posibilidad es que el aburrimiento o la habituación se encuentre con el cerebro adolescente en desarrollo. Los adolescentes buscan emociones y se aburren fácilmente. Les encanta la novedad. Cuanto más extraño, mejor. Muchos jóvenes han descrito masturbarse con una mano mientras hacen click en los videos con la otra mano. El porno lésbico se vuelve aburrido, así que prueba el porno de incesto. La novedad y la ansiedad se suceden (ambas aumentan la excitación sexual). Antes de que se dé cuenta, ha llegado al clímax y una nueva asociación comienza a imprimir sus circuitos sexuales.
 
 - Como veremos, la novedad sexual es una forma segura de llamar la atención de su miembro en decadencia. Si una nueva estrella porno no lo hace, intenta una violación en grupo o gore. No, usted no violaría ni desmembraría a nadie, pero ahora puede necesitar un material extremo y una ansiedad subyacente para ponerlo en marcha...
 
-- .
-
-    Los hombres han creído por mucho tiempo que lo que los excita al orgasmo es la evidencia irrefutable de su orientación sexual. Por lo tanto, puede ser especialmente angustiante escalar a través de cambios en los fetiches de la pornografía que, en última instancia, ponen en duda la orientación sexual. Sin embargo, tal escalada a gustos inesperados es sorprendentemente común hoy en día, especialmente entre los jóvenes que crecieron incursionando en los tube sites de "cualquier cosa" desde una edad temprana...
+- Los hombres han creído por mucho tiempo que lo que los excita al orgasmo es la evidencia irrefutable de su orientación sexual. Por lo tanto, puede ser especialmente angustiante escalar a través de cambios en los fetiches de la pornografía que, en última instancia, ponen en duda la orientación sexual. Sin embargo, tal escalada a gustos inesperados es sorprendentemente común hoy en día, especialmente entre los jóvenes que crecieron incursionando en los tube sites de "cualquier cosa" desde una edad temprana...
 
     Peor aún, existe la idea generalizada en Internet de que el porno en Internet permite a los usuarios "descubrir su sexualidad". Algunos jóvenes exploradores audaces buscan industriosamente el material más caliente que pueden encontrar en la creencia de que revela quiénes son sexualmente. No se dan cuenta de que una erección no es la única medida de las proclividades sexuales fundamentales de una persona.
 

@@ -2,9 +2,9 @@
 reviewed_on: 2026-03-30
 ---
 
-The following list includes the modified bindings; the default bindings are not listed here.
-
 # Fortnite controls
+
+The following list includes the modified bindings; the default bindings are not listed here.
 
 ## Battle royale
 
@@ -60,7 +60,7 @@ The following list includes the modified bindings; the default bindings are not 
 
 ### Weapon (save the world)
 
-- Consumible slot: `CTRL`.
+- Consumable slot: `CTRL`.
 
 - Gadget slot 1: `4`.
 
@@ -70,6 +70,6 @@ The following list includes the modified bindings; the default bindings are not 
 
 ### Building (save the world)
 
-- trap picker: `NUMPAD 5`.
+- Trap picker: `NUMPAD 5`.
 
-- repair / upgrade: `t`.
+- Repair / upgrade: `t`.

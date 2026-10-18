@@ -4,11 +4,11 @@ reviewed_on: 2026-02-27
 
 # Solution vs project
 
-A C# "solution" is a container that groups one or more projects so they can be opened, run and managed together. A "project" is the unit that actually produces an output (like an exe or a library) and contains the source code, dependencies and build setting needed to compile.
+A C# "solution" is a container that groups one or more projects so they can be opened, run and managed together. A "project" is the unit that actually produces an output (like an exe or a library) and contains the source code, dependencies and build settings needed to compile.
 
 ## Solution (`.sln`)
 
-The `.sln` file is mainly an organizer and entry point for tooling (especially Visual Studio, but also `dotnet` workflows indirectly). it records which projects belong to the solution and how they are arranged (folders, build configurations and some per-project settings).
+The `.sln` file is mainly an organizer and entry point for tooling (especially Visual Studio, but also `dotnet` workflows indirectly). It records which projects belong to the solution and how they are arranged (folders, build configurations and some per-project settings).
 
 ### Practical implications (solution)
 
@@ -16,7 +16,7 @@ Many projects can be stored inside one solution. The solution allows projects to
 
 ## Project (`.csproj`)
 
-The `.csproj` file defines a single buildable unit. it declares:
+The `.csproj` file defines a single buildable unit. It declares:
 
 - The SDK and target framework(s).
 
@@ -30,4 +30,4 @@ The `.csproj` file defines a single buildable unit. it declares:
 
 ### Practical implications (project)
 
-Build and restore happen at the project level. when `dotnet build` or `dotnet test` is run, projects are what is ultimately built; the solution is just a convenient way to point to multiple projects at once.
+Build and restore happen at the project level. When `dotnet build` or `dotnet test` is run, projects are what is ultimately built; the solution is just a convenient way to point to multiple projects at once.

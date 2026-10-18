@@ -8,7 +8,7 @@ Null handling shows up often with reference types and nullable value types (`T?`
 
 For nullable value types, `HasValue` and `Value` exist, but pattern matching is often clearer.
 
-## `?` and `?[]` null-conditional operator
+## `?.` and `?[]` null-conditional operators
 
 It stops evaluation when the left side is `null` and produces `null` instead of throwing an exception.
 
@@ -40,7 +40,7 @@ It assigns only if the left side is `null`.
 cache ??= new Dictionary<string, string>();
 ```
 
-This is often used fo lazy initialization.
+This is often used for lazy initialization.
 
 ```cs
 List<int>? _items;

@@ -35,18 +35,15 @@ $$
 
     $$
         y = x - 2 \quad m = 1
-
     $$
 
     $$
-
     \begin{align}
         & \frac{ k^2 - 3 k - 1 }{ k + 2 } = -1 \\
         & k^2 - 2 k + 1 = 0 \\
         & (k - 1) (k - 1) = 0 \\
         & k = 1
     \end{align}
-
     $$
 
 ## 2
@@ -110,7 +107,6 @@ Para resolver esto, se va a hacer uso de la [[personal/math/function/vertex_form
         & \frac{ 1 }{ 4 } a = 5 \\
         & a = 20
     \end{align}
-
     $$
 
     $$

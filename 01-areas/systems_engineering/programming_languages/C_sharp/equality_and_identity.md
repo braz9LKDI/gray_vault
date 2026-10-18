@@ -8,7 +8,7 @@ Equality and identity answer different questions. Equality asks whether two valu
 
 ## Identity
 
-It is mainly relevant for [[personal/systems_engineering/programming_languajes/C_sharp/value_types_vs_reference_types#Reference types|reference types]]. When two variables have the same identity, both point to the same object.
+It is mainly relevant for [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Reference types|reference types]]. When two variables have the same identity, both point to the same object.
 
 ```cs
 class Person
@@ -16,9 +16,9 @@ class Person
     public string Name = "";
 }
 
-var a = new person { Name = "ana" };
+var a = new Person { Name = "ana" };
 var b = a;
-var c = new person { Name = "ana" };
+var c = new Person { Name = "ana" };
 
 bool abSameIdentity = object.ReferenceEquals(a, b); // true
 bool acSameIdentity = object.ReferenceEquals(a, c); // false
@@ -26,7 +26,7 @@ bool acSameIdentity = object.ReferenceEquals(a, c); // false
 
 ## Equality
 
-It is mainly relevant for [[personal/systems_engineering/programming_languajes/C_sharp/value_types_vs_reference_types#Value types|value types]]. When two variables have the same content, they are **equal**. Two values can be equal even when their identity is different.
+It is mainly relevant for [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Value types|value types]]. When two variables have the same content, they are equal. Two values can be equal even when their identity is different.
 
 ```cs
 string s1 = "hi";
@@ -62,28 +62,28 @@ bool c = object.ReferenceEquals(o1, o3); // true
 
 - `struct`: usually value-based equality.
 
-- [[personal/systems_engineering/programming_languajes/C_sharp/record_and_record_struct#`record`|`record`]]: reference type with value-based equality.
+- [[01-areas/systems_engineering/programming_languages/C_sharp/record_and_record_struct#`record`|`record`]]: reference type with value-based equality.
 
-- [[personal/systems_engineering/programming_languajes/C_sharp/record_and_record_struct#`record struct`|`record struct`]]: value type with value-based equality.
+- [[01-areas/systems_engineering/programming_languages/C_sharp/record_and_record_struct#`record struct`|`record struct`]]: value type with value-based equality.
 
 - `string`: reference type, but equality compares contents.
 
 ## Hash codes and collections
 
-When equality is customized, `GetHashCode()` must stay consistent with it. Equapl values must produce the same hash code. This matters for collections such as `Dictionary<TKey, TValue>` and `HashSet<T>`.
+When equality is customized, `GetHashCode()` must stay consistent with it. Equal values must produce the same hash code. This matters for collections such as `Dictionary<TKey, TValue>` and `HashSet<T>`.
 
 If equality says two keys are equal, the hash code must agree, or lookups can behave incorrectly.
 
 ```cs
 public sealed class Product(string sku)
 {
-    public string Sku { get; } = sku
+    public string Sku { get; } = sku;
 
     public override bool Equals(object? obj)
-        => obj is product other && sku == other.sku;
+        => obj is Product other && Sku == other.Sku;
 
     public override int GetHashCode()
-        => sku.GetHashCode();
+        => Sku.GetHashCode();
 }
 
 var p1 = new Product("abc");

@@ -16,7 +16,7 @@ Muchos verbos tienen formas irregulares en el pretérito. Algunos de ellos usan 
 
 ## Habla de tecnología, usa verbos frasales
 
-¡Hablemos de los Verbos Frasales!
+¡Hablemos de los verbos frasales!
 
 Algunos verbos están formados por dos palabras. La segunda palabra puede cambiar el significado del verbo completamente.
 
@@ -26,10 +26,10 @@ En algunos verbos de dos palabras, las palabras pueden separarse o quedarse junt
 
 ## Opina sobre música, usa infinitivos y gerundios
 
-¡Hablemos de los Verbos!
+¡Hablemos de los verbos!
 
-Después de "like", "love" and "hate", puedes usar el infinitivo o la forma `ing` del verbo!
+Después de "like", "love" y "hate", ¡puedes usar el infinitivo o la forma `ing` del verbo!
 
 Pero después de algunos verbos como "need" y "want", solo se puede usar el infinitivo.
 
-Después de otros verbos como enjoy, keep, o avoid, ¡solo se puede usar la forma `ing` del segundo verbo!
+Después de otros verbos como "enjoy", "keep" o "avoid", ¡solo se puede usar la forma `ing` del segundo verbo!

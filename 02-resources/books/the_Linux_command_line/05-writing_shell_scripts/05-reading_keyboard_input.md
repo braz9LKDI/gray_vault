@@ -4,7 +4,7 @@ reviewed_on: "2025-07-30"
 
 # Reading keyboard input
 
-## `read` read values from standard input
+## `read`: read values from standard input
 
 It is a built-in command used to read a single line of standard input. This command can be used to read keyboard input or, when redirection is employed, a line of data from a file.
 
@@ -12,26 +12,26 @@ It is a built-in command used to read a single line of standard input. This comm
 read [-OPTIONS] [VARIABLE...]
 ```
 
-`VARIABLE` is the variable(s) used to hold te input value. If no variable name is supplied, the shell variable `REPLY` contains the line of data.
+`VARIABLE` is the variable(s) used to hold the input value. If no variable name is supplied, the shell variable `REPLY` contains the line of data.
 
-If `read` receive fewer than the expected number, the extra variables are empty, while an excessive amount of input results in the final variable containing all of the extra input.
+If `read` receives fewer than the expected number, the extra variables are empty, while an excessive amount of input results in the final variable containing all of the extra input.
 
 | option            | description                                                                                                          |
 | ----------------- | :------------------------------------------------------------------------------------------------------------------- |
 | `-a <array-name>` | assign the input into an array _\<array-name\>_.                                                                     |
 | `-d <delimiter>`  | the first character in the string _delimiter_ is used to indicate the end of input, rather than a newline character. |
 | `-e`              | use Readline to handle input. This permits input editing in the same manner as the command line.                     |
-| `-i <string>`     | use _string_ as a default reply if the user simply press `ENTER`. Requires `-e`.                                     |
-| `-n <n>`          | read _n_ character of input, rather than an entire line.                                                             |
-| `-p <prompt>`     | display a prompt of input using the string _prompt_.                                                                 |
+| `-i <string>`     | use _string_ as a default reply if the user simply presses `ENTER`. Requires `-e`.                                   |
+| `-n <n>`          | read _n_ characters of input, rather than an entire line.                                                            |
+| `-p <prompt>`     | display a prompt for input using the string _prompt_.                                                                |
 | `-r`              | raw mode. Do not interpret backslash characters as escapes.                                                          |
 | `-s`              | silent mode. Do not echo characters to display as they are typed.                                                    |
-| `-t <n>`          | timeout. Terminate the input after _n_ seconds. `read` return a non-zero exit status if an input times out.          |
+| `-t <n>`          | timeout. Terminate the input after _n_ seconds. `read` returns a non-zero exit status if an input times out.         |
 | `-u <fd>`         | use input from file descriptor _fd_, rather than standard input.                                                     |
 
 ### `IFS`
 
-Normally, the shell performs word splitting on the input provided to `read`...This behavior is configured by a shell variable named "IFS" (for internal field separator). The default value of `IFS` contains a space, a tab and a newline character, each of which will separate items from one another.
+Normally, the shell performs word splitting on the input provided to `read`...This behavior is configured by a shell variable named `IFS` (for internal field separator). The default value of `IFS` contains a space, a tab and a newline character, each of which will separate items from one another.
 
 ```bash
 #!/bin/bash
@@ -57,13 +57,13 @@ else
 fi
 ```
 
-`<<<` indicates a **here string**. A here string is like a here document, only shorter, consisting of a single string.
+`<<<` indicates a here string. A here string is like a here document, only shorter, consisting of a single string.
 
-### `read` cannot be piped
+### `read`: cannot be piped
 
-In `bash` (and other shells such `sh`), pipelines creates **subshells**. These are copies of the shell and its environment that are used to execute the command pipeline.
+In `bash` (and other shells such as `sh`), pipelines create subshells. These are copies of the shell and its environment that are used to execute the command pipeline.
 
-Subshell in Unix-like systems create copies of the environment for the process to use while they execute. When the process finished, the copy of the environment is destroyed. This means that a **subshell can never alter the environment of its parent process**. `read` assigns variables, which then become part of the environment.
+Subshells in Unix-like systems create copies of the environment for the process to use while they execute. When the process finishes, the copy of the environment is destroyed. This means that a subshell can never alter the environment of its parent process. `read` assigns variables, which then become part of the environment.
 
 ## Validating input
 
@@ -109,4 +109,4 @@ read -r -p "Enter a single item > "
 
 ## Menus
 
-A common type of interactivity is called **menu-driven**. In menu-driven programs, the user is presented with a list of choices and is asked to choose one.
+A common type of interactivity is called menu-driven. In menu-driven programs, the user is presented with a list of choices and is asked to choose one.

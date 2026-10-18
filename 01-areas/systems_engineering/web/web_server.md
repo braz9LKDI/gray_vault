@@ -10,7 +10,7 @@ It is a server whose main responsibility is to receive HTTP or HTTPS requests an
 
 A web server accepts network connections, interprets HTTP requests and returns responses such as HTML, CSS, JavaScript, images, files or error pages. It is very often the first public layer that receives traffic from clients.
 
-In addition to serving files, a web server commonly handles tasks such as TLS termination, virtual hosts, URL routing, redirects, compression, caching, logging, authentication checks and [[personal/systems_engineering/web/reverse_proxy|reverse proxying] .
+In addition to serving files, a web server commonly handles tasks such as TLS termination, virtual hosts, URL routing, redirects, compression, caching, logging, authentication checks and [[01-areas/systems_engineering/web/reverse_proxy|reverse proxying]].
 
 ## Relation with dynamic applications
 

@@ -12,15 +12,15 @@ How organized the data is and how easily it fits into predefined formats.
 
 ### Structured
 
-Highly organized, stored in rows and columns with a fixed schema. it is easy to query and validate with rules.
+Highly organized, stored in rows and columns with a fixed schema. It is easy to query and validate with rules.
 
 ### Semi-structured
 
-Has some organization through tags or keys, but no rigid table schema. it is flexible but can vary a lot between records.
+Has some organization through tags or keys, but no rigid table schema. It is flexible but can vary a lot between records.
 
 ### Unstructured
 
-No predefined structure. it is rich in content but harder to search, label and analyze without specialized tools.
+No predefined structure. It is rich in content but harder to search, label and analyze without specialized tools.
 
 ## Sensitivity
 
@@ -48,7 +48,7 @@ Where the data comes from and how it was collected.
 
 ### Primary
 
-Collected first-hand for a specific purpose. it can be more relevant, but it costs time and resources.
+Collected first-hand for a specific purpose. It can be more relevant, but it costs time and resources.
 
 ### Secondary
 

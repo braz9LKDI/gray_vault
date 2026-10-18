@@ -16,14 +16,14 @@ A GraphQL schema defines the available types, fields and relationships between p
 
 ## Operations
 
-- `query`: is used to read data.
+- `query`: used to read data.
 
-- `mutation`: is used to change data.
+- `mutation`: used to change data.
 
-- `subscription`: is used to receive real-time updates.
+- `subscription`: used to receive real-time updates.
 
 ## Why it is used
 
 GraphQL is useful when flexible data fetching is needed. Only the requested fields are returned, which helps reduce over-fetching and under-fetching. It is also useful when related data from different parts of the system must be requested in one operation.
 
-> GraphQL is often treated as an alternative to [[01-areas/systems_engineering/web/rest|rest]], but both approaches can coexist in the same system. A GraphQL layer can even be placed in front of existing REST services.
+> GraphQL is often treated as an alternative to [[01-areas/systems_engineering/web/rest|REST]], but both approaches can coexist in the same system. A GraphQL layer can even be placed in front of existing REST services.

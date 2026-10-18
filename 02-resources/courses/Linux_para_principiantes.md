@@ -5,7 +5,7 @@
 - `touch [OPTION]... FILE...`: change file timestamps.
     - `-d` or `--date=STRING`: parse `STRING` and use it instead of the current time.
 
-    > A `FILE` that does not exist is created empty, unless`-c` or `-h` is supplied.
+    > A `FILE` that does not exist is created empty, unless `-c` or `-h` is supplied.
 
 ## ¿Qué son exactamente los comandos?
 
@@ -25,7 +25,7 @@
     6. "SEE ALSO": suggests related commands or resources.
 
     Its most useful options are:
-    - `-f` or `--whatis`: Approximately equivalent to `whatis`. Display a short description from the manual page, if it is available.
+    - `-f` or `--whatis`: approximately equivalent to `whatis`. Display a short description from the manual page, if it is available.
 
     - `-K` or `--global-apropos`: search for text in all manual pages.
 

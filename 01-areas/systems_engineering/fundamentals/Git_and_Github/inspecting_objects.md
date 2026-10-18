@@ -4,7 +4,7 @@ reviewed_on: 2026-09-22
 
 # Inspecting objects
 
-```
+```bash
 git cat-file -t <hash>
 git cat-file -p <hash>
 ```
@@ -13,7 +13,7 @@ The `-t` flag reports the type and `-p` pretty-prints the contents according to 
 
 An abbreviated example of walking from a commit down to a file:
 
-```
+```text
 $ git cat-file -p <commit-hash>
 tree e77071aeb974a61429e31364162a36b73e4fc295
 parent 22d23b03db02115279d2654058c8ce6c36ada4ed

@@ -18,11 +18,11 @@ reviewed_on: "2025-07-20"
 
 ## Simple formatting tools
 
-### `nl` number lines
+### `nl`: number lines
 
-It is rather arcane tool used to perform a simple task. It numbers lines. In its simplest use, it resembles `cat -n`.
+It is a rather arcane tool used to perform a simple task. It numbers lines. In its simplest use, it resembles `cat -n`.
 
-`nl` supports a concept called "logical pages" when numbering. This allows `nl` to reset (start over) the numerical sequence when numbering. Using options, it is possible to set the starting number to a specific value and, to a limited extent, its format. A logical page is further broken down into a **header**, **body** and **footer**. Withing each of these sections, line numbering may be reset and/or be assigned a different style. If `nl` is given multiple files, it treats them as a single stream of text.
+`nl` supports a concept called "logical pages" when numbering. This allows `nl` to reset (start over) the numerical sequence when numbering. Using options, it is possible to set the starting number to a specific value and, to a limited extent, its format. A logical page is further broken down into a header, body and footer. Within each of these sections, line numbering may be reset and/or be assigned a different style. If `nl` is given multiple files, it treats them as a single stream of text.
 
 |  markup  | meaning                       |
 | :------: | :---------------------------- |
@@ -34,7 +34,7 @@ Each of the markup elements must appear alone on its own line. After processing 
 
 |    option     | meaning                                                                                                                                                                                                                                                   |
 | :-----------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `-b <style>`  | set body numbering to _style_, where _style_ is one of the following:<br>`a` = number all lines.<br>`t` = number only non-blank line. This is the default.<br>`n` = none.<br>`<p<regexp>` = number only lines matching basic regular expression _regexp_. |
+| `-b <style>`  | set body numbering to _style_, where _style_ is one of the following:<br>`a` = number all lines.<br>`t` = number only non-blank lines. This is the default.<br>`n` = none.<br>`p<regexp>` = number only lines matching basic regular expression _regexp_. |
 | `-f <style>`  | set footer numbering to _style_. The default is `n` (none).                                                                                                                                                                                               |
 | `-h <style>`  | set header numbering to _style_. The default is `n` (none).                                                                                                                                                                                               |
 |   `-i <n>`    | set numbering increment to _n_. The default is one.                                                                                                                                                                                                       |
@@ -78,41 +78,41 @@ End of report' > distros_nl.sed
 sort -k 1,1 -k 2,2n distros.txt | sed -f distros_nl.sed | nl
 ```
 
-### `fold` wrap each line to a specified length
+### `fold`: wrap each line to a specified length
 
-**Folding** is the process of breaking lines of text at a specified width. Like our other commands, `fold` accepts either one or more text files or standard input.
+Folding is the process of breaking lines of text at a specified width. Like our other commands, `fold` accepts either one or more text files or standard input.
 
 |  option  | meaning                                                                      |
 | :------: | :--------------------------------------------------------------------------- |
 | `-w <n>` | break the input into segments of width _n_.                                  |
 |   `-s`   | break the line at the last available space before the line width is reached. |
 
-### `fmt` a simple text formatter
+### `fmt`: a simple text formatter
 
 It also folds text, plus a lot more. It accepts either files or standard input and performs paragraph formatting on the text stream.
 
 By default, blank lines, spaces between words and indentation are preserved in the output; successive input lines with different indentation are not joined; tabs are expanded on input and introduced on output.
 
-`fmt` prefers breaking lines at the end of a sentence, and tries to avoid line breaks after the first word of a sentence or before the last words of a sentence. A "sequence break" is defined as either the end of a paragraph or a word ending in any of `.?!`, followed by two spaces or end of line, ignoring any intervening parentheses or quotes.
+`fmt` prefers breaking lines at the end of a sentence, and tries to avoid line breaks after the first word of a sentence or before the last words of a sentence. A "sentence break" is defined as either the end of a paragraph or a word ending in any of `.?!`, followed by two spaces or end of line, ignoring any intervening parentheses or quotes.
 
-|    option     | description                                                                                                                                                              |
-| :-----------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|     `-c`      | operate in **crown margin mode**. This preserves the indentation of the first two lines of a paragraph. Subsequent line are aligned with indentation of the second line. |
-| `-p <string>` | format only those lines beginning with the prefix _string_. After formatting, the contents of _string_ are prefixed to each reformatted line.                            |
-|     `-s`      | split-only mode. In this mode, lines will only be split to fit the specified column width. Short lines will not be joined to fill lines.                                 |
-|     `-u`      | perform uniform spacing. This will apply traditional "typewriter-style" formatting to text. This means a single space between words and two spaces between sentences.    |
-|   `-w <n>`    | format text to fit within a column _n_ characters wide.                                                                                                                  |
+|    option     | description                                                                                                                                                           |
+| :-----------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     `-c`      | operate in crown margin mode. This preserves the indentation of the first two lines of a paragraph. Subsequent lines are aligned with indentation of the second line. |
+| `-p <string>` | format only those lines beginning with the prefix _string_. After formatting, the contents of _string_ are prefixed to each reformatted line.                         |
+|     `-s`      | split-only mode. In this mode, lines will only be split to fit the specified column width. Short lines will not be joined to fill lines.                              |
+|     `-u`      | perform uniform spacing. This will apply traditional "typewriter-style" formatting to text. This means a single space between words and two spaces between sentences. |
+|   `-w <n>`    | format text to fit within a column _n_ characters wide.                                                                                                               |
 
-### `pr` format text for printing
+### `pr`: format text for printing
 
-It is used to **paginate** text. When printing text, it is often desirable to separate the pages of output with several lines of whitespace, to provide a top margin a a bottom margin for each page. Further, this whitespace can be used to insert a header and a footer on each page.
+It is used to paginate text. When printing text, it is often desirable to separate the pages of output with several lines of whitespace, to provide a top margin and a bottom margin for each page. Further, this whitespace can be used to insert a header and a footer on each page.
 
 |  option  | meaning                     |
 | :------: | :-------------------------- |
 | `-l <n>` | set the page length to _n_. |
 | `-w <n>` | set the page width to _n_.  |
 
-### `printf` format and print data
+### `printf`: format and print data
 
 It is not used for pipelines (it does not accept standard input) nor does it find frequent application directly on the command line (it is mostly used in scripts).
 
@@ -122,7 +122,7 @@ print f [-v VAR] STRING ARGUMENTS
 
 The formatted result is sent to standard output unless `-v` is specified in which case the formatted result is stored in a variable.
 
-The format string may contain literal text, escape sequences and sequences beginning with `%`, which are called **conversion specifications**.
+The format string may contain literal text, escape sequences and sequences beginning with `%`, which are called conversion specifications.
 
 | specifier | description                                                                      |
 | :-------: | :------------------------------------------------------------------------------- |
@@ -142,17 +142,17 @@ Several option components may be added to the conversion specifier to adjust its
 
 Multiple optional components, when used, must appear in the order specified earlier to be properly interpreted.
 
-| component    | description                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `FLAGS`      | there are five different flags:<br>`#`: use the "alternate format" for output. This varies by data type. For `o` (octal number) conversion, the output is prefixed with `0`. For `x` and `X` (hexadecimal number) conversions, the output is prefixed with `0x` and `0X` respectively.<br>`0`: pad the output with zeros.<br>`-`: left-align the output.<br>``: produce a leading space for positive numbers.<br>`+`: sign positive numbers. |
-| `WIDTH`      | a number specifying the minimum field width.                                                                                                                                                                                                                                                                                                                                                                                                 |
-| `.PRECISION` | for floating numbers, specify the number of digits of precision to be output after the decimal point. For strings conversion, it specifies the number of characters to output.                                                                                                                                                                                                                                                               |
+| component    | description                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `FLAGS`      | there are five different flags:<br>`#`: use the "alternate format" for output. This varies by data type. For `o` (octal number) conversion, the output is prefixed with `0`. For `x` and `X` (hexadecimal number) conversions, the output is prefixed with `0x` and `0X` respectively.<br>`0`: pad the output with zeros.<br>`-`: left-align the output.<br>space: produce a leading space for positive numbers.<br>`+`: sign positive numbers. |
+| `WIDTH`      | a number specifying the minimum field width.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `.PRECISION` | for floating numbers, specify the number of digits of precision to be output after the decimal point. For string conversions, it specifies the number of characters to output.                                                                                                                                                                                                                                                                  |
 
 ## Document formatting systems
 
 ### `groff`
 
-...Most documents today are produced using a word processor that are able to perform both the composition and the layout of a document in a single step. Prior to the advent of the graphical word processor, documents were often produced in a two-step process involving the use of a text editor to perform composition, and a processor, such as `troff`, to apply the formatting.
+...Most documents today are produced using a word processor that is able to perform both the composition and the layout of a document in a single step. Prior to the advent of the graphical word processor, documents were often produced in a two-step process involving the use of a text editor to perform composition, and a processor, such as `troff`, to apply the formatting.
 
 ```bash
 echo "SUSE    10.2    12/07/2006

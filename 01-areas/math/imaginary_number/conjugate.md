@@ -18,14 +18,14 @@ $$
 \begin{align}
     & (a + b i) (\overline{ a + b i }) \\
     & = (a + b i) (a - b i) \\
-    & = a^2 - a b i + a b i - b i^2 \\
+    & = a^2 - a b i + a b i - b^2 i^2 \\
     & = a^2 + b^2
 \end{align}
 $$
 
 ### Linearity
 
-For any two complex numbers, conjugation is distributive over addition, subtraction, multiplication and division:
+For any two complex numbers, conjugation is distributive over addition, subtraction, multiplication and division.
 
 The following properties apply for all complex numbers $z$ and $w$.
 

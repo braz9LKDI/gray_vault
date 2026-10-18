@@ -34,15 +34,15 @@ reviewed_on: 2026-03-30
 
 - Next weapon:
 
-- Previous Weapon:
+- Previous weapon:
 
-- Holster / unholster Weapon:
+- Holster / unholster weapon:
 
 - Select first weapon:
 
-- Select Second Weapon:
+- Select second weapon:
 
-- Select third Weapon:
+- Select third weapon:
 
 - Fists / melee:
 
@@ -86,9 +86,9 @@ reviewed_on: 2026-03-30
 
 - Open journal:
 
-- Open character Tab:
+- Open character tab:
 
-- Open crafting Tab:
+- Open crafting tab:
 
 - Open inventory:
 

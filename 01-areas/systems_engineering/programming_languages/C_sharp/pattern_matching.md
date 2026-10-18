@@ -2,14 +2,14 @@
 reviewed_on: 2026-03-02
 ---
 
-# Patter matching
+# Pattern matching
 
 ## Type
 
-They allow both type check and a variable declaration in one step.
+Type patterns allow a type check and a variable declaration in one step.
 
 ```cs
-object value = getValue();
+object value = GetValue();
 
 if (value is string text)
 {
@@ -17,7 +17,7 @@ if (value is string text)
 }
 ```
 
-Null patterns express null checks in a consistent form
+Null patterns express null checks in a consistent form.
 
 ```cs
 if (value is null)
@@ -34,7 +34,7 @@ if (value is not null)
 Nullable value types can be checked and unwrapped in one step.
 
 ```cs
-int? maybe = getNumber();
+int? maybe = GetNumber();
 
 if (maybe is int n)
 {
@@ -44,7 +44,7 @@ if (maybe is int n)
 
 ## Constant
 
-They match an exact value.
+Constant patterns match an exact value.
 
 ```cs
 if (status is 0)
@@ -55,10 +55,10 @@ if (status is 0)
 
 ## Property
 
-They match based on object properties, without manual null checks when combined with `is not null` or with nested patterns.
+Property patterns match based on object properties, without manual null checks when combined with `is not null` or with nested patterns.
 
 ```cs
-order? order = getOrder();
+Order? order = GetOrder();
 
 if (order is { Customer.Address.City: "bogota" })
 {
@@ -71,7 +71,7 @@ if (order is { Customer.Address.City: "bogota" })
 A `switch` can be used to choose behavior based on patterns.
 
 ```cs
-object value = getValue();
+object value = GetValue();
 
 switch (value)
 {
@@ -96,7 +96,7 @@ default:
 A `switch` expression produces a value and is often used for concise mappings.
 
 ```cs
-object value = getValue();
+object value = GetValue();
 
 string label = value switch
 {

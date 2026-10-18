@@ -223,7 +223,6 @@ Sea $f(x) = \frac{ x^2 }{ x - 2 }$ y $g(x) = \frac{ x^2 - 4 }{ x^2 + 2 }$. Deter
 
     $$
         x \in (\mathbb{ R } - \{2\})
-
     $$
 
 2. $f o f$.

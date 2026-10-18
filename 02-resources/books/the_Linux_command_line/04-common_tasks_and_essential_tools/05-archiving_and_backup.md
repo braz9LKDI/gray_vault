@@ -12,15 +12,15 @@ reviewed_on: "2025-07-06"
 
 - `zip`: package and compress files.
 
-- `rsyinc`: remote file and directory synchronization.
+- `rsync`: remote file and directory synchronization.
 
 ## Compressing files
 
-Data compression is the process of removing **redundancy** from data.
+Data compression is the process of removing redundancy from data.
 
-The **run-length encoding** compression technique works by replacing sequences of the same data value (runs) with a single value and a count. It is one of the most rudimentary compression techniques. Today's techniques are much more advanced and complex, but the basic goal remains the same (get rid of redundant data).
+The run-length encoding compression technique works by replacing sequences of the same data value (runs) with a single value and a count. It is one of the most rudimentary compression techniques. Today's techniques are much more advanced and complex, but the basic goal remains the same (get rid of redundant data).
 
-**Compression algorithms** (the mathematical techniques used to carry out the compression) fall into two general categories.
+Compression algorithms (the mathematical techniques used to carry out the compression) fall into two general categories.
 
 - Lossless: preserves all the data contained in the original. This means that when a file is restored from a compressed version, the restored file is exactly the same as the original, uncompressed version.
 
@@ -83,7 +83,7 @@ All the options (except for `-r`) that we discussed for `gzip` are also supporte
 
 ## Archiving files
 
-A common file-management task often used in conjunction with compression is **archiving**. Archiving is the process of gathering up many files and bundling them together into a single large file...
+A common file-management task often used in conjunction with compression is archiving. Archiving is the process of gathering up many files and bundling them together into a single large file...
 
 ### `tar`
 
@@ -92,7 +92,7 @@ mkdir -p playground/dir-{001..100}
 touch playground/dir-{001..100}/file-{A..Z}
 ```
 
-...Its name, short for **tape archive**, reveals its roots as a tool for making backup tapes...We often see filenames that end with the extension `.tar` or `.tgz`, which indicate a "plain" tar archive and a gzipped archive, respectively. A tar archive can consist of a group of separate files, one or more directory hierarchies, or a mixture of both.
+...Its name, short for tape archive, reveals its roots as a tool for making backup tapes...We often see filenames that end with the extension `.tar` or `.tgz`, which indicate a "plain" tar archive and a gzipped archive, respectively. A tar archive can consist of a group of separate files, one or more directory hierarchies, or a mixture of both.
 
 ```text
 tar MODE[OPTIONS] PATHNAME...
@@ -111,9 +111,9 @@ One option that we are likely to use in all commands is `f` to specify the file 
 
 ...files and directories extracted from archives take on the ownership of the user performing the restoration, rather than the original owner.
 
-Another interesting behavior of `tar` is the way it handles pathname in archives. The default for pathname is relative, rather than absolute. `tar` does this by simply removing any leading slash from the pathname when creating the archive.
+Another interesting behavior of `tar` is the way it handles pathnames in archives. The default for pathnames is relative, rather than absolute. `tar` does this by simply removing any leading slash from the pathname when creating the archive.
 
-By adding the trailing **pathname** to the command, `tar` will restore only the specified file. Multiple pathnames may be specified. The GNU version of `tar` supports wildcards with `--wildcards`.
+By adding the trailing pathname to the command, `tar` will restore only the specified file. Multiple pathnames may be specified. The GNU version of `tar` supports wildcards with `--wildcards`.
 
 `tar` is often used in conjunction with find to produce archives.
 
@@ -129,11 +129,11 @@ find playground -name "file-A" | tar cf - --files-from=- | gzip > playground.tgz
 
 - `-`: tells `tar` to write the archive to standard output instead of a file.
 
-- `--files-from=-` (also be specified as `-T`): tells `tar` to read the list of files to archive from standard input (the list coming from `find`).
+- `--files-from=-` (also specified as `-T`): tells `tar` to read the list of files to archive from standard input (the list coming from `find`).
 
-> The `.tgz` extension is the conventional extension given to gzip-compressed tar files. The extension `.tar.gz` is also used some times.
+> The `.tgz` extension is the conventional extension given to gzip-compressed tar files. The extension `.tar.gz` is also used sometimes.
 
-While we used `gzip` externally to produce our compressed archive in the above example, modern versions of GNU `tar` support both `gzip` and `bzip2` compression directly with the use of the `z` and `j`, respectively.
+While we used `gzip` externally to produce our compressed archive in the above example, modern versions of GNU `tar` support both `gzip` and `bzip2` compression directly with the `z` and `j` options, respectively.
 
 ```bash
 find playground -name "file-A" | tar czf | playground.tgz -T -
@@ -155,7 +155,7 @@ ls
 
 - `tar cf -`: create the archive and send it to standard output.
 
-- `tar xf -`: extract the archive supplied for the standard input.
+- `tar xf -`: extract the archive supplied on standard input.
 
 ### `zip`
 
@@ -195,7 +195,7 @@ find playground -name "file-A" | zip -@ file-A.zip
 ls -l /etc/ | zip ls-etc.zip -
 ```
 
-`unzip` program allows its output to be sent to standard output with `-p`.
+The `unzip` program allows its output to be sent to standard output with `-p`.
 
 ```bash
 unzip -p ls-etc.zip | less
@@ -203,7 +203,7 @@ unzip -p ls-etc.zip | less
 
 ## Synchronizing files and directories
 
-In the Unix-like world, the preferred tool for this task is `rsync`. This program can synchronize both local and remote directories by using the **rsync remote-update protocol**, which allows `rsync` to quickly detect the differences between two directories and perform the minimum amount of copying required to bring them into sync...
+In the Unix-like world, the preferred tool for this task is `rsync`. This program can synchronize both local and remote directories by using the rsync remote-update protocol, which allows `rsync` to quickly detect the differences between two directories and perform the minimum amount of copying required to bring them into sync...
 
 ```text
 rsync OPTIONS SOURCE DESTINATION
@@ -219,9 +219,9 @@ where `SOURCE` and `DESTINATION` are one of the following:
 
 > Either the source or the destination must be a local file. Remote-to-remote copying is not supported.
 
-Three useful options are `-a` for archiving (causes recursion an preservation of file attributes), `-v` (verbose output) and `--delete` (delete files that may have existed at the destination and no longer existed at the source).
+Three useful options are `-a` for archiving (causes recursion and preservation of file attributes), `-v` (verbose output) and `--delete` (delete files that may have existed at the destination and no longer existed at the source).
 
-If we append a trailing `/` to the source directory name, `rsyinc` will copy only the contents of the source directory and note the directory itself.
+If we append a trailing `/` to the source directory name, `rsync` will copy only the contents of the source directory and not the directory itself.
 
 ```bash
 rsync source/ destination
@@ -235,7 +235,7 @@ The first way to do it is with another system that has `rsync` installed, along 
 sudo rsync -av --delete --rsh=ssh /etc /home /usr/local remote-sys:/backup
 ```
 
-The second way is by using an `rsync` server. `rsync` can be configured to run as a daemon and listen to incoming re quests for synchronization...
+The second way is by using an `rsync` server. `rsync` can be configured to run as a daemon and listen to incoming requests for synchronization...
 
 ```bash
 rsync -av delete rsync://archive.linux.duke.edu/ fedora/linux/development/rawhide/Everything/x86_64/os/ fedora-devel

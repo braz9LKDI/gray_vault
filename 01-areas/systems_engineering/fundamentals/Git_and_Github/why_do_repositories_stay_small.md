@@ -4,7 +4,7 @@ reviewed_on: 2026-09-22
 
 # Why do repositories stay small?
 
-Although Git stores a complete snapshot of the tracked files at every commit. This is surprising, since commits are usually presented through diffs, but the diff is computed on demand by comparing two snapshots rather than being the thing that was stored.
+Git stores a complete snapshot of the tracked files at every commit. This is surprising, since commits are usually presented through diffs, but the diff is computed on demand by comparing two snapshots rather than being the thing that was stored.
 
 Two mechanisms keep the object database from growing without bound.
 
@@ -16,4 +16,6 @@ A practical consequence of packing is that `.git/objects/XX/` may look empty eve
 
 ## Related readings
 
--
+- [[01-areas/systems_engineering/fundamentals/git_and_github/object_database|Object database]].
+
+- [[01-areas/systems_engineering/fundamentals/git_and_github/object_types|Object types]].

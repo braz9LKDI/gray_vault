@@ -24,7 +24,7 @@ The problem with this approach is that it lends itself to repetitive and unmaint
 
 > Imagine having to update the function definition: all the objects must be modified.
 
-## `prototype` And `__proto__`
+## `prototype` and `__proto__`
 
 ```javascript
 class Person {
@@ -46,11 +46,11 @@ Person.prototype.talk = function () {
 
 Now, with this approach, we can modify the function definition in all objects by modifying the prototype.
 
-> Class syntax is just another way of referring to prototype inheritance (**syntatic sugar**).
+> Class syntax is just another way of referring to prototype inheritance (syntactic sugar).
 
 ## Objects and prototypal inheritance
 
-What JavaScript is doing under is this:
+What JavaScript is doing under the hood is this:
 
 ```javascript
 function Person() {}

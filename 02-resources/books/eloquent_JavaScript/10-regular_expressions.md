@@ -34,17 +34,17 @@ In a regular expression, putting a set of characters between square brackets mak
 
 A number of common character groups have their own built-in shortcuts.
 
-|      |                         meaning                         |
-| :--: | :-----------------------------------------------------: |
-| `\d` |                         digit.                          |
-| `\w` |                      alphanumeric.                      |
-| `\s` | whitespace character (space, tab, newline and similar). |
-| `\D` |                      not a digit.                       |
-| `\W` |                    nonalphanumeric.                     |
-| `\S` |                     nonwhitespace.                      |
-| `.`  |            any character except for newline.            |
+| shortcut |                         meaning                         |
+| :------: | :-----------------------------------------------------: |
+|   `\d`   |                         digit.                          |
+|   `\w`   |                      alphanumeric.                      |
+|   `\s`   | whitespace character (space, tab, newline and similar). |
+|   `\D`   |                      not a digit.                       |
+|   `\W`   |                    nonalphanumeric.                     |
+|   `\S`   |                     nonwhitespace.                      |
+|   `.`    |            any character except for newline.            |
 
-To **invert** a set of characters (that is, to match any character except the ones in the set) a caret (`^`) character can be written after the opening bracket.
+To invert a set of characters (that is, to match any character except the ones in the set) a caret (`^`) character can be written after the opening bracket.
 
 ## International characters
 
@@ -82,15 +82,15 @@ Timestamps are stored as the number of milliseconds since the start of 1970, in 
 
 ## Boundaries and look-ahead
 
-There is also a `\b` marker that matches **word boundaries**, positions that have a word character on one side, and a nonword character on the other. Unfortunately, these use the same simplistic concept of word characters as \w and are therefore not very reliable.
+There is also a `\b` marker that matches word boundaries, positions that have a word character on one side, and a nonword character on the other. Unfortunately, these use the same simplistic concept of word characters as `\w` and are therefore not very reliable.
 
 Note that these boundary markers do not match any actual characters. They just enforce that a given condition holds at the place where it appears in the pattern.
 
-**Look-ahead** tests do something similar. They provide a pattern and will make the match fail if the input does not match that pattern, but they do not actually move the match position forward. They are written between (`?=` and `?!`).
+Look-ahead tests do something similar. They provide a pattern and will make the match fail if the input does not match that pattern, but they do not actually move the match position forward. They are written as `(?=...)` and `(?!...)`.
 
 - `?=`: matches a group after the main expression without including it in the result.
 
-- `?!`: specifies a group that can not match after the main expresion (if it matches, the result is discared).
+- `?!`: specifies a group that cannot match after the main expression (if it matches, the result is discarded).
 
 ```javascript
 console.log(/a(?=e)/.exec("braeburn")); // ["a"]
@@ -107,7 +107,7 @@ It is possible to write regular expressions that will do a lot of backtracking. 
 
 ## The replace method
 
-The real power of using regular expressions with replace comes from the fact that we can refer to matched groups in the replacement string....
+The real power of using regular expressions with `replace` comes from the fact that we can refer to matched groups in the replacement string...
 
 ```javascript
 console.log(
@@ -125,7 +125,7 @@ console.log(
 
 ## Greed
 
-We say the repetition operators (`+`, `*`, `?` and `{}`) are **greedy**, meaning they match as much as they can and backtrack from there. If a question mark is put after them (`+?`, `*?`, `??`, `{}?`), they become nongreedy and start by matching as little as possible, matching more only when the remaining pattern does not fit the smaller match.
+We say the repetition operators (`+`, `*`, `?` and `{}`) are greedy, meaning they match as much as they can and backtrack from there. If a question mark is put after them (`+?`, `*?`, `??`, `{}?`), they become nongreedy and start by matching as little as possible, matching more only when the remaining pattern does not fit the smaller match.
 
 ## The `lastIndex` property
 
@@ -168,7 +168,7 @@ The exact rules for the INI format are as follows:
 
 ## Code units and characters
 
-Another design mistake that is been standardized in JavaScript regular expressions is that by default, operators like `.` or `?` work on code units..., not actual characters. This means characters that are composed of two code units behave strangely.
+Another design mistake that has been standardized in JavaScript regular expressions is that by default, operators like `.` or `?` work on code units..., not actual characters. This means characters that are composed of two code units behave strangely.
 
 The `u` (Unicode) option must be added to the regular expression to make it treat such characters properly.
 

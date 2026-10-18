@@ -1,3 +1,5 @@
 ---
 reviewed_on: 2026-05-01
 ---
+
+# Class diagram with Mermaid

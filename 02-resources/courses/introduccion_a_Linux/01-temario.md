@@ -6,7 +6,7 @@
 
 - `grep [OPTION...] PATTERNS [FILE...]`: grep searches for `PATTERNS` in each FILE. `PATTERNS` is one or more patterns separated by newline characters, and grep prints each line that matches a pattern.
 
-- `/etc/groups`: defines the groups in the system. There is one entry per line, with the following format:
+- `/etc/group`: defines the groups in the system. There is one entry per line, with the following format:
 
     ```bash
       group_name:password:GID:user_list
@@ -34,7 +34,7 @@
 
     - `GID`: the numeric primary group ID for this user.
 
-        > Additional groups for the user are defined in the system group file (`/etc/groups`).
+        > Additional groups for the user are defined in the system group file (`/etc/group`).
 
     - `GECOS` (General Electric Comprehensive Operating System): is optional and used only for informational purposes.
 
@@ -42,11 +42,11 @@
 
     - `directory`: the user's home directory (the initial directory where the user is placed after logging in).
 
-        > this field is used to set the `HOME`.
+        > This field is used to set the `HOME` environment variable.
 
     - `shell`: program to run at login (if empty, use `/bin/sh`).
 
-        > If set to a nonexistent executable, the user will be unable to login through login.
+        > If set to a nonexistent executable, the user will be unable to log in through `login`.
         >
         > The value in this field is used to set the `SHELL` environment variable.
 
@@ -54,7 +54,7 @@
 
 ## Control del flujo stderr-stdout, operadores y procesos en segundo plano
 
-- `/etc/hots`: is a simple text file that associates IP addresses with hostnames, one line per IP address. For each host, a single line should be present with the following information:
+- `/etc/hosts`: is a simple text file that associates IP addresses with hostnames, one line per IP address. For each host, a single line should be present with the following information:
 
     ```bash
       IP_address canonical_hostname [aliases...]
@@ -68,11 +68,11 @@
 
 - `/dev/null`: data written to this file is discarded.
 
-    > It is used as a **data sink**.
+    > It is used as a data sink.
 
 ### Environment variables
 
-Often referred to as ENVs, are dynamic values that wield significant influence over the behavior of programs and processes in the Linux operating system.
+Often referred to as ENVs, they are dynamic values that influence the behavior of programs and processes in the Linux operating system.
 
 - `$?`: is used to store the exit status of the last command executed in a shell script or a terminal. The exit status is a number between 0 and 255 that indicates whether the command was completed successfully or failed.
 
@@ -80,7 +80,7 @@ Often referred to as ENVs, are dynamic values that wield significant influence o
 
 ### Bash redirections
 
-Are a way of manipulating the input and output of commands in a shell script or a terminal. By default, a command takes input from the keyboard and outputs it to the screen, but redirections allow changing the source and destination of the data.
+They are a way of manipulating the input and output of commands in a shell script or a terminal. By default, a command takes input from the keyboard and outputs it to the screen, but redirections allow changing the source and destination of the data.
 
 - `cmd > file`: redirects the standard output (stdout) of `cmd` to `file`.
 
@@ -96,7 +96,7 @@ Are a way of manipulating the input and output of commands in a shell script or 
 
 ## Descriptores de archivo
 
-Are used to represent open files, sockets, pipes and other input and output streams. A file descriptor is a non-negative integer value that serves as a unique identifier for a file or input/output channel that a process has opened.
+They are used to represent open files, sockets, pipes and other input and output streams. A file descriptor is a non-negative integer value that serves as a unique identifier for a file or input/output channel that a process has opened.
 
 - `exec [command [argument...]]`: shall open, close and/or copy file descriptors as specified by any redirections as part of the command.
 
@@ -168,7 +168,7 @@ user    group   other
 
 - `-`: remove permissions.
 
-- `=` set the permissions to the specified values.
+- `=`: set the permissions to the specified values.
 
 ---
 
@@ -218,7 +218,7 @@ To change the security permissions on files, we use `chmod`, which stands for "c
 
 - `chgrp new_group file.txt`: change the `file.txt` group to the `new_group` group.
 
-- `useradd -m test`: create a user called "test" (with his respectively group) and create his home directory.
+- `useradd -m test`: create a user called "test" (with its respective group) and create its home directory.
 
 ## Notación octal de permisos
 
@@ -233,7 +233,7 @@ To change the security permissions on files, we use `chmod`, which stands for "c
 |   6   |  110   |   `rw-`   |
 |   7   |  111   |   `rwx`   |
 
-Using the octal notations table instead of `r`, `w` and `x`. Each digit octal notation can be used for either of the group `u`, `g`, or `o`. Executing `chmod ugo+rwx file.txt` is equal to `chmod 777 file.txt`.
+The octal notation table can be used instead of `r`, `w` and `x`. Each octal digit sets the permissions of one group: `u`, `g` or `o`. Executing `chmod ugo+rwx file.txt` is equal to `chmod 777 file.txt`.
 
 ## Permisos especiales y atributos de ficheros: sticky bit, `chattr`, `lsattr`, SUID y SGID
 
@@ -265,7 +265,7 @@ When a directory has the sticky bit set, its files can be deleted or renamed onl
 
 ## Capabilities (privilegios especiales)
 
-For the purpose of performing permission checks, traditional UNIX implementations distinguish two categories of processes: privileged processes (whose effective user ID is 0, referred to as superuser or root), and unprivileged processes (whose effective UID is nonzero). Starting with Linux 2.2, Linux divides the privileges traditionally associated with the superuser into distinct units, known as **capabilities**, which can be independently enabled and disabled.
+For the purpose of performing permission checks, traditional UNIX implementations distinguish two categories of processes: privileged processes (whose effective user ID is 0, referred to as superuser or root), and unprivileged processes (whose effective UID is nonzero). Starting with Linux 2.2, Linux divides the privileges traditionally associated with the superuser into distinct units, known as capabilities, which can be independently enabled and disabled.
 
 ---
 
@@ -315,39 +315,39 @@ In Linux/Unix operating system, everything is a file; even directories are files
 
 - Directory files.
 
-- Devices files.
+- Device files.
 
 ![Linux directory structure](02-resources/courses/assets/courses/introduccion_a_linux/01_01-linux_directory_structure.png)
 
 The Linux/Unix file system hierarchy base begins at the root, and everything starts with the root directory.
 
-|   directory   |                                                          description                                                          |
-| :-----------: | :---------------------------------------------------------------------------------------------------------------------------: |
-|    `/bin`     |                                                Binary or executable programs.                                                 |
-|    `/etc`     |                                                  System configuration files.                                                  |
-|    `/home`    |                                     Home directory. It is the default current directory.                                      |
-|    `/opt`     |                                               Optional or third-party software.                                               |
-|    `/tmp`     |                                         Temporary space, typically cleared on reboot.                                         |
-|    `/usr`     |                                                    User-related programs.                                                     |
-|    `/var`     |                                                          Log files.                                                           |
-|    `/boot`    |                     Contains all the boot-related information files and folders such as conf, grub, etc.                      |
-|    `/dev`     |                                   Location of device files such as dev/sda1, dev/sda2, etc.                                   |
-|    `/lib`     |                                         Contains kernel modules and a shared library.                                         |
-| `/lost+found` |                                        Used to find recovered bits of corrupted files.                                        |
-|   `/media`    |                              Contains subdirectories where removable media devices are inserted.                              |
-|    `/mnt`     |                              Contains temporary mount directories for mounting the file system.                               |
-|    `/proc`    |       A virtual and pseudo-file system containing information about running processes with specific process IDs (PIDs).       |
-|    `/run`     |                                                 Stores volatile runtime data.                                                 |
-|    `/sbin`    |                                       Binary executable programs for an administrator.                                        |
-|    `/srv`     |                                      Contains server-specific and server-related files.                                       |
-|    `/sys`     | A virtual file system for modern Linux distributions to store and allows modification of the devices connected to the system. |
+|   directory   |                                                         description                                                          |
+| :-----------: | :--------------------------------------------------------------------------------------------------------------------------: |
+|    `/bin`     |                                                Binary or executable programs.                                                |
+|    `/etc`     |                                                 System configuration files.                                                  |
+|    `/home`    |                                     Home directory. It is the default current directory.                                     |
+|    `/opt`     |                                              Optional or third-party software.                                               |
+|    `/tmp`     |                                        Temporary space, typically cleared on reboot.                                         |
+|    `/usr`     |                                                    User-related programs.                                                    |
+|    `/var`     |                                                          Log files.                                                          |
+|    `/boot`    |                     Contains all the boot-related information files and folders such as conf, grub, etc.                     |
+|    `/dev`     |                                  Location of device files such as dev/sda1, dev/sda2, etc.                                   |
+|    `/lib`     |                                        Contains kernel modules and a shared library.                                         |
+| `/lost+found` |                                       Used to find recovered bits of corrupted files.                                        |
+|   `/media`    |                             Contains subdirectories where removable media devices are inserted.                              |
+|    `/mnt`     |                              Contains temporary mount directories for mounting the file system.                              |
+|    `/proc`    |      A virtual and pseudo-file system containing information about running processes with specific process IDs (PIDs).       |
+|    `/run`     |                                                Stores volatile runtime data.                                                 |
+|    `/sbin`    |                                       Binary executable programs for an administrator.                                       |
+|    `/srv`     |                                      Contains server-specific and server-related files.                                      |
+|    `/sys`     | A virtual file system for modern Linux distributions to store and allow modification of the devices connected to the system. |
 
 ## Búsquedas a nivel de sistema
 
 - `find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]`: search for files in a directory hierarchy.
 
     Some interesting options are:
-    - `-type c`: File is of type "c".
+    - `-type c`: file is of type "c".
         - `f`: regular file.
 
         - `d`: directory.
@@ -358,17 +358,17 @@ The Linux/Unix file system hierarchy base begins at the root, and everything sta
 
     - `-perm mode`: file's permission bits are exactly "mode".
 
-    - `-group gname`: File belongs to group "gname".
+    - `-group gname`: file belongs to group "gname".
 
-        > numeric group ID allowed.
+        > A numeric group ID is allowed.
 
     - `-user uname`: file is owned by user "uname".
 
-        > numeric user ID allowed.
+        > A numeric user ID is allowed.
 
     - `-ls`: list current file in `ls -dils` format on standard output.
 
-    - `! expr`: True if "expr" is false.
+    - `! expr`: true if "expr" is false.
 
         > This character will also usually need protection from interpretation by the shell.
         >
@@ -382,11 +382,11 @@ The Linux/Unix file system hierarchy base begins at the root, and everything sta
 
 Examples of usage:
 
-- `find / -name passwd 2>/dev/null | xargs -ls`: build and execute command lines from standard input.
+- `find / -name passwd 2>/dev/null | xargs ls -l`: list every file named `passwd` in the system.
 
 ## Conexiones SSH
 
-SSH (Secure Shell) is an access credential that is used in the SSH Protocol. In other words, it is a cryptographic network protocol that is used for transferring encrypted data over a network.
+SSH (Secure Shell) is a cryptographic network protocol used for transferring encrypted data over a network. An SSH key is the access credential this protocol uses for authentication.
 
 It always comes in a key pair:
 
@@ -400,7 +400,7 @@ It always comes in a key pair:
 
 ### How does SSH work?
 
-It uses asymmetric ciphers for encryption and decryption. The General procedure is:
+It uses asymmetric ciphers for encryption and decryption. The general procedure is:
 
 1. Public keys from the local computers (system) are passed to the server, which is to be accessed.
 
@@ -416,11 +416,11 @@ It uses asymmetric ciphers for encryption and decryption. The General procedure 
 
 7. SSH creates a route, and all the encrypted data is transferred through it with no security issues.
 
-SSH is key based authentication that is not prone to **brute-force attacks**.
+SSH is key-based authentication that is not prone to brute-force attacks.
 
 ### Bandit level 0
 
-1. `ssh bandit0@bandit.labs.overthewire.org -p 2220`: connect to the machine as the "bandit0".
+1. `ssh bandit0@bandit.labs.overthewire.org -p 2220`: connect to the machine as the user `bandit0`.
 
     > The password for that user is `bandit0`.
 
@@ -468,11 +468,11 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
 ### Bandit level 6
 
-1. `find inhere/ -type f -size 1033c -not -executable| xargs file`: find files that are 1033 bytes in size and are not executable, to see which of those is human readable.
+1. `find inhere/ -type f -size 1033c -not -executable | xargs file`: find files that are 1033 bytes in size and are not executable, to see which of those is human readable.
 
-    > That file is `.file02`.
+    > That file is `.file2`.
 
-2. `cat inhere/maybehere07/.file2`: displays the content of `-file07`.
+2. `cat inhere/maybehere07/.file2`: displays the content of `.file2`.
 
     > The password for `bandit6` is `P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU`.
 
@@ -490,7 +490,7 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
 ### Bandit level 8
 
-1. `cat data.txt | grep millionth`: displays the content of `data.txt` and filter only the lines that contain the word "millionth".
+1. `cat data.txt | grep millionth`: displays the content of `data.txt` and filters only the lines that contain the word "millionth".
 
     > The password for `bandit8` is `TESKZC0XvTetK0S9xNwm25STk5iWrBvP`.
 
@@ -508,13 +508,13 @@ SSH is key based authentication that is not prone to **brute-force attacks**.
 
 ### Bandit level 9
 
-1. `sort data.txt | uniq -u`: sort the lines in data.txt and then filter out only the unique line.
+1. `sort data.txt | uniq -u`: sort the lines in data.txt and then keep only the unique line.
 
     > The password for `bandit9` is `EN632PlfYiZbn3PhVK3XOGSlNInNE00t`.
 
 ## Interpretación de archivos binarios
 
-- `string`: print the sequences of printable characters in files.
+- `strings`: print the sequences of printable characters in files.
     - `[-afovV] [-min-len]`.
 
     - `[-n min-len] [--bytes=min-len]`.
@@ -555,13 +555,13 @@ It is an encoding scheme that converts binary data into text format so that enco
 
     > The password for `bandit11` is `6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM`.
 
-## Cifrado césar y uso de `tr` para la traducción de caracteres
+## Cifrado César y uso de `tr` para la traducción de caracteres
 
 ![`tr` description](01-areas/systems_engineering/linux/useful_commands_for_creating_scripts.md#tr)
 
 ### Bandit level 12
 
-The entire alphabet is `abcdefghijklmnopqrstuvwxyz` translates into `nopqrstuvwxyzabcdefghijklm`.
+The entire alphabet `abcdefghijklmnopqrstuvwxyz` translates into `nopqrstuvwxyzabcdefghijklm`.
 
 1. `tr [A-Za-z] [N-ZA-Mn-za-m] < data.txt`: translates (substitutes) each letter in the range A-Z and a-z according to the ROT13 cipher.
 
@@ -616,9 +616,7 @@ rm {data2,data6}
 
 ## Manejo de pares de claves y conexiones SSH
 
-After creating an ssh key with the command `ssh-keygen`.
-
-2 ways to secure ssh access:
+After creating an SSH key with `ssh-keygen`, there are 2 ways to secure SSH access:
 
 > `systemctl start sshd` to start the ssh daemon.
 
@@ -670,14 +668,14 @@ After creating an ssh key with the command `ssh-keygen`.
 
 ### OpenSSL
 
-is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) network protocols and related cryptography standards required by them.
+It is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) network protocols and related cryptography standards required by them.
 
 - `openssl command [OPTION]...`: OpenSSL command line program.
     - `s_client`: this implements a generic SSL/TLS client which can establish a transparent connection to a remote server speaking SSL/TLS.
 
 ### Bandit level 16
 
-1. `openssl s_client -connect localhost:30001`: connect to the localhost on port 30001 using the Secure Socket Layer (SSL) protocol.
+1. `openssl s_client -connect localhost:30001`: connect to the localhost on port 30001 using the Secure Sockets Layer (SSL) protocol.
 
     > The password for `bandit16` is `JQttfApK4SeyHwDlI9SXGR50qclOAil1`.
 
@@ -689,7 +687,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 1. `mktemp`: create a temporary file to write a script in it.
 
-2. Write a scan scrip in the temporary file.
+2. Write a scan script in the temporary file.
 
     ```bash
     #!/bin/bash
@@ -705,7 +703,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 5. In the previous temporary file, paste the private RSA key content.
 
-6. `ssh -i <temporary-file> bandit16@localhost -p 2220`: uses the private RSA key to establish an SSH connection to the `bandit16` on the localhost via SSH on port 2220.
+6. `ssh -i <temporary-file> bandit17@localhost -p 2220`: uses the private RSA key to establish an SSH connection as `bandit17` on the localhost via SSH on port 2220.
 
 7. `cat /etc/bandit_pass/bandit17`: displays the password for `bandit17`.
 
@@ -725,7 +723,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 ### Bandit level 19
 
-1. `ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"`: connects to the `bandit18` on the specified server, and remotely executes the command `cat readme` to display the content of the readme file.
+1. `ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"`: connects as `bandit18` to the specified server, and remotely executes the command `cat readme` to display the content of the readme file.
 
     > The password for `bandit19` is `awhqfNnAbc1naukrpqDYcF95h7HoMTrC`.
 
@@ -733,7 +731,7 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 ### Bandit level 20
 
-1. `./bandit20-do cat /etc/bandit_pass/bandit20`: executes the setuid `bandit20-do` with the `cat /etc/bandit_pass/bandit20`. The setuid binary runs with the permissions of the owner (in this case, bandit20), which allows reading the password file.
+1. `./bandit20-do cat /etc/bandit_pass/bandit20`: executes the setuid binary `bandit20-do` with `cat /etc/bandit_pass/bandit20`. The setuid binary runs with the permissions of the owner (in this case, bandit20), which allows reading the password file.
 
     > The password for `bandit20` is `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`.
 
@@ -743,13 +741,13 @@ is a cryptography toolkit implementing the Secure Sockets Layer (SSL) and Transp
 
 Having two terminals, in the first one we will have `nc` listening to port 4646 (the port does not matter as long as it is available), and in the other one we will connect to that port using the `suconnect` binary provided.
 
-1. First PC.
-    - `nc -lv localhost 4646`: starts to listenening on port 4646, waiting for incoming connections.
+1. First terminal.
+    - `nc -lv localhost 4646`: starts listening on port 4646, waiting for incoming connections.
 
-2. Second PC.
+2. Second terminal.
     - `./suconnect 4646`: executes the provided `suconnect` binary to connect to the listening port 4646. This creates a secure connection for transferring the password.
 
-3. Fist PC.
+3. First terminal.
     - `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`: the password entered on the first terminal (first PC), which gets transferred securely to the second terminal.
 
 > The password for `bandit21` is `NvEJF7oVjkddltPSrdKEFOllh9V1IBcq`.
@@ -762,20 +760,20 @@ It is a widely used software utility available on Unix-like operating systems th
 
 #### Expressions (Cron)
 
-Provide one way of specifying a schedule.
+They provide one way of specifying a schedule.
 
 ```text
 seconds minutes hours day-of-month month day-of-week year
 ```
 
-Based on the values specified for each of the components above, complex schedules may be created. Special characters used in Cron Expressions:
+Based on the values specified for each of the components above, complex schedules may be created. Special characters used in cron expressions:
 
 | character |                                                                                                             meaning                                                                                                              |
 | :-------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |    `*`    |                                            All. Represents that the schedule should run for every time unit. A `*` in the minute field indicates that the schedule runs every minute.                                            |
 |    `?`    | Any. Represents any arbitrary value. This can be used only in `day-of-month` and `day-of-week` fields. A `?` in `day-of-month` field will not use the `day-of-month` for deciding the schedule, as any value is acceptable here. |
 |    `-`    |                                                                                         Range. Represents a continuous range of values.                                                                                          |
-|    `,`    |                                                                                      Multiple Values. Separates a list of different values.                                                                                      |
+|    `,`    |                                                                                      Multiple values. Separates a list of different values.                                                                                      |
 |    `/`    |                                                                           Increment. Specifies the amount by which to increment the values of a field.                                                                           |
 
 > The `day-of-month` and `day-of-week` fields cannot be specified with the same value simultaneously in the same cron expression. If one of the two values is represented by a `*` the other must be represented by `?`.
@@ -793,12 +791,12 @@ Based on the values specified for each of the components above, complex schedule
 
 2. `cat /usr/bin/cronjob_bandit22.sh`: displays the content of the shell script (`cronjob_bandit22.sh`) referenced in the cron job configuration.
 
-3. `cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`: displays the contents of the file storing the password `bandit22`.
+3. `cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`: displays the contents of the file storing the password for `bandit22`.
 
     > The password for `bandit22` is `WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff`.
 
 - `md5sum [OPTION]... [FILE]...`: compute and check the MD5 message digest.
-    - `-t`: Read in text mode.
+    - `-t`: read in text mode.
 
         > Default.
 
@@ -810,7 +808,7 @@ Based on the values specified for each of the components above, complex schedule
 
 2. `cat /usr/bin/cronjob_bandit23.sh`: displays the content of the shell script (`cronjob_bandit23.sh`) referenced in the cron job configuration.
 
-3. `cat /temp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)`: displays the content of the file described in the `/usr/bin/cronjob_bandit23.sh` script.
+3. `cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)`: displays the content of the file described in the `/usr/bin/cronjob_bandit23.sh` script.
 
 > The password for `bandit23` is `QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G`.
 
@@ -898,7 +896,7 @@ Based on the values specified for each of the components above, complex schedule
           done
         ```
 
-        > This solution will take $10000 * 0,75 = 7500 \; \text{s} = 125 \; \text{m}$.
+        > This solution takes 10000 \* 0.75 = 7500 s, or 125 minutes.
 
     - Indirect.
 
@@ -951,11 +949,11 @@ Based on the values specified for each of the components above, complex schedule
 
 2. `ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220`: uses the `bandit26.sshkey` key to establish an SSH connection to the `bandit26` on the localhost via SSH on port 2220.
 
-3. Minimize the terminal sufficiently to trigger the More pager, which displays a banner.
+3. Minimize the terminal sufficiently to trigger the `more` pager, which displays a banner.
 
-4. `v`: open the editor in More Mode.
+4. `v`: open the editor from `more`.
 
-5. `set shell=/bin/bash`: setting the shell of the user to a Bash shell.
+5. `set shell=/bin/bash`: sets the shell of the user to a Bash shell.
 
 6. `shell`: execute the shell command to spawn a new Bash shell.
 
@@ -965,7 +963,7 @@ Based on the values specified for each of the components above, complex schedule
 
 ### Bandit level 27
 
-1. `./bandit27-do cat /etc/bandit_pass/bandit27`: executes the setuid `bandit27-do` with the `cat /etc/bandit_pass/bandit27`. The setuid binary runs with the permissions of the owner (in this case, bandit27), which allows reading the password file.
+1. `./bandit27-do cat /etc/bandit_pass/bandit27`: executes the setuid binary `bandit27-do` with `cat /etc/bandit_pass/bandit27`. The setuid binary runs with the permissions of the owner (in this case, bandit27), which allows reading the password file.
 
     > The password for `bandit27` is `YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS`.
 
@@ -1003,7 +1001,7 @@ Based on the values specified for each of the components above, complex schedule
 
 4. `git checkout dev`: switches to the dev branch.
 
-5. `cat READMED.md`: displays the content of `README.md`, which contains the password for the next level.
+5. `cat README.md`: displays the content of `README.md`, which contains the password for the next level.
 
     > The password for `bandit30` is `xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS`.
 
@@ -1013,7 +1011,7 @@ Based on the values specified for each of the components above, complex schedule
 
 2. `git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo`: clones the Git repository using the provided URL and credentials.
 
-3. `git tag`: displays all tags in the repository..
+3. `git tag`: displays all tags in the repository.
 
 4. `git show <tag>`: displays the contents of the `<tag>` tag.
 

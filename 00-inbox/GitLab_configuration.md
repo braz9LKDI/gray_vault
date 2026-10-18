@@ -6,7 +6,7 @@ reviewed_on: 2026-07-09
 
 A solid project-level setup is this:
 
-## Protect the `main` and `develop` branch
+## Protect the `main` and `develop` branches
 
 1. Go to "Project" -> "Settings" -> "Repository" -> "Branch rules" -> "Add branch rule".
 
@@ -17,7 +17,7 @@ A solid project-level setup is this:
 
 ## Configure merge request approvals
 
-Required approval rules are a premium/ultimate feature; on GitLab free, approvals are optional and do not block merging.
+Required approval rules are a Premium and Ultimate feature; on GitLab Free, approvals are optional and do not block merging.
 
 1. Go to "Project" -> "Settings" -> "Merge requests" -> "Merge request approvals" -> "Add approval rule".
 
@@ -46,4 +46,4 @@ Required approval rules are a premium/ultimate feature; on GitLab free, approval
 
 ---
 
-To test the merged result before merging, enable merged results pipelines under "Settings" -> "Merge requests" -> "Merge options"; this is premium/ultimate. With third-party controls, GitLab Ultimate also supports external status checks, and merges can be blocked unless those checks pass by enabling "Status checks must succeed".
+To test the merged result before merging, enable merged results pipelines under "Settings" -> "Merge requests" -> "Merge options"; this requires Premium or Ultimate. GitLab Ultimate also supports external status checks from third-party controls; enabling "Status checks must succeed" blocks merges until those checks pass.

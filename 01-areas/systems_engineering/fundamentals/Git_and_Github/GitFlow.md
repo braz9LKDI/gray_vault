@@ -18,13 +18,13 @@ In the Git flow workflow, there are two principal branches and three supporting 
 
 The purpose of the main branch in the Git flow workflow is to contain production-ready code that can be released.
 
-In Git flow, the main branch is created at the start of a project and is maintained throughout the development process. The branch can be tagged at various commits in order to signify different versions or releases of the code, and other branches will be merged into the main branch after they have been sufficiently vetted and tested.
+In Git flow, the main branch is created at the start of a project and is maintained throughout the development process. The branch can be tagged at various commits to mark different versions or releases of the code, and other branches will be merged into the main branch after they have been sufficiently vetted and tested.
 
 ### Develop
 
 The develop branch is created at the start of a project and is maintained throughout the development process, and contains pre-production code with newly developed features that are in the process of being tested.
 
-Newly-created features should be based off the develop branch, and then merged back in when ready for testing.
+New features should be based off the develop branch, and then merged back in when ready for testing.
 
 ## Supporting branches
 
@@ -46,28 +46,30 @@ The base of the hotfix branch should be the main branch and it should be merged 
 
 ## How to use it
 
-1. How to create the repository: `git flow init`.
+1. Repository initialization: `git flow init`.
+
+    This creates the `main` and `develop` branches and sets the prefixes for the supporting branches.
 
 2. Feature creation: `git flow feature start <name>`.
 
-    This will create a new branch based on **develop** and switch to it automatically.
+    This creates a new branch based on `develop` and switch to it automatically.
 
-3. Feature finalization: `git flow feature finish <feature name`.
+3. Feature finalization: `git flow feature finish <feature-name>`.
 
-    This merges the changes from the **feature** branch to **develop** and deletes the feature branch.
+    This merges the changes from the feature branch to `develop` and deletes the feature branch.
 
 4. Release creation: `git flow release start <version>`.
 
-    This creates a new **release** branch from the **develop** branch.
+    This creates a new release branch from `develop`.
 
 5. Release finalization: `git flow release finish <release-version>`.
 
-    This merges the **release** branch to **main** and **develop**, tags the **main** branch and deletes the **release** branch.
+    This merges the release branch to `main` and `develop`, tags `main` and deletes the release branch.
 
 6. Hotfix creation: `git flow hotfix start <version>`.
 
-    This creates a new **hotfix** branch from **main** and switch to it automatically.
+    This creates a new hotfix branch from `main` and switches to it automatically.
 
-7. Hotfix finalization: `git flow finish <hotfix-version>`.
+7. Hotfix finalization: `git flow hotfix finish <version>`.
 
-    This merges the **hotfix** branch to **main** and **develop**, tags the **main** branch and deletes the **hotfix** branch.
+    This merges the hotfix branch to `main` and `develop`, tags `main` and deletes the hotfix branch.

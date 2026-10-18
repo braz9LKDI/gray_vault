@@ -8,13 +8,13 @@ sources:
 
 # Doctest
 
-[[personal/systems_engineering/programming_languajes/Python/docstring|Docstrings]] are used not only for the description of a class or a function to provide a better understanding of the code and its use but, also used for testing purposes. This module finds patterns in the docstring that look like interactive **shell commands**. The input and expected output are included in the docstring, then the doctest module uses this docstring for testing the processed output.
+[[01-areas/systems_engineering/programming_languages/Python/docstring|Docstrings]] are used not only for the description of a class or a function to provide a better understanding of the code and its use but also for testing purposes. This module finds patterns in the docstring that look like interactive shell commands. The input and expected output are included in the docstring, then the doctest module uses this docstring for testing the processed output.
 
 ## How to use `doctest`
 
 1. Import `testmod` from `doctest` to test the function.
 
-2. Define our test function.
+2. Define the function to test.
 
 3. Provide a suitable docstring containing the desired output on certain inputs.
 
@@ -42,18 +42,18 @@ def multiple_test_cases(number):
     This function checks multiple test cases for a given number.
     Define input and expected output:
     >>> multiple_test_cases(0)
-    "Zero"
+    'zero'
     >>> multiple_test_cases(5)
-    "Positive"
+    'positive'
     >>> multiple_test_cases(-5)
-    "Negative"
+    'negative'
     >>> multiple_test_cases(100)
-    "Large positive"
+    'large positive'
     >>> multiple_test_cases(-100)
-    "Large negative"
+    'large negative'
     """
     if number == 0:
-        return "Zero"
+        return "zero"
     elif number > 0:
         if number > 10:
             return "large positive"

@@ -70,9 +70,9 @@
 13. ¿De qué forma puedo indicar que quiero ejecutar una tarea cron a las 02:10 AM, cada 2 días de la semana?
     - `10 2 */2 * *`. Pending.
 
-    - `10 2 * * 1,3,5`.?
+    - `10 2 * * 1,3,5`?
 
-    - `10 2 * * 2,4,6`.?
+    - `10 2 * * 2,4,6`?
 
 14. ¿Qué significa `../`?
     - Representa el directorio padre del directorio de trabajo.
@@ -136,7 +136,7 @@
 
     - `ip6-allnodes`.
 
-26. Estoy perdido en el árbol de directorios, ¿cómo que comando puedo volver a mi "HOME"?
+26. Estoy perdido en el árbol de directorios, ¿con qué comando puedo volver a mi "HOME"?
     - `cd ~`.
 
 27. ¿Se almacenará así el stderr del comando indicado entre paréntesis en el archivo "file"?
@@ -171,7 +171,7 @@
     - El stdout del comando "whoami".
 
 31. Si quiero asignar el permiso 432 en octal a un directorio, ¿cómo quedará finalmente representado el permiso para dicho directorio?
-    - `drw--wx-w-`.
+    - `dr---wx-w-`.
 
 32. ¿Cuál sería la expresión a establecer para una tarea Cron que quiero que se ejecute cada minuto, en el día 10 del mes, cada 2 meses?
     - `* * 10 */2 *`.
@@ -204,7 +204,7 @@
     - `uname -r`.
 
 37. ¿Qué expresión tendré que introducir a continuación para cambiar todas las palabras donde ponga "root" por "user" haciendo uso del comando "sed"?
-    - `sed 's/root/user/g`.
+    - `sed 's/root/user/g'`.
 
 38. ¿Cuál es la forma más rápida para meterme al directorio previamente creado?
 
@@ -289,7 +289,7 @@
 52. ¿Qué comando puedo emplear para conocer el nombre de la máquina en la que estoy conectado?
     - `hostname`.
 
-53. ¿Es el Kernel el núcleo del sistema operativo?
+53. ¿Es el kernel el núcleo del sistema operativo?
     - Verdadero.
 
 54. ¿Qué formas correctas tendríamos en Bash para aplicar una suma entre dos números?

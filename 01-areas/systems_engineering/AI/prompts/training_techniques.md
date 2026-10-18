@@ -14,22 +14,22 @@ Give the model a task without examples; best for simple tasks, well-defined inst
 
 Provide examples before the task; works via pattern imitation; best for formatting consistency, classification tasks and structured outputs.
 
-## Chain-of-thought (COT)
+## Chain-of-thought (CoT)
 
 Explicitly instruct the model to reason step-by-step; encourages intermediate reasoning; best for math, logic and multi-step reasoning.
 
 ## Role
 
-Passing a role or persona; activates relevant behavioral and stylistic patterns; best for tone control, domain-specific responses and professional simulations.
+Give the model a role or persona; activates relevant behavioral and stylistic patterns; best for tone control, domain-specific responses and professional simulations.
 
 ## Instruction framing
 
-Structure instructions clearly using **sections** and **constraints**; reduces ambiguity and increases compliance.
+Structure instructions clearly using sections and constraints; reduces ambiguity and increases compliance.
 
 ## Output structuring
 
 Force a predefined response format; best for APIs, production systems and automation pipelines.
 
-## Framework PPS (person-problem-solution)
+## Person-problem-solution (PPS) framework
 
 A structured way to design prompts that are user-centered and context-aware.

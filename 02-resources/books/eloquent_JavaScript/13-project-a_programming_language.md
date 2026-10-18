@@ -10,7 +10,7 @@ reviewed_on: "2025-10-28"
 
 ## Parsing
 
-The most immediately visible part of a programming language is its **syntax**, or notation. A **parser** is a program that reads a piece of text and produces a data structure that reflects the structure of the program contained in that text...
+The most immediately visible part of a programming language is its syntax, or notation. A parser is a program that reads a piece of text and produces a data structure that reflects the structure of the program contained in that text...
 
 ```javascript
 do(define(x, 10),
@@ -34,13 +34,13 @@ The `>(x, 5)` part of the previous program would be represented like this:
 }
 ```
 
-Such a data structure is called a **syntax tree**. If the objects are imagined as dots and the links between them as lines between those dots, as shown in the following diagram, the structure has a treelike shape. The fact that expressions contain other expressions, which in turn might contain more expressions, is similar to the way tree branches split and split again.
+Such a data structure is called a syntax tree. If the objects are imagined as dots and the links between them as lines between those dots, as shown in the following diagram, the structure has a treelike shape. The fact that expressions contain other expressions, which in turn might contain more expressions, is similar to the way tree branches split and split again.
 
 ![syntax tree example](02-resources/books/eloquent_javascript/assets/13_01-syntax_tree_example.svg)
 
 ## Special forms
 
-The reason we need to represent `if` as a special form rather than a regular function is that all arguments to functions are evaluated before the function is called, whereas `if` should evaluate only **either** its second or its third argument, depending on the value of the first.
+The reason we need to represent `if` as a special form rather than a regular function is that all arguments to functions are evaluated before the function is called, whereas `if` should evaluate only either its second or its third argument, depending on the value of the first.
 
 ## Compilation
 
@@ -50,4 +50,4 @@ Traditionally, compilation involves converting the program to machine code, the 
 
 ## Cheating
 
-...a **domain-specific** language, a language tailored to express a narrow domain of knowledge. Such a language can be more expressive than a general-purpose language because it is designed to describe exactly the things that need to be described in its domain and nothing else.
+...a domain-specific language, a language tailored to express a narrow domain of knowledge. Such a language can be more expressive than a general-purpose language because it is designed to describe exactly the things that need to be described in its domain and nothing else.

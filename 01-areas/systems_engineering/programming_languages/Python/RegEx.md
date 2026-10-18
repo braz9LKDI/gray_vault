@@ -8,13 +8,13 @@ sources:
 
 # RegEx
 
-It is a powerful tool for matching text based on a pre-defined pattern. It can detect the presence or absence of a text by matching it with a particular pattern, and also can split a pattern into one or more sub-patterns. The Python standard library provides a "re" module for regular expressions.
+It is a powerful tool for matching text based on a predefined pattern. It can detect the presence or absence of a text by matching it with a particular pattern, and also can split a pattern into one or more sub-patterns. The Python standard library provides a "re" module for regular expressions.
 
 ## Raw string notation
 
-Raw string notation (`rtext`) keeps regular expressions sane. Without it, every backslash (`\`) in a regular expression would have to be prefixed with another one to escape it.
+Raw string notation (`r"text"`) keeps regular expressions sane. Without it, every backslash (`\`) in a regular expression would have to be prefixed with another one to escape it.
 
-### Usage example (Raw string notation)
+### Usage example (raw string notation)
 
 ```python
 import re
@@ -43,7 +43,7 @@ Scan through `string` looking for the first location where the `pattern` produce
 re.match(pattern, string, flags=0)
 ```
 
-If zero or more characters at the **beginning** of `string` match `pattern`, return a corresponding `Match` (otherwise, it returns `None`).
+If zero or more characters at the beginning of `string` match `pattern`, return a corresponding `Match` (otherwise, it returns `None`).
 
 ## `re.split`
 

@@ -4,9 +4,9 @@ reviewed_on: "2026-02-19"
 
 # Definition of done
 
-It is a **shared, clear description of the quality required** for a piece of work to be considered complete. In Scrum, it is the **commitment for the [[personal/systems_engineering/fundametals/agile/scrum/artifacts/increment|increment]]**: an increment is only an increment when it **meets the definition of done**.
+It is a shared, clear description of the quality required for a piece of work to be considered complete. In Scrum, it is the commitment for the [[01-areas/systems_engineering/fundamentals/agile/scrum/artifacts/increment|increment]]: an increment is only an increment when it meets the definition of done.
 
-A strong DoD supports Scrum's goal of delivering a **usable increment of value** each Sprint (not "almost done" work).
+A strong DoD supports Scrum's goal of delivering a usable increment of value each sprint (not "almost done" work).
 
 ## Why it matters
 
@@ -24,7 +24,7 @@ A strong DoD supports Scrum's goal of delivering a **usable increment of value**
 
 - Meets agreed acceptance criteria for the item.
 
-- Code is reviewed (peer review / PR approved).
+- Code is reviewed (peer review or approved PR).
 
 - Automated tests pass (unit/integration), and new tests were added where needed.
 
@@ -32,8 +32,8 @@ A strong DoD supports Scrum's goal of delivering a **usable increment of value**
 
 - No critical bugs; known issues are documented and agreed.
 
-- Required documentation updated (user, technical, or release notes).
+- Required documentation updated (user, technical or release notes).
 
-- Security / performance checks completed when relevant.
+- Security and performance checks completed when relevant.
 
-- Ready to release / deploy (or at least in a usable state).
+- Ready to release or deploy (or at least in a usable state).

@@ -26,9 +26,9 @@ The OSI protocol stack is complex, and the TCP and IP protocols are widely used 
 
 ### Common protocol standardization organizations
 
-- IET (Internet Engineering Task Force).
+- IETF (Internet Engineering Task Force).
 
-- IEEE (Institute of Electrical and Electronic Engineers).
+- IEEE (Institute of Electrical and Electronics Engineers).
 
 - ISO (International Organization for Standardization).
 
@@ -36,9 +36,9 @@ The OSI protocol stack is complex, and the TCP and IP protocols are widely used 
 
 It provides interfaces for application software so that applications can use network services. The application layer protocol designates transport layer protocol and ports.
 
-> PDUs (Procces Data Unit) transmitted at the network layer are called **data**.
+> PDUs (protocol data units) transmitted at the application layer are called data.
 
-- HTTP 80 (TCP): HyperText Transfer Protocol, which provides web browsing services.
+- HTTP 80 (TCP): Hypertext Transfer Protocol, which provides web browsing services.
 
 - Telnet 23 (TCP): remote login protocol, which provides remote management services.
 
@@ -46,13 +46,13 @@ It provides interfaces for application software so that applications can use net
 
 - SMTP 25 (TCP): Simple Mail Transfer Protocol, which provides Internet email services.
 
-- TFTP 69 (UDP): Simple File Transfer Protocol, which provides simple file transfer services.
+- TFTP 69 (UDP): Trivial File Transfer Protocol, which provides simple file transfer services.
 
 ### Transport layer
 
-It receives data from an application layer protocol, encapsulates the data with the corresponding transport layer protocol header and helps establish an end-to-end (port-to-port) connection
+It receives data from an application layer protocol, encapsulates the data with the corresponding transport layer protocol header and helps establish an end-to-end (port-to-port) connection.
 
-> PDUs transmitted at the transport layer are called **segments**.
+> PDUs transmitted at the transport layer are called segments.
 
 - TCP: a connection-oriented reliable protocol defined by the IETF in RFC 793.
 
@@ -84,7 +84,7 @@ It receives data from an application layer protocol, encapsulates the data with 
 
 - Urgent: indicates the urgent pointer. The urgent pointer is valid only when the URG flag is set. The Urgent field indicates that the sender transmits data in emergency mode. The urgent pointer indicates the number of urgent data bytes in a segment (urgent data is placed at the beginning of the segment).
 
-- Options: This field is optional.
+- Options: this field is optional.
 
 #### UDP header
 
@@ -98,7 +98,7 @@ It receives data from an application layer protocol, encapsulates the data with 
 
 ### TCP connection setup (three-way handshake)
 
-Before sending data, a TCP-based application needs to establish a connection through three-way handshake.
+Before sending data, a TCP-based application needs to establish a connection through a three-way handshake.
 
 ![three-way handshake example](02-resources/courses/hcia-datacom/assets/02_04-three-way_handshake_example.jpg)
 

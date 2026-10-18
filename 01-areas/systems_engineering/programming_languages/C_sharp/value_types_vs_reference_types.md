@@ -8,11 +8,11 @@ C# splits most types into two broad categories that behave differently in memory
 
 ## Value types
 
-They store their data directly. Assignment copies the value and passing a value type to a method typically copies it (unless `ref`, `in`, or `out` is used). Value types cannot be `null` by default.
+They store their data directly. Assignment copies the value and passing a value type to a method typically copies it (unless `ref`, `in` or `out` is used). Value types cannot be `null` by default.
 
 Common value types include:
 
-- numeric types (`int`, `double`, `decimal`).
+- Numeric types (`int`, `double`, `decimal`).
 
 - `bool`.
 
@@ -32,9 +32,9 @@ Common reference types include:
 
 - `string`.
 
-- arrays.
+- Arrays.
 
-- delegates.
+- Delegates.
 
 ## Equality intuition
 

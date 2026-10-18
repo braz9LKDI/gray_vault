@@ -6,9 +6,9 @@ reviewed_on: "2025-07-25"
 
 ## What are shell scripts?
 
-In the simplest terms, a shell script, is a file containing a series of commands. The shell reads this file and carries out the commands as though they have been entered directly on the command line.
+In the simplest terms, a shell script is a file containing a series of commands. The shell reads this file and carries out the commands as though they have been entered directly on the command line.
 
-The shell is somewhat unique, in that is both a powerful command line interface to the system and a scripting language interpreter...
+The shell is somewhat unique, in that it is both a powerful command line interface to the system and a scripting language interpreter...
 
 ## How to write a shell script
 
@@ -27,7 +27,7 @@ The shell is somewhat unique, in that is both a powerful command line interface 
 # .
 ```
 
-The `#!` character sequence is, in fact, a special construct called a **shebang**. The shebang is used to tell the kernel the name of the interpreter that should be used to execute the script that follows.
+The `#!` character sequence is, in fact, a special construct called a shebang. The shebang is used to tell the kernel the name of the interpreter that should be used to execute the script that follows.
 
 ## Script file location
 
@@ -37,9 +37,9 @@ The `~/bin` directory is a good place to put scripts intended for personal use. 
 
 ## More formatting tricks
 
-### Long options names
+### Long option names
 
-Int the interests of reduced typing, short options are preferred when entering options on the command lines, but when writing scripts, long options can provided readability.
+In the interests of reduced typing, short options are preferred when entering options on the command line, but when writing scripts, long options can provide readability.
 
 ### Indentation and line-continuation
 
@@ -53,8 +53,8 @@ It can be achieved by using line continuations (backslash-linefeed sequences) an
 
 - `:set hlsearch`: turns on search highlighting.
 
-- `:set tabstop=4`: set the number of columns occupied by a tab character to 4.
+- `:set tabstop=4`: sets the number of columns occupied by a tab character to 4.
 
-- `:set autoindent`: turns on "auto indent" feature, this causes `vim` to indent a new line the same amount as the line just typed.
+- `:set autoindent`: turns on the "auto indent" feature, which causes `vim` to indent a new line the same amount as the line just typed.
 
     > To stop indentation, press `CTRL + d`.

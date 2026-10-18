@@ -6,7 +6,7 @@ reviewed_on: "2025-02-19"
 
 ## Statement
 
-Given a set of coin denominations **A** and a target amount **P**, the goal is to determine the **minimum number of coins** required to make the exact amount **P**. Additionally, we need to find which coins (and their counts) achieve this minimum.
+Given a set of coin denominations $A$ and a target amount $P$, the goal is to determine the minimum number of coins required to make the exact amount $P$. The answer also states which coins (and how many of each) achieve this minimum.
 
 ## Input
 

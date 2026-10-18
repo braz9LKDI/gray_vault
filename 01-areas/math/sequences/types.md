@@ -6,10 +6,10 @@ reviewed_on: "2025-02-10"
 
 ## Arithmetic
 
-Is a sequence of numbers such that the difference from any succeeding term to its preceding term remains constant throughout the sequence. The constant difference is called common difference of that arithmetic progression.
+It is a sequence of numbers such that the difference from any succeeding term to its preceding term remains constant throughout the sequence. The constant difference is called common difference of that arithmetic progression.
 
 $$
-a_n = a_1 + n (d - 1)
+a_n = a_1 + (n - 1) d
 $$
 
 - $a_1$: initial term of an arithmetic sequence.
@@ -18,7 +18,7 @@ $$
 
 ### Sum
 
-The sum of the members of a finite arithmetic progression is called an **arithmetic series**.
+The sum of the members of a finite arithmetic progression is called an arithmetic series.
 
 $$
 \begin{align}
@@ -56,11 +56,11 @@ $$
 \end{align}
 $$
 
-[[personal/math/serie/proofs#$ forall{ n } in mathbb{ N } *$ satisfied that $ sum_{ k = 1 } n k = frac{ n (n + 1) }{ 2 }$ (arithmetic series)|Gauss sum]]
+[[01-areas/math/series/proofs#$ forall{ n } in mathbb{ N } *$ satisfied that $ sum_{ k = 1 } n k = frac{ n (n + 1) }{ 2 }$ (arithmetic series)|Gauss sum]]
 
-## Geometric sequence
+## Geometric
 
-Is a sequence of numbers where each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common **ratio**.
+It is a sequence of numbers where each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common ratio.
 
 $$
 a_n = a_1 r^{ n - 1 }

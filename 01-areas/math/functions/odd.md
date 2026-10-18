@@ -16,8 +16,8 @@ For an odd function, if any point $(x,f(x))$ is picked on the graph, the point $
 
 ## Properties
 
-- Addition: if $f(x)$ and $g(x)$ are even functions, then their sum $f(x) + g(x)$ is also odd.
+- Addition: if $f(x)$ and $g(x)$ are odd functions, then their sum $f(x) + g(x)$ is also odd.
 
-- Multiplication: if $f(x)$ and $g(x)$ are even functions, then their product $f(x) * g(x)$ is also odd.
+- Multiplication: if $f(x)$ and $g(x)$ are odd functions, then their product $f(x) * g(x)$ is even.
 
-- Scalar multiplication: if $f(x)$ is even and $k$ is a constant, then $k * f(x)$ is odd.
+- Scalar multiplication: if $f(x)$ is odd and $k$ is a constant, then $k * f(x)$ is odd.

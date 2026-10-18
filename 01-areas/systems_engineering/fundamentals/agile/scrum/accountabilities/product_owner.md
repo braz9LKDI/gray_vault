@@ -4,7 +4,7 @@ reviewed_on: "2026-02-17"
 
 # Product owner
 
-They are accountable for **maximizing the value of the product** and is the **single person responsible for managing the [[personal/systems_engineering/fundametals/agile/scrum/artifacts/product_backlog|product backlog]]**
+They are accountable for maximizing the value of the product and are the single person responsible for managing the [[01-areas/systems_engineering/fundamentals/agile/scrum/artifacts/product_backlog|product backlog]].
 
 ## Responsibilities
 
@@ -16,14 +16,14 @@ They are accountable for **maximizing the value of the product** and is the **si
 
 - Ensuring developers understand items enough to work on them.
 
-The PO decides **priorities and value** (the **what**); developers decide the **how** to deliver work.
+The PO decides priorities and value (the what); developers decide how to deliver the work.
 
 ## How the PO shows up in the Scrum events
 
-- [[personal/systems_engineering/fundametals/agile/scrum/events/sprint_planning|Sprint planning]]: explain the objective and discuss the top product backlog items with the team.
+- [[01-areas/systems_engineering/fundamentals/agile/scrum/events/sprint_planning|Sprint planning]]: explain the objective and discuss the top product backlog items with the team.
 
-- [[personal/systems_engineering/fundametals/agile/scrum/events/daily|Daily]]: optional attendance; it should not be turned it into a status meeting.
+- [[01-areas/systems_engineering/fundamentals/agile/scrum/events/daily|Daily]]: attend optionally, without turning it into a status meeting.
 
-- [[personal/systems_engineering/fundametals/agile/scrum/events/sprint_review|Srint review]]: collaborate with stakeholders and the team, and gather feedback.
+- [[01-areas/systems_engineering/fundamentals/agile/scrum/events/sprint_review|Sprint review]]: collaborate with stakeholders and the team, and gather feedback.
 
-- [[personal/systems_engineering/fundametals/agile/scrum/events/sprint_retrospective|Sprint retrospective]]: participates as part of the Scrum team.
+- [[01-areas/systems_engineering/fundamentals/agile/scrum/events/sprint_retrospective|Sprint retrospective]]: participate as part of the Scrum team.

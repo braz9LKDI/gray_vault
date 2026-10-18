@@ -6,13 +6,13 @@ reviewed_on: "2025-06-30"
 
 ## Understanding the file system tree
 
-Like Windows, a Unix-like operating system such as Linux organizes its files in what is called a **hierarchical directory structure**. This means they are organized in a tree-like pattern of **directories**. The first directory in the file system is called the **root directory**...
+Like Windows, a Unix-like operating system such as Linux organizes its files in what is called a hierarchical directory structure. This means they are organized in a tree-like pattern of directories. The first directory in the file system is called the root directory...
 
 ...unlike Windows, which has a separate file system tree for each storage device, Unix-like systems such as Linux always have a single file system tree, regardless of how many drives or storage devices are attached to the computer...
 
 ## The current working directory
 
-When we first log in to our system (or start a terminal emulator session), our current working directory is set to our **home directory**...
+When we first log in to our system (or start a terminal emulator session), our current working directory is set to our home directory...
 
 ## Changing the current working directory
 
@@ -38,11 +38,11 @@ The `.` notation refers to the working directory, and the `..` notation refers t
 
 ### Some helpful shortcuts
 
-|     shortcut      |                               result                                |
-| :---------------: | :-----------------------------------------------------------------: |
-|       `cd`        |        changes the working directory to the home directory.         |
-|      `cd -`       |  changes the working directory to the previous working directory.   |
-| `cd ~<user-name>` | changes the working directory to the home directory of `user_name`. |
+|     shortcut      |                              result                               |
+| :---------------: | :---------------------------------------------------------------: |
+|       `cd`        |       changes the working directory to the home directory.        |
+|      `cd -`       | changes the working directory to the previous working directory.  |
+| `cd ~<user-name>` | changes the working directory to the home directory of that user. |
 
 ### Important facts about filenames
 

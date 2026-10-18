@@ -6,7 +6,7 @@ reviewed_on: 2026-03-15
 
 ## `try`, `catch` and `finally`
 
-A `try` block contains code that may fail. a `catch` block handles a matching exception. a `finally` block runs whether an exception happened or not, which makes it useful for cleanup work.
+A `try` block contains code that may fail. A `catch` block handles a matching exception. A `finally` block runs whether an exception happened or not, which makes it useful for cleanup work.
 
 ```cs
 try
@@ -24,7 +24,7 @@ finally
 }
 ```
 
-A common pattern is to catch only the exceptions that can actually be handled. if the code cannot recover or translate the error meaningfully, catching only to swallow the problem usually makes debugging harder.
+A common pattern is to catch only the exceptions that can actually be handled. If the code cannot recover or translate the error meaningfully, catching only to swallow the problem usually makes debugging harder.
 
 Different `catch` blocks can be used for different exception types.
 
@@ -44,16 +44,16 @@ catch (UnauthorizedAccessException)
 }
 ```
 
-A general `catch (Exception)` exists, but it should usually be reserved for boundaries such as logging, translating an error, or preventing the whole application from crashing at a top level.
+A general `catch (Exception)` exists, but it should usually be reserved for boundaries such as logging, translating an error or preventing the whole application from crashing at a top level.
 
 ## Rethrowing
 
-Sometimes an exception is caught only to add context or perform logging. when rethrowing the same exception, `throw;` preserves the original stack trace.
+Sometimes an exception is caught only to add context or perform logging. When rethrowing the same exception, `throw;` preserves the original stack trace.
 
 ```cs
 try
 {
-    saveOrder(order);
+    SaveOrder(order);
 }
 catch (Exception)
 {
@@ -86,7 +86,7 @@ This pattern appears less often in modern code because `using` usually handles i
 
 ## `using` and `await using`
 
-`using` is used with objects that implement `IDisposable`. it ensures disposal even if an exception happens, which makes it behave like structured cleanup.
+`using` is used with objects that implement `IDisposable`. It ensures disposal even if an exception happens, which makes it behave like structured cleanup.
 
 ```cs
 using var stream = File.OpenRead(path);
@@ -111,23 +111,23 @@ finally
 }
 ```
 
-`await using` is the async version for types that implement `IAsyncDisposable`. disposal is awaited instead of happening synchronously.
+`await using` is the async version for types that implement `IAsyncDisposable`. Disposal is awaited instead of happening synchronously.
 
 ```cs
-await using var resource = new asyncResource();
-await resource.saveAsync();
+await using var resource = new AsyncResource();
+await resource.SaveAsync();
 ```
 
 The main idea is the same: cleanup happens reliably, even when an exception is thrown.
 
 ## When to throw
 
-Exceptions are usually appropriate when something unexpected, invalid, or impossible for normal flow happens.
+Exceptions are usually appropriate when something unexpected, invalid or impossible for normal flow happens.
 
 Examples include invalid arguments, missing required state, unsupported operations and infrastructure failures such as file or network problems.
 
 ```cs
-public static int divide(int a, int b)
+public static int Divide(int a, int b)
 {
     if (b == 0)
     {
@@ -141,7 +141,7 @@ public static int divide(int a, int b)
 For argument validation, exceptions such as `ArgumentNullException`, `ArgumentException` and `ArgumentOutOfRangeException` are commonly used.
 
 ```cs
-public static void setAge(int age)
+public static void SetAge(int age)
 {
     if (age < 0)
     {
@@ -158,7 +158,7 @@ For example, "user typed a wrong password" or "search returned no rows" is often
 
 Exceptions are usually a poor fit when failure is expected and frequent.
 
-Parsing is a classic example. if invalid input is common, a `Try...` pattern is often better than throwing repeatedly.
+Parsing is a classic example. If invalid input is common, a `Try...` pattern is often better than throwing repeatedly.
 
 ```cs
 if (int.TryParse(text, out int value))
@@ -178,9 +178,9 @@ This avoids using exceptions for ordinary input checking.
 A custom exception is useful when a domain-specific failure should be represented explicitly.
 
 ```cs
-public class insufficientFundsException : Exception
+public class InsufficientFundsException : Exception
 {
-    public insufficientFundsException()
+    public InsufficientFundsException()
         : base("balance is too low for this operation")
     {
     }
@@ -190,23 +190,23 @@ public class insufficientFundsException : Exception
 It can then be thrown from domain logic.
 
 ```cs
-public static void withdraw(decimal balance, decimal amount)
+public static void Withdraw(decimal balance, decimal amount)
 {
     if (amount > balance)
     {
-        throw new insufficientFundsException();
+        throw new InsufficientFundsException();
     }
 }
 ```
 
 Custom exceptions are most useful when the calling code needs to distinguish that specific failure from other failures.
 
-When creating a custom exception, inheriting from `Exception` is the usual starting point. extra constructors or additional data can be added if needed.
+When creating a custom exception, inheriting from `Exception` is the usual starting point. Extra constructors or additional data can be added if needed.
 
 ```cs
-public class orderValidationException : Exception
+public class OrderValidationException : Exception
 {
-    public orderValidationException(string message)
+    public OrderValidationException(string message)
         : base(message)
     {
     }
@@ -219,36 +219,36 @@ In many cases, using an existing framework exception is better than inventing a 
 
 `ArgumentNullException`, `InvalidOperationException`, `NotSupportedException` and `TimeoutException` already communicate common meanings clearly.
 
-A custom exception tends to make more sense when the failure belongs to the application's own domain, such as `paymentDeclinedException` or `orderValidationException`.
+A custom exception tends to make more sense when the failure belongs to the application's own domain, such as `PaymentDeclinedException` or `OrderValidationException`.
 
 ## Result-style patterns
 
-Sometimes an operation can fail, but that failure is part of normal flow rather than an exceptional condition. in those cases, returning a result object can be clearer than throwing.
+Sometimes an operation can fail, but that failure is part of normal flow rather than an exceptional condition. In those cases, returning a result object can be clearer than throwing.
 
 A simple result style might look like this.
 
 ```cs
-public record result(bool isSuccess, string? error);
+public record Result(bool IsSuccess, string? Error);
 
-public static result validateName(string name)
+public static Result ValidateName(string name)
 {
     if (string.IsNullOrWhiteSpace(name))
     {
-        return new result(false, "name is required");
+        return new Result(false, "name is required");
     }
 
-    return new result(true, null);
+    return new Result(true, null);
 }
 ```
 
 Usage then becomes explicit.
 
 ```cs
-var result = validateName(input);
+var result = ValidateName(input);
 
-if (!result.isSuccess)
+if (!result.IsSuccess)
 {
-    Console.WriteLine(result.error);
+    Console.WriteLine(result.Error);
 }
 ```
 
@@ -257,36 +257,36 @@ This style keeps expected failures inside normal control flow.
 A generic version can also carry a value.
 
 ```cs
-public record result<T>(bool isSuccess, T? value, string? error);
+public record Result<T>(bool IsSuccess, T? Value, string? Error);
 
-public static result<int> parsePositiveInt(string text)
+public static Result<int> ParsePositiveInt(string text)
 {
     if (!int.TryParse(text, out int value))
     {
-        return new result<int>(false, default, "not a valid integer");
+        return new Result<int>(false, default, "not a valid integer");
     }
 
     if (value <= 0)
     {
-        return new result<int>(false, default, "must be positive");
+        return new Result<int>(false, default, "must be positive");
     }
 
-    return new result<int>(true, value, null);
+    return new Result<int>(true, value, null);
 }
 ```
 
 Usage:
 
 ```cs
-var result = parsePositiveInt(text);
+var result = ParsePositiveInt(text);
 
-if (result.isSuccess)
+if (result.IsSuccess)
 {
-    Console.WriteLine(result.value);
+    Console.WriteLine(result.Value);
 }
 else
 {
-    Console.WriteLine(result.error);
+    Console.WriteLine(result.Error);
 }
 ```
 
@@ -294,19 +294,19 @@ else
 
 The difference is mostly about what kind of failure is being modeled.
 
-- exceptions fit unexpected or exceptional failures.
+- Exceptions fit unexpected or exceptional failures.
 
-- result values fit expected outcomes such as validation failures, missing search results, or user input problems.
+- Result values fit expected outcomes such as validation failures, missing search results or user input problems.
 
-- exceptions interrupt control flow automatically.
+- Exceptions interrupt control flow automatically.
 
-- result values keep failure visible in the method's return type.
+- Result values keep failure visible in the method's return type.
 
 A useful practical split is this: domain validation and user-facing expected failures often fit result-style code, while programming errors and infrastructure failures often fit exceptions.
 
 ## Common pattern at application boundaries
 
-A common design is to use result-style failures in domain logic and convert truly unexpected failures into exceptions, then handle those exceptions at an outer boundary such as a web endpoint, UI event handler, or background worker.
+A common design is to use result-style failures in domain logic and convert truly unexpected failures into exceptions, then handle those exceptions at an outer boundary such as a web endpoint, UI event handler or background worker.
 
 This keeps the inner logic explicit while still allowing unexpected failures to be logged and handled centrally.
 
@@ -314,6 +314,6 @@ This keeps the inner logic explicit while still allowing unexpected failures to 
 
 `try`, `catch` and `finally` are the core exception-handling tools. `using` and `await using` are structured cleanup tools that are closely related to `finally`.
 
-Exceptions are best for exceptional failures, invalid state and infrastructure problems. custom exceptions are useful when a domain-specific failure needs its own meaning.
+Exceptions are best for exceptional failures, invalid state and infrastructure problems. Custom exceptions are useful when a domain-specific failure needs its own meaning.
 
 When failure is expected and common, a result-style pattern often leads to clearer control flow than throwing exceptions.

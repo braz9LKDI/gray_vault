@@ -4,7 +4,7 @@ reviewed_on: "2025-08-14"
 
 # Arrays
 
-**scalar variables** are variables that contain a single value.
+Scalar variables are variables that contain a single value.
 
 ## What are arrays?
 
@@ -12,7 +12,7 @@ Arrays in `bash` are limited to a single dimension.
 
 ## Creating an array
 
-Array variables are named just like other `bash` variable, and are created automatically when they are accessed.
+Array variables are named just like other `bash` variables, and are created automatically when they are accessed.
 
 ```bash
 a[0]=foo
@@ -148,7 +148,7 @@ mapfile [-OPTIONS] ARRAY
 | `-d <delim>` | use _delim_ to terminate lines rather than a newline.               |
 |   `-n <n>`   | only read _n_ lines.                                                |
 | `-O <start>` | begin assigning array element at index _start_ rather than index 0. |
-| `-s <count>` | skip _n_ lines at the beginning of the file.                        |
+| `-s <count>` | skip _count_ lines at the beginning of the file.                    |
 |     `-t`     | trim trailing delimiter from each line.                             |
 
 ```bash
@@ -181,7 +181,7 @@ done
 
 ### Slicing an array
 
-There is a form of [[02-resources/books/the_linux_command_line/02-learning_the_shell/07-seeing_the_world_as_the_shell_sees_it#Parameter expansion|parameter expansion]] we can use to extract a group of contiguous elements called a **slice** from an array.
+There is a form of [[02-resources/books/the_linux_command_line/02-learning_the_shell/07-seeing_the_world_as_the_shell_sees_it#Parameter expansion|parameter expansion]] we can use to extract a group of contiguous elements called a slice from an array.
 
 ```bash
 ${array[@]:start_index:elements} # This return a new array
@@ -228,11 +228,11 @@ echo ${foo[@]}
 # b c d e f
 ```
 
-Any reference to an array without a subscript refers the element zero of the array.
+Any reference to an array without a subscript refers to element zero of the array.
 
 ## Associative arrays
 
-They use string rather than integers as array indexes thus creating key-value pairs much alike a dictionary or hash table.
+They use strings rather than integers as array indexes, thus creating key-value pairs much like a dictionary or hash table.
 
 Unlike indexed arrays, which are created by merely referencing them, associative arrays must be explicitly created with `declare` using `-A`.
 

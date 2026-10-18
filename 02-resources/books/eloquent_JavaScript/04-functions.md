@@ -22,7 +22,7 @@ if (true) {
 }
 ```
 
-Each scope can "look out" into the scope around it, so `x` is visible inside the block in the example. The exception is when multiple bindings have the same name (in that case, code can see only the **innermost** one)...
+Each scope can "look out" into the scope around it, so `x` is visible inside the block in the example. The exception is when multiple bindings have the same name (in that case, code can see only the innermost one)...
 
 ## Declaration notation
 
@@ -34,19 +34,19 @@ function future() {
 }
 ```
 
-The preceding code works, even though the function is defined **below** the code that uses it. Function declarations are not part of the regular top-to-bottom flow of control. They are conceptually moved to the top of their scope and can be used by all the code in that scope...
+The preceding code works, even though the function is defined below the code that uses it. Function declarations are not part of the regular top-to-bottom flow of control. They are conceptually moved to the top of their scope and can be used by all the code in that scope...
 
 ## Arrow functions
 
-...Instead of the "function" keyword, it uses an arrow (`=>`) made up of an equal sign and a greater-than character...
+...Instead of the `function` keyword, it uses an arrow (`=>`) made up of an equal sign and a greater-than character...
 
-The arrow comes **after** the list of parameters and is followed by the function's body...
+The arrow comes after the list of parameters and is followed by the function's body...
 
 When there is only one parameter name, the parentheses around the parameter list can be omitted. If the body is a single expression, rather than a block in braces, that expression will be returned from the function...
 
 ## The call stack
 
-The place where the computer stores this context is the **call stack**. Every time a function is called, the current context is stored on top of this stack. When a function returns, it removes the top context from the stack and uses that context to continue execution.
+The place where the computer stores this context is the call stack. Every time a function is called, the current context is stored on top of this stack. When a function returns, it removes the top context from the stack and uses that context to continue execution.
 
 ## Optional arguments
 
@@ -56,7 +56,7 @@ If you write an `=` after a parameter, followed by an expression, the value of t
 
 ## Closure
 
-This feature (being able to reference a specific instance of a local binding in an enclosing scope) is called **closure**. A function that references bindings from local scopes around it is called a **closure**...
+This feature (being able to reference a specific instance of a local binding in an enclosing scope) is called closure. A function that references bindings from local scopes around it is called a closure...
 
 ## Recursion
 
@@ -72,4 +72,4 @@ A useful principle is to refrain from adding cleverness unless it is absolutely 
 
 Functions can be roughly divided into those that are called for their side effects and those that are called for their return value (though it is also possible to both have side effects and return a value).
 
-A **pure** function is a specific kind of value-producing function that not only has no side effects, but also does not rely on side effects from other code...A pure function has the pleasant property that, when called with the same arguments, it always produces the same value (and does not do anything else)...
+A pure function is a specific kind of value-producing function that not only has no side effects, but also does not rely on side effects from other code...A pure function has the pleasant property that, when called with the same arguments, it always produces the same value (and does not do anything else)...

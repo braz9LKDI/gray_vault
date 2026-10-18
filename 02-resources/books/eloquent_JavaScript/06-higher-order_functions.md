@@ -8,7 +8,7 @@ reviewed_on: "2025-09-06"
 
 ---
 
-A large program is a costly program, and not just because of the time it takes to build. Size almost always involves complexity, and complexity confuses programmers. Confused programmers, in turn, introduce mistakes (**bugs**) into programs. A large program then provides a lot of space for these bugs to hide, making them hard to find.
+A large program is a costly program, and not just because of the time it takes to build. Size almost always involves complexity, and complexity confuses programmers. Confused programmers, in turn, introduce mistakes (bugs) into programs. A large program then provides a lot of space for these bugs to hide, making them hard to find.
 
 ## Abstraction
 
@@ -18,7 +18,7 @@ It is a useful skill, in programming, to notice when the work is at too low a le
 
 ## Higher-order functions (section)
 
-Functions that operate on other functions, either by taking them as arguments or by returning them, are called **higher-order functions**...The term comes from mathematics, where the distinction between functions and other values is taken more seriously.
+Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions...The term comes from mathematics, where the distinction between functions and other values is taken more seriously.
 
 There is a built-in array method, `forEach`, that provides something like a for/of loop as a higher-order function:
 
@@ -40,11 +40,11 @@ function filter(array, test) {
 }
 ```
 
-Note how `filter`, rather than deleting elements from the existing array, builds up a new array with only the elements that pass the test. This function is **pure**. It does not modify the array it is given.
+Note how `filter`, rather than deleting elements from the existing array, builds up a new array with only the elements that pass the test. This function is pure. It does not modify the array it is given.
 
 ## Transforming with `map`
 
-The `map` transforms an array by applying a function to all of its elements and building a new array from the returned values. The new array will have the same length as the input array, but its content will have been **mapped** to a new form by the provided function.
+The `map` method transforms an array by applying a function to all of its elements and building a new array from the returned values. The new array will have the same length as the input array, but its content will have been mapped to a new form by the provided function.
 
 ```javascript
 function map(array, transform) {
@@ -72,7 +72,7 @@ function reduce(array, combine, start) {
 
 ## Strings and character codes
 
-...JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. A Unicode character code was initially supposed to fit within such a unit (which gives a little over 65,000 characters). When it became clear that was not going to be enough, many people balked at the need to use more memory per character. To address these concerns, UTF-16, the format also used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit but uses a pair of two such units for others.
+...JavaScript strings are encoded as a sequence of 16-bit numbers. These are called code units. A Unicode character code was initially supposed to fit within such a unit (which gives a little over 65,000 characters). When it became clear that was not going to be enough, many people balked at the need to use more memory per character. To address these concerns, UTF-16, the format also used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit but uses a pair of two such units for others.
 
 ## Summary
 

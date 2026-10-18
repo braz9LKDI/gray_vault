@@ -8,16 +8,16 @@ reviewed_on: 2026-06-29
 
 All words are lowercase and separated by underscores.
 
-example: `user_name`.
+Example: `user_name`.
 
 ## Camel case
 
-Capitalize the first letter of each word except the first one.
+The first letter of each word is capitalized, except for the first word.
 
-example: `userName`.
+Example: `userName`.
 
 ## Pascal case
 
-Capitalize the first letter of each word.
+The first letter of each word is capitalized.
 
-example: `UserName`.
+Example: `UserName`.

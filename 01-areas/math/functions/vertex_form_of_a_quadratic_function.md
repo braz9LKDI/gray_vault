@@ -14,7 +14,7 @@ where $(h,k)$ is the vertex of the parabola.
 
 ## From standard form to vertex form
 
-The completion of the square can be used to perform such a transformation.
+Completing the square can be used to perform such a transformation.
 
 $$
 \begin{align}

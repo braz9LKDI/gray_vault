@@ -1,8 +1,8 @@
-# Entity relation diagram with Mermaid
+# Entity relationship diagram with Mermaid
 
 ## Entity definitions
 
-Each entity is defined by its name, typically in uppercase. It can have attributes listed within `{}` in the format type name.
+Each entity is defined by its name, typically in uppercase. It can have attributes listed within `{}` in the format `type name`.
 
 > Data types can be included in the attributes.
 
@@ -14,15 +14,15 @@ Relationships are defined using the following structure:
 <first-entity> [<relationship> <second-entity> : <relationship-label>]
 ```
 
-Relationships can have the following types of cardinality:
+Relationships can have the following types of cardinality, each written as a left or right marker:
 
-- `|` one.
+- `|o` or `o|`: zero or one.
 
-- `o`: zero or one.
+- `||`: exactly one.
 
-- `{`: one or more.
+- `}o` or `o{`: zero or more.
 
-- `}`: zero or more.
+- `}|` or `|{`: one or more.
 
 Solid lines indicate identifying relationships (`|--|`), while dashed lines indicate non-identifying relationships (`|..|`).
 
@@ -31,7 +31,7 @@ Solid lines indicate identifying relationships (`|--|`), while dashed lines indi
 ```mermaid
 erDiagram
     CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
+    ORDER ||--|{ LINE_ITEM : contains
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 
     CUSTOMER {

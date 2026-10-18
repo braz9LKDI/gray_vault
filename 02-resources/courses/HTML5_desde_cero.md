@@ -4,7 +4,7 @@
 
 - IP: identificador numérico de una página web, es único y representa la dirección donde está el ordenador que contiene esa página web.
 
-- Dominio web / URL (Uniform Resources Locator): nombre asociado a la IP que utilizamos para solicitar recursos, en nuestro caso un sitio web.
+- Dominio web / URL (Uniform Resource Locator): nombre asociado a la IP que utilizamos para solicitar recursos, en nuestro caso un sitio web.
 
 - DNS (Domain Name System): servidor cuya principal función es traducir el nombre de dominio a su identificador único.
 
@@ -18,8 +18,7 @@
 
 ## ¿Qué es HTML?
 
-- Es un lenguaje de marcado de hipertexto (Hyper Text Markup Languaje). No es un lenguaje de programación, es un lenguaje de.
-  estructura.
+- Es un lenguaje de marcado de hipertexto (HyperText Markup Language). No es un lenguaje de programación, es un lenguaje de estructura.
 
 - Es la base con la que están creadas todas las páginas web del mundo.
 
@@ -29,9 +28,9 @@
 
 - 1989: inicio de su desarrollo.
 
-- 1991: lanzamiento de la web. Se basa en 3 conceptos: HTTP (Hyper Text Transfer Protocol), HTML (Hyper Text Markup Languaje) y URL (Uniform Resources Locator).
+- 1991: lanzamiento de la web. Se basa en 3 conceptos: HTTP (Hypertext Transfer Protocol), HTML (HyperText Markup Language) y URL (Uniform Resource Locator).
 
-- 1992: lanzamiento de HTML (nació de SMGL. Creado por Tim Bernes Lee).
+- 1992: lanzamiento de HTML (nació de SGML; creado por Tim Berners-Lee).
 
 - 1994: creación de la W3C (consorcio que define los estándares de la web).
 
@@ -49,7 +48,7 @@
 
 - `<section>...</section>`: representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema.
 
-- `<article>...</article>`: representa una composición autocontenida en un documento, una página, una aplicación o en un sitio, que se quiere que sea distribuíble y/o reutilizable de manera independiente.
+- `<article>...</article>`: representa una composición autocontenida en un documento, una página, una aplicación o en un sitio, que se quiere que sea distribuible y/o reutilizable de manera independiente.
 
     > Lo que permite un `<header>` y `<footer>` propios.
 
@@ -59,9 +58,9 @@
 
 ## Elementos de bloque y elementos de línea
 
-- Elementos de bloque: ocupa todo el espacio de su elemento padre (contenedor), creando así un "bloque".
+- Elementos de bloque: ocupan todo el espacio de su elemento padre (contenedor), creando así un "bloque".
 
-- Elementos de línea: ocupa solo el espacio delimitado por las etiquetas que definen el elemento en línea.
+- Elementos de línea: ocupan solo el espacio delimitado por las etiquetas que definen el elemento en línea.
 
 ## Elementos de línea
 
@@ -76,13 +75,13 @@
 
 - `<br>` (line break): produce un salto de línea en el texto (retorno de carro).
 
-- `<wbr>` (word break opportunity): representa una posición dentro del texto donde el explorador puede opcionalmente saltar una línea , aunque sus reglas de salto de línea de otra manera no crearían un salto en esa posición.
+- `<wbr>` (word break opportunity): representa una posición dentro del texto donde el explorador puede opcionalmente saltar una línea, aunque sus reglas de salto de línea de otra manera no crearían un salto en esa posición.
 
     > Por defecto, los `-` representan posiciones con este comportamiento.
 
 - `<time>...</time>`: representa un periodo específico en el tiempo.
 
-- `<i>...</i>` (italic): italica.
+- `<i>...</i>` (italic): cursiva.
 
 - `<b>...</b>` (bold): negrita.
 
@@ -102,7 +101,7 @@ Son valores adicionales que configuran los elementos y/o ajustan su comportamien
 
 ## Atributos globales
 
-- `class=...`: es una lista de las clases del elemento separada por espacios. Las clases permiten a CSS y Javascript seleccionar y acceder a elementos específicos a través de los selectores de clase o funciones como el método `document.getElementsByClassName` del DOM.
+- `class=...`: es una lista de las clases del elemento separada por espacios. Las clases permiten a CSS y JavaScript seleccionar y acceder a elementos específicos a través de los selectores de clase o funciones como el método `document.getElementsByClassName` del DOM.
 
 - `id=<id>`: define un identificador único (ID) el cual no debe repetirse en todo el documento. Su propósito es identificar el elemento al vincularlo (usando un identificador de fragmento), en scripts u hojas de estilo (con CSS).
 
@@ -118,7 +117,7 @@ Son valores adicionales que configuran los elementos y/o ajustan su comportamien
 
 - Enlaces / hipervínculos: nos permiten vincular documentos a otros documentos o recursos, vincular a partes específicas de documentos o hacer que las aplicaciones estén disponibles en una dirección web.
 
-    `<a href=<source>...</a>`.
+    `<a href=<source>>...</a>`.
 
 ## Rutas absolutas y relativas
 
@@ -158,13 +157,13 @@ Supongamos que las URL se invocan desde el documento ubicado en la siguiente URL
 
     El navegador subirá al directorio padre (el directorio que contiene el recurso actual).
 
-    > Se usa el `../` convención de escritura, heredada del mundo del sistema de archivos UNIX.
+    > Se usa la convención de escritura `../`, heredada del mundo del sistema de archivos UNIX.
     >
     > `https://developer.mozilla.org/es/docs/Learn/../CSS/display` o `https://developer.mozilla.org/es/docs/CSS/display`.
 
 ## Atributos de los enlaces
 
-- `target=...`: especifica en donde desplegar la URL enlazada.
+- `target=...`: especifica dónde desplegar la URL enlazada.
     - `_self`: carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.
 
     - `_blank`: carga la URL en un nuevo contexto de navegación. Usualmente, es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.
@@ -235,7 +234,7 @@ Supongamos que las URL se invocan desde el documento ubicado en la siguiente URL
 
 ## Seleccionar columnas
 
-- `<colgroup> ... </colgroup>`: define un grupo de columnas dentro de una tabla.
+- `<colgroup>...</colgroup>`: define un grupo de columnas dentro de una tabla.
     - `span=...`: indica el número de columnas consecutivas que abarca el elemento `<colgroup>`.
 
 ## Más etiquetas importantes de bloque
@@ -265,11 +264,11 @@ Supongamos que las URL se invocan desde el documento ubicado en la siguiente URL
 
 ---
 
-Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampersand (`&`) y termina con un punto y coma (`;`) .
+Una entidad es un conjunto de caracteres ("string") que comienza con un ampersand (`&`) y termina con un punto y coma (`;`).
 
 > Son utilizadas frecuentemente para imprimir en pantalla caracteres reservados (aquellos que serían interpretados como HTML por el navegador) o invisibles (como tabulaciones).
 >
-> En esta [página](https://www.ascii-code.com) se pueden encontrar el HTML **number** y **name** de todos los caracteres.
+> En esta [página](https://www.ascii-code.com) se pueden encontrar el HTML number y name de todos los caracteres.
 
 ## Estructura básica de un formulario
 
@@ -302,7 +301,7 @@ Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampe
 
         - `date`: control para introducir una fecha (año, mes y día, sin hora).
 
-        - `datatime`: control para introducir una fecha y hora (horas, minutos, segundos y fracción de segundo).
+        - `datetime`: control para introducir una fecha y hora (horas, minutos, segundos y fracción de segundo).
 
         - `time`: control para introducir un valor de tiempo sin zona horaria específica.
 
@@ -347,7 +346,7 @@ Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampe
 
             - `max`: 100.
 
-            - `value`: $\frac{ \text{min} + ( \text{max} - \text{min}) }{ 2 }$, o $\text{min}$ si $\text{max}$ es menor que $\text{min}$.
+            - `value`: $\text{min} + \frac{ \text{max} - \text{min} }{ 2 }$, o $\text{min}$ si $\text{max}$ es menor que $\text{min}$.
 
             - `step`: 1.
 
@@ -393,7 +392,7 @@ Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampe
 
 - `<fieldset>...</fieldset>`: permite organizar en grupos los campos de un formulario.
 
-- `<leyend>...</leyend>`: crea un título para un grupo de campos (`<fieldset>`) de un formulario.
+- `<legend>...</legend>`: crea un título para un grupo de campos (`<fieldset>`) de un formulario.
 
 - `<input>`.
     - `type=...`.
@@ -439,7 +438,7 @@ Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampe
 
         > Es ignorado si el atributo type es `hidden`, `range`, `color`, `checkbox`, `radio`, `file`, o de tipo botón (como `button` o `submit`).
 
-    - `disable`: indica que el control no está disponible para interacción.
+    - `disabled`: indica que el control no está disponible para interacción.
 
         > El valor de un control deshabilitado no es enviado con el formulario.
 
@@ -467,7 +466,7 @@ Una **entidad** es un conjunto de caracteres ("string") que comienza con un ampe
 
 Es el que se inserta dentro de una página web, como videos, imágenes o audios, y que se puede reproducir directamente desde el sitio web.
 
-## Imagenes
+## Imágenes
 
 Los formatos de imágenes para web los podemos clasificar en 2 tipos:
 
@@ -485,7 +484,7 @@ Los formatos de imágenes para web los podemos clasificar en 2 tipos:
 
     - gif.
 
-        > Si necesitáis una imagen animada.
+        > Si se necesita una imagen animada.
 
     - webp.
 
@@ -512,11 +511,11 @@ Para cargar una imagen SVG podemos usar la etiqueta `<img>` o también `<svg>`, 
 
 ### DPR (device pixel ratio)
 
-Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CSSo del viewport) de una pantalla.
+Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CSS o del viewport) de una pantalla.
 
 > En PC podemos cambiar nuestro DPR cambiando el zoom del navegador.
 >
-> Para obtener nuestro DPR podemos escribir `deviceViewPort` en la consola (una vez se haya recargado la pagina con el zoom deseado).
+> Para obtener nuestro DPR podemos escribir `window.devicePixelRatio` en la consola (una vez se haya recargado la página con el zoom deseado).
 
 ## Atributo srcset
 
@@ -531,7 +530,7 @@ Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CS
 
             - Densidad del píxel, un positivo decimal seguido directamente de `x`.
 
-            > Solo podemos escoger **uno**.
+            > Solo podemos escoger uno.
 
 ## Etiqueta picture
 
@@ -539,12 +538,12 @@ Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CS
     - `media=...`: permite especificar una media query que el agente de usuario evaluará para seleccionar un elemento `<source>`.
 
 - `<source>`: especifica recursos de medios múltiples para los elementos `<picture>`, `<audio>`, o `<video>`.
-    - [[`srcset=...`|courses.HTML5#59---atributo-srcset]].
+    - [[#Atributo srcset|`srcset=...`]].
 
 ## Etiqueta audio
 
 - `<audio>...</audio>`: se usa para insertar contenido de audio.
-    - `src=..`: la URL del audio.
+    - `src=...`: la URL del audio.
 
     - `autoplay`: el sonido comenzará a reproducirse automáticamente en cuanto sea posible.
 
@@ -559,7 +558,7 @@ Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CS
 ## Etiqueta video
 
 - `<video>...</video>`: se usa para incrustar vídeos.
-    - `src=..`: la URL del video.
+    - `src=...`: la URL del video.
 
     - `autoplay`: el video comenzará a reproducirse automáticamente en cuanto sea posible.
 
@@ -571,7 +570,7 @@ Es la relación entre los píxeles físicos y los píxeles lógicos (píxeles CS
 
     - `loop`: el navegador volverá automáticamente al principio al llegar al final del vídeo.
 
-    - `poster=...`: la URL de la imagen que se mostrara mientras se descarga el vídeo (o no se reproduzca).
+    - `poster=...`: la URL de la imagen que se mostrará mientras se descarga el vídeo (o no se reproduzca).
 
 ## Iframes
 
@@ -608,7 +607,7 @@ Es un icono diminuto que se incluye junto a un sitio web y que se muestra en lug
 
 ### ARIA (Accessible Rich Internet Applications)
 
-es una colección de atributos que definen como realizar contenido y aplicaciones web (especialmente las desarrolladas con JavaScript) más accesibles para las personas con discapacidades.
+Es una colección de atributos que definen cómo hacer contenido y aplicaciones web (especialmente las desarrolladas con JavaScript) más accesibles para las personas con discapacidades.
 
 Complementa HTML para que las interacciones y los widgets que se usan comúnmente en las aplicaciones puedan ser correctamente interpretadas por las tecnologías de asistencia cuando no existe otro mecanismo.
 

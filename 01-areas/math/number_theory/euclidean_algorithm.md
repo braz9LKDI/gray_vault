@@ -32,9 +32,8 @@ $$
     & r_{ n - 2 } = r_{ n - 1 } q_{ n - 1 } + r_n \\
     & r_{ n - 1 } = q_n r_n + 0
 \end{align}
-
 $$
 
 > $r_n$ corresponds to $\operatorname{ GCD }(a,b)$.
 
-From the second-to-last equation, we could work backward to express $r_n$ in terms of $q_0$ and $r_0$.
+Starting from the second-to-last equation and substituting each remainder with the equation above it, $r_n$ can be expressed as a linear combination of $r_0 = a$ and $r_1 = b$. The coefficients of that combination are the integers $s$ and $t$.

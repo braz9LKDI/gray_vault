@@ -18,7 +18,7 @@ reviewed_on: "2025-07-16"
 
 - `tac`: concatenate and print files in reverse.
 
-- `rev`: Reverse lines characterwise.
+- `rev`: reverse lines characterwise.
 
 - `comm`: compare two sorted files line by line.
 
@@ -40,24 +40,24 @@ reviewed_on: "2025-07-16"
 
 #### MS-DOS text vs. Unix text
 
-...Unix and DOS do not define the end of a line the same way in text files. Unix ends a line with a linefeed character (ASCII 10) while MS- DOS and its derivatives use the sequence carriage return (ASCII 13) and linefeed to terminate each line of text.
+...Unix and DOS do not define the end of a line the same way in text files. Unix ends a line with a linefeed character (ASCII 10) while MS-DOS and its derivatives use the sequence carriage return (ASCII 13) and linefeed to terminate each line of text.
 
 - `-n` or `--number`: number all output lines.
 
-- `-s` or `-squeeze-blank`: suppress repeated empty output lines.
+- `-s` or `--squeeze-blank`: suppress repeated empty output lines.
 
 ### `sort`
 
-| option |          long option           | description                                                                                        |
-| :----: | :----------------------------: | :------------------------------------------------------------------------------------------------- |
-|  `-b`  |   `--ignore-leading-blanks`    | by default, sorting is performed on the entire lie, starting with the first character in the line. |
-|  `-f`  |        `--ignore-case`         | make sorting case-insensitive.                                                                     |
-|  `-n`  |        `--numeric-sort`        | perform sorting base on the numeric evaluation of a string.                                        |
-|  `-r`  |          `--reverse`           |                                                                                                    |
-|  `-k`  | `--key=<field-1>,[,<field-2>]` | sort base on a key field located from `<field-1>` to `<field-2>`.                                  |
-|  `-m`  |           `--merge`            | treat each argument as the name of a presorted file.                                               |
-|  `-o`  |     `--output=<filename>`      | send sorted output to `<filename>` rather than standard output.                                    |
-|  `-t`  |   `--field-separator=<char>`   | by default fields are separated by spaces or tabs.                                                 |
+| option |          long option           | description                                                                             |
+| :----: | :----------------------------: | :-------------------------------------------------------------------------------------- |
+|  `-b`  |   `--ignore-leading-blanks`    | ignore leading blanks. By default, sorting starts with the first character in the line. |
+|  `-f`  |        `--ignore-case`         | make sorting case-insensitive.                                                          |
+|  `-n`  |        `--numeric-sort`        | perform sorting based on the numeric evaluation of a string.                            |
+|  `-r`  |          `--reverse`           | reverse the order of the sort.                                                          |
+|  `-k`  | `--key=<field-1>,[,<field-2>]` | sort based on a key field located from `<field-1>` to `<field-2>`.                      |
+|  `-m`  |           `--merge`            | treat each argument as the name of a presorted file.                                    |
+|  `-o`  |     `--output=<filename>`      | send sorted output to `<filename>` rather than standard output.                         |
+|  `-t`  |   `--field-separator=<char>`   | set the field separator. By default, fields are separated by spaces or tabs.            |
 
 ```bash
 du -s /usr/share | sort -nr | head
@@ -93,9 +93,9 @@ To sort correctly, the `-k` option should be specified to perform an alphabetic 
 sort --key=1,1 --key=2n, distros.txt
 ```
 
-We still faced the issue of sorting the last field (dates). On computers, dates are usually formatted in `YYYY-MM-DD` order to make chronological sorting easy, but ours are in the American format of `MM/DD/YYYY`.
+We still face the issue of sorting the last field (dates). On computers, dates are usually formatted in `YYYY-MM-DD` order to make chronological sorting easy, but ours are in the American format of `MM/DD/YYYY`.
 
-Fortunately, `sort` provides a way to specify **offsets** withing fields.
+Fortunately, `sort` provides a way to specify offsets within fields.
 
 ```bash
 sort -k 3.7nbr -k 3.1nbr -k 3.4nbr distros.txt
@@ -111,14 +111,14 @@ When given a sorted file (or standard input), it removes any duplicate lines and
 
 `uniq` only removes duplicate lines that are adjacent to each other.
 
-|  option  |     long option     | description                                                                                                            |
-| :------: | :-----------------: | :--------------------------------------------------------------------------------------------------------------------- |
-|   `-c`   |      `--count`      | output a list of duplicate lines preceded by the number of time the line occurs.                                       |
-|   `-d`   |    `--repeated`     | output only repeated lines, rather than unique lines.                                                                  |
-| `-f <n>` | `--skip-fileds=<n>` | ignore _n_ leading fields in each file. Unlike `sort`, `uniq` has no option for setting an alternate fields separator. |
-|   `-i`   |   `--ignore-case`   |                                                                                                                        |
-| `-s <n>` | `--skip-chars=<n>`  | skip (ignore) the leading _n_ characters of each line.                                                                 |
-|   `-u`   |     `--unique`      | output only unique lines.                                                                                              |
+|  option  |     long option     | description                                                                                                           |
+| :------: | :-----------------: | :-------------------------------------------------------------------------------------------------------------------- |
+|   `-c`   |      `--count`      | output a list of duplicate lines preceded by the number of times the line occurs.                                     |
+|   `-d`   |    `--repeated`     | output only repeated lines, rather than unique lines.                                                                 |
+| `-f <n>` | `--skip-fields=<n>` | ignore _n_ leading fields in each file. Unlike `sort`, `uniq` has no option for setting an alternate field separator. |
+|   `-i`   |   `--ignore-case`   | ignore case when comparing lines.                                                                                     |
+| `-s <n>` | `--skip-chars=<n>`  | skip (ignore) the leading _n_ characters of each line.                                                                |
+|   `-u`   |     `--unique`      | output only unique lines.                                                                                             |
 
 ## Slicing and dicing
 
@@ -129,7 +129,7 @@ It is used to extract a section of text from a line and output the extracted sec
 |   option    |      long option      | description                                                                                                                           |
 | :---------: | :-------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
 | `-c <list>` | `--characters=<list>` | extract the portion of the line defined by _list_. The list may consist of one or more comma-separated numerical ranges.              |
-| `-f <list>` |   `--fields=<list>`   | extract one or more fields from the line as defined by _list_. The list may contain one or more fields ranges separated by commas.    |
+| `-f <list>` |   `--fields=<list>`   | extract one or more fields from the line as defined by _list_. The list may contain one or more field ranges separated by commas.     |
 | `-d <char>` | `--delimiter=<char>`  | when `-f` is specified, use _char_ as the field delimiting character. By default, fields must be separated by a single tab character. |
 |             |    `--complement`     | extract the entire line of text, except for those portions specified by `-c` and/or `-f`.                                             |
 
@@ -166,7 +166,7 @@ cut -d ':' -f 1 /etc/passwd | head
 
 ### `paste`
 
-It does the opposite of `cut`. Rather than extracting a column of text from a column of text from a file, it add one or more columns of text to a file. It does this by reading multiple files and combining the files found in each file into a single stream.
+It does the opposite of `cut`. Rather than extracting a column of text from a file, it adds one or more columns of text to a file. It does this by reading multiple files and combining the data found in each file into a single stream.
 
 ```bash
 sort -k 3.7nbr -k 3.1nbr -k 3.4nbr distros.txt > distros_by_date.txt
@@ -195,7 +195,7 @@ It works like `cat` only in reverse, literally. One use of it is to re-order log
 
 It reverses the characters in a string.
 
-`rev` is often used with `cut`. Let's considerer a log file again. Imagine we wanted to remove the period character from the end of each line. Since the line vary in length there is no way to specify `cut` to remove something from the end of the line. By reversing the characters in each line, we can move the periods to the beginning where `cut` can easily remove them.
+`rev` is often used with `cut`. Let's consider a log file again. Imagine we wanted to remove the period character from the end of each line. Since the lines vary in length there is no way to specify `cut` to remove something from the end of the line. By reversing the characters in each line, we can move the periods to the beginning where `cut` can easily remove them.
 
 ```bash
 tail /var/log/backup.log | rev | cut -c 2- | rev
@@ -205,21 +205,21 @@ tail /var/log/backup.log | rev | cut -c 2- | rev
 
 ### `comm`
 
-It compares two text files and displays the lines that are unique to each one and the line they have in common.
+It compares two text files and displays the lines that are unique to each one and the lines they have in common.
 
 ```text
 comm FILE FILE
 ```
 
-It produces three columns of output. The first column contains lines unique to the first file argument, the second column contains the line unique to the second file argument and the third column contains the lines shred by both files.
+It produces three columns of output. The first column contains lines unique to the first file argument, the second column contains the lines unique to the second file argument and the third column contains the lines shared by both files.
 
-`-<n>` can be provide to suppress the _n_ column.
+`-<n>` can be provided to suppress column _n_.
 
 > Multiple columns can be specified in one option.
 
 ### `diff`
 
-Like `comm`, `diff` is used to detect the differences between files. However, `diff` is much more complex tool, supporting many outputs formats and the ability to process large collections if text files at once...
+Like `comm`, `diff` is used to detect the differences between files. However, `diff` is a much more complex tool, supporting many output formats and the ability to process large collections of text files at once...
 
 ```text
 diff FILE FILE
@@ -236,7 +236,7 @@ d
 e" > file_2.txt
 ```
 
-In the default output format, each group of changes is preceded by a **change command** in the form of `<range><operation><range>` to describe the positions and types of changes required to convert the first file to the second file.
+In the default output format, each group of changes is preceded by a change command in the form of `<range><operation><range>` to describe the positions and types of changes required to convert the first file to the second file.
 
 |    change     | description                                                                                                                |
 | :-----------: | :------------------------------------------------------------------------------------------------------------------------- |
@@ -244,14 +244,14 @@ In the default output format, each group of changes is preceded by a **change co
 | `<r-1>c<r-2>` | change (replace) the lines at position _\<r-1\>_ with the lines at the position _\<r-2\>_ in the second file.              |
 | `<r-1>d<r-2>` | delete the lines in the first file at position _\<r-1\>_, which would have appeared at range _\<r-2\>_ in the second file. |
 
-When using **context** format (`-c`), we will se this:
+When using context format (`-c`), we will see this:
 
 ```bash
 diff -c file_1.txt file_2.txt
 # *** file_1.txt2025-12-23 06:40:13.000000000 -0500
 # --- file_2.txt2025-12-23 06:40:34.000000000 -0500
-# ***************
-# *** 1,4 ****
+# ***
+# * 1,4 **
 # - a
 #   b
 #   c
@@ -292,15 +292,15 @@ The most notable difference between the context and unified formats is the elimi
 |    `-`    | line was removed from the first file. |
 |    `+`    | line was added to the first file.     |
 
-### `path`
+### `patch`
 
 It is used to apply changes to text files. It accepts output from `diff` and is generally used to convert older version files into newer versions...Using `diff`/`patch` offers two significant advantages.
 
 1. The diff file is small, compared to the full size of the source tree.
 
-2. The diff file concisely shows the change being made, allowing reviewers of the patch to quicky evaluate it.
+2. The diff file concisely shows the change being made, allowing reviewers of the patch to quickly evaluate it.
 
-To prepare a diff file for use with `patch`, the GNU documentation suggest using `diff` as follows:
+To prepare a diff file for use with `patch`, the GNU documentation suggests using `diff` as follows:
 
 ```bash
 diff -Naur old_file new_file > diff_file
@@ -316,9 +316,9 @@ patch < diff_file
 
 ### `tr`
 
-It is used to **transliterate characters**...Transliteration is the process of changing characters from one alphabet to another.
+It is used to transliterate characters...Transliteration is the process of changing characters from one alphabet to another.
 
-`tr` operates on standard input, and output its results on standard output. `tr` accepts two arguments: a set of characters to convert from and a corresponding set of characters to convert to. Characters sets may be expressed in one of three ways.
+`tr` operates on standard input, and outputs its results on standard output. `tr` accepts two arguments: a set of characters to convert from and a corresponding set of characters to convert to. Character sets may be expressed in one of three ways.
 
 1. Enumerated list.
 
@@ -326,11 +326,11 @@ It is used to **transliterate characters**...Transliteration is the process of c
 
     > This method is sometimes subject to the same issues as other commands, because of the locale collation order.
 
-3. POSIX characters classes.
+3. POSIX character classes.
 
-In most cases, both characters sets should be of equal length; however, it is possible for the first set to be larger than the second.
+In most cases, both character sets should be of equal length; however, it is possible for the first set to be larger than the second.
 
-In addition to transliteration, `tr` allows characters to simply be deleted from the input steam...
+In addition to transliteration, `tr` allows characters to simply be deleted from the input stream...
 
 ```bash
 tr -d "\r" < dos_file > unix_file # Convert a MS-DOS text file to Unix text file
@@ -338,7 +338,7 @@ tr -d "\r" < dos_file > unix_file # Convert a MS-DOS text file to Unix text file
 
 ### ROT13: the not-so-secret decoder ring
 
-...Calling ROT13 "encryption" is being generous; "text obfuscation" is more accurate..
+...Calling ROT13 "encryption" is being generous; "text obfuscation" is more accurate...
 
 ```bash
 echo "secret text" | tr a-zA-Z n-za-mN-ZA-M # Perform ROT13 "encoding"
@@ -350,37 +350,37 @@ Using `-s`, `tr` can "squeeze" (delete) repeated instances of a character.
 
 ### `sed`
 
-The name "sed" is short for **stream editor**. It performs text editing on a stream text, either a set of specified files or standard input. `sed` is a powerful and somewhat complex program...
+The name "sed" is short for stream editor. It performs text editing on a stream of text, either a set of specified files or standard input. `sed` is a powerful and somewhat complex program...
 
 In general, the way `sed` works is that it is given either a single editing command (on the command line) or the name of a script file containing multiple commands, and it then performs these commands upon each line in the stream of text.
 
 Commands in `sed` begin with a single letter followed by a delimiter. The choice of the delimiter character is arbitrary. By convention, the slash character is often used, but `sed` will accept any character that immediately follows the command as the delimiter.
 
-Most commands in `sed` may be preceded by an **address**, which specifies which line(s) of the input stream will be edited. If the address is omitted, then the editing command is carried out on every line the in the input stream.
+Most commands in `sed` may be preceded by an address, which specifies which line(s) of the input stream will be edited. If the address is omitted, then the editing command is carried out on every line in the input stream.
 
-|       address       | description                                                                                                                                                                                                                 |
-| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|        `<n>`        | a line number where _n_ is a positive integer.                                                                                                                                                                              |
-|         `$`         | the last line.                                                                                                                                                                                                              |
-|    `/<regexp>/`     | lines matching a POSIX basic regular expression. Optionally, the regular expression may be delimited by and alternate character, by specifying the expression with `\<c><regexp><c>`, where _c_ is the alternate character. |
-| `<addr-1>,<addr-2>` | a range of line from _\<addr-1\>_ to _\<addr-2\>_, inclusive.                                                                                                                                                               |
-|  `<first>~<step>`   | match the line represented by the number _first_, then each subsequent line at _step_ intervals.                                                                                                                            |
-|   `<addr-1>,+<n>`   | math _\<addr-1\>_ an the following _n_ lines.                                                                                                                                                                               |
-|      `<addr>!`      | match all lines except _addr_.                                                                                                                                                                                              |
+|       address       | description                                                                                                                                                                                                                |
+| :-----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|        `<n>`        | a line number where _n_ is a positive integer.                                                                                                                                                                             |
+|         `$`         | the last line.                                                                                                                                                                                                             |
+|    `/<regexp>/`     | lines matching a POSIX basic regular expression. Optionally, the regular expression may be delimited by an alternate character, by specifying the expression with `\<c><regexp><c>`, where _c_ is the alternate character. |
+| `<addr-1>,<addr-2>` | a range of lines from _\<addr-1\>_ to _\<addr-2\>_, inclusive.                                                                                                                                                             |
+|  `<first>~<step>`   | match the line represented by the number _first_, then each subsequent line at _step_ intervals.                                                                                                                           |
+|   `<addr-1>,+<n>`   | match _\<addr-1\>_ and the following _n_ lines.                                                                                                                                                                            |
+|      `<addr>!`      | match all lines except _addr_.                                                                                                                                                                                             |
 
 `-n` (no auto-print) causes `sed` not to print every line which is the default.
 
-|          command           | description                                                                                                                                                           |
-| :------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|            `=`             | output the current line number.                                                                                                                                       |
-|            `a`             | append text after the current line.                                                                                                                                   |
-|            `d`             | delete the current line.                                                                                                                                              |
-|            `i`             | insert text in front of the current line.                                                                                                                             |
-|            `p`             | print the current line.                                                                                                                                               |
-|            `q`             | exit `sed` without processing any more lines. If the `-n` is not specified, output the current line.                                                                  |
-|            `Q`             | exit `sed` without processing any more lines.                                                                                                                         |
-| `s/<regex>/<replacement>/` | substitute the contents of _replacement_ wherever _regexp_ is found.                                                                                                  |
-|    `y/<set-1>/<set-2>`     | perform transliteration by converting character from _\<set-1\>_ to the corresponding characters in _\<set-2\>_. `sed` requires that both sets be of the same length. |
+|          command           | description                                                                                                                                                            |
+| :------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|            `=`             | output the current line number.                                                                                                                                        |
+|            `a`             | append text after the current line.                                                                                                                                    |
+|            `d`             | delete the current line.                                                                                                                                               |
+|            `i`             | insert text in front of the current line.                                                                                                                              |
+|            `p`             | print the current line.                                                                                                                                                |
+|            `q`             | exit `sed` without processing any more lines. If `-n` is not specified, output the current line.                                                                       |
+|            `Q`             | exit `sed` without processing any more lines.                                                                                                                          |
+| `s/<regex>/<replacement>/` | substitute the contents of _replacement_ wherever _regexp_ is found.                                                                                                   |
+|    `y/<set-1>/<set-2>`     | perform transliteration by converting characters from _\<set-1\>_ to the corresponding characters in _\<set-2\>_. `sed` requires that both sets be of the same length. |
 
 ```bash
 sed 's/\([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$/\3-\1-\2/' distros.txt # Convert date from MM/DD/YYYY to YYYY-MM-DD format

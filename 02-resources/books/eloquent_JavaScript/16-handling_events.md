@@ -8,9 +8,9 @@ reviewed_on: "2025-12-19"
 
 ## Event handlers
 
-**Polling** is a technique where the system uses a queue to process events. However, its main drawback is that it can make the software feel **unresponsive** due to the delay between queue checks.
+Polling is a technique where the system uses a queue to process events. However, its main drawback is that it can make the software feel unresponsive due to the delay between queue checks.
 
-A better mechanism is for the system to actively notify the code when an event occurs. Browsers do this by allowing us to register functions as **handlers** for specific events.
+A better mechanism is for the system to actively notify the code when an event occurs. Browsers do this by allowing us to register functions as handlers for specific events.
 
 ## Events and DOM nodes
 
@@ -20,7 +20,7 @@ The `removeEventListener` method removes a handler when called with arguments ma
 
 ## Event objects
 
-Event handler functions are passed an argument: the **event object**. This object holds additional information about the event.
+Event handler functions are passed an argument: the event object. This object holds additional information about the event.
 
 The object's `type` property always holds a string identifying the event.
 
@@ -28,7 +28,7 @@ The object's `type` property always holds a string identifying the event.
 
 For most event types, handlers registered on nodes with children will also receive events that happen in the children.
 
-The event is said to **propagate** outward from the node where it happened to that node's parent node and on to the root of the document. Finally, after all handlers registered on a specific node have had their turn, handlers registered on the whole window get a chance to respond to the event.
+The event is said to propagate outward from the node where it happened to that node's parent node and on to the root of the document. Finally, after all handlers registered on a specific node have had their turn, handlers registered on the whole window get a chance to respond to the event.
 
 At any point, an event handler can call the `stopPropagation` method on the event object to prevent handlers further up from receiving the event.
 
@@ -38,19 +38,19 @@ Most event objects have a `target` property that refers to the node where they o
 
 Many events have a default action. Clicking a link leads to the link's target. Pressing the down arrow makes the browser scroll the page down. Right-clicking opens a context menu. And so on.
 
-For most types of events, the JavaScript event handlers are called **before** the default behavior takes place. If the handler does not want this normal behavior to happen, typically because it has already taken care of handling the event, it can call the `preventDefault` method on the event object.
+For most types of events, the JavaScript event handlers are called before the default behavior takes place. If the handler does not want this normal behavior to happen, typically because it has already taken care of handling the event, it can call the `preventDefault` method on the event object.
 
 ## Key events
 
 When a key on the keyboard is pressed, the browser fires a `keydown` event. When it is released, a `keyup` event fires.
 
-Despite its name, "keydown" fires not only when the key is physically pushed down. When a key is pressed and held, the event fires again every time the key **repeats**.
+Despite its name, "keydown" fires not only when the key is physically pushed down. When a key is pressed and held, the event fires again every time the key repeats.
 
 Modifier keys such as `SHIFT`, `CTRL` and `ALT` generate key events just like normal keys. When looking for key combinations, whether these keys are held down can also be found by looking at the `shiftKey`, `ctrlKey` and `altKey` properties of keyboard and mouse events.
 
 The DOM node where a key event originates depends on the element that has focus when the key is pressed. Most nodes cannot have focus unless they are given a `tabindex` attribute, but things like links, buttons and form fields can.
 
-## Pointers events
+## Pointer events
 
 ### Mouse clicks
 
@@ -66,7 +66,7 @@ Every time the mouse pointer moves, a "mousemove" event fires...A common situati
 
 ## Scroll events
 
-Calling `preventDefault` on a scroll event does not prevent the scrolling from happening. In fact, the event handler is called only **after** the scrolling takes place.
+Calling `preventDefault` on a scroll event does not prevent the scrolling from happening. In fact, the event handler is called only after the scrolling takes place.
 
 ## Focus events
 
@@ -84,7 +84,7 @@ Elements such as images and script tags that load an external file also have a "
 
 ...browser event handlers behave like other asynchronous notifications. They are scheduled when the event occurs but must wait for other scripts that are running to finish before they get a chance to run.
 
-For cases where some time-consuming thing **really** must be done in the background without freezing the page, browsers provide something called **web workers**. A worker is a JavaScript process that runs alongside the main script, on its own timeline.
+For cases where some time-consuming thing really must be done in the background without freezing the page, browsers provide something called web workers. A worker is a JavaScript process that runs alongside the main script, on its own timeline.
 
 ## Timers
 
@@ -94,4 +94,4 @@ The `setTimeout` function schedules another function to be called later, after a
 
 Some types of events have the potential to fire rapidly many times in a row, such as the "mousemove" and "scroll" events. When handling such events, care must be taken not to do anything too time-consuming or the handler will take up so much time that interaction with the document starts to feel slow.
 
-If something nontrivial must be done in such a handler, `setTimeout` can be used to make sure it is not done too often. This is usually called **debouncing** the event. There are several slightly different approaches to this.
+If something nontrivial must be done in such a handler, `setTimeout` can be used to make sure it is not done too often. This is usually called debouncing the event. There are several slightly different approaches to this.

@@ -26,7 +26,7 @@ reviewed_on: "2025-06-30"
 
 ## Owners, group members and everybody else
 
-In the Unix security model, a user may **own** files and directories. When a user **owns** a file or directory, the user has control over its access. Users can, in turn, belong to a group consisting of one or more users who are given access to files and directories by their owners. In addition to granting access to a group, an owner may also grant some set of access rights to everybody, which in Unix terms is referred to as the **world**. To find out information about the current identity, use the `id` command.
+In the Unix security model, a user may own files and directories. When a user owns a file or directory, the user has control over its access. Users can, in turn, belong to a group consisting of one or more users who are given access to files and directories by their owners. In addition to granting access to a group, an owner may also grant some set of access rights to everybody, which in Unix terms is referred to as the world. To find out information about the current identity, use the `id` command.
 
 ```bash
 id
@@ -34,7 +34,7 @@ id
 # uid=500(me) gid=500(me) groups=500(me)
 ```
 
-...When user accounts are created, users are assigned a number called a **user ID** (**uid**), which is then, for the sake of the humans, mapped to a username. The user is assigned a **primary group ID** (**gid**) and may belong to additional groups...
+...When user accounts are created, users are assigned a number called a user ID (uid), which is then, for the sake of the humans, mapped to a username. The user is assigned a primary group ID (gid) and may belong to additional groups...
 
 ...User accounts are defined in `/etc/passwd`, and groups are defined in `/etc/group`. When user accounts and groups are created, these files are modified along with `/etc/shadow`, which holds information about the user's password. For each user account, the `/etc/passwd` file defines the:
 
@@ -61,17 +61,17 @@ ls -l foo.txt
 # -rw-rw-r-- 1 me me 0 2018-03-06 14:52 foo.txt
 ```
 
-The first 10 characters of the listing are the **file attributes**. The first of these characters is the **file type**...
+The first 10 characters of the listing are the file attributes. The first of these characters is the file type...
 
-| attribute | file type                  |
-| :-------: | :------------------------- |
-|    `-`    | regular file               |
-|    `d`    | directory                  |
-|    `l`    | symbolic link              |
-|    `c`    | **character special file** |
-|    `b`    | **block special file**     |
+| attribute | file type              |
+| :-------: | :--------------------- |
+|    `-`    | regular file           |
+|    `d`    | directory              |
+|    `l`    | symbolic link          |
+|    `c`    | character special file |
+|    `b`    | block special file     |
 
-The remaining 9 characters of the file attributes, called the **file mode**, represent the read, write and execute permissions for the file's owner, the file's group owner and everybody else.
+The remaining 9 characters of the file attributes, called the file mode, represent the read, write and execute permissions for the file's owner, the file's group owner and everybody else.
 
 | attribute | file                                                                                                                                                                                             | directories                                                                                                                |
 | :-------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
@@ -79,9 +79,9 @@ The remaining 9 characters of the file attributes, called the **file mode**, rep
 |    `w`    | allows a file to be written to or truncated; however, this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes. | allows files within a directory to be created, deleted and renamed if the execute attribute is also set.                   |
 |    `x`    | allows a file to be treated as a program and executed.                                                                                                                                           | allows a directory to be entered.                                                                                          |
 
-### `chmod` change file mode
+### `chmod`: change file mode
 
-It is used to change the mode (permissions) of a file or directory, it supports two distinct ways of specifying mode changes: octal number representation, or symbolic representation.
+It is used to change the mode (permissions) of a file or directory. It supports two distinct ways of specifying mode changes: octal number representation or symbolic representation.
 
 > For obvious reasons, only the file's owner or the superuser can do this.
 
@@ -120,7 +120,7 @@ ls -l foo.txt
 |  `o`   | short for "others" but means world.                         |
 |  `a`   | short for "all". This is a combination of `u`, `g` and `o`. |
 
-If no character is specified, "all" will be assumed. The operation may be `a+` indicating that a permission is to be added, `a-` indicating that a permission is to be taken away, or `a=` indicating that only the specified permissions are to be applied and that all others are to be removed.
+If no character is specified, "all" will be assumed. The operation may be `+` indicating that a permission is to be added, `-` indicating that a permission is to be taken away, or `=` indicating that only the specified permissions are to be applied and that all others are to be removed.
 
 Permissions are specified with the "r", "w", and "x" characters...
 
@@ -130,11 +130,11 @@ chmod u+x,go=rw file
 
 Symbolic notation does offer the advantage of setting a single attribute without disturbing any of the others (in octal all permissions must be specified).
 
-An option of caution is `--recursive`: it acts on both files and directories, so it is not as useful as we would hope since we rarely want files and directories to have the same permissions.
+The `--recursive` option calls for caution: it acts on both files and directories, so it is not as useful as we would hope since we rarely want files and directories to have the same permissions.
 
-### `umask` set default permissions
+### `umask`: set default permissions
 
-It controls the default permissions given to a file when it is created. It uses octal notation to express a **mask** of bits to be removed from a file's mode attributes.
+It controls the default permissions given to a file when it is created. It uses octal notation to express a mask of bits to be removed from a file's mode attributes.
 
 ```bash
 umask
@@ -155,7 +155,7 @@ ls -l foo.txt
 |        mask        | `000 000 000 010` |
 |       result       | `--- rw- rw- r--` |
 
-A AND operation is performed between the "original file mode" and NOT "mask" (wildcard).
+An AND operation is performed between the "original file mode" and NOT "mask" (wildcard).
 
 #### Some special permissions
 
@@ -169,7 +169,7 @@ A AND operation is performed between the "original file mode" and NOT "mask" (wi
 
 - setgid bit (octal 2000): changes the effective group ID from the real group ID of the real user to that of the file owner.
 
-    If the setgid bit is set on a directory, newly created files in the directory will be given the group ownership of the directory rather of the group ownership of the file's creator.
+    If the setgid bit is set on a directory, newly created files in the directory will be given the group ownership of the directory rather than the group ownership of the file's creator.
 
     This is useful in a shared directory when members of a common group need access to all the files in the directory, regardless of the file owner's primary group.
 
@@ -195,7 +195,7 @@ chmod +t <directory>  # Assigning the sticky bit to a directory (drwxrwxrwt)
 
 - Use `sudo`.
 
-### `su` run a shell with substitute user and groups IDs
+### `su`: run a shell with substitute user and group IDs
 
 It is used to start a shell as another user.
 
@@ -203,7 +203,7 @@ It is used to start a shell as another user.
 su [-[l]] [USER]
 ```
 
-If the `-l` option is included, the resulting shell session is a **login shell** for the specified user. This means the user's environment is loaded, and the working directory is changed to the user's home directory...If the user is not specified, the superuser is assumed.
+If the `-l` option is included, the resulting shell session is a login shell for the specified user. This means the user's environment is loaded, and the working directory is changed to the user's home directory...If the user is not specified, the superuser is assumed.
 
 It is also possible to execute a single command rather than starting a new interactive command...
 
@@ -222,7 +222,7 @@ su -c 'ls -l /root/*'
 
 Using this form, a single command line is passed to the new shell for execution. It is important to enclose the command in quotes, as we do not want expansion to occur in our shell, but rather in the new shell.
 
-### `sudo` execute a command as another user
+### `sudo`: execute a command as another user
 
 ...The administrator can configure sudo to allow an ordinary user to execute commands as a different user in a controlled way. The use of sudo does not require access to the superuser's password...authenticating using `sudo`, requires the user's own password.
 
@@ -239,7 +239,7 @@ sudo -l # See what privileges are granted by sudo (in the current user)
 #     (ALL : ALL) ALL
 ```
 
-### `chown` change file owner and group
+### `chown`: change file owner and group
 
 It is used to change the owner and group owner of a file or directory.
 

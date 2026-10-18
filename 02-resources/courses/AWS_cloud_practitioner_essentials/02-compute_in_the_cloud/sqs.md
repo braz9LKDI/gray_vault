@@ -4,7 +4,7 @@ reviewed_on: 2026-06-02
 
 # SQS
 
-Amazon SQS stands for **Amazon simple queue service**. It is a managed message queue service used to store messages between application components.
+Amazon SQS stands for Amazon Simple Queue Service. It is a managed message queue service used to store messages between application components.
 
 A producer sends messages to a queue. A consumer reads messages from the queue and processes them. The producer and consumer do not need to run at the same time.
 

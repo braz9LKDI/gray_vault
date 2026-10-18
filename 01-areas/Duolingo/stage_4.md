@@ -10,7 +10,7 @@ Usa "on" con los días de la semana y las fechas, usa "in" con los meses y cuand
 
 ---
 
-¡Hablemos del Presente Perfecto!
+¡Hablemos del presente perfecto!
 
 Para decir cosas como "he hablado", usa una forma de "have" con un verbo en el pasado.
 
@@ -47,8 +47,6 @@ Recuerda que "could" se usa para preguntas amables o para decir "can" cuando hab
 ¡Para decir en inglés "Ella dijo que..." o "Yo creo que...", di "She said that..." o "I think that..."!
 
 Pero "that" es una palabra opcional en inglés. ¡Puedes omitirla si quieres!
-
----
 
 ## Habla de tus logros, formula el tiempo pasado
 
@@ -97,19 +95,15 @@ Algunas veces no estás seguro de algo y necesitas hacer una pequeña pregunta a
 
 En inglés puedes hacer esto agregándole "not" al verbo ¡y revirtiendo el orden de las palabras de la manera que lo harías en una pregunta!
 
-> Esto es conocido como **tag questions**.
-
----
+> Esto es conocido como tag questions.
 
 ## Describe eventos
 
 Cuando hablamos de acciones completadas en inglés, usamos distintos tiempos verbales para transmitir detalles específicos sobre el momento o la relevancia de la acción.
 
-El **pasado simple** (ej: ate, wrote, went) se utiliza para acciones que terminaron en un **momento específico del pasado**. Por ejemplo: "I finished my project last night". Este tiempo no usa verbos auxiliares como have o had; solo requiere la forma pasada del verbo principal.
+El pasado simple (ej: ate, wrote, went) se utiliza para acciones que terminaron en un momento específico del pasado. Por ejemplo: "I finished my project last night". Este tiempo no usa verbos auxiliares como have o had; solo requiere la forma pasada del verbo principal.
 
-El **pretérito perfecto compuesto** (have/has + participio pasado, ej: I have eaten, I have traveled) describe acciones sin un tiempo definido o con conexión al presente.
-
-Claro, aquí tienes las notas formateadas directamente en el mismo estilo que las anteriores, con las palabras en inglés entre comillas:
+El pretérito perfecto compuesto (have/has + participio pasado, ej: I have eaten, I have traveled) describe acciones sin un tiempo definido o con conexión al presente.
 
 ## Comenta sobre deportes
 

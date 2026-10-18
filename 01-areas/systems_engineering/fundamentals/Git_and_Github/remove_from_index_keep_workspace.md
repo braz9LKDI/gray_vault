@@ -2,12 +2,12 @@
 reviewed_on: "2026-04-08"
 ---
 
-# Remove form index keeping workspace
+# Remove from index keeping workspace
 
 ```bash
 git rm --cached <file>
 ```
 
-> To discard all, use the wildcard `*`.
+> To stop tracking every file under the current directory, use `git rm -r --cached .`.
 >
-> Without the `--cached` would also remove the file from the workspace.
+> Without `--cached`, the file is also removed from the workspace.

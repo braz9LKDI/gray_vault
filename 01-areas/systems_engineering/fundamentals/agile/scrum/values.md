@@ -8,11 +8,11 @@ Scrum is built on five values that guide how the team works and makes decisions:
 
 ## Commitment
 
-The team commits to **achieving goals** and supporting each other to deliver value.
+The team commits to achieving goals and supporting each other to deliver value.
 
 ## Focus
 
-Concentrate on the **most important** (the one that brings more value to the client) work and the sprint goal.
+Concentrate on the most important work (the work that brings the most value to the client) and the sprint goal.
 
 ## Openness
 
@@ -20,7 +20,7 @@ Be transparent about work, progress and problems.
 
 ## Respect
 
-Treat each other as **capable professionals** and collaborate constructively.
+Treat each other as capable professionals and collaborate constructively.
 
 ## Courage
 

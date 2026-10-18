@@ -8,4 +8,4 @@ reviewed_on: 2026-04-21
 git restore --staged <path>
 ```
 
-> `.` for everything.
+> The path `.` unstages everything.

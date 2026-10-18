@@ -4,7 +4,7 @@ reviewed_on: "2025-02-03"
 
 # Division algorithm
 
-Let $n$ be an integer and $d$ be a positive integer. Then there exist **two unique integers $q$ and $r$**, such that $0 \leq r < d$, where:
+Let $n$ be an integer and $d$ be a positive integer. Then there exist two unique integers $q$ and $r$, such that $0 \leq r < d$, where:
 
 $$
 n = d q + r

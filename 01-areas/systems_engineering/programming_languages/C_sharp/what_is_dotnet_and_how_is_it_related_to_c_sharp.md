@@ -6,25 +6,25 @@ reviewed_on: "2026-02-21"
 
 ## What is .NET?
 
-.NET is a **software platform** (ecosystem) that provides:
+.NET is a software platform (ecosystem) that provides:
 
 1. A runtime (the engine that runs the code).
 
-2. A large set of libraries (ready-made code for common tasks.
+2. A large set of libraries (ready-made code for common tasks).
 
 3. Tools to build and run apps (like `dotnet`).
 
-So, .NET is not a language by itself, it is the **environment** and **toolkit**
+So, .NET is not a language by itself; it is the environment and toolkit.
 
 ## How they connect
 
-Most of the time, C# is used **to build .NET applications**. So, C# is the used language and .NET is the platform that runs it.
+Most of the time, C# is used to build .NET applications. So, C# is the used language and .NET is the platform that runs it.
 
 ## What actually happens when a C# program runs?
 
 1. C# code is written.
 
-2. A compiler turns it into LM (intermediate language).
+2. A compiler turns it into IL (intermediate language).
 
 3. The .NET runtime executes it (often using just-in-time compilation to machine code).
 
@@ -35,34 +35,34 @@ Most of the time, C# is used **to build .NET applications**. So, C# is the used 
 
 ## All the ".NET things"
 
-When people say ".NET", they might mean **different layers**: runtimes, frameworks, standards or tools.
+When people say ".NET", they might mean different layers: runtimes, frameworks, standards or tools.
 
 ### The main "implementations" of .NET
 
-#### .NET framework
+#### .NET Framework
 
-The original, Windows-only .NET platform (classic enterprise). Today mostly **legacy**/**maintenance**, still used in many older apps, but not modern default.
+The original, Windows-only .NET platform (classic enterprise). Today mostly legacy/maintenance, still used in many older apps, but not modern default.
 
-#### .NET core
+#### .NET Core
 
-The modern, **cross-platform** rebuild of .NET. Starting with version 5, Microsoft stopped using the "core" name and just ".NET".
+The modern, cross-platform rebuild of .NET. Starting with version 5, Microsoft stopped using the "Core" name and kept just ".NET".
 
 #### .NET
 
-The **current** unified platform. It is cross-platform and open source.
+The current unified platform. It is cross-platform and open source.
 
-### The standards and compatibility layes
+### The standards and compatibility layers
 
-#### .NET standard
+#### .NET Standard
 
-It is a **specification of APIs** that multiple .NET implementations agree to support, so one library can work across them. Back then when .NET framework and .NET core overlapped, it helped library authors target "common APIs".
+It is a specification of APIs that multiple .NET implementations agree to support, so one library can work across them. Back then when .NET Framework and .NET Core overlapped, it helped library authors target "common APIs".
 
 ### The app frameworks built on top of .NET
 
-#### ASP.NET / ASP.NET core
+#### ASP.NET / ASP.NET Core
 
-They are frameworks to build **web apps and web APIs**.
+They are frameworks to build web apps and web APIs.
 
-#### Windows forms (WinForms) and WPF
+#### Windows Forms (WinForms) and WPF
 
 They are desktop UI frameworks (Windows focused). Microsoft lists these as app stacks in the .NET ecosystem.

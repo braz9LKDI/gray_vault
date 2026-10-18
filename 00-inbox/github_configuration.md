@@ -24,11 +24,11 @@ For newer repositories, repository rulesets are usually cleaner because multiple
     - `develop`.
 
 3. Enable the following rules:
-    - "Restrict updates" if only specific users, teams, or apps should be able to update these branches.
+    - "Restrict updates" if only specific users, teams or apps should be able to update these branches.
 
     - "Restrict deletions".
 
-    - "Require a pull request before merging", with the followings rules set:
+    - "Require a pull request before merging", with the following rules set:
         - Set "Required approvals" count to `1` or more.
 
         - "Require conversation resolution before merging".
@@ -40,7 +40,7 @@ For newer repositories, repository rulesets are usually cleaner because multiple
 
     - "Block force pushes".
 
-4. Keep the bypass list empty unless there is a strong reason to allow specific admins, teams, or automation apps to bypass the rules.
+4. Keep the bypass list empty unless there is a strong reason to allow specific admins, teams or automation apps to bypass the rules.
 
 ## Require CI before merging
 

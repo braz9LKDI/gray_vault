@@ -23,7 +23,7 @@ Pattern scanning and processing language. It executes programs written in the aw
 
 - `[-F sepstring] -f progfile [-f progfile]... [-v assignment]... [argument...]`.
 
-The awk utility shall interpret each input record as a sequence of fields, where, by default, a field is a string of non-blank and non-newline characters. It denotes the first field in a record as`$1`, the second as`$2` and so on.
+The awk utility shall interpret each input record as a sequence of fields, where, by default, a field is a string of non-blank and non-newline characters. It denotes the first field in a record as `$1`, the second as `$2` and so on.
 
 ### Examples (`awk`)
 

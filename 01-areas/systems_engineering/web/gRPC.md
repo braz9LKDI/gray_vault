@@ -10,9 +10,9 @@ In gRPC, the API is organized around services and remote methods instead of arou
 
 This means that the interface is explicit and strongly typed, and that the same contract can be used to generate code for different programming languages.
 
-## Service definition and protocol buffers
+## Service definition and Protocol Buffers
 
-By default, gRPC uses protocol buffers as both the interface definition language and the message format. Services, methods, request messages and response messages are described in a `.proto` file.
+By default, gRPC uses Protocol Buffers as both the interface definition language and the message format. Services, methods, request messages and response messages are described in a `.proto` file.
 
 From that definition, code can be generated for clients and servers. The client receives a stub with the available remote methods, while the server implements the service defined in the contract.
 

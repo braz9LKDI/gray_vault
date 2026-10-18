@@ -8,7 +8,7 @@ reviewed_on: "2025-08-31"
 
 ---
 
-...**Programming** is the act of constructing a **program**, a set of precise instructions telling a computer what to do. Because computers are dumb, pedantic beasts, programming is fundamentally tedious and frustrating.
+...Programming is the act of constructing a program, a set of precise instructions telling a computer what to do. Because computers are dumb, pedantic beasts, programming is fundamentally tedious and frustrating.
 
 ## On programming
 

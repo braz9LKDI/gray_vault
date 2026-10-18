@@ -10,10 +10,10 @@ reviewed_on: "2026-XX-XX"
 
 ### Strengths
 
-## Academy
+## Academic
 
-### Object oriented programming
+### Object-oriented programming
 
-### Solid principles
+### SOLID principles
 
-![[personal/systems_engineering/fundametals/SOLID_principles|SOLID_principles]]
+![[01-areas/systems_engineering/fundamentals/SOLID_principles|SOLID_principles]]

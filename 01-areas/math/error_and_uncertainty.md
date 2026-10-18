@@ -26,8 +26,7 @@ In contrast to systematic uncertainties, random uncertainties are an unavoidable
 
 ### Accuracy and precision
 
-An important distinction in physics is the difference between the **accuracy** and the **precision** of a measurement. Accuracy refers to the closeness of a measured value to
-a standard or known value...
+An important distinction in physics is the difference between the **accuracy** and the **precision** of a measurement. Accuracy refers to the closeness of a measured value to a standard or known value...
 
 **Precision** refers to the closeness of two or more measurements to each other...Precision is independent of accuracy. A measurement can be very precise but inaccurate, as described above. It can also be accurate but imprecise.
 
@@ -54,10 +53,10 @@ Often, we are not directly interested in a measured value, but we want to use it
 > We can see roots as fractional powers.
 
 $$
-f(x) = x^n \quad \frac{ ^\sigma f(x) } { f(x) } = |n| \frac{ ^\sigma x }{ x }
+f(x) = x^n \quad \frac{ \sigma_{ f(x) } }{ f(x) } = |n| \frac{ \sigma_x }{ x }
 $$
 
-$\sigma$ is the absoute uncertainty.
+$\sigma$ is the absolute uncertainty.
 
 #### Other functions
 

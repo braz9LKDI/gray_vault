@@ -4,11 +4,11 @@ reviewed_on: "2026-02-17"
 
 # Sprint planning
 
-It is the time-boxed event at the start of the sprint where the Scrum team agrees on a **sprint goal** and the developers **forecast** what can be delivered, then plan how they will do it.
+It is the time-boxed event at the start of the sprint where the Scrum team agrees on a sprint goal and the developers forecast what can be delivered, then plan how they will do it.
 
 Sprint planning addresses the following topics:
 
-1. Why is this [[personal/systems_engineering/fundametals/agile/scrum/events/sprint|sprint]] valuable?
+1. Why is this [[01-areas/systems_engineering/fundamentals/agile/scrum/events/sprint|sprint]] valuable?
 
 2. What can be done this sprint?
 
@@ -16,9 +16,9 @@ Sprint planning addresses the following topics:
 
 ## Input
 
-- Prioritized [[personal/systems_engineering/fundametals/agile/scrum/artifacts/product_backlog|product backlog]].
+- Prioritized [[01-areas/systems_engineering/fundamentals/agile/scrum/artifacts/product_backlog|product backlog]].
 
-- Last product [[personal/systems_engineering/fundametals/agile/scrum/artifacts/increment|increment]].
+- Last product [[01-areas/systems_engineering/fundamentals/agile/scrum/artifacts/increment|increment]].
 
 - Past performance (velocity).
 
@@ -26,4 +26,4 @@ Sprint planning addresses the following topics:
 
 ## Output
 
-The result is a clear plan for the sprint (the [[personal/systems_engineering/fundametals/agile/scrum/artifacts/sprint_backlog|**sprint backlog**]]) created by the entire Scrum team.
+The result is a clear plan for the sprint (the [[01-areas/systems_engineering/fundamentals/agile/scrum/artifacts/sprint_backlog|sprint backlog]]) created by the entire Scrum team.

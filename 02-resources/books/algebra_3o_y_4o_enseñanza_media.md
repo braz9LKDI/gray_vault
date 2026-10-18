@@ -8,7 +8,7 @@ reviewed_on: "2024-12-31"
 
 ### Definición
 
-La palabra álgebra se deriva de una voz árabe que significa **reducción**. Esta definición etimológica se acomoda muy bien al álgebra, de la cual se dice que es una ciencia cuyo objeto es la **simplificación** y **generalización** de todas las cuestiones relacionadas con las cantidades.
+La palabra álgebra se deriva de una voz árabe que significa reducción. Esta definición etimológica se acomoda muy bien al álgebra, de la cual se dice que es una ciencia cuyo objeto es la simplificación y generalización de todas las cuestiones relacionadas con las cantidades.
 
 ### Símbolos
 
@@ -32,11 +32,11 @@ Son un par de números algebraicos que tienen el mismo valor absoluto, pero difi
 
 - Número irracional: no puede expresarse como el cociente de dos enteros.
 
-Obviamente, el significado semántico de los vocablos racional e irracional no se acomoda en manera alguna a los números aquí estudiados. Todo se debe a un error de traducción. En efecto, Euclides al clasificar sistemáticamente los números los dividió en dos grandes grupos que llamo **symmetros** (con medida) y **asymmetros** (sin medida) respectivamente. Y para señalar el hecho de que los números asymmetros no tenían expresión, los designo con la voz **alogos**. Gerardo de Cremona (1114-1187) al traducir un comentario árabe sobre Euclides, tomo los vocablos logos y alogos en su acepción de **razón** y no la de **palabra**, como quiso Euclides, y empleo erróneamente los términos **rationalis** e **irrationalis** para designar unos y otros. Este error se difundió durante toda la edad media hasta llegar a nosotros.
+Obviamente, el significado semántico de los vocablos racional e irracional no se acomoda en manera alguna a los números aquí estudiados. Todo se debe a un error de traducción. En efecto, Euclides al clasificar sistemáticamente los números los dividió en dos grandes grupos que llamó symmetros (con medida) y asymmetros (sin medida) respectivamente. Y para señalar el hecho de que los números asymmetros no tenían expresión, los designó con la voz alogos. Gerardo de Cremona (1114-1187) al traducir un comentario árabe sobre Euclides, tomó los vocablos logos y alogos en su acepción de razón y no la de palabra, como quiso Euclides, y empleó erróneamente los términos rationalis e irrationalis para designar unos y otros. Este error se difundió durante toda la edad media hasta llegar a nosotros.
 
 ![numerical sets](02-resources/books/assets/algebra_3o_y_4o_enseñanza_media/01-numerical_sets.jpg)
 
-## Unidad II (adicción)
+## Unidad II (adición)
 
 ### La sustracción algebraica
 
@@ -44,9 +44,9 @@ Para restar un número de otro basta cambiar el signo al número que se va a res
 
 > Obsérvese que después de cambiar el signo al número que se va a restar, todo se reduce a una suma algebraica.
 
-### Leyes de la adicción
+### Leyes de la adición
 
-1. Ley conmutativa: si $a + b = k$ también $b + a = k$; o $a + b = b + a$; es decir, que los términos se pueden intercambiar sin que se altere el resultado de la adicción.
+1. Ley conmutativa: si $a + b = k$ también $b + a = k$; o $a + b = b + a$; es decir, que los términos se pueden intercambiar sin que se altere el resultado de la adición.
 
 2. Ley asociativa: si $(a + b) + c = k$, también $a + (b + c) = k$ o $(a + b) + c = a + (b + c)$.
 
@@ -72,7 +72,7 @@ Para restar un número de otro basta cambiar el signo al número que se va a res
 
 ### Exponente negativo
 
-Veamos como toda cantidad con exponente negativo es una fracción cuyo numerador es uno y su denominador es la misma cantidad elevada a la misma potencia, pero son signo positivo.
+Veamos como toda cantidad con exponente negativo es una fracción cuyo numerador es uno y su denominador es la misma cantidad elevada a la misma potencia, pero con signo positivo.
 
 $$
 \begin{align}
@@ -89,11 +89,11 @@ $$
 
 ### La expresión algebraica
 
-Es la representación de una o varias operaciones matemáticas por medio de símbolos. Esto nos lleva a las fórmulas que nos sirven para **generalizar** operaciones matemáticas.
+Es la representación de una o varias operaciones matemáticas por medio de símbolos. Esto nos lleva a las fórmulas que nos sirven para generalizar operaciones matemáticas.
 
-### Termino y sus partes
+### Término y sus partes
 
-- Termino: es una expresión algebraica que consta de números y símbolos no separados por los signos $+$ o $-$.
+- Término: es una expresión algebraica que consta de números y símbolos no separados por los signos $+$ o $-$.
 
     $$
     a \quad 2 a^2 \quad -12 a b
@@ -127,7 +127,7 @@ Es la representación de una o varias operaciones matemáticas por medio de sím
     a x + x^4 b^2 - b x^3 + 10 a^2 x^3 \quad \text{grado 4 con respecto a $x$}
     $$
 
-## Unidad VI (adicción y sustracción de expresiones algebraicas. Ecuaciones. Inecuaciones)
+## Unidad VI (adición y sustracción de expresiones algebraicas. Ecuaciones. Inecuaciones)
 
 ### Igualdad, identidad. Ecuación
 
@@ -144,9 +144,9 @@ Es la representación de una o varias operaciones matemáticas por medio de sím
 
 - Ecuación: igualdad que contiene una o varias cantidades desconocidas llamadas incógnitas.
 
-Se llama **primer miembro** de una igualdad o identidad a la expresión que está antes del signo de igualdad y **segundo miembro** a la expresión que va después de dicho símbolo.
+Se llama primer miembro de una igualdad o identidad a la expresión que está antes del signo de igualdad y segundo miembro a la expresión que va después de dicho símbolo.
 
-Según lo anterior podemos afirmar que toda identidad y ecuación es una igualdad; más no así los recíprocos.
+Según lo anterior podemos afirmar que toda identidad y ecuación es una igualdad; mas no así los recíprocos.
 
 ### Grado de una ecuación
 
@@ -168,18 +168,16 @@ La igualdad subsiste si a los dos miembros de una ecuación se:
 
 ### Desigualdades
 
-Llamamos como en las igualdades **primer miembro** a la expresión que está a la izquierda del signo de desigualdad y **segundo miembro** a la expresión que está a la derecha de dicho signo.
+Llamamos como en las igualdades primer miembro a la expresión que está a la izquierda del signo de desigualdad y segundo miembro a la expresión que está a la derecha de dicho signo.
 
 #### Propiedades de las desigualdades
 
 - La desigualdad no varía si a los dos miembros de la desigualdad se:
-
     - suma o resta una misma cantidad.
 
     - multiplica o divide por una misma cantidad positiva.
 
 - La desigualdad cambia de sentido si a los dos miembros de la desigualdad se:
-
     - multiplica o divide por una misma cantidad negativa.
 
     - cambian por sus inversos.
@@ -188,7 +186,7 @@ Llamamos como en las igualdades **primer miembro** a la expresión que está a l
 
 - Si los dos miembros de una desigualdad, o uno de ellos, son negativos y se elevan a una misma potencia impar positiva, la desigualdad permanece.
 
-- Si ambos miembros de una desigualdad, son negativos y se elevan a una misma potencia par positiva, la desigualdad cambia de signo.
+- Si ambos miembros de una desigualdad son negativos y se elevan a una misma potencia par positiva, la desigualdad cambia de signo.
 
 - Si los miembros de una desigualdad tienen diferente signo y se elevan a una misma potencia par positiva, la desigualdad puede cambiar de signo.
 
@@ -200,17 +198,17 @@ Llamamos como en las igualdades **primer miembro** a la expresión que está a l
 
 ### Inecuaciones
 
-Las desigualdades que contienen una o varias cantidades desconocidas. Las inecuaciones solo se satisfacen para ciertos valores de las incógnitas, por ello se llaman también **desigualdades de condición**.
+Las desigualdades que contienen una o varias cantidades desconocidas. Las inecuaciones solo se satisfacen para ciertos valores de las incógnitas, por ello se llaman también desigualdades de condición.
 
 #### Inecuaciones simultáneas
 
-Aquellas inecuaciones que tiene una solución común.
+Aquellas inecuaciones que tienen una solución común.
 
 ## Unidad VII (multiplicación de expresiones algebraicas)
 
 ### Ordenación de polinomios
 
-Se dice que un polinomio está ordenado con respecto a una letra cuando los exponentes de dicha letra, llamada **ordenatriz**, van en orden ascendente o descendente.
+Se dice que un polinomio está ordenado con respecto a una letra cuando los exponentes de dicha letra, llamada ordenatriz, van en orden ascendente o descendente.
 
 ### Productos notables
 
@@ -265,7 +263,7 @@ Se dice que un polinomio es entero en $x$ cuando todos los exponentes de dicha l
 
 #### Enunciado
 
-El residuo de la división de un polinomio entero en $x$ por un binomio de la forma $(x \pm a)$ se obtiene reemplazando el polinomio $x$ por $a$, o por $-a$.
+El residuo de la división de un polinomio entero en $x$ por un binomio de la forma $(x \pm a)$ se obtiene reemplazando en el polinomio $x$ por $a$, o por $-a$.
 
 En general, si tenemos un polinomio $a x^m + b x^{ m - 1 } + c x^{ m - 2 } + \dots$ dividido por $(x - a)$; y llamamos $Q$ al cociente y $R$ al residuo, luego:
 
@@ -327,7 +325,7 @@ Esta es la regla de Ruffini para los coeficientes.
 
 2. Cualquier otro coeficiente es igual a su correspondiente del dividendo más el producto entre $a$ y el coeficiente inmediatamente anterior del cociente.
 
-3. El resido es igual al último coeficiente del dividendo más el producto entre $a$ y el coeficiente anterior del cociente.
+3. El residuo es igual al último coeficiente del dividendo más el producto entre $a$ y el coeficiente anterior del cociente.
 
 Tanto en el dividendo como en el cociente pueden no estar todas las potencias de $x$, por ello es conveniente adoptar un método que evite confusiones en el cálculo de los coeficientes aplicando la regla de Ruffini. Quizás el más claro sea el de emplear como subíndices las presuntas potencias de $x$ en el cociente, las cuales empiezan por $n - 1$, siendo $n$ la potencia mayor del dividendo.
 
@@ -375,7 +373,7 @@ Sea un binomio de la forma $(a \pm b)^n$.
 
 2. Los exponentes de $a$ van en orden descendente desde $n$ hasta 0 y los de $b$ van en orden creciente desde 0 hasta $n$.
 
-3. La suma de los exponentes de $a$ y $b$ en cualquier término es igual $n$.
+3. La suma de los exponentes de $a$ y $b$ en cualquier término es igual a $n$.
 
 4. El coeficiente del primer término es 1 y el del segundo término es igual al exponente del binomio.
 
@@ -397,7 +395,7 @@ Sea un polinomio $p$ en el desarrollo de su cuadrado ($p^2$) se cumple lo siguie
 
 2. Luego aparecen en el desarrollo todos los dobles productos de las posibles combinaciones binarias que pueden hacerse entre los términos del polinomio.
 
-3. Los signos de los dobles productos depende del que tengan sus términos en el polinomio, de acuerdo con las leyes de la multiplicación.
+3. Los signos de los dobles productos dependen del que tengan sus términos en el polinomio, de acuerdo con las leyes de la multiplicación.
 
 ---
 
@@ -443,27 +441,27 @@ Para encontrar el MCD de dos polinomios se ordenan ambos con relación a una mis
 
 > Algoritmo de Euclides.
 
-Para la practica de este metodo se deben seguir las siguientes reglas:
+Para la práctica de este método se deben seguir las siguientes reglas:
 
-1. Si se obtiene un residuo cuyo primer termino es negativo, pueden multiplicarse por $-1$ todos los términos de ese residuo.
+1. Si se obtiene un residuo cuyo primer término es negativo, pueden multiplicarse por $-1$ todos los términos de ese residuo.
 
 2. Si el primer término del dividendo no es divisible por el primero del divisor, se pueden multiplicar todos los términos del dividendo por la cantidad necesaria para hacerlo divisible. Esta misma regla se aplica a los residuos. El residuo de cualquier división se puede dividir por un factor que no sea común a los polinomios.
 
 ### Mínimo común múltiplo (MCM)
 
-El MCM de dos o más expresiones algebraicas es la expresión algebraica de menor grado y mínimo coeficiente que es divisible por cada una de las expresiones dada.
+El MCM de dos o más expresiones algebraicas es la expresión algebraica de menor grado y mínimo coeficiente que es divisible por cada una de las expresiones dadas.
 
 Para hallar el MCM de varias expresiones algebraicas se descomponen todas y cada una en sus factores primos; el producto de los factores primos comunes y no comunes tomados con su mayor exponente es el MCM de las expresiones dadas.
 
 ## Unidad XII (ecuaciones fraccionarias de primer grado y razones y proporciones)
 
-### Ecuacion fraccionaria
+### Ecuación fraccionaria
 
-Una ecuacion es fraccionaria cuando la incognita aparece una o mas veces en el denominador.
+Una ecuación es fraccionaria cuando la incógnita aparece una o más veces en el denominador.
 
-### Transformacion de ecuaciones fraccionaria a enteras
+### Transformación de ecuaciones fraccionarias a enteras
 
-#### Teorema (transformacion de ecuaciones fraccionaria a enteras)
+#### Teorema (transformación de ecuaciones fraccionarias a enteras)
 
 Si dos miembros de una ecuación se multiplican por una misma cantidad entera, se obtiene una nueva ecuación que contiene todas las raíces de la primera, pero además puede contener otras nuevas raíces, llamadas raíces extrañas, puesto que no pertenecen a la ecuación original. En general, si se multiplica por una expresión $p(x)$, la nueva ecuación también tendrá las raíces de $p$.
 
@@ -483,9 +481,9 @@ $$
 
 son razones y se leen de la siguiente forma:
 
-$a$ es a $b$, $x$ es a $y$ y $a + x$ es a $b + y$, respectivamente. En las razones se da el nombre de antecedente al numerador o primer termino y consecuente al denominador o segundo termino.
+$a$ es a $b$, $x$ es a $y$ y $a + x$ es a $b + y$, respectivamente. En las razones se da el nombre de antecedente al numerador o primer término y consecuente al denominador o segundo término.
 
-Se llama **proporción** a la igualdad de dos razones...
+Se llama proporción a la igualdad de dos razones...
 
 ### Propiedades de las proporciones
 
@@ -527,13 +525,13 @@ Se llama **proporción** a la igualdad de dos razones...
 
 ## Unidad XIII (raíces y ecuaciones con radicales)
 
-### Raiz enesima de una expresion algebraica
+### Raíz enésima de una expresión algebraica
 
-Distingamos todas las partes de la expresión algebraica $\sqrt[ n ]{ a }$. En primer lugar, $\sqrt{ }$ es el símbolo llamado **radical** que se utiliza para indicar la operación de radicación; $n$ es el **índice** que indica el grado de la radicación, suele omitirse cuando $n = 2$ o sea raíz cuadrada; $a$ es la cantidad llamada **subradical** y representa la expresión a la cual se va a extraer la raíz del grado indicado por el índice.
+Distingamos todas las partes de la expresión algebraica $\sqrt[ n ]{ a }$. En primer lugar, $\sqrt{ }$ es el símbolo llamado radical que se utiliza para indicar la operación de radicación; $n$ es el índice que indica el grado de la radicación, suele omitirse cuando $n = 2$ o sea raíz cuadrada; $a$ es la cantidad llamada subradical y representa la expresión a la cual se va a extraer la raíz del grado indicado por el índice.
 
 ### Cantidades imaginarias
 
-Toda expresion de la forma $\sqrt[ n ]{ -x }$, en que $n$ es par puede reducirse a una cantidad real multiplicada por la unidad imaginaria.
+Toda expresión de la forma $\sqrt[ n ]{ -x }$, en que $n$ es par puede reducirse a una cantidad real multiplicada por la unidad imaginaria.
 
 $$
 n = 2 k \; k \in \mathbb{ N } \implies \sqrt[ n ]{ -x } = \sqrt[ n ]{ x } \sqrt{ -1 }
@@ -541,13 +539,13 @@ $$
 
 ### Cantidades racionales e irracionales
 
-Se dice que una cantidad es racional cuando se le puede extraer la raiz indicada exactamente. De lo contrario se dice de esa cantidad que es irracional.
+Se dice que una cantidad es racional cuando se le puede extraer la raíz indicada exactamente. De lo contrario se dice de esa cantidad que es irracional.
 
-### Reduccion de radicales a un indice comun
+### Reducción de radicales a un índice común
 
 Para reducir dos o más expresiones radicales con distinto índice a un índice común, se halla el MCM de los índices, que servirá de índice común, luego se multiplican los exponentes de las cantidades subradicales de cada radical por el cociente de dividir el MCM por el índice correspondiente.
 
-### Racionalizacion
+### Racionalización
 
 Por definición, fracción irracional es aquella en la cual sus dos términos o uno de ellos contiene un radical.
 
@@ -557,9 +555,9 @@ Para racionalizar el denominador de una fracción irracional se multiplican el n
 
 ### Variación directa e inversa
 
-Se dice que dos variables está en una relación directa cuando al multiplicar o dividir una de ellas por una cantidad, la otra queda multiplicada o dividida por esa misma cantidad...
+Se dice que dos variables están en una relación directa cuando al multiplicar o dividir una de ellas por una cantidad, la otra queda multiplicada o dividida por esa misma cantidad...
 
-Se dice que dos variables están en relación inversa cuando al multiplicar o dividir una de ella por una cantidad, la otra queda dividida o multiplicada, respectivamente, por esa misma cantidad...
+Se dice que dos variables están en relación inversa cuando al multiplicar o dividir una de ellas por una cantidad, la otra queda dividida o multiplicada, respectivamente, por esa misma cantidad...
 
 $$
 y = \frac{ k }{ x }
@@ -569,7 +567,7 @@ Donde $y$ es la medida de cualquier cantidad de la segunda magnitud y $x$ la cor
 
 ### Representación gráfica de las funciones
 
-Las coordenadas de un punto se llaman **abscisa** a la distancia paralela al eje de las equis y **ordenada** a la distancia paralela al eje de las yees.
+Las coordenadas de un punto se llaman abscisa a la distancia paralela al eje de las equis y ordenada a la distancia paralela al eje de las yees.
 
 Si la función es de la forma $y = a x$, es decir, carece de término independiente, la línea que ella representa pasa por el origen. Si la función es de la forma $y = a x + b$, es decir, tiene un término independiente ($b$), la línea que ella representa no pasa por el origen de los ejes coordenados. Su desplazamiento sobre el eje de las yees es igual al término independiente.
 
@@ -577,7 +575,7 @@ Si la función es de la forma $y = a x$, es decir, carece de término independie
 
 ...La naturaleza de las ecuaciones determina el método más aconsejable que se debe seguir. Estos métodos son:
 
-1. Eliminación por sustitución: consiste en despejar de una de las ecuaciones la incógnita de se quiera eliminar y reemplazar su valor en la segunda ecuación.
+1. Eliminación por sustitución: consiste en despejar de una de las ecuaciones la incógnita que se quiera eliminar y reemplazar su valor en la segunda ecuación.
 
 2. Eliminación por comparación: llamado también de igualación, consiste en despejar la misma incógnita en las dos ecuaciones y luego igualar los valores obtenidos.
 
@@ -638,7 +636,7 @@ a_1 b_2 - a_2 b_1 =
 \end{vmatrix}
 $$
 
-La expresión a la derecha del signo igual es por definición un **determinante**.
+La expresión a la derecha del signo igual es por definición un determinante.
 
 ### Solución de ecuaciones por determinantes
 
@@ -702,7 +700,7 @@ $$
 (a_1 b_2 c_3 + a_2 b_3 c_1 + a_3 b_1 c_2) - (a_3 b_2 c_1 + a_1 b_3 c_2 + a_2 b_1 c_3)
 $$
 
-### Solución de ecuaciones de tercer grado y regla de Kramen
+### Solución de ecuaciones de tercer grado y regla de Cramer
 
 Sea el siguiente sistema de ecuaciones:
 
@@ -714,7 +712,7 @@ $$
 \end{array}
 $$
 
-la regla de Krames establece lo siguiente:
+la regla de Cramer establece lo siguiente:
 
 $$
 x = \frac{
@@ -767,7 +765,7 @@ $$
 
 ![representación gráfica de un punto en el espacio](02-resources/books/assets/algebra_3o_y_4o_enseñanza_media/02-representacion_grafica_de_un_punto_en_el_espacio.svg)
 
-...**abscisa** de un punto es la distancia al plano $yz$. **Ordenada** de un punto es la distancia al plano $xz$. **Cota** de un punto es la distancia al plano $xy$.
+...abscisa de un punto es la distancia al plano $yz$. Ordenada de un punto es la distancia al plano $xz$. Cota de un punto es la distancia al plano $xy$.
 
 ### Representación gráfica de una ecuación de primer grado con tres incógnitas
 
@@ -781,15 +779,15 @@ $$
 
 ### Ecuaciones de segundo grado
 
-### Ecuación completa (ecuaciones de segundo grado)
+#### Ecuación completa (ecuaciones de segundo grado)
 
 Una ecuación de segundo grado es completa si contiene, además de la segunda potencia de la incógnita, la primera potencia de la incógnita y un término independiente.
 
-### Ecuación incompleta (ecuaciones de segundo grado)
+#### Ecuación incompleta (ecuaciones de segundo grado)
 
 Una ecuación de segundo grado es incompleta si carece del término independiente, o de la primera potencia de la incógnita.
 
-### Solucion general
+#### Solución general
 
 La fórmula general de una ecuación de segundo grado es:
 
@@ -805,9 +803,9 @@ $$
 2 a x + b = \pm \sqrt{ b^2 - 4 a c } \quad x = \frac{ -b \pm \sqrt{ b^2 - 4 a c } }{ 2 }
 $$
 
-Estas raíces pueden ser reales o imaginarias, según que el radicar $\sqrt{ b^2 - 4 a c }$ sea una cantidad real o imaginaria. Esta cantidad recibe el nombre de **discriminante** o **realizante**, ya que de ella depende la "realidad" de las raíces.
+Estas raíces pueden ser reales o imaginarias, según que el radical $\sqrt{ b^2 - 4 a c }$ sea una cantidad real o imaginaria. Esta cantidad recibe el nombre de discriminante o realizante, ya que de ella depende la "realidad" de las raíces.
 
-## Relación entre las raíces y los coeficientes de la ecuación de segundo grado
+### Relación entre las raíces y los coeficientes de la ecuación de segundo grado
 
 Si tenemos la ecuación general de segundo grado:
 
@@ -853,7 +851,7 @@ $$
 2 x + b = 0 \quad x = \frac{ -b }{ 2 }
 $$
 
-Asi el valor minimo de $y$ es $\frac{ 4 c - b^2 }{ 4 }$.
+Así el valor mínimo de $y$ es $\frac{ 4 c - b^2 }{ 4 }$.
 
 En el caso de una ecuación de la forma $-x^2 + b x + c$, se procede de una forma similar, pero se llega a los siguientes resultados:
 
@@ -861,19 +859,19 @@ $$
 x = \frac{ b }{ 2 } \quad y = \frac{ 4 c + b^2 }{ 4 }
 $$
 
-> Este en el caso en el que el vortice es maximo.
+> Este es el caso en el que el vértice es máximo.
 
 ## Unidad XVII (análisis gráfico de la ecuación de segundo grado)
 
 ### Parábola
 
-#### Elipse
+### Elipse
 
 La representación gráfica de una ecuación de la forma $a x^2 + b y^2 = c$ es una elipse.
 
 ### Circunferencia
 
-La representacion grafica de una ecuacion de la forma $x^2 + y^2 = k$ es una circunferencia.
+La representación gráfica de una ecuación de la forma $x^2 + y^2 = k$ es una circunferencia.
 
 ### Hipérbola
 
@@ -883,21 +881,21 @@ En la gráfica de una hipérbola puede observarse que a medida que $y$ tiende a 
 
 Tanto la curva como el eje reciben el nombre de asíntotas.
 
-### Analisis de la ecuacion completa de segundo grado con dos variables
+### Análisis de la ecuación completa de segundo grado con dos variables
 
-...una ecuacion de segundo grado con dos variables es de la forma:
+...una ecuación de segundo grado con dos variables es de la forma:
 
 $$
 a x^2 + b x y + c y^2 + e y + f = 0
 $$
 
-Para que la ecuacion sea considerada de segundo grado con dos variables no es necesario que contenga todos los terminos de la forma general, basta que tenga las dos variables y al menos una de ellas sea de segundo grado. O basta con que la ecuacion contenga el producto de las primeras potencias de las dos variables...
+Para que la ecuación sea considerada de segundo grado con dos variables no es necesario que contenga todos los términos de la forma general, basta que tenga las dos variables y al menos una de ellas sea de segundo grado. O basta con que la ecuación contenga el producto de las primeras potencias de las dos variables...
 
-Segun ciertas condiciones, podemos clasificar la curva en ciertos generos:
+Según ciertas condiciones, podemos clasificar la curva en ciertos generos:
 
-- $b^2 - a c > 0$: hiperbola.
+- $b^2 - a c > 0$: hipérbola.
 
-- $b^2 - a c = 0$: parabola.
+- $b^2 - a c = 0$: parábola.
 
 - $b^2 - a c < 0$: elipse.
 
@@ -941,13 +939,13 @@ El plano determinado por los ejes cartesianos y que sirve para la representació
 
 ### Operaciones con los números complejos
 
-#### Division (números complejos)
+#### División (números complejos)
 
 $$
 \frac{ a + b i }{ c + d i } = \frac{ (a + b i) (c - d i) }{ (c + d i) (c - d i) } = \frac{ a c + b d + (b c - a d) i }{ c^2 + d^2 } = \frac{ a c + b d }{ c^2 + d^2 } + \frac{ (b c - a d) i }{ c^2 + d^2 }
 $$
 
-## Unidad XX (progresiones aritmeticas)
+## Unidad XX (progresiones aritméticas)
 
 ### Definiciones
 
@@ -957,11 +955,11 @@ Es una sucesión de términos algebraicos formados de acuerdo con una ley...
 
 #### Progresión aritmética
 
-Es una **serie** de términos tales, que cada uno de ellos es igual al inmediatamente anterior, sumado con una cantidad constante llamada **razón** de la progresión.
+Es una serie de términos tales, que cada uno de ellos es igual al inmediatamente anterior, sumado con una cantidad constante llamada razón de la progresión.
 
 El símbolo usado para designar las progresiones aritméticas es $\div$ y se coloca al principio de una progresión. Entre cada término y el siguiente se acostumbra a usar un punto.
 
-### Termino cualquiera de una progresion aritmetica
+### Término cualquiera de una progresión aritmética
 
 Cualquier término de una progresión aritmética es igual al primero, sumado con el producto de la razón por el número de términos que le anteceden...
 
@@ -995,7 +993,7 @@ $$
 \div a_1.a_2.a_3.a_4.a_5.a_6\dots.a_n
 $$
 
-Sea $a_{ n_1 }$ y $a_{ n_2 }$ dos terminos equidistantes.
+Sea $a_{ n_1 }$ y $a_{ n_2 }$ dos términos equidistantes.
 
 $$
 a_{ n_1 } = a + (n_1 - 1) r \\[10 pt]
@@ -1036,7 +1034,7 @@ $$
 \end{array}
 $$
 
-Puede observarse que cada binomio es la suma de dos términos equidistante; y esta suma, como vimos, es constante e igual a $a_1 + a_n$. Ahora hay tantos binomios como términos tiene la serie.
+Puede observarse que cada binomio es la suma de dos términos equidistantes; y esta suma, como vimos, es constante e igual a $a_1 + a_n$. Ahora hay tantos binomios como términos tiene la serie.
 
 $$
 S = \frac{ (a_1 + a_n) n }{ 2 }
@@ -1044,13 +1042,13 @@ $$
 
 ### Elementos de la progresión aritmética
 
-Si partimos de la formula:
+Si partimos de la fórmula:
 
 $$
 a_n = a_1 + (n - 1) r
 $$
 
-podemos despejar cada uno de los elementos de la progresion en funcion de todos los demas.
+podemos despejar cada uno de los elementos de la progresión en función de todos los demás.
 
 $$
 a_1 = a_n - (n - 1) r \\[10 pt]
@@ -1074,13 +1072,13 @@ $$
 
 ### Representación gráfica de la progresión aritmética
 
-Podemos ver la fórmula general de una progresión aritmética $a_n = a_1 + (n - 1) r$ como la ecuación $y = a + b x$, donde $y$ (variable independiente) es en enésimo término de una progresión; $a$ (constante) el primer término de la progresión; $x$ (variable independiente) número de términos que anteceden a $y$ y $b$ (constante) razón de progresión.
+Podemos ver la fórmula general de una progresión aritmética $a_n = a_1 + (n - 1) r$ como la ecuación $y = a + b x$, donde $y$ (variable independiente) es el enésimo término de una progresión; $a$ (constante) el primer término de la progresión; $x$ (variable independiente) número de términos que anteceden a $y$ y $b$ (constante) razón de progresión.
 
 ## Unidad XXI (progresiones geométricas)
 
 ### Definiciones (progresiones geométricas)
 
-Progresión geométrica es una serie de términos tales, que cada uno de ellos es igual al inmediatamente anterior multiplicado por una cantidad constante llamada **razón** de la progresión.
+Progresión geométrica es una serie de términos tales, que cada uno de ellos es igual al inmediatamente anterior multiplicado por una cantidad constante llamada razón de la progresión.
 
 El símbolo usado para designar las progresiones geométricas es $\div\div$; y entre los términos de la progresión se usa el símbolo $:$.
 
@@ -1108,7 +1106,7 @@ $$
 
 ### Términos equidistantes de los extremos
 
-Si se tiene una progresión geométrica limitada, el producto de dos términos equidistantes de los extremos es contante y es igual al producto de dichos extremos. En efecto, si tenemos la progresión:
+Si se tiene una progresión geométrica limitada, el producto de dos términos equidistantes de los extremos es constante y es igual al producto de dichos extremos. En efecto, si tenemos la progresión:
 
 $$
 \div\div a_1:a_2:a_3:a_4:a_5:a_6\dots:a_n
@@ -1138,13 +1136,13 @@ $$
 a_1 * a_n = a * a r^{ n - 1 } = a^2 r^{ n - 1 }
 $$
 
-Como es el mismo, queda comprobado que el producto de dos términos equidistantes de los extremos es contante y es igual al producto de dichos extremos.
+Como es el mismo, queda comprobado que el producto de dos términos equidistantes de los extremos es constante y es igual al producto de dichos extremos.
 
-Cuando el número de términos es de una progresión es impar, el término central es igual a la raíz cuadrada del producto de los extremos.
+Cuando el número de términos de una progresión es impar, el término central es igual a la raíz cuadrada del producto de los extremos.
 
-### Suma de una progresion geometrica
+### Suma de una progresión geométrica
 
-La suma de una progresion geometrica es igual a la diferencia entre el producto del ultimo termino y la razon menos el primer termino, dividida por la diferencia de la razon y uno.
+La suma de una progresión geométrica es igual a la diferencia entre el producto del último término y la razón menos el primer término, dividida por la diferencia de la razón y uno.
 
 $$
 \div\div a_1:a_2:\dots:a_n
@@ -1174,9 +1172,9 @@ $$
 S = \frac{ a_n r - a }{ r - 1 }
 $$
 
-### Suma de una progresion geometrica decreciente infinita
+### Suma de una progresión geométrica decreciente infinita
 
-La suma de una progresion geometrica decreciente tiene un limite.
+La suma de una progresión geométrica decreciente tiene un límite.
 
 $$
 S = \frac{ a_n r - a }{ r - 1 } = \frac{ a r^{ n - 1 } r - a }{ r - 1 } = \frac{ a }{ 1 - r } (1 - r^n)
@@ -1186,7 +1184,7 @@ $$
 \lim_{ n \to \infty } { \frac{ a }{ 1 - r } (1 - r^n) } = \frac{ a }{ 1 - r }
 $$
 
-### Elementos de la progresion geometrica
+### Elementos de la progresión geométrica
 
 $$
 a = \frac{ x }{ r^{ n - 1 } } \\[10 pt]
@@ -1198,7 +1196,7 @@ $$
 
 ### Medios geométricos
 
-Reciben el nombre de medios aritméticos todos los términos que están entre el primero y último término de una progresión geométrica...
+Reciben el nombre de medios geométricos todos los términos que están entre el primero y último término de una progresión geométrica...
 
 Si $a$ y $b$ son dos números, interpólense entre ellos $m$ medios geométricos.
 
@@ -1230,15 +1228,15 @@ $a_n = a r^{ n - 1 }$, en que $a_n$ es el último término o enésimo término d
 
 ### Definición (logaritmos)
 
-Logaritmo de un número es el exponente a que hay que elevar otro número llamado **base** para obtener dicho número...
+Logaritmo de un número es el exponente a que hay que elevar otro número llamado base para obtener dicho número...
 
 ### Logaritmos vulgares o de Briggs
 
-Siendo pues ilimite el sistema de números positivos, también lo es el número de sistemas de logaritmos. No obstante, los sistemas generalmente usados en matemáticas se reducen a dos: el vulgar, llamado también de Briggs, cuya base es 10; y el sistema de logaritmos naturales o neperianos, cuya base es el número de Euler.
+Siendo pues ilimitado el sistema de números positivos, también lo es el número de sistemas de logaritmos. No obstante, los sistemas generalmente usados en matemáticas se reducen a dos: el vulgar, llamado también de Briggs, cuya base es 10; y el sistema de logaritmos naturales o neperianos, cuya base es el número de Euler.
 
-### Propiedades generales de los algoritmos
+### Propiedades generales de los logaritmos
 
-1. La base de un sistema de logaritmos es siempre positiva. En efecto, si fuera negativa, sus potencias pares serían positiva y sus potencias impares serían negativas, lo cual originaria un sistema de números alternativamente positivo y negativos y, por tanto, habría números positivos sin logaritmo.
+1. La base de un sistema de logaritmos es siempre positiva. En efecto, si fuera negativa, sus potencias pares serían positivas y sus potencias impares serían negativas, lo cual originaría un sistema de números alternativamente positivos y negativos y, por tanto, habría números positivos sin logaritmo.
 
 2. Los números negativos no tienen logaritmo. Esto es una consecuencia de la propiedad anterior, pues siendo la base positiva todas sus potencias son positivas.
 
@@ -1246,7 +1244,7 @@ Siendo pues ilimite el sistema de números positivos, también lo es el número 
 
 4. En todo sistema de logaritmos, el logaritmo de la base es 1.
 
-5. Como consecuencia de la propiedad 3 los números mayores que 1 tienen logaritmo positivo; y los números menores que 1, tiene logaritmo negativo.
+5. Como consecuencia de la propiedad 3 los números mayores que 1 tienen logaritmo positivo; y los números menores que 1 tienen logaritmo negativo.
 
 ### Logaritmación de las operaciones indicadas
 
@@ -1270,7 +1268,7 @@ Siendo pues ilimite el sistema de números positivos, también lo es el número 
     \log { A B } = x + y = \log A + \log B
     $$
 
-2. El logaritmo de un cociente es igual a la diferencia entre el logaritmo del dividiendo y el logaritmo del diviror.
+2. El logaritmo de un cociente es igual a la diferencia entre el logaritmo del dividendo y el logaritmo del divisor.
 
     $$
     \log \frac{ A }{ B } = \log A - \log B
@@ -1340,7 +1338,7 @@ Un capital también se puede formar por medio de sumas periódicas o anualidades
 
 La suma que se impone anualmente durante un número determinado de años, para amortizar una deuda o constituir un capital.
 
-### Formulas generales de capitalización
+### Fórmulas generales de capitalización
 
 - $c$: capital inicial.
 
@@ -1368,7 +1366,7 @@ $$
 t = \frac{ \log C - \log c }{ \log { 1 + r } }
 $$
 
-### Formulas generales de amortización
+### Fórmulas generales de amortización
 
 - $C$: capital original para ser amortizado.
 

@@ -4,13 +4,13 @@ reviewed_on: 2026-02-25
 
 # Gherkin
 
-It is a domain specific language for writing acceptance criteria. It is used to describe business behavior without going into implementation detail.
+It is a domain-specific language for writing acceptance criteria. It is used to describe business behavior without going into implementation detail.
 
 ## Core structure
 
 Given a certain _scenario_ (context), when an _action_ takes place (event), then this should be the _outcome_.
 
-> The **scenarios** should be specified in third person.
+> The scenarios should be specified in third person.
 
 ## Keywords
 
@@ -26,6 +26,12 @@ Given a certain _scenario_ (context), when an _action_ takes place (event), then
 
 - Background: shared setup steps that apply to all (or most) scenarios in the same feature file, used to avoid repeating the same "given" context.
 
-- And.
+- Given: describes the initial context of the scenario.
 
-- But.
+- When: describes the action or event.
+
+- Then: describes the expected outcome.
+
+- And: adds another step of the same kind as the previous one.
+
+- But: adds a step that contrasts with the previous one, usually a negative condition.

@@ -60,4 +60,4 @@ Otra manera de pedir algo es "I would like", que es una forma más cortés de de
 
 ## Describe personas, usa comparativos
 
-Para decir que algo es "más" que otra cosa. Modificamos el adjetivo, si la palabra ya termina con `e` (como "nice"), solo necesitas agregarle `r`.
+Para decir que algo es "más" que otra cosa, modificamos el adjetivo. Si la palabra ya termina con `e` (como "nice"), solo necesitas agregarle `r`.

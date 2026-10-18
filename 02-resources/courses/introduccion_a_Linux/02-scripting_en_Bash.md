@@ -2,13 +2,13 @@
 
 ## Buscador de máquinas de Hack The Box
 
-We will build a terminal browser for the Hack The Box machines stored on the [htbmachines](https://htbmachines.github.io) page.
+We will build a terminal search tool for the Hack The Box machines stored on the [htbmachines](https://htbmachines.github.io) page.
 
 1. `curl -s -X GET https://htbmachines.github.io/bundle.js`.
 
-    > `-s` to use it in the silent mode.
+    > `-s` runs it in silent mode.
     >
-    > `-X` to change the method to use when starting the transfer.
+    > `-X` sets the request method to use when starting the transfer.
 
     We could bring the information about the machines from the Internet every time we need it, but that is not efficient.
 
@@ -41,6 +41,6 @@ The Martingale system is a betting strategy based on recovering losses. The idea
 
     Repeat the steps until the sequence is cleared and the goal number is won.
 
-### Inverse Labouchere
+### Reverse Labouchere
 
-The Reverse Labouchere betting system is based on the idea of turning the tables on the original Labouchere system, which is a negative progression strategy. This means that in the traditional Labouchere, bets increase after losses and decrease after wins. However, in the Reverse Labouchere, bets increase after winning, allowing for substantial gains during winning streaks in both European Roulette and American Roulette games.
+The Reverse Labouchere betting system is based on the idea of turning the tables on the original Labouchere system, which is a negative progression strategy. This means that in the traditional Labouchere, bets increase after losses and decrease after wins. However, in the Reverse Labouchere, bets increase after winning, allowing for substantial gains during winning streaks in both European roulette and American roulette games.

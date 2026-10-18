@@ -10,7 +10,7 @@ It is software that prepares frontend source code for actual use in the browser.
 
 A development server is a local server used while an application is being built. Source files are served in a way that makes testing in the browser easy and changes can be reflected quickly without rebuilding the entire project each time.
 
-## Why frontend code must be bundled for production?
+## Why must frontend code be bundled for production?
 
 Frontend code is usually written as many separate modules, styles and assets because that structure is easier to develop and maintain. In production, however, sending too many separate files is inefficient because it increases network overhead and slows loading. A production build bundles and optimizes the code so that delivery becomes faster and more reliable.
 

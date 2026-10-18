@@ -6,7 +6,7 @@ reviewed_on: "2025-08-03"
 
 ## Statement
 
-Given a **connected**, **undirected** and **weighted** graph, the goal is to find a spanning tree that connects all the vertices together with the minimum possible total edge weight. A spanning tree is a subgraph that includes all vertices of the original graph and is a tree (i.e., it has no cycles).
+Given a connected, undirected and weighted graph, the goal is to find a spanning tree that connects all the vertices together with the minimum possible total edge weight. A spanning tree is a subgraph that includes all vertices of the original graph and is a tree (i.e., it has no cycles).
 
 ## Input
 
@@ -24,7 +24,7 @@ A subset of edges $E^\prime \subseteq E$ that forms a spanning tree $T = (V,E^\p
 
 1. Spanning: it connects all vertices in $V$.
 
-2. Minimum weight: the sum of the weights of all edges in $E^\prime$ in minimized.
+2. Minimum weight: the sum of the weights of all edges in $E^\prime$ is minimized.
 
     $$
     \sum_{ e \in E^\prime } w(e) \; \text{is minimal}

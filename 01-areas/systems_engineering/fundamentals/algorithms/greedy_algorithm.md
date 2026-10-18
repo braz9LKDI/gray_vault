@@ -8,9 +8,9 @@ sources:
 
 # Greedy algorithm
 
-Greedy is an algorithmic paradigm that builds up a solution **piece by piece**, always choosing the next piece that offers the most obvious and immediate benefit. Greedy algorithms are used for optimization problems.
+Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. Greedy algorithms are used for optimization problems.
 
-However, it is important to note that not all problems are suitable for greedy algorithms. They work best when the problem exhibits the following properties:
+Not all problems are suitable for greedy algorithms. They work best when the problem exhibits the following properties:
 
 - Greedy choice property: the optimal solution can be constructed by making the best local choice at each step.
 

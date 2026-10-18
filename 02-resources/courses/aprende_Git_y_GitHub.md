@@ -14,9 +14,7 @@ Es un servicio de hosting que nos permite almacenar proyectos de desarrollo de s
 
 - Repositorio: colección de archivos de distintas versiones de un proyecto.
 
-- Commit.
-
-    Componentes básicos de la línea del tiempo de un proyecto de Git. Son como un registro o "foto" del estado de un proyecto en un momento específico.
+- Commit: componente básico de la línea del tiempo de un proyecto de Git. Es como un registro o "foto" del estado de un proyecto en un momento específico.
 
     > El nombre de un commit debe ser bastante informativo, sin ser muy largo, es decir, conciso.
 
@@ -24,15 +22,15 @@ Es un servicio de hosting que nos permite almacenar proyectos de desarrollo de s
 
 ## Configurar usuario y correo electrónico
 
-- Usuario: `git config --goblal user.name "<user-name>"`.
+- Usuario: `git config --global user.name "<user-name>"`.
 
-- Correo: `git config --goblal user.email "<user-email>"`.
+- Correo: `git config --global user.email "<user-email>"`.
 
     > Es recomendable no poner un correo personal, sino uno que te proporciona GitHub.
 
 > Si queremos hacer la configuración para un repositorio en específico, quitamos la flag `--global`.
 
-Para ver los campos configurados, podemos escribir `git user.<attibute>`
+Para ver los campos configurados, podemos escribir `git config user.<attribute>`.
 
 - Rama creada por defecto: `git config --global init.defaultBranch "<branch-name>"`.
 
@@ -56,9 +54,9 @@ Dependiendo del área en la que está un archivo, nos referiremos a su estado de
 
 2. Área de preparación.
 
-    Conjunto de archivos y cambios que serán incluidos en el próximo **commit**.
+    Conjunto de archivos y cambios que serán incluidos en el próximo commit.
 
-    > En inglés **staging area**.
+    > En inglés staging area.
 
     Cuando un archivo se encuentra en esta área, decimos que el archivo (su versión) está preparada (staged).
 
@@ -72,13 +70,13 @@ Dependiendo del área en la que está un archivo, nos referiremos a su estado de
 
 - Modificado.
 
-    Si la versión del archivo contiene cambios que **no** son parte del repositorio y **no** se han añadido al área de preparación.
+    Si la versión del archivo contiene cambios que no son parte del repositorio y no se han añadido al área de preparación.
 
 - Preparado.
 
-    Si la versión del archivo contiene cambios que **no** son parte del repositorio, pero fue añadido al área de preparación.
+    Si la versión del archivo contiene cambios que no son parte del repositorio, pero fue añadido al área de preparación.
 
-- Confirmada.
+- Confirmado.
 
     Si la versión ya se encuentra en el directorio de Git.
 
@@ -86,9 +84,9 @@ Dependiendo del área en la que está un archivo, nos referiremos a su estado de
 
 - `git status`: verificar el estado del repositorio.
 
-En VSC el estado de un archivo tiene una representación visual:
+En VS Code el estado de un archivo tiene una representación visual:
 
-- Modificado: su símbolo es una `U` (untracked) y es de color verde.
+- Modificado: su símbolo es una `M` (modified) y es de color amarillo. Un archivo nuevo que Git todavía no rastrea se marca con una `U` (untracked) de color verde.
 
 - Preparado: su símbolo es una `A` (added) y es de color verde.
 
@@ -96,19 +94,19 @@ En VSC el estado de un archivo tiene una representación visual:
 
 ## Commits
 
-El identificador de un commit se denomina **sha** (Secure Hash Algorithm) que identifica:
+El identificador de un commit se denomina SHA (Secure Hash Algorithm) que identifica:
 
 - Los cambios realizados.
 
-- Donde se realizaron los cambios.
+- Dónde se realizaron los cambios.
 
-- Quien realizo los cambios.
+- Quién realizó los cambios.
 
 En cada commit veremos fecha, hora, usuario y correo.
 
 ## Crear un commit
 
-- `git commit -m "<message>`: crear un commit con el mensaje `<message>`.
+- `git commit -m "<message>"`: crear un commit con el mensaje `<message>`.
 
 - `git log`: ver historial de commits.
 
@@ -118,7 +116,7 @@ En cada commit veremos fecha, hora, usuario y correo.
 
 - `git config --global core.editor "<editor>"`: configurar un editor predeterminado para Git.
 
-    > Para VSC se pone `code --wait`.
+    > Para VS Code se pone `code --wait`.
     >
     > El `--wait` es para que Git espere a que el archivo se guarde y se cierre antes de realizar cualquier acción.
 
@@ -126,7 +124,7 @@ En cada commit veremos fecha, hora, usuario y correo.
 
 - `git commit --amend`: cambiar el mensaje del último commit hecho.
 
-    > Este proceso puede ser arriesgado si lo hacemos sobre repositorios remotos (ya que puedan estar siendo usados por otras personas).
+    > Este proceso puede ser arriesgado si lo hacemos sobre repositorios remotos (ya que pueden estar siendo usados por otras personas).
 
 ## Deshacer el último commit
 
@@ -134,7 +132,7 @@ En cada commit veremos fecha, hora, usuario y correo.
 
     > `--soft` hace que solo se deshaga el registro del commit y no cambie (modificar o eliminar) archivos.
     >
-    > `HEAD~1` hace referencia al último commit.
+    > `HEAD~1` hace referencia al commit anterior a `HEAD`, es decir, al padre del último commit.
 
 ## Crear una rama en Git
 
@@ -150,11 +148,11 @@ En cada commit veremos fecha, hora, usuario y correo.
 
 ## Cambiar el nombre de una rama
 
-- `git branch -m "<name>"`: cambiar el nombre de la rama actual a `<branch-name>`.
+- `git branch -m "<name>"`: cambiar el nombre de la rama actual a `<name>`.
 
 - `git branch -m "<branch-name>" "<name>"`: cambiar el nombre de la rama `<branch-name>` a `<name>`.
 
-> `-m` de modify.
+> `-m` de move.
 
 ## Eliminar una rama
 
@@ -174,27 +172,27 @@ Proceso que permite combinar varias líneas independientes de desarrollo en una 
 
 - `git merge "<branch-name>"`: recibir los cambios de la rama `<branch-name>` en la rama actual.
 
-Esta operación puede ocasionar **conflictos** cuando se editan las mismas líneas de los mismos archivos de las dos ramas al mismo tiempo.
+Esta operación puede ocasionar conflictos cuando se editan las mismas líneas de los mismos archivos de las dos ramas al mismo tiempo.
 
 - `git merge --continue`: continuar con el proceso de fusión, una vez solucionados los conflictos.
 
 ## Introducción a GitHub
 
-GitHub es un servicio de **hosting** que nos permite almacenar proyectos de desarrollo de software con control de versiones usando Git.
+GitHub es un servicio de hosting que nos permite almacenar proyectos de desarrollo de software con control de versiones usando Git.
 
 ## Clonar un repositorio
 
 Crear una copia local de un repositorio remoto, incluyendo sus versiones e historial de commits.
 
-"origin" es el nombre por defecto se le asigna al repositorio remoto del que estamos clonamos.
+`origin` es el nombre que se le asigna por defecto al repositorio remoto del que clonamos.
 
-- `git clone <source>`: clonar el repositorio que este asociado con el origen `<source>`.
+- `git clone <source>`: clonar el repositorio que esté asociado con el origen `<source>`.
 
 ## Crear un commit en un repositorio clonado
 
 - `git remote`: ver el nombre asociado al repositorio remoto.
 
-    > `-v` para ver las direcciones asociadas a las operaciones **fetch** (traer cambios) y **push** (enviar cambios).
+    > `-v` para ver las direcciones asociadas a las operaciones fetch (traer cambios) y push (enviar cambios).
 
 ## Enviar cambios a GitHub (push)
 
@@ -202,13 +200,13 @@ Crear una copia local de un repositorio remoto, incluyendo sus versiones e histo
 
 ## Ocultar tu correo en GitHub
 
-En `Settings > Emails` encontrarás un correo **anónimo** (con dominio `@users.noreply.github.com`) asociado a tu correo primario.
+En `Settings > Emails` encontrarás un correo anónimo (con dominio `@users.noreply.github.com`) asociado a tu correo primario.
 
-> Lo recomendado es configurar tu Git con este correo **anónimo**.
+> Lo recomendado es configurar tu Git con este correo anónimo.
 
 ## Configurar HTTPS con un token
 
-En `Settings > Developer settings > Personal access tokes > Tokens` podemos crear un token con la fecha de expiración y permisos especificados.
+En `Settings > Developer settings > Personal access tokens > Tokens` podemos crear un token con la fecha de expiración y permisos especificados.
 
 ## Incorporar cambios con git pull
 
@@ -220,11 +218,11 @@ En `Settings > Developer settings > Personal access tokes > Tokens` podemos crea
 
 - `git fetch <source>`.
 
-    **Verificar** los cambios realizados en el repositorio remoto sin combinar esos cambios con el repositorio local.
+    Verificar los cambios realizados en el repositorio remoto sin combinar esos cambios con el repositorio local.
 
-    Te permite saber **si se han realizado cambios** en el repositorio remoto desde la última vez que actualizaste tu repositorio local con **git pull**.
+    Te permite saber si se han realizado cambios en el repositorio remoto desde la última vez que actualizaste tu repositorio local con git pull.
 
-    Podremos ver los cambios (si lo hay) accediendo a la rama remota.
+    Podremos ver los cambios (si los hay) accediendo a la rama remota.
 
 ## Enviar repositorio local a GitHub
 
@@ -240,23 +238,23 @@ En `Settings > Developer settings > Personal access tokes > Tokens` podemos crea
 
 Bifurcar un repositorio es crear una copia de un repositorio remoto en tu cuenta de GitHub (terminando con otro repositorio remoto).
 
-> Normalmente, se hacen con el fin de contribuir al proyecto original mediante **pull requests**.
+> Normalmente, se hacen con el fin de contribuir al proyecto original mediante pull requests.
 
 ## Pull requests
 
 Son una solicitud de combinar tus cambios con el repositorio original del proyecto.
 
-Lo normal es hacer un **fork** del proyecto y crear una nueva rama que contendrá nuestro aporte al proyecto original.
+Lo normal es hacer un fork del proyecto y crear una nueva rama que contendrá nuestro aporte al proyecto original.
 
 ## Issues en GitHub
 
 Se pueden ver como una lista de pendientes (errores y mejoras) para un repositorio. Lo ideal es que si vamos a contribuir a un proyecto (repositorio), primero abramos un issue de lo que pensamos hacer antes de invertir tiempo en hacerlo.
 
-> Es decir, lo estemos usando para ponernos de acuerdo con los **administradores** del repositorio original.
+> Es decir, lo estemos usando para ponernos de acuerdo con los administradores del repositorio original.
 
 ## Crear ramas en GitHub
 
-Queremos traer una rama remota a nuestro repositorio local, podemos usar los siguientes enfoques:
+Para traer una rama remota a nuestro repositorio local, podemos usar los siguientes enfoques:
 
 1. Crear una rama local (con el mismo nombre que la rama creada remotamente) y hacer un `git pull origin <branch-name>`.
 
@@ -266,4 +264,4 @@ Queremos traer una rama remota a nuestro repositorio local, podemos usar los sig
 
 1. `git branch -d <branch-name>`: eliminar la rama del repositorio local.
 
-2. `git push origin -d <branch-name> && cd repo`: eliminar la rama del repositorio remoto.
+2. `git push origin -d <branch-name>`: eliminar la rama del repositorio remoto.

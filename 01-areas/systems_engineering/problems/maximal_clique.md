@@ -8,7 +8,7 @@ reviewed_on: "2025-08-03"
 
 Given an undirected graph, the goal is to find a maximal clique. A clique is a subset of vertices where every two distinct vertices are adjacent (connected by an edge). A clique is maximal if it cannot be extended by adding any other vertex from the graph. In other words, any vertex not in the maximal clique is not connected to at least one vertex within the clique.
 
-It is different from the **maximum clique** problem. The maximum clique problem, seeks to find the largest possible clique in the graph.
+It is different from the maximum clique problem. The maximum clique problem seeks to find the largest possible clique in the graph.
 
 ## Input
 

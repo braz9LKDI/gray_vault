@@ -8,11 +8,11 @@ sources:
 
 # Pickle
 
-The pickle module implements binary protocols for serializing and deserializing a Python object structure. "Pickling" is the process which a Python object hierarchy is converted into a byte stream, and "unpickling" is the inverse operation, which a byte stream is converted back into an object hierarchy.
+The pickle module implements binary protocols for serializing and deserializing a Python object structure. "Pickling" is the process by which a Python object hierarchy is converted into a byte stream, and "unpickling" is the inverse operation, by which a byte stream is converted back into an object hierarchy.
 
-> It is possible to construct malicious pickle data which will **execute arbitrary code during unpickling**.
+> It is possible to construct malicious pickle data which will execute arbitrary code during unpickling.
 
-The Python pickle module basically consists of four methods:
+The Python pickle module provides four main functions:
 
 1. `pickle.dump(obj, file, protocol=None, *, fix_imports=True, buffer_callback=None)`.
 
@@ -25,13 +25,15 @@ The Python pickle module basically consists of four methods:
 ## Example
 
 ```python
-list = ["l", "i", "s", "t"]
+import pickle
+
+letters = ["l", "i", "s", "t"]
 
 with open("file", "wb") as file:
-    pickle.dump(file, list)
+    pickle.dump(letters, file)
 
 with open("file", "rb") as file:
-    list = pickle.load(file)
+    letters = pickle.load(file)
 
-print(list)
+print(letters)
 ```

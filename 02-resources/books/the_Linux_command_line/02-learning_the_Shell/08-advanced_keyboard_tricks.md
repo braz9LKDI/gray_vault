@@ -6,7 +6,7 @@ reviewed_on: "2025-06-30"
 
 ## Command line editing
 
-`bash` uses a library called **Readline** to implement command line editing...
+`bash` uses a library called Readline to implement command line editing...
 
 > Some of the key sequences below (particularly those that use `ALT`) may be intercepted by the GUI for other functions. All of the key sequences should work properly when using a virtual console.
 
@@ -34,7 +34,7 @@ reviewed_on: "2025-06-30"
 
 ### Cutting and pasting (killing and yanking) text
 
-The `readline` documentation uses the terms **killing** and **yanking** to refer to what we would commonly call cutting and pasting. Items that are cut are stored in a buffer called the **kill-ring**.
+The `readline` documentation uses the terms killing and yanking to refer to what we would commonly call cutting and pasting. Items that are cut are stored in a buffer called the kill-ring.
 
 |        key        | action                                                                                                                                        |
 | :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -42,7 +42,7 @@ The `readline` documentation uses the terms **killing** and **yanking** to refer
 |    `CTRL + u`     | kill text from the cursor location to the beginning of the line.                                                                              |
 |     `ALT + d`     | kill text from the cursor location to the end of the current word.                                                                            |
 | `ALT + BACKSPACE` | kill text from the cursor location to the beginning of the current word. If the cursor is at the beginning of a word, kill the previous word. |
-|    `CTRL + y`     | Yank text from the kill-ring and insert it at the cursor location.                                                                            |
+|    `CTRL + y`     | yank text from the kill-ring and insert it at the cursor location.                                                                            |
 
 #### The meta key
 
@@ -52,7 +52,7 @@ The Readline documentation, which can be found in the "READLINE" section of the 
 
 ## Completion
 
-....Completion occurs when you press the `TAB` while typing a command...
+...Completion occurs when you press the `TAB` while typing a command...
 
 ...completion will also work on variables (if the beginning of the word is a `$`), usernames (if the word begins with `~`), commands (if the word is the first word on the line) and hostnames (if the beginning of the word is `@`). Hostname completion only works for hostnames listed in `/etc/hosts`.
 
@@ -63,7 +63,7 @@ The Readline documentation, which can be found in the "READLINE" section of the 
 
 ### Programmable completion
 
-Recent versions of `bash` have a facility called **programmable completion**. Programmable completion allows additional completion rules to be added. To see them, `set` can be used.
+Recent versions of `bash` have a facility called programmable completion. Programmable completion allows additional completion rules to be added. To see them, `set` can be used.
 
 ## Using history
 
@@ -83,7 +83,7 @@ history | greq /usr/bin # Display all commands we executed that contains the pat
 !88 # Get the command in the 88th line of the history
 ```
 
-`bash` will expand `!88` into the contents of the 88th line in the history list (this is called **history expansion**).
+`bash` will expand `!88` into the contents of the 88th line in the history list (this is called history expansion).
 
 `bash` also provides the ability to search the history list incrementally. This means we can tell bash to search the history list as we enter characters, with each additional character further refining our search. To start incremental search, press `CTRL + r` followed by the text being looked for. Once it is found, either press `ENTER` to execute the command or press `CTRL + j` to copy the line from the history list to the current command line. To find the next occurrence of the text (moving "up" the history list), press `CTRL + r` again. To quit searching, press either `CTRL + g` or `CTRL + c`.
 
@@ -106,7 +106,7 @@ history | greq /usr/bin # Display all commands we executed that contains the pat
 | `!<string>`  | repeat last history list item starting with _string_. |
 | `!?<string>` | repeat last history list item containing _string_.    |
 
-Use caution with the `!string` and `!?string` forms unless the contents of the history list items are absolutely certain. We can mitigate this problem somewhat by ap pending `:p` to our expansion. This tells the shell to print the result of the expansion and place it into the command history.
+Use caution with the `!string` and `!?string` forms unless the contents of the history list items are absolutely certain. We can mitigate this problem somewhat by appending `:p` to our expansion. This tells the shell to print the result of the expansion and place it into the command history.
 
 #### `script`
 

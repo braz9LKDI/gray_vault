@@ -446,7 +446,6 @@ Resuelva las siguientes ecuaciones:
         & = (1 - \psin{ x }^2) - \psin{ x }^2 \\
         & = 1 - 2 \psin{ x }^2
     \end{align}
-
     $$
 
     $$

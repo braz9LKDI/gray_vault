@@ -4,9 +4,9 @@ reviewed_on: "2025-07-28"
 
 # Top-down design
 
-The process of identifying the top-level steps and developing increasingly detailed views of those steps is call **top-down design**.
+The process of identifying the top-level steps and developing increasingly detailed views of those steps is called top-down design.
 
-## Shel functions
+## Shell functions
 
 ...shell functions are "minimal scripts" that are located inside other scripts and can act as autonomous programs. Shell functions have two common syntactic forms. First, here is the more formal form:
 
@@ -30,7 +30,7 @@ Shell function names follow the same rules as variables. A function must contain
 
 ## Local variables
 
-Inside shell functions, it is often desirable to have **local variables** instead of **global** ones. Local variables are only accessible within the shell function in which they are defined and cease to exist once the shell function terminates.
+Inside shell functions, it is often desirable to have local variables instead of global ones. Local variables are only accessible within the shell function in which they are defined and cease to exist once the shell function terminates.
 
 Local variables are defined by preceding the variable name with the word "local". This creates a variable that is local to the shell function in which it is defined. Once outside the shell function, the variable no longer exists.
 
@@ -38,17 +38,17 @@ This feature allows shell functions to be written so that they remain independen
 
 ## Shell functions and redirection
 
-With [[02-resources/books/the_linux_command_line/02-learning_the_shell/06-redirection#Group commands|Group commands]] we can also do
+With [[02-resources/books/the_linux_command_line/02-learning_the_shell/06-redirection#Group commands|group commands]], we can also do this:
 
 ```bash
 { command_1; command_2; command_3; } < some_input.txt
 ```
 
-Because the three commands share one open file stream, they do not each start at the top of the file, they read sequentially, as if someone handed them off the same input stream. This means that each command moves the file pointer forward.
+Because the three commands share one open file stream, they do not each start at the top of the file; they read sequentially, as if someone handed them off the same input stream. This means that each command moves the file pointer forward.
 
 ## Keep scripts running
 
-A **stub** function is simply a **placeholder function**, an empty (or nearly empty) version of a function planned to be filled in later.
+A stub function is simply a placeholder function, an empty (or nearly empty) version of a function planned to be filled in later.
 
 > In programming, a stub is a small piece of code that stands in for some other component or function that has not been implemented yet (or that lives "elsewhere", like on another server). It allows building and testing the rest of the system without waiting for every part to be finished.
 

@@ -1,10 +1,10 @@
 ---
-reviewed on: 2026-05-28
+reviewed_on: 2026-05-28
 ---
 
 # How to set the CachyOS kernel and repositories in Arch
 
-This guide provides a streamlined version of the steps documented in the [official CachyOS guide](https://github.com/CachyOS/linux-cachyos/blob/master/README.md). If any command fails or behaves unexpectedly, the upstream documentation should be checked, as repository names, package versions, or mirrorlist details may have changed.
+This guide provides a streamlined version of the steps documented in the [official CachyOS guide](https://github.com/CachyOS/linux-cachyos/blob/master/README.md). If any command fails or behaves unexpectedly, the upstream documentation should be checked, as repository names, package versions or mirrorlist details may have changed.
 
 CachyOS also provides a script to automate this process. However, that script replaces the original `pacman` package manager with a CachyOS fork. The CachyOS documentation notes that this can introduce issues with standard Arch workflows, so the manual approach is used here. The script remains an option.
 
@@ -67,7 +67,7 @@ title   Arch Linux (CachyOS kernel)
 linux   /vmlinuz-linux-cachyos
 initrd  /amd-ucode.img
 initrd  /initramfs-linux-cachyos.img
-options root=UUID=YOUR-EXISTING-ROOT-UUID rw
+options root=UUID=<existing-root-uuid> rw
 ```
 
 The existing root UUID should be reused from the current Arch boot entry. After saving the new entry, rebooting should make the CachyOS kernel available from the bootloader menu.

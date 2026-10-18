@@ -68,7 +68,7 @@ These are not specific collections. They are abstractions that describe what kin
 
 It means "a sequence that can be enumerated".
 
-It is the most basic sequence abstraction. it supports `foreach`, and many LINQ operators work on it.
+It is the most basic sequence abstraction. It supports `foreach`, and many LINQ operators work on it.
 
 ```cs
 IEnumerable<int> values = new List<int> { 1, 2, 3 };
@@ -96,7 +96,7 @@ int count = values.Count;
 
 It represents a query that may be translated and executed by an external provider, such as a database provider.
 
-This is common in ORMs such as entity framework.
+This is common in ORMs such as Entity Framework.
 
 ```cs
 IQueryable<user> query = dbContext.Users.Where(u => u.IsActive);

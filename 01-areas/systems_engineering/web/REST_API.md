@@ -4,25 +4,25 @@ reviewed_on: 2026-03-16
 
 # REST API
 
-It is an application programming interface that applies [[01-areas/systems_engineering/web/rest|rest]] principles through HTTP. In practice, it exposes application resources through endpoints and allows them to be created, read, updated or deleted through standard HTTP methods.
+It is an application programming interface that applies [[01-areas/systems_engineering/web/rest|REST]] principles through HTTP. In practice, it exposes application resources through endpoints and allows them to be created, read, updated or deleted through standard HTTP methods.
 
 ## Common HTTP methods
 
-- `GET`: is used to retrieve data.
+- `GET`: used to retrieve data.
 
-- `POST`: is used to create a new resource.
+- `POST`: used to create a new resource.
 
-- `PUT`: is used to replace or update a resource.
+- `PUT`: used to replace or update a resource.
 
-- `PATCH`: is used to partially update a resource.
+- `PATCH`: used to partially update a resource.
 
-- `DELETE`: is used to remove a resource.
+- `DELETE`: used to remove a resource.
 
 ## Request and response
 
 A REST API request usually includes a method, a URL, headers and sometimes a body. The response usually includes a status code, headers and returned data.
 
-For example, a request to `GET /products` may return a list of products, while `POST /products` may create the created item and return it.
+For example, a request to `GET /products` may return a list of products, while `POST /products` may create a product and return it.
 
 ## Important characteristics
 

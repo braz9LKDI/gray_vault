@@ -10,7 +10,7 @@ sources:
 
 Applies a given function to all the items in an input sequence (or multiple sequences) and returns an iterator with the results.
 
-## Maps syntax
+## Syntax
 
 ```python
 map(function, sequences)
@@ -20,16 +20,16 @@ map(function, sequences)
 
     > The function must accept as many arguments as there are sequences.
 
-- `sequences`: one or more sequences that need to be mapped. These can be lists, tuples, sets, or any other iterable.
+- `sequences`: one or more sequences that need to be mapped. These can be lists, tuples, sets or any other iterable.
 
 It returns an iterator that applies the function to all items of the given sequences.
 
-## Usage expample
+## Usage example
 
 ```python
 numbers_1 = [1, 2, 3]
 numbers_2 = [4, 5, 6]
 
 result = map(lambda x, y: x + y, numbers_1, numbers_2)
-print(list(result)) # [5, 4, 9]
+print(list(result)) # [5, 7, 9]
 ```

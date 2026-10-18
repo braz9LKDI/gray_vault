@@ -85,7 +85,6 @@ $$
     & e_{ n + 1 } = \frac{ \frac{ 1 }{ 2 } { e_n }^2 { f'' }(\varepsilon_n) }{ { f' }(x_n) } \\
     & = C { e_n }^2
 \end{align}
-
 $$
 
 > Tanto ${ f'' }(\varepsilon_n)$ como ${ f' }(x_n)$ se consideran constantes porque son las funciones evaluadas en un punto en concreto.

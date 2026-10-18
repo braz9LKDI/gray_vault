@@ -2,9 +2,9 @@
 reviewed_on: 2026-05-27
 ---
 
-# what is a MCP?
+# What is an MCP?
 
-MCP stands for **model context protocol**. It is an open standard that lets AI applications connect to external systems such as files, databases, business tools, developer tools, search engines and specialized workflows.
+MCP stands for Model Context Protocol. It is an open standard that lets AI applications connect to external systems such as files, databases, business tools, developer tools, search engines and specialized workflows.
 
 The main idea is standardization. Instead of building a custom integration for every tool or data source, an application can use MCP as a common protocol. This makes it easier for models and agents to discover available tools, request information and perform actions through a consistent interface.
 
@@ -16,11 +16,11 @@ MCP usually involves two sides:
 
 1. MCP client: this is the AI application, assistant or agent that wants to access tools or data.
 
-2. MCP server: this is the service that exposes tools, resources or prompts through the MCP protocol.
+2. MCP server: this is the service that exposes tools, resources or prompts through MCP.
 
 The server describes what it can do, including the available tools and the expected input format.
 
-## What can a MCP expose?
+## What can an MCP expose?
 
 An MCP server can expose several kinds of capabilities:
 

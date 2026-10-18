@@ -6,10 +6,10 @@ reviewed_on: 2026-03-15
 
 ## Fields
 
-A field is a variable stored inside a type. fields are often used for internal state.
+A field is a variable stored inside a type. Fields are often used for internal state.
 
 ```cs
-public class counter
+public class Counter
 {
     private int _value;
 }
@@ -19,7 +19,7 @@ A field is typically made `private` so direct external access is avoided. This h
 
 ## Properties
 
-A property is a member that looks like a field from the outside, but actually runs accessor logic. properties are commonly used to expose data in a controlled way.
+A property is a member that looks like a field from the outside, but actually runs accessor logic. Properties are commonly used to expose data in a controlled way.
 
 ```cs
 public class Counter
@@ -34,7 +34,7 @@ public class Counter
 }
 ```
 
-Here, reading `value` calls `get`, and assigning `value = ...` calls `set`.
+Here, reading `Value` calls `get` and assigning `Value = ...` calls `set`.
 
 ## Auto-properties
 
@@ -50,7 +50,7 @@ public class Person
 
 This is shorter than manually declaring a field plus property.
 
-Auto-properties can also be read-only or [[personal/systems_engineering/programming_languajes/C_sharp/common_immutability_patterns#`init`-only properties|initialization-only]].
+Auto-properties can also be read-only or [[01-areas/systems_engineering/programming_languages/C_sharp/common_immutability_patterns#`init`-only properties|initialization-only]].
 
 ```cs
 public class Person
@@ -141,11 +141,11 @@ It is a short form used when the body is a single expression. It is often used f
 ### Property (expression-bodied member)
 
 ```cs
-public class circle
+public class Circle
 {
     public double Radius { get; set; }
 
-    public double area => Math.PI * radius * radius;
+    public double Area => Math.PI * Radius * Radius;
 }
 ```
 
@@ -154,7 +154,7 @@ This is equivalent to a getter that returns that expression.
 ### Method (expression-bodied member)
 
 ```cs
-public int square(int x) => x * x;
+public int Square(int x) => x * x;
 ```
 
 ### Getter and setter (expression-bodied member)

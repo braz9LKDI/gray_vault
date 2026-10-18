@@ -6,8 +6,7 @@ reviewed_on: "2025-08-04"
 
 ## Syntactic errors
 
-**Syntactic** errors involve mistyping some element
-of shell syntax. The shell will stop executing a script when it encounters this type of error.
+Syntactic errors involve mistyping some element of shell syntax. The shell will stop executing a script when it encounters this type of error.
 
 - Missing quotes.
 
@@ -17,7 +16,7 @@ of shell syntax. The shell will stop executing a script when it encounters this 
 
 ## Logical errors
 
-Unlike syntactic errors, **logical** errors do not prevent a script from running. The script will run, but it will not produce the desired result.
+Unlike syntactic errors, logical errors do not prevent a script from running. The script will run, but it will not produce the desired result.
 
 - Incorrect conditional expressions: it is easy to incorrectly code an `if`/`then`/`else` and have the wrong logic carried out. Sometimes the logic will be reversed, or it will be incomplete.
 
@@ -29,7 +28,7 @@ Unlike syntactic errors, **logical** errors do not prevent a script from running
 
 It is important to verify assumptions when programming. This means a careful evaluation of the exit status of programs and commands that are used by a script.
 
-One thing we notice about `bash` is that when a script executes and a command fails (not including syntax error in the script itself). the script will happily continue to the next command. Often this is undesirable and the POSIX standard and subsequently, `bash` attempts to address this issue.
+One thing we notice about `bash` is that when a script executes and a command fails (not including syntax errors in the script itself), the script will happily continue to the next command. Often this is undesirable and the POSIX standard and subsequently, `bash` attempts to address this issue.
 
 Place the following commands near the beginning of the script:
 
@@ -39,7 +38,7 @@ Place the following commands near the beginning of the script:
 
 - `set -o pipefail`: causes a script to terminate if the final element in a pipeline fails.
 
-Using this features is not recommended. It is better to design proper error handling and not rely on `set -e` as a substitute for good coding practices.
+Using these features is not recommended. It is better to design proper error handling and not rely on `set -e` as a substitute for good coding practices.
 
 ## Use ShellCheck
 
@@ -49,11 +48,11 @@ Using this features is not recommended. It is better to design proper error hand
 shellcheck SCRIPT
 ```
 
-It will automatically detect which shell dialect to use base on the shebang.
+It will automatically detect which shell dialect to use based on the shebang.
 
 ## Watch out for filenames
 
-Unix (and Unix-like operating systems) is extremely permissive about filenames. In fact, there are only two characters that cannot be included in a filename. `/` used to separate elements of a pathname, and the null character (a zero byte), which is used internally to mark the end of strings.
+Unix (and Unix-like operating systems) is extremely permissive about filenames. In fact, there are only two characters that cannot be included in a filename: `/`, used to separate elements of a pathname, and the null character (a zero byte), which is used internally to mark the end of strings.
 
 Of particular concern are leading hyphens. They can be interpreted as command options when invoked as an argument.
 
@@ -83,4 +82,4 @@ Testing is an important step in every kind of software development, including sc
 
 With tracing enabled, we see the commands performed with expansions applied. The leading plus signs indicate the display of the trace to distinguish them from lines of regular output. The plus sign is the default character for trace input. It is contained in `PS4` (prompt string 4) shell variable.
 
-To perform a trace on a selected portion of a script, rather than the entire script, we can use `set`. With `-x` it activates tracing and with `+x` it deactivates tracing. This technique can be use to examine multiple portions of a troublesome script.
+To perform a trace on a selected portion of a script, rather than the entire script, we can use `set`. With `-x` it activates tracing and with `+x` it deactivates tracing. This technique can be used to examine multiple portions of a troublesome script.

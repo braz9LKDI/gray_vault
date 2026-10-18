@@ -26,7 +26,7 @@ A concept note preserves the reusable knowledge.
 
 For example, a topic may first appear in a college course, but if it becomes useful long-term, it should eventually become a permanent note in one of the knowledge areas.
 
-The rule is **course notes preserve context. Concept notes preserve knowledge**. Instead of duplicating the same explanation in many places, related notes should be connected with links.
+The rule is: course notes preserve context, concept notes preserve knowledge. Instead of duplicating the same explanation in many places, related notes should be connected with links.
 
 Example:
 
@@ -59,7 +59,7 @@ The vault is organized like this:
 
 Temporary notes.
 
-This is where raw, messy, unfinished, or uncategorized notes start.
+This is where raw, messy, unfinished or uncategorized notes start.
 
 The inbox is not meant to be permanent. It is a buffer.
 
@@ -83,7 +83,7 @@ Long-term knowledge.
 
 This is the actual knowledge base of the vault.
 
-Notes in this directory are organized by topic instead of by source, semester, book, course, or temporary context.
+Notes in this directory are organized by topic instead of by source, semester, book, course or temporary context.
 
 Example:
 
@@ -96,7 +96,7 @@ Example:
 └── career/
 ```
 
-If a note explains something I expect to reuse, improve, or connect with other ideas, it belongs here.
+If a note explains something I expect to reuse, improve or connect with other ideas, it belongs here.
 
 Examples:
 
@@ -390,7 +390,7 @@ Every config in the root of this vault (`.prettierrc.json`, `.markdownlint.jsonc
 
 ## Contributing
 
-Pull requests are welcome, as long as they follow the [style guidelines](style_guide.md).
+Pull requests are welcome, as long as they follow the [style guidelines](style_guidelines.md).
 
 Useful contributions include:
 

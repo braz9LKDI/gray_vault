@@ -63,4 +63,4 @@ It is also possible to combine multiple patterns using `|` as a separator. This 
 
 ### Performing multiple actions
 
-Modern version of `bash` add `;;&` notation to terminate each action and allow `case` to continue to the next test rather than simply terminating.
+Modern versions of `bash` add `;;&` notation to terminate each action and allow `case` to continue to the next test rather than simply terminating.

@@ -2,7 +2,7 @@
 reviewed_on: 2026-05-31
 ---
 
-# Elastic load balancing routing
+# Elastic Load Balancing routing
 
 Elastic Load Balancing routing can be understood in two layers: the routing structure and the load balancing method. The routing structure decides which group of targets should receive the request. The load balancing method decides which specific target inside that group should receive it.
 

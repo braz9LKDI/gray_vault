@@ -1,4 +1,4 @@
-# Data communication network basis
+# Data communication network basics
 
 ## Communication and networks
 
@@ -40,7 +40,7 @@ Communication networks that consist of routers, switches, firewalls, access cont
 
 #### Switch
 
-It is the closest device to end users, it is used to access the network and switch data frames.
+It is the closest device to end users and is used to access the network and switch data frames.
 
 #### Router
 
@@ -94,7 +94,7 @@ Typical LANs include a company's office network, a cyber bar network and a home 
 
 It is a computer communication network established within a city.
 
-Typical MANs includes broadband MANs, education MANs and municipal or provincial government private lines.
+Typical MANs include broadband MANs, education MANs and municipal or provincial government private lines.
 
 #### WAN
 
@@ -106,11 +106,11 @@ Generally, it covers a large geographical area, ranging from tens of square kilo
 
 #### Network topologies
 
-A structures layout presented using transmission media (such as twisted pairs and optical fibers) to interconnect various devices (such as terminal, routers and switches).
+A structural layout presented using transmission media (such as twisted pairs and optical fibers) to interconnect various devices (such as terminals, routers and switches).
 
 ##### Types
 
-Are classified into star, bus, ring, tree, full-mesh and partial mesh network topologies.
+They are classified into star, bus, ring, tree, full-mesh and partial mesh network topologies.
 
 ## Network engineering and network engineers
 

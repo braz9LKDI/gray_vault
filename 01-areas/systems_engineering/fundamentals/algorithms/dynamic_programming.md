@@ -12,18 +12,18 @@ Dynamic programming is a technique for efficiently implementing a recursive algo
 
 ### Top-down (memoization)
 
-We keep the solution recursive and add a memoization table to avoid repeated calls of same subproblems.
+We keep the solution recursive and add a memoization table to avoid repeated calls of the same subproblems.
 
 1. Before making any recursive call, we first check if the memoization table already has a solution for it.
 
 2. After the recursive call is over, we store the solution in the memoization table.
 
-## Bottom-up
+### Bottom-up (tabulation)
 
-In the **bottom-up** approach, also known as **tabulation**, we start with the smallest subproblems and gradually build up to the final solution.
+In the bottom-up approach, also known as tabulation, we start with the smallest subproblems and gradually build up to the final solution.
 
-1. We write an iterative solution and build the solution in bottom-up manner.
+1. We write an iterative solution and build the solution in a bottom-up manner.
 
-2. We use a dynamic programming table where we first fill the solution for base cases and then fill the remaining entries of the table using recursive formula.
+2. We use a dynamic programming table where we first fill the solution for base cases and then fill the remaining entries of the table using the recursive formula.
 
-3. We only use recursive formula on table entries and do not make recursive calls.
+3. We only use the recursive formula on table entries and do not make recursive calls.

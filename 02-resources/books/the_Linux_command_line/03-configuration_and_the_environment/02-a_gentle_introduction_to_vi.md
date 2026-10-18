@@ -18,7 +18,7 @@ reviewed_on: "2025-06-30"
 
 ### Global search-and-replace
 
-`vi` uses an ex command to perform search-and-replace operations (called **substitution** in `vi`) over a range of lines or the entire file...
+`vi` uses an ex command to perform search-and-replace operations (called substitution in `vi`) over a range of lines or the entire file...
 
 ```text
 :%s/Line/line/g
@@ -26,7 +26,7 @@ reviewed_on: "2025-06-30"
 
 |     item      | meaning                                                                                                            |
 | :-----------: | :----------------------------------------------------------------------------------------------------------------- |
-|      `:`      | starts an **ex** command.                                                                                          |
+|      `:`      | starts an ex command.                                                                                              |
 |      `%`      | the range of lines for the operation. `%` is a shortcut, meaning from the first line to the last line.             |
 |      `s`      | specifies the operation. In this case, it is substitution.                                                         |
 | `/Line/line/` | specifies the search pattern and the replacement text.                                                             |
@@ -83,13 +83,13 @@ It is also possible to insert an entire file into one we are editing.
 
 ## Saving our work
 
-In normal mode, typing `Z`Z will save the current file and exit `vi`...
+In normal mode, typing `ZZ` will save the current file and exit `vi`...
 
 The `:w` command may also specify an optional filename. This acts like "save as".
 
 > While this command saves the file under a new name, it does not change the name of the file we are editing.
 
-## `bash` does `vi` too
+## `bash`: does `vi` too
 
 ...bash also supports vi-style command line editing too. This feature is easily activated with the following command:
 

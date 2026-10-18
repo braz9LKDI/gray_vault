@@ -2,37 +2,37 @@
 
 ## To read
 
-## [[personal/books/como_mentir_con_estadisticas|Cómo mentir con estadísticas]]
+### Cómo mentir con estadísticas
 
 - Author: Darrell Huff.
 
 - Language: Spanish.
 
-## [[personal/books/dopamine_nation|Dopamine nation]]
+### Dopamine Nation
 
 - Author: Anna Lembke.
 
 - Language: English.
 
-## [[personal/books/el_libro_que_ojala_tus_padres_hubieran_leido|El libro que ojalá tus padres hubieran leído]]
+### El libro que ojalá tus padres hubieran leído
 
 - Author: Philippa Perry.
 
 - Language: Spanish.
 
-## [[personal/books/el_dia_que_el_mundo_deje_de_comprar|El día que el mundo deje de comprar]]
+### El día que el mundo deje de comprar
 
-- Author: J.B. Mackinnon.
+- Author: J.B. MacKinnon.
 
 - Language: Spanish.
 
-## [[personal/books/esencialismo|Esencialismo]]
+### Esencialismo
 
 - Author: Greg McKeown.
 
 - Language: Spanish.
 
-## [[personal/books/the_comfort_crisis|The comfort crisis]]
+### The Comfort Crisis
 
 - Author: Michael Easter.
 
@@ -40,67 +40,67 @@
 
 ## Read
 
-## [[02-resources/books/algebra_3o_y_4o_enseñanza_media|Algebra 3o y 4o enseñanza media]]
+### [[02-resources/books/algebra_3o_y_4o_enseñanza_media|Álgebra 3o y 4o enseñanza media]]
 
 - Author: Gustavo Patiño Duque.
 
 - Language: Spanish.
 
-## [[02-resources/books/deja_de_ser_tu|Deja de ser tu]]
+### [[02-resources/books/deja_de_ser_tu|Deja de ser tú]]
 
 - Author: Joe Dispenza.
 
 - Language: Spanish.
 
-## [[02-resources/books/enfocate|enfócate]]
+### [[02-resources/books/enfocate|Enfócate]]
 
 - Author: Cal Newport.
 
 - Language: Spanish.
 
-## [[02-resources/books/el_hombre_en_busca_de_sentido|El hombre en busca de sentido]]
+### [[02-resources/books/el_hombre_en_busca_de_sentido|El hombre en busca de sentido]]
 
 - Author: Viktor Frankl.
 
 - Language: Spanish.
 
-## [[02-resources/books/el_señor_de_las_moscas|El señor de las moscas]]
+### [[02-resources/books/el_señor_de_las_moscas|El señor de las moscas]]
 
 - Author: William Golding.
 
 - Language: Spanish.
 
-## [[02-resources/books/habitos_atomicos|Habitos atomicos]]
+### [[02-resources/books/habitos_atomicos|Hábitos atómicos]]
 
 - Author: James Clear.
 
 - Language: Spanish.
 
-## [[02-resources/books/juventud_en_extasis|Juventud en extasis]]
+### [[02-resources/books/juventud_en_extasis|Juventud en éxtasis]]
 
 - Author: Carlos Cuauhtémoc Sánchez.
 
 - Language: Spanish.
 
-## [[02-resources/books/la_esencia_logica_de_la_programacion|La esencia logia de la programación]]
+### [[02-resources/books/la_esencia_logica_de_la_programacion|La esencia lógica de la programación]]
 
 - Author: Omar Iván Trejos.
 
 - Language: Spanish.
 
-## [[02-resources/books/nunca_me_abandones|Nunca me abandones]]
+### [[02-resources/books/nunca_me_abandones|Nunca me abandones]]
 
 - Author: Kazuo Ishiguro.
 
 - Language: Spanish.
 
-## [[02-resources/books/tu_cerebro_en_el_porno|Tu cerebro en el porno]]
+### [[02-resources/books/tu_cerebro_en_el_porno|Tu cerebro en el porno]]
 
 - Author: Gary Wilson.
 
 - Language: Spanish.
 
-## [[02-resources/books/un_mundo_feliz|Un mundo feliz]]
+### [[02-resources/books/un_mundo_feliz|Un mundo feliz]]
 
 - Author: Aldous Huxley.
 

@@ -4,8 +4,7 @@ reviewed_on: "2025-07-02"
 
 # Package management
 
-The most important determinant of distribution quality is the **packaging
-system** and the vitality of the distribution's support community...
+The most important determinant of distribution quality is the packaging system and the vitality of the distribution's support community...
 
 ## Packaging systems
 
@@ -13,7 +12,7 @@ system** and the vitality of the distribution's support community...
 
 ## How a package system works
 
-...Virtually all software for a Linux system will be found on the Internet. Most of it will be provided by the distribution vendor in the form of **package files**, and the rest will be available in source code form that can be installed manually.
+...Virtually all software for a Linux system will be found on the Internet. Most of it will be provided by the distribution vendor in the form of package files, and the rest will be available in source code form that can be installed manually.
 
 ### Package files
 
@@ -21,13 +20,13 @@ A package file is a compressed collection of files that comprise the software pa
 
 ### Dependencies
 
-Programs are seldom "stand alone"; rather, they rely on the presence of other software components to get their work done. Modern package management systems all provide some method of **dependency resolution** to ensure that when a package is installed, all of its dependencies are installed, too.
+Programs are seldom "stand alone"; rather, they rely on the presence of other software components to get their work done. Modern package management systems all provide some method of dependency resolution to ensure that when a package is installed, all of its dependencies are installed, too.
 
-### High and low level package tools
+### High- and low-level package tools
 
-- Low-level tools: that handle tasks such as installing and removing package files.
+- Low-level tools: handle tasks such as installing and removing package files.
 
-- High-level tools that perform metadata searching and dependency resolution.
+- High-level tools: perform metadata searching and dependency resolution.
 
 ## Common package management tasks
 
@@ -57,7 +56,7 @@ In the discussion that follows, the term `package_name` refers to the actual nam
 
 Over the last several years distribution vendors have come out with universal package formats that are not tied to a particular Linux distribution. These include Snaps (developed and promoted by Canonical), Flatpaks (pioneered by Red Hat, but now widely available) and AppImages. Though they each work a little differently, their goal is to have an application and all of its dependencies bundled together and installed in a single piece.
 
-There are some benefits to this packing approach:
+There are some benefits to this packaging approach:
 
 - Reducing the effort needed to distribute an application.
 

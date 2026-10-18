@@ -4,27 +4,27 @@ reviewed_on: "2025-02-10"
 
 # Properties
 
-## 1
+## Logarithm of the base
 
 $$
 \log_b b = 1 \rightarrow b^1 = b
 $$
 
-## 2
+## Logarithm of one
 
 $$
 \log_b 1 = 0 \rightarrow b^0 = 1
 $$
 
-## 3
+## Inverse
 
 $$
 b^{ \log_b a } = a \rightarrow \log_b a = \log_b a
 $$
 
-Using the [[personal/math/logarithm/definition|definition]].
+Using the [[01-areas/math/logarithms/definition|definition]].
 
-## 4
+## Power
 
 $$
 \log_b a^n = n \log_b a
@@ -38,7 +38,7 @@ $$
 \end{align}
 $$
 
-## 5
+## Product
 
 $$
 \log_b ac = \log_b a + \log_b c
@@ -57,7 +57,7 @@ $$
 \end{align}
 $$
 
-## 6
+## Quotient
 
 $$
 \log_b \frac{ a }{ c } = \log_b a - \log_b c
@@ -71,7 +71,7 @@ $$
 \end{align}
 $$
 
-## 7
+## Change of base
 
 $$
 \log_b a = \frac{ \log_c a }{ \log_c b } \quad b \neq 1
@@ -87,7 +87,7 @@ $$
 \end{align}
 $$
 
-## 8
+## Exponent swap
 
 $$
 n^{ \log_y x } = x^{ \log_y n } \quad \{n,x,y\} \in \mathbb{ N } \pand y \neq 1

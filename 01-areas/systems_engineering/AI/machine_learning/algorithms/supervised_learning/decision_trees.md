@@ -30,12 +30,12 @@ $$
 \operatorname{I}(p,n) = -\frac{ p }{ p + n } \log_2 \frac{ p }{ p + n } - \frac{ n }{ p + n } \log_2 \frac{ n }{ p + n }
 $$
 
-> This is called **entropy**.
+> This is called entropy.
 
 - Maximum: when the probability of the two classes is the same.
 
     $$
-    \text{entropy}_\text{max} = -0.5 \log_2 0.5 - (-0.5 \log_2 0.5) = 1
+    \text{entropy}_\text{max} = -0.5 \log_2 0.5 - 0.5 \log_2 0.5 = 1
     $$
 
 - Minimum (pure node): when all the probability is in one class.
@@ -44,17 +44,17 @@ $$
     \text{entropy}_\text{min} = -1 \log_2 1 = 0
     $$
 
-The optimal split is obtained by choosing the **feature** with **minimum entropy**.
+The optimal split is obtained by choosing the feature with minimum entropy.
 
 ---
 
-If an attribute $A$ is used, a set $S$ will be divided into sets $\{S_1,S_2,\dots,S_v\}$. If $S_i$ contains $p_i$ elements of $P$ and $n_i$ elements of $N$, the entropy, or the information required to classify objects in all the subtrees $S_i$, is
+If an attribute $A$ is used, a set $S$ will be divided into sets $\{S_1,S_2,\dots,S_v\}$. If $S_i$ contains $p_i$ elements of $P$ and $n_i$ elements of $N$, the entropy, or the information required to classify objects in all the subtrees $S_i$, is:
 
 $$
 E(A) = \sum_{ i = 1 }^v \frac{ p_i + n_i }{ p + n } I(p_i, n_i)
 $$
 
-The information gain of the branch $A$ is
+The information gain of the branch $A$ is:
 
 $$
 \operatorname{Gain}(A) = I(p,n) - E(A)

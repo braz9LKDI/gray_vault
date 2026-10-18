@@ -6,41 +6,41 @@ reviewed_on: "2025-05-31"
 
 ## Accents and notation
 
-- vector: $\vec{ F }$.
+- Vector: $\vec{ F }$.
 
-- derivate: $a^\prime$.
+- Derivative: $a^\prime$.
 
-- $\hat{ \theta }$.
+- Hat: $\hat{ \theta }$.
 
-- $\widehat{ ac }$.
+- Wide hat: $\widehat{ ac }$.
 
 ## Bars
 
-- $\overline{ AB }$.
+- Overline: $\overline{ AB }$.
 
-- $\underline{ AB }$.
+- Underline: $\underline{ AB }$.
 
 ## Braces
 
-- $\overbrace{ AB }^{ \text{note} }$.
+- Overbrace: $\overbrace{ AB }^{ \text{note} }$.
 
-- $\underbrace{ AB }_{ \text{note} }$.
+- Underbrace: $\underbrace{ AB }_{ \text{note} }$.
 
 ## Delimiters
 
-- $\lVert \rVert$.
+- Norm: $\lVert \rVert$.
 
-- $\lceil \rceil$.
+- Ceiling: $\lceil \rceil$.
 
-- $\lfloor \rfloor$.
+- Floor: $\lfloor \rfloor$.
 
-- $\lmoustache \rmoustache$.
+- Moustaches: $\lmoustache \rmoustache$.
 
-- $\lgroup \rgroup$.
+- Group: $\lgroup \rgroup$.
 
 - Upper corner brackets: $\ulcorner \urcorner$.
 
-- Lower corner Brackets: $\llcorner \lrcorner$.
+- Lower corner brackets: $\llcorner \lrcorner$.
 
 ## Greek alphabet
 
@@ -83,7 +83,8 @@ reviewed_on: "2025-05-31"
 |    $\exists!$     | there exists one and only one.            |
 |    $\nexists$     | there is no.                              |
 |     $\forall$     | for all.                                  |
-|      $\neq$       | not (logical).                            |
+|      $\neq$       | not equal.                                |
+|      $\neg$       | not (logical).                            |
 |      $\por$       | or (logical).                             |
 |      $\div$       | division.                                 |
 |    $\implies$     | implies.                                  |
@@ -102,9 +103,9 @@ reviewed_on: "2025-05-31"
 | :-------: | :-------------------- |
 |  $\sum$   | sum.                  |
 |  $\prod$  | product.              |
-|  $\int$   | int.                  |
-| $\bigcap$ | union of sets.        |
-| $\bigcup$ | intersection of sets. |
+|  $\int$   | integral.             |
+| $\bigcap$ | intersection of sets. |
+| $\bigcup$ | union of sets.        |
 
 ## Set theory
 
@@ -119,8 +120,8 @@ reviewed_on: "2025-05-31"
 
 ## Cancellation
 
-- $\cancel{ X }$.
+- Cancel: $\cancel{ X }$.
 
-- $\bcancel{ X }$.
+- Back cancel: $\bcancel{ X }$.
 
-- $\xcancel{ ABC }$.
+- Cross cancel: $\xcancel{ ABC }$.

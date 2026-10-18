@@ -2,7 +2,9 @@
 reviewed_on: "2025-01-08"
 ---
 
-Given a dataset, the posterior probability of a hypothesis $h$ is
+# Bayes' theorem
+
+Given a dataset, the posterior probability of a hypothesis $h$ is:
 
 $$
 P(h|D) = \frac{P(D|h) P(h)}{P(D)}

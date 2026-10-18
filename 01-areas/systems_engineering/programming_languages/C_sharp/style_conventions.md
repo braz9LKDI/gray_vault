@@ -12,7 +12,7 @@ Public APIs typically use pascal case for namespaces, types, methods, properties
 
 ## File layout
 
-Most files keep directives first, then the namespace, then types. a common ordering is:
+Most files keep directives first, then the namespace, then types. A common ordering is:
 
 1. `using` and `global using`.
 
@@ -22,7 +22,7 @@ Most files keep directives first, then the namespace, then types. a common order
 
 Inside a type, a common order is:
 
-- Constant and fields.
+- Constants and fields.
 
 - Constructors.
 
@@ -40,4 +40,4 @@ Blank lines are used to separate logical blocks, but excessive vertical spacing 
 
 ## Braces and one-liners
 
-Braces are usually kept even for single-statement blocks to reduce bugs during future edits. expression-bodied members can be used when they stay readable.
+Braces are usually kept even for single-statement blocks to reduce bugs during future edits. Expression-bodied members can be used when they stay readable.

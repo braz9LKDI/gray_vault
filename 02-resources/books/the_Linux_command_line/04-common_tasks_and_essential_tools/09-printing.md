@@ -18,17 +18,17 @@ reviewed_on: "2025-07-25"
 
 ### Character-based printers
 
-The second, and more important characteristic of early printers was that printers used a fixed set of characters that were intrinsic to the device...This made the printers much like high-speed typewriters. As with most typewriters, they printed using monospaced font (fixed width) fonts...Printing was done at fixed position on the page, and the printable are of a page contained a fixed number of characters. Most printers printed then characters per inch (CPI) horizontally and six lines per inch (LPI) vertically. Using this scheme, a US-letter sheet of paper is 85 characters wide and 66 lines high. Taking into account a small margin on each side, 80 characters was considered the maximum width of a print line. This explains why terminal displays (and our terminal emulators) are normally 80 characters wide. Using a monospaced font and an 80 character wide terminal provides a **what you see is what you get** (**WYSIWYG**) view of printed output.
+The second, and more important characteristic of early printers was that printers used a fixed set of characters that were intrinsic to the device...This made the printers much like high-speed typewriters. As with most typewriters, they printed using monospaced (fixed width) fonts...Printing was done at fixed position on the page, and the printable area of a page contained a fixed number of characters. Most printers printed ten characters per inch (CPI) horizontally and six lines per inch (LPI) vertically. Using this scheme, a US-letter sheet of paper is 85 characters wide and 66 lines high. Taking into account a small margin on each side, 80 characters was considered the maximum width of a print line. This explains why terminal displays (and our terminal emulators) are normally 80 characters wide. Using a monospaced font and an 80 character wide terminal provides a what you see is what you get (WYSIWYG) view of printed output.
 
 ### Graphical printers
 
-Moving rom a character-based scheme to a graphical scheme presented a formidable technical challenge. Assuming 60 lines per page each containing 80 characters, the number of bytes needed to fill a page using a character-based printer is
+Moving from a character-based scheme to a graphical scheme presented a formidable technical challenge. Assuming 60 lines per page each containing 80 characters, the number of bytes needed to fill a page using a character-based printer is:
 
 $$
 60 \times 80 = 4,800 \text{bytes}
 $$
 
-In comparison, a 300 DPI (dot per inch) laser printer requires (assuming an 8 by 10 inch print area)
+In comparison, a 300 DPI (dot per inch) laser printer requires (assuming an 8 by 10 inch print area):
 
 $$
 (8 \times 300) \times (10 \times 300)  = 900,000 \text{bytes}
@@ -36,18 +36,17 @@ $$
 
 Many of the slow PC networks simply could not handle the nearly one megabyte of data required to print a full page on a laser printer, so it was clear that a clever invention was needed.
 
-That invention turned out to be the page description language (PDL). A page description language is a programming language that describes the contents of a page...At first, support for PostScript was built into
-the printers themselves. This solved the data transmission problem. While the typical PostScript program was very verbose in comparison to the simple byte stream of character-based printers, it was much smaller than the number of bytes required to represent the entire printed page.
+That invention turned out to be the page description language (PDL). A page description language is a programming language that describes the contents of a page...At first, support for PostScript was built into the printers themselves. This solved the data transmission problem. While the typical PostScript program was very verbose in comparison to the simple byte stream of character-based printers, it was much smaller than the number of bytes required to represent the entire printed page.
 
-The generic name for the process of rendering something into a large bit pattern (called **bitmap**) is **raster image processor** (RIP).
+The generic name for the process of rendering something into a large bit pattern (called bitmap) is raster image processor (RIP).
 
 ## Printing with Linux
 
 Modern Linux systems employ two software suites to perform and manage printing. The first, Common Unix Printing System (CUPS) provides print drivers and print-job management, and the second, Ghostscript, a PostScript interpreter, acts as a RIP.
 
-## Preparing file for printing
+## Preparing files for printing
 
-### `pr` convert text files for printing
+### `pr`: convert text files for printing
 
 | option              | description                                                                                                 |
 | :------------------ | :---------------------------------------------------------------------------------------------------------- |
@@ -58,14 +57,14 @@ Modern Linux systems employ two software suites to perform and manage printing. 
 | `-D <format>`       | format the date displayed in the page headers using _format_.                                               |
 | `-f`                | use form feeds rather than carriage returns to separate pages.                                              |
 | `-h "<string>"`     | in the center portion of the page header, use _string_ rather than the name of the file being processed.    |
-| `-l <n>`            | set page length to _length_.                                                                                |
+| `-l <n>`            | set page length to _n_.                                                                                     |
 | `-n`                | number lines.                                                                                               |
 | `-o <n>`            | create a left margin _n_ characters wide.                                                                   |
 | `-w <n>`            | set the page width to _n_.                                                                                  |
 
 ## Sending a print job to a printer
 
-### `lpr` print files (Berkeley style)
+### `lpr`: print files (Berkeley style)
 
 It can be used to send files to the printer. It may also be used in pipelines, as it accepts standard input.
 
@@ -76,7 +75,7 @@ It can be used to send files to the printer. It may also be used in pipelines, a
 | `-P <printer>` | specify the name of the printer used for output.                                                                                                               |
 |      `-r`      | delete files after printing.                                                                                                                                   |
 
-### `lp` print files (System V style)
+### `lp`: print files (System V style)
 
 Like `lpr`, it accepts either files or standard input for printing.
 
@@ -96,7 +95,7 @@ Like `lpr`, it accepts either files or standard input for printing.
 
 ...now its name means "anything to PostScript". While its name suggests a format-conversion program, it is actually a printing program. It sends its default output to the system's default printer rather than standard output. The program's default behavior is that of a "pretty printer," meaning that it improves the appearance of output.
 
-## `a2ps` Options
+#### `a2ps`: options
 
 |         option          | description                                                   |
 | :---------------------: | :------------------------------------------------------------ |
@@ -117,7 +116,7 @@ Like `lpr`, it accepts either files or standard input for printing.
 |       `-f <size>`       | use _size_-point font.                                        |
 |        `-l <n>`         | set characters per line to _n_.                               |
 |        `-L <n>`         | set lines per page to _n_.                                    |
-|       `-M <name>`       | use media _text_.                                             |
+|       `-M <name>`       | use media _name_.                                             |
 |        `-n <n>`         | output _n_ copies of each page.                               |
 |       `-o <file>`       | send output to _file_. If _file_ is `-`, use standard output. |
 |     `-P <printer>`      | use printer _printer_.                                        |
@@ -128,9 +127,9 @@ Like `lpr`, it accepts either files or standard input for printing.
 
 ## Monitoring and controlling print jobs
 
-Each printer is given a **print queue**, where jobs are parked until they can be **spooled** to the printer. CUPS supplies several command line programs that are used to manage printer status and print queues.
+Each printer is given a print queue, where jobs are parked until they can be spooled to the printer. CUPS supplies several command line programs that are used to manage printer status and print queues.
 
-### `lpstat` display print system status
+### `lpstat`: display print system status
 
 It is useful for determining the names and availability of printers on the system.
 
@@ -138,18 +137,18 @@ It is useful for determining the names and availability of printers on the syste
 | :-----------------: | :---------------------------------------------------- |
 | `-a [<printer>...]` | display the state of the printer queue for _printer_. |
 |        `-d`         | display the name of the system's default printer.     |
-| `-p [<printer>...`  | display the status of _printer_.                      |
-|        `-r`         | display the status of the print server                |
+| `-p [<printer>...]` | display the status of _printer_.                      |
+|        `-r`         | display the status of the print server.               |
 |        `-s`         | display a status summary.                             |
 |        `-t`         | display a complete status report.                     |
 
-### `lpq` display printer queue status
+### `lpq`: display printer queue status
 
 It is used to see the status of a printer queue. A printer can be specified with `-P`.
 
-### `lprm`/`cancel` cancel print jobs
+### `lprm`/`cancel`: cancel print jobs
 
-CUPS supplies two programs used to terminate print jobs and remove them from the print queue. One is Berkely style (`lprm`) and the other is System V (`cancel`). They differ slightly in the options they support, but do basically the same thing.
+CUPS supplies two programs used to terminate print jobs and remove them from the print queue. One is Berkeley style (`lprm`) and the other is System V (`cancel`). They differ slightly in the options they support, but do basically the same thing.
 
 ```text
 cancel PRINT_JOB_NUMBER

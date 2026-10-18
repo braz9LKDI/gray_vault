@@ -25,7 +25,7 @@ dotnet new <template> -n <name> -o <directory>
 
 > In current SDKs, `dotnet new sln` creates an `.slnx` file. Existing `.sln` files can still be managed with `dotnet sln`.
 
-## [[personal/systems_engineering/programming_languajes/C_sharp/solution_vs_project#Solution (`.sln`)|Solution]] management
+## [[01-areas/systems_engineering/programming_languages/C_sharp/solution_vs_project#Solution (`.sln`)|Solution]] management
 
 ```bash
 dotnet sln <sln-or-slnx-file> list
@@ -36,7 +36,7 @@ dotnet sln <sln-or-slnx-file> add <csproj-file> --solution-folder <folder>
 dotnet sln <sln-or-slnx-file> remove <csproj-file>
 ```
 
-## [[personal/systems_engineering/programming_languajes/C_sharp/solution_vs_project#Project (`.csproj`)|Project]] references
+## [[01-areas/systems_engineering/programming_languages/C_sharp/solution_vs_project#Project (`.csproj`)|Project]] references
 
 ```bash
 dotnet reference add <referenced-csproj> --project <target-csproj>
@@ -66,7 +66,7 @@ dotnet package update --project <csproj-file> --vulnerable
 
 > For .NET 9 SDK and earlier, the equivalent forms are `dotnet add package`, `dotnet remove package` and `dotnet list package`.
 
-## day-to-day operations
+## Day-to-day operations
 
 Common workflow commands:
 

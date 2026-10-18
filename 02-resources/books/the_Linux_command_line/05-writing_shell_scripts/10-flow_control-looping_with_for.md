@@ -16,7 +16,7 @@ where _var_ is the name of a variable that will increment during the execution o
 
 The really powerful feature of `for` is the number of interesting ways we can create a list of words.
 
-Pathname expansion provides a nice, clean list of pathnames that can be processed in the loop. The one precaution needed is to check that the expansion actually matched something. By default, if the expansion fails to match any files, the wildcard themselves will be returned. To guard against, the `[[ -e "$i" ]]` command can be used.
+Pathname expansion provides a nice, clean list of pathnames that can be processed in the loop. The one precaution needed is to check that the expansion actually matched something. By default, if the expansion fails to match any files, the wildcards themselves will be returned. To guard against this, the `[[ -e "$i" ]]` command can be used.
 
 If the optional `in <words>` portion of `for` is omitted, `for` defaults to processing the positional parameters.
 
@@ -36,7 +36,7 @@ for (( expression_1; expression_2; expression_3 )); do
 done
 ```
 
-Here _expression_1_, _expression_2_ and _expression_3_ are arithmetic expression and _commands_ are the commands to be performed during each iteration of the loop.
+Here _expression_1_, _expression_2_ and _expression_3_ are arithmetic expressions and _commands_ are the commands to be performed during each iteration of the loop.
 
 In terms of behavior, this form is equivalent to the following construct:
 

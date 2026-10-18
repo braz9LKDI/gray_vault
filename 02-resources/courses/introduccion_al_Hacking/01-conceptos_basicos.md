@@ -8,23 +8,23 @@ IP is short for Internet Protocol, which is a protocol for the communication of 
 
 #### IPv4
 
-uses 32-bit (four octets of 8 bits) addresses, which are written as four numbers separated by periods, such as `172.16.254.1`. Each number can range from 0 to 255 ($2^4$), which means there are 4.294.967.296 ($2^{ 32 }$) possible IPv4 addresses.
+It uses 32-bit (four octets of 8 bits) addresses, which are written as four numbers separated by periods, such as `172.16.254.1`. Each number can range from 0 to 255 ($2^8$ values), which means there are 4.294.967.296 ($2^{ 32 }$) possible IPv4 addresses.
 
 #### IPv6
 
-uses 128-bit (which consists of eight groups of four hexadecimal digits) addresses, which are written as eigth numbers separated by colons, such as `3001:0da8:75a3:0000:0000:8a2e:0370:7334`. Each number can range from 0 to 65535 (`FFFF`), which means there are $40.282. 366.920.938.463.463.374.607.431.768.211.456$ ($2^{ 128 }$) possible IPv6 addresses.
+It uses 128-bit (which consists of eight groups of four hexadecimal digits) addresses, which are written as eight numbers separated by colons, such as `3001:0da8:75a3:0000:0000:8a2e:0370:7334`. Each number can range from 0 to 65535 (`FFFF`), which means there are 340.282.366.920.938.463.463.374.607.431.768.211.456 ($2^{ 128 }$) possible IPv6 addresses.
 
 > The ratio between a hexadecimal digit and a binary digit is 4, so we can represent $2^{ 128 }$ ($2^{ 4 * 4 * 8 }$) addresses in IPv6, which is equal to $2^{ 96 } = \frac{ 2^{ 128 } }{ 2^{ 32 } }$ times IPv4.
 
 ## Direcciones MAC (OUI y NIC)
 
-A MAC address, which stands for Media Access Control Address, is a unique 48-bit (12 hexadecimal numbers) hardware number of a computer that is embedded into a network card (known as a Network Interface Card) during manufacturing. The MAC Address is also known as the Physical Address of a network device.
+A MAC address, which stands for Media Access Control Address, is a unique 48-bit (12 hexadecimal numbers) hardware number of a computer that is embedded into a network card (known as a Network Interface Card) during manufacturing. The MAC address is also known as the physical address of a network device.
 
-The First 6 digits of the MAC Address identify the manufacturer, called the OUI (Organizational Unique Identifier). The rightmost six digits represent the Network Interface Controller, which is assigned by the manufacturer.
+The first 6 digits of the MAC address identify the manufacturer, called the OUI (Organizationally Unique Identifier). The rightmost six digits represent the Network Interface Controller, which is assigned by the manufacturer.
 
 > The IEEE Registration Authority Committee assigns these MAC prefixes to its registered vendors.
 
-The MAC address is represented by Colon-Hexadecimal (`XX:XX:XX:XX:XX:XX`) notation. But this is just a conversion, not mandatory.
+The MAC address is represented in colon-hexadecimal (`XX:XX:XX:XX:XX:XX`) notation. But this is just a conversion, not mandatory.
 
 > With the `macchanger` package, we can print known vendors with the `-l` (`macchanger -l`) option.
 
@@ -40,17 +40,17 @@ TCP's role is to ensure the packets are reliably delivered and error-free. TCP i
 
 #### Three-way handshake
 
-The three messages transmitted by TCP to negotiate and start a TCP session are nicknamed **SYN**, **SYN-ACK** and **ACK** for SYNchronize, SYNchronize-ACKnowledgement and ACKnowledge respectively. The three-message mechanism is designed so that two computers that want to pass information back and forth to each other can negotiate the parameters of the connection before transmitting data.
+The three messages transmitted by TCP to negotiate and start a TCP session are nicknamed SYN, SYN-ACK and ACK for SYNchronize, SYNchronize-ACKnowledgement and ACKnowledge respectively. The three-message mechanism is designed so that two computers that want to pass information back and forth to each other can negotiate the parameters of the connection before transmitting data.
 
 ### UDP (User Datagram Protocol)
 
 It is used together with IP for sending data when transmission speed and efficiency matter more than security and reliability.
 
-UDP uses a simple connectionless communication model with a minimum of protocol mechanisms. UDP provides checksums for data integrity and port numbers for addressing different functions at the source and destination of the datagram. It has no handshaking dialogues and thus exposes the user's program to any unreliability of the underlying network; There is no guarantee of delivery, ordering, or duplicate protection.
+UDP uses a simple connectionless communication model with a minimum of protocol mechanisms. UDP provides checksums for data integrity and port numbers for addressing different functions at the source and destination of the datagram. It has no handshaking dialogues and thus exposes the user's program to any unreliability of the underlying network; there is no guarantee of delivery, ordering or duplicate protection.
 
 ## El modelo OSI: ¿en qué consiste y cómo se estructura la actividad de red en capas?
 
-The OSI (Open Systems Interconnection) model, created in 1984 by the ISO (International Organization for Standardization), is a reference framework that explains the process of transmitting data between computers. It is divided into seven layers that work together to carry out specialized network functions, **allowing for a more systematic approach to networking**.
+The OSI (Open Systems Interconnection) model, created in 1984 by the ISO (International Organization for Standardization), is a reference framework that explains the process of transmitting data between computers. It is divided into seven layers that work together to carry out specialized network functions, allowing for a more systematic approach to networking.
 
 1. Physical Layer: is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received, convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together.
 
@@ -62,19 +62,19 @@ The OSI (Open Systems Interconnection) model, created in 1984 by the ISO (Intern
 
 5. Session Layer: is responsible for the establishment of connections, maintenance of sessions and authentication, and also ensures security.
 
-6. Presentation Layer: is also called the Translation layer. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network. .
+6. Presentation Layer: is also called the Translation layer. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network.
 
 7. Application Layer: is implemented by the network applications. These applications produce the data, which has to be transferred over the network. This layer also serves as a window for the application services to access the network and for displaying the received information to the user.
 
-| layer No |     layer name     |                                            responsibility                                             | information form (data unit) |      device or protocol      |
-| :------: | :----------------: | :---------------------------------------------------------------------------------------------------: | :--------------------------: | :--------------------------: |
-|    7     | Application Layer  |                   Helps in identifying the client and synchronizing communication.                    |           Message            |             SMTP             |
-|    6     | Presentation Layer | Data from the Application Layer is extracted and manipulated in the required format for transmission. |           Message            |       JPEG, MPEG, GIF        |
-|    5     |   Session Layer    |           Establishes connection, maintenance, ensures authentication and ensures security.           |           Message            |           Gateway            |
-|    4     |  Transport Layer   |               Take service from Network Layer and provide it to the Application Layer.                |           Segment            |           Firewall           |
-|    3     |   Network Layer    |             Transmission of data from one host to another, located in different networks.             |            Packet            |            Router            |
-|    2     |  Data Link Layer   |                                  Node to node delivery of messages.                                   |            Frame             |        Switch, Bridge        |
-|    1     |   Physical Layer   |                          Establishing physical connections between devices.                           |             Bits             | Hub, repeater, modem, cables |
+| layer number |     layer name     |                                            responsibility                                             | information form (data unit) |      device or protocol      |
+| :----------: | :----------------: | :---------------------------------------------------------------------------------------------------: | :--------------------------: | :--------------------------: |
+|      7       | Application Layer  |                   Helps in identifying the client and synchronizing communication.                    |           Message            |             SMTP             |
+|      6       | Presentation Layer | Data from the Application Layer is extracted and manipulated in the required format for transmission. |           Message            |       JPEG, MPEG, GIF        |
+|      5       |   Session Layer    |           Establishes connection, maintenance, ensures authentication and ensures security.           |           Message            |           Gateway            |
+|      4       |  Transport Layer   |            Takes service from the network layer and provides it to the application layer.             |           Segment            |           Firewall           |
+|      3       |   Network Layer    |             Transmission of data from one host to another, located in different networks.             |            Packet            |            Router            |
+|      2       |  Data Link Layer   |                                  Node to node delivery of messages.                                   |            Frame             |        Switch, Bridge        |
+|      1       |   Physical Layer   |                          Establishing physical connections between devices.                           |             Bits             | Hub, repeater, modem, cables |
 
 ## Subnetting: ¿qué es y cómo se interpreta una máscara de red?
 
@@ -108,7 +108,7 @@ The IPv4 address is divided into two parts:
 
 2. Host ID.
 
-> While finding the total number of host IP addresses, 2 IP addresses are not counted and are therefore, decreased from the total count because the first IP address of any network is the network number and whereas the last IP address is reserved for broadcast IP.
+> While finding the total number of host IP addresses, 2 IP addresses are not counted and are therefore subtracted from the total count, because the first IP address of any network is the network number and the last IP address is reserved for broadcast.
 
 #### Class A
 
@@ -118,7 +118,7 @@ IP addresses belonging to class A are assigned to networks that contain numerous
 
 - Host ID is 24 bits (3 bytes) long ($2^{ 24 } - 2 = 16.777.214$).
 
-The default subnet mask for Class A is `255.X.X.X`. IP addresses belonging to class A ranges from `1.0.0.0` to `126.255.255.255` (`00000001.0.0.0` to `01111110.255.255.255`).
+The default subnet mask for Class A is `255.X.X.X`. IP addresses belonging to class A range from `1.0.0.0` to `126.255.255.255` (`00000001.0.0.0` to `01111110.255.255.255`).
 
 ##### Exceptions (Class A)
 
@@ -134,7 +134,7 @@ IP addresses belonging to class B are assigned to networks that range from mediu
 
 - Host ID is 16 bits long ($2^{ 16 } - 2 = 65.534$).
 
-The default subnet mask for class C is `255.255.X.X`. IP addresses belonging to class B ranges from `128.0.0.0` to `191.255.255.255` (`10000000.0.0.0` to `10111111.255.255.255`).
+The default subnet mask for class B is `255.255.X.X`. IP addresses belonging to class B range from `128.0.0.0` to `191.255.255.255` (`10000000.0.0.0` to `10111111.255.255.255`).
 
 #### Class C
 
@@ -150,7 +150,7 @@ The default subnet mask for class C is `255.255.255.X`. IP addresses belonging t
 
 IP addresses belonging to class D are reserved for multi-casting. The higher-order bits of the first octet of IP addresses belonging to class D are always set to `1110`.
 
-Class D does not possess any subnet mask. IP addresses belonging to class D range from `224.0.0.0` to `239.255.255.255` (`1110.0.0.0` to `11101111.255.255.255`).
+Class D does not possess any subnet mask. IP addresses belonging to class D range from `224.0.0.0` to `239.255.255.255` (`11100000.0.0.0` to `11101111.255.255.255`).
 
 #### Class E
 
@@ -160,13 +160,13 @@ IP addresses belonging to class E are reserved for experimental and research pur
 
 The problem with this classful addressing method is that millions of class A and class B addresses are wasted, whereas the number of addresses available in class C is so small that it cannot cater to the needs of organizations. Class D addresses are used for multicast routing and are therefore available as a single block only. Class E addresses are reserved.
 
-Since there are these problems, Classful networking was replaced by Classless Inter-Domain Routing (CIDR) in 1993.
+Because of these problems, classful networking was replaced by Classless Inter-Domain Routing (CIDR) in 1993.
 
 ### Classless addressing
 
-To reduce the waste of IP addresses in a block, we use sub-netting. What we do is use host id bits as net id bits of a classful IP address. We give the IP address and define the number of bits for the mask along with it (usually followed by a `/`).
+To reduce the waste of IP addresses in a block, we use subnetting. What we do is use host id bits as net id bits of a classful IP address. We give the IP address and define the number of bits for the mask along with it (usually followed by a `/`).
 
-- Number of subnets : $2^{ \text{given bits for mask} - \text{No. of bits in default mask} }$.
+- Number of subnets: $2^{ \text{given bits for mask} - \text{No. of bits in default mask} }$.
 
 - Subnet address: AND result of subnet mask and the given IP address.
 
@@ -176,17 +176,17 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 
 - Number of hosts per subnet: $2^{ 32 - \text{given bits for mask} } - 2$.
 
-- First Host ID : $\text{subnet address} + 1$ (adding one to the binary representation of the subnet address).
+- First Host ID: $\text{subnet address} + 1$ (adding one to the binary representation of the subnet address).
 
-- Last Host ID : $\text{subnet address} + \text{number of hosts}$.
+- Last Host ID: $\text{subnet address} + \text{number of hosts}$.
 
-> Also know as CIDR (Classless Inter Domain Routing)
+> Also known as CIDR (Classless Inter-Domain Routing).
 
 #### Rules (classless addressing)
 
 - All IP addresses must be contiguous.
 
-- Block size must be the power of 2 ($2^n$).
+- Block size must be a power of 2 ($2^n$).
 
 ## Subnetting: máscaras de subred, tipos de clase e interpretación de prefijos de red
 
@@ -253,11 +253,11 @@ To reduce the waste of IP addresses in a block, we use sub-netting. What we do i
 | `/5`, `/13`, `/21` y `/29` | 248 |
 | `/6`, `/14`, `/22` y `/30` | 252 |
 | `/7`, `/15`, `/23` y `/31` | 254 |
-| `/8`, `/19`, `/24` y `/32` | 255 |
+| `/8`, `/16`, `/24` y `/32` | 255 |
 
 ## Subnetting: redes extrañas y casos particulares
 
-Exercises
+Exercises:
 
 - `13.13.13.13/13`.
     - Subnet address.
@@ -272,7 +272,7 @@ Exercises
 
     - Broadcast address: $13.00001111.255.255 = 13.15.255.255$.
 
-    - Number of hosts per subnet: 524.288.
+    - Number of hosts per subnet: $2^{ 19 } - 2 = 524.286$.
 
     - First Host ID: `13.8.0.1`.
 
@@ -291,7 +291,7 @@ Exercises
 
     - Broadcast address: $10.00001011.255.255 = 10.11.255.255$.
 
-    - Number of hosts per subnet: 131.072.
+    - Number of hosts per subnet: $2^{ 17 } - 2 = 131.070$.
 
     - First Host ID: `10.10.0.1`.
 
@@ -304,14 +304,14 @@ Exercises
             \begin{array}{lllll}
                     &192. &168.  &1.   &00101101 \\
                     &255. &255.  &255. &11111000 \\
-                =   &192. &168.  &255. &00101000 = 192.168.1.40
+                =   &192. &168.  &1.   &00101000 = 192.168.1.40
             \end{array}
         $$
 
     - Broadcast address: $192.168.1.00101111 = 192.168.1.47$.
 
-    - Number of hosts per subnet: 8.
+    - Number of hosts per subnet: $2^3 - 2 = 6$.
 
     - First Host ID: `192.168.1.41`.
 
-    - Last Host ID: `192.168.1.47`.
+    - Last Host ID: `192.168.1.46`.

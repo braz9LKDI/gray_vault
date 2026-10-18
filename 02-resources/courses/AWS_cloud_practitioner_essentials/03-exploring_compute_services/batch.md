@@ -8,7 +8,7 @@ AWS Batch is a fully managed AWS service used to run batch computing workloads i
 
 Batch computing is used when work can be processed as jobs instead of continuous, always-running applications. This is useful for tasks such as data processing, simulations, machine learning jobs, image processing and report generation.
 
-With AWS Batch, jobs are submitted to a queue. AWS batch then schedules the jobs and runs them using available compute resources. The required infrastructure can be provisioned and scaled automatically based on the amount of work waiting to be processed.
+With AWS Batch, jobs are submitted to a queue. AWS Batch then schedules the jobs and runs them using available compute resources. The required infrastructure can be provisioned and scaled automatically based on the amount of work waiting to be processed.
 
 ## Main components
 
@@ -26,4 +26,4 @@ A job queue stores jobs until they can be scheduled. Jobs wait in the queue unti
 
 ### Compute environment
 
-A compute environment defines where jobs run. AWS batch can use compute options such as [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2|Amazon EC2]], [[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/fargate|Fargate]], [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2_pricing#Spot instances|spot instances]] or [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2_pricing#On-demand instances|on-demand instances]].
+A compute environment defines where jobs run. AWS Batch can use compute options such as [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2|Amazon EC2]], [[02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/fargate|Fargate]], [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2_pricing#Spot instances|spot instances]] or [[02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2_pricing#On-demand instances|on-demand instances]].
