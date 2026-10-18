@@ -1,5 +1,5 @@
 #!/bin/bash
-# Flags style_guidelines.md violations that markdownlint cannot check.
+# Flags docs/style_guidelines.md violations that markdownlint cannot check.
 # Usage: bash style_check.sh [note.md ...]   (no arguments: every note outside 99-archive)
 #        bash style_check.sh --test           (self-check against a planted fixture)
 # Output: file:line: rule: text. Rules marked "candidate" need a human decision.
@@ -129,7 +129,7 @@ if [[ ${1:-} == --test ]]; then self_test; exit; fi
 if (($#)); then
     files=("$@")
 else
-    mapfile -d '' -t files < <(git ls-files -z -co --exclude-standard -- '*.md' ':!99-archive' ':!style_guidelines.md')
+    mapfile -d '' -t files < <(git ls-files -z -co --exclude-standard -- '*.md' ':!99-archive' ':!docs/style_guidelines.md')
 fi
 mapfile -d '' -t files < <(grep -LZ '^kanban-plugin:' -- "${files[@]}") # Kanban boards are exempt
 out=$(check "${files[@]}")

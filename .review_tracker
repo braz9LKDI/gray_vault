@@ -3,7 +3,7 @@
 skip	02-resources/courses/course_board.md
 skip	02-resources/books/bookshelf.md
 skip	CLAUDE.md
-skip	style_guidelines.md
+skip	docs/style_guidelines.md
 done	01-areas/systems_engineering/fundamentals/git_and_github/gitflow.md
 done	01-areas/systems_engineering/fundamentals/git_and_github/amend_last_commit.md
 done	01-areas/systems_engineering/fundamentals/git_and_github/branching.md
@@ -338,3 +338,10 @@ done	02-resources/courses/introduccion_a_linux/03-examen_final.md
 done	02-resources/courses/introduccion_a_linux/01-temario.md
 done	README.md
 skip	templates/default.md
+skip	docs/philosophy.md
+skip	docs/structure.md
+skip	docs/note_types.md
+skip	docs/conventions.md
+skip	docs/workflows.md
+skip	docs/tooling.md
+skip	templates/capture.md

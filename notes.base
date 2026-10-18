@@ -1,0 +1,31 @@
+filters:
+  not:
+    - file.inFolder("templates")
+    - file.inFolder("99-archive")
+views:
+  - type: table
+    name: Stubs
+    filters:
+      and:
+        - status == "stub"
+    order:
+      - file.name
+      - type
+      - file.folder
+  - type: table
+    name: Drafts
+    filters:
+      and:
+        - status == "draft"
+    order:
+      - file.name
+      - type
+      - file.folder
+  - type: table
+    name: Inbox
+    filters:
+      and:
+        - file.inFolder("00-inbox")
+    order:
+      - file.name
+      - file.mtime

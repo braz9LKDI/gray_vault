@@ -467,6 +467,27 @@ Capital letters are used only in the following cases:
     The file weighs 5 MB and the search runs in $O(n \log n)$.
     ```
 
+- Display mathematics blocks contain no blank lines, because Prettier and markdownlint (MD012) undo each other's fix around a blank line inside them. A visual gap uses `\\[10 pt]` instead.
+
+    Bad:
+
+    ```md
+    $$
+    a = b
+
+    c = d
+    $$
+    ```
+
+    Good:
+
+    ```md
+    $$
+    a = b \\[10 pt]
+    c = d
+    $$
+    ```
+
 ## Characters
 
 - Notes use only ASCII, plus the characters Spanish needs: `á é í ó ú ü ñ`, their capitals, `¿` and `¡`. Box-drawing characters (`├ ─ │ └`) are also allowed, for `tree` output in code blocks.

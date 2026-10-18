@@ -13,5 +13,8 @@
   },
   "newLinkFormat": "absolute",
   "alwaysUpdateLinks": true,
-  "useTab": false
+  "useTab": false,
+  "userIgnoreFilters": [
+    "node_modules/"
+  ]
 }
