@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-14"
----
-
 # AI enhanced software engineering
 
 Es la integración de técnicas de inteligencia artificial en el ciclo de desarrollo de software para **mejorar la productividad, calidad y eficiencia del código**. Representa la fusión de las metodologías de desarrollo tradicionales con capacidades avanzadas de inteligencia artificial. En esta práctica, las herramientas de IA actúan como asistentes inteligentes (copilots) que colaboran con los desarrolladores de software para optimizar cada fase del ciclo de vida del desarrollo de software.

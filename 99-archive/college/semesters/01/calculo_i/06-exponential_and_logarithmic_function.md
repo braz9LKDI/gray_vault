@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-17"
----
-
 # Exponential and logarithmic function
 
 ## 1

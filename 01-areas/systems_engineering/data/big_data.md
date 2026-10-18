@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2026-02-12"
+type: concept
+status: draft
 ---
 
 # Big data

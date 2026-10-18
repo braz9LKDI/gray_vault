@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-05-26
+type: source
+status: draft
 ---
 
 # Shared responsibility model

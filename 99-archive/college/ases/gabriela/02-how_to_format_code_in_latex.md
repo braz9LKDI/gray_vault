@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-08"
----
-
 # How to format code in LaTeX
 
 Proper formatting of your code is especially important in reporting, it gives more information than just an image and also looks more professional.

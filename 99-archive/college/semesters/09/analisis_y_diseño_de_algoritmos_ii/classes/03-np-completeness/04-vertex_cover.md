@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-03"
----
-
 # Vertex cover
 
 ![[01-areas/systems_engineering/problems/vertex_cover|Vertex over]]

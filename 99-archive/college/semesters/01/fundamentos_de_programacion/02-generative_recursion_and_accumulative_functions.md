@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-12"
----
-
 # Recursión estructural vs. generativa
 
 Para un observador (comúnmente el usuario), las funciones son completamente equivalentes; una función tanto en su versión estructural y generativa produce la misma salida, entonces ¿cuándo deberíamos desarrollar una u otra? La respuesta sencilla es que no lo sabemos, pero comúnmente el desarrollo de una función generativa es **más complejo** que su versión estructural, pues es necesario apoyarse en un teorema matemático referente a números. O, una serie de resultados matemáticos de sistemas de ecuaciones (conocimiento que "desbloquea" una nueva perspectiva).

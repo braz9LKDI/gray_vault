@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Scripting en Bash
 
 ## Buscador de máquinas de Hack The Box

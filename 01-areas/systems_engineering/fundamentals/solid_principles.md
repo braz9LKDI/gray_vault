@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2026-01-13"
+type: concept
+status: draft
 ---
 
 # SOLID principles

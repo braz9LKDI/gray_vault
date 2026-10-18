@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-10-09"
----
-
 # YouTube data extraction
 
 Develop a comprehensive web application that automates the extraction, processing, and analysis of YouTube video and comment data to understand public opinion and sentiment around specific topics or events.

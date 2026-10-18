@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2026-XX-XX"
+type: concept
+status: stub
 ---
 
 # EditorConfig

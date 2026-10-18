@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-20"
----
-
 # Project scope
 
 This chapter sets the clear boundaries of the thesis. Its purpose is to define exactly what the project will deliver and, just as importantly, what it will not. This helps manage expectations and prevents "scope creep," where the project's requirements expand uncontrollably.

@@ -125,6 +125,7 @@
 02-resources/courses/aprende_git_y_github.md	## ¿Qué es GitHub?
 02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/ec2_scaling.md	## Amazon EC2 Auto Scaling
 02-resources/courses/aws_cloud_practitioner_essentials/02-compute_in_the_cloud/elastic_load_balancing_routing.md	# Elastic Load Balancing routing
+02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/aws_lambda.md	# AWS Lambda
 02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/elastic_beanstalk.md	# Elastic Beanstalk
 02-resources/courses/aws_cloud_practitioner_essentials/03-exploring_compute_services/lightsail.md	# Amazon Lightsail
 02-resources/courses/building_web_applications_in_java_with_spring_boot_3.md	# Building web applications in Java with Spring Boot 3

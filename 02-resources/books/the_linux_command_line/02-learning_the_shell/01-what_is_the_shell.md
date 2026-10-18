@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-06-30"
+type: source
+status: draft
 ---
 
 # What is the shell?

@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-20"
----
-
 # Objectives
 
 This chapter translates the problem and justification into a clear set of goals. It outlines precisely what the project will accomplish. An objective is a phrase that conveys an exact goal to be achieved in the project.

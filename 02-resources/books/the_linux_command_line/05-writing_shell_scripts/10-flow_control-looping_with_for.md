@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-08-07"
+type: source
+status: draft
 ---
 
 # Flow control: looping with `for`

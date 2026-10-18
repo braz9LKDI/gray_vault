@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-10-28"
+type: source
+status: draft
 ---
 
 # Project: a programming language

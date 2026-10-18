@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-04-04"
----
-
 # Requirements engineering
 
 ## La verdad sobre los requisitos

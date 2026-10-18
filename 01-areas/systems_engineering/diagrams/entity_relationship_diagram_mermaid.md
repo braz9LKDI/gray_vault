@@ -1,3 +1,8 @@
+---
+type: reference
+status: draft
+---
+
 # Entity relationship diagram with Mermaid
 
 ## Entity definitions

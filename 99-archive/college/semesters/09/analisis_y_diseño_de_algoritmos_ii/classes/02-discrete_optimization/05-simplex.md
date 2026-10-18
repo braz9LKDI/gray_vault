@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-05-04"
----
-
 # Simplex
 
 Sea un problema de programación lineal en forma de holgura

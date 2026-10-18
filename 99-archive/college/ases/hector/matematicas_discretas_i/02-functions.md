@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-08"
----
-
 # Functions
 
 ![[01-areas/math/functions/functions|functions]]

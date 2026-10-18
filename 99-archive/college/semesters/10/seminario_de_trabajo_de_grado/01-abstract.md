@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-20"
----
-
 # Abstract
 
 The abstract provides a concise, self-contained summary of the entire thesis. Its purpose is to give the reader a comprehensive overview of the work, enabling them to quickly understand the project's core contributions. The abstract should be written as a single, coherent paragraph.

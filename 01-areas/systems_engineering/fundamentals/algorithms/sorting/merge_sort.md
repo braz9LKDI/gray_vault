@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-05-05"
+type: concept
+status: draft
 ---
 
-# Merge
+# Merge sort
 
 1. Divide: divide the list or array recursively into two halves until it can no longer be divided.
 

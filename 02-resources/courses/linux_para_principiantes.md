@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Linux para principiantes
 
 ## Comandos básicos

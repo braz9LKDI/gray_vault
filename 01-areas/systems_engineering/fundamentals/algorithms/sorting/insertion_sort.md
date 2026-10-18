@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-05-05"
+type: concept
+status: draft
 ---
 
-# Insertion
+# Insertion sort
 
 1. Start with a single element, which is already in order.
 

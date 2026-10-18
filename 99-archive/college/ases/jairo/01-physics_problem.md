@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-10"
----
-
 # Physics problem
 
 ![graph](99-archive/college/ases/jairo/assets/01_01-velocity_graph.jpg)

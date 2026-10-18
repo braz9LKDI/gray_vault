@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-08"
----
-
 # Splines
 
 Son funciones que nos ayudan a representar una curva suave a través de una serie de puntos conocidos (llamados **puntos de control** o **nodos**).

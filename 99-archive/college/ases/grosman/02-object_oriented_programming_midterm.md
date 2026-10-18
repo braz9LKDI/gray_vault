@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-01"
----
-
 # Object oriented programming midterm
 
 1. Determine cuál de las afirmaciones es correcta:

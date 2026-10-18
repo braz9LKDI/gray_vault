@@ -1,7 +1,3 @@
----
-reviewed_on: 2026-05-02
----
-
 # Style guidelines
 
 This document describes the writing and formatting conventions used in this vault.

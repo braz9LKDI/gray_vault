@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-04-09"
----
-
 # SENA style guide
 
 ## ¿Quién es el SENA?

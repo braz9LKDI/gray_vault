@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-09-03
+type: reference
+status: draft
 ---
 
 # Post coach

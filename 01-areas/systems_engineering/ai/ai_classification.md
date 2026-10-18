@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2026-02-12"
+type: concept
+status: draft
 ---
 
-# Classification
+# AI classification
 
 It can be classified in different ways depending on the context (capabilities, behavior or how it learns).
 

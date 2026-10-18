@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-04-07"
----
-
 # Greedy programming
 
 La programación dinámica puede resultar costosa (pocos subproblemas repetidos), es aquí cuando podemos usar una **estrategia** voraz para resolver el problema.

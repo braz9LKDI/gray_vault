@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-06-02
+type: source
+status: draft
 ---
 
 # Messaging and queues

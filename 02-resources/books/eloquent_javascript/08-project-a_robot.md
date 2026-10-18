@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-09-14"
+type: source
+status: draft
 ---
 
 # Project: a robot

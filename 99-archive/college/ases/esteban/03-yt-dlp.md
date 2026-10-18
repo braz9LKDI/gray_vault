@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-05-14"
----
-
 # yt-dlp
 
 1. Install ffmpeg: `sudo apt install ffmpeg`.

@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2026-02-16"
+type: concept
+status: draft
 ---
 
-# Definition
+# Scrum
 
 It is a small lightweight framework designed to help people, teams and organizations generate value through adaptive solutions for complex problems.
 

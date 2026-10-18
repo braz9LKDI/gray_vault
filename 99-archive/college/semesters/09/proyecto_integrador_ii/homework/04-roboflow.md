@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-05-18"
----
-
 # Roboflow
 
 Roboflow es una plataforma de software como servicio que agiliza el flujo de trabajo completo de visión por computadora, desde la creación y anotación de conjuntos de datos hasta el entrenamiento y despliegue de modelos, potenciando aplicaciones en industrias como salud, logística y comercio minorista. Ofrece productos modulares (Annotate, Train, Deploy, Universe), amplia automatización y opciones de despliegue flexibles (API en la nube).

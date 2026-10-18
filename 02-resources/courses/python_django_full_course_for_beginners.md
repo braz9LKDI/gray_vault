@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-04-17"
+type: source
+status: stub
 sources:
     - author: Dave Gray
       url: https://www.youtube.com/watch?v=Rp5vd34d-z4

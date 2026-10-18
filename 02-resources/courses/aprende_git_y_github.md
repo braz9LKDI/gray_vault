@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Aprende Git y GitHub
 
 ## ¿Qué es Git?

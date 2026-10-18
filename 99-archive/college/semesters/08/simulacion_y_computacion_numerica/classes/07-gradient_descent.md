@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-07"
----
-
 # Gradient descent
 
 $A x = b$, número de condición, $\rho = \frac{ \lambda_{ \text{max} } }{ \lambda_{ \text{min} } }$, $\lambda \in \text{valores propios de } A$.

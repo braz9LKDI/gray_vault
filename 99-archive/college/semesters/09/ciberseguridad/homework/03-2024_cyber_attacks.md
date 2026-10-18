@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-09"
----
-
 # 2024 Cyber attacks
 
 - enero: Salud Total EPS.

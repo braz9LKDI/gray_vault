@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-08"
----
-
 # Conjugate gradient
 
 ## Método general

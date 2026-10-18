@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-04-14"
----
-
 # Introduction
 
 Optimizar es el proceso de **maximizar** o **minimizar** una función objetivo deseada mientras se satisface un conjunto de **restricciones** predominantes (Belegundu and Chandrupatla, 2019).

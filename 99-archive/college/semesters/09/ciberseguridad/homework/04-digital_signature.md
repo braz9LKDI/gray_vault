@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-05-01"
----
-
 # Digital signature
 
 ## Hash

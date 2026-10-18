@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-03-15
+type: concept
+status: draft
 ---
 
 # Collections and LINQ

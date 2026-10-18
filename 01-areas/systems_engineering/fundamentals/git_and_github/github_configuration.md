@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-07-03
+type: howto
+status: draft
 ---
 
 # GitHub configuration

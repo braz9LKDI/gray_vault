@@ -1,7 +1,8 @@
 ---
-reviewed_on: "2026-02-21"
+type: concept
+status: draft
 ---
 
-# What is it?
+# Prompting
 
 A prompt is an instruction, text or question used to get a relevant or meaningful response.

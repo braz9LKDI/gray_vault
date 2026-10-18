@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-08-03
+type: source
+status: draft
 ---
 
 # Meditaciones

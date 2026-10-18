@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-03-18"
+type: concept
+status: draft
 ---
 
 # Activity selection problem

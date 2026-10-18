@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-04-07"
+type: concept
+status: draft
 ---
 
 # Knapsack

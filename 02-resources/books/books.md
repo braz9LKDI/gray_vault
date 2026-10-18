@@ -1,4 +1,9 @@
-# Index
+---
+type: index
+status: draft
+---
+
+# Books
 
 ## To read
 

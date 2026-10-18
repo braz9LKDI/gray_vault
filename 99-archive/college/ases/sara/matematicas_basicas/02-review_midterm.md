@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-08"
----
-
 # Review midterm
 
 1. Encontrar la solución de $\abs{ \frac{ 3 x - 1 }{ 2 x - 4 } } < 1$.

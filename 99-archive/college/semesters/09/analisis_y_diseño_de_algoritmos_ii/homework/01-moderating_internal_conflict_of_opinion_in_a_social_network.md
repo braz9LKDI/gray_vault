@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-31"
----
-
 # Moderating internal conflict of opinion in a social network
 
 Una red social $SN$ es una pareja $\langle SA,R_{ \max } \rangle$, donde $SA$ es una secuencia de grupo de agentes $SA = \langle a_0,\dots,a_{ n - 1 } \rangle$ y $R_{ \max } > 0 \pand R_{ \max } \in \mathbb{ N }$ representa el valor entero máximo con el que se cuenta para moderar las opiniones de la red $SN$.

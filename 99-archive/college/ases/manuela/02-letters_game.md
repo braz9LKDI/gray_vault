@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-10"
----
-
 # Letter game
 
 ## Requested functionality

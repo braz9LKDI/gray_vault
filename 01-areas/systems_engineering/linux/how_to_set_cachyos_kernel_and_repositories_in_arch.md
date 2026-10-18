@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-05-28
+type: howto
+status: draft
 ---
 
 # How to set the CachyOS kernel and repositories in Arch

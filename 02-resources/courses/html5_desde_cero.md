@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # HTML5 desde cero
 
 ## Vocabulario web

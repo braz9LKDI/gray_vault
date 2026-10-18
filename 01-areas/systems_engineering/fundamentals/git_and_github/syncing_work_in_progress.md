@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-07-09
+type: howto
+status: draft
 ---
 
 # Syncing work in progress

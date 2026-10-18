@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-06-18
+type: source
+status: draft
 ---
 
 # Containers and orchestration in AWS

@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-08-02
+type: concept
+status: draft
 ---
 
 # Error vs defect vs bug vs fault vs failure

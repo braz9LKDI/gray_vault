@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Conceptos básicos
 
 ## Direcciones IP (IPV4 e IPV6)

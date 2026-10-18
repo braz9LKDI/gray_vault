@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-01-10"
+type: concept
+status: draft
 sources:
     - author: Davide Mastromatteo
       url: https://realpython.com/python-pickle-module

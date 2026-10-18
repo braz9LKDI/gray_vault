@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-07-02"
+type: source
+status: draft
 ---
 
 # Networking

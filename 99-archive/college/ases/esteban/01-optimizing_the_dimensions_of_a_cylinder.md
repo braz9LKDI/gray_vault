@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-08"
----
-
 # Optimizing the dimensions of a cylinder
 
 Un recipiente cilíndrico sin tapa debe almacenar un volumen $v$. El material del fondo del recipiente cuesta $c_1$ por unidad del área y el del lado curvo cuesta $c_2$ por unidad del área ¿Que dimensiones minimizaran el costo total del recipiente?

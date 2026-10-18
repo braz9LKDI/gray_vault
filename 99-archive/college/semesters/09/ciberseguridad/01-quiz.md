@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-14"
----
-
 # Quiz
 
 1. ¿Cree usted que Benjamín y sus amigos manejaron con confidencialidad, integridad y disponibilidad de la información a la que accedieron?

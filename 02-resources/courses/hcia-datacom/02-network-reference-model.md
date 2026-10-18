@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Network reference model
 
 ## Network reference model and standard protocols

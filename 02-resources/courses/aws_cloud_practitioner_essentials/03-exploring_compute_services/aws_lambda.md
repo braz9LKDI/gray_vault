@@ -1,8 +1,9 @@
 ---
-reviewed_on: 2026-06-18
+type: source
+status: draft
 ---
 
-# Lambda
+# AWS Lambda
 
 AWS Lambda is a serverless compute service. It allows code to run without provisioning or managing servers.
 

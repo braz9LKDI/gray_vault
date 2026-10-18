@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-02-24"
+type: concept
+status: draft
 ---
 
 # Longest common subsequence

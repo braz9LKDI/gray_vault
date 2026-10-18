@@ -1,3 +1,8 @@
+---
+type: reference
+status: draft
+---
+
 # Useful commands for creating scripts
 
 ## `cut`

@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-18"
----
-
 # Abstraction
 
 ## Similitud en funciones

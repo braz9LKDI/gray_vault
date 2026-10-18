@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-06-18
+type: concept
+status: draft
 ---
 
 # How are images built?

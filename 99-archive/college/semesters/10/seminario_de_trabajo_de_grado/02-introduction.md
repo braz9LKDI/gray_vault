@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-20"
----
-
 # Introduction
 
 The introduction serves to orient the reader, providing the necessary background to understand the research problem, its significance, and the structure of the document.

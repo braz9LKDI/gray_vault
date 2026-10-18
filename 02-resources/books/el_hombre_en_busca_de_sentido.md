@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2024-12-31"
+type: source
+status: draft
 ---
 
 # El hombre en busca de sentido

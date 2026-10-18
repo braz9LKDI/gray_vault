@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-07"
----
-
 # Matrix multiplication
 
 ![[01-areas/systems_engineering/problems/matrix_chain_multiplication|matrix_chain_multiplication]]

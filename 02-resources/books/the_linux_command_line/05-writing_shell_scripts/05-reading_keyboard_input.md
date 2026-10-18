@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-07-30"
+type: source
+status: draft
 ---
 
 # Reading keyboard input

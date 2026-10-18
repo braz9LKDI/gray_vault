@@ -1,1 +1,6 @@
-# Definition
+---
+type: concept
+status: stub
+---
+
+# Derivatives

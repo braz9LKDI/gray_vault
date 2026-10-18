@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-08-09
+type: concept
+status: draft
 ---
 
 # Porcelain and plumbing commands

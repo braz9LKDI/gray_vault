@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2024-10-06"
+type: source
+status: draft
 ---
 
 # Deja de ser tú

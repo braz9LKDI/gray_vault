@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-04-07"
----
-
 # Requirements engineering
 
 ## Validación de requerimientos

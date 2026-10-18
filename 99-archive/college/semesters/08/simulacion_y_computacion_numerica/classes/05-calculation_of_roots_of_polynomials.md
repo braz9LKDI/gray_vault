@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-07"
----
-
 # Calculation of roots of polynomials
 
 Un polinomio tiene la forma

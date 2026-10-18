@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Temario
 
 ## Comandos básicos de Linux

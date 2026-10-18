@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-09-13"
+type: source
+status: draft
 ---
 
 # The secret life of objects

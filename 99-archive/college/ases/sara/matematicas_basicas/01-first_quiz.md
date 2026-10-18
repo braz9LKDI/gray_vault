@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-08"
----
-
 # First quiz
 
 1. Simplifique completamente las expresiones.

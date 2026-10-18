@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-01-08"
+type: concept
+status: draft
 ---
 
 # Bayes' theorem

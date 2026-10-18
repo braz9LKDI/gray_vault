@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-08-15"
+type: source
+status: draft
 ---
 
 # Exotica

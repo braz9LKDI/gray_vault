@@ -32,13 +32,13 @@ Context for Claude Code sessions in this vault, kept in case a conversation is l
 
 ## Structure decisions (agreed 2026-10-18)
 
-- Frontmatter: `reviewed_on` is dropped everywhere. Notes outside `00-inbox`, `99-archive` and `journal/` get `type` and `status`; `sources` stays.
+- Frontmatter: `reviewed_on` is dropped everywhere. Notes in `01-areas` and `02-resources` get `type` and `status`, except the Kanban boards; `sources` stays. The template `templates/default.md` asks for the type.
 
 - `type` is one of: `concept` (explains one idea), `howto` (steps or commands to get a result), `reference` (lookup material such as cheatsheets, prompts and keybindings), `source` (notes taken from one book, course, video or chapter), `index` (a note whose job is navigation) or `project` (the main note of a project).
 
-- `status` is one of: `stub` (a title or a line), `draft` (content that is incomplete or unverified) or `stable` (complete enough to rely on). Phase 2 is what promotes notes to `stable`.
+- `status` is one of: `stub` (no content under its headings), `draft` (content that is incomplete or unverified) or `stable` (complete enough to rely on). Phase 2 is what promotes notes to `stable`.
 
-- A project is work I produce that has a finish condition: an app, a thesis, a migration. It lives in `03-projects/<name>/` with a main note `<name>.md` of type `project`; knowledge learned during it goes to `01-areas` and is linked from it. A finished project moves to `99-archive/projects/`. Learning a topic or taking a course is not a project.
+- A project is work I produce that has a finish condition: an app, a thesis, a migration. There is none yet, so `03-projects/` does not exist; a project lives in `03-projects/<name>/` with a main note `<name>.md` of type `project`; knowledge learned during it goes to `01-areas` and is linked from it. A finished project moves to `99-archive/projects/`. Learning a topic or taking a course is not a project.
 
 - Tool-like notes have no folder of their own: they live in the area of the topic they serve, as `reference` or `howto`. My AI prompts go to `ai/prompts/`, the notes about prompting to `ai/prompting/` and game controls to `01-areas/games/`.
 
@@ -50,7 +50,9 @@ Context for Claude Code sessions in this vault, kept in case a conversation is l
 
 - The Kanban board `bookshelf.md` is the reading list for planned and ongoing books; the books index only lists books that already have notes. `02-resources/courses/course_board.md` plays the same role for courses.
 
-## State on 2026-10-15
+## State on 2026-10-18
+
+- The structure decisions are applied: paths are lowercase in git and on disk, filenames are unique outside `99-archive` and every note in `01-areas` and `02-resources` has `type` and `status`. Only 3 links are broken, archive images that no longer exist.
 
 - `npm run lint:style` and `npx prettier --check .` pass, and no wikilink or Markdown link outside code is broken.
 

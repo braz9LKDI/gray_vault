@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-02-09"
+type: concept
+status: draft
 ---
 
-# Definition
+# Series
 
 It is an addition of infinitely many terms, one after the other.
 

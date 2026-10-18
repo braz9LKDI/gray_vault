@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-14"
----
-
 # Motivation
 
 Considere el [[01-areas/systems_engineering/problems/coin_change|problema del cambio de monedas]] y las siguientes dos soluciones propuestas:

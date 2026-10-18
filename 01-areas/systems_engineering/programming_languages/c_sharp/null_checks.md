@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-03-02
+type: concept
+status: draft
 ---
 
 # Null checks

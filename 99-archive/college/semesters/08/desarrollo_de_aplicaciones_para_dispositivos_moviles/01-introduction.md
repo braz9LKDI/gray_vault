@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-04"
----
-
 # Introduction
 
 ## Componentes de una aplicación

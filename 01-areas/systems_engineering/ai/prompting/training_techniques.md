@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-02-21
+type: concept
+status: draft
 ---
 
 # Training techniques

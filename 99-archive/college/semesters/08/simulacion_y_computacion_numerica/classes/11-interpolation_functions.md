@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-08"
----
-
 # Interpolation functions
 
 ## Teorema de existencia y unicidad

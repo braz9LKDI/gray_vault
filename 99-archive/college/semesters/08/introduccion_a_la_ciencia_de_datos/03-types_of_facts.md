@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-07"
----
-
 # Types of facts
 
 ## Modelos de inventario

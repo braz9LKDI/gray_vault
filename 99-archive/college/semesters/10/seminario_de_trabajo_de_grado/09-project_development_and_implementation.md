@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-28"
----
-
 # Project development and implementation
 
 This chapter is the core of the thesis, where the plan outlined in the methodology is executed. It documents the entire process of building the solution, from the initial architecture to the final, functional product. It serves as the primary evidence of the technical work completed.

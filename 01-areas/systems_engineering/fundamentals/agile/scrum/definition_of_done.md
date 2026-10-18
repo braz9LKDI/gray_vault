@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2026-02-19"
+type: concept
+status: draft
 ---
 
 # Definition of done

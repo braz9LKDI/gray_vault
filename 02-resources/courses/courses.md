@@ -1,3 +1,8 @@
+---
+type: index
+status: draft
+---
+
 # Courses
 
 ## [[02-resources/courses/20_things_javascript_developers_should_know_but_probably_do_not/01-inheritance_in_javascript-prototypal_inheritance_tutorial|20 things JavaScript developers should know but probably do not]]

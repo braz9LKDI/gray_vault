@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-05-15"
----
-
 # Branch and bound
 
 Este algoritmo sirve para resolver problemas de programación entera o mixta, donde algunas o todas las variables deben tomar valores enteros. Se basa en resolver relajaciones continuas (sin la restricción de integralidad) para obtener cotas (bounds) que guíen la búsqueda.

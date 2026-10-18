@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-05-31
+type: source
+status: draft
 ---
 
 # Elastic Load Balancing routing

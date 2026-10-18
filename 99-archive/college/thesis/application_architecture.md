@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-10-09"
----
-
 # Application architecture
 
 ```mermaid

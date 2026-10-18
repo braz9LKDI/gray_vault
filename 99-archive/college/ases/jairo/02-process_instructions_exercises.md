@@ -1,7 +1,3 @@
----
-reviewed_on: "2024-09-22"
----
-
 # Process instructions exercises
 
 - `SET`: `SET M X NULL NULL`, stores the value `X` at memory address `M`. Where `X` is an immediate, direct or constant value. When `SET` is read, the value `X` is stored in memory without processor execution.

@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-03-13
+type: concept
+status: draft
 ---
 
 # `class` vs `struct`

@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-05-16"
+type: concept
+status: draft
 ---
 
 # Fundamental rules of propositional logic

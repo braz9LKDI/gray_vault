@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-15"
----
-
 # Introduction to dynamic programming - Fibonacci sequence
 
 ## 10 Dynamic programming

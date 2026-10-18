@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-11-24"
----
-
 # Financial structure: construction and validation
 
 ## Estructura de ingresos

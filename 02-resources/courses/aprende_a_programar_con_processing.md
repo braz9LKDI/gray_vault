@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Aprende a programar con Processing
 
 [Processing reference](https://processing.org/reference).

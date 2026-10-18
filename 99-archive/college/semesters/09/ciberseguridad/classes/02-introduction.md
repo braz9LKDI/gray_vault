@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-09"
----
-
 # Introduction
 
 La ciberseguridad es el conjunto de prácticas, tecnologías y estrategias destinadas a proteger sistemas informáticos, redes, dispositivos y datos contra amenazas digitales. Su objetivo principal es evitar el acceso no autorizado, el daño, la alteración o el robo de información.

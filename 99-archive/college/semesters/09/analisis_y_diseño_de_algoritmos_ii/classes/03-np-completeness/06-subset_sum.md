@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-02"
----
-
 # Subset sum
 
 ![[01-areas/systems_engineering/problems/subset_sum|Subset sum]]

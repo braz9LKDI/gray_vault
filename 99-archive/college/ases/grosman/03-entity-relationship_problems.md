@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-28"
----
-
 # Entity-relationship problems
 
 1. El gerente de la empresa Uber, una empresa proveedora de movilidad como servicio, le ha pedido que cree un diagrama usando el Modelo ER. Quieren gestionar los incidentes y siniestros de tránsito. Para esta empresa los conductores son propietarios de uno o más vehículos. Cada vehículo está asociado con cero (0) o más accidentes de tránsito del cual se obtiene un porcentaje de daño.

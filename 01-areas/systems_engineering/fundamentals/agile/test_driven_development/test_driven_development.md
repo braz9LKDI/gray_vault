@@ -1,8 +1,9 @@
 ---
-reviewed_on: 2026-02-21
+type: concept
+status: draft
 ---
 
-# Definition
+# Test-driven development
 
 TDD is a testing methodology or programming practice from a developer's perspective.
 

@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2026-04-08"
+type: reference
+status: draft
 ---
 
 # Commit message conventions

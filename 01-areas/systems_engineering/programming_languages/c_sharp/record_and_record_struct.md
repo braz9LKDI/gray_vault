@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-03-11
+type: concept
+status: draft
 ---
 
 # `record` and `record struct`

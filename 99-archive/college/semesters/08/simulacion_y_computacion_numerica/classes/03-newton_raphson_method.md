@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-06"
----
-
 # Newton Raphson method
 
 ## Ecuación lineal

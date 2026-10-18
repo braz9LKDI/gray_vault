@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-29"
----
-
 # Intermediate value theorem, differentiation rules, and chain rule
 
 ## 1

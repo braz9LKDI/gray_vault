@@ -1,3 +1,6 @@
 ---
-reviewed_on: "<% tp.date.now("YYYY-MM-DD") %>"
+type: <% await tp.system.suggester(["concept", "howto", "reference", "source", "index", "project"], ["concept", "howto", "reference", "source", "index", "project"]) %>
+status: stub
 ---
+
+# <% tp.file.title %>

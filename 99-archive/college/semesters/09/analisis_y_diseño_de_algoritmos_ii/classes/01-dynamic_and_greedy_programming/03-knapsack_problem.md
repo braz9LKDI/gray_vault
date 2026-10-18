@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-24"
----
-
 # Knapsack problem
 
 ![[01-areas/systems_engineering/problems/knapsack|knapsack]]

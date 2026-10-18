@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-08"
----
-
 # Limits and continuity
 
 ## 1

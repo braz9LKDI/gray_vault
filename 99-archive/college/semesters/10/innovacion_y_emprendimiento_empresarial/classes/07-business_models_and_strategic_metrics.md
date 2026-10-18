@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-11-22"
----
-
 # Business models and strategic metrics
 
 ## Estrategia de precios

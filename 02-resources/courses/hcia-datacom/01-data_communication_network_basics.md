@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Data communication network basics
 
 ## Communication and networks

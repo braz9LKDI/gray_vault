@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-10-18"
----
-
 # Prototype evolution and evaluation
 
 ## Reflexión post-validación

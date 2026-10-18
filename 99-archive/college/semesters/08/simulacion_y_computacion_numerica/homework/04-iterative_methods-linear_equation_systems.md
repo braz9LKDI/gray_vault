@@ -1,7 +1,3 @@
----
-reviewed_on: "2024-11-04"
----
-
 # Iterative methods for solving linear equation systems
 
 $$

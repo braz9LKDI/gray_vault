@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-03"
----
-
 # Maximal clique
 
 ![[01-areas/systems_engineering/problems/maximal_clique|Maximal clique]]

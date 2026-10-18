@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-03-30
+type: reference
+status: draft
 ---
 
 # Cyberpunk 2077 controls

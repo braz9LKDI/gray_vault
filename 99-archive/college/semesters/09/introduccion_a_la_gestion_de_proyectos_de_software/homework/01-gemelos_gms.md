@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-29"
----
-
 # Gemelos GMS
 
 The "Gemelos GMS" is a Gym Management System developed by FITCODE to automate and streamline administrative processes for Gemelos GYM. It centralizes user registration, payment tracking, attendance monitoring, inventory management, and client physical evaluations into an intuitive platform. The system enhances operational efficiency, reduces manual errors, and improves client engagement through real-time data access, automated reminders, and a user-friendly interface for staff and trainers.

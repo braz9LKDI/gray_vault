@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-09-06"
+type: source
+status: draft
 ---
 
 # Stage 3

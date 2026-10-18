@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-05-02"
----
-
 # Start-stop-continue
 
 Es un marco de reflexión que ayuda a los equipos de desarrollo de software a identificar claramente tres ámbitos de mejora: las prácticas que conviene iniciar, las que es mejor dejar atrás y aquellas que ya aportan valor y deben mantenerse. Al estructurar la retroalimentación en estas tres categorías, se facilita la transformación de ideas abstractas en acciones concretas, evitando discusiones vagas o dispersas.

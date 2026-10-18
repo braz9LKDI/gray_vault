@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2024-12-25"
+type: source
+status: draft
 ---
 
 # El señor de las moscas

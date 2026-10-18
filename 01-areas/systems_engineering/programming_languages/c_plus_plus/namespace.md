@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-01-12"
+type: concept
+status: draft
 sources:
     - author: NA
       url: https://www.geeksforgeeks.org/namespace-in-c

@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-07-17"
----
-
 # Minimizing the extremism present in a population
 
 ## Input

@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-01-07"
+type: concept
+status: draft
 ---
 
-# Definition
+# Machine learning
 
 It is a subfield of artificial intelligence (AI) that enables machines to learn and make decisions based on data, without the need to be explicitly programmed for each task. This discipline, through algorithms, gives computers the ability to identify patterns in massive data and make predictions.
 

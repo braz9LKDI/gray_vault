@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-08"
----
-
 # Discrete math exercises
 
 1. Represente en lógica de predicados.

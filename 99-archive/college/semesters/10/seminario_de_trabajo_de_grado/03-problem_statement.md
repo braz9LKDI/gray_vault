@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-20"
----
-
 # Problem statement
 
 This chapter is foundational as it clearly defines the issue that the thesis aims to address. It must be concise, specific, and well-supported. The goal is to articulate a situation that can be improved or solved using knowledge from the specify study field.

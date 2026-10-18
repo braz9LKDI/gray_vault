@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-06-17
+type: concept
+status: draft
 ---
 
 # Why do images exist?

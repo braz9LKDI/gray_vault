@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-05-14
+type: source
+status: draft
 ---
 
 # What is cloud computing?

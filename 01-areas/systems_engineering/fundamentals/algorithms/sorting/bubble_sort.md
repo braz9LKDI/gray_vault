@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-05-05"
+type: concept
+status: draft
 ---
 
-# Bubble
+# Bubble sort
 
 1. Compare adjacent elements from the start of the list.
 

@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-04-15"
----
-
 # Gemelos GMS database model
 
 ```mermaid

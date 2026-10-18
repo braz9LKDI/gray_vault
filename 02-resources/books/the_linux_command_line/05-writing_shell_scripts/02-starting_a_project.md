@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-07-28"
+type: source
+status: draft
 ---
 
 # Starting a project

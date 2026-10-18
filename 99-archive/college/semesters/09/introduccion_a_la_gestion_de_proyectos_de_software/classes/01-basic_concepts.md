@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-02"
----
-
 # Basics concepts
 
 ## ¿Qué es un proyecto?

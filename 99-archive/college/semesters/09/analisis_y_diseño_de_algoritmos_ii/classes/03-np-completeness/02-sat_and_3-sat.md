@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-03"
----
-
 # SAT and 3-SAT
 
 ## 3-SAT

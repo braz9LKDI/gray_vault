@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2024-12-27"
+type: source
+status: draft
 ---
 
 # La esencia lógica de la programación

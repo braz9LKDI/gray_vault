@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-11-08"
+type: source
+status: draft
 ---
 
 # The document object model

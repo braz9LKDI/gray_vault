@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-07-04"
----
-
 # Binary and mixed integer programming
 
 Es muy común encontrar problemas de optimización (o de satisfacción) donde la solución dependa de un conjunto de variables binarias y continuas (o enteras). Este tipo de programación recibe el nombre de programación entera mixta (MIP).

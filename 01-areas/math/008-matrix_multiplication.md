@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2024-10-05"
+type: concept
+status: draft
 ---
 
 # Matrix multiplication

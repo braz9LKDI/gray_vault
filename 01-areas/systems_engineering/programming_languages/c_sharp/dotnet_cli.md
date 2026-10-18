@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-04-21
+type: reference
+status: draft
 ---
 
 # dotnet CLI

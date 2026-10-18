@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-04"
----
-
 # System and essays
 
 [Podemos definir un sistema como un conjunto de elementos en interacción dinámica, organizados con el propósito de alcanzar un objetivo común. En otras palabras, un sistema es un grupo de elementos que trabajan juntos de manera organizada para lograr una meta compartida](https://www.macroscopiosistemico.com/leccion/que-es-un-sistema).

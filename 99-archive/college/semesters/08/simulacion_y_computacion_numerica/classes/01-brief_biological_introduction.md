@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-06"
----
-
 # Brief biological introduction
 
 Un científico español llamado Santiago Ramón y Cajal, a finales del siglo XIX, logró descubrir que el cerebro humano estaba compuesto de una red de células llamadas neuronas, cuya estructura sigue la siguiente:

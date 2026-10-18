@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-06"
----
-
 # Social and economic components of an Environmental Impact Study
 
 ## Definiciones

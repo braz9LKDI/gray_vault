@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2026-04-08"
+type: howto
+status: draft
 ---
 
 # Remove from index keeping workspace

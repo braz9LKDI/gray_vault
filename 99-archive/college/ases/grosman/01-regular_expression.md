@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-01"
----
-
 # Regular expression
 
 Construct a regular expression on $\Sigma = \{0,1\}$ that generates all strings in which every occurrence of 00 precedes every occurrence of 11.

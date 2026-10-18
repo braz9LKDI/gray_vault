@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-02-03"
+type: concept
+status: draft
 ---
 
 # Prime number

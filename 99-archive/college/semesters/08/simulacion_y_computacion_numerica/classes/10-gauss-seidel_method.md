@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-08"
----
-
 # Gauss-Seidel method
 
 Este método es un procedimiento iterativo utilizado para resolver sistemas de ecuaciones lineales de la forma $A x = b$. Es especialmente útil para sistemas grandes y dispersos.

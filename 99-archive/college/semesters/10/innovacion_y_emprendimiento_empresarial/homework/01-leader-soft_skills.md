@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-08"
----
-
 # Leader: soft skills
 
 ## ¿Cuáles elementos de los podcast le han resultado más interesantes o valiosos?

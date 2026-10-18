@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-10-16"
----
-
 # Creating elements in video games
 
 ## Visual elements in video games

@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-05-09"
----
-
 # Moderating internal conflict of opinion in a social network presentation
 
 ## Algoritmo para calcular el costo de una solución óptima

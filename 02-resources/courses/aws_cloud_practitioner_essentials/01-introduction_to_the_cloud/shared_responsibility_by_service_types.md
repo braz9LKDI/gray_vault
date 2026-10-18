@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-06-04
+type: source
+status: draft
 ---
 
 # Shared responsibility by service types

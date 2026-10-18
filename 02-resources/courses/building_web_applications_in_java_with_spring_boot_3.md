@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Building web applications in Java with Spring Boot 3
 
 ## Create the project

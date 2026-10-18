@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-10-18"
----
-
 # Proof of concept and minimum viable model
 
 ## Prueba de concepto (POC)

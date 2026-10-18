@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-10"
----
-
 # Building digital narrative: tools and methodologies
 
 ## Metodología de UXC

@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-06-19
+type: source
+status: draft
 ---
 
 # Outposts

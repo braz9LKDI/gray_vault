@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-02-02"
+type: concept
+status: draft
 ---
 
 # Codomain

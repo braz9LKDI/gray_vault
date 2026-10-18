@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-03"
----
-
 # Agile vs traditional frameworks
 
 ## Ciclos de vida de un proyecto

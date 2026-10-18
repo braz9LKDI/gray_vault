@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-20"
----
-
 # Problem justification
 
 This chapter answers the crucial "Why?" question. After stating the problem, this section must convince the reader that the project is important, necessary, and worth pursuing. It provides the reasoning that makes the proposed work valid.

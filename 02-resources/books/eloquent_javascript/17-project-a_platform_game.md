@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2026-06-22"
+type: source
+status: draft
 ---
 
 # Project: a platform game

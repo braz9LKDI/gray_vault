@@ -1,7 +1,3 @@
----
-reviewed_on: "2024-12-12"
----
-
 # Jacobi's method
 
 Este método es un procedimiento iterativo utilizado para resolver sistemas de ecuaciones lineales de la forma $A x = b$.

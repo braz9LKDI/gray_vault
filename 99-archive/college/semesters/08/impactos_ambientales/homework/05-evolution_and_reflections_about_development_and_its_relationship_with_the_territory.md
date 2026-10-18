@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-04"
----
-
 # Evolution and reflections about the development and his relationship with the territory
 
 ## Evolución del desarrollo: desde una mirada unifocal a la multi y transdisciplinaria

@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-02-09"
+type: concept
+status: draft
 ---
 
 # Finite differences

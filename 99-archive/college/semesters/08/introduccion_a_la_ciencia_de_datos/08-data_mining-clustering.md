@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-06"
----
-
 # Data mining - clustering
 
 Es el proceso de dividir un conjunto de datos en subconjuntos. Cada subconjunto es un grupo, de modo que los objetos de un grupo son **similares** entre sí, pero **diferentes** a los datos de otros grupos.

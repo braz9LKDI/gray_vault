@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-31"
----
-
 # Speech recognition
 
 El reconocimiento del habla es la capacidad de un sistema para entender y procesar el lenguaje hablado, convirtiéndolo en texto o acciones.

@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-05-29
+type: source
+status: draft
 ---
 
 # EC2 scaling

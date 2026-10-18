@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-02-03"
+type: concept
+status: draft
 ---
 
-# Definition
+# Number theory
 
 Number theory is a branch of mathematics that studies numbers, particularly whole numbers, and their properties and relationships. It explores patterns, structures and the behaviors of numbers in different situations. Number theory deals with the following key concepts:
 

@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Inheritance in JavaScript
 
 ## Classes

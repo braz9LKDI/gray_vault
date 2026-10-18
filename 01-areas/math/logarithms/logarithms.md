@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-02-10"
+type: concept
+status: draft
 ---
 
-# Definition
+# Logarithms
 
 $$
 \log_b a = c \rightarrow b^c = a \quad b,a \in \mathbb{ R } > 0

@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-01-30"
+type: concept
+status: draft
 sources:
     - author: NA
       url: https://www.gitkraken.com/learn/git/git-flow

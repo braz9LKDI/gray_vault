@@ -1,1 +1,6 @@
-# Computer science
+---
+type: index
+status: stub
+---
+
+# Systems engineering

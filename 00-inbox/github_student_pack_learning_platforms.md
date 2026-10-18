@@ -1,7 +1,3 @@
----
-reviewed_on: 2026-06-05
----
-
 # GitHub student pack learning platforms
 
 - [Boot.dev](https://education.github.com/pack/redeem/bootdev-student): backend development, DevOps, data analysis, Python, Go, TypeScript and systems-oriented programming.

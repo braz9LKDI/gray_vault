@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-05-31"
+type: reference
+status: draft
 ---
 
 # LaTeX cheatsheet

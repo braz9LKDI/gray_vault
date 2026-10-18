@@ -1,7 +1,3 @@
----
-reviewed_on: "2024-09-24"
----
-
 # Taylor serie
 
 ## 1

@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-08"
----
-
 # Scala setup for VS Code
 
 ## Scala setup

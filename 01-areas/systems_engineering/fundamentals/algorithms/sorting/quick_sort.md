@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-05-05"
+type: concept
+status: draft
 ---
 
-# Quick
+# Quick sort
 
 1. Choose an element from the set of elements to be sorted, called the pivot.
 

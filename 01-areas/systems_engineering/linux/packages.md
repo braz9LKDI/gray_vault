@@ -1,3 +1,8 @@
+---
+type: concept
+status: draft
+---
+
 # Packages
 
 Just as Windows uses installable executables, Linux relies on packages managed through software repositories.

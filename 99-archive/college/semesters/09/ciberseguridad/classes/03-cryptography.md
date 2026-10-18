@@ -1,5 +1,4 @@
 ---
-reviewed_on: "2025-04-16"
 sources:
     - author: NA
       url: http://ibm.com/mx-es/topics/cryptography

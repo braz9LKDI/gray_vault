@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-01-17"
+type: concept
+status: draft
 ---
 
 # Vertex form of a quadratic function

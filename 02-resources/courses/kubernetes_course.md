@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Kubernetes
 
 ## What is Kubernetes?

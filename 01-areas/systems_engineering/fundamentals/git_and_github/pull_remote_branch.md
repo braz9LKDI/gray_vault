@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2026-04-08"
+type: howto
+status: draft
 ---
 
 # Check out a remote branch locally

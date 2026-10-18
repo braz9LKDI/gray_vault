@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-16"
----
-
 # First calculus midterm
 
 1. Encuentre una función $f$ que cumpla con todas las siguientes condiciones:

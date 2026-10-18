@@ -1,7 +1,3 @@
----
-reviewed_on: "2026-01-01"
----
-
 # Extremes in a closed interval
 
 ## 1

@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-06-21"
+type: source
+status: draft
 ---
 
 # Enfócate

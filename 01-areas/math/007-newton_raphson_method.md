@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2024-09-24"
+type: concept
+status: draft
 ---
 
 # Newton-Raphson method

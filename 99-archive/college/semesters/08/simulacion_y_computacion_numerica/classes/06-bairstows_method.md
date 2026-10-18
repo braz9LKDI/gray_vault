@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-07"
----
-
 # Bairstow's method
 
 Este método propone factorizar un polinomio $p(x)$ usando un factor cuadrático.

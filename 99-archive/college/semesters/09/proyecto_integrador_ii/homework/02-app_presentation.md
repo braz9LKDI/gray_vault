@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-08"
----
-
 # App presentation
 
 ## Descripción

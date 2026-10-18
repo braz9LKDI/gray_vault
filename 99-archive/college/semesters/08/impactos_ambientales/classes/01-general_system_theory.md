@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-04"
----
-
 # General system theory
 
 ## ¿Qué es un sistema?

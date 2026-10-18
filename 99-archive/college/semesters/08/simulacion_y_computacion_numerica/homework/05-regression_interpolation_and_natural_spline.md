@@ -1,7 +1,3 @@
----
-reviewed_on: "2024-11-20"
----
-
 # Regression, interpolation and natural spline
 
 $$

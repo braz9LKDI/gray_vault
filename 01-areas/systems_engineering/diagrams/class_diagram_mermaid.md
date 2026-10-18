@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-05-01
+type: reference
+status: stub
 ---
 
 # Class diagram with Mermaid

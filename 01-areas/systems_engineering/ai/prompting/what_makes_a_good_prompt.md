@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2026-02-21"
+type: concept
+status: draft
 ---
 
-# What makes a good one?
+# What makes a good prompt?
 
 - Clear and specific: provide context and avoid irrelevant information.
 

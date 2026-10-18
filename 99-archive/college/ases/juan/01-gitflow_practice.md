@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-01"
----
-
 # GitFlow practice
 
 1. Initialize a GitFlow repository: `git flow init`.

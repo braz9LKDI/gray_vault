@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-10-17"
----
-
 # Get to know the client
 
 ## Características del consumidor

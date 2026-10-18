@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-08"
----
-
 # Building a container from scratch
 
 1. Download and extract a Linux system files: `wget https://github.com/ericchiang/containers-from-scratch/releases/download/v0.1.0/rootfs.tar.gz && sudo tar -zxf rootfs.tar.gz`.

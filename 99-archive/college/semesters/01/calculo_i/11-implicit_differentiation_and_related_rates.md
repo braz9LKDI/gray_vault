@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-10-16"
----
-
 # Implicit differentiation and related rates
 
 ## 1

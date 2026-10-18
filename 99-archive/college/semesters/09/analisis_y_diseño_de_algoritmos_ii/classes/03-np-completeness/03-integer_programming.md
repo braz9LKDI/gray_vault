@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-07-31"
----
-
 # Integer programming
 
 ## ¿Qué es la programación entera (IP)?

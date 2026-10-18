@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-08-14"
+type: source
+status: draft
 ---
 
 # Arrays

@@ -1,7 +1,3 @@
----
-reviewed_on: "2026-01-13"
----
-
 # Applications of the derivative
 
 ## 1

@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-03-02"
+type: concept
+status: draft
 ---
 
 # Matrix chain multiplication

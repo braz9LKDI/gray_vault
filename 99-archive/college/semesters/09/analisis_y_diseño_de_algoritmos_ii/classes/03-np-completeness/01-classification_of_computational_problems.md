@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-07-31"
----
-
 # Classification of computational problems
 
 La complejidad computacional es el estudio de los algoritmos y los recursos que estos requieren para resolver un problema.

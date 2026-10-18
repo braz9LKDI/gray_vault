@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-09-02"
+type: source
+status: draft
 ---
 
 # Data structures: objects and arrays

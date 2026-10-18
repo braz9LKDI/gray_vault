@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-04-14"
----
-
 # Linear programming
 
 ## Metodología

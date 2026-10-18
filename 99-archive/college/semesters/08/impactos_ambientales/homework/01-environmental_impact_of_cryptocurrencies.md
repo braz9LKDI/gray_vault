@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-04"
----
-
 # Environmental impact of cryptocurrencies
 
 [Las criptomonedas, también llamadas monedas digitales o virtuales, son medios de pago sin soporte físico, basados en un algoritmo matemático conocido como blockchain o cadena de bloques. A diferencia de las monedas tradicionales, no cuentan con el respaldo de un banco central que garantice su valor. Su precio varía según la oferta y la demanda, y no existe obligación de aceptarlas como forma de pago. Además, no pueden ser consideradas depósitos de valor ni unidades de cuenta estables. Por estas razones, no compiten directamente con el dinero oficial y se consideran activos especulativos de alto riesgo](https://www.bde.es/wbe/es/areas-actuacion/politica-monetaria/preguntas-frecuentes/definicion-funciones-del-dinero/que-son-criptomonedas.html).

@@ -1,8 +1,9 @@
 ---
-reviewed_on: 2026-02-21
+type: concept
+status: draft
 ---
 
-# Definition
+# Agile
 
 It is an approach to software development that emphasizes iterative delivery, collaboration and responding to change.
 

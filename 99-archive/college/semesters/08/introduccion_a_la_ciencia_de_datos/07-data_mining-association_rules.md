@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-02-06"
----
-
 # Data mining - association rules
 
 Se utilizan para descubrir hechos que ocurren en común dentro de un determinado conjunto de datos.

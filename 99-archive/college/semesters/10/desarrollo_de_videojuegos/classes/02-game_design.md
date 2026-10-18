@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-10-12"
----
-
 # Game design
 
 ## Story design

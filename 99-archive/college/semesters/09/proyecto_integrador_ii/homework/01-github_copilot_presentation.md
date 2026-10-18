@@ -1,5 +1,4 @@
 ---
-reviewed_on: "2025-02-16"
 author: Greg Larkin
 language: English
 sources:

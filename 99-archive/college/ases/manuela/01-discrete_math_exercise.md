@@ -1,7 +1,3 @@
----
-reviewed_on: "2024-11-03"
----
-
 # Discrete math exercise
 
 Determine usando inferencia si la conclusión de la siguiente fórmula proposicional es válida:

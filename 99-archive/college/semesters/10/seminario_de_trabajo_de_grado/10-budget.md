@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-09-28"
----
-
 # Budget
 
 This chapter provides a realistic financial estimate of the resources needed to complete the project. It demonstrates an understanding of project management principles and acknowledges the real-world costs associated with technical development.

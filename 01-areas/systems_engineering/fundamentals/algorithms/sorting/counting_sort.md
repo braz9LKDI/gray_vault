@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-05-05"
+type: concept
+status: draft
 ---
 
-# Counting
+# Counting sort
 
 1. Create an array of integers sized by the maximum value in the range (from 0 up to max). Initialize every element to 0.
 

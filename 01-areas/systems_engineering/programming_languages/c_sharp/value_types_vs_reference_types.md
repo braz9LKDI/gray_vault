@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-03-01
+type: concept
+status: draft
 ---
 
 # Value types vs reference types

@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-04-07"
----
-
 # Coin change problem
 
 ![[01-areas/systems_engineering/problems/coin_change|Problema de cambio de monedas]]

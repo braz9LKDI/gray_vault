@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-09-22
+type: concept
+status: draft
 ---
 
 # Why do repositories stay small?

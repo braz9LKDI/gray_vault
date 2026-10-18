@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-08-31"
+type: source
+status: draft
 ---
 
 # Values, types and operators

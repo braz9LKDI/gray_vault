@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-03-02"
----
-
 # Longest common subsequence
 
 ![[01-areas/systems_engineering/problems/longest_common_subsequence|longest common subsequence]]

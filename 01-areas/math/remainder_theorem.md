@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-05-01
+type: concept
+status: stub
 ---
 
 # Remainder theorem

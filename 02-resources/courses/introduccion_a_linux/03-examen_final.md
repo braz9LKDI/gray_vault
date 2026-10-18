@@ -1,3 +1,8 @@
+---
+type: source
+status: draft
+---
+
 # Examen final
 
 1. Si quiero asignar el permiso 123 en octal a un fichero, ¿cómo quedarán representados los permisos finales para este fichero?

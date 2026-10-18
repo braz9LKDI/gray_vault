@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-08-08"
----
-
 # Suggested solution for Sum of Multiples problem
 
 The suggested solution is:

@@ -1,8 +1,9 @@
 ---
-reviewed_on: "2025-02-10"
+type: concept
+status: draft
 ---
 
-# Definition
+# Sequences
 
 A sequence (or progression) is a discrete structure used to represent lists of numbers in a specific order. The notation $\{ a_n \}$ is often used to denote a sequence, where $a_n$ refers to the element of the sequence at position $n$, called the general term. The subscript $n \in \mathbb{ N }$ indicates the place it occupies in that sequence.
 

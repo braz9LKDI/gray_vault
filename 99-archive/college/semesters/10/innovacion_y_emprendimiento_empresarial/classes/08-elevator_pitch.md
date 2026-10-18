@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-12-03"
----
-
 # Elevator pitch
 
 ## Definición y objetivo

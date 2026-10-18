@@ -1,5 +1,6 @@
 ---
-reviewed_on: "2025-08-31"
+type: concept
+status: draft
 sources:
     - author: GeeksforGeeks
       url: https://www.geeksforgeeks.org/machine-learning/supervised-machine-learning
@@ -12,7 +13,7 @@ sources:
       language: English
 ---
 
-# Classification
+# Machine learning classification
 
 ## Supervised learning
 

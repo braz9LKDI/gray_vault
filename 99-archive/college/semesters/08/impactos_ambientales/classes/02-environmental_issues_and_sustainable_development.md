@@ -1,7 +1,3 @@
----
-reviewed_on: 2025-01-04
----
-
 # Environmental issues and sustainable development
 
 ![culture as a system](99-archive/college/semesters/08/impactos_ambientales/assets/02_01-culture_as_a_system.svg)

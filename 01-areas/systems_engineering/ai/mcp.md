@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-05-27
+type: concept
+status: draft
 ---
 
 # What is an MCP?

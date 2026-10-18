@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-10-13"
----
-
 # Reference framework
 
 This chapter establishes the academic and technical foundation for your project. It shows that the work is informed by existing knowledge and demonstrates where it fits within the current landscape of a specific field.

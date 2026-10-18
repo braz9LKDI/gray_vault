@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-02-27
+type: concept
+status: draft
 ---
 
 # Solution vs project

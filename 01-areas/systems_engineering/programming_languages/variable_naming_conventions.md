@@ -1,5 +1,6 @@
 ---
-reviewed_on: 2026-06-29
+type: concept
+status: draft
 ---
 
 # Variable naming conventions

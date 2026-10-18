@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-07"
----
-
 # Introduction
 
 ## ¿Qué Es big data?

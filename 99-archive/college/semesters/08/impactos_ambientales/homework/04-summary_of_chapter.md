@@ -1,7 +1,3 @@
----
-reviewed_on: "2025-01-04"
----
-
 # Summary of chapter
 
 ## Decadencia del imperio romano
