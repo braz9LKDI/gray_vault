@@ -37,7 +37,7 @@ La experiencia muestra que la mayor parte de las funciones en un programa emplea
     }
     ```
 
-- Generativo ([[personal/systems_engineering/fundametals/algorithms/sorting/quick|Quick sort]]).
+- Generativo ([[01-areas/systems_engineering/fundamentals/algorithms/sorting/quick_sort|Quick sort]]).
 
     ```js
     /**

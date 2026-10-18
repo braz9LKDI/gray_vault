@@ -112,4 +112,4 @@ Es una metodología orientada a corregir lo que no funciona, adoptando un enfoqu
 
 ## Design thinking
 
-![[college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/04-innovation_and_design_thinking#Design thinking|Design thinking]]
+![[99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/04-innovation_and_design_thinking#Design thinking|Design thinking]]

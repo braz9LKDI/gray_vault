@@ -24,13 +24,13 @@ Context for Claude Code sessions in this vault, kept in case a conversation is l
 
 - A nested list starts right under its parent item, because Prettier removes the blank line there.
 
-- Quotations keep their original wording. Book excerpts are marked with `...`, and the coach prompts in `01-areas/systems_engineering/prompts` address the AI in second person on purpose.
+- Quotations keep their original wording. Book excerpts are marked with `...`, and the coach prompts in `01-areas/systems_engineering/ai/prompts` address the AI in second person on purpose.
 
 - Display math blocks contain no blank lines, because Prettier and markdownlint (MD012) undo each other's fix around them.
 
 - `99-archive` is formatted by Prettier but excluded from the style check and the review. `journal/` is gitignored, so every tool skips it.
 
-## Structure decisions (agreed 2026-10-18, not applied yet)
+## Structure decisions (agreed 2026-10-18)
 
 - Frontmatter: `reviewed_on` is dropped everywhere. Notes outside `00-inbox`, `99-archive` and `journal/` get `type` and `status`; `sources` stays.
 
@@ -48,13 +48,13 @@ Context for Claude Code sessions in this vault, kept in case a conversation is l
 
 - `00-inbox` is flat and holds only unprocessed notes, which may skip `type` and `status`. A note I plan to write lives in its topic folder with `status: stub`, which replaces `00-inbox/to_do/`. There is no cadence for emptying it yet.
 
-- The Kanban board `bookshelf.md` is the reading list for planned and ongoing books; the books index only lists books that already have notes.
+- The Kanban board `bookshelf.md` is the reading list for planned and ongoing books; the books index only lists books that already have notes. `02-resources/courses/course_board.md` plays the same role for courses.
 
 ## State on 2026-10-15
 
 - `npm run lint:style` and `npx prettier --check .` pass, and no wikilink or Markdown link outside code is broken.
 
-- The manual review (list or paragraph, sibling shape, tone, leftover Spanish, typos) is done for every note except `aprende_Docker_ahora.md` and `scribbles.md`, which I review myself. Their markdownlint errors (MD024, MD028, MD029, MD033) are most of the 19 left; the rest are in the Kanban boards and my journal.
+- The manual review (list or paragraph, sibling shape, tone, leftover Spanish, typos) is done for every note except `aprende_docker_ahora.md` and `scribbles.md`, which I review myself. Their markdownlint errors (MD024, MD028, MD029, MD033) are most of the 19 left; the rest are in the Kanban boards and my journal.
 
 - The 35 content errors found in the review are fixed and checked off in `00-inbox/content_issues.md`.
 
