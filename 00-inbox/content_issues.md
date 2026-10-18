@@ -24,7 +24,7 @@ Content errors found during the style review. A fixed issue gets its box checked
 
 - [x] [[01-areas/math/008-matrix_multiplication|Matrix multiplication]]: the letters are swapped. $B$ is written with entries $c_{ ij }$ and $m \times n$ indices, and $C$ with entries $b_{ ij }$.
 
-- [x] [[01-areas/math/LaTeX_cheatsheet|LaTeX cheatsheet]]: `\bigcap` is intersection and `\bigcup` is union, the reverse of the table; `\neq` means "not equal", not logical negation (`\neg`).
+- [x] [[01-areas/math/latex_cheatsheet|LaTeX cheatsheet]]: `\bigcap` is intersection and `\bigcup` is union, the reverse of the table; `\neq` means "not equal", not logical negation (`\neg`).
 
 - [x] [[01-areas/math/error_and_uncertainty|Error and uncertainty]]: the power rule writes $^\sigma f(x)$ where $\sigma_{ f(x) }$ is meant.
 
@@ -50,7 +50,7 @@ Content errors found during the style review. A fixed issue gets its box checked
 
 ## AI, data and diagrams
 
-- [x] [[01-areas/systems_engineering/AI/machine_learning/algorithms/supervised_learning/decision_trees|Decision trees]]: the maximum entropy line computes $-0.5 \log_2 0.5 - (-0.5 \log_2 0.5)$, which is 0; both terms should be subtracted.
+- [x] [[01-areas/systems_engineering/ai/machine_learning/algorithms/supervised_learning/decision_trees|Decision trees]]: the maximum entropy line computes $-0.5 \log_2 0.5 - (-0.5 \log_2 0.5)$, which is 0; both terms should be subtracted.
 
 - [x] [[01-areas/systems_engineering/diagrams/entity_relationship_diagram_mermaid|Entity relationship diagram with Mermaid]]: the cardinality list does not match Mermaid's markers (`||`, `|o`, `}|`, `}o`). The example also declares `LINE-ITEM` in a relationship but defines `LINE_ITEM`, which creates two entities.
 
@@ -64,24 +64,24 @@ Content errors found during the style review. A fixed issue gets its box checked
 
 ## C++ and Python
 
-- [x] [[01-areas/systems_engineering/programming_languages/C_plus_plus/pointer|Pointer]]: the void pointer example declares `void main()`, which is not valid C++; `main` returns `int`.
+- [x] [[01-areas/systems_engineering/programming_languages/c_plus_plus/pointer|Pointer]]: the void pointer example declares `void main()`, which is not valid C++; `main` returns `int`.
 
-- [x] [[01-areas/systems_engineering/programming_languages/Python/Pickle|Pickle]]: the example calls `pickle.dump(file, list)` with the arguments reversed and never imports `pickle`.
+- [x] [[01-areas/systems_engineering/programming_languages/python/pickle|Pickle]]: the example calls `pickle.dump(file, list)` with the arguments reversed and never imports `pickle`.
 
-- [x] [[01-areas/systems_engineering/programming_languages/Python/decorator|Decorator]]: the equivalent form assigns to `my_function_decorator`; the decorator syntax rebinds `my_function` itself.
+- [x] [[01-areas/systems_engineering/programming_languages/python/decorator|Decorator]]: the equivalent form assigns to `my_function_decorator`; the decorator syntax rebinds `my_function` itself.
 
-- [x] [[01-areas/systems_engineering/programming_languages/Python/doctest|Doctest]]: the expected outputs (`"Zero"`, `"Positive"`) do not match what the function returns (`'zero'`, `'positive'`), so every test fails.
+- [x] [[01-areas/systems_engineering/programming_languages/python/doctest|Doctest]]: the expected outputs (`"Zero"`, `"Positive"`) do not match what the function returns (`'zero'`, `'positive'`), so every test fails.
 
-- [x] [[01-areas/systems_engineering/programming_languages/Python/map|Map]]: the example prints `[5, 7, 9]`, not `[5, 4, 9]`.
+- [x] [[01-areas/systems_engineering/programming_languages/python/map|Map]]: the example prints `[5, 7, 9]`, not `[5, 4, 9]`.
 
-- [x] [[01-areas/systems_engineering/programming_languages/Python/lambda|Lambda]]: the `do_exclaim` comment drops the `!` the function adds.
+- [x] [[01-areas/systems_engineering/programming_languages/python/lambda|Lambda]]: the `do_exclaim` comment drops the `!` the function adds.
 
 ## Courses
 
 - [x] [[02-resources/courses/aprende_git_y_github|Aprende Git y GitHub]]: VS Code marks modified files with `M`; `U` means untracked. `HEAD~1` is the parent of the last commit, not the last commit. The `-m` in `git branch -m` stands for move, not modify.
 
-- [x] [[02-resources/courses/introduccion_al_Hacking/01-conceptos_basicos|Conceptos básicos]]: the subnetting exercises give the total addresses as hosts per subnet ($2^{19}$ instead of $2^{19} - 2$, and 8 instead of 6 for the `/29`). The last host of `192.168.1.45/29` is `.46`, because `.47` is the broadcast address.
+- [x] [[02-resources/courses/introduccion_al_hacking/01-conceptos_basicos|Conceptos básicos]]: the subnetting exercises give the total addresses as hosts per subnet ($2^{19}$ instead of $2^{19} - 2$, and 8 instead of 6 for the `/29`). The last host of `192.168.1.45/29` is `.46`, because `.47` is the broadcast address.
 
-- [x] [[02-resources/courses/introduccion_a_Linux/03-examen_final|Examen final]]: question 31 maps octal 432 to `drw--wx-w-`; 4 is `r--`, so the answer is `dr---wx-w-`.
+- [x] [[02-resources/courses/introduccion_a_linux/03-examen_final|Examen final]]: question 31 maps octal 432 to `drw--wx-w-`; 4 is `r--`, so the answer is `dr---wx-w-`.
 
-- [x] [[02-resources/courses/introduccion_a_Linux/01-temario|Temario]]: level 17 connects with the RSA key as `bandit17`, not `bandit16`. "SSH is an access credential used in the SSH protocol" mixes up the key and the protocol.
+- [x] [[02-resources/courses/introduccion_a_linux/01-temario|Temario]]: level 17 connects with the RSA key as `bandit17`, not `bandit16`. "SSH is an access credential used in the SSH protocol" mixes up the key and the protocol.

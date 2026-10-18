@@ -16,4 +16,4 @@ reviewed_on: "2026-XX-XX"
 
 ### SOLID principles
 
-![[01-areas/systems_engineering/fundamentals/SOLID_principles|SOLID_principles]]
+![[01-areas/systems_engineering/fundamentals/solid_principles|SOLID_principles]]

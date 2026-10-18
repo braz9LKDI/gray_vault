@@ -8,7 +8,7 @@
 
 - [Source](https://www.youtube.com/playlist?list=PL1PqvM2UQiMoGNTaxFMSK2cih633lpFKP).
 
-## [[02-resources/courses/introduccion_a_Linux/01-temario|Introducción a Linux]]
+## [[02-resources/courses/introduccion_a_linux/01-temario|Introducción a Linux]]
 
 - Author: Marcelo Vázquez.
 
@@ -16,7 +16,7 @@
 
 - [Source](https://hack4u.io/cursos/introduccion-a-linux).
 
-## [[02-resources/courses/introduccion_al_Hacking/01-conceptos_basicos|Introducción al Hacking]]
+## [[02-resources/courses/introduccion_al_hacking/01-conceptos_basicos|Introducción al Hacking]]
 
 - Author: Marcelo Vázquez.
 
@@ -40,7 +40,7 @@
 
 - [Source](https://www.youtube.com/watch?v=mBYSUUnMt9M).
 
-## [[02-resources/courses/building_web_applications_in_Java_with_Spring_Boot_3|Building web applications in Java with Spring Boot 3]]
+## [[02-resources/courses/building_web_applications_in_java_with_spring_boot_3|Building web applications in Java with Spring Boot 3]]
 
 - Author: Dan Vega.
 

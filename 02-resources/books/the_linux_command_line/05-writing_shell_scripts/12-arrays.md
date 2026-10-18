@@ -158,7 +158,7 @@ DICTIONARY=/usr/share/dict/words
 WORDLIST=~/wordlist.txt
 declare -a words
 
-if [[ ! -r "$WORDLIST" ]]; then
+if [[ ! -r "$wordlist" ]]; then
     grep -v \' < "$DICTIONARY" \
         | grep -v "[[:upper:]]" \
         | shuf > "$WORDLIST"
@@ -168,7 +168,7 @@ fi
 mapfile -t -n 32767 words < "$WORDLIST"
 
 # Create four word passphrase
-while [[ -z "$REPLY" ]]; do
+while [[ -z "$reply" ]]; do
     echo "${words[$RANDOM]}" \
         "${words[$RANDOM]}" \
         "${words[$RANDOM]}" \

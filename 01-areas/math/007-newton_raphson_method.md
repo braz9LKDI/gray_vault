@@ -18,7 +18,7 @@ $$
 
 ## Demonstration
 
-Expanding the [[01-areas/math/Taylor_series|Taylor series]] of $f$ around $x_n$:
+Expanding the [[01-areas/math/taylor_series|Taylor series]] of $f$ around $x_n$:
 
 $$
 f(x) = f(x_n) + f'(x_n) (x - x_n) + \frac{ f''(x_n) }{ 2! } (x - x_n)^2 + \dots

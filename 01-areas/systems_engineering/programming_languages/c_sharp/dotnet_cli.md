@@ -25,7 +25,7 @@ dotnet new <template> -n <name> -o <directory>
 
 > In current SDKs, `dotnet new sln` creates an `.slnx` file. Existing `.sln` files can still be managed with `dotnet sln`.
 
-## [[01-areas/systems_engineering/programming_languages/C_sharp/solution_vs_project#Solution (`.sln`)|Solution]] management
+## [[01-areas/systems_engineering/programming_languages/c_sharp/solution_vs_project#Solution (`.sln`)|Solution]] management
 
 ```bash
 dotnet sln <sln-or-slnx-file> list
@@ -36,7 +36,7 @@ dotnet sln <sln-or-slnx-file> add <csproj-file> --solution-folder <folder>
 dotnet sln <sln-or-slnx-file> remove <csproj-file>
 ```
 
-## [[01-areas/systems_engineering/programming_languages/C_sharp/solution_vs_project#Project (`.csproj`)|Project]] references
+## [[01-areas/systems_engineering/programming_languages/c_sharp/solution_vs_project#Project (`.csproj`)|Project]] references
 
 ```bash
 dotnet reference add <referenced-csproj> --project <target-csproj>

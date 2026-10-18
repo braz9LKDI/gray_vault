@@ -49,12 +49,12 @@ select str in \
     "Display disk space" \
     "Display home space utilization" \
     "Quit"; do
-    if [[ "$REPLY" == "1" ]]; then
+    if [[ "$reply" == "1" ]]; then
         echo "Hostname: $HOSTNAME"
         uptime
-    elif [[ "$REPLY" == "2" ]]; then
+    elif [[ "$reply" == "2" ]]; then
         df -h
-    elif [[ "$REPLY" == "3" ]]; then
+    elif [[ "$reply" == "3" ]]; then
         if [[ $(id -u) -eq 0 ]]; then
             echo "Home space utilization (all users)"
             du -sh /home/* 2> /dev/null
@@ -62,7 +62,7 @@ select str in \
             echo "Home space utilization ($USER)"
             du -sh "$HOME" 2> /dev/null
         fi
-    elif [[ "$REPLY" == "4" ]]; then
+    elif [[ "$reply" == "4" ]]; then
         break
     fi
     else

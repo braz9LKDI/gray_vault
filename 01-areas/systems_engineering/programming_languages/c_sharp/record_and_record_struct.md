@@ -8,7 +8,7 @@ reviewed_on: 2026-03-11
 
 ## `record`
 
-It declares a [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Reference types|reference type]] (like `class`), but with value-like equality by default. Two records are considered equal when their contents (their components) are equal, not when they are the same instance.
+It declares a [[01-areas/systems_engineering/programming_languages/c_sharp/value_types_vs_reference_types#Reference types|reference type]] (like `class`), but with value-like equality by default. Two records are considered equal when their contents (their components) are equal, not when they are the same instance.
 
 ```cs
 public record Person(string Name, int Age);
@@ -33,7 +33,7 @@ This `with` expression creates a new record instance with selected properties ch
 
 ## `record struct`
 
-It declares a [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Value types|value type]] (like `struct`) with record-style features. It is copied by value by default, and it still provides value-like equality based on contents.
+It declares a [[01-areas/systems_engineering/programming_languages/c_sharp/value_types_vs_reference_types#Value types|value type]] (like `struct`) with record-style features. It is copied by value by default, and it still provides value-like equality based on contents.
 
 ```cs
 public record struct Point(int X, int Y);

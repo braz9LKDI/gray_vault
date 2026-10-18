@@ -80,7 +80,7 @@ read -r -p "Enter a single item > "
 ### Empty
 
 ```bash
-[[ -z "$REPLY"]] && invalid_input
+[[ -z "$reply"]] && invalid_input
 ```
 
 ### Multiple items
@@ -98,13 +98,13 @@ read -r -p "Enter a single item > "
 ### Floating point number
 
 ```bash
-[[ "$REPLY" =~ ^-?[[:digit:]]*\.[[:digit:]]+$ ]] && invalid_input
+[[ "$reply" =~ ^-?[[:digit:]]*\.[[:digit:]]+$ ]] && invalid_input
 ```
 
 ### Integer number
 
 ```bash
-[[ "$REPLY" =~ ^-?[[:digit:]]+$ ]] && invalid_input
+[[ "$reply" =~ ^-?[[:digit:]]+$ ]] && invalid_input
 ```
 
 ## Menus

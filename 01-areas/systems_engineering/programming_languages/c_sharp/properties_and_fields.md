@@ -50,7 +50,7 @@ public class Person
 
 This is shorter than manually declaring a field plus property.
 
-Auto-properties can also be read-only or [[01-areas/systems_engineering/programming_languages/C_sharp/common_immutability_patterns#`init`-only properties|initialization-only]].
+Auto-properties can also be read-only or [[01-areas/systems_engineering/programming_languages/c_sharp/common_immutability_patterns#`init`-only properties|initialization-only]].
 
 ```cs
 public class Person

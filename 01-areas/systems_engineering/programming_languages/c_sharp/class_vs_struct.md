@@ -8,7 +8,7 @@ reviewed_on: 2026-03-13
 
 ## Copy semantics
 
-A `class` is a [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Reference types|reference type]]. Assignment copies the reference, so multiple variables can point to the same instance.
+A `class` is a [[01-areas/systems_engineering/programming_languages/c_sharp/value_types_vs_reference_types#Reference types|reference type]]. Assignment copies the reference, so multiple variables can point to the same instance.
 
 ```cs
 class Counter
@@ -23,7 +23,7 @@ b.Value = 5;
 Console.WriteLine(a.Value); // 5
 ```
 
-A `struct` is a [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Value types|value type]]. Assignment copies the data, so each variable gets its own copy.
+A `struct` is a [[01-areas/systems_engineering/programming_languages/c_sharp/value_types_vs_reference_types#Value types|value type]]. Assignment copies the data, so each variable gets its own copy.
 
 ```cs
 struct Counter

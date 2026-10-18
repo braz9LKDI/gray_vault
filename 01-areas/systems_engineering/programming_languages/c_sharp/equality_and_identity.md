@@ -8,7 +8,7 @@ Equality and identity answer different questions. Equality asks whether two valu
 
 ## Identity
 
-It is mainly relevant for [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Reference types|reference types]]. When two variables have the same identity, both point to the same object.
+It is mainly relevant for [[01-areas/systems_engineering/programming_languages/c_sharp/value_types_vs_reference_types#Reference types|reference types]]. When two variables have the same identity, both point to the same object.
 
 ```cs
 class Person
@@ -26,7 +26,7 @@ bool acSameIdentity = object.ReferenceEquals(a, c); // false
 
 ## Equality
 
-It is mainly relevant for [[01-areas/systems_engineering/programming_languages/C_sharp/value_types_vs_reference_types#Value types|value types]]. When two variables have the same content, they are equal. Two values can be equal even when their identity is different.
+It is mainly relevant for [[01-areas/systems_engineering/programming_languages/c_sharp/value_types_vs_reference_types#Value types|value types]]. When two variables have the same content, they are equal. Two values can be equal even when their identity is different.
 
 ```cs
 string s1 = "hi";
@@ -62,9 +62,9 @@ bool c = object.ReferenceEquals(o1, o3); // true
 
 - `struct`: usually value-based equality.
 
-- [[01-areas/systems_engineering/programming_languages/C_sharp/record_and_record_struct#`record`|`record`]]: reference type with value-based equality.
+- [[01-areas/systems_engineering/programming_languages/c_sharp/record_and_record_struct#`record`|`record`]]: reference type with value-based equality.
 
-- [[01-areas/systems_engineering/programming_languages/C_sharp/record_and_record_struct#`record struct`|`record struct`]]: value type with value-based equality.
+- [[01-areas/systems_engineering/programming_languages/c_sharp/record_and_record_struct#`record struct`|`record struct`]]: value type with value-based equality.
 
 - `string`: reference type, but equality compares contents.
 

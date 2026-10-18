@@ -169,9 +169,9 @@ A good index may include:
 
 - [[problems/knapsack]].
 
-- [[web/REST_API]].
+- [[web/rest_api]].
 
-- [[programming_languages/Python/module]].
+- [[programming_languages/python/module]].
 
 ## Useful references
 
