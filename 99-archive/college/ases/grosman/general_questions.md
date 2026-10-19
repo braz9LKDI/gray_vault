@@ -13,6 +13,8 @@ $$
 \end{align}
 $$
 
+That is the largest unsigned value that 32 bits can hold. As memory addresses, 32 bits give $2^{ 32 } = 4,294,967,296$ different addresses, one per byte, so they reach 4 GiB of memory.
+
 ### Limitations in storage units
 
 File systems define constraints on storage capacity and file handling, including:

@@ -91,10 +91,10 @@ Determine el dominio de las siguientes funciones:
 
 ## 2
 
-Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
+Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $g(x) = \sqrt{ x + 1 }$.
 
 1. Calcule:
-    1. $f(2)$.
+    1. $f(2)$ y $g(2)$.
 
         $$
         \frac{ 2 + 1 }{ 2 - 1 } = 3
@@ -104,7 +104,7 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
         \sqrt{ 2 + 1 } = \sqrt{ 3 }
         $$
 
-    2. $f \left (\frac{ 3 }{ 2 } \right )$.
+    2. $f \left (\frac{ 3 }{ 2 } \right )$ y $g \left (\frac{ 3 }{ 2 } \right )$.
 
         $$
         \frac{ \frac{ 3 }{ 2 } + 1 }{ \frac{ 3 }{ 2 } - 1 } = \frac{ 10 }{ 2 } = 5
@@ -114,7 +114,7 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
         \sqrt{ \frac{ 3 }{ 2 } + 1 } = \sqrt{ \frac{ 5 }{ 2 } }
         $$
 
-    3. $f(0)$.
+    3. $f(0)$ y $g(0)$.
 
         $$
         \frac{ 0 + 1 }{ 0 - 1 } = -1
@@ -124,7 +124,7 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
         \sqrt{ 0 + 1 } = 1
         $$
 
-2. Simplifique al máximo la expresión $\frac{ f(x + h) - f(x) }{ h }$ $h \neq 0$.
+2. Simplifique al máximo las expresiones $\frac{ f(x + h) - f(x) }{ h }$ y $\frac{ g(x + h) - g(x) }{ h }$, con $h \neq 0$.
     1. $f(x) = \frac{ x + 1 }{ x - 1 }$.
 
         $$
@@ -135,13 +135,17 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
         \end{align}
         $$
 
-    2. $f(x) = \sqrt{ x + 1 }$.
+    2. $g(x) = \sqrt{ x + 1 }$.
 
         $$
-        \frac{ \sqrt{ (x + h) + 1 }- \sqrt{ x + 1 } }{ h }
+        \begin{align}
+            & = \frac{ \sqrt{ (x + h) + 1 } - \sqrt{ x + 1 } }{ h } \frac{ \sqrt{ (x + h) + 1 } + \sqrt{ x + 1 } }{ \sqrt{ (x + h) + 1 } + \sqrt{ x + 1 } } \\
+            & = \frac{ (x + h + 1) - (x + 1) }{ h (\sqrt{ x + h + 1 } + \sqrt{ x + 1 }) } \\
+            & = \frac{ 1 }{ \sqrt{ x + h + 1 } + \sqrt{ x + 1 } }
+        \end{align}
         $$
 
-3. Encuentre todos los valores de $x \in D_f$ tales que $f(x) \geq 4$.
+3. Encuentre todos los valores de $x$ en el dominio de cada función tales que $f(x) \geq 4$ y $g(x) \geq 4$.
     1. $f(x) = \frac{ x + 1 }{ x - 1 }$.
 
         $$
@@ -197,7 +201,7 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
         \end{align}
         $$
 
-    2. $f(x) = \sqrt{ x + 1 }$.
+    2. $g(x) = \sqrt{ x + 1 }$.
 
         $$
         \begin{align}
@@ -302,7 +306,7 @@ Determine el rango de las siguientes funciones:
     \end{align}
     $$
 
-    Como $f(x)$ es una función creciente $y_{ \text{min} } = { -x^2 + 6 x }_\text{min}$ y $y_\text{max} = { -x^2 + 6 x }_\text{max}$.
+    La expresión $-x^2 + 6 x$ es una parábola que abre hacia abajo con vértice en $x = 3$, así que en $[0,6]$ su mínimo está en los extremos y su máximo en el vértice; lo mismo vale para $f$, porque la raíz cuadrada es creciente.
 
     $$
     \begin{align}
@@ -345,8 +349,10 @@ $$
     $$
 
     $$
-    R_f = (-3,\infty)
+    R_f = (-3,0] \cup \left (\frac{ 1 }{ 3 },\infty \right )
     $$
+
+    > En $[-2,-1)$, $x^2 - 4 \in (-3,0]$; en $(0,3)$, $\frac{ 1 }{ x } \in \left (\frac{ 1 }{ 3 },\infty \right )$; en $[3,\infty)$, $\sqrt{ x + 1 } \in [2,\infty)$.
 
 2. Calcule:
     1. $f\left (-\frac{ 3 }{ 2 } \right )$.
@@ -404,7 +410,7 @@ $$
         $$
 
         $$
-        \forall a \in \left (\frac{ 1 }{ 2 }, 1 \right ] \quad f(-2 a) = 4 a - 4 = 4 (a - 1)
+        \forall a \in \left (\frac{ 1 }{ 2 }, 1 \right ] \quad f(-2 a) = (-2 a)^2 - 4 = 4 a^2 - 4 = 4 (a^2 - 1)
         $$
 
 3. Grafique $f(x)$.
@@ -454,7 +460,7 @@ $$
 
 $$
 \begin{align}
-    v & = (12 - 2 x) (20 - 2 x) x
+    v & = (12 - 2 x) (20 - 2 x) x \\
       & = 4 x^3 - 64 x^2 + 240 x
 \end{align}
 $$
@@ -502,6 +508,8 @@ $$
 \end{align}
 $$
 
+Además, los lados de la base deben ser positivos: $12 - 2 x > 0$ y $20 - 2 x > 0$, es decir, $x < 6$. Por lo tanto, el dominio es $x \in (0,6)$.
+
 ## 9
 
 Un cilindro circular recto de radio $r$ está inscrito en una esfera de radio $2 r$. Determine una fórmula para el volumen $V$ del cilindro en términos de $r$.
@@ -509,21 +517,21 @@ Un cilindro circular recto de radio $r$ está inscrito en una esfera de radio $2
 ![problem](99-archive/college/semesters/01/assets/calculo_i/2_02_05-figure.svg)
 
 $$
-\text{volumen} = \pi r^2 h = v \quad (1) \\
+\text{volumen} = \pi r^2 h = v \quad (1)
 $$
 
 $$
 \begin{align}
     & h^2 = (4 r)^2 - (2 r)^2 \\
     & h = \sqrt{ 12 r^2 } \\
-    & = 4 \sqrt{ 3 r^2 }
+    & = 2 \sqrt{ 3 } r
 \end{align}
 $$
 
 Reemplazando $h$ en $(1)$.
 
 $$
-v = 4 \pi r^2 \sqrt{ 3 r^2 }
+v = \pi r^2 (2 \sqrt{ 3 } r) = 2 \sqrt{ 3 } \pi r^3
 $$
 
 ## 10

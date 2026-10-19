@@ -63,9 +63,9 @@ El algoritmo de este método es el siguiente:
 
     2. $r_i = b - A x_i$.
 
-    3. $\beta_i = \frac{ { p_{ i - 1 } }^T A r_{ i - 1 } }{ { p_{ i - 1 } }^T A p_{ i - 1 } }$.
+    3. $\beta_i = -\frac{ { p_{ i - 1 } }^T A r_i }{ { p_{ i - 1 } }^T A p_{ i - 1 } }$.
 
-    4. $p_i = r_i + \beta_i r_{ i - 1 }$.
+    4. $p_i = r_i + \beta_i p_{ i - 1 }$.
 
     5. $\alpha_i = \frac{ { r_i }^T p_i }{ { p_i }^T A p_i }$.
 

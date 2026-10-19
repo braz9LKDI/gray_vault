@@ -99,9 +99,11 @@ Calcular el error relativo porcentual encontrado al verificar $f(7) = 8$ con $f(
     $$
 
     $$
-    P(7) = 8.068 \\[10 pt]
-    \text{error relativo porcentual} = \abs{ \frac{ 8 - 8.068 }{ 8 } } * 100\% = 0.0085\%
+    P(7) = 8 \\[10 pt]
+    \text{error relativo porcentual} = 0\%
     $$
+
+    El polinomio de interpolación pasa por todos los datos, así que reproduce el valor exacto; un resultado distinto solo aparece al redondear los coeficientes.
 
 3. Encuentre el polinomio llevando a cabo interpolación de Lagrange.
 
@@ -228,9 +230,11 @@ Calcular el error relativo porcentual encontrado al verificar $f(12.5) = 5.2$ co
     $$
 
     $$
-    P(12.5) = 5.1 \\[10 pt]
-    \text{error relativo porcentual} = \abs{ \frac{ 5.2 - 5.1 }{ 5.2 } } * 100\% \approx 1.9\%
+    P(12.5) = 5.2 \\[10 pt]
+    \text{error relativo porcentual} = 0\%
     $$
+
+    El polinomio de interpolación pasa por todos los datos, así que reproduce el valor exacto; un resultado distinto solo aparece al redondear los coeficientes.
 
 3. Encuentre el polinomio llevando a cabo interpolación de Lagrange.
 
@@ -351,9 +355,11 @@ Calcular el error relativo porcentual encontrado al verificar $f(12) = 4.6$ con 
     $$
 
     $$
-    P(12) = 4.848 \\[10 pt]
-    \text{error relativo porcentual} = \abs{ \frac{ 4.6 - 4.848 }{ 4.6 } } * 100\% \approx 5.39\%
+    P(12) = 4.6 \\[10 pt]
+    \text{error relativo porcentual} = 0\%
     $$
+
+    El polinomio de interpolación pasa por todos los datos, así que reproduce el valor exacto; un resultado distinto solo aparece al redondear los coeficientes.
 
 3. Encuentre el polinomio llevando a cabo interpolación de Lagrange.
 

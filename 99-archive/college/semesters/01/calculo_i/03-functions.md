@@ -89,17 +89,17 @@ Pruebe que la única función par e impar a la vez es la función nula.
 
 > La función nula es una función constante cuya imagen es cero.
 
-$$
-f(x) = 0
-$$
+Sea $f$ una función par e impar a la vez. Para todo $x$ de su dominio:
 
 $$
-f(x) = f(-x) \quad 0 = 0
+\begin{align}
+    & f(x) = f(-x) = -f(x) \\
+    & 2 f(x) = 0 \\
+    & f(x) = 0
+\end{align}
 $$
 
-$$
-f(-x) = -f(x) \quad 0 = 0
-$$
+Así, $f$ solo puede ser la función nula, y esta cumple ambas condiciones: $0 = 0$ en $f(x) = f(-x)$ y en $f(-x) = -f(x)$.
 
 ## 4
 
@@ -167,8 +167,8 @@ Dadas las funciones $f(x) = \frac{ x^2 }{ 1 - 3 x^2 }$ y $g(x) = \sqrt{ 2 x - 1 
 
     $$
     \begin{align}
-        & x \in \left (\left [\frac{ 1 }{ 2 },\infty \right ] \cap \mathbb{ R } - \left \{\pm \sqrt{ \frac{ 1 }{ 3 } } \right \} \right ) \\
-        & x \in \left (\left [\frac{ 1 }{ 2 },\infty \right ] - \left \{\sqrt{ \frac{ 1 }{ 3 } } \right \} \right )
+        & 1 - 3 (2 x - 1) \neq 0 \quad x \neq \frac{ 2 }{ 3 } \\
+        & x \in \left [\frac{ 1 }{ 2 },\infty \right ) - \left \{\frac{ 2 }{ 3 } \right \}
     \end{align}
     $$
 
@@ -180,7 +180,7 @@ Dadas las funciones $f(x) = \frac{ x^2 }{ 1 - 3 x^2 }$ y $g(x) = \sqrt{ 2 x - 1 
     \end{align}
     $$
 
-4. Pruebe que $g$ es inyectiva y calcule su inversa ($g^{ - 1 }$), indicando su dominio.
+4. Pruebe que $g$ es inyectiva y calcule su inversa ($g^{ -1 }$), indicando su dominio.
 
     $$
     \begin{align}
@@ -200,7 +200,7 @@ Dadas las funciones $f(x) = \frac{ x^2 }{ 1 - 3 x^2 }$ y $g(x) = \sqrt{ 2 x - 1 
     $$
 
     $$
-    g^{ -1 }(x) = \frac{ x^2 + 1 }{ 2 } \quad x \in \mathbb{ R }
+    g^{ -1 }(x) = \frac{ x^2 + 1 }{ 2 } \quad x \in [0,\infty)
     $$
 
 ## 5
@@ -289,6 +289,16 @@ $$
 \end{align}
 $$
 
+$$
+\begin{align}
+    & g(f(x)) = 1 - \sqrt{ 2 \left (\frac{ 1 }{ 2 } x^2 - x + \frac{ 7 }{ 2 } \right ) - 6 } \\
+    & = 1 - \sqrt{ x^2 - 2 x + 1 } \\
+    & = 1 - \abs{ x - 1 } \\
+    & = 1 - (1 - x) \quad x \leq 1 \\
+    & = x
+\end{align}
+$$
+
 ## 9
 
 Una piedra se deja caer en un lago y origina ondas circulares que se extienden a una velocidad de $55 \frac{ \text{cm} }{ \text{s} }$. Exprese el área del círculo formado en función del tiempo $t$, si $t$ está medido en segundos.
@@ -301,9 +311,7 @@ $$
 
 Se dispone de 1,000 metros de cerca para construir un corral rectangular, parte de la cerca se usará para construir tres cercas internas de división paralelas entre sí y perpendiculares a uno de los lados del corral. Exprese el área del corral como función de $x$, indicando su dominio.
 
-TODO: redo the image.
-
-![corral](99-archive/college/semesters/01/assets/calculo_i/2_03_02-corral.jpg)
+![corral](99-archive/college/semesters/01/assets/calculo_i/2_03_02-corral.svg)
 
 $$
 \begin{align}

@@ -147,7 +147,7 @@ $$
 
 ## 3
 
-Un reactor transforma plutonio 239 en uranio 238 que es relativamente estable para uso industrial. Después de 15 años se determina que el 0.0043 por ciento de la cantidad inicial $A_0$ de plutonio se ha desintegrado.
+Un reactor reproductor transforma el uranio 238, relativamente estable, en el isótopo plutonio 239. Después de 15 años se determina que el 0.043 por ciento de la cantidad inicial $A_0$ de plutonio se ha desintegrado.
 
 La ecuación que describe este proceso es:
 
@@ -164,19 +164,19 @@ $$
 - $t$: tiempo transcurrido.
 
 $$
-A(15) = A_0 \left (1 - \frac{ 0.0043 }{ 100 } \right ) = A_0 * 0.999957 = A_0 e^{ -k (15) } \\[10 pt]
-e^{ -k (15) } = 0.999957 \quad -15 k = \ln 0.999957 \quad k = -\frac{ \ln 0.999957 }{ 15 }
+A(15) = A_0 \left (1 - \frac{ 0.043 }{ 100 } \right ) = A_0 * 0.99957 = A_0 e^{ -k (15) } \\[10 pt]
+e^{ -k (15) } = 0.99957 \quad -15 k = \ln 0.99957 \quad k = -\frac{ \ln 0.99957 }{ 15 }
 $$
 
 $$
-A(t) = A_0 e^{ \frac{ \ln 0.999957 }{ 15 } t }
+A(t) = A_0 e^{ \frac{ \ln 0.99957 }{ 15 } t }
 $$
 
 ### Determinar la semivida (tiempo necesario para que la cantidad inicial de átomos se reduzca a la mitad) de este isótopo si la rapidez de desintegración es proporcional a la cantidad restante
 
 $$
-\frac{ A_0 }{ 2 } = A_0 e^{ \frac{ \ln 0.999957 }{ 15 } t } \quad e^{ \frac{ \ln 0.999957 }{ 15 } t } = \frac{ 1 }{ 2 } \quad \frac{ \ln 0.999957 }{ 15 } t = \ln \frac{ 1 }{ 2 } \\[10 pt]
-t = \frac{ 15 \ln \frac{ 1 }{ 2 } }{ \ln 0.999957 }
+\frac{ A_0 }{ 2 } = A_0 e^{ \frac{ \ln 0.99957 }{ 15 } t } \quad e^{ \frac{ \ln 0.99957 }{ 15 } t } = \frac{ 1 }{ 2 } \quad \frac{ \ln 0.99957 }{ 15 } t = \ln \frac{ 1 }{ 2 } \\[10 pt]
+t = \frac{ 15 \ln \frac{ 1 }{ 2 } }{ \ln 0.99957 } \approx 24,174 \text{ años}
 $$
 
 ## 4

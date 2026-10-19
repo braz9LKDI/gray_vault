@@ -50,7 +50,8 @@ Halle:
         & = \pcos{ 135 \degree + 4 * 360 \degree } \\
         & = \pcos{ 135 \degree } \\
         & = \pcos{ \frac{ \pi }{ 2 } + \frac{ \pi }{ 4 } } \\
-        & = \pcos{ \frac{ 3 \pi }{ 4 } }
+        & = \pcos{ \frac{ 3 \pi }{ 4 } } \\
+        & = -\frac{ \sqrt{ 2 } }{ 2 }
     \end{align}
     $$
 
@@ -61,7 +62,8 @@ Halle:
         & = \ptan{ -(60 \degree + 6 (360 \degree)) } \\
         & = \ptan{ -60 \degree } \\
         & = -\ptan{ 60 \degree } \\
-        & = -\ptan{ \frac{ \pi }{ 3 } }
+        & = -\ptan{ \frac{ \pi }{ 3 } } \\
+        & = -\sqrt{ 3 }
     \end{align}
     $$
 
@@ -97,6 +99,13 @@ $$
 \end{align}
 $$
 
+$$
+\begin{align}
+    & \ptan{ \theta } = \frac{ \psin{ \theta } }{ \pcos{ \theta } } = -4 \quad \pcot{ \theta } = -\frac{ 1 }{ 4 } \\
+    & \psec{ \theta } = -\sqrt{ 17 } \quad \pcsc{ \theta } = \frac{ \sqrt{ 17 } }{ 4 }
+\end{align}
+$$
+
 ## 4
 
 Un ángulo central intercepta un arco de 8 cm de largo, en una circunferencia de 3 cm de radio. Halle la medida del ángulo tanto en radianes, como en grados.
@@ -108,7 +117,7 @@ $$
     & 8 = \frac{ 2 \pi (3) }{ 360 } * \alpha \\
     & \alpha = \frac{ 2880 }{ 6 \pi } \\
     & = { \frac{ 480 }{ \pi } }^\degree \\
-    & \approx 152.79^\degree
+    & \approx 152.79 \degree
 \end{align}
 $$
 
@@ -124,16 +133,16 @@ $$
 
 Use la ley de Senos y la ley de Cosenos para hallar las partes restantes del triángulo:
 
-1. $b = 10$, $c = 5$ y $\gamma = 30^\degree$.
+1. $b = 10$, $c = 5$ y $\gamma = 30 \degree$.
 
     $$
     \begin{align}
-        & \frac{ \psin{ 30^\degree } }{ 5 } = \frac{ \psin{ \beta } }{ 10 } \\
-        & \psin{ \beta } = \frac{ 10 \psin{ 30^\degree } }{ 5 } \\
-        & = 2 \psin{ 30^\degree } \\
+        & \frac{ \psin{ 30 \degree } }{ 5 } = \frac{ \psin{ \beta } }{ 10 } \\
+        & \psin{ \beta } = \frac{ 10 \psin{ 30 \degree } }{ 5 } \\
+        & = 2 \psin{ 30 \degree } \\
         & = 2 * \frac{ 1 }{ 2 } \\
         & = 1 \\
-        & \beta = 90^\degree \\
+        & \beta = 90 \degree \\
         & \alpha = 180 - (\beta + \gamma) \\
         & = 60
     \end{align}
@@ -142,36 +151,39 @@ Use la ley de Senos y la ley de Cosenos para hallar las partes restantes del tri
     $$
     \begin{align}
         & a^2 = b^2 + c^2 - 2 b c \pcos{ \alpha } \\
-        & a = \sqrt{ 10^2 + 5^2 - 2 (10) (5) \pcos{ 60^\degree } } \\
+        & a = \sqrt{ 10^2 + 5^2 - 2 (10) (5) \pcos{ 60 \degree } } \\
         & = \sqrt{ 100 + 25 - 100 * 0.5 } \\
         & = \sqrt{ 75 } \\
         & = 5 \sqrt{ 3 }
     \end{align}
     $$
 
-2. $b = 45$, $\alpha = 48^\degree$ y $\gamma = 56^\degree$.
+2. $b = 45$, $\alpha = 48 \degree$ y $\gamma = 56 \degree$.
 
     $$
     \begin{align}
         & \beta = 180 - (\alpha + \gamma) \\
-        & = 76^\degree \\
-        & \frac{ \psin{ 76^\degree } }{ 45 } = \frac{ \psin{ 48^\degree} }{ a } \\
-        & a = \frac{ 45 \psin{ 48^\degree } }{ \psin{ 76^\degree } } \\
-        & \frac{ \psin{ 76^\degree } }{ 45 } = \frac{ \psin{ 56^\degree} }{ c } \\
-        & c = \frac{ 45 \psin{ 56^\degree } }{ \psin{ 76^\degree } }
+        & = 76 \degree \\
+        & \frac{ \psin{ 76 \degree } }{ 45 } = \frac{ \psin{ 48 \degree} }{ a } \\
+        & a = \frac{ 45 \psin{ 48 \degree } }{ \psin{ 76 \degree } } \\
+        & \frac{ \psin{ 76 \degree } }{ 45 } = \frac{ \psin{ 56 \degree} }{ c } \\
+        & c = \frac{ 45 \psin{ 56 \degree } }{ \psin{ 76 \degree } }
     \end{align}
     $$
 
-3. $a = 10$, $c = 15$ y $\beta = 60^\degree$.
+3. $a = 10$, $c = 15$ y $\beta = 60 \degree$.
 
     $$
     \begin{align}
         & b^2 = a^2 + c^2 - 2 a c \pcos{ \beta } \\
-        & b = \sqrt{ 10^2 + 15^2 - 2 (10) (15) \pcos{ 60^\degree } } \\
+        & b = \sqrt{ 10^2 + 15^2 - 2 (10) (15) \pcos{ 60 \degree } } \\
         & = \sqrt{ 100 + 225 - 300 * 0.5 } \\
         & = \sqrt{ 325 - 150 } \\
         & = \sqrt{ 175 } \\
-        & = 5 \sqrt{ 7 }
+        & = 5 \sqrt{ 7 } \\
+        & \frac{ \psin{ \alpha } }{ 10 } = \frac{ \psin{ 60 \degree } }{ 5 \sqrt{ 7 } } \quad \psin{ \alpha } = \frac{ \sqrt{ 21 } }{ 7 } \\
+        & \alpha \approx 40.89 \degree \\
+        & \gamma = 180 \degree - (\alpha + \beta) \approx 79.11 \degree
     \end{align}
     $$
 
@@ -400,34 +412,26 @@ Resuelva las siguientes ecuaciones:
 
     $$
     \begin{align}
-        & \psin{ \theta } = 1 \quad \pcos{ \theta } = 0 \quad (1) \\
-        & \psin{ \theta } = 0 \quad \pcos{ \theta } = 1 \quad (2)
+        & \psin{ \theta } - \pcos{ \theta } = \sqrt{ 2 } \psin{ \theta - \frac{ \pi }{ 4 } } = 1 \\
+        & \psin{ \theta - \frac{ \pi }{ 4 } } = \frac{ \sqrt{ 2 } }{ 2 } \\
+        & \theta - \frac{ \pi }{ 4 } = \frac{ \pi }{ 4 } + 2 \pi k \quad \theta - \frac{ \pi }{ 4 } = \frac{ 3 \pi }{ 4 } + 2 \pi k \quad k \in \mathbb{ Z } \\
+        & \theta = \frac{ \pi }{ 2 } + 2 \pi k \quad \theta = \pi + 2 \pi k
     \end{align}
     $$
 
-    Para el primer caso:
-
-    $$
-    \theta = \frac{ \pi }{ 2 } + 2 \pi k \; k \in \mathbb{ Z }
-    $$
-
-    Para el segundo caso:
-
-    $$
-    \theta = 2 \pi k \; k \in \mathbb{ Z }
-    $$
+    > $\psin{ \theta - \frac{ \pi }{ 4 } } = \psin{ \theta } \pcos{ \frac{ \pi }{ 4 } } - \pcos{ \theta } \psin{ \frac{ \pi }{ 4 } } = \frac{ \sqrt{ 2 } }{ 2 } (\psin{ \theta } - \pcos{ \theta })$.
 
 2. $3 \psin{ x }^2 - 5 \psin{ x } + 2 = 0$.
 
     $$
     \begin{align}
-        & (3 \psin{ x } - 2) (\psin{ x } - 1) \\
+        & (3 \psin{ x } - 2) (\psin{ x } - 1) = 0 \\
         &
             \begin{array}{lr}
                 3 \psin{ x } = 2             & \psin{ x } = 1 \\
                 \psin{ x } = \frac{ 2 }{ 3 } & x = \frac{ \pi }{ 2 } + 2 \pi k \; k \in \mathbb{ Z }
             \end{array} \\
-        & x = \parcsin{ \frac{ 2 }{ 3 } } + \frac{ \pi }{ 2 } + 2 \pi
+        & x = \parcsin{ \frac{ 2 }{ 3 } } + 2 \pi k \quad x = \pi - \parcsin{ \frac{ 2 }{ 3 } } + 2 \pi k \; k \in \mathbb{ Z }
     \end{align}
     $$
 
@@ -451,12 +455,13 @@ Resuelva las siguientes ecuaciones:
     \end{align}
     $$
 
-    Solo hay una forma de que eso se cumpla:
+    Factorizando:
 
     $$
     \begin{align}
-        & \psin{ x }^2 = 0 \quad 2 \psin{ x } = 0 \\
-        & x = 2 \pi k \; k \in \mathbb{ Z }
+        & \psin{ x } (\psin{ x } + 2) = 0 \\
+        & \psin{ x } = 0 \quad \psin{ x } = -2 \; \text{(imposible)} \\
+        & x = \pi k \; k \in \mathbb{ Z }
     \end{align}
     $$
 
@@ -476,8 +481,8 @@ Resuelva las siguientes ecuaciones:
         & = \frac{ 5 \pm \sqrt{ 49 } }{ 4 } \\
         & y_1 = \frac{ 5 + 7 }{ 4 } = 3 \quad y_2 = \frac{ 5 - 7 }{ 4 } = -\frac{ 1 }{ 2 } \\
         & \psin{ x_1 } = 3 \quad \psin{ x_2 } = -\frac{ 1 }{ 2 } \\
-        & \psin{ x } = -\frac{ 1 }{ 2 } \\
-        & x = \parcsin{ -\frac{ 1 }{ 2 } }
+        & \psin{ x } = -\frac{ 1 }{ 2 } \; \text{porque} \; \abs{ \psin{ x } } \leq 1 \\
+        & x = \pi + \frac{ \pi }{ 6 } = \frac{ 7 \pi }{ 6 } \quad x = 2 \pi - \frac{ \pi }{ 6 } = \frac{ 11 \pi }{ 6 }
     \end{align}
     $$
 
@@ -507,36 +512,19 @@ Resuelva las siguientes ecuaciones:
 
 6. $\ptan{ \theta } + \psec{ \theta } = 1$.
 
-    Conociendo los rangos de las funciones, existen dos casos:
+    Con $\pcos{ \theta } \neq 0$:
 
     $$
     \begin{align}
-        & \ptan{ \theta } = 0 \quad \psec{ \theta } = 1 \quad (1) \\
-        & \ptan{ \theta } = 1 \quad \psec{ \theta } = 0 \quad (2)
+        & \frac{ \psin{ \theta } }{ \pcos{ \theta } } + \frac{ 1 }{ \pcos{ \theta } } = 1 \\
+        & \psin{ \theta } + 1 = \pcos{ \theta } \\
+        & \pcos{ \theta } - \psin{ \theta } = \sqrt{ 2 } \pcos{ \theta + \frac{ \pi }{ 4 } } = 1 \\
+        & \theta + \frac{ \pi }{ 4 } = \pm \frac{ \pi }{ 4 } + 2 \pi k \quad k \in \mathbb{ Z } \\
+        & \theta = 2 \pi k \quad \theta = -\frac{ \pi }{ 2 } + 2 \pi k
     \end{align}
     $$
 
-    $$
-    \begin{align}
-        & \ptan{ x } = \frac{ \psin{ x } }{ \pcos{ x } } \\
-        & \psec{ x } = \frac{ 1 }{ \pcos{ x } }
-    \end{align}
-    $$
-
-    Para el primer caso:
-
-    $$
-    \theta = 2 \pi k \; k \in \mathbb{ Z }
-    $$
-
-    Para el segundo caso:
-
-    $$
-    \begin{align}
-        & \frac{ \psin{ x } }{ \pcos{ x } } = 1 \quad x = \frac{ \pi }{ 4 } + k \pi \; k \in \mathbb{ Z } \\
-        & \frac{ 1 }{ \pcos{ x } } = 0 \quad \nexists x
-    \end{align}
-    $$
+    Como $\pcos{ -\frac{ \pi }{ 2 } } = 0$, la segunda familia se descarta y la solución es $\theta = 2 \pi k$.
 
 7. $\pcot{ \theta } + \ptan{ \theta } = \pcsc{ \theta } \psec{ \theta }$.
 
@@ -559,7 +547,7 @@ Resuelva las siguientes ecuaciones:
 
 8. Desde la punta de un edificio que ve hacia el mar, una persona observa un bote que navega directamente hacia ella. Si se encuentra a 100 pies sobre el nivel del mar y el ángulo de depresión del bote cambia de $25 \degree$ a $40 \degree$ durante el periodo de observación, hallar la distancia aproximada que ha recorrido el bote durante ese tiempo.
 
-    ![problem](99-archive/college/semesters/01/assets/calculo_i/2_07_02-problem.jpg) TODO
+    ![problem](99-archive/college/semesters/01/assets/calculo_i/2_07_02-problem.svg)
 
     Del primer triángulo se sabe que:
 

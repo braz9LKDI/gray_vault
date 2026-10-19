@@ -105,14 +105,15 @@ R_3(x) = \frac{ f^4(\xi) }{ 4! } x^4 \\[10 pt]
 f^4 = 64 \sin{ 2 x } + 32 x \cos{ 2 x }
 $$
 
-Se evalúa en $x = 0$ para obtener la cota del error:
+La cota usa el máximo de $\abs{ f^4 }$ en $[0,0.4]$. $f^4$ es creciente en ese intervalo, así que el máximo está en $x = 0.4$:
 
 $$
-f^4(0) = 0 \quad R_3(x) = 0
+\abs{ f^4(\xi) } \leq f^4(0.4) = 64 \sin{ 0.8 } + 12.8 \cos{ 0.8 } \approx 54.83 \\[10 pt]
+\abs{ R_3(0.4) } \leq \frac{ 54.83 }{ 4! } (0.4)^4 \approx 0.0585
 $$
 
 $$
-E_a = |-2.00263 - (-2.016)| = 1.337 * 10^{ -2 }
+E_a = |-2.00263 - (-2.016)| = 1.337 * 10^{ -2 } \leq 0.0585
 $$
 
 ## 5

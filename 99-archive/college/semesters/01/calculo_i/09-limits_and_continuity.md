@@ -65,9 +65,8 @@ Calcule los siguientes límites si existen:
 
     $$
     \begin{align}
-        & = \frac{ x (2 \psin{ x } \pcos{ x }) }{ \psin{ x^2 } } \\
-        & = \frac{ 2 x \pcos{ x } }{ \psin{ x } } \\
-        & = \lim_{ x \to 0 } 2 * \lim_{ x \to 0 } \frac{ x }{ \psin{ x } } * \lim_{ x \to 0 } \pcos{ x } \\
+        & = 2 \frac{ \psin{ 2 x } }{ 2 x } \frac{ x^2 }{ \psin{ x^2 } } \\
+        & = 2 \lim_{ x \to 0 } \frac{ \psin{ 2 x } }{ 2 x } * \lim_{ x \to 0 } \frac{ x^2 }{ \psin{ x^2 } } \\
         & = 2 * 1 * 1 \\
         & = 2
     \end{align}
@@ -146,7 +145,15 @@ Halle si existen, asíntotas verticales y horizontales de las siguientes funcion
     \lim_{ x \to 1^+ } \frac{ x^2 }{ 1 - x^2 } = -\infty
     $$
 
-    Se concluye que hay una asíntota vertical en $x = 1$.
+    $$
+    \lim_{ x \to -1^- } \frac{ x^2 }{ 1 - x^2 } = -\infty
+    $$
+
+    $$
+    \lim_{ x \to -1^+ } \frac{ x^2 }{ 1 - x^2 } = \infty
+    $$
+
+    Se concluye que hay asíntotas verticales en $x = 1$ y $x = -1$.
 
     $$
     \begin{align}
@@ -259,20 +266,20 @@ Use el teorema del sándwich para calcular los siguientes límites:
     $$
     \begin{align}
         & -1 \leq \pcos{ \frac{ 1 }{ x } } \leq 1 \\
-        & -x^3 \leq x^3 \pcos{ \frac{ 1 }{ x } } \leq x^3
+        & -\abs{ x^3 } \leq x^3 \pcos{ \frac{ 1 }{ x } } \leq \abs{ x^3 }
     \end{align}
     $$
 
     $$
-    \lim_{ x \to 0 } -x^3 = 0
+    \lim_{ x \to 0 } -\abs{ x^3 } = 0
     $$
 
     $$
-    \lim_{ x \to 0 } x^3 = 0
+    \lim_{ x \to 0 } \abs{ x^3 } = 0
     $$
 
     $$
-    \lim_{ x \to 0 } -x^3 = \lim_{ x \to 0 } x^3 = \lim_{ x \to 0 } { x^3 \pcos{ \frac{ 1 }{ x } } } = 0
+    \lim_{ x \to 0 } -\abs{ x^3 } = \lim_{ x \to 0 } \abs{ x^3 } = \lim_{ x \to 0 } { x^3 \pcos{ \frac{ 1 }{ x } } } = 0
     $$
 
 2. $\lim_{ x \to 0 } { x \psin{ \frac{ 1 }{ x } } }$.

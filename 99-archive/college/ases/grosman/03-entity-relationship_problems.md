@@ -235,14 +235,14 @@
     }
 
     STORE ||--|{ EMPLOYEE : employs
-    STORE ||--o{ PRODUCT : stocks
+    STORE }o--o{ PRODUCT : stocks
     STORE ||--o{ TRANSACTION : records
     EMPLOYEE ||--o{ TRANSACTION : processes
     PRODUCT ||--o{ TRANSACTION : sold_in
     ADDRESS ||--o{ EMPLOYEE : located_at
     ```
 
-    - Un empleado tiene asociada una sola dirección y cada dirección pertenece a un solo empleado: $1:1$.
+    - Un empleado tiene asociada una sola dirección y una dirección puede pertenecer a varios empleados que viven en el mismo lugar: $1:N$.
 
 3. En las tiendas de la empresa JAPE-SHOES se permiten las devoluciones si no se ha vencido el tiempo de devolución. Una devolución tiene un identificador único, un comentario u observación, un empleado y una relación con la transacción-producto. Considere el diseño inicial para la empresa y haga las modificaciones pertinentes en un nuevo diagrama.
 
@@ -298,12 +298,13 @@
     }
 
     STORE ||--|{ EMPLOYEE : employs
-    STORE ||--o{ PRODUCT : stocks
+    STORE }o--o{ PRODUCT : stocks
     STORE ||--o{ TRANSACTION : records
     EMPLOYEE ||--o{ TRANSACTION : processes
     PRODUCT ||--o{ TRANSACTION : sold_in
     ADDRESS ||--o{ EMPLOYEE : located_at
-    TRANSACTION ||--o{ RETURN : has
+    TRANSACTION ||--o| RETURN : has
+    EMPLOYEE ||--o{ RETURN : handles
     ```
 
     - Una transacción puede tener cero o una devolución y cada devolución está asociada a una única transacción: $1:0 \dots 1$.
@@ -375,7 +376,8 @@
     EMPLOYEE ||--o{ TRANSACTION : processes
     PRODUCT ||--o{ TRANSACTION : sold_in
     ADDRESS ||--o{ EMPLOYEE : located_at
-    TRANSACTION ||--o{ RETURN : has
+    TRANSACTION ||--o| RETURN : has
+    EMPLOYEE ||--o{ RETURN : handles
     STORE ||--o{ STOCK : holds
     PRODUCT ||--o{ STOCK : stored_in
     ```

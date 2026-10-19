@@ -27,6 +27,29 @@
 
         La intersección del caso y la solución es $x \in \left (-3,\frac{ 1 }{ 3 } \right )$.
 
+    - $3 x - 1 \geq 0 \quad 2 x - 4 < 0$.
+
+        $$
+        \begin{align}
+            & x \geq \frac{ 1 }{ 3 } \quad x < 2 \\
+            & x \in \left [\frac{ 1 }{ 3 },\infty \right ) \quad x \in (-\infty,2) \quad x \in \left [\frac{ 1 }{ 3 },2 \right ) \\
+            & -\frac{ 3 x - 1 }{ 2 x - 4 } < 1 \quad -(3 x - 1) > 2 x - 4 \\
+            & x < 1 \quad x \in (-\infty,1)
+        \end{align}
+        $$
+
+        La intersección del caso y la solución es $x \in \left [\frac{ 1 }{ 3 },1 \right )$.
+
+    - $3 x - 1 < 0 \quad 2 x - 4 > 0$.
+
+        $x < \frac{ 1 }{ 3 }$ y $x > 2$ no se cumplen a la vez, por lo que este caso no aporta solución.
+
+    La solución de esta inecuación es la unión de todos los intervalos en los que hay solución.
+
+    $$
+    x \in \left (-3,\frac{ 1 }{ 3 } \right ) \cup \left [\frac{ 1 }{ 3 },1 \right ) = (-3,1)
+    $$
+
 2. Encontrar la solución de $\abs{ x - \sqrt{ 2 } } \geq 1$.
     - $x - \sqrt{ 2 } > 0$.
 

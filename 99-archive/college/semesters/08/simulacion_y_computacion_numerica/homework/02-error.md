@@ -44,11 +44,11 @@ Determine:
 
 1. $\frac{ 17 }{ 15 }$.
 
-2. 1.133.
+2. 1.13.
 
-3. 1.133.
+3. 1.13.
 
-4. $\frac{ |\frac{ 17 }{ 15 } - 1.133| }{ |\frac{ 17 }{ 15 }| } \approx 2.94 * 10^{ -4 }$.
+4. $\frac{ |\frac{ 17 }{ 15 } - 1.13| }{ |\frac{ 17 }{ 15 }| } \approx 2.94 * 10^{ -3 }$, el mismo para corte y redondeo.
 
 ### $\left ( \frac{ 1 }{ 3 } - \frac{ 3 }{ 11 } \right ) + \frac{ 3 }{ 20 }$
 
@@ -74,7 +74,7 @@ Determine:
 4. Errores relativos.
     - Corte: $\frac{ |-\frac{ 59 }{ 660 } - (-0.0893)| }{ |\frac{ 59 }{ 660 }| } \approx 1.05 * 10^{ -3 }$.
 
-    - Redondeo: $\frac{ |-\frac{ 59 }{ 660 } - (-0.0894)| }{ |\frac{ 59 }{ 660 }| } \approx 6.73 * 10^{ -4 }$.
+    - Redondeo: $\frac{ |-\frac{ 59 }{ 660 } - (-0.0894)| }{ |\frac{ 59 }{ 660 }| } \approx 6.78 * 10^{ -5 }$.
 
 ## 5
 
@@ -107,13 +107,17 @@ $$
 
 ### Use los datos $(x_0, y_0) = (1.32,3.24)$ y $(x_1, y_1) = (1.96,4.76)$ y aritmética de redondeo a 3 dígitos para calcular la intersección en el eje x usando ambas fórmulas
 
+Cada operación se redondea a 3 dígitos.
+
 $$
-\frac{ 1.32 * 4.76 - 1.96 * 3.24 }{ 4.76 - 3.24 } = -\frac{ 0.0672 }{ 1.52 } \approx -4.42 * 10^{ -2 }
+\frac{ 1.32 * 4.76 - 1.96 * 3.24 }{ 4.76 - 3.24 } = \frac{ 6.28 - 6.35 }{ 1.52 } = -\frac{ 0.0700 }{ 1.52 } \approx -4.61 * 10^{ -2 }
 $$
 
 $$
-1.32 - \frac{ (1.96 - 1.32) 3.24 }{ 4.76 - 3.24 } \approx -4.42 * 10^{ -2 }
+1.32 - \frac{ (1.96 - 1.32) 3.24 }{ 4.76 - 3.24 } = 1.32 - \frac{ 0.640 * 3.24 }{ 1.52 } = 1.32 - \frac{ 2.07 }{ 1.52 } = 1.32 - 1.36 = -4.00 * 10^{ -2 }
 $$
+
+El valor exacto es $-\frac{ 0.0672 }{ 1.52 } \approx -4.42 * 10^{ -2 }$. La primera fórmula tiene un error relativo de $4.27 \%$ y la segunda de $9.52 \%$: la segunda resta dos números parecidos al final ($1.32 - 1.36$), y esa resta pierde los dígitos significativos que el redondeo ya había alterado.
 
 ## 7
 

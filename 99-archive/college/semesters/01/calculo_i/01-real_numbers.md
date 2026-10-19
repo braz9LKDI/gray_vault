@@ -120,7 +120,7 @@ Resuelva las siguientes ecuaciones:
     \end{align}
     $$
 
-    Entonces $x = 6$ o $x = 3$, números que están en el dominio de la ecuación.
+    Al elevar al cuadrado pueden aparecer raíces extrañas, así que se verifican en la ecuación original: con $x = 6$, $\sqrt{ 4 } - 6 + 4 = 0$; con $x = 3$, $\sqrt{ 1 } - 3 + 4 = 2 \neq 0$. La única solución es $x = 6$.
 
 3. $|3 x + 6| - 2 |x - 4| = -11$.
 
@@ -385,8 +385,8 @@ Resuelva las siguientes inecuaciones:
 
     $$
     \begin{align}
-        & x \in (3,\infty) \cup [-3,1) \cup \left [-3,\frac{ 1 }{ 3 } \right ] \\
-        & x \in \mathbb{ R } - \left (\frac{ 1 }{ 3 },3 \right )
+        & x \in (3,\infty) \cup (-\infty,-3) \cup \left [-3,\frac{ 1 }{ 3 } \right ) \\
+        & x \in \mathbb{ R } - \left [\frac{ 1 }{ 3 },3 \right ]
     \end{align}
     $$
 
@@ -402,7 +402,7 @@ $$
 
 $$
 \begin{align}
-    & (a + 2) (b - 2) = \text{área} - 46 = a b - 43 \quad (1) \\
+    & (a + 2) (b - 2) = \text{área} - 40 = a b - 40 \quad (1) \\
     & 2 a + 2 b = 58 \quad a = 29 - b \quad (2)
 \end{align}
 $$
@@ -411,16 +411,16 @@ Reemplazando $(2)$ en $(1)$.
 
 $$
 \begin{align}
-    & ((29 - b) + 2) (b - 2) = (29 - b) b - 46 \\
-    & (31 - b) (b - 2) = 29 b - b^2 - 46 \\
-    & 31 b - b^2 - 62 + 2 b = -b^2 + 29 b - 46 \\
-    & 4 b = 16 \\
-    & b = 4
+    & ((29 - b) + 2) (b - 2) = (29 - b) b - 40 \\
+    & (31 - b) (b - 2) = 29 b - b^2 - 40 \\
+    & 31 b - b^2 - 62 + 2 b = -b^2 + 29 b - 40 \\
+    & 4 b = 22 \\
+    & b = \frac{ 11 }{ 2 }
 \end{align}
 $$
 
 Reemplazando $b$ en $(2)$.
 
 $$
-a = 29 - 4 = 25 \quad (2)
+a = 29 - \frac{ 11 }{ 2 } = \frac{ 47 }{ 2 }
 $$

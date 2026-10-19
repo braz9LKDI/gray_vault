@@ -65,6 +65,10 @@ flowchart TD
 
 - Mitigar: reducir la probabilidad y/o impacto del riesgo, mediante capacitación, mejoras en procesos o tecnologías.
 
+- Aceptar: reconocer el riesgo sin actuar sobre él, salvo reservar tiempo o dinero para cubrirlo si ocurre.
+
+- Escalar: trasladar el riesgo a un nivel superior de la organización cuando está fuera del alcance del proyecto.
+
 ### Positivo
 
 - Explotar: asegurar que la oportunidad se concrete eliminando la incertidumbre.
@@ -72,3 +76,7 @@ flowchart TD
 - Compartir: asignar a un tercero que esté mejor capacitado para aprovechar la oportunidad.
 
 - Mejorar: maximizar la oportunidad aumentando su probabilidad o impacto positivo.
+
+- Aceptar: aprovechar la oportunidad si se presenta, sin buscarla activamente.
+
+- Escalar: trasladar la oportunidad a un nivel superior de la organización cuando está fuera del alcance del proyecto.

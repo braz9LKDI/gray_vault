@@ -60,3 +60,7 @@ timeline
 - 2020 deep learning (Tacotron, WaveNet): síntesis natural, personalización y análisis emocional.
 
     La aplicación de técnicas de deep learning, como Tacotron y WaveNet, ha permitido generar voces sintetizadas con una calidad muy natural. Estas tecnologías facilitan la personalización de la interacción y permiten analizar el estado emocional del usuario, abriendo nuevas oportunidades en aplicaciones avanzadas.
+
+## Qué es Play HT
+
+Play HT es una plataforma de síntesis de voz (texto a voz) basada en inteligencia artificial. Genera voces realistas en varios idiomas, permite clonar una voz a partir de muestras de audio y ofrece una API para integrar la síntesis en otras aplicaciones.

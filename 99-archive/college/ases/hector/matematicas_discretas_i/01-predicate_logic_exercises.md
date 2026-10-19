@@ -43,8 +43,8 @@
 
                 $$
                 \begin{array}{lr}
-                    (\lnot Q \implies \lnot O) \pand (\lnot Q \implies M) & \\
-                    (Q \por \lnot O) \pand (Q \por M)                     & \text{definición condicional} \\
+                    (\lnot C \implies \lnot O) \pand (\lnot Q \implies M) & \\
+                    (C \por \lnot O) \pand (Q \por M)                     & \text{definición condicional} \\
                 \end{array}
                 $$
 
@@ -71,7 +71,7 @@
         > Se dividió el $p_2$ y $p_4$ en dos premisas.
         1. $\lnot C \por \lnot Q \por P$.
 
-        2. $Q \por \lnot O$.
+        2. $C \por \lnot O$.
 
         3. $Q \por M$.
 
@@ -85,13 +85,17 @@
 
         8. $O$: resolvente $(5,7)$.
 
-        9. $M$: resolvente $(6,7)$.
+        9. $\lnot M$: resolvente $(6,7)$.
 
-        10. $\lnot O \por M$: resolvente $(2,3)$.
+        10. $C$: resolvente $(2,8)$.
 
-        11. $O$: resolvente $(9,10)$.
+        11. $Q$: resolvente $(3,9)$.
 
-        12. $\blacksquare$: resolvente $(8,11)$.
+        12. $\lnot C \por \lnot Q$: resolvente $(1,4)$.
+
+        13. $\lnot Q$: resolvente $(10,12)$.
+
+        14. $\blacksquare$: resolvente $(11,13)$.
 
         Es insatisfactible, por lo tanto la fórmula original es válida.
 

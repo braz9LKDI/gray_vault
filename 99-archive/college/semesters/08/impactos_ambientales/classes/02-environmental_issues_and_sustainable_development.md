@@ -6,7 +6,7 @@
 
 ### Cambio climático
 
-Una parte de la radiación solar que incide sobre el planeta se refleja a la atmósfera. Los gases de efecto invernadero (GEI) devuelven a la Tierra parte de la radiación, lo que permite que su temperatura promedio sea aproximadamente $35 \degree\text{C}$. El problema aparece cuando, por efecto de la acción de los seres humanos, aumenta la concentración de algunos de estos gases, y el fenómeno se refuerza, elevando la temperatura promedio de la Tierra.
+Una parte de la radiación solar que incide sobre el planeta se refleja a la atmósfera. Los gases de efecto invernadero (GEI) devuelven a la Tierra parte de la radiación, lo que permite que su temperatura promedio sea aproximadamente $15 \degree\text{C}$, unos $33 \degree\text{C}$ más de la que tendría sin ellos. El problema aparece cuando, por efecto de la acción de los seres humanos, aumenta la concentración de algunos de estos gases, y el fenómeno se refuerza, elevando la temperatura promedio de la Tierra.
 
 ### Pérdida de diversidad biológica
 
@@ -30,7 +30,7 @@ Algunas de las fuentes de contaminación hídrica son la utilización de fertili
 
 ### Contaminación y pérdida del suelo
 
-Los incendios son una de las causas fundamentales de esta pérdida de bosque tropical; la mayoría de ellos están causados por la quema intencionada de árboles para la conversión del terreno en cultivos o pastizales. El cambio climático ha incrementado las sequías que han permitido el incremento de incendios naturales.
+El suelo se pierde cuando queda sin cobertura vegetal y la lluvia y el viento lo erosionan, y se contamina con residuos, agroquímicos y actividades como la minería. La deforestación es una de las causas principales de su pérdida, y los incendios son una de las causas fundamentales de la pérdida de bosque tropical; la mayoría de ellos están causados por la quema intencionada de árboles para la conversión del terreno en cultivos o pastizales. El cambio climático ha incrementado las sequías que han permitido el incremento de incendios naturales.
 
 ### Generación de residuos
 

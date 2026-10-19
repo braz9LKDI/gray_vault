@@ -76,30 +76,34 @@ Las cláusulas obtenidas son:
 
 Es insatisfactible, por lo tanto, la fórmula original es válida.
 
----
+> Esta derivación no cumple la restricción, porque usa la regla de resolución cinco veces.
 
-1. $p \implies q$.
+## Derivación con la restricción
 
-2. $q \implies (r \implies s)$.
+Se parte de las premisas y se llega a la conclusión $p \implies s$, usando la regla de resolución una sola vez.
 
-3. $p \implies (r \implies s)$.
+1. $p \implies q$: premisa.
 
-4. $\neg p \por \neg r \por s$.
+2. $q \implies (r \implies s)$: premisa.
 
-5. $p \implies (q \implies r)$.
+3. $p \implies (r \implies s)$: silogismo hipotético $(1,2)$.
 
-6. $\neg p \por \neg q \por r$.
+4. $\neg p \por \neg r \por s$: definición condicional $(3)$.
+
+5. $p \implies (q \implies r)$: premisa.
+
+6. $\neg p \por \neg q \por r$: definición condicional $(5)$.
 
 7. $\neg p \por \neg q \por s$: resolvente $(4,6)$.
 
-8. $\neg q \por (\neg p \por s)$.
+8. $\neg q \por (\neg p \por s)$: conmutativa y asociativa $(7)$.
 
-9. $q \implies (\neg p \por s)$.
+9. $q \implies (\neg p \por s)$: definición condicional $(8)$.
 
-10. $p \implies (\neg p \por s)$.
+10. $p \implies (\neg p \por s)$: silogismo hipotético $(1,9)$.
 
-11. $\neg p \por \neg p \por s$.
+11. $\neg p \por \neg p \por s$: definición condicional $(10)$.
 
-12. $\neg p \por s$.
+12. $\neg p \por s$: idempotencia $(11)$.
 
-13. $p \implies s$.
+13. $p \implies s$: definición condicional $(12)$.

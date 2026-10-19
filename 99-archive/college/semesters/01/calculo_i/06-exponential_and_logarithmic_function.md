@@ -52,6 +52,8 @@ $$
 \end{align}
 $$
 
+Como $C > 0$ y $a > 0$ en ambas, $D_f = D_g = \mathbb{ R }$ y $R_f = R_g = (0,\infty)$.
+
 ## 3
 
 Halle el dominio y rango de estas funciones:
@@ -230,10 +232,13 @@ Determine para qué valores de $x$ se cumple la igualdad:
 
 1. $\plog{ x + 5 } = \plog{ x } + \plog{ 5 }$.
 
+    Ambos lados están definidos si $x > 0$.
+
     $$
     \begin{align}
-        & x + 5 > 0 \\
-        & x > -5
+        & \plog{ x + 5 } = \plog{ 5 x } \\
+        & x + 5 = 5 x \\
+        & x = \frac{ 5 }{ 4 }
     \end{align}
     $$
 
@@ -247,9 +252,11 @@ Determine para qué valores de $x$ se cumple la igualdad:
 
     $$
     \begin{align}
-        & = \plog{ x^3 x^2 x^{ -4 } } \\
-        & = \plog{ x } = 4 \\
-        & x = 10^4
+        & w^3 + w^2 - 4 w - 4 = 0 \quad w = \plog{ x } \\
+        & w^2 (w + 1) - 4 (w + 1) = 0 \\
+        & (w + 1) (w - 2) (w + 2) = 0 \\
+        & w = -1 \quad w = 2 \quad w = -2 \\
+        & x = \frac{ 1 }{ 10 } \quad x = 100 \quad x = \frac{ 1 }{ 100 }
     \end{align}
     $$
 

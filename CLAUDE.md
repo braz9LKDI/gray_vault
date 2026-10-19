@@ -34,7 +34,7 @@ A change to how the vault works updates the matching page in `docs/` in the same
 
 - `npm run lint:style` passes for the whole vault, the archive included. markdownlint reports errors only in `aprende_docker_ahora.md`, `scribbles.md`, the Kanban boards and `journal/`; Prettier also flags `course_board.md`, which the Kanban plugin rewrote.
 
-- The style review is done for every note except `aprende_docker_ahora.md` and `scribbles.md`, which I review myself. The archive was reviewed in full: its slips were fixed, and its reasoning errors are listed under Archive in `00-inbox/content_issues.md` for me to rewrite.
+- The style review is done for every note except `aprende_docker_ahora.md` and `scribbles.md`, which I review myself. The archive was reviewed in full and its errors were fixed on 2026-10-19, at my request. The items still open under Archive in `00-inbox/content_issues.md` are exercises that were never answered and the 10th-semester table, which needs my grades.
 
 - Four notes wait in `00-inbox/` for me to place them. `journal/` still has `reviewed_on`, because it is not in Git.
 

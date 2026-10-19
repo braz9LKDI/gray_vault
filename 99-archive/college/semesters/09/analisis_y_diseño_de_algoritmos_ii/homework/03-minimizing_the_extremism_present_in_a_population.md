@@ -22,6 +22,10 @@
 
 - $M \in \mathbb{ R }^+$: the maximum number of moves allowed.
 
+## Output
+
+- $s$: the set of movements, where each movement $(i,j,x)$ moves $x$ people from opinion $i$ to opinion $j$. The total cost of $s$ cannot exceed $ct$ and its total movement value cannot exceed $M$.
+
 ## Metrics
 
 - Movement: moving a person from opinion $i$ to opinion $j$ will count as $\abs{ j - i }$ movements, so the movement value of a movement of $x$ people from opinion $i$ to opinion $j$ is

@@ -87,13 +87,11 @@ Las características del spline de grado cero son:
 
 #### Número total de ecuaciones (grado cero)
 
-Interpolación en los nodos ($2 k$ ecuaciones):
+Interpolación en los nodos ($k$ ecuaciones):
 
 1. $S_i(t_i) = y_i$ (para $i = 0,1,\dots,k - 1$).
 
-2. $S_i(t_{ i + 1 }) = y_{ i + 1 }$ (para $i = 0,1,\dots,k - 1$).
-
-En total hay $2 k$ ecuaciones.
+En total hay $k$ ecuaciones, una por cada constante $C_i$. Cada tramo es constante, así que no puede cumplir también $S_i(t_{ i + 1 }) = y_{ i + 1 }$ salvo que $y_{ i + 1 } = y_i$.
 
 ### Primer grado (lineal)
 

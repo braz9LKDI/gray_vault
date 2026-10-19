@@ -20,6 +20,10 @@ Para que una computadora pase la prueba de Turing, debe por lo menos:
 
 - Representar el conocimiento.
 
+- Razonar de forma automática para responder preguntas y sacar conclusiones.
+
+- Aprender para adaptarse a nuevas circunstancias y detectar patrones.
+
 ### Actuar en forma racional
 
 Un agente racional es aquel que saca el máximo provecho (objetivo, meta) de una situación dada (restricciones).

@@ -105,13 +105,10 @@ Calcule los siguientes límites si existen:
 
 7. $\lim_{ x \to -3^- } \frac{ x }{ \sqrt{ x^2 - 9 } }$.
 
+    Cuando $x \to -3^-$, el numerador tiende a $-3$ y $x^2 - 9 \to 0^+$, así que el denominador tiende a $0^+$.
+
     $$
-    \begin{align}
-        & = \frac{ x }{ \sqrt{ x^2 - 9 } } * \frac{ \sqrt{ x^2 - 9 } }{ \sqrt{ x^2 - 9 } } \\
-        & = \frac{ x \sqrt{ x^2 - 9 } }{ x^2 - 9 } \\
-        & = \frac{ \text{valores negativos muy pequeños} }{ \text{valores positivos muy pequeños} } \\
-        & = -\infty
-    \end{align}
+    \lim_{ x \to -3^- } \frac{ x }{ \sqrt{ x^2 - 9 } } = \frac{ -3 }{ 0^+ } = -\infty
     $$
 
 8. $\lim_{ x \to 4^- } \frac{ \sqrt{ x } - 2 }{ x - 4 }$.
@@ -479,6 +476,8 @@ Sea $f(x) = x^3 - x + 5$.
     \end{align}
     $$
 
+    Los puntos son $\left (\frac{ 1 }{ \sqrt{ 3 } },5 - \frac{ 2 }{ 3 \sqrt{ 3 } } \right )$ y $\left (-\frac{ 1 }{ \sqrt{ 3 } },5 + \frac{ 2 }{ 3 \sqrt{ 3 } } \right )$.
+
 4. Encuentre los puntos sobre la gráfica de $f$, donde la recta tangente es perpendicular a la recta $x + 5 y - 10 = 0$.
 
     $$
@@ -499,7 +498,7 @@ Sea $f(x) = x^3 - x + 5$.
     \end{align}
     $$
 
-    Hay dos puntos.
+    Hay dos puntos: $(\sqrt{ 2 },5 + \sqrt{ 2 })$ y $(-\sqrt{ 2 },5 - \sqrt{ 2 })$.
 
 ## 8
 

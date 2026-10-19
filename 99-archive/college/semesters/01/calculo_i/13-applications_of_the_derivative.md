@@ -341,7 +341,7 @@ $$
 \end{align}
 $$
 
-Como $C^{ '' }(10) > 0$, en $x = 10$ hay un mínimo.
+Como $C^{ '' }(10) > 0$, en $x = 10$ hay un mínimo. Con $x = 10$, $y = \frac{ 2,000 }{ 10^2 } = 20$, así que la caja mide $10 \times 10 \times 20$ pulgadas.
 
 ## 9
 

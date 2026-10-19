@@ -263,8 +263,7 @@ En general, agregar un acumulador, es decir, un parámetro que acumula conocimie
          * @returns the product of all the elements in the given list.
          */
         function product_list(list) {
-            if (isEmpty(list)) return 0;
-            else if (isEmpty(rest(list))) return first(list);
+            if (isEmpty(list)) return 1;
             else return first(list) * product_list(rest(list));
         }
         ```
@@ -281,8 +280,7 @@ En general, agregar un acumulador, es decir, un parámetro que acumula conocimie
          * @returns the product of all the elements in the given list.
          */
         function product_list(list, result = 1) {
-            if (isEmpty(list)) return 0;
-            else if (isEmpty(rest(list))) return result * first(list);
+            if (isEmpty(list)) return result;
             else return product_list(rest(list), result * first(list));
         }
         ```

@@ -66,7 +66,7 @@ Se identifican tres momentos en la gráfica: el primero de $t = 0$ a $t = 2$, el
 
     La gráfica de esta función es:
 
-    ![$x(t)$](99-archive/college/ases/jairo/assets/01_02-distance_graph.jpg) TODO
+    ![$x(t)$](99-archive/college/ases/jairo/assets/01_02-distance_graph.svg)
 
 2. Dibuje la gráfica aceleración-tiempo con valores numéricos.
 
@@ -78,9 +78,15 @@ Se identifican tres momentos en la gráfica: el primero de $t = 0$ a $t = 2$, el
         \end{cases}
     $$
 
-    ![$a(t)$](99-archive/college/ases/jairo/assets/01_03-acceleration_graph.jpg) TODO
+    ![$a(t)$](99-archive/college/ases/jairo/assets/01_03-acceleration_graph.svg)
 
 3. Calcule la distancia total recorrida por la partícula.
+
+    La partícula cambia de dirección en $t = 4$, donde $v = 0$, así que la distancia se suma por tramos.
+
+    $$
+    d = \abs{ x(2) - x(0) } + \abs{ x(4) - x(2) } + \abs{ x(6) - x(4) } + \abs{ x(8) - x(6) } = 30 + 15 + 15 + 30 = 90
+    $$
 
 4. Calcule el desplazamiento total de la partícula.
 

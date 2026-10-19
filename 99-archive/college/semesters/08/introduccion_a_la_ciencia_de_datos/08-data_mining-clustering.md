@@ -64,6 +64,10 @@ El clustering jerárquico, a veces denominado clustering basado en la conectivid
 
 Es un enfoque ascendente que comienza con puntos de datos individuales y fusiona sucesivamente los clústeres, calculando la matriz de proximidad de todos los clústeres en el nivel actual de la jerarquía para crear una estructura similar a un árbol.
 
+#### División
+
+Es un enfoque descendente que comienza con todos los puntos de datos en un solo clúster y lo divide sucesivamente en clústeres más pequeños, hasta que cada punto queda en su propio clúster o se cumple un criterio de parada.
+
 ### Basados en densidad
 
 El clustering basado en la densidad funciona mediante la detección de áreas donde se concentran puntos y donde están separados por áreas que están vacías o escasas. El clustering basado en la densidad también puede distinguir entre los puntos de datos que forman parte de un clúster y los que deben etiquetarse como ruido. El clustering basado en la densidad es especialmente útil cuando se trabaja con conjuntos de datos con ruido o valores atípicos o cuando no se tiene conocimiento previo sobre el número de clústeres en los datos.

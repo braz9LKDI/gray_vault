@@ -299,6 +299,8 @@ Considere el rectángulo con dos de sus lados sobre los ejes coordenados y uno d
     \end{align}
     $$
 
+    Como los lados del rectángulo son positivos, $x > 0$ y $\frac{ 15 - 5 x }{ 3 } > 0$, así que $D_A = (0,3)$.
+
 2. Halle las dimensiones del rectángulo de mayor área.
 
     $$
