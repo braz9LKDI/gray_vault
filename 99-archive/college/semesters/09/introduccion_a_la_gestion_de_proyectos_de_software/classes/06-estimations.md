@@ -1,10 +1,10 @@
 # Estimations
 
-## ¿Qué Es estimación?
+## ¿Qué es la estimación?
 
-La estimación es el proceso de predecir **cuantitativamente** los **recursos**, **tiempos** y **costos** necesarios para **completar** un proyecto de software. Se fundamenta en el análisis de **datos históricos**, la identificación de **riesgos** y la evaluación de la **complejidad** de las tareas. Su objetivo es establecer un **valor esperado** del **trabajo total requerido**, lo que facilita la **planificación y la asignación eficiente de recursos**.
+La estimación es el proceso de predecir cuantitativamente los recursos, tiempos y costos necesarios para completar un proyecto de software. Se fundamenta en el análisis de datos históricos, la identificación de riesgos y la evaluación de la complejidad de las tareas. Su objetivo es establecer un valor esperado del trabajo total requerido, lo que facilita la planificación y la asignación eficiente de recursos.
 
-## ¿Qué Se estima?
+## ¿Qué se estima?
 
 - Duración: días, semanas, meses, años.
 
@@ -14,7 +14,7 @@ La estimación es el proceso de predecir **cuantitativamente** los **recursos**,
 
 ## Métodos de estimación
 
-### Wideband delphi
+### Wideband Delphi
 
 1. Se entregan requisitos a expertos.
 
@@ -34,7 +34,7 @@ La estimación es el proceso de predecir **cuantitativamente** los **recursos**,
 
 ### Planning poker
 
-Este método se enfoca en la dificultad, no duración.
+Este método se enfoca en la dificultad, no en la duración.
 
 1. Definir un pivote como referencia (ej: HU con 5 puntos).
 
@@ -44,4 +44,4 @@ Este método se enfoca en la dificultad, no duración.
 
 ## Velocidad del equipo
 
-Es una métrica ágil para estimar cuánto trabajo puede completar un equipo en un sprint. Usa los puntos de usuario como medida y se ajusta con el tiempo y la experiencia del equipo.
+Es una métrica ágil para estimar cuánto trabajo puede completar un equipo en un sprint. Usa los puntos de historia como medida y se ajusta con el tiempo y la experiencia del equipo.

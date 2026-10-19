@@ -8,7 +8,7 @@ Abstraer las siguientes dos funciones en una:
 
 1. `max`.
 
-    ```js
+    ```javascript
     /**
      * Recursively finds the maximum value in a list.
      *
@@ -26,7 +26,7 @@ Abstraer las siguientes dos funciones en una:
 
 2. `min`.
 
-    ```js
+    ```javascript
     /**
      * Recursively finds the minimum value in a list.
      *
@@ -42,7 +42,7 @@ Abstraer las siguientes dos funciones en una:
     }
     ```
 
-```js
+```javascript
 /**
  * Recursively compares elements in a list using a comparator function and
  * returns the element that satisfies the comparator condition.
@@ -68,7 +68,7 @@ function get_element(list, comparator) {
 
 - `get_element(list, (a, b) => a < b)`: hallar el número menor.
 
-Como es normal en las funciones recursivas, tenemos un gran costo espacial relacionado con la longitud (cantidad de elementos) de la lista ingresada.
+Como es normal en las funciones recursivas, hay un gran costo espacial relacionado con la longitud (cantidad de elementos) de la lista ingresada.
 
 ## Similitud en definiciones de datos
 

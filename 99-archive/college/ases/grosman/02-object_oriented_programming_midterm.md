@@ -3,7 +3,7 @@
 1. Determine cuál de las afirmaciones es correcta:
     1. El tipo de dato de un puntero no debe coincidir (ser equivalente) con el de la variable cuya posición en memoria apunta.
 
-    2. **El tipo de dato de un puntero debe coincidir (ser equivalente) con el de la variable cuya posición en memoria apunta.**
+    2. **El tipo de dato de un puntero debe coincidir (ser equivalente) con el de la variable cuya posición en memoria apunta**.
 
     3. El tipo de dato de un puntero debe coincidir con la posición en memoria a la que apunta la variable.
 
@@ -18,7 +18,7 @@
 
     3. Poner después del nombre del puntero un asterisco (`*`) para indicar que usaremos el valor en la posición de memoria apuntada.
 
-    4. **Poner antes del nombre del puntero un asterisco (`*`) para indicar que usaremos el valor en la posición de memoria apuntada.**
+    4. **Poner antes del nombre del puntero un asterisco (`*`) para indicar que usaremos el valor en la posición de memoria apuntada**.
 
     5. Ninguna de las anteriores es correcta.
 
@@ -35,7 +35,7 @@
 
     5. El `delete[]`.
 
-    6. **El `delete`.**
+    6. **El `delete`**.
 
     7. Ninguna de las anteriores.
 
@@ -46,7 +46,7 @@
 
     2. Liberar memoria.
 
-    3. **Hacer polimorfismo en un método.**
+    3. **Hacer polimorfismo en un método**.
 
     4. Hacer una relación de herencia.
 
@@ -57,7 +57,7 @@
 5. Con este extracto de código:
     - `Class.h`.
 
-        ```CPP
+        ```cpp
         class Class {
             public:
                 virtual void a_method(int number) = 0;
@@ -66,7 +66,7 @@
 
     - `AnotherClass.h`.
 
-        ```CPP
+        ```cpp
         #include "Class.h"
 
 
@@ -80,7 +80,7 @@
 
     - `AnotherClass.cpp`.
 
-        ```CPP
+        ```cpp
         #include <iostream>
 
         #include "AnotherClass.h"
@@ -98,7 +98,7 @@
 
     - `main.cpp`.
 
-        ```CPP
+        ```cpp
         #include "AnotherClass.h"
 
 
@@ -118,11 +118,11 @@
 
     4. En 1 no se puede crear un objeto dinámico de la clase `AnotherClass` porque `AnotherClass` es una clase abstracta.
 
-    5. **Ninguna de las anteriores.**
+    5. **Ninguna de las anteriores**.
 
 6. Con este extracto de código:
 
-    ```CPP
+    ```cpp
     bool* pointer = nullptr; // 1
     bool w; // 2
     bool p = 4; // 3
@@ -134,21 +134,21 @@
     seleccione las afirmaciones que son correctas.
     1. En 1 se declara una dirección de memoria y en 2 se le asigna al puntero la dirección de memoria de la variable.
 
-    2. **En 1 se declara un puntero y en 2 se declara una variable.**
+    2. **En 1 se declara un puntero y en 2 se declara una variable**.
 
     3. En 4 se le asigna al puntero la dirección de memoria de `p`.
 
     4. En 4 se le asigna al puntero el valor de `w`.
 
-    5. **En 4 se le asigna al puntero la dirección de memoria de `w`.**
+    5. **En 4 se le asigna al puntero la dirección de memoria de `w`**.
 
     6. En 5 cambia el valor de `*pointer` por la dirección a la que está apuntando `p`.
 
     7. En 5 se lanza un error porque no se puede hacer esa asignación.
 
-    8. **En 5 se cambia el valor de `w` por el valor que tiene `p`.**
+    8. **En 5 se cambia el valor de `w` por el valor que tiene `p`**.
 
-    9. **En 3 a `p` se le asigna el valor de `1`.**
+    9. **En 3 a `p` se le asigna el valor de `1`**.
 
     10. En 3 sale error porque no se puede asignar ese valor a `p`.
 
@@ -156,7 +156,7 @@
 
 7. Con este extracto de código:
 
-    ```CPP
+    ```cpp
     int v = 100; // 1
     int &w = v; // 2
     int x = w * 30; // 3
@@ -168,11 +168,11 @@
 
     2. En 2 se crea un puntero de `v`.
 
-    3. **En 2 se crea una referencia de `v`.**
+    3. **En 2 se crea una referencia de `v`**.
 
     4. En 4 se imprime la dirección de memoria de `w` que es diferente a la dirección de `v`.
 
-    5. **En 4 se imprime la dirección de memoria de `v`.**
+    5. **En 4 se imprime la dirección de memoria de `v`**.
 
     6. En 4 se imprime el valor que tiene asignado `w`.
 
@@ -184,7 +184,7 @@
 
 8. Con este extracto de código:
 
-    ```CPP
+    ```cpp
     #include <iostream>
 
 
@@ -228,13 +228,13 @@
 
     3. El programa si ejecuta, pero no se modifica `v` del main, porque se pasa parámetro por valor, entonces imprime `100` en 6.
 
-    4. **El programa no ejecuta, se genera un error de compilación porque no se puede hacer la instrucción `data = data * 4;` dentro de `function_1`.**
+    4. **El programa no ejecuta, se genera un error de compilación porque no se puede hacer la instrucción `data = data * 4;` dentro de `function_1`**.
 
     5. Ninguna de las anteriores.
 
 9. Con este extracto de código:
 
-    ```CPP
+    ```cpp
     #include <iostream>
 
 
@@ -269,11 +269,11 @@
 
     2. Cuando se lanza la excepción en `cast_to_double` entra al `catch(std::invalid_argument &error)`.
 
-    3. **Cuando se lanza la excepción en `cast_to_double` entra al `catch(int number)`.**
+    3. **Cuando se lanza la excepción en `cast_to_double` entra al `catch(int number)`**.
 
     4. El `cast_to_double` retorna `1`.
 
-    5. **El `cast_to_double` retorna `-1`.**
+    5. **El `cast_to_double` retorna `-1`**.
 
     6. El `cast_to_double` retorna `-2`.
 

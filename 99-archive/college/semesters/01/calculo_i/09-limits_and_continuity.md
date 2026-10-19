@@ -2,7 +2,7 @@
 
 ## 1
 
-Calcule los siguiente limites si existen:
+Calcule los siguientes límites si existen:
 
 1. $\lim_{ x \to 1 } \frac{ x - 1 }{ \sqrt{ x^2 + 3 } - 2 }$.
 
@@ -23,7 +23,7 @@ Calcule los siguiente limites si existen:
     $$
     \begin{align}
         & \lim_{ x \to 2^- } \frac{ \sqrt{ x - 2 } }{ x^2 - 4 } \; \text{no existe} \\
-        & = \lim_{ x \to 2 } \frac{ \sqrt{ x - 2 } }{ x^2 - 4 } \; \text{no existe}
+        & \implies \lim_{ x \to 2 } \frac{ \sqrt{ x - 2 } }{ x^2 - 4 } \; \text{no existe}
     \end{align}
     $$
 
@@ -32,7 +32,7 @@ Calcule los siguiente limites si existen:
     $$
     \begin{align}
         & = 3 * \lim_{ t \to 0 } \frac{ t }{ \psin{ t } } \quad t = 3 x \\
-        & = 3 * \left (\lim_{ t \to 0 } \frac{ \psin{ t } }{ t } \right )^{ - 1 } \\
+        & = 3 * \left (\lim_{ t \to 0 } \frac{ \psin{ t } }{ t } \right )^{ -1 } \\
         & = 3 * 1^{ -1 } \\
         & = 3
     \end{align}
@@ -121,8 +121,8 @@ Calcule los siguiente limites si existen:
         & \lim_{ t \to 0 } \frac{ \psin{ t } }{ \left (\frac{ t + 5 }{ 5 } \right )^3 - 1 } \quad t = 5 x - 5 \\
         & = \frac{ \psin{ t } }{ \frac{ (t^3 + 15 t^2 + 75 t + 125) - 125 }{ 125 } } \\
         & = \frac{ \psin{ t } }{ \frac{ t^3 + 15 t^2 + 75 t }{ 125 } } \\
-        & = \frac{ 125 }{ t^2 + 15 + 75 } * \frac{ \psin{ t } }{ t } \\
-        & = \lim_{ t \to 0 } \frac{ 125 }{ t^2 + 15 + 75 } * \lim_{ t \to 0 } \frac{ \psin{ t } }{ t } \\
+        & = \frac{ 125 }{ t^2 + 15 t + 75 } * \frac{ \psin{ t } }{ t } \\
+        & = \lim_{ t \to 0 } \frac{ 125 }{ t^2 + 15 t + 75 } * \lim_{ t \to 0 } \frac{ \psin{ t } }{ t } \\
         & = \frac{ 125 }{ 75 } \\
         & = \frac{ 5 }{ 3 }
     \end{align}
@@ -135,18 +135,18 @@ Halle si existen, asíntotas verticales y horizontales de las siguientes funcion
 1. $f(x) = \frac{ x^2 }{ 1 - x^2 }$.
 
     $$
-    D_f \in \mathbb{ R } - \{1, -1\}
+    D_f = \mathbb{ R } - \{1, -1\}
     $$
 
     $$
-    \lim_{ x \to 1^- } \frac{ x^2 }{ 1 - x^2 } = -\infty
+    \lim_{ x \to 1^- } \frac{ x^2 }{ 1 - x^2 } = \infty
     $$
 
     $$
-    \lim_{ x \to 1^+ } \frac{ x^2 }{ 1 - x^2 } = \infty
+    \lim_{ x \to 1^+ } \frac{ x^2 }{ 1 - x^2 } = -\infty
     $$
 
-    Concluimos que hay una asíntota vertical en $x = 1$.
+    Se concluye que hay una asíntota vertical en $x = 1$.
 
     $$
     \begin{align}
@@ -166,30 +166,30 @@ Halle si existen, asíntotas verticales y horizontales de las siguientes funcion
     \end{align}
     $$
 
-    Concluimos que hay una asíntota horizontal en $y = -1$.
+    Se concluye que hay una asíntota horizontal en $y = -1$.
 
 2. $f(x) = 7 x^6 - 3 x^4 + 8$.
 
     $$
-    D_f \in \mathbb{ R }
+    D_f = \mathbb{ R }
     $$
 
-    Concluimos que no hay asíntotas verticales.
+    Se concluye que no hay asíntotas verticales.
 
     $$
     \lim_{ x \to \infty } 7 x^6 - 3 x^4 + 8 = \infty
     $$
 
     $$
-    \lim_{ x \to -\infty } 7 x^6 - 3 x^4 + 8 = -\infty
+    \lim_{ x \to -\infty } 7 x^6 - 3 x^4 + 8 = \infty
     $$
 
-    Concluimos que no hay asíntotas horizontales.
+    Se concluye que no hay asíntotas horizontales.
 
 3. $f(x) = \frac{ \abs{ x + 2 } }{ x + 2 }$.
 
     $$
-    D_f \in \mathbb{ R } - \{-2\}
+    D_f = \mathbb{ R } - \{-2\}
     $$
 
     $$
@@ -200,11 +200,11 @@ Halle si existen, asíntotas verticales y horizontales de las siguientes funcion
     \lim_{ x \to -2^+ } \frac{ x + 2 }{ x + 2 } = 1
     $$
 
-    Concluimos que no hay asíntotas verticales.
+    Se concluye que no hay asíntotas verticales.
 
     $$
     \begin{align}
-        &     \lim_{ x \to \infty } \frac{ x + 2 }{ x + 2 } \frac{ \frac{ 1 }{ x } }{ \frac{ 1 }{ x } } \\
+        & \lim_{ x \to \infty } \frac{ x + 2 }{ x + 2 } \frac{ \frac{ 1 }{ x } }{ \frac{ 1 }{ x } } \\
         & = \frac{ 1 + \frac{ 2 }{ x } }{ 1 + \frac{ 2 }{ x } } \\
         & = \frac{ 1 + 0 }{ 1 + 0 } \\
         & = 1
@@ -213,14 +213,14 @@ Halle si existen, asíntotas verticales y horizontales de las siguientes funcion
 
     $$
     \begin{align}
-        &     \lim_{ x \to -\infty } \frac{ -x - 2 }{ x + 2 } \frac{ \frac{ 1 }{ x } }{ \frac{ 1 }{ x } } \\
+        & \lim_{ x \to -\infty } \frac{ -x - 2 }{ x + 2 } \frac{ \frac{ 1 }{ x } }{ \frac{ 1 }{ x } } \\
         & = \frac{ -1 - \frac{ 2 }{ x } }{ 1 + \frac{ 2 }{ x } } \\
         & = \frac{ -1 - 0 }{ 1 + 0 } \\
         & = -1
     \end{align}
     $$
 
-    Concluimos que tiene dos asíntotas horizontales en $y = -1$ y $y = 1$.
+    Se concluye que tiene dos asíntotas horizontales en $y = -1$ y $y = 1$.
 
 ## 3
 
@@ -228,7 +228,7 @@ Pruebe que $\lim_{ x \to 0 } \frac{ 1 - 2^{ \frac{ 1 }{ x } } }{ 1 + 2^{ \frac{ 
 
 $$
 \begin{align}
-    & \lim_{ x \to 0^+ } \frac{ 1 - 2^{ \frac{ 1 }{ x } } }{ 1 - 2^{ \frac{ 1 }{ x } } } \\
+    & \lim_{ x \to 0^+ } \frac{ 1 - 2^{ \frac{ 1 }{ x } } }{ 1 + 2^{ \frac{ 1 }{ x } } } \\
     & = \frac{ 2^{ \frac{ 1 }{ x } } \left ( 2^{ -\frac{ 1 }{ x } } - 1 \right ) }{ 2^{ \frac{ 1 }{ x } } \left ( 2^{ -\frac{ 1 }{ x } } + 1 \right ) } \\
     & = \frac{ 2^{ -\frac{ 1 }{ x } } - 1 }{ 2^{ -\frac{ 1 }{ x } } + 1 } \\
     & = \frac{ \frac{ 1 }{ 2^{ \frac{ 1 }{ x } } } - 1 }{ \frac{ 1 }{ 2^{ \frac{ 1 }{ x } } } + 1 } \\
@@ -239,8 +239,8 @@ $$
 
 $$
 \begin{align}
-    & \lim_{ x \to 0^- } \frac{ 1 - 2^{ \frac{ 1 }{ x } } }{ 1 - 2^{ \frac{ 1 }{ x } } } \\
-    & = \frac{ 1 - \frac{ 1 }{ 2^{ -\frac{ 1 }{ x } } } }{ 1 + \frac{ 1 }{ 2^{ -\frac{ 1 }{ x } } } }
+    & \lim_{ x \to 0^- } \frac{ 1 - 2^{ \frac{ 1 }{ x } } }{ 1 + 2^{ \frac{ 1 }{ x } } } \\
+    & = \frac{ 1 - \frac{ 1 }{ 2^{ -\frac{ 1 }{ x } } } }{ 1 + \frac{ 1 }{ 2^{ -\frac{ 1 }{ x } } } } \\
     & = \frac{ 1 - 0 }{ 1 + 0 } \\
     & = 1
 \end{align}
@@ -252,7 +252,7 @@ $$
 
 ## 4
 
-Use el teorema del sandwich para calcular los siguientes límites:
+Use el teorema del sándwich para calcular los siguientes límites:
 
 1. $\lim_{ x \to 0 } { x^3 \pcos{ \frac{ 1 }{ x } } }$.
 
@@ -280,7 +280,7 @@ Use el teorema del sandwich para calcular los siguientes límites:
     $$
     \begin{align}
         & -1 \leq \psin{ \frac{ 1 }{ x } } \leq 1 \\
-        & -\abs{ x } \leq x^3 \pcos{ \frac{ 1 }{ x } } \leq \abs{ x }
+        & -\abs{ x } \leq x \psin{ \frac{ 1 }{ x } } \leq \abs{ x }
     \end{align}
     $$
 
@@ -320,7 +320,7 @@ Use el teorema del sandwich para calcular los siguientes límites:
 
 ## 5
 
-Suponga que $f(x)$ es una función acotada (es decir, existe una constate real $M > 0$, tal que $\abs{ f(x) } \leq M$ para todo $x \in D_f$). Use el teorema del sandwich para probar que $\lim_{ x \to 0 } x^2 f(x) = 0$.
+Suponga que $f(x)$ es una función acotada (es decir, existe una constante real $M > 0$, tal que $\abs{ f(x) } \leq M$ para todo $x \in D_f$). Use el teorema del sándwich para probar que $\lim_{ x \to 0 } x^2 f(x) = 0$.
 
 $$
 \begin{align}
@@ -343,7 +343,7 @@ $$
 
 ## 6
 
-Muestre que las siguiente funciones son continuas en $x = a$:
+Muestre que las siguientes funciones son continuas en $x = a$:
 
 1. $f(x) = -5 x^3 - 3 x^2 + x - 2$ con $a = 2$.
 
@@ -419,7 +419,7 @@ $$
 \lim_{ x \to 0^- } f(x) = \lim_{ x \to 0^+ } f(x) = f(0) = 0
 $$
 
-Para saber si $f$ es derivable en ese punto, hallamos las derivadas laterales.
+Para saber si $f$ es derivable en ese punto, se hallan las derivadas laterales.
 
 $$
 \begin{align}
@@ -431,7 +431,7 @@ $$
 
 $$
 \begin{align}
-    & \lim_{ h \to 0^- } f(0) \\
+    & \lim_{ h \to 0^- } f^\prime(0) \\
     & = \frac{ -h }{ h } \\
     & = -1
 \end{align}
@@ -539,7 +539,7 @@ $$
 $$
 \begin{align}
     & \lim_{ x \to 0^- } f(x) \\
-    & =\frac{ 5 }{ 3 }
+    & = \frac{ 5 }{ 3 }
 \end{align}
 $$
 
@@ -581,7 +581,7 @@ $$
 
 $$
 \begin{align}
-    & \lim_{ x \to -2^- }  = \frac{ 5 a }{ (-2) + 1 } \\
+    & \lim_{ x \to -2^- } f(x) = \frac{ 5 a }{ (-2) + 1 } \\
     & = -5 a
 \end{align}
 $$
@@ -595,7 +595,7 @@ $$
 
 $$
 \begin{align}
-    & \lim_{ x \to -2^- } f(x) = \lim_{ x \to -2^+ } f(x) = f(2) \\
+    & \lim_{ x \to -2^- } f(x) = \lim_{ x \to -2^+ } f(x) = f(-2) \\
     & -5 a = -2 a^2 + 3 \\
     & 2 a^2 - 5 a - 3 = 0 \\
     & a = \frac{ 5 \pm \sqrt{ (-5)^2 - 4 (2) (-3) } }{ 2 (2) } \\
@@ -634,7 +634,7 @@ Halle los valores de la constante $m$, para que la función
 $$
 f(x) =
     \begin{cases}
-        x^2 - 5 x - 7 & x \geq m \\
+        x^2 - 5 x - 7 & x \leq m \\
         -2 x + 3      & x > m
     \end{cases}
 $$
@@ -666,7 +666,7 @@ $$
 $$
 f(x) =
     \begin{cases}
-        x^2 - 5 x - 7 & x \geq 5 \\
+        x^2 - 5 x - 7 & x \leq 5 \\
         -2 x + 3      & x > 5
     \end{cases}
 $$
@@ -676,7 +676,7 @@ o
 $$
 f(x) =
     \begin{cases}
-        x^2 - 5 x - 7 & x \geq -2 \\
+        x^2 - 5 x - 7 & x \leq -2 \\
         -2 x + 3      & x > -2
     \end{cases}
 $$
@@ -695,7 +695,7 @@ $$
 \begin{align}
     & f^\prime(4) = \lim_{ h \to 0 } \frac{ f(4 + h) - f(4) }{ h } \\
     & = \frac{ \sqrt{ 4 + h } - \sqrt{ 4 } }{ h } \frac{ \sqrt{ 4 + h } + \sqrt{ 4 } }{ \sqrt{ 4 + h } + \sqrt{ 4 } } \\
-    & = \frac{ (4 + h) - h }{ h (\sqrt{ 4 + h } + 2) } \\
+    & = \frac{ (4 + h) - 4 }{ h (\sqrt{ 4 + h } + 2) } \\
     & = \frac{ h }{ h (\sqrt{ 4 + h } + 2) } \\
     & = \frac{ 1 }{ \sqrt{ 4 + h } + 2 } \\
     & = \frac{ 1 }{ 4 }

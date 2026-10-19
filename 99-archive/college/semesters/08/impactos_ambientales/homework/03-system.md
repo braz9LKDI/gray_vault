@@ -14,13 +14,13 @@ El corazón está conformado por cuatro cámaras (o secciones):
 
 - Ventrículos: dos cámaras inferiores que descargan sangre.
 
-Una pared de tejido llamada **tabique** separa las aurículas izquierda y derecha, y los ventrículos izquierdo y derecho. Las funciones de estos lados son:
+Una pared de tejido llamada tabique separa las aurículas izquierda y derecha, y los ventrículos izquierdo y derecho. Las funciones de estos lados son:
 
 - Lado derecho: recibe sangre desoxigenada y la envía a los pulmones.
 
 - Lado izquierdo: recibe sangre de los pulmones y la envía al resto del cuerpo.
 
-Lo que llamamos un latido es la **contracción** y **relajación** simultánea de los dos lados del corazón. Cada latido consta de dos partes:
+Lo que se llama un latido es la contracción y relajación simultánea de los dos lados del corazón. Cada latido consta de dos partes:
 
 - Diástole: los ventrículos se relajan y las aurículas se contraen.
 
@@ -34,15 +34,15 @@ Lo que llamamos un latido es la **contracción** y **relajación** simultánea d
 
 Los impulsos eléctricos coordinan la actividad del corazón.
 
-1. La señal eléctrica comienza en el nodo sinoauricular (seno sinusual o nodo SA).
+1. La señal eléctrica comienza en el nodo sinoauricular (nodo sinusal o nodo SA).
 
-    > Este es el **marcapasos** natural del corazón y se encuentra en la parte superior de la aurícula derecha.
+    > Este es el marcapasos natural del corazón y se encuentra en la parte superior de la aurícula derecha.
 
 2. La señal hace que las aurículas se contraigan, empujando la sangre hacia los ventrículos.
 
-3. El impulso eléctrico luego viaja a un área de celdas en la parte inferior de la aurícula derecha, entre las aurículas y los ventrículos, llamado nodo auriculoventricular (o AV).
+3. El impulso eléctrico luego viaja a un área de células en la parte inferior de la aurícula derecha, entre las aurículas y los ventrículos, llamada nodo auriculoventricular (o AV).
 
-    > Estas celdas actúan como un guardián. Coordinan la señal para que las aurículas y los ventrículos no se contraigan al mismo tiempo. Es necesario que haya un pequeño retraso.
+    > Estas células actúan como un guardián. Coordinan la señal para que las aurículas y los ventrículos no se contraigan al mismo tiempo. Es necesario que haya un pequeño retraso.
 
 4. La señal viaja a lo largo de las fibras de Purkinje, dentro de las paredes del ventrículo. Las fibras pasan el impulso al músculo cardíaco, haciendo que los ventrículos se contraigan.
 
@@ -56,7 +56,7 @@ Los marcapasos modernos son programables y pueden ajustarse para responder a las
 
 ## Justificación de las características del sistema
 
-- Abierto: intercambia **materia** (sangre) y **energía** (impulsos eléctricos) con el **entorno** (cuerpo humano).
+- Abierto: intercambia materia (sangre) y energía (impulsos eléctricos) con el entorno (cuerpo humano).
 
 - Complejo: está compuesto por múltiples elementos interrelacionados (circuito eléctrico del marcapasos, tejidos cardíacos, flujo sanguíneo) cuyo comportamiento conjunto no es evidente a partir de la suma de sus partes individuales.
 
@@ -74,4 +74,4 @@ Los marcapasos modernos son programables y pueden ajustarse para responder a las
 
 4. Homeostasis.
 
-5. Negentropia.
+5. Neguentropía.

@@ -6,9 +6,9 @@
 
 ## $\text{3-SAT} \in \mathrm{NP}$
 
-El **"algoritmo"** toma el certificado, sustituye los valores en cada cláusula y comprueba si todas evalúan a verdadero, esto es $O(3 * \card{ C }) = O(\card{ C })$, respondiendo positivamente para **instancias positivas** y negativamente para **instancia negativa**. Por lo tanto, $\text{3-SAT} \in \mathrm{NP}$.
+El "algoritmo" toma el certificado, sustituye los valores en cada cláusula y comprueba si todas evalúan a verdadero, esto es $O(3 * \card{ C }) = O(\card{ C })$, respondiendo positivamente para instancias positivas y negativamente para instancias negativas. Por lo tanto, $\text{3-SAT} \in \mathrm{NP}$.
 
-> El algoritmo corresponde a uno de **verificación**.
+> El algoritmo corresponde a uno de verificación.
 
 ## $\text{SAT} \preceq_p \text{3-SAT}$
 
@@ -16,7 +16,7 @@ La idea es transformar cada cláusula de una instancia de SAT en una o más clá
 
 ### $k = 1$ ($z_1$)
 
-Se crean dos variables $v_1$, $v_2$ y cuatro clausulas.
+Se crean dos variables $v_1$, $v_2$ y cuatro cláusulas.
 
 $$
 (v_1 \por v_2 \por z_1) \pand (v_1 \por \lnot v_2 \por z_1) \pand (\lnot v_1 \por v_2 \por z_1) \pand (\lnot v_1 \por \lnot v_2 \por z_1)
@@ -30,7 +30,7 @@ $$
 (v_1 \por z_1 \por z_2) \pand (\lnot v_1 \por z_1 \por z_2)
 $$
 
-### $k = 2$ ($z_1 \por z_2 \por z_3$)
+### $k = 3$ ($z_1 \por z_2 \por z_3$)
 
 No se hace nada.
 
@@ -51,15 +51,15 @@ $$
 \end{align}
 $$
 
-Si se tienen $m$ cláusulas y $n$ literales en una instancia de SAT, y la cláusula más grande tiene $k$ literales, la complejidad temporal de esta reducción es $O(n + m * k)$ (**polinomial**) y el tamaño de la instancia es $O(m * k)$ (**polinomial**). Por lo tanto, 3-SAT está en $\mathrm{NP}$ y es $\mathrm{NP}\text{-hard}$, lo que lo hace $\mathrm{NP}\text{-complete}$.
+Si se tienen $m$ cláusulas y $n$ literales en una instancia de SAT, y la cláusula más grande tiene $k$ literales, la complejidad temporal de esta reducción es $O(n + m * k)$ (polinomial) y el tamaño de la instancia es $O(m * k)$ (polinomial). Por lo tanto, 3-SAT está en $\mathrm{NP}$ y es $\mathrm{NP}\text{-hard}$, lo que lo hace $\mathrm{NP}\text{-complete}$.
 
 ## X-SAT: generalización
 
-El "algoritmo" para verificar un certificado tiene que recorrer todas las cláusulas, cada una con máximo $X$ literales. Esto nos da una complejidad $O(X * m)$ (polinomial, debido a que $X$ es una constante) y demuestra que el problema está en $\mathrm{NP}$.
+El "algoritmo" para verificar un certificado tiene que recorrer todas las cláusulas, cada una con máximo $X$ literales. Esto da una complejidad $O(X * m)$ (polinomial, debido a que $X$ es una constante) y demuestra que el problema está en $\mathrm{NP}$.
 
-## $\text{3-SAT} \preceq_p X-\text{SAT}$ ($X > 3$)
+## $\text{3-SAT} \preceq_p \text{X-SAT}$ ($X > 3$)
 
-Para convertir una cláusula de 3 literales en una cláusula con exactamente $X$ literales, necesitamos introducir $X - 3$ variables y $2^{ X - 3 }$ clausular para cubrir todas las posibles combinaciones de estas variables.
+Para convertir una cláusula de 3 literales en una cláusula con exactamente $X$ literales, se necesitan $X - 3$ variables nuevas y $2^{ X - 3 }$ cláusulas para cubrir todas las posibles combinaciones de estas variables.
 
 La complejidad temporal de esta reducción es $O(n + m * 2^{ X - 3 })$ y la espacial es $O(m * 2^{ X - 3 })$. Por lo tanto, X-SAT está en $\mathrm{NP}$ y es $\mathrm{NP}\text{-hard}$, lo que lo hace $\mathrm{NP}\text{-complete}$.
 

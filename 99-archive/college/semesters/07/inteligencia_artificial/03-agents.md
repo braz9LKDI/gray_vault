@@ -2,11 +2,11 @@
 
 ## Agente
 
-Es todo aquello que puede considerarse que percibe su ambiente mediante **sensores** y que responde o actúa por medio de **efectores**.
+Es todo aquello que puede considerarse que percibe su ambiente mediante sensores y que responde o actúa por medio de efectores.
 
 ### Racional
 
-Es aquel que **hace lo correcto**, es decir, aquello que le permite obtener un buen desempeño de acuerdo a una meta específica.
+Es aquel que hace lo correcto, es decir, aquello que le permite obtener un buen desempeño de acuerdo a una meta específica.
 
 > La racionalidad está relacionada con el éxito esperado, tomando como base lo que se ha percibido.
 
@@ -14,7 +14,7 @@ Es aquel que **hace lo correcto**, es decir, aquello que le permite obtener un b
 
 ---
 
-Existen cuatro tipos de agentes, presentados en orden creciente de inteligencia, son:
+Existen cuatro tipos de agentes, presentados en orden creciente de inteligencia:
 
 1. Reflejo simple.
 
@@ -35,8 +35,7 @@ A cada percepción se le asocia una acción a efectuar. El conocimiento se repre
 A cada situación del entorno se le asocia una acción. Al igual que el de reflejo simple, el conocimiento se representa mediante una tabla, pero esta tendrá más campos cubriendo las situaciones posibles.
 
 $$
-\text{situación del entorno} = f(\text{percepciones }, \text{datos anteriores}) \\[10 pt]
-
+\text{situación del entorno} = f(\text{percepciones}, \text{datos anteriores}) \\[10 pt]
 \text{acción} = g(\text{situación del entorno})
 $$
 
@@ -56,13 +55,13 @@ Este agente no tiene en cuenta el costo de la solución (si es que encuentra una
 
 > Entiéndase costo como la puntuación de una solución.
 
-En caso de empate, el agente utiliza el **modelo**. En el caso de búsqueda se escoge el camino que no haya sido explorado.
+En caso de empate, el agente utiliza el modelo. En el caso de búsqueda se escoge el camino que no haya sido explorado.
 
 ##### Ejemplo (agente basado en metas)
 
-Tenemos un ratón que está en un laberinto y quiere comerse el queso.
+Hay un ratón que está en un laberinto y quiere comerse el queso.
 
-Podemos usar la "distancia en $L$" para modelar el efecto de las situaciones. La distancia en $L$ para cualquier un punto $(x,y)$ corresponderá a lo siguiente:
+Se puede usar la "distancia en $L$" para modelar el efecto de las situaciones. La distancia en $L$ para un punto cualquiera $(x,y)$ corresponderá a lo siguiente:
 
 $$
 L(x, y) = | Q_x - x | + | Q_y - y |
@@ -74,15 +73,15 @@ Esta distancia puede verse como la suma de la longitud de los catetos del trián
 
 #### Agente basado en utilidad
 
-A diferencia del agente basado en metas, este agente encuentra la solución óptima según el costo en vez de una solución que simplemente consiga alcanzar la meta o estado ideal. Se define un **valor de utilidad** para cada estado.
+A diferencia del agente basado en metas, este agente encuentra la solución óptima según el costo en vez de una solución que simplemente consiga alcanzar la meta o estado ideal. Se define un valor de utilidad para cada estado.
 
 ## Propiedades de los ambientes
 
-- Accesibilidad: si los sensores de un agente pueden tener acceso al **estado total** de un ambiente, se dice que este es accesible.
+- Accesibilidad: si los sensores de un agente pueden tener acceso al estado total de un ambiente, se dice que este es accesible.
 
-- Determinismo: si el estado siguiente de un ambiente se determina mediante el **estado actual** y la **acción escogida**, se dice que el ambiente es determinista.
+- Determinismo: si el estado siguiente de un ambiente se determina mediante el estado actual y la acción escogida, se dice que el ambiente es determinista.
 
-- Episodicidad: si la calidad de la actuación de un agente **no** depende de episodios anteriores, décimos que es episódico.
+- Episodicidad: si la calidad de la actuación de un agente no depende de episodios anteriores, se dice que es episódico.
 
 - Estáticos y dinámicos: si existe la posibilidad de que el ambiente sufra modificaciones mientras el agente se encuentra deliberando, se dice que se comporta en forma dinámica o es dinámico.
 

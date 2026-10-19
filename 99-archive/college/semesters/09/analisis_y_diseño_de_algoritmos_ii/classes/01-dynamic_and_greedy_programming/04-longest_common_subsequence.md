@@ -45,7 +45,7 @@ $$
 
 ## Paso 3
 
-De forma similar al [[01-areas/systems_engineering/problems/knapsack|problema de la mochila]] podemos calcular la solución de dos formas:
+De forma similar al [[01-areas/systems_engineering/problems/knapsack|problema de la mochila]], la solución se puede calcular de dos formas:
 
 1. Bottom-up.
 
@@ -53,7 +53,7 @@ De forma similar al [[01-areas/systems_engineering/problems/knapsack|problema de
 
 ## Paso 4
 
-Mientras construimos la matriz del paso 3, también podemos llenar una matriz de **direcciones** ($B$).
+Mientras se construye la matriz del paso 3, también se puede llenar una matriz de direcciones ($B$).
 
 $$
 \begin{align}
@@ -69,4 +69,4 @@ $$
 
 ## Complejidad
 
-El costo temporal es la suma del costo de calcular el valor de la solución más el costo de calcular la solución $\theta(n * m) + O(n + m) = \theta(n * m)$ y el costo temporal es $\theta(n * m)$.
+El costo temporal es la suma del costo de calcular el valor de la solución más el costo de calcular la solución $\theta(n * m) + O(n + m) = \theta(n * m)$ y el costo espacial es $\theta(n * m)$.

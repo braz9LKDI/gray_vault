@@ -2,17 +2,17 @@
 
 ## Innovación
 
-- Desarrollo de nuevos **productos/servicios**, **métodos de producción**, **mercados**, **fuentes de aprovisionamiento** y **formas organizacionales** (Schumper, 1934).
+- Desarrollo de nuevos productos/servicios, métodos de producción, mercados, fuentes de aprovisionamiento y formas organizacionales (Schumpeter, 1934).
 
-- Realización de **ideas originales** que crean nuevos productos, características, modelos de negocio o procesos, **generando valor para el cliente** (Schmuck & Benke, 2020, p. 1259).
+- Realización de ideas originales que crean nuevos productos, características, modelos de negocio o procesos, generando valor para el cliente (Schmuck & Benke, 2020, p. 1259).
 
-- Proceso de creación, mejora y puesta en el mercado de nuevos **productos/servicios/procesos** (Thornhill, 2006).
+- Proceso de creación, mejora y puesta en el mercado de nuevos productos/servicios/procesos (Thornhill, 2006).
 
 ### Perspectiva psicológica
 
-La innovación puede manifestarse en un individuo o equipo de trabajo a partir del pensamiento creador, como la capacidad para establecer nuevas relaciones entre hechos o para integrarlos de una manera diferente a la habitual, original e innovadora. La innovación está relacionada con la creatividad, que implica elaborar algo nuevo, distinto y de cierto valor, a partir de las experiencias y conocimientos que posee un individuo (Vallejo-Nágera, 2002)
+La innovación puede manifestarse en un individuo o equipo de trabajo a partir del pensamiento creador, como la capacidad para establecer nuevas relaciones entre hechos o para integrarlos de una manera diferente a la habitual, original e innovadora. La innovación está relacionada con la creatividad, que implica elaborar algo nuevo, distinto y de cierto valor, a partir de las experiencias y conocimientos que posee un individuo (Vallejo-Nágera, 2002).
 
-La creatividad consiste en **pensar** nuevas ideas, mientras que la innovación implica **implementarlas** para crear valor.
+La creatividad consiste en pensar nuevas ideas, mientras que la innovación implica implementarlas para crear valor.
 
 ## Niveles o grados de innovación
 
@@ -22,7 +22,7 @@ La creatividad consiste en **pensar** nuevas ideas, mientras que la innovación 
 |      Radical.       | Cambios significativos sobre lo que ya existe.                                     |
 |  Transformacional.  | Cambios que transforman completamente lo que ya existe.                            |
 
-## ¿Dónde Innovar?
+## ¿Dónde innovar?
 
 ### Servicios
 
@@ -44,7 +44,7 @@ $$
 
 ## Design thinking
 
-Es un proceso creativo de resolución de problemas enfocado en comprender las necesidades de los demás, iterar rápidamente y revelar el potencial creativo interno (Stanford's d. school).
+Es un proceso creativo de resolución de problemas enfocado en comprender las necesidades de los demás, iterar rápidamente y revelar el potencial creativo interno (d.school de Stanford).
 
 ### Atributos clave
 
@@ -62,7 +62,7 @@ Es un proceso creativo de resolución de problemas enfocado en comprender las ne
 
 - Predisposición hacia la acción.
 
-### ¿Cómo Abordarlo?
+### ¿Cómo abordarlo?
 
 1. Defina el problema.
 
@@ -72,13 +72,13 @@ Es un proceso creativo de resolución de problemas enfocado en comprender las ne
 
     Reunir ideas de múltiples disciplinas en un entorno libre de juicios proporcionará una gama más amplia de ideas.
 
-3. Refina y mejora las ideas seleccionadas.
+3. Refine y mejore las ideas seleccionadas.
 
     Es posible que haya que repetir esta etapa muchas veces hasta que aparezca la idea correcta.
 
-4. Elige la mejor solución y ejecuta.
+4. Elija la mejor solución y ejecútela.
 
-    Compromete recursos para que la idea seleccionada sea exitosa.
+    Comprometa recursos para que la idea seleccionada sea exitosa.
 
 ### Etapas
 
@@ -144,7 +144,7 @@ Para lograrlo se usan herramientas como:
 
 - Story board.
 
-- Paper protoype.
+- Paper prototype.
 
 #### Etapa 5 (comprobar y seleccionar)
 

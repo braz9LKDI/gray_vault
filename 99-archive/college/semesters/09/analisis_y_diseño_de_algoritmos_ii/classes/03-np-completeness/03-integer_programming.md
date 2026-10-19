@@ -6,15 +6,15 @@ Es un tipo de optimización o problema de decisión.
 
 Una instancia de IP implica:
 
-- Un conjunto de **variables enteras**.
+- Un conjunto de variables enteras.
 
-- Una colección de **inecuaciones lineales** sobre las variables.
+- Una colección de inecuaciones lineales sobre las variables.
 
-- Una **función objetivo** $f(v)$ a maximizar.
+- Una función objetivo $f(v)$ a maximizar.
 
 - Un valor entero objetivo $B$.
 
-El problema de decisión corresponde a hallar la asignación de valores enteros a las variables tal que se satisfagan todas las desigualdades y $f(v) \geq B$.
+El problema de decisión corresponde a determinar si existe una asignación de valores enteros a las variables tal que se satisfagan todas las desigualdades y $f(v) \geq B$.
 
 ## $\text{IP} \in \mathrm{NP}$
 
@@ -32,11 +32,11 @@ Cada variable booleana $x$ en el problema 3-SAT está representada por dos varia
 
 ### Simulación de cláusulas
 
-Cada cláusula $C_i = (l_{ i1 } \por l_{ i2 } \por l_{ i3 })$, se convierte en una única desigualdad lineal $l_1 + l_2 + l_3 \geq 1$. Esta desigualdad solo se satisface si al menos uno de los literales se le asigna el valor de 1 (verdadero), imitando perfectamente el comportamiento de un OR lógico.
+Cada cláusula $C_i = (l_{ i1 } \por l_{ i2 } \por l_{ i3 })$ se convierte en una única desigualdad lineal $l_{ i1 } + l_{ i2 } + l_{ i3 } \geq 1$. Esta desigualdad solo se satisface si a al menos uno de los literales se le asigna el valor 1 (verdadero), imitando perfectamente el comportamiento de un OR lógico.
 
-### Función objetiva
+### Función objetivo
 
-Dado que solo nos importa si existe una asignación satisfactoria (no encontrar un valor óptimo), la función objetivo puede ser una trivial que siempre se satisface, como $f(v) = v$ con un objetivo $B = 0$.
+Dado que solo importa si existe una asignación satisfactoria (no encontrar un valor óptimo), la función objetivo puede ser una trivial que siempre se satisface, como $f(v) = v$ con un objetivo $B = 0$.
 
 > $v$ es cualquier variable.
 

@@ -2,13 +2,13 @@
 
 ## Estrategia de precios
 
-El precio debe basarse en el **valor**, no en el costo.
+El precio debe basarse en el valor, no en el costo.
 
-- **No** se debe competir solo por un precio (las guerras de precios devalúan tu marca).
+- No se debe competir solo por un precio (las guerras de precios devalúan la marca).
 
-- **No** se debe sumar solo un margen al costo, pues se podrían perder ganancias potenciales.
+- No se debe sumar solo un margen al costo, pues se podrían perder ganancias potenciales.
 
-    > Todo depende de cuánto el cliente esté **dispuesto** a pagar.
+    > Todo depende de cuánto el cliente esté dispuesto a pagar.
 
 ### Modelos de ingresos
 
@@ -22,17 +22,17 @@ El precio debe basarse en el **valor**, no en el costo.
 
 ### Tácticas de precios
 
-- Fijos: mismo precio para todos (o descuentos por volumen).
+- Fijo: mismo precio para todos (o descuentos por volumen).
 
 - Dinámico: cambia según el mercado/tiempo.
 
 ### Estrategia de costos
 
-La estructura de costos debe coincidir con la propuesta de **valor**:
+La estructura de costos debe coincidir con la propuesta de valor:
 
-- Impulsada por **costo**: enfoque en **eficiencia** y **precios bajos**.
+- Impulsada por costo: enfoque en eficiencia y precios bajos.
 
-- Impulsado por **valor**: enfoque en **lujo** y **experiencia**.
+- Impulsada por valor: enfoque en lujo y experiencia.
 
 ## Métricas estratégicas
 
@@ -48,11 +48,11 @@ La estructura de costos debe coincidir con la propuesta de **valor**:
 
 ### Embudo (conversion funnel)
 
-1. Adquisición: ¿cómo te encuentran?
+1. Adquisición: ¿cómo encuentran el producto?
 
 2. Activación: su primera experiencia positiva.
 
-    > **Percibe el valor real** del producto por primera vez.
+    > Percibe el valor real del producto por primera vez.
 
 3. Retención: ¿vuelven?
 

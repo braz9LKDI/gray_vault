@@ -4,12 +4,12 @@ The abstract provides a concise, self-contained summary of the entire thesis. It
 
 An effective abstract must address the following key components, synthesizing information from the completed chapters of the thesis:
 
-1. What is the problem? (motivation): establish the research context and clearly articulating the specific problem or gap that the project addresses.
+1. What is the problem? (motivation): establish the research context and clearly articulate the specific problem or gap that the project addresses.
 
-2. What was the main goal? (objective): this corresponds directly to the "Objetivo General" detailed in the [[99-archive/college/semesters/10/seminario_de_trabajo_de_grado/05-objectives|objetives chapter]].
+2. What was the main goal? (objective): this corresponds directly to the "Objetivo General" detailed in the [[99-archive/college/semesters/10/seminario_de_trabajo_de_grado/05-objectives|objectives chapter]].
 
-3. How it was done? (methodology): a brief description of the methodology employed to achieve the objective is required. This section should summarize the core approach, techniques, and technologies discussed in the [[99-archive/college/semesters/10/seminario_de_trabajo_de_grado/08-methodology|methodology chapter]].
+3. How was it done? (methodology): a brief description of the methodology employed to achieve the objective is required. This section should summarize the core approach, techniques and technologies discussed in the [[99-archive/college/semesters/10/seminario_de_trabajo_de_grado/08-methodology|methodology chapter]].
 
-4. What was achieved? (result): the most significant results, findings, or products developed during the project should be summarized. This highlights the primary outcomes detailed in the [[99-archive/college/semesters/10/seminario_de_trabajo_de_grado/09-project_development_and_implementation|project development and implementation chapter]].
+4. What was achieved? (result): the most significant results, findings or products developed during the project should be summarized. This highlights the primary outcomes detailed in the [[99-archive/college/semesters/10/seminario_de_trabajo_de_grado/09-project_development_and_implementation|project development and implementation chapter]].
 
 5. What is the significance? (conclusion and impact): the abstract concludes by stating the main conclusions of the work and emphasizing its overall significance or contribution to the field.

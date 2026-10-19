@@ -78,6 +78,8 @@ When a folder gets new notes, its folder note gets a line for each of them. A fo
 
 2. Leave its links as they are. Obsidian keeps them working, and the archive is excluded from the views of `notes.base`.
 
+3. Keep it in the review tracker. The style check and the review cover the archive too, so a reviewed note stays `done` after the move.
+
 ## Commit changes
 
 1. `npm run fix`: formats every note and fixes what markdownlint can fix.

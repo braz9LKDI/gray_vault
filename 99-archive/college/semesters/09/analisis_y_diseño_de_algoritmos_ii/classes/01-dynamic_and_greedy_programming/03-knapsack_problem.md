@@ -12,7 +12,7 @@ Sea $\langle y_1,y_2,\dots,y_n \rangle$ una secuencia óptima para $\langle x_1,
 
 ## Relación de recurrencia
 
-Sea $g_j(m)$ el valor de la solución óptima de $\operatorname{knapsack}(1,j,m)$, por la subestructura óptima, se puede decir que:
+Sea $g_j(m)$ el valor de la solución óptima de $\operatorname{knapsack}(1,j,m)$; por la subestructura óptima, se tiene que:
 
 $$
 g_j(m) = \begin{cases}
@@ -31,7 +31,7 @@ Esta relación significa escoger la mejor de dos opciones (con el operador $\max
 
 ## Construyendo la matriz `BMAX`
 
-Sea la matriz `B[M, N]` una Matrix y `B[i, j]` contenga el beneficio máximo que se puede obtener si la capacidad de la mochila es de `i` y se cuenta con los primeros `j` elementos.
+Sea `B[M, N]` una matriz en la que `B[i, j]` contiene el beneficio máximo que se puede obtener si la capacidad de la mochila es de `i` y se cuenta con los primeros `j` elementos.
 
 $$
 \operatorname{BMAX}(i,1) =
@@ -54,12 +54,12 @@ con el caso base $\operatorname{BMAX}(0,j) = 0$.
 
 1. Empezar en $(m,n)$ y devolverse.
 
-2. Si llegamos a $\operatorname{BMAX}(i,1)$ significa que hemos llegado al primer ítem y su pertenencia a la solución depende de si $\operatorname{BMAX}(i,1) \neq 0$. Aquí el algoritmo termina.
+2. Al llegar a $\operatorname{BMAX}(i,1)$, se ha llegado al primer ítem y su pertenencia a la solución depende de si $\operatorname{BMAX}(i,1) \neq 0$. Aquí el algoritmo termina.
 
-3. Si $\operatorname{BMAX}(i,j) = \operatorname{BMAX}(i,j - 1)$, entonces el ítem $j$ **no** fue incluido. Se repite el paso 1 con $j - 1$ ($\operatorname{BMAX}(i,j - 1)$).
+3. Si $\operatorname{BMAX}(i,j) = \operatorname{BMAX}(i,j - 1)$, entonces el ítem $j$ no fue incluido. Se repite el paso 1 con $j - 1$ ($\operatorname{BMAX}(i,j - 1)$).
 
 4. En caso contrario, el ítem $j$ fue incluido. Se repite el paso 1 con $i - w_j$ y $j - 1$ ($\operatorname{BMAX}(i - w_j,j - 1)$).
 
 ## Complejidad
 
-Tanto con un enfoque top-down o bottom-up, la complejidad temporal y espacial es $O(n \times x)$, la cantidad de subproblemas que salen de $\operatorname{knapsack}(1,l,p)$ es $n \times x$ y los guardamos en una matriz del mismo tamaño.
+Tanto con un enfoque top-down como bottom-up, la complejidad temporal y espacial es $O(n \times m)$: la cantidad de subproblemas que salen de $\operatorname{knapsack}(1,n,m)$ es $n \times m$ y se guardan en una matriz del mismo tamaño.

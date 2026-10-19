@@ -1,4 +1,4 @@
-# Newton Raphson method
+# Newton-Raphson method
 
 ## Ecuación lineal
 
@@ -18,7 +18,7 @@ $$
 f : \mathbb{ R } \rightarrow \mathbb{ R } \quad x \rightarrow f(x) = 0
 $$
 
-Sea $r$ un cero de $f$ y sea $x$ un valor aproximado a $r$. Si $f''$ existe, es continua y además es diferente de cero; entonces
+Sea $r$ un cero de $f$ y sea $x$ un valor aproximado a $r$. Si $f''$ existe y es continua, y además ${ f' }(r) \neq 0$, entonces
 
 $$
 \begin{align}
@@ -39,7 +39,7 @@ $$
 x_{ n + 1 } = x_n - \frac{ f(x_n) }{ { f' }(x_n) } \quad (2)
 $$
 
-Tenemos que el error para un $x_n$ es
+El error para un $x_n$ es
 
 $$
 \begin{align}
@@ -53,7 +53,7 @@ Reemplazando $(2)$ en $(4)$.
 $$
 \begin{align}
     & e_{ n + 1 } = x_n - \frac{ f(x_n) }{ { f' }(x_n) } - r \\
-    & = e_n - \frac{ f(x) }{ { f' }(x) } \\
+    & = e_n - \frac{ f(x_n) }{ { f' }(x_n) } \\
     & = \frac{ e_n { f' }(x_n) - f(x_n) }{ { f' }(x_n) } \quad (5)
 \end{align}
 $$
@@ -62,7 +62,7 @@ Despejando $r$ de $(3)$ y desarrollando la serie de Taylor alrededor de $x_n$.
 
 $$
 \begin{align}
-    & 0 = f(r)\\
+    & 0 = f(r) \\
     & = f(x_n - e_n) \\
     & = f(x_n) - e_n { f' }(x_n) + \frac{ 1 }{ 2 } { e_n }^2 { f'' }(\varepsilon_n)
 \end{align}
@@ -85,14 +85,14 @@ $$
 
 > Tanto ${ f'' }(\varepsilon_n)$ como ${ f' }(x_n)$ se consideran constantes porque son las funciones evaluadas en un punto en concreto.
 
-## Teorema para el método de Newton Rahpson
+## Teorema para el método de Newton-Raphson
 
-Si $f''$ es continua; $r$ es una raíz simple. $\exists$ un vecindario alrededor de $r$ y una contante $c$ $|$ si $x_0 \in$ vecindario de $r$, se satisface que
+Si $f''$ es continua; $r$ es una raíz simple. $\exists$ un vecindario alrededor de $r$ y una constante $c$ $|$ si $x_0 \in$ vecindario de $r$, se satisface que
 
 $$
-|\underbrace{ x_{ n + 1 } }_{ e_{ n + 1 } } - r| \leq c (\underbrace{ x_n - r }_{ e_{ n + 1 } })^2
+|\underbrace{ x_{ n + 1 } }_{ e_{ n + 1 } } - r| \leq c (\underbrace{ x_n - r }_{ e_n })^2
 $$
 
 ## Teorema para funciones convexas
 
-Si $f \in C^2(\mathbb{ R })$, es creciente, **convexa** y $r$ es simple (el cero es único). El método **converge** desde **cualquier** punto de inicio.
+Si $f \in C^2(\mathbb{ R })$, es creciente, convexa y $r$ es simple (el cero es único), el método converge desde cualquier punto de inicio.

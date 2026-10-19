@@ -35,7 +35,7 @@
     $$
     \begin{align}
         c_{ i,j } \left ( 1 + \frac{ p_i }{ n } \right ) * x \quad p_j > 0 \\
-        c_{ i,j } \left ( 1 + \frac{ p_i }{ n } \right ) * x + { ce }_j * x \quad p_j = 0 \\
+        c_{ i,j } \left ( 1 + \frac{ p_i }{ n } \right ) * x + { ce }_j * x \quad p_j = 0
     \end{align}
     $$
 
@@ -44,7 +44,7 @@
 The idea is to minimize extremism, which is calculated with the following formula:
 
 $$
-E(p^\prime,e) = \sum_{ i = 1 }^m { p^\prime } * e_i
+E(p^\prime,e) = \sum_{ i = 1 }^m { p^\prime }_i * e_i
 $$
 
 - $p^\prime$: vector with the distribution of people after applying the movements of $s$.

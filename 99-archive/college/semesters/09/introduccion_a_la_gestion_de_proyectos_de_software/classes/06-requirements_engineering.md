@@ -68,7 +68,7 @@ La validación de los requerimientos mediante prototipos es incluso el método m
 
 - Contenido: completitud, trazabilidad, exactitud, consistencia.
 
-- documentación: estructura clara, no ambigua.
+- Documentación: estructura clara, no ambigua.
 
 - Acuerdo: resolución de conflictos entre stakeholders.
 
@@ -78,25 +78,25 @@ La validación de los requerimientos mediante prototipos es incluso el método m
 
 Tipos de conflictos:
 
-- datos: interpretaciones de los requisitos.
+- Datos: interpretaciones de los requisitos.
 
-- intereses: objetivos; comparar los objetivos propuestos para detectar conflictos.
+- Intereses: objetivos; comparar los objetivos propuestos para detectar conflictos.
 
-- valor: diferencias en criterios de evaluación de requisitos.
+- Valor: diferencias en criterios de evaluación de requisitos.
 
-- relaciones: conflictos entre stakeholders.
+- Relaciones: conflictos entre stakeholders.
 
-- estructura: falta de claridad sobre los usuarios finales del sistema o sus roles.
+- Estructura: falta de claridad sobre los usuarios finales del sistema o sus roles.
 
 #### Documentar resolución de conflictos
 
-Documentar
+Documentar:
 
-- soluciones alcanzadas.
+- Soluciones alcanzadas.
 
-- principales argumentos.
+- Principales argumentos.
 
-- revisiones y aprobaciones.
+- Revisiones y aprobaciones.
 
 ## Gestión de requisitos
 
@@ -104,9 +104,9 @@ Es la forma en que los equipos de ingeniería planifican, realizan seguimiento, 
 
 ## Priorización
 
-### ¿Qué Debemos saber para priorizar?
+### ¿Qué se debe saber para priorizar?
 
-Durante cada actividad de IR la priorización se puede utilizar para determinar el orden de
+Durante cada actividad de ingeniería de requisitos (IR), la priorización se puede utilizar para determinar el orden de:
 
 - Elicitación: considerar las fuentes de requisitos más críticas o estratégicas para el proyecto.
 
@@ -136,15 +136,15 @@ Durante cada actividad de IR la priorización se puede utilizar para determinar 
 
 #### Ranking
 
-Se asigna un orden numérico único a cada requisito; el requisito más importante se posiciona en 1, el segundo en 2, y así sucesivamente. Generalmente, es aplicado por un **único** stakeholder o un **pequeño grupo**.
+Se asigna un orden numérico único a cada requisito; el requisito más importante se posiciona en 1, el segundo en 2, y así sucesivamente. Generalmente, es aplicado por un único stakeholder o un pequeño grupo.
 
-Requiere un esfuerzo **bajo**, es ideal tanto para escenarios con **muchos** o **pocos** requisitos con complejidad de priorización **baja**.
+Requiere un esfuerzo bajo y es ideal tanto para escenarios con muchos como con pocos requisitos con complejidad de priorización baja.
 
 #### Top ten
 
-Se selecciona un subconjunto de un grupo mayor de requisitos. Funciona de forma similar al Ranking, pero se concentra en identificar y acordar cuáles son los "top" requisitos sin asignarles un orden interno tan estricto.
+Se selecciona un subconjunto de un grupo mayor de requisitos. Funciona de forma similar al ranking, pero se concentra en identificar y acordar cuáles son los "top" requisitos sin asignarles un orden interno tan estricto.
 
-Requiere un esfuerzo **muy bajo**, es ideal tanto para escenarios con **muchos** o **pocos** requisitos con complejidad de priorización **baja**.
+Requiere un esfuerzo muy bajo y es ideal tanto para escenarios con muchos como con pocos requisitos con complejidad de priorización baja.
 
 #### Un criterio de clasificación
 
@@ -156,9 +156,9 @@ Se agrupan los requisitos en categorías basadas en su importancia y necesidad. 
 
 - Opcionales: aquellos que pueden añadirse si los recursos y el tiempo lo permiten.
 
-Requiere un esfuerzo **bajo** y es ideal cuando el número de requisitos y la complejidad de priorización es **baja**.
+Requiere un esfuerzo bajo y es ideal cuando el número de requisitos y la complejidad de priorización son bajos.
 
-#### Clasificación KANO
+#### Clasificación Kano
 
 La metodología Kano clasifica los requisitos en tres categorías principales:
 
@@ -168,16 +168,16 @@ La metodología Kano clasifica los requisitos en tres categorías principales:
 
 - Deleite: elementos que sorprenden y deleitan a los usuarios, aunque no se esperan.
 
-Requiere un esfuerzo **bajo** y es ideal cuando el número de requisitos es **bajo** y la complejidad de priorización es **alta**.
+Requiere un esfuerzo bajo y es ideal cuando el número de requisitos es bajo y la complejidad de priorización es alta.
 
 #### Matriz de priorización de Wiegers
 
 Se utiliza una matriz que asigna pesos a diferentes factores como beneficios, penalidades, costo y riesgo para cada requisito. Ofrece una manera cuantitativa de comparar requisitos, permitiendo calcular una "puntuación" final para cada uno.
 
-Requiere un esfuerzo **medio** y es ideal cuando el número de requisitos es **bajo** y la complejidad de priorización es **alta**.
+Requiere un esfuerzo medio y es ideal cuando el número de requisitos es bajo y la complejidad de priorización es alta.
 
-#### Costo beneficio
+#### Costo-beneficio
 
 Se evalúa cada requisito en términos de su valor (beneficio) en relación con el costo para implementarlo. Permite determinar cuáles requisitos aportan mayor valor por el menor costo, ayudando a optimizar la inversión de recursos.
 
-Requiere un esfuerzo **alto** y es ideal cuando el número de requisitos es **bajo** y la complejidad de priorización es **alta**.
+Requiere un esfuerzo alto y es ideal cuando el número de requisitos es bajo y la complejidad de priorización es alta.

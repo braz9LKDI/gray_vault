@@ -86,8 +86,8 @@
 
 |  code   |                   subject                    | credits | grade |
 | :-----: | :------------------------------------------: | :-----: | :---: |
-| 750020C |      Análisis y diseño de algoritmos ii      |    3    |  4.9  |
+| 750020C |      Análisis y diseño de algoritmos II      |    3    |  4.9  |
 | 750024C |                Ciberseguridad                |    3    |  4.6  |
 | 750031C | Introducción a la gestión proyectos software |    3    |  4.2  |
-| 750037C |            Proyecto integrador ii            |    4    |  4.9  |
+| 750037C |            Proyecto integrador II            |    4    |  4.9  |
 | 750040C |    Diseño contenido interfaces de usuario    |    3    |  4.6  |

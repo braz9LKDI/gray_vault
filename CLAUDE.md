@@ -32,9 +32,9 @@ A change to how the vault works updates the matching page in `docs/` in the same
 
 - The structure is applied: paths are lowercase in Git and on disk, filenames are unique outside `99-archive` and every note in `01-areas` and `02-resources` has `type` and `status`. The docs in `docs/` describe it.
 
-- `npm run lint:style` and Prettier pass. markdownlint reports 19 errors, all in `aprende_docker_ahora.md`, `scribbles.md`, the Kanban boards and `journal/`.
+- `npm run lint:style` passes for the whole vault, the archive included. markdownlint reports errors only in `aprende_docker_ahora.md`, `scribbles.md`, the Kanban boards and `journal/`; Prettier also flags `course_board.md`, which the Kanban plugin rewrote.
 
-- The style review is done for every note except `aprende_docker_ahora.md` and `scribbles.md`, which I review myself.
+- The style review is done for every note except `aprende_docker_ahora.md` and `scribbles.md`, which I review myself. The archive was reviewed in full: its slips were fixed, and its reasoning errors are listed under Archive in `00-inbox/content_issues.md` for me to rewrite.
 
 - Four notes wait in `00-inbox/` for me to place them. `journal/` still has `reviewed_on`, because it is not in Git.
 

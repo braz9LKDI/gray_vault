@@ -4,7 +4,7 @@ Es una disciplina de la inteligencia artificial que a través de algoritmos le d
 
 > Patrones potencialmente útiles y no obvios.
 
-```MERMAID
+```mermaid
 flowchart TB
     data(datos) -- selección ---> target_data(datos objetivos)
 
@@ -21,30 +21,29 @@ flowchart TB
 
 ### Clustering
 
-**Divide un conjunto de datos en grupos**
-de tal forma que los elementos en un grupo sean similares y los elementos en grupos diferentes tengan la menor similitud posible.
+Divide un conjunto de datos en grupos de tal forma que los elementos en un grupo sean similares y los elementos en grupos diferentes tengan la menor similitud posible.
 
 ### Clasificación
 
-Técnica que permite obtener modelos predictivos dado un conjunto de entrenamiento que se caracteriza por tener unas **variables independientes** y una **variable dependiente** o **etiqueta de clase**.
+Técnica que permite obtener modelos predictivos dado un conjunto de entrenamiento que se caracteriza por tener unas variables independientes y una variable dependiente o etiqueta de clase.
 
 ### Reglas de asociación
 
-Dado un conjunto de registros, encontrar reglas que **predecirán la ocurrencia** de un ítem, basándose en las ocurrencias de los otros ítems en el registro.
+Dado un conjunto de registros, encontrar reglas que predecirán la ocurrencia de un ítem, basándose en las ocurrencias de los otros ítems en el registro.
 
 ### Patrones de secuencia
 
-Dado un conjunto de objetos, cada uno asociado con su propia línea de tiempo (eventos), encuentra reglas que predicen dependencias fuertes entre diferentes eventos.
+Dado un conjunto de objetos, cada uno asociado con su propia línea de tiempo (eventos), encontrar reglas que predigan dependencias fuertes entre diferentes eventos.
 
 ## Redes neuronales
 
-Las redes neuronales artificiales son una técnica inspirada en el sistema nervioso humano que permite obtener **modelos predictivos**.
+Las redes neuronales artificiales son una técnica inspirada en el sistema nervioso humano que permite obtener modelos predictivos.
 
 ### Características (redes neuronales)
 
 - Aprendizaje adaptativo: aprender mediante un proceso de entrenamiento.
 
-- Capacidad de generalización: predecir correctamente casos de prueba que son muy diferentes a los de entrenamiento.
+- Capacidad de generalización: predecir correctamente casos que no se vieron durante el entrenamiento.
 
 ### Estructura de una neurona
 
@@ -54,18 +53,18 @@ $$
 U = \sum_{ i = 1 }^n { x_i w_{ iu } }
 $$
 
-> Donde $U$ corresponde a la entrada enta de la neurona.
+> Donde $U$ corresponde a la entrada neta de la neurona.
 
 A la entrada neta se le aplica una función de activación ($y_u = f(U)$) para conocer la salida de la neurona.
 
 ### Funciones de activación
 
-#### ReLu (Rectifies Lineal Unit)
+#### ReLU (rectified linear unit)
 
 Aplica una transformación no lineal muy simple, activa la neurona solo si la entrada está por encima de cero.
 
 $$
-\operatorname{ ReLu }(x) = \operator{ max }(x,0)
+\operatorname{ ReLU }(x) = \max(x,0)
 $$
 
 #### Sigmoide
@@ -74,7 +73,7 @@ Transforma valores en el rango de $(-\infty,\infty)$ a valores en el rango $(0,1
 
 ### Red perceptrón
 
-Son redes neuronales que solo tienen **capa de entrada** y **capa de salida**, es decir, no tienen capas intermedias u ocultas. Es capaz de representar una función solo si existe una línea que separe los patrones de dos clases dadas.
+Son redes neuronales que solo tienen capa de entrada y capa de salida, es decir, no tienen capas intermedias u ocultas. Es capaz de representar una función solo si existe una línea que separe los patrones de dos clases dadas.
 
 ![perceptron network condition examples](../../assets/07/Inteligencia_artificial/07_01-perceptron_network_condition_examples.jpg)
 
@@ -90,7 +89,7 @@ Las redes neuronales solo manejan entradas y salidas de tipo numérico. Si los d
 
 Se reemplaza un atributo categórico por un número según los valores que puede tomar dicha variable.
 
-#### One hot encoding
+#### One-hot encoding
 
 Se crea una columna para cada valor distinto que exista en un atributo categórico.
 
@@ -102,7 +101,7 @@ La normalización de los datos se hace con el fin de asegurar una comparabilidad
 
 Es una técnica utilizada para evaluar los resultados de un modelo predictivo y garantizar que sean independientes de la partición entre datos de entrenamiento y de prueba.
 
-#### Aplicacion (cross-validation)
+#### Aplicación (cross-validation)
 
 1. División de datos: el conjunto de datos se divide en $k$ partes (o folds) de aproximadamente el mismo tamaño.
 
@@ -134,13 +133,13 @@ $$
     & \text{negative (0)} & \text{positive (1)} \\
     \hline
     \text{negative (0)} & \text{TN (true negative)} & \text{FP (false positive)} \\
-    \text{positive (1)} & \text{FN (false negative)} & \text{TP (true positive)} \\
+    \text{positive (1)} & \text{FN (false negative)} & \text{TP (true positive)}
 \end{array}
 $$
 
-### Precisión
+### Exactitud
 
-La precisión o **accuracy** indica la cantidad correcta de predicciones (positivas o negativas) sobre el total de datos.
+La exactitud (accuracy) indica la cantidad correcta de predicciones (positivas o negativas) sobre el total de datos.
 
 $$
 \text{accuracy} = \frac{ \text{TP} + \text{TN} }{ \text{TP} + \text{TN} + \text{FP} + \text{FN} }

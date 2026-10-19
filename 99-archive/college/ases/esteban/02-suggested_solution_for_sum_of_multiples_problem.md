@@ -22,7 +22,7 @@ The suggested solution is:
     var unique_multiples: Vector[Int] = Vector()
     ```
 
-4. Iterate over `all_multiples` and add elements, only if it has been checked that that element is not already in `unique_multiples`.
+4. Iterate over `all_multiples` and add each element only if it is not already in `unique_multiples`.
 
     ```scala
     for (multiples <- all_multiples)

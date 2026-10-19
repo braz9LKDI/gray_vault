@@ -2,7 +2,7 @@
 
 ## 1
 
-Encuentre los valores de la constante $k$, para que la gráfica de la función $f(x) = \frac{ (k^2 - 3 k - 1) x + 7 }{ k + 2 }$ sea una recta
+Encuentre los valores de la constante $k$, para que la gráfica de la función $f(x) = \frac{ (k^2 - 3 k - 1) x + 7 }{ k + 2 }$ sea una recta:
 
 $$
 f(x) = \frac{ k^2 - 3 k - 1 }{ k + 2 } x + \frac{ 7 }{ k + 2 } \quad m = \frac{ k^2 - 3 k - 1 }{ k + 2 }
@@ -46,7 +46,7 @@ $$
 
 Halle dos funciones lineales cuyas gráficas se interceptan perpendicularmente en el punto $P(-3,2)$, tal que una de ellas pase por el punto $Q(1,1)$.
 
-Con dos puntos podemos hallar la pendiente de la función que pasa por $P$ y $Q$.
+Con dos puntos se puede hallar la pendiente de la función que pasa por $P$ y $Q$.
 
 $$
 m = \frac{ 1 - 2 }{ 1 + 3 } = -\frac{ 1 }{ 4 }
@@ -62,7 +62,7 @@ $$
 \end{align}
 $$
 
-Para que la otra función sea se intercepte perpendicularmente con la que se halló anteriormente, se tiene que cumplir lo siguiente:
+Para que la otra función se intercepte perpendicularmente con la que se halló anteriormente, se tiene que cumplir lo siguiente:
 
 $$
 m = 4
@@ -99,14 +99,14 @@ Para resolver esto, se va a hacer uso de la [[01-areas/math/functions/vertex_for
 
     $$
     \begin{align}
-        & a \left (1 - \frac{ 1 }{ 2 } \right )^2 - 5 = 0 \\
-        & \frac{ 1 }{ 4 } a = 5 \\
-        & a = 20
+        & a \left (1 - \frac{ 1 }{ 2 } \right )^2 + 5 = 0 \\
+        & \frac{ 1 }{ 4 } a = -5 \\
+        & a = -20
     \end{align}
     $$
 
     $$
-    f(x) = 20 \left (x - \frac{ 1 }{ 2 } \right )^2 - 5
+    f(x) = -20 \left (x - \frac{ 1 }{ 2 } \right )^2 + 5
     $$
 
 3. intercepte al eje $x$ en $x = -5$ y $x = 3$, y su valor mínimo es $-4$.
@@ -148,12 +148,12 @@ Para resolver esto, se va a hacer uso de la [[01-areas/math/functions/vertex_for
     \begin{align}
         & a = \frac{ 4 }{ 9 + 6 h + h^2 } \\
         & = \frac{ 4 }{ 16 } \\
-        & \frac{ 1 }{ 4 }
+        & = \frac{ 1 }{ 4 }
     \end{align}
     $$
 
     $$
-    f(x) = \frac{ 1 }{ 4 } (x - 1) - 4
+    f(x) = \frac{ 1 }{ 4 } (x + 1)^2 - 4
     $$
 
 ## 4
@@ -185,9 +185,9 @@ $$
 
 Un turista desea alquilar un automóvil por un día. Dos empresas le ofrecen lo siguiente:
 
-- La empresa $A$ le cobra $\$50,000$ por día y $\$1,600$ por kilómetro recorrido.
+- La empresa $A$ le cobra \$50,000 por día y \$1,600 por kilómetro recorrido.
 
-- La empresa $B$ le cobra $\$60,000$ por día y $\$1,200$ por kilómetro recorrido.
+- La empresa $B$ le cobra \$60,000 por día y \$1,200 por kilómetro recorrido.
 
 $$
 A_\text{cost} = 50,000 t + 1,600 x \quad B_\text{cost} = 60,000 t + 1,200 x
@@ -197,7 +197,7 @@ $t$ es el tiempo en días y $x$ es la distancia en kilómetros.
 
 1. Si el turista desea recorrer 71 kilómetros, ¿qué empresa le convendría más?
 
-    Suponiendo que dicha distancia se recorre en un dia.
+    Suponiendo que dicha distancia se recorre en un día.
 
     $$
     \begin{align}
@@ -206,29 +206,29 @@ $t$ es el tiempo en días y $x$ es la distancia en kilómetros.
     \end{align}
     $$
 
-    Le conviene mas la empresa $B$.
+    Le conviene más la empresa $B$.
 
 2. Si el turista desea recorrer 20 kilómetros, ¿qué empresa le convendría más?
 
-    Suponiendo que dicha distancia se recorre en un dia.
+    Suponiendo que dicha distancia se recorre en un día.
 
     $$
     \begin{align}
         & A_\text{cost} = 50,000 + 1,600 (20) = 82,000 \\
-        & B_\text{cost} = 60,000 + 1,200 (71) = 84,000
+        & B_\text{cost} = 60,000 + 1,200 (20) = 84,000
     \end{align}
     $$
 
-    Le conviene mas la empresa $A$.
+    Le conviene más la empresa $A$.
 
 3. ¿Cuál es el kilometraje recorrido para el cual es indiferente contratar una empresa o la otra?
 
-    Suponiendo que dicha distancia se recorre en un dia.
+    Suponiendo que dicha distancia se recorre en un día.
 
     $$
     \begin{align}
         & A_\text{cost} = B_\text{cost} \\
-        &  50,000 + 1,600 x = 60,000 + 1,200 x \\
+        & 50,000 + 1,600 x = 60,000 + 1,200 x \\
         & 400 x = 10,000 \\
         & x = \frac{ 10,000 }{ 400 } \\
         & x = 25
@@ -237,9 +237,9 @@ $t$ es el tiempo en días y $x$ es la distancia en kilómetros.
 
 ## 6
 
-Se dispone de $2,000$ dólares para cercar un terreno rectangular, usando la orilla de un río como uno de sus lados. Si el costo por metro lineal de cerca del lado perpendicular al río, es 20 dólares y del lado opuesto es 35 dólares, halle las dimensiones del corral que maximizan su área.
+Se dispone de 2,000 dólares para cercar un terreno rectangular, usando la orilla de un río como uno de sus lados. Si el costo por metro lineal de cerca del lado perpendicular al río, es 20 dólares y del lado opuesto es 35 dólares, halle las dimensiones del corral que maximizan su área.
 
-La ecuación que modela el area y el coste son las siguientes:
+Las ecuaciones que modelan el área y el costo son las siguientes:
 
 $$
 A = x y \quad \text{cost} = 35 x + 20 (2 y)
@@ -248,19 +248,19 @@ $$
 $$
 \begin{align}
     & 2,000 = 35 x + 40 y \\
-    & y = \frac{ 2,000 - 35 x } { 40 } \\
-    & x = 50 - \frac{ 7 }{ 8 } y
+    & y = \frac{ 2,000 - 35 x }{ 40 } \\
+    & y = 50 - \frac{ 7 }{ 8 } x
 \end{align}
 $$
 
 $$
 \begin{align}
-    & A = \left (50 - \frac{ 7 }{ 8 } y \right ) y \\
-    & = -y^2 \frac{ 7 }{ 8 } + 50 y
+    & A = x \left (50 - \frac{ 7 }{ 8 } x \right ) \\
+    & = -\frac{ 7 }{ 8 } x^2 + 50 x
 \end{align}
 $$
 
-Sabemos que el punto máximo de la ecuación que modela el área es el vértice de la parábola (en este caso).
+El punto máximo de la ecuación que modela el área es el vértice de la parábola (en este caso).
 
 $$
 \begin{align}
@@ -271,7 +271,7 @@ $$
 
 $$
 \begin{align}
-    & x = 50 - \frac{ 7 }{ 8 } \frac{ 200 }{ 7 } \\
+    & y = 50 - \frac{ 7 }{ 8 } \frac{ 200 }{ 7 } \\
     & = 50 - 25 \\
     & = 25
 \end{align}
@@ -281,7 +281,7 @@ Las dimensiones que maximizan el área del corral son $\frac{ 200 }{ 7 }$ y 25.
 
 ## 7
 
-Considere el rectángulo con dos de sus lados sobre los ejes coordenados y uno de sus vértices sobre la recta $5 x + 3 y − 15 = 0$.
+Considere el rectángulo con dos de sus lados sobre los ejes coordenados y uno de sus vértices sobre la recta $5 x + 3 y - 15 = 0$.
 
 1. Exprese el área del rectángulo como función de uno de sus lados, indicando su dominio.
 
@@ -304,7 +304,7 @@ Considere el rectángulo con dos de sus lados sobre los ejes coordenados y uno d
     $$
     \begin{align}
         & h = -\frac{ 5 }{ 2 * -\frac{ 5 }{ 3 } } \\
-        & = -\frac{ 15 }{ 10 } \\
+        & = \frac{ 15 }{ 10 } \\
         & = \frac{ 3 }{ 2 }
     \end{align}
     $$
@@ -312,11 +312,11 @@ Considere el rectángulo con dos de sus lados sobre los ejes coordenados y uno d
     $$
     \begin{align}
         & y = \frac{ 15 - 5 \frac{ 3 }{ 2 } }{ 3 } \\
-        & = \frac{ 45 }{ 6 }
+        & = \frac{ 5 }{ 2 }
     \end{align}
     $$
 
-    Las medidas que maximizan el área son $\frac{ 3 }{ 2 }$ y $\frac{ 45 }{ 6 }$.
+    Las medidas que maximizan el área son $\frac{ 3 }{ 2 }$ y $\frac{ 5 }{ 2 }$.
 
 ## 8
 
@@ -340,7 +340,7 @@ $$
 
 $$
 \begin{align}
-    & h = -\frac{ -50 }{ -4 } \\
+    & h = -\frac{ -50 }{ 4 } \\
     & = \frac{ 25 }{ 2 }
 \end{align}
 $$
@@ -352,7 +352,7 @@ $$
 \end{align}
 $$
 
-La pieza de alambre deber ser cortada a la mitad para maximizar la suma de las áreas de los cuadrados.
+La pieza de alambre debe ser cortada a la mitad para minimizar la suma de las áreas de los cuadrados.
 
 ## 9
 
@@ -364,7 +364,7 @@ $$
 A(0,0) \quad B(26,0)
 $$
 
-El vértice de la parábola siempre está en la mitad de las raíces y además sabemos que la altura máxima es 4 metros, entonces:
+El vértice de la parábola siempre está en la mitad de las raíces y además la altura máxima es 4 metros, entonces:
 
 $$
 \begin{align}
@@ -373,7 +373,7 @@ $$
 \end{align}
 $$
 
-Con una coordenada y la forma canónica de una función cuadrática, podemos hallar la función que modela la situación.
+Con una coordenada y la forma canónica de una función cuadrática, se puede hallar la función que modela la situación.
 
 $$
 \begin{align}
@@ -390,9 +390,9 @@ $$
 $$
 \begin{align}
     & f(18) = -\frac{ 4 }{ 169 } (18 - 13)^2 + 4 \\
-    & = -\frac{ 20 }{ 169 } + 4 \\
-    & = \frac{ 656 }{ 169 }
+    & = -\frac{ 100 }{ 169 } + 4 \\
+    & = \frac{ 576 }{ 169 }
 \end{align}
 $$
 
-Juan David Ospina estaba $\frac{ 656 }{ 169 }$ metros a cuando intento atajar la pelota.
+La pelota estaba a $\frac{ 576 }{ 169 }$ metros del suelo cuando Juan David Ospina intentó atajarla.

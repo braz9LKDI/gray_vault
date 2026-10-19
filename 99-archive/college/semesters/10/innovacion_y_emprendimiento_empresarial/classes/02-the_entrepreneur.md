@@ -2,9 +2,9 @@
 
 ## ¿Qué es ser un emprendedor?
 
-Ser emprendedor significa identificar **oportunidades** en el **entorno** y convertirlas en **proyectos** o **negocios viables**. El emprendedor asume riesgos calculados y gestiona recursos estratégicamente para crear valor en el mercado. Sin embargo, emprender no se limita únicamente a generar ganancias económicas; implica también solucionar problemas reales, aportar ideas innovadoras al mercado y tener la capacidad de adaptarse continuamente a los cambios del entorno empresarial.
+Ser emprendedor significa identificar oportunidades en el entorno y convertirlas en proyectos o negocios viables. El emprendedor asume riesgos calculados y gestiona recursos estratégicamente para crear valor en el mercado. Sin embargo, emprender no se limita únicamente a generar ganancias económicas; implica también solucionar problemas reales, aportar ideas innovadoras al mercado y tener la capacidad de adaptarse continuamente a los cambios del entorno empresarial.
 
-Un emprendedor exitoso se caracteriza por poseer una **visión** clara que le permite ver oportunidades donde otros solo perciben obstáculos. La **creatividad** es fundamental para innovar en productos, servicios o modelos de negocio, mientras que la **perseverancia** le permite superar los inevitables obstáculos y aprender de los fracasos. Además, el **liderazgo** le facilita inspirar y gestionar equipos de trabajo efectivos que compartan su visión.
+Un emprendedor exitoso se caracteriza por poseer una visión clara que le permite ver oportunidades donde otros solo perciben obstáculos. La creatividad es fundamental para innovar en productos, servicios o modelos de negocio, mientras que la perseverancia le permite superar los inevitables obstáculos y aprender de los fracasos. Además, el liderazgo le facilita inspirar y gestionar equipos de trabajo efectivos que compartan su visión.
 
 ## ¿Qué es emprender?
 
@@ -48,7 +48,7 @@ Las oportunidades de negocio pueden identificarse en tres ámbitos principales:
 
 3. Cambios en tecnología: aprovechando los cambios en tecnología que permiten resolver problemas antiguos de formas novedosas y más efectivas.
 
-Para construir una oportunidad exitosa, es necesario buscar tendencias con amplio potencial de desarrollo futuro, identificar posibilidades concretas de intervención, y finalmente cruzar las oportunidades identificadas en el entorno con las ventajas personales únicas del emprendedor, asegurando así un ajuste estratégico entre mercado y capacidades.
+Para construir una oportunidad exitosa, es necesario buscar tendencias con amplio potencial de desarrollo futuro, identificar posibilidades concretas de intervención y finalmente cruzar las oportunidades identificadas en el entorno con las ventajas personales únicas del emprendedor, asegurando así un ajuste estratégico entre mercado y capacidades.
 
 ## ¿Qué es la autoevaluación?
 

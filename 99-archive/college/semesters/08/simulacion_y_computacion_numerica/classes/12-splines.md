@@ -1,12 +1,12 @@
 # Splines
 
-Son funciones que nos ayudan a representar una curva suave a través de una serie de puntos conocidos (llamados **puntos de control** o **nodos**).
+Son funciones que ayudan a representar una curva suave a través de una serie de puntos conocidos (llamados puntos de control o nodos).
 
-El objetivo de los splines es lograr una interpolación (o aproximación) precisa y continua entre los **nodos**. Esto se hace de forma que la transición entre los puntos sea lo más suave posible, reduciendo cambios bruscos que pueden ser poco naturales o no deseados.
+El objetivo de los splines es lograr una interpolación (o aproximación) precisa y continua entre los nodos. Esto se hace de forma que la transición entre los puntos sea lo más suave posible, reduciendo cambios bruscos que pueden ser poco naturales o no deseados.
 
-Comenzamos limitando nuestra discusión a los polinomios en una variable. En este caso, un **spline** es una función polinómica a base de piezas. Esta función, llámalo $S$, toma valores de un intervalo $[a,b]$ y los mapea a $\mathbb{ R }$, el conjunto de números reales ($S : [a,b] \rightarrow \mathbb{ R }$).
+Aquí se consideran solo polinomios en una variable. En este caso, un spline es una función polinómica por partes. Esta función, llamada $S$, toma valores de un intervalo $[a,b]$ y los mapea a $\mathbb{ R }$, el conjunto de números reales ($S : [a,b] \rightarrow \mathbb{ R }$).
 
-Queremos que $S$ se defina por partes. Para lograr esto, deje que el intervalo $[a,b]$ esté cubierto por $k$ subintervalos ordenados y adyacentes,
+$S$ se define por partes: el intervalo $[a,b]$ se cubre con $k$ subintervalos ordenados y adyacentes,
 
 $$
 [t_i,t_{ i + 1 }] \quad i = 0,\dots,k - 1
@@ -18,7 +18,7 @@ $$
 a = t_0 < t_1 < \cdots < t_{ k - 1 } < t_k = b
 $$
 
-Los puntos $t_i$ se llaman **nodos** o **nudos** del spline. El vector $\mathbf{t} = (t_0,\dots,t_k)$ se llama **vector de nodos**. Si los nodos se distribuyen equitativamente en el intervalo $[a,b]$, decimos que el spline es **uniforme**; de lo contrario, decimos que **no** es uniforme.
+Los puntos $t_i$ se llaman nodos o nudos del spline. El vector $\mathbf{t} = (t_0,\dots,t_k)$ se llama vector de nodos. Si los nodos se distribuyen equitativamente en el intervalo $[a,b]$, se dice que el spline es uniforme; de lo contrario, no es uniforme.
 
 $$
 \begin{align}
@@ -27,7 +27,7 @@ $$
 \end{align}
 $$
 
-En cada uno de estos intervalos $k$, queremos definir un polinomio, llamémoslo $P_i$, $P_i : [t_i,t_{ i + 1 }] \rightarrow \mathbb{ R }$.
+En cada uno de estos $k$ intervalos se define un polinomio $P_i$, $P_i : [t_i,t_{ i + 1 }] \rightarrow \mathbb{ R }$.
 
 $$
 S(t) =
@@ -47,13 +47,13 @@ Para que $S(t)$ sea un spline de grado $n$, se requiere que:
 
 ## Tipos
 
-Existen varios tipos de splines, y cada uno tiene su propio grado de continuidad y suavidad entre los puntos. Aquí vamos a centrarnos en tres grados básicos:
+Existen varios tipos de splines, y cada uno tiene su propio grado de continuidad y suavidad entre los puntos. Aquí se tratan cuatro grados básicos:
 
 1. Cero (escalonado): es el spline más sencillo y conecta los puntos sin suavidad; es decir, simplemente une cada punto con líneas planas o constantes.
 
     > Funciones constantes por tramos, discontinuas en los nodos.
 
-2. Primer (lineal): Conecta los puntos con segmentos de línea recta. Aunque es más suave que el spline de grado cero, su continuidad es solo en valor, sin suavidad en la pendiente (no es diferenciado).
+2. Primer (lineal): conecta los puntos con segmentos de línea recta. Aunque es más suave que el spline de grado cero, su continuidad es solo en valor, sin suavidad en la pendiente (no es derivable en los nodos).
 
     > Funciones lineales por tramos, continuas en los nodos pero con derivadas discontinuas.
 
@@ -61,7 +61,7 @@ Existen varios tipos de splines, y cada uno tiene su propio grado de continuidad
 
     > Funciones cuadráticas por tramos, continuas en los nodos con derivadas primeras continuas, pero derivadas segundas discontinuas.
 
-4. Tercer (cúbico): Conecta los puntos con polinomios cúbicos, proporcionando una mayor suavidad al garantizar la continuidad de la función y sus dos primeras derivadas en los nodos.
+4. Tercer (cúbico): conecta los puntos con polinomios cúbicos, proporcionando una mayor suavidad al garantizar la continuidad de la función y sus dos primeras derivadas en los nodos.
 
     > Funciones cúbicas por tramos, continuas en los nodos con derivadas primeras y segundas continuas, pero derivadas terceras discontinuas.
 
@@ -99,7 +99,7 @@ En total hay $2 k$ ecuaciones.
 
 Un spline de primer grado conecta los puntos de control con segmentos de líneas rectas. Esto significa que entre cada par de puntos de control, la función cambia de forma lineal, logrando una continuidad en el valor, pero no en la pendiente (no hay suavidad en las uniones).
 
-Tenemos entonces que el polinomio $S$ en este caso se define como:
+El polinomio $S$ en este caso se define como:
 
 $$
 S(x) =
@@ -148,9 +148,9 @@ $$
 
 Las características del spline de segundo grado son:
 
-1. $S$ es continua en el intervalo $[t_0,\dots,t_k]$.
+1. $S$ es continua en el intervalo $[t_0,t_k]$.
 
-2. $S'$ es continua en el intervalo $[t_0,\dots,t_k]$.
+2. $S'$ es continua en el intervalo $[t_0,t_k]$.
 
 3. $S''$ es discontinua en los nodos $t_i$.
 
@@ -190,13 +190,13 @@ S(x) =
     \end{cases}
 $$
 
-Las características del spline de segundo grado son:
+Las características del spline de tercer grado son:
 
-1. $S$ es continua en el intervalo $[t_0,\dots,t_k]$.
+1. $S$ es continua en el intervalo $[t_0,t_k]$.
 
-2. $S'$ es continua en el intervalo $[t_0,\dots,t_k]$.
+2. $S'$ es continua en el intervalo $[t_0,t_k]$.
 
-3. $S''$ es continua en el intervalo $[t_0,\dots,t_k]$.
+3. $S''$ es continua en el intervalo $[t_0,t_k]$.
 
 4. Cada $S_i$ es un polinomio de grado 3.
 

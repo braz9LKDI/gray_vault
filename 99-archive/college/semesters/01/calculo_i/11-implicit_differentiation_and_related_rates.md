@@ -12,7 +12,7 @@ Halle $\frac{ dy }{ dx }$ si:
 
     $$
     \begin{align}
-        & x^\prime (x^2 - 3)^{ \frac{ 3 }{ 2 } } + x \pprime{ (x^2 - 3)^{ \frac{ 3 }{ 2 } } }\\
+        & x^\prime (x^2 - 3)^{ \frac{ 3 }{ 2 } } + x \pprime{ (x^2 - 3)^{ \frac{ 3 }{ 2 } } } \\
         & = (x^2 - 3)^{ \frac{ 3 }{ 2 } } + 3 x^2 (x^2 - 3)^{ \frac{ 1 }{ 2 } } \\
         & = ((x^2 - 3) + 3 x^2) (x^2 - 3)^{ \frac{ 1 }{ 2 } } \\
         & = (4 x^2 - 3) (x^2 - 3)^{ \frac{ 1 }{ 2 } }
@@ -24,8 +24,8 @@ Halle $\frac{ dy }{ dx }$ si:
     $$
     \begin{align}
         & x^\prime 5^{ 6 x + 1 } + x (5^{ 6 x + 1 })^\prime \\
-        & = 5^{ 6 x + 1 } + x \pln 5 (6 x + 1)^\prime \\
-        & = 5^{ 6 x + 1 } + 6 x \pln 5
+        & = 5^{ 6 x + 1 } + x 5^{ 6 x + 1 } \pln 5 (6 x + 1)^\prime \\
+        & = 5^{ 6 x + 1 } (1 + 6 x \pln 5)
     \end{align}
     $$
 
@@ -44,8 +44,8 @@ Halle $\frac{ dy }{ dx }$ si:
     $$
     \begin{align}
         & \frac{ 1 }{ \parctan{ x^2 } } \parctan{ x^2 }^\prime \\
-        & = \frac{ 1 }{ \parctan{ x^2 } } \frac{ -1 }{ 1 + x^2 } (x^2)^\prime \\
-        & = \frac{ -2 x }{ \parctan{ x^2 } (1 + x^2) }
+        & = \frac{ 1 }{ \parctan{ x^2 } } \frac{ 1 }{ 1 + x^4 } (x^2)^\prime \\
+        & = \frac{ 2 x }{ \parctan{ x^2 } (1 + x^4) }
     \end{align}
     $$
 
@@ -56,7 +56,7 @@ Halle $\frac{ dy }{ dx }$ si:
         & \frac{ 1 }{ 1 + (x - \sqrt{ 1 + x^2 })^2 } (x - \sqrt{ 1 + x^2 })^\prime \\
         & = \frac{ 1 }{ 1 + (x - \sqrt{ 1 + x^2 })^2 } \left (1 - \frac{ x }{ \sqrt{ 1 + x^2 } } \right ) \\
         & = \frac{ 1 }{ 1 + (x - \sqrt{ 1 + x^2 })^2 } \left (\frac{ \sqrt{ 1 + x^2 } - x }{ \sqrt{ 1 + x^2 } } \right ) \\
-        & = \frac{ 1 }{ 1 + (x - (x^2 - 2 x \sqrt{ 1 + x^2 } + (1 + x^2)) } \left (\frac{ \sqrt{ 1 + x^2 } - x }{ \sqrt{ 1 + x^2 } } \right ) \\
+        & = \frac{ 1 }{ 1 + (x^2 - 2 x \sqrt{ 1 + x^2 } + (1 + x^2)) } \left (\frac{ \sqrt{ 1 + x^2 } - x }{ \sqrt{ 1 + x^2 } } \right ) \\
         & = \frac{ 1 }{ 2 x^2 - 2 x \sqrt{ 1 + x^2 } + 2 } \left (\frac{ \sqrt{ 1 + x^2 } - x }{ \sqrt{ 1 + x^2 } } \right ) \\
         & = \frac{ \sqrt{ 1 + x^2 } - x }{ 2 (x^2 - x \sqrt{ 1 + x^2 } + 1) \sqrt{ 1 + x^2 } } \\
         & = \frac{ \cancel{ \sqrt{ 1 + x^2 } - x } }{ 2 \sqrt{ 1 + x^2 } \cancel{ (\sqrt{ 1 + x^2 } - x) } \sqrt{ 1 + x^2 } } \\
@@ -69,24 +69,24 @@ Halle $\frac{ dy }{ dx }$ si:
     $$
     \begin{align}
         & x^\prime \parcsec{ \frac{ 1 }{ x } } + x \pprime{ \parcsec{ \frac{ 1 }{ x } } } \\
-        & = \parcsin{ \frac{ 1 }{ x } } + x \frac{ 1 }{ \frac{ 1 }{ x } \sqrt{ \left (\frac{ 1 }{ x } \right )^2 - 1 } } \pprime{ \frac{ 1 }{ x } }\\
-        & = \parcsin{ \frac{ 1 }{ x } } - x \frac{ 1 }{ \frac{ x^2 }{ x } \sqrt{ \frac{ 1 - x^2 }{ x^2 } } } \\
-        & = \parcsin{ \frac{ 1 }{ x } } - \frac{ x }{ \frac{ x^2 }{ x^2 } \sqrt{ 1 - x^2  } } \\
-        & = \parcsin{ \frac{ 1 }{ x } } - \frac{ x }{ \sqrt{ 1 - x^2 } }
+        & = \parcsec{ \frac{ 1 }{ x } } + x \frac{ 1 }{ \frac{ 1 }{ x } \sqrt{ \left (\frac{ 1 }{ x } \right )^2 - 1 } } \pprime{ \frac{ 1 }{ x } } \\
+        & = \parcsec{ \frac{ 1 }{ x } } - x \frac{ 1 }{ \frac{ x^2 }{ x } \sqrt{ \frac{ 1 - x^2 }{ x^2 } } } \\
+        & = \parcsec{ \frac{ 1 }{ x } } - \frac{ x }{ \frac{ x^2 }{ x^2 } \sqrt{ 1 - x^2 } } \\
+        & = \parcsec{ \frac{ 1 }{ x } } - \frac{ x }{ \sqrt{ 1 - x^2 } }
     \end{align}
     $$
 
 ## 2
 
-Usando la derivación implícita, halle $\frac{ dy }{ dx } si$:
+Usando la derivación implícita, halle $\frac{ dy }{ dx }$ si:
 
 1. $x \pcos{ y } + y \pcos{ x } = 1$.
 
     $$
     \begin{align}
-        & \pprime{ \pcos{ y } } + \pprime{ y \pcos{ x } } = 0 \\
+        & \pprime{ x \pcos{ y } } + \pprime{ y \pcos{ x } } = 0 \\
         & \left (\pcos{ y } - x \psin{ y } \frac{ dy }{ dx } \right ) + \left (\pcos{ x } \frac{ dy }{ dx } - y \psin{ x } \right ) = 0 \\
-        & \pcos{ x } \frac{ dy }{ dx } - x \psin{ y } \frac{ dy }{ dx } =  y \psin{ x } - \pcos{ y } \\
+        & \pcos{ x } \frac{ dy }{ dx } - x \psin{ y } \frac{ dy }{ dx } = y \psin{ x } - \pcos{ y } \\
         & \frac{ dy }{ dx } (\pcos{ x } - x \psin{ y }) = y \psin{ x } - \pcos{ y } \\
         & \frac{ dy }{ dx } = \frac{ y \psin{ x } - \pcos{ y } }{ \pcos{ x } - x \psin{ y } }
     \end{align}
@@ -138,12 +138,12 @@ Usando la derivación implícita, halle $\frac{ dy }{ dx } si$:
     $$
     \begin{align}
         & \sqrt{ x y }^\prime = (1 + x^2 y)^\prime \\
-        & \frac{ 1 }{ 2 \sqrt{ x y } (x y)^\prime } = (x^2 y)^\prime \\
+        & \frac{ 1 }{ 2 \sqrt{ x y } } (x y)^\prime = (x^2 y)^\prime \\
         & \frac{ y }{ 2 \sqrt{ x y } } + \frac{ x }{ 2 \sqrt{ x y } } \frac{ dy }{ dx } = 2 x y + x^2 \frac{ dy }{ dx } \\
         & \frac{ dy }{ dx } \left (\frac{ x }{ 2 \sqrt{ x y } } - x^2 \right ) = 2 x y - \frac{ y }{ 2 \sqrt{ x y } } \\
-        & \frac{ dy }{ dx } \left (\frac{ 2 x^2 \sqrt{ x y } - x }{ 2 \sqrt{ x y } } \right ) = \frac{ 4 \sqrt[3]{ (x y)^2 } - y }{ 2 \sqrt{ x y } } \\
-        & \frac{ dy }{ dx } (2 x^2 \sqrt{ x y } - x) = 4 \sqrt[3]{ (x y)^2 } - y \\
-        & \frac{ dy }{ dx } = \frac{ 4 \sqrt[3]{ (x y)^2 } - y }{ 2 x^2 \sqrt{ x y } - x }
+        & \frac{ dy }{ dx } \left (\frac{ x - 2 x^2 \sqrt{ x y } }{ 2 \sqrt{ x y } } \right ) = \frac{ 4 \sqrt{ (x y)^3 } - y }{ 2 \sqrt{ x y } } \\
+        & \frac{ dy }{ dx } (x - 2 x^2 \sqrt{ x y }) = 4 \sqrt{ (x y)^3 } - y \\
+        & \frac{ dy }{ dx } = \frac{ 4 \sqrt{ (x y)^3 } - y }{ x - 2 x^2 \sqrt{ x y } }
     \end{align}
     $$
 
@@ -222,7 +222,7 @@ $$
 \end{align}
 $$
 
-Como $x = -3$ está en el dominio de la curva, decimos que esta es la respuesta.
+Como $x = -3$ está en el dominio de la curva, el punto es $(-3,0)$.
 
 ## 5
 
@@ -260,7 +260,7 @@ La recta tangente de la curva en $P$ es
 $$
 \begin{align}
     & (x - (-3)) \frac{ 3 }{ 4 } = y - 4 \\
-    & -\frac{ 3 }{ 4 } x - \frac{ 9 }{ 4 } = y - 4 \\
+    & \frac{ 3 }{ 4 } x + \frac{ 9 }{ 4 } = y - 4 \\
     & y = \frac{ 3 }{ 4 } x + \frac{ 25 }{ 4 }
 \end{align}
 $$
@@ -275,7 +275,7 @@ $$
 \end{align}
 $$
 
-Ahora hallamos el punto de intersección de las rectas
+Ahora se halla el punto de intersección de las rectas:
 
 $$
 \begin{align}
@@ -324,10 +324,10 @@ Use la derivación logarítmica para hallar la derivada de la función
         & \pln{ y } = \pln{ \psin{ x }^{ \pln{ x } } } \\
         & \pln{ y } = \pln{ x } * \pln{ \psin{ x } } \\
         & \pln{ y }^\prime = \pprime{ \pln{ x } * \pln{ \psin{ x } } } \\
-        & \frac{ 1 }{ y } \frac{ dy }{ dx } = \frac{ \psin{ x } }{ x } + \pln{ x } \frac{ 1 }{ \psin{ x } } \pcos{ x } \\
-        & \frac{ 1 }{ y } \frac{ dy }{ dx } = \frac{ \psin{ x } }{ x } + \pln{ x } \pcot{ x } \\
-        & \frac{ dy }{ dx } = y \left (\frac{ \psin{ x } }{ x } + \pln{ x } \pcot{ x } \right ) \\
-        & \frac{ dy }{ dx } = \psin{ x }^{ \pln{ x } } \left (\frac{ \psin{ x } }{ x } + \pln{ x } \pcot{ x } \right )
+        & \frac{ 1 }{ y } \frac{ dy }{ dx } = \frac{ \pln{ \psin{ x } } }{ x } + \pln{ x } \frac{ 1 }{ \psin{ x } } \pcos{ x } \\
+        & \frac{ 1 }{ y } \frac{ dy }{ dx } = \frac{ \pln{ \psin{ x } } }{ x } + \pln{ x } \pcot{ x } \\
+        & \frac{ dy }{ dx } = y \left (\frac{ \pln{ \psin{ x } } }{ x } + \pln{ x } \pcot{ x } \right ) \\
+        & \frac{ dy }{ dx } = \psin{ x }^{ \pln{ x } } \left (\frac{ \pln{ \psin{ x } } }{ x } + \pln{ x } \pcot{ x } \right )
     \end{align}
     $$
 
@@ -340,8 +340,8 @@ Use la derivación logarítmica para hallar la derivada de la función
         & \pln{ y } = \pln{ x^\frac{ 3 }{ 4 } } + \pln{ (x^2 + 1)^\frac{ 1 }{ 2 } } - 5 \pln{ 3 x + 2 } \\
         & \pln{ y }^\prime = \pprime{ \frac{ 3 }{ 4 } \pln{ x } + \frac{ 1 }{ 2 } \pln{ x^2 + 1 } - 5 \pln{ 3 x + 2 } } \\
         & \frac{ 1 }{ y } \frac{ dy }{ dx } = \frac{ 3 }{ 4 x } + \frac{ x }{ x^2 + 1 } - \frac{ 15 }{ 3 x + 2 } \\
-        & \frac{ dy }{ dx }  = y \left (\frac{ 3 }{ 4 x } + \frac{ x }{ x^2 + 1 } - \frac{ 15 }{ 3 x + 2 } \right ) \\
-        & \frac{ dy }{ dx }  = \frac{ x^\frac{ 3 }{ 4 } \sqrt{ x^2 + 1 } }{ (3 x + 2)^5 } \left (\frac{ 3 }{ 4 x } + \frac{ x }{ x^2 + 1 } - \frac{ 15 }{ 3 x + 2 } \right )
+        & \frac{ dy }{ dx } = y \left (\frac{ 3 }{ 4 x } + \frac{ x }{ x^2 + 1 } - \frac{ 15 }{ 3 x + 2 } \right ) \\
+        & \frac{ dy }{ dx } = \frac{ x^\frac{ 3 }{ 4 } \sqrt{ x^2 + 1 } }{ (3 x + 2)^5 } \left (\frac{ 3 }{ 4 x } + \frac{ x }{ x^2 + 1 } - \frac{ 15 }{ 3 x + 2 } \right )
     \end{align}
     $$
 
@@ -351,7 +351,7 @@ Una onda circular en un estanque se expande de tal forma que su área crece a un
 
 $$
 \begin{align}
-    & A = \pi r^2
+    & A = \pi r^2 \\
     & \frac{ dA }{ dt } = 2 \pi r \frac{ dr }{ dt } \\
     & 4 = 2 \pi r \frac{ dr }{ dt } \\
     & \frac{ dr }{ dt } = \frac{ 2 }{ \pi r } \\
@@ -367,7 +367,7 @@ $$
 \begin{align}
     & V = \pi r^2 h \\
     & \frac{ dh }{ dt } = -3 \frac{ \text{cm} }{ \text{s} } \\
-    & \frac{ dr }{ dt } = 1 \frac{ \text{cm} }{ \text{s} } \\
+    & \frac{ dr }{ dt } = 1 \frac{ \text{cm} }{ \text{s} }
 \end{align}
 $$
 
@@ -419,11 +419,11 @@ $$
 \end{align}
 $$
 
-Volvemos a $(1)$ con lo valores que ahora conocemos.
+Volviendo a $(1)$ con los valores que ahora se conocen:
 
 $$
 \begin{align}
-    & \left (\frac{ 25 }{ 16 } \right )  \frac{ d\theta }{ dt } = -\frac{ 18 }{ (24)^2 } (1.8) \\
+    & \left (\frac{ 25 }{ 16 } \right ) \frac{ d\theta }{ dt } = -\frac{ 18 }{ (24)^2 } (1.8) \\
     & \frac{ d\theta }{ dt } = -\frac{ 5,184 }{ 144,000 } \\
     & = -\frac{ 9 }{ 250 } \frac{ \text{rad} }{ \text{s} }
 \end{align}
@@ -431,7 +431,7 @@ $$
 
 ## 11
 
-Un abrevadero tiene una longitud de 5 metros y sus extremos son triángulos isósceles con una altura de 1 metro y 2 metros de base, estando el vértice opuesto a la base hacia abajo. Se vierte agua en el abrevadero a razón de $2 \frac{ \text{m}^3 }{ \text{min} }$. ¿A qué velocidad aumenta el nivel del agua en el abrevadero cuando la profundidad del agua es de $0.4$ metros?
+Un abrevadero tiene una longitud de 5 metros y sus extremos son triángulos isósceles con una altura de 1 metro y 2 metros de base, estando el vértice opuesto a la base hacia abajo. Se vierte agua en el abrevadero a razón de $2 \frac{ \text{m}^3 }{ \text{min} }$. ¿A qué velocidad aumenta el nivel del agua en el abrevadero cuando la profundidad del agua es de 0.4 metros?
 
 > El volumen del agua en el abrevadero (un prisma triangular) es el área de su sección transversal triangular multiplicada por su longitud.
 
@@ -447,7 +447,7 @@ $$
 V = \frac{ 5 }{ 2 } b h \quad (1)
 $$
 
-Esta ecuación tiene dos variables, $b$ y $h$. Necesitamos expresar una en términos de la otra. Para ello, observamos la sección transversal del abrevadero y usamos triángulos semejantes.
+Esta ecuación tiene dos variables, $b$ y $h$, así que una se expresa en términos de la otra. Para ello, se usan triángulos semejantes en la sección transversal del abrevadero.
 
 El triángulo grande (el abrevadero) tiene una base de 2 metros y una altura de 1 metro. El triángulo pequeño (el agua) tiene una base $b$ y una altura $h$. La relación entre la base y la altura es la misma para ambos.
 
@@ -513,7 +513,7 @@ $$
     & \frac{ dh }{ dt } = \frac{ 25 }{ 9 \pi h^2 } \frac{ dV }{ dt } \\
     & \frac{ dh }{ dt } = \frac{ 25 }{ 9 \pi h^2 } (-2) \\
     & = -\frac{ 50 }{ 36 \pi } \\
-    & = -\frac{ 25 }{ 18 \pi } \frac{ \text{ft}^3 }{ \text{min} }
+    & = -\frac{ 25 }{ 18 \pi } \frac{ \text{ft} }{ \text{min} }
 \end{align}
 $$
 
@@ -536,13 +536,13 @@ $$
     & \frac{ dV }{ dt } = 9 \pi \frac{ dh }{ dt } \\
     & \frac{ dh }{ dt } = \frac{ 1 }{ 9 \pi } \frac{ dV }{ dt } \\
     & \frac{ dh }{ dt } = \frac{ 1 }{ 9 \pi } (-2) \\
-    & = -\frac{ 2 }{ 9 \pi } \frac{ \text{ft}^3 }{ \text{min} }
+    & = -\frac{ 2 }{ 9 \pi } \frac{ \text{ft} }{ \text{min} }
 \end{align}
 $$
 
 ## 13
 
-Una escalera de 10 pies de largo está apoyada contra una pared vertical, si el extremo inferior de la escalera resbala alejándose de la pared a razón de $1 \frac{ \text{ft} }{ \text{s} }$, ¿Con qué rapidez resbala hacia abajo su extremo superior cuando su extremo inferior está a 6 pies de la pared?
+Una escalera de 10 pies de largo está apoyada contra una pared vertical, si el extremo inferior de la escalera resbala alejándose de la pared a razón de $1 \frac{ \text{ft} }{ \text{s} }$, ¿con qué rapidez resbala hacia abajo su extremo superior cuando su extremo inferior está a 6 pies de la pared?
 
 $$
 \begin{align}
@@ -553,7 +553,7 @@ $$
 \end{align}
 $$
 
-Para encontrar $y$ cuando la base $x = 6$, usamos el teorema de Pitágoras.
+Para encontrar $y$ cuando la base $x = 6$, se usa el teorema de Pitágoras.
 
 $$
 \begin{align}

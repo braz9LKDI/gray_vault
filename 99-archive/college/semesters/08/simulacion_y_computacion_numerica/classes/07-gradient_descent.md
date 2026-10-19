@@ -6,11 +6,11 @@ Si $\rho$ es muy grande, el sistema es mal condicionado, lo que significa que la
 
 ---
 
-Las matrices, donde el número de ceros es mayor que el número de no ceros, se denominan matrices **dispersas**.
+Las matrices en las que el número de ceros es mayor que el de no ceros se denominan matrices dispersas.
 
 ---
 
-Por el teorema de sistemas equivalentes, podemos expresar $A x = b$ como
+Por el teorema de sistemas equivalentes, se puede expresar $A x = b$ como
 
 $$
 \begin{align}
@@ -60,7 +60,7 @@ $$
 q(x) = \langle x,A x \rangle - 2 \langle x,b \rangle
 $$
 
-Comportamiento en una dimensión
+Comportamiento en una dimensión:
 
 $$
 q(\vec{ x } + t \vec{ v }) = \langle \vec{ x } + t \vec{ v },A (\vec{ x } + t \vec{ v }) \rangle - 2 \langle \vec{ x } + t \vec{ v },b \rangle
@@ -73,33 +73,33 @@ $$
 \end{align}
 $$
 
-$\nabla q(x)$ corresponde a la primera derivada (gradiente) y estamos hallando un mínimo.
+$\nabla q(x)$ corresponde a la primera derivada (gradiente) y se busca un mínimo.
 
 $$
 \nabla q(x) = \frac{ 1 }{ 2 } (A^T + A) x - b = A x - b
 $$
 
-Suponiendo que $A$ es simétrica y positiva, definida.
+Suponiendo que $A$ es simétrica y definida positiva.
 
-## Matriz positiva definida
+## Matriz definida positiva
 
-Una matriz $A$ es positiva definida si para cualquier vector no nulo $x$, el producto cuadrático $x^T A x$ es positivo. Esto implica que todos los valores propios de $A$ son positivos.
+Una matriz $A$ es definida positiva si para cualquier vector no nulo $x$, el producto cuadrático $x^T A x$ es positivo. Esto implica que todos los valores propios de $A$ son positivos.
 
 ## Vector propio de una matriz
 
 Dado un vector no nulo $v$ y una matriz cuadrada $A$, el vector $v$ es un vector propio de $A$ si existe un escalar $\lambda$ tal que: $A v = \lambda v$.
 
-> Nos referiremos a estos $\lambda$ como valores propios.
+> Estos $\lambda$ se llaman valores propios.
 
 ---
 
-- Si $A$ es simétrica y negativa, definida $\nabla q(x) = 0$ halla un máximo.
+- Si $A$ es simétrica y definida negativa, $\nabla q(x) = 0$ da un máximo.
 
 ---
 
 - Error: $e_i = x_i - x$.
 
-- Residuo $r_i = b - A x_i$.
+- Residuo: $r_i = b - A x_i$.
 
 $$
 \begin{align}
@@ -130,7 +130,7 @@ El nuevo residuo $r_{ i + 1 }$ es ortogonal al residuo anterior $r_i$ (${ r_{ i 
 $$
 \begin{align}
     & r_{ i + 1 } = b - A x_{ i + 1 } \\
-    & = b (x_i + \alpha_i r_i) \\
+    & = b - A (x_i + \alpha_i r_i) \\
     & = b - A x_i - \alpha_i A r_i \\
     & = r_i - \alpha_i A r_i
 \end{align}
@@ -138,8 +138,8 @@ $$
 
 $$
 \begin{align}
-    & { r_i }^T r_{ i + 1 } = { r_i }^T (r_i - \alpha_i A) \\
-    & 0 = { r_i }^T (r_i - \alpha_i A) \quad \alpha_i = \frac{ { r_i }^T r_i }{ { r_i }^T A r_i }
+    & { r_i }^T r_{ i + 1 } = { r_i }^T (r_i - \alpha_i A r_i) \\
+    & 0 = { r_i }^T (r_i - \alpha_i A r_i) \quad \alpha_i = \frac{ { r_i }^T r_i }{ { r_i }^T A r_i }
 \end{align}
 $$
 

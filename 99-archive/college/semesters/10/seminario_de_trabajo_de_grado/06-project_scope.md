@@ -4,7 +4,7 @@ This chapter sets the clear boundaries of the thesis. Its purpose is to define e
 
 ## Inclusions
 
-This section details all the specific tasks, features, and deliverables that are part of the project. It should be directly tied to the objectives defined in the previous chapter.
+This section details all the specific tasks, features and deliverables that are part of the project. It should be directly tied to the objectives defined in the previous chapter.
 
 - Functionality: list the main features the system will have.
 

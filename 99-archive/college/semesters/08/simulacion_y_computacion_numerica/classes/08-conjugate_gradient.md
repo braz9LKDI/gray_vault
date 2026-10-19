@@ -7,7 +7,7 @@
 - $\rho_i$: parámetros de descenso.
 
 $$
-\vec{ x_{ i + 1 } } = \vec{ x_i } + \rho \vec{ d_i }
+\vec{ x_{ i + 1 } } = \vec{ x_i } + \rho_i \vec{ d_i }
 $$
 
 ---
@@ -33,7 +33,7 @@ $$
 
 $$
 \begin{align}
-    & x_{ i + 1 } = x_i + \alpha p_i \quad d_i = p_i \quad { \langle p_i,r_j \rangle }_A = 0 \\
+    & x_{ i + 1 } = x_i + \alpha_i p_i \quad d_i = p_i \quad { \langle p_i,p_j \rangle }_A = 0 \quad i \neq j \\
     & \alpha_i = \frac{ { r_i }^T p_i }{ { p_i }^T A p_i }
 \end{align}
 $$
@@ -54,7 +54,7 @@ El algoritmo de este método es el siguiente:
     \alpha_0 = \frac{ { r_0 }^T p_0 }{ { p_0 }^T A p_0 }
     $$
 
-4. Verificar si ${ \langle p_0,r_0 \rangle }^{ \frac{ 1 }{ 2 } } < \delta$, si es así parar.
+4. Verificar si ${ \langle p_0,r_0 \rangle }^{ \frac{ 1 }{ 2 } } < \delta$; si es así, parar.
 
 5. Hacer el siguiente proceso iterativo máximo $M - 1$ veces.
 
@@ -69,4 +69,4 @@ El algoritmo de este método es el siguiente:
 
     5. $\alpha_i = \frac{ { r_i }^T p_i }{ { p_i }^T A p_i }$.
 
-    6. Verificar si $\norm{ r_i } < \delta$, si es asi parar.
+    6. Verificar si $\norm{ r_i } < \delta$; si es así, parar.

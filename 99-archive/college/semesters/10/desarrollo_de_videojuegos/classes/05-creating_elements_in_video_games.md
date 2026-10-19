@@ -4,7 +4,7 @@
 
 ### Lighting
 
-In video games, it is the placement and configuration of light sources to create visual depth, establish mood, guide players, and simulate how light interacts with surfaces. It can be used for artistic purposes to create an atmosphere and emotional impact.
+In video games, it is the placement and configuration of light sources to create visual depth, establish mood, guide players and simulate how light interacts with surfaces. It can be used for artistic purposes to create an atmosphere and emotional impact.
 
 #### Ambient light
 
@@ -16,12 +16,12 @@ It casts parallel light rays from a specific direction like sunlight, affecting 
 
 #### Point lights
 
-It is a omnidirectional light source that emit light equally in all directions from a specific position, like light bulbs or torches. Intensity diminishes with distance from the source.
+It is an omnidirectional light source that emits light equally in all directions from a specific position, like light bulbs or torches. Intensity diminishes with distance from the source.
 
 #### Spotlight
 
-It cast a cone of light in a specific direction from a specific position, useful for flashlights, stage lights, or focused illumination.
+It casts a cone of light in a specific direction from a specific position, useful for flashlights, stage lights or focused illumination.
 
 ### Materials
 
-In a 3D game it is a collection of properties and textures that define how a surface responds to light, determining its visual appearance. Materials simulate real-world or imaginary surface characteristics through parameters that control reflection, color, texture, and shading behavior.
+In a 3D game, it is a collection of properties and textures that define how a surface responds to light, determining its visual appearance. Materials simulate real-world or imaginary surface characteristics through parameters that control reflection, color, texture and shading behavior.

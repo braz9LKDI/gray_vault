@@ -4,29 +4,27 @@
 
 ### Citas
 
-- "Nunca sopla viento favorable para el que no sabe a dónde va" Seneca (55 a.C. - 39 d.C.).
+- "Nunca sopla viento favorable para el que no sabe a dónde va" (Séneca).
 
-- "El **coste** de un cambio en los requisitos una vez entregado el producto, es entre 60 y 100 veces superior al coste que hubiera representado el mismo cambio durante las faces iniciales de desarrollo" (Pressman, 2002).
+- "El coste de un cambio en los requisitos una vez entregado el producto, es entre 60 y 100 veces superior al coste que hubiera representado el mismo cambio durante las fases iniciales de desarrollo" (Pressman, 2002).
 
-- "La correcta **obtención de los requisitos** es uno de los aspectos más críticos de un proyecto de software, independientemente del tipo de proyecto que se trate, dado que una mala captura de los mismos es la causa de la mayor parte de los problemas que surgen a lo largo del ciclo de vida" (Johnson, 1995).
+- "La correcta obtención de los requisitos es uno de los aspectos más críticos de un proyecto de software, independientemente del tipo de proyecto que se trate, dado que una mala captura de los mismos es la causa de la mayor parte de los problemas que surgen a lo largo del ciclo de vida" (Johnson, 1995).
 
-- "La parte más difícil de construir un sistema de software es decidir que construir,...Ninguna otra parte del trabajo afecta más negativamente al sistema final si se realiza de manera incorrecta. Ninguna otra parte es más difícil de rectificar después" (Brooks, 1995).
+- "La parte más difícil de construir un sistema de software es decidir qué construir... Ninguna otra parte del trabajo afecta más negativamente al sistema final si se realiza de manera incorrecta. Ninguna otra parte es más difícil de rectificar después" (Brooks, 1995).
 
 ## Fundamentos de requerimientos de software
 
-El proceso de requerimientos de software cubre las fases de
+El proceso de requerimientos de software cubre, durante todo el ciclo de vida, las fases de:
 
-- elicitación.
+- Elicitación.
 
-- análisis.
+- Análisis.
 
-- especificación.
+- Especificación.
 
-- validación.
+- Validación.
 
-durante todo el ciclo de vida.
-
-"Los requerimientos de software expresan las **necesidades** y **restricciones** de un producto de software que contribuyen a la solución de algún problema del mundo real" (SWEBOK).
+"Los requerimientos de software expresan las necesidades y restricciones de un producto de software que contribuyen a la solución de algún problema del mundo real" (SWEBOK).
 
 ### Elicitación
 
@@ -117,8 +115,8 @@ graph TD;
     D --> D2[requisitos legislativos];
     D --> D3[requisitos éticos];
 
-    D2 --> D4[Requisitos de privacidad];
-    D2 --> D5[Requisitos de seguridad];
+    D2 --> D4[requisitos de privacidad];
+    D2 --> D5[requisitos de seguridad];
 ```
 
 ## Técnicas para educir requisitos

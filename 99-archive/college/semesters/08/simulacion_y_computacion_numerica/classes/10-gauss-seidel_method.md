@@ -19,7 +19,7 @@ Este método es un procedimiento iterativo utilizado para resolver sistemas de e
 
 2. Reordenamiento de las ecuaciones.
 
-    Es importante que el sistema esté diagonalmente dominante para asegurar la convergencia.
+    Es importante que el sistema sea diagonalmente dominante para asegurar la convergencia.
 
     $$
     \abs{ a_{ ii } } \geq \sum_{ \underset{ j \neq i }{ j = 1 } }^n \abs{ a_{ ij } }
@@ -34,19 +34,19 @@ Este método es un procedimiento iterativo utilizado para resolver sistemas de e
     $$
     - ${ x_j }^{ (k + 1) }$: valores más recientes calculados en la iteración actual.
 
-    - ${ x_j }^k$: valores de la iteración previa.
+    - ${ x_j }^{ (k) }$: valores de la iteración previa.
 
 4. Elección de valores iniciales.
 
-    Selecciona un vector inicial $x^{ (0) }$. Si no se tiene información previa, se puede empezar con ceros o unos.
+    Se selecciona un vector inicial $x^{ (0) }$. Si no se tiene información previa, se puede empezar con ceros o unos.
 
 5. Proceso iterativo.
 
     Se repite el siguiente proceso hasta que los valores converjan según el criterio de parada elegido:
 
-    En la iteración $k + 1$, para cada $i = 1$ hasta $n$ calcular $x^{ (k + 1) }$ usando la fórmula del paso 3.
+    En la iteración $k + 1$, para cada $i = 1,\dots,n$ se calcula ${ x_i }^{ (k + 1) }$ usando la fórmula del paso 3.
 
-    Si el método se hace con **relajación**, se debe actualizar el $x^{ (k + 1) }$ con la siguiente fórmula:
+    Si el método se hace con relajación, se debe actualizar el $x^{ (k + 1) }$ con la siguiente fórmula:
 
     $$
     { x_i }^{ (k + 1) } = { x_i }^{ (k) } + \lambda ({ x_i }^\text{new} - { x_i }^{ (k) })
@@ -57,7 +57,7 @@ Este método es un procedimiento iterativo utilizado para resolver sistemas de e
     Después se calcula el error relativo para cada variable con la siguiente fórmula:
 
     $$
-    \varepsilon_i = \abs{ \frac{ x^{ (k + 1) } - x^{ (k) } }{ x^{ (k + 1) } } } * 100\%
+    \varepsilon_i = \abs{ \frac{ { x_i }^{ (k + 1) } - { x_i }^{ (k) } }{ { x_i }^{ (k + 1) } } } * 100\%
     $$
 
     Si todos los $\varepsilon_i$ son menores que el criterio de tolerancia, se detiene el proceso.

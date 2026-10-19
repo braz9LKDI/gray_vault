@@ -4,7 +4,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint:style": "bash style_check.sh",
-    "review:pending": "git -c core.quotePath=false ls-files -co --exclude-standard -- \"*.md\" \":!99-archive\" | awk -F\"\\t\" \"NR == FNR { listed[\\$2]; next } !(\\$0 in listed)\" .review_tracker -",
+    "review:pending": "git -c core.quotePath=false ls-files -co --exclude-standard -- \"*.md\" | awk -F\"\\t\" \"NR == FNR { listed[\\$2]; next } !(\\$0 in listed)\" .review_tracker -",
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
     "lint": "npm run lint:md",
     "fix": "prettier --write . && markdownlint-cli2 --fix \"**/*.md\" \"#node_modules\"",

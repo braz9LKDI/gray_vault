@@ -2,33 +2,33 @@
 
 ## Modelo dimensional
 
-- Una técnica para **diseñar el modelo lógico** de la bodega de datos.
+- Una técnica para diseñar el modelo lógico de la bodega de datos.
 
-- Permite un **alto rendimiento** en el momento de acceder a los datos (orientado a consultas).
+- Permite un alto rendimiento en el momento de acceder a los datos (orientado a consultas).
 
 El modelo multidimensional está orientado al negocio porque está estructurado para responder directamente a las preguntas y necesidades analíticas que son más relevantes para los usuarios de negocio.
 
 ### Tabla de hechos
 
-Contienen **medidas** de los procesos del negocio. Los mejores hechos son **aditivos**, **numéricos** y **evaluados continuamente**.
+Contiene medidas de los procesos del negocio. Los mejores hechos son aditivos, numéricos y evaluados continuamente.
 
 - Aditivo: es una medida que puede sumarse a lo largo de una o más dimensiones.
 
-- Evaluado continuamente: es una medida que se pueden calcular en cualquier punto del tiempo o a lo largo de cualquier otra dimensión relevante.
+- Evaluado continuamente: es una medida que se puede calcular en cualquier punto del tiempo o a lo largo de cualquier otra dimensión relevante.
 
-Todas las mediciones en una tabla de hechos deben estar en el mismo nivel de **granularidad** y contener dos o más llaves foráneas.
+Todas las mediciones en una tabla de hechos deben estar en el mismo nivel de granularidad y contener dos o más llaves foráneas.
 
 ### Tabla de dimensiones
 
-Contienen **atributos descriptivos** que proveen contexto para las mediciones almacenadas en los hechos. Estos servirán como **restricciones** en las consultas.
+Contiene atributos descriptivos que proveen contexto para las mediciones almacenadas en los hechos. Estos servirán como restricciones en las consultas.
 
-> Los mejores atributos de las dimensiones son **textuales** y **discretos**.
+> Los mejores atributos de las dimensiones son textuales y discretos.
 
 ---
 
-- Un **hecho** toma muchos valores y cambia frecuentemente, un **atributo de dimensión**, en cambio, tiene valores más o menos constantes.
+- Un hecho toma muchos valores y cambia frecuentemente; un atributo de dimensión, en cambio, tiene valores más o menos constantes.
 
-- Un **hecho** participa en cálculos, en cambio, un **atributo de dimensión** es una **restricción** para una consulta.
+- Un hecho participa en cálculos; en cambio, un atributo de dimensión es una restricción para una consulta.
 
 ### Operacional vs. dimensional
 
@@ -44,11 +44,11 @@ Contienen **atributos descriptivos** que proveen contexto para las mediciones al
 
 ### Surrogate keys (claves suplentes)
 
-Es una clave usada como un sustituto de una clave natural. Las claves artificiales por lo general toman valores numéricos enteros. La razón de esto es que la claves naturales que vienen de los sistemas OLTP pueden utilizar claves distintas para la misma entidad.
+Es una clave usada como un sustituto de una clave natural. Las claves artificiales por lo general toman valores numéricos enteros. La razón de esto es que las claves naturales que vienen de los sistemas OLTP pueden utilizar claves distintas para la misma entidad.
 
 ### Dimensión degenerada
 
-Es una dimensión a la cual no le corresponde **ninguna** tabla de dimensión.
+Es una dimensión a la cual no le corresponde ninguna tabla de dimensión.
 
 > Se presenta solo como clave.
 

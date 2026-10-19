@@ -11,13 +11,13 @@
 ## Problemas bien definidos
 
 - Estados.
-    - Como representa el estado actual.
+    - Cómo se representa el estado actual.
 
     - Cuáles son los posibles estados.
 
     - Estado inicial.
 
-- Operadores: aplicado sobre un conjunto particular, genera un conjunto de estados posibles.
+- Operadores: aplicados sobre un estado particular, generan un conjunto de estados posibles.
 
 - Prueba de meta: permite saber si el estado actual es un estado meta.
 
@@ -28,27 +28,27 @@
 
 ## Árboles de búsqueda
 
-Permite facilitar la compresión de las **exploraciones**.
+Facilita la comprensión de las exploraciones.
 
-- El estado inicial es el **nodo raíz**.
+- El estado inicial es el nodo raíz.
 
-- Se **expande** el nodo raíz al aplicar los operadores sobre el nodo.
+- Se expande el nodo raíz al aplicar los operadores sobre el nodo.
 
-- En cada paso, el algoritmo de búsqueda escoge un nodo hoja y lo **expande**.
+- En cada paso, el algoritmo de búsqueda escoge un nodo hoja y lo expande.
 
 ---
 
-Cada **nodo** del árbol guarda la siguiente información:
+Cada nodo del árbol guarda la siguiente información:
 
-- El **estado** del problema.
+- El estado del problema.
 
-- Una **referencia** al nodo padre.
+- Una referencia al nodo padre.
 
-- El **operador** que se aplicó para general el nodo.
+- El operador que se aplicó para generar el nodo.
 
-- La **profundidad** del nodo.
+- La profundidad del nodo.
 
-- El **costo** de la ruta desde la raíz hasta el nodo.
+- El costo de la ruta desde la raíz hasta el nodo.
 
 ### Métodos de búsqueda
 
@@ -58,11 +58,19 @@ No hay caminos prioritarios y la única diferencia entre las técnicas es el ord
 
 ##### Técnicas (búsqueda no informada)
 
+- Preferente por amplitud.
+
+- De costo uniforme.
+
+- Preferente por profundidad.
+
+- Preferente por profundidad evitando ciclos.
+
 - Limitada por profundidad.
 
 - Por profundización iterativa.
 
-###### Preferente por amplitud
+##### Preferente por amplitud
 
 1. Expandir el nodo raíz, esto genera nodos de profundidad 1.
 
@@ -72,19 +80,19 @@ No hay caminos prioritarios y la única diferencia entre las técnicas es el ord
 
 > Expandir se refiere al proceso de verificar si el nodo es meta y si no lo es le crea sus respectivos hijos.
 
-Los ciclos no afectan la búsqueda preferente por todos los nodos son explorados.
+Los ciclos no afectan la búsqueda preferente por amplitud, porque todos los nodos de un nivel se exploran antes que los del siguiente.
 
 ###### Implementación (preferente por amplitud)
 
-Se puede implementar considerando la lista de nodos a expandir como una **cola**, pues representar directamente un árbol sería más costoso. Empezando por la raíz, la expansión de cada nodo sería agregar los nodos hijos a la cola.
+Se puede implementar considerando la lista de nodos a expandir como una cola, pues representar directamente un árbol sería más costoso. Empezando por la raíz, la expansión de cada nodo sería agregar los nodos hijos a la cola.
 
 ---
 
-- Completitud: si.
+- Completitud: sí.
 
-- Complejidad temporal: $O(b^n)$.
+- Complejidad temporal: $O(b^d)$.
 
-    Suponiendo un factor de ramificación $b$, el número de nodos expandidos será el número en el nivel actual multiplicado por $b$ (si la meta no está en ese nivel). Empezando desde la raíz, tenemos la siguiente fórmula:
+    Suponiendo un factor de ramificación $b$, el número de nodos expandidos será el número en el nivel actual multiplicado por $b$ (si la meta no está en ese nivel). Empezando desde la raíz, se tiene la siguiente fórmula:
 
     $$
     f(d) = b^d
@@ -98,21 +106,21 @@ Se puede implementar considerando la lista de nodos a expandir como una **cola**
     \sum_{ i = 0 }^d f(i) = 1 + b + \dots + b^d
     $$
 
-    > Como solo estamos calculando complejidades, omitimos la constante asociada al tiempo que toma expandir un nodo.
+    > Como solo se calculan complejidades, se omite la constante asociada al tiempo que toma expandir un nodo.
 
-- Complejidad espacial: cada nodo del árbol se debe guardar en memoria, por lo que es igual que a la complejidad temporal ($O(b^d)$).
+- Complejidad espacial: cada nodo del árbol se debe guardar en memoria, por lo que es igual a la complejidad temporal ($O(b^d)$).
 
-    > Como solo estamos calculando complejidades, omitimos la constante asociada a la memoria necesaria para expandir un nodo.
+    > Como solo se calculan complejidades, se omite la constante asociada a la memoria necesaria para expandir un nodo.
 
 - Solución óptima: no.
 
-###### De costo uniforme
+##### De costo uniforme
 
 1. Se expande el nodo raíz.
 
 2. En cada nodo $n$ del árbol se calcula el costo de ruta $g(n)$.
 
-3. Se expande el nodo de menor costo, sin importar a qué profundidad este.
+3. Se expande el nodo de menor costo, sin importar a qué profundidad esté.
 
 Los ciclos no afectan la búsqueda por costo uniforme porque al repetir estados se acumula el costo de ruta.
 
@@ -120,19 +128,19 @@ Los ciclos no afectan la búsqueda por costo uniforme porque al repetir estados 
 
 ---
 
-- Completitud: si.
+- Completitud: sí.
 
-- Complejidad temporal: numero de nodos con costo menor al de la solucion optima.
+- Complejidad temporal: número de nodos con costo menor al de la solución óptima.
 
-- Complejidad espacial: numero de nodos con costo menor al de la solucion optima.
+- Complejidad espacial: número de nodos con costo menor al de la solución óptima.
 
-- Solucion optima: si.
+- Solución óptima: sí.
 
 ###### Implementación (de costo uniforme)
 
-Se puede implementar considerando la lista de nodos a expandir como una **cola**, donde la prioridad es el costo y se selecciona aquel con menor (mayor prioridad).
+Se puede implementar considerando la lista de nodos a expandir como una cola de prioridad, donde la prioridad es el costo y se selecciona el nodo de menor costo (mayor prioridad).
 
-#### Preferente por profundidad
+##### Preferente por profundidad
 
 En lugar de buscar de forma exhaustiva en cada nivel, este algoritmo sigue las ramas del árbol hacia abajo hasta el nivel más bajo que pueda.
 
@@ -140,7 +148,7 @@ En lugar de buscar de forma exhaustiva en cada nivel, este algoritmo sigue las r
 
 2. Siempre se expande, de izquierda a derecha, el nodo con mayor profundidad del árbol.
 
-> Si se llega a un nodo tal que al expandirlo no tiene hijos, se expanden los nodos de niveles mas profundos.
+> Si se llega a un nodo tal que al expandirlo no tiene hijos, se retrocede y se expande el nodo pendiente más profundo.
 
 Los ciclos afectan a la búsqueda preferente por profundidad, además del orden de los operadores.
 
@@ -150,23 +158,23 @@ Los ciclos afectan a la búsqueda preferente por profundidad, además del orden 
 
 - Complejidad temporal: $O(b^d)$, en el peor caso se expanden los mismos nodos que por amplitud, simplemente en un orden distinto.
 
-- Complejidad espacial: $b * d$, no es necesario guardar cada nodo del árbol en memoria.
+- Complejidad espacial: $O(b * d)$, no es necesario guardar cada nodo del árbol en memoria.
 
     > Como máximo se tienen en memoria todos los nodos del nivel actual y de los anteriores de un nodo para llegar a él.
 
 - Solución óptima: no.
 
-#### Preferente por profundidad evitando ciclos
+##### Preferente por profundidad evitando ciclos
 
 Es igual al preferente por profundidad, solo que en este se evita que sobre una misma rama se alcance un estado previo.
 
-#### Limitada por profundidad
+##### Limitada por profundidad
 
-Es igual al preferente por profundidad, solo que en este se establece una profundidad **máxima** hasta la que se hace la exploración, cuando se llega a esta, se continúa con las profundidades anteriores.
+Es igual al preferente por profundidad, solo que en este se establece una profundidad máxima hasta la que se hace la exploración, cuando se llega a esta, se continúa con las profundidades anteriores.
 
 > El límite a usar depende del problema en particular.
 
-Podríamos decir que este enfoque intenta tomar lo bueno de preferente por profundidad, llegar más rápido a una solución que amplitud sin caer en bucles.
+Este enfoque intenta tomar lo bueno de la búsqueda preferente por profundidad (llegar más rápido a una solución que la búsqueda por amplitud) sin caer en bucles.
 
 ---
 
@@ -178,9 +186,9 @@ Podríamos decir que este enfoque intenta tomar lo bueno de preferente por profu
 
 - Solución óptima: no.
 
-#### Por profundización iterativa
+##### Por profundización iterativa
 
-Es igual a la limitada por profundidad, solo que este prueba todos los **límites** de profundidad posibles, inicialmente toma como límite 0 y lleva a cabo una búsqueda limitada por profundidad, luego aumenta el límite en 1 y realiza el mismo procedimiento, así hasta encontrar alguna solución.
+Es igual a la limitada por profundidad, solo que este prueba todos los límites de profundidad posibles, inicialmente toma como límite 0 y lleva a cabo una búsqueda limitada por profundidad, luego aumenta el límite en 1 y realiza el mismo procedimiento, así hasta encontrar alguna solución.
 
 ---
 
@@ -189,7 +197,7 @@ Es igual a la limitada por profundidad, solo que este prueba todos los **límite
 - Complejidad temporal: $O(b^d)$, donde $d$ es la profundidad máxima probada.
 
     $$
-    \sum_{ i = 0 }^d { (d - i) b^i } = (d + 1) 1 + d b + (d - 1) b^2 + \dots + 1 * b^d
+    \sum_{ i = 0 }^d { (d + 1 - i) b^i } = (d + 1) 1 + d b + (d - 1) b^2 + \dots + 1 * b^d
     $$
 
 - Complejidad espacial: $O(b * d)$, donde $d$ es la profundidad máxima probada.

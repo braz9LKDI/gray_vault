@@ -2,7 +2,7 @@
 
 ## Introducción
 
-La promesa del **data mining** es encontrar patrones en grandes volúmenes de información, pero hallarlos no es suficiente, los patrones se tienen que **entender** y **valorar**. Solo de esa forma se pueden transformar en valor para la compañía como **conocimiento** que les permita actuar de forma **rápida** y **eficiente**.
+La promesa del data mining es encontrar patrones en grandes volúmenes de información, pero hallarlos no es suficiente; los patrones se tienen que entender y valorar. Solo de esa forma se pueden transformar en valor para la compañía como conocimiento que le permita actuar de forma rápida y eficiente.
 
 ## Machine learning
 
@@ -18,10 +18,10 @@ En este enfoque, los modelos aprenden a partir de datos etiquetados, donde las r
 
 - Clasificación: asignación de categorías o etiquetas a datos.
 
-> Se usa para la **predicción**.
+> Se usa para la predicción.
 
 ### Aprendizaje no supervisado (unsupervised learning)
 
-Aquí, los datos no tienen etiquetas, y el objetivo es encontrar patrones o estructuras en los datos. La tarea principal en este tipo de aprendizaje es el **clustering**: agrupación de datos en subconjuntos con características similares.
+Aquí, los datos no tienen etiquetas y el objetivo es encontrar patrones o estructuras en los datos. La tarea principal en este tipo de aprendizaje es el clustering: agrupación de datos en subconjuntos con características similares.
 
-> Se usa para la **descripción**.
+> Se usa para la descripción.

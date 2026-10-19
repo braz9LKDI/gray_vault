@@ -18,7 +18,7 @@ Todo polinomio no constante de grado $n$ con coeficientes complejos tiene exacta
 
 ## Teorema del factor
 
-Cuando dividimos $P(z)$ por un divisor lineal $z - c$, el resto es $P(c)$.
+Al dividir $P(z)$ por un divisor lineal $z - c$, el resto es $P(c)$.
 
 $$
 P(z) = (z - c) q(z) + P(c)
@@ -52,7 +52,7 @@ $$
 
 ### Función transformada $S(z)$
 
-Para analizar las raíces fuera del disco unitario, consideramos
+Para analizar las raíces fuera del disco unitario, se considera
 
 $$
 \begin{align}
@@ -82,10 +82,10 @@ $$
 P_n(z) = (z - z_0) q_{ n - 1 }(z) + P_n(z_0) \quad (3)
 $$
 
-$q(z)_{ n - 1 }$ puede expresarse como
+$q_{ n - 1 }(z)$ puede expresarse como
 
 $$
-q(z)_{ n - 1 } = b_0 + b_1 z + \dots + b_{ n - 1 } z^{ n - 1 }
+q_{ n - 1 }(z) = b_0 + b_1 z + \dots + b_{ n - 1 } z^{ n - 1 }
 $$
 
 $$
@@ -103,7 +103,7 @@ $$
 
 ```text
 input: p_coefficients, z_0
-    n = len(p_coefficients)
+    n = len(p_coefficients) - 1
     b_n = a_n
 
     for k = n - 1 to 0 step = -1 do
@@ -112,9 +112,9 @@ input: p_coefficients, z_0
 
     q_z = list(b_i : 1 <= i <= n)
 
-    b_0 = p(z_0)
+    p_z_0 = b_0
 ```
 
 - `p_coefficients` es la lista con los coeficientes del polinomio $P$, en la forma `[a_0,a_1,...,a_n]`.
 
-- `n` es el grado del polinomio $p$.
+- `n` es el grado del polinomio $P$.

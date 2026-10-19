@@ -1,12 +1,12 @@
 # How to format code in LaTeX
 
-Proper formatting of your code is especially important in reporting, it gives more information than just an image and also looks more professional.
+Proper code formatting is especially important in reports: it gives more information than an image and looks more professional.
 
 ## `verbatim`
 
-This is the easiest way to display code in your LaTeX documents, the verbatim environment is built into LaTeX. It only generates an output in a monospaced font.
+This is the easiest way to display code in LaTeX documents; the verbatim environment is built into LaTeX. It only generates an output in a monospaced font.
 
-```LaTeX
+```latex
 \begin{verbatim}
 Text enclosed inside \texttt{verbatim} environment
 is printed directly
@@ -16,7 +16,7 @@ and all \LaTeX{} commands are ignored.
 
 It also has a starred version that gives more information about the typed characters.
 
-```LaTeX
+```latex
 \begin{verbatim*}
 Text enclosed inside \texttt{verbatim} environment
 is printed directly
@@ -26,17 +26,17 @@ and all \LaTeX{} commands are ignored.
 
 ## `listings`
 
-To be able to use it, you have to import the "listings" package.
+It requires the `listings` package.
 
-```LaTex
+```latex
 \usepackage{listings}
 ```
 
-By default, it does not do much more than the literal environment.
+By default, it does not do much more than the verbatim environment.
 
-In a block, you can specify the programming language by adding the `language` parameter.
+In a block, the `language` parameter sets the programming language.
 
-```LaTex
+```latex
 \begin{lstlisting}[language=Python]
 print("Hello world")
 \end{lstlisting}
@@ -44,27 +44,27 @@ print("Hello world")
 
 ### Importing code from a file
 
-With the command `\lstinputlisting{<file>}` you can specify the file content you want to display.
+The command `\lstinputlisting{<file>}` displays the content of a file.
 
-```LaTex
+```latex
 \lstinputlisting[language=Python]{my_python_file.py}
 ```
 
-You can also specify a range of lines on which you want to display the file.
+A range of lines can also be specified.
 
-```LaTex
+```latex
 \lstinputlisting[language=Python, firstline=2, lastline=12]{my_python_file.py}
 ```
 
 ### Code styles and colors
 
-You can create styles and use them to display your code. You can set a global style or a named style.
+Styles control how code is displayed; a style can be global or named.
 
 #### Global style
 
 It is done through the `\lstset` command.
 
-```LaTex
+```latex
 \lstset {
     % Options
 }
@@ -74,8 +74,8 @@ It is done through the `\lstset` command.
 
 It is done through the `\lstdefinestyle` command.
 
-```LaTex
-\lstdefinestyle{<style name>} {
+```latex
+\lstdefinestyle{<style-name>} {
     % Options
 }
 ```
@@ -96,7 +96,7 @@ It is done through the `\lstdefinestyle` command.
 
     > E.g. `keywordstyle=\color{red}`.
 
-- `numberstyle`: style used for line numbers
+- `numberstyle`: style used for line numbers.
 
 - `numbersep`: distance of line numbers from the code.
 
@@ -146,7 +146,7 @@ It is done through the `\lstdefinestyle` command.
 
 #### Usage example
 
-```LaTex
+```latex
 \documentclass{article}
 \usepackage{listings}
 \usepackage{xcolor}
@@ -178,7 +178,7 @@ It is done through the `\lstdefinestyle` command.
 \lstset{style=mystyle}
 
 \begin{document}
-The next code will be directly imported from a file
+The following code uses the custom style.
 
 \begin{lstlisting}[language=Python]
 print("Hello world")

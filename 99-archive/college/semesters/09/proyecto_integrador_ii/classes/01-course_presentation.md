@@ -2,15 +2,15 @@
 
 ## Aplicaciones inteligentes
 
-Una aplicación inteligente
+Una aplicación inteligente:
 
-- es un software que utiliza IA para ofrecer funciones y servicios mas avanzados y personalizados a los usuarios que los que se pueden ofrecer con las aplicaciones tradicionales.
+- Es un software que utiliza IA para ofrecer funciones y servicios más avanzados y personalizados a los usuarios que los que se pueden ofrecer con las aplicaciones tradicionales.
 
-- tienen funcionalidades tradicionales y funcionalidades de inteligencia artificial.
+- Tiene funcionalidades tradicionales y funcionalidades de inteligencia artificial.
 
-- se considera "inteligente" debido a su capacidad para realizar funciones que tradicionalmente requerirían la comprensión o el razonamiento humano como tomar decisiones, aprender, razonar, definir planes de trabajo, procesamiento de texto y voz, reconocimiento de objetos, etc.
+- Se considera "inteligente" debido a su capacidad para realizar funciones que tradicionalmente requerirían la comprensión o el razonamiento humano como tomar decisiones, aprender, razonar, definir planes de trabajo, procesamiento de texto y voz, reconocimiento de objetos, etc.
 
-### 3 Características relevantes
+### Características relevantes
 
 #### Aprendizaje automático
 
@@ -28,9 +28,9 @@ Una aplicación inteligente
 
 - Interfaces conversacionales: ofrecen una experiencia de usuario más cercana a una conversación (como chats) con una persona.
 
-## POC, MVP and APP
+## POC, MVP y app
 
-### Proof of Concept (POC)
+### Proof of concept (POC)
 
 Demostración práctica para validar la viabilidad técnica o comercial de una idea en un entorno controlado.
 
@@ -46,7 +46,7 @@ Demostración práctica para validar la viabilidad técnica o comercial de una i
 
 - Resultados: evidencia del potencial para desarrollos a mayor escala.
 
-### Minimum Viable Product (MVP)
+### Minimum viable product (MVP)
 
 Versión mínima de un producto que permite recoger la máxima retroalimentación del mercado con el mínimo esfuerzo.
 
@@ -66,7 +66,7 @@ Versión mínima de un producto que permite recoger la máxima retroalimentació
 
 Producto software completo y optimizado que ofrece una solución integral y refinada para un amplio segmento de usuarios.
 
-#### Características (APP)
+#### Características (app)
 
 - Objetivo: proveer una solución robusta y eficiente.
 

@@ -1,4 +1,4 @@
-# Proof of concept and minimum viable model
+# Proof of concept and minimum viable product
 
 ## Prueba de concepto (POC)
 
@@ -28,11 +28,11 @@ El prototipo es una herramienta de validación que permite la interacción direc
 
 Su propósito es:
 
-- validar supuestos específicos sobre el negocio.
+- Validar supuestos específicos sobre el negocio.
 
-- obtener aprendizajes tempranos antes de realizar inversiones significativas.
+- Obtener aprendizajes tempranos antes de realizar inversiones significativas.
 
-- confirmar si la propuesta de valor resuena con el mercado objetivo.
+- Confirmar si la propuesta de valor resuena con el mercado objetivo.
 
 Un prototipo efectivo debe validar tanto la utilidad (¿resuelve un problema real en la vida del usuario?) como la forma (¿es clara, diferenciada, novedosa y atractiva?). Los prototipos pueden variar desde modelos físicos básicos hasta representaciones digitales interactivas, dependiendo de la naturaleza del producto o servicio que se está desarrollando.
 
@@ -58,8 +58,8 @@ El desarrollo de un producto tecnológico sigue una progresión lógica que util
 
 ```mermaid
 flowchart LR
-    POC --> MVP
-    MVP --> prototipo
+    POC --> prototipo
+    prototipo --> MVP
 ```
 
 Esta progresión no es necesariamente lineal y puede involucrar iteraciones entre etapas. Por ejemplo, los aprendizajes obtenidos del prototipo pueden revelar necesidades de ajustes técnicos que requieran volver a una POC modificada. Lo crucial es que cada etapa tiene un propósito específico de validación que reduce la incertidumbre antes de comprometer mayores inversiones en la siguiente fase del desarrollo.
@@ -74,6 +74,6 @@ Existen tres áreas críticas de validación dentro del modelo de negocio:
 
 - Validación del modelo de negocio: verificar que la manera en que se crea, entrega y captura valor es sostenible y escalable. Esto incluye validar canales de distribución, estructura de costos y fuentes de ingresos.
 
-- Validación del segmento de clientes: asegurar que el grupo de personas identificadas como mercado objetivo realmente existe, tiene el problema que se busca resolver, y está dispuesto a pagar por la solución propuesta.
+- Validación del segmento de clientes: asegurar que el grupo de personas identificadas como mercado objetivo realmente existe, tiene el problema que se busca resolver y está dispuesto a pagar por la solución propuesta.
 
-La propuesta de valor constituye el corazón del modelo de negocio, ya que define el beneficio único que diferencia la oferta en el mercado. Una propuesta de valor efectiva articula claramente qué problema se resuelve, para quién, y por qué la solución es superior a las alternativas existentes.
+La propuesta de valor constituye el corazón del modelo de negocio, ya que define el beneficio único que diferencia la oferta en el mercado. Una propuesta de valor efectiva articula claramente qué problema se resuelve, para quién y por qué la solución es superior a las alternativas existentes.

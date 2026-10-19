@@ -1,8 +1,6 @@
-# 07-estimations
+# Estimations
 
-## Estimations
-
-### Presupuesto del proyecto
+## Presupuesto del proyecto
 
 ```mermaid
 block-beta

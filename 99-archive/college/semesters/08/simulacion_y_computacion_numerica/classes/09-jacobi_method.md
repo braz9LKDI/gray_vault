@@ -17,7 +17,7 @@ Este método es un procedimiento iterativo utilizado para resolver sistemas de e
 
 2. Reordenamiento de las ecuaciones.
 
-    Es importante que el sistema esté diagonalmente dominante para asegurar la convergencia.
+    Es importante que el sistema sea diagonalmente dominante para asegurar la convergencia.
 
     $$
     \abs{ a_{ ii } } \geq \sum_{ \underset{ j \neq i }{ j = 1 } }^n \abs{ a_{ ij } }
@@ -25,13 +25,13 @@ Este método es un procedimiento iterativo utilizado para resolver sistemas de e
 
 3. Elección de valores iniciales.
 
-    Selecciona un vector inicial $x^{ (0) }$. Si no se tiene información previa, se puede empezar con ceros o unos.
+    Se selecciona un vector inicial $x^{ (0) }$. Si no se tiene información previa, se puede empezar con ceros o unos.
 
 4. Proceso iterativo.
 
     En el método de Jacobi, todas las variables se actualizan simultáneamente utilizando únicamente los valores de la iteración anterior.
 
-    En la iteración $k + 1$, para cada $i = 1$ y $j = 1$ hasta $n$ calcular ${ x_i }^{ (k + 1) }$ usando los valores ${ x_j }^{ (k) }$ de la iteración anterior.
+    En la iteración $k + 1$, para cada $i = 1,\dots,n$ se calcula ${ x_i }^{ (k + 1) }$ usando los valores ${ x_j }^{ (k) }$ de la iteración anterior.
 
     $$
     { x_i }^{ (k + 1) } = \frac{ 1 }{ a_{ ii } } \left (b_i - \sum_{ \underset{ j \neq i }{ j = 1 } }^n { a_{ ij } { x_j }^{ (k) } } \right )
@@ -40,7 +40,7 @@ Este método es un procedimiento iterativo utilizado para resolver sistemas de e
     Después se calcula el error relativo para cada variable con la siguiente fórmula:
 
     $$
-    \varepsilon_i = \abs{ \frac{ x^{ (k + 1) } - x^{ (k) } }{ x^{ (k + 1) } } } * 100\%
+    \varepsilon_i = \abs{ \frac{ { x_i }^{ (k + 1) } - { x_i }^{ (k) } }{ { x_i }^{ (k + 1) } } } * 100\%
     $$
 
     Si todos los $\varepsilon_i$ son menores que el criterio de tolerancia, se detiene el proceso.

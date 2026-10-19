@@ -2,7 +2,7 @@
 
 ## 1
 
-1. Esboce la gráfica de una función continua en $\mathbb{ R }$, que no tenga extremos absolutos pero si un máximo y un mínimo relativo.
+1. Esboce la gráfica de una función continua en $\mathbb{ R }$, que no tenga extremos absolutos pero sí un máximo y un mínimo relativo.
 
     ![graph](99-archive/college/semesters/01/assets/calculo_i/2_12_01-graph.jpg)
 
@@ -18,9 +18,9 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
 
     $$
     \begin{align}
-        & f^\prime(x) = \frac{ (x - 1) - (x + 2) }{ (x + 2)^2 } \\
+        & f^\prime(x) = \frac{ (x + 2) - (x - 1) }{ (x + 2)^2 } \\
         & = \frac{ 3 }{ (x + 2)^2 } \\
-        & x \in \mathbb{ R } \setminus \{2\}
+        & x \in \mathbb{ R } \setminus \{-2\}
     \end{align}
     $$
 
@@ -32,11 +32,11 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
         & = \frac{ 1 }{ 4 }
     \end{align}
     $$
-    - Máximo absoluto: el valor es $-2$ y ocurre en $x = -1$.
+    - Máximo absoluto: el valor es $\frac{ 1 }{ 4 }$ y ocurre en $x = 2$.
 
-    - Mínimo absoluto: el valor es $\frac{ 1 }{ 4 }$ y ocurre en $x = 2$.
+    - Mínimo absoluto: el valor es $-2$ y ocurre en $x = -1$.
 
-2. $2 \psin{ x } - \pcos{ 2 x }$, $x \in [0,2 \pi]$.
+2. $f(x) = 2 \psin{ x } - \pcos{ 2 x }$, $x \in [0,2 \pi]$.
 
     $$
     \begin{align}
@@ -44,11 +44,11 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
         & 0 = 2 \pcos{ x } + 2 \psin{ 2 x } \\
         & = \pcos{ x } + \psin{ 2 x } \\
         & = \pcos{ x } + 2 \psin{ x } \pcos{ x } \\
-        & = \pcos{ x } (1 + 2 \psin{ x }) \\
+        & = \pcos{ x } (1 + 2 \psin{ x })
     \end{align}
     $$
 
-    Tenemos dos casos:
+    Hay dos casos:
     1. $\pcos{ x } = 0$: $x = \frac{ \pi }{ 2 }$ y $x = \frac{ 3 \pi }{ 2 }$.
 
     2. $1 + 2 \psin{ x } = 0$ o $\psin{ x } = -\frac{ 1 }{ 2 }$: $\frac{ 7 \pi }{ 6 }$ y $\frac{ 11 \pi }{ 6 }$.
@@ -59,8 +59,8 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
         & f \left (\frac{ \pi }{ 2 } \right ) = 2 (1) - (-1) = 3 \\
         & f \left (\frac{ 7 \pi }{ 6 } \right ) = 2 (-0.5) - (0.5) = -1.5 \\
         & f \left (\frac{ 3 \pi }{ 2 } \right ) = 2 (-1) - (-1) = -1 \\
-        & f \left (\frac{ 11 \pi }{ 6 } \right ) = 2 (-0.5) - (-0.5) = -1.5 \\
-        & f(2 \pi) = 2 (0) - 1 = -1 \\
+        & f \left (\frac{ 11 \pi }{ 6 } \right ) = 2 (-0.5) - (0.5) = -1.5 \\
+        & f(2 \pi) = 2 (0) - 1 = -1
     \end{align}
     $$
     - Máximo absoluto: el valor es 3 y ocurre en $x = \frac{ \pi }{ 2 }$.
@@ -71,11 +71,11 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
 
     $$
     \begin{align}
-        & f^\prime(x) =-\frac{ 2 }{ 3 \sqrt[3]{ x - 3 } }
+        & f^\prime(x) = -\frac{ 2 }{ 3 \sqrt[3]{ x - 3 } }
     \end{align}
     $$
 
-    Como $x = 3$ está en el intervalo y la función original está definida en ese punto, $x = 3$ es un **punto crítico**.
+    Como $x = 3$ está en el intervalo y la función original está definida en ese punto, $x = 3$ es un punto crítico.
 
     $$
     \begin{align}
@@ -93,7 +93,7 @@ Halle los extremos absolutos de la función dada en el intervalo indicado.
     $$
     - Máximo absoluto: el valor es 1 y ocurre en $x = 3$.
 
-    - Mínimo absoluto: el valor es $-3$ (o $-\frac{ 3 }{ 2 }$) y ocurre en $x = -5$.
+    - Mínimo absoluto: el valor es $-3$ y ocurre en $x = -5$.
 
 4. $f(x) = \abs{ x + 1 } + \abs{ x - 1 }$, $x \in [-2,2]$.
 
@@ -148,7 +148,7 @@ $$
 \begin{align}
     & V^\prime = 0 \\
     & 12 x^2 - 144 x + 324 = 0 \\
-    & x^2 - 144 x + 324 = 0 \\
+    & x^2 - 12 x + 27 = 0 \\
     & (x - 9) (x - 3) = 0 \\
     & x_1 = 9 \quad x_2 = 3
 \end{align}
@@ -180,12 +180,14 @@ $$
 \end{align}
 $$
 
+Como $A > 0$, maximizar $A$ equivale a maximizar $A^2$.
+
 $$
 \begin{align}
-    & A^\prime = (A^2)^\prime \\
+    & (A^2)^\prime \\
     & = \pprime{ 4 x^2 (r^2 - x^2) } \\
     & = 8 r^2 x - 16 x^3 \\
-    & A^\prime = 0 \\
+    & (A^2)^\prime = 0 \\
     & 8 r^2 x - 16 x^3 = 0 \\
     & r^2 x - 2 x^3 = 0 \\
     & x (r^2 - 2 x^2) = 0 \\
@@ -217,13 +219,13 @@ El triángulo rectángulo está colocado en un plano cartesiano:
 
 - La base de 80 centímetros descansa sobre el eje $x$.
 
-- La altura 50 descansa sobre el eje $y$.
+- La altura de 50 centímetros descansa sobre el eje $y$.
 
-El triángulo inscrito tendrá:
+El rectángulo inscrito tendrá:
 
 - Una base $x$ sobre el eje $x$.
 
-- Una base $y$ sobre el eje $y$.
+- Una altura $y$ sobre el eje $y$.
 
 - Un vértice coincidiendo con el origen $(0,0)$ y el vértice opuesto $(x,y)$ tocando la hipotenusa del triángulo.
 
@@ -233,7 +235,7 @@ $$
 \begin{align}
     & \frac{ 50 - y }{ x } = \frac{ 50 }{ 80 } \\
     & 50 - y = \frac{ 5 x }{ 8 } \\
-    & y = 50 - \frac{ 5 x }{ 8 } \\
+    & y = 50 - \frac{ 5 x }{ 8 }
 \end{align}
 $$
 

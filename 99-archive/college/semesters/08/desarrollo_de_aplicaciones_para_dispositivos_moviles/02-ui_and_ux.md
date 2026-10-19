@@ -20,7 +20,7 @@ Situada en la parte inferior de la pantalla, esta barra facilita la navegación 
 
 Permite a los usuarios cambiar entre diferentes secciones o categorías dentro de la aplicación deslizando la pantalla o tocando las pestañas. Esto ofrece una forma intuitiva de explorar contenido relacionado sin perder el contexto.
 
-#### Botones flotantes de acción (FAB)
+### Botones flotantes de acción (FAB)
 
 Botones que flotan sobre el contenido principal y ofrecen accesos directos a acciones primarias o frecuentes. Son altamente visibles y facilitan la ejecución de tareas comunes de manera eficiente.
 
@@ -80,7 +80,7 @@ Se refiere al proceso de medir y analizar la facilidad con la que los usuarios p
 
 ## Experiencia de usuario (UX) y las leyes UX
 
-La experiencia de usuario (UX), se refiere a la interacción general que una persona tiene al utilizar un producto o servicio, como un sitio web, una aplicación móvil, un software o cualquier otro sistema. La UX se centra en cómo los usuarios perciben y se sienten al interactuar con un producto, y busca mejorar la calidad de esa interacción.
+La experiencia de usuario (UX) se refiere a la interacción general que una persona tiene al utilizar un producto o servicio, como un sitio web, una aplicación móvil, un software o cualquier otro sistema. La UX se centra en cómo los usuarios perciben y se sienten al interactuar con un producto, y busca mejorar la calidad de esa interacción.
 
 ### Leyes UX (Jon Yablonski)
 
@@ -90,7 +90,7 @@ Los usuarios a menudo perciben un diseño estéticamente agradable como un dise�
 
 #### Umbral de Doherty
 
-La productividad se dispara cuando una computadora y sus usuarios interactúan a un ritmo ($< 400 \text{ms}$) que garantiza que ninguno tenga que esperar al otro.
+La productividad se dispara cuando una computadora y sus usuarios interactúan a un ritmo (menos de 400 ms) que garantiza que ninguno tenga que esperar al otro.
 
 #### Ley de Hick
 
@@ -100,9 +100,9 @@ El tiempo que lleva tomar una decisión aumenta con el número y la complejidad 
 
 También conocida como la ley de la conservación de la complejidad, establece que para cualquier sistema existe una cierta complejidad que no se puede reducir.
 
-#### Ley de Prägnanz
+#### Ley de Pragnanz
 
-Las personas percibirán e interpretarán imágenes ambiguas o complejas de la forma más simple posible, porque es la interpretación que requiere el menor esfuerzo cognitivo de nuestra parte.
+Las personas percibirán e interpretarán imágenes ambiguas o complejas de la forma más simple posible, porque es la interpretación que requiere el menor esfuerzo cognitivo.
 
 #### Efecto de posición en serie
 
@@ -110,9 +110,9 @@ Los usuarios tienden a recordar mejor el primer y el último elemento de una ser
 
 #### Efecto von Restorff
 
-El efecto Von Restorff, también conocido como efecto de aislamiento, predice que cuando hay varios objetos similares presentes, es más probable que se recuerde el que difiere del resto.
+El efecto von Restorff, también conocido como efecto de aislamiento, predice que cuando hay varios objetos similares presentes, es más probable que se recuerde el que difiere del resto.
 
-#### Ley de Jacob
+#### Ley de Jakob
 
 Los usuarios pasan la mayor parte de su tiempo en otros sitios. Esto significa que los usuarios prefieren que su sitio funcione de la misma manera que todos los demás sitios que ya conocen.
 

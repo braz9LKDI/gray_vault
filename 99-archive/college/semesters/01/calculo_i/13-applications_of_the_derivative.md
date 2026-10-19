@@ -18,10 +18,10 @@ Verifique las hipótesis del teorema de Rolle en el intervalo indicado y halle l
 
     $$
     \begin{align}
-        & f^\prime(c) = 3 x^2 - 6 x - 1 \\
-        & f^\prime(c) = 0  \\
+        & f^\prime(x) = 3 x^2 - 6 x - 1 \\
+        & f^\prime(c) = 0 \\
         & 3 c^2 - 6 c - 1 = 0 \\
-        & c = \frac{ -(-6) \pm \sqrt{ (-6)^2 - 4 (3)(-1) } }{ 2 (3) } \\
+        & c = \frac{ -(-6) \pm \sqrt{ (-6)^2 - 4 (3) (-1) } }{ 2 (3) } \\
         & c = \frac{ 6 \pm \sqrt{ 36 + 12 } }{ 6 } \\
         & c = 1 \pm \frac{ 2 \sqrt{ 3 } }{ 3 } \\
         & c_1 = 1 + \frac{ 2 \sqrt{ 3 } }{ 3 } \\
@@ -45,7 +45,7 @@ Verifique las hipótesis del teorema de Rolle en el intervalo indicado y halle l
 
     $$
     \begin{align}
-        & f^\prime(c) = \sqrt{ x + 6 } + \frac{ x }{ 2 \sqrt{ x + 6 } } \\
+        & f^\prime(x) = \sqrt{ x + 6 } + \frac{ x }{ 2 \sqrt{ x + 6 } } \\
         & = \frac{ 3 x + 12 }{ 2 \sqrt{ x + 6 } } \\
         & f^\prime(c) = 0 \\
         & \frac{ 3 x + 12 }{ 2 \sqrt{ x + 6 } } = 0 \\
@@ -77,12 +77,12 @@ Verifique las hipótesis del teorema del valor medio en el intervalo indicado y 
         & 4 c^3 - 6 c + 1 = 1 \\
         & 4 c^3 - 6 c = 0 \\
         & 2 c (2 c^2 - 3) = 0 \\
-        & 2 c = 0 \por 2 c^2 - 3  = 0 \\
-        & c = 0 \por c = \pm \sqrt{  \frac{ 1 }{ 2 } }
+        & 2 c = 0 \por 2 c^2 - 3 = 0 \\
+        & c = 0 \por c = \pm \sqrt{ \frac{ 3 }{ 2 } }
     \end{align}
     $$
 
-    Como $c = 0 \in [-1,1]$ y $c = \pm \sqrt{ \frac{ 1 }{ 2 } } \notin [-1,1]$, el $c$ que satisface la conclusión es $c = 0$.
+    Como $c = 0 \in [-1,1]$ y $c = \pm \sqrt{ \frac{ 3 }{ 2 } } \notin [-1,1]$, el $c$ que satisface la conclusión es $c = 0$.
 
 2. $f(x) = \frac{ x }{ x + 2 }$, $x \in [1,4]$.
 
@@ -105,7 +105,7 @@ Verifique las hipótesis del teorema del valor medio en el intervalo indicado y 
     \end{align}
     $$
 
-    Como $c = 0 \pand c = -2 + 3 \sqrt{ 2 } \in [-1,1]$ y $c = -2 - 3 \sqrt{ 2 } \in [-1,1] \notin [-1,1]$, los valores de $c$ que satisfacen la conclusión del teorema son $c = 0$ y $c = -2 + 3 \sqrt{ 2 }$.
+    Como $c = -2 + 3 \sqrt{ 2 } \in [1,4]$ y $c = -2 - 3 \sqrt{ 2 } \notin [1,4]$, el $c$ que satisface la conclusión del teorema es $c = -2 + 3 \sqrt{ 2 }$.
 
 ## 3
 
@@ -135,11 +135,11 @@ Use el teorema del valor medio para determinar:
     \end{align}
     $$
 
-    El valor mas pequeño que puede tomar $f(4)$ es 16.
+    El valor más pequeño que puede tomar $f(4)$ es 16.
 
 ## 4
 
-Muestre que la ecuación $x^9 + 5 x - 3 = 0$ tiene solución unica en los números reales.
+Muestre que la ecuación $x^9 + 5 x - 3 = 0$ tiene solución única en los números reales.
 
 $$
 \begin{align}
@@ -150,7 +150,7 @@ $$
 \end{align}
 $$
 
-Como $f(x)$ es una función polinomica, es **continua** en todos los reales, dado que $f(0) < 0$ y $f(1) > 0$, el **teorema del valor intermedio** garantiza que existe al menos un numero $c \in (0,1)$, tal que $f(c) = 0$.
+Como $f(x)$ es una función polinómica, es continua en todos los reales. Dado que $f(0) < 0$ y $f(1) > 0$, el teorema del valor intermedio garantiza que existe al menos un número $c \in (0,1)$ tal que $f(c) = 0$.
 
 $$
 \begin{align}
@@ -162,7 +162,7 @@ $$
 \end{align}
 $$
 
-Como la derivada siempre es **positiva**, la función $f(x)$ es **estrictamente creciente** en todo su dominio.
+Como la derivada siempre es positiva, la función $f(x)$ es estrictamente creciente en todo su dominio, por lo que la solución es única.
 
 ## 5
 
@@ -179,7 +179,7 @@ $$
 $$
 
 $$
-y^{ '' } = \frac{ (-2 y^2 -  4 x y y^\prime) (2 x^2 y - 1) - (1 - 2 x y^2) (4 x y + 2 x^2 y^\prime) }{ (2 x^2 y - 1)^2 } \\
+y^{ '' } = \frac{ (-2 y^2 - 4 x y y^\prime) (2 x^2 y - 1) - (1 - 2 x y^2) (4 x y + 2 x^2 y^\prime) }{ (2 x^2 y - 1)^2 }
 $$
 
 Términos sin $y^\prime$:
@@ -187,7 +187,7 @@ Términos sin $y^\prime$:
 $$
 \begin{align}
     & - 2 y^2 (2 x^2 y - 1) - 4 x y (1 - 2 x y^2) \\
-    & = -4 x^2 y^3  + 2 y^2 - 4 x y + 8 x^2 y^3 \\
+    & = -4 x^2 y^3 + 2 y^2 - 4 x y + 8 x^2 y^3 \\
     & = 4 x^2 y^3 + 2 y^2 - 4 x y \\
     & = 2 y (2 x^2 y^2 + y - 2 x) \\
     & = 2 y (2 (x + y) + y - 2 x) \\
@@ -205,7 +205,7 @@ $$
     & = y^\prime [-4 x^3 y^2 + 4 x y - 2 x^2] \\
     & = -2 x y^\prime [2 x^2 y^2 - 2 y + x] \\
     & = -2 x y^\prime [2 (x + y) - 2 y + x] \\
-    & = -2 x y^\prime [2x + 2y - 2 y + x] \\
+    & = -2 x y^\prime [2 x + 2 y - 2 y + x] \\
     & = -2 x y^\prime [3 x] \\
     & = -6 x^2 y^\prime
 \end{align}
@@ -213,7 +213,7 @@ $$
 
 $$
 \begin{align}
-    & y^{ '' } = \frac{ 6 y^2 - 6 x^2 }{ (2 x^2 y - 1)^2 } \left (\frac{ 1 - 2 x y^2 }{ 2 x^2 y - 1 } \right ) \\
+    & y^{ '' } = \frac{ 6 y^2 - 6 x^2 \left (\frac{ 1 - 2 x y^2 }{ 2 x^2 y - 1 } \right ) }{ (2 x^2 y - 1)^2 } \\
     & = \frac{ 6 (x^2 + 4 x y + y^2) }{ (2 x^2 y - 1)^3 }
 \end{align}
 $$
@@ -234,8 +234,8 @@ $$
         & 27 a - 6 b + c = 0 \\
         & f(2) = 0 \\
         & 8 a + 4 b + 2 c + d = 0 \\
-        & f^\prime(-2) = 0 \\
-        & 12 a - 4 b + c = 0
+        & f^\prime(2) = 0 \\
+        & 12 a + 4 b + c = 0
     \end{align}
     $$
 
@@ -245,19 +245,19 @@ $$
             -27 & 9  & -3 & 1 & 5 \\
             27  & -6 & 1  & 0 & 0 \\
             8   & 4  & 2  & 1 & 0 \\
-            12  & -4 & 1  & 0 & 0
+            12  & 4  & 1  & 0 & 0
         \end{array} \\[10 pt]
         & \begin{array}{cccc|c}
             1 & 0 & 0 & 0 & \frac{ 2 }{ 25 } \\
             0 & 1 & 0 & 0 & \frac{ 3 }{ 25 } \\
-            0 & 0 & 1 & 0 & \frac{ 36 }{ 25 } \\
+            0 & 0 & 1 & 0 & -\frac{ 36 }{ 25 } \\
             0 & 0 & 0 & 1 & \frac{ 44 }{ 25 }
-        \end{array} \\
+        \end{array}
     \end{align}
     $$
 
     $$
-    f(x) = \frac{ 2 }{ 25 } x^3 + \frac{ 3 }{ 25 } x^2 + \frac{ 36 }{ 25 } x + \frac{ 44 }{ 25 }
+    f(x) = \frac{ 2 }{ 25 } x^3 + \frac{ 3 }{ 25 } x^2 - \frac{ 36 }{ 25 } x + \frac{ 44 }{ 25 }
     $$
 
 2. Halle el valor de la constante $c$, para que la gráfica de $f(x) = c x^2 + \frac{ 1 }{ x^2 }$ tenga un punto de inflexión en $(1,f(1))$.
@@ -284,7 +284,7 @@ $$
 
 ## 7
 
-Elabora una gráfica aproximada de una función $y = f(x)$ que satisfaga:
+Elabore una gráfica aproximada de una función $y = f(x)$ que satisfaga:
 
 - Puntos críticos en $(-1,1)$ y $(3,2)$.
 
@@ -298,7 +298,7 @@ Elabora una gráfica aproximada de una función $y = f(x)$ que satisfaga:
 
 ## 8
 
-Una caja cerrada con base cuadrada tiene un volumen de $2,000$ pulgadas cúbicas. El material de la tapa y la base cuesta 3 centavos la pulgada cuadrada, mientras que el material para los lados cuesta $1.5$ centavos la pulgada cuadrada. Encuentre las dimensiones de la caja de modo que el costo del material sea mínimo.
+Una caja cerrada con base cuadrada tiene un volumen de 2,000 pulgadas cúbicas. El material de la tapa y la base cuesta 3 centavos la pulgada cuadrada, mientras que el material para los lados cuesta 1.5 centavos la pulgada cuadrada. Encuentre las dimensiones de la caja de modo que el costo del material sea mínimo.
 
 $$
 \begin{align}
@@ -310,7 +310,7 @@ $$
 $$
 \begin{align}
     & C_{ \text{tapa} + \text{base} } = 3 (2 x^2) = 6 x^2 \\
-    & C_{ \text{lados } } = \frac{ 3 }{ 2 } (4 x y) \\
+    & C_{ \text{lados} } = \frac{ 3 }{ 2 } (4 x y) \\
     & C = 6 x^2 + 6 x y \\
     & = 6 x^2 + \frac{ 12,000 }{ x }
 \end{align}
@@ -327,7 +327,7 @@ $$
 \begin{align}
     & C^\prime(x) = 0 \\
     & 12 x - \frac{ 12,000 }{ x^2 } = 0 \\
-    & 12 x^3 =  12,000 \\
+    & 12 x^3 = 12,000 \\
     & x = \sqrt[3]{ 1,000 } \\
     & = 10
 \end{align}
@@ -341,11 +341,11 @@ $$
 \end{align}
 $$
 
-Como $C^{ '' }(10) > 0$, confirmamos que este en $x = 10$ hay un **mínimo**.
+Como $C^{ '' }(10) > 0$, en $x = 10$ hay un mínimo.
 
 ## 9
 
-Un granjero quiere cerrar un terreno rectangular con área de $2,400$ pies cuadrados. También quiere usar algo de cerca para construir una división interna paralela a uno de los lados del corral. ¿Cuál es la longitud mínima total de cerca que requiere este proyecto?
+Un granjero quiere cerrar un terreno rectangular con área de 2,400 pies cuadrados. También quiere usar algo de cerca para construir una división interna paralela a uno de los lados del corral. ¿Cuál es la longitud mínima total de cerca que requiere este proyecto?
 
 $$
 \begin{align}
@@ -354,16 +354,16 @@ $$
     & L(x,y) = 2 x + 3 y \\
     & L(x) = 2 x + \frac{ 7,200 }{ x } \\
     & = \frac{ 2 x^2 + 7,200 }{ x } \\
-    & L^\prime(x) = \frac{ (2 x^2 + 7,200) -  4 x^2 }{ x^2 } \\
-    & = \frac{ -2 x^2 + 7,200 }{ x^2 }
+    & L^\prime(x) = \frac{ 4 x^2 - (2 x^2 + 7,200) }{ x^2 } \\
+    & = \frac{ 2 x^2 - 7,200 }{ x^2 }
 \end{align}
 $$
 
 $$
 \begin{align}
     & L^\prime(x) = 0 \\
-    & \frac{ -2 x^2 + 7,200 }{ x^2 } = 0 \\
-    & -2 x^2 + 7,200 = 0 \\
+    & \frac{ 2 x^2 - 7,200 }{ x^2 } = 0 \\
+    & 2 x^2 - 7,200 = 0 \\
     & x = \sqrt{ 3,600 } = 60 \\
     & y = \frac{ 2,400 }{ 60 } \\
     & = 40
@@ -381,7 +381,7 @@ $$
 
 Un triángulo rectángulo en el primer cuadrante está formado por los ejes coordenados $x$ y $y$, y una recta que pasa por el punto $P(2,3)$. Halle las dimensiones del triángulo para que su área sea mínima.
 
-Tenemos tres puntos:
+Se tienen tres puntos:
 
 $$
 \begin{align}
@@ -414,7 +414,7 @@ $$
 
 $$
 \begin{align}
-    & A^\prime(0) = 0 \\
+    & A^\prime(x) = 0 \\
     & \frac{ 6 x^2 - 24 x }{ (2 x - 4)^2 } = 0 \\
     & 6 x^2 - 24 x = 0 \\
     & x (6 x - 24) = 0 \\
@@ -425,17 +425,17 @@ $$
 
 $$
 \begin{align}
-    & y = -\frac{ 3 (4) }{ 4 - 2 (4) } \\
-    & = -\frac{ 12 }{ -8 } \\
-    & = 3
+    & y = -\frac{ 3 (4) }{ 2 - 4 } \\
+    & = -\frac{ 12 }{ -2 } \\
+    & = 6
 \end{align}
 $$
 
 ## 11
 
-La base de un triángulo está en el eje $x$, un lado sobre la recta $y = 3 x$ y el tercer lado pasa por el punto $P(1,1)$ ¿Cuál es la pendiente del tercer lado si el área del triángulo ha de ser mínima?
+La base de un triángulo está en el eje $x$, un lado sobre la recta $y = 3 x$ y el tercer lado pasa por el punto $P(1,1)$. ¿Cuál es la pendiente del tercer lado si el área del triángulo ha de ser mínima?
 
-La ecuación punto-pendiente para el tercer lado es:
+Los vértices del triángulo y su área son:
 
 $$
 \begin{align}
@@ -451,9 +451,9 @@ Los puntos $C$, $D$ y $P$ hacen parte de la recta del tercer lado.
 $$
 \begin{align}
     & m = \frac{ 1 - 3 a }{ 1 - a } = \frac{ 0 - 1 }{ x - 1 } \\
-    & (1 - 3 a) (x - 1) = a + 1 \\
-    & x - 1 - 3 a x + 3 a = a + 1 \\
-    & -3 a x + 3 a - a = 1 - x + 1 \\
+    & (1 - 3 a) (x - 1) = a - 1 \\
+    & x - 1 - 3 a x + 3 a = a - 1 \\
+    & -3 a x + 3 a - a = -x \\
     & a (-3 x + 2) = -x \\
     & a = \frac{ x }{ 3 x - 2 }
 \end{align}
@@ -523,14 +523,14 @@ Los puntos son $(1,\sqrt{ 2 })$ y $(1,-\sqrt{ 2 })$.
 
 ## 13
 
-Siendo la función $f(x) = 5 x^\frac{ 2 }{ 3 } - x^\frac{ 5 }{ 3 }$ halle:
+Siendo la función $f(x) = 5 x^\frac{ 2 }{ 3 } - x^\frac{ 5 }{ 3 }$, halle:
 
 $$
 \begin{align}
     & f(x) = 5 \sqrt[3]{ x^2 } - x \sqrt[3]{ x^2 } \\
     & f^\prime(x) = \frac{ 30 - 15 x }{ 9 x^\frac{ 1 }{ 3 } } \\
     & = \frac{ 10 - 5 x }{ 3 x^\frac{ 1 }{ 3 } } \\
-    & f^{ '' } = -\frac{ 10 (x^\frac{ 1 }{ 3 } + 1) }{ 9 x^\frac{ 2 }{ 3 } }
+    & f^{ '' } = -\frac{ 10 (x + 1) }{ 9 x^\frac{ 4 }{ 3 } }
 \end{align}
 $$
 

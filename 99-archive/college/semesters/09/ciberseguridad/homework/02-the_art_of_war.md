@@ -4,7 +4,7 @@
 
 Como resultado de la lectura, preparar un escrito de lo que le llamó la atención y exprese un postulado de la temática.
 
-Lo que más me llamó la atención de la lectura fue la contemporaneidad que adquiere las enseñanzas del libro, pues lo que fue descrito del concepto literal de "guerra" es aplicable a otras muchas áreas como la superación personal. Propongo que "En el ciberespacio, la seguridad es fruto del conocimiento profundo tanto de uno mismo como de sus adversarios. Solo a través de la anticipación y la adaptabilidad continua se puede transformar la vulnerabilidad en fortaleza".
+Lo que más me llamó la atención de la lectura fue la contemporaneidad que adquieren las enseñanzas del libro, pues lo que fue descrito del concepto literal de "guerra" es aplicable a otras muchas áreas como la superación personal. Propongo que "En el ciberespacio, la seguridad es fruto del conocimiento profundo tanto de uno mismo como de sus adversarios. Solo a través de la anticipación y la adaptabilidad continua se puede transformar la vulnerabilidad en fortaleza".
 
 ## 2
 

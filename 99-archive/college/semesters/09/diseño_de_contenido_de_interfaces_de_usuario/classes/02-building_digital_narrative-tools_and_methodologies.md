@@ -34,13 +34,13 @@ flowchart LR
 
 ## Modos de trabajo
 
-Según el nivel de impacto, los tiempos y el alcance del proyecto, podemos trabajar de dos modos:
+Según el nivel de impacto, los tiempos y el alcance del proyecto, se puede trabajar de dos modos:
 
-### Content First
+### Content first
 
 Es una metodología que prioriza la creación de contenido antes de desarrollar la interfaz (UI), guiando tanto la estructura como el diseño.
 
-> Primero definimos el mensaje y luego cómo se presenta.
+> Primero se define el mensaje y luego cómo se presenta.
 
 #### Beneficios (content first)
 
@@ -58,19 +58,19 @@ Es una metodología que prioriza la creación de contenido antes de desarrollar 
 
 - Comunicación constante: se debe evitar la toma de decisiones aisladas que no respondan a las necesidades reales.
 
-#### Fases
+#### Fases (content first)
 
-#### Fase 1: exploración
+##### Fase 1: exploración
 
 Las acciones que se hacen en esta fase son:
 
-- Leer la HU y la documentación relacionada.
+- Leer la historia de usuario (HU) y la documentación relacionada.
 
 - Aclarar dudas y solicitar datos adicionales al Product Owner (PO) de las líneas de negocio.
 
 - Analizar funnels de conversión, métricas de canal, matrices de negocio y feedback de áreas de servicio.
 
-#### Fase 2: entendimiento
+##### Fase 2: entendimiento
 
 Las acciones que se hacen en esta fase son:
 
@@ -78,11 +78,11 @@ Las acciones que se hacen en esta fase son:
 
 - Organizar y analizar la información recopilada, investigar a la competencia y profundizar en el perfil de los usuarios.
 
-#### Fase 3: storytelling y prototipo
+##### Fase 3: storytelling y prototipo
 
 Las acciones que se hacen en esta fase son:
 
-- Definir el estilo de comunicación para cada paso del flujo, incluyendo tono y lenguaje.a
+- Definir el estilo de comunicación para cada paso del flujo, incluyendo tono y lenguaje.
 
 - Identificar momentos críticos y determinar el tono diferencial.
 

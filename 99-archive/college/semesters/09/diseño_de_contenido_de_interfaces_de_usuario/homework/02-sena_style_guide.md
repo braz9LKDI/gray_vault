@@ -2,25 +2,25 @@
 
 ## ¿Quién es el SENA?
 
-El Servicio Nacional de Aprendizaje (SENA) es una entidad pública colombiana, creada el 21 de junio de 1957 mediante el decreto ley 118, con el propósito de invertir en el desarrollo social y técnico de los trabajadores del país. Ofrece formación profesional integral gratuita en programas técnicos, tecnológicos y complementarios, facilitando la incorporación de las personas en actividades productivas que contribuyen al desarrollo económico y tecnológico de Colombia.
+El Servicio Nacional de Aprendizaje (SENA) es una entidad pública colombiana, creada el 21 de junio de 1957 mediante el Decreto Ley 118, con el propósito de invertir en el desarrollo social y técnico de los trabajadores del país. Ofrece formación profesional integral gratuita en programas técnicos, tecnológicos y complementarios, facilitando la incorporación de las personas en actividades productivas que contribuyen al desarrollo económico y tecnológico de Colombia.
 
 ## Principios
 
-​Al elaborar la sección de principios para la guía de estilo del SENA (en su plataforma Sena - Sofia Plus), es esencial reflejar los valores institucionales y la visión que orientan su comunicación y contenido.
+Al elaborar la sección de principios para la guía de estilo del SENA (en su plataforma SENA Sofía Plus), es esencial reflejar los valores institucionales y la visión que orientan su comunicación y contenido.
 
-El SENA fundamenta su actuar en siete valores esenciales que deben impregnar todo el contenido y comunicación de la entidad:​
+El SENA fundamenta su actuar en siete valores esenciales que deben impregnar todo el contenido y comunicación de la entidad:
 
-- Respeto: reconocimiento y consideración hacia los derechos, diferencias y dignidad de todas las personas.​
+- Respeto: reconocimiento y consideración hacia los derechos, diferencias y dignidad de todas las personas.
 
-- Honestidad: actuar con transparencia, sinceridad y coherencia en todas las acciones y comunicaciones.​
+- Honestidad: actuar con transparencia, sinceridad y coherencia en todas las acciones y comunicaciones.
 
-- Compromiso: dedicación y responsabilidad en el cumplimiento de los objetivos institucionales y en la atención a la comunidad.​
+- Compromiso: dedicación y responsabilidad en el cumplimiento de los objetivos institucionales y en la atención a la comunidad.
 
-- Diligencia: eficiencia y prontitud en la realización de tareas y prestación de servicios.​
+- Diligencia: eficiencia y prontitud en la realización de tareas y prestación de servicios.
 
-- Justicia: Equidad e imparcialidad en la toma de decisiones y en el trato a las personas.​
+- Justicia: equidad e imparcialidad en la toma de decisiones y en el trato a las personas.
 
-- Solidaridad: colaboración y apoyo mutuo para alcanzar metas comunes y fomentar el bienestar colectivo.​
+- Solidaridad: colaboración y apoyo mutuo para alcanzar metas comunes y fomentar el bienestar colectivo.
 
 - Lealtad: fidelidad y compromiso con los principios y misión del SENA.
 
@@ -56,66 +56,66 @@ El tono es la manifestación emocional de la voz y debe adaptarse a los distinto
 
 1. Uso de mayúsculas y minúsculas.
 
-    Utilizar mayúsculas y minúsculas de forma coherente en todos los contenidos:​
-    - Nombres propios e institucionales: emplear mayúsculas en los nombres oficiales de programas, departamentos y títulos específicos.​
-        - Ejemplo correcto: Centro Nacional Colombo Alemán​.
+    Utilizar mayúsculas y minúsculas de forma coherente en todos los contenidos:
+    - Nombres propios e institucionales: emplear mayúsculas en los nombres oficiales de programas, departamentos y títulos específicos.
+        - Ejemplo correcto: Centro Nacional Colombo Alemán.
 
-        - Ejemplo incorrecto: centro nacional colombo alemán​.
+        - Ejemplo incorrecto: centro nacional colombo alemán.
 
-    - Títulos y encabezados: aplicar mayúsculas solo en la primera palabra y en nombres propios.​
+    - Títulos y encabezados: aplicar mayúsculas solo en la primera palabra y en nombres propios.
         - Ejemplo correcto: Oferta educativa disponible.
 
         - Ejemplo incorrecto: Oferta Educativa Disponible.
 
 2. Puntuación.
 
-    Mantener una puntuación consistente y adecuada para facilitar la comprensión:​
-    - Puntos finales: omitir el punto final en títulos, encabezados y elementos de lista que no sean oraciones completas.​
+    Mantener una puntuación consistente y adecuada para facilitar la comprensión:
+    - Puntos finales: omitir el punto final en títulos, encabezados y elementos de lista que no sean oraciones completas.
 
         Ejemplo correcto:
-        - Programas técnicos​
+        - Programas técnicos
 
-        - Formación virtual​
+        - Formación virtual
 
         Ejemplo incorrecto:
-        - Programas técnicos.​
+        - Programas técnicos.
 
-        - Formación virtual.​
+        - Formación virtual.
 
 3. Uso de pronombres personales.
 
-    Dirigirse directamente al usuario para crear una comunicación más cercana:​
-    - Segunda Persona (Tú/Usted): Utilizar "usted" para mantener la formalidad y respeto en la comunicación institucional.​
-        - Ejemplo correcto: En el SENA, usted puede desarrollar sus habilidades profesionales.​
+    Dirigirse directamente al usuario para crear una comunicación más cercana:
+    - Segunda persona (tú/usted): utilizar "usted" para mantener la formalidad y respeto en la comunicación institucional.
+        - Ejemplo correcto: En el SENA, usted puede desarrollar sus habilidades profesionales.
 
         - Ejemplo incorrecto: En el SENA, tú puedes desarrollar tus habilidades profesionales.
 
 4. Emplear la voz activa y tiempos verbales simples para mayor claridad.
-    - Voz activa: priorizar construcciones en voz activa para enfatizar la acción.​
-        - Ejemplo correcto: El SENA ofrece cursos gratuitos.​
+    - Voz activa: priorizar construcciones en voz activa para enfatizar la acción.
+        - Ejemplo correcto: El SENA ofrece cursos gratuitos.
 
-        - Ejemplo incorrecto: Cursos gratuitos son ofrecidos por el SENA.​
+        - Ejemplo incorrecto: Cursos gratuitos son ofrecidos por el SENA.
 
-    - Tiempos verbales simples: utilizar tiempos presentes para información actual y futuros para acciones por venir.​
-        - Ejemplo correcto: Las inscripciones comienzan el próximo lunes.​
+    - Tiempos verbales simples: utilizar tiempos presentes para información actual y futuros para acciones por venir.
+        - Ejemplo correcto: Las inscripciones comienzan el próximo lunes.
 
         - Ejemplo incorrecto: Las inscripciones estarán comenzando el próximo lunes.
 
 5. Formato de textos.
 
-    Aplicar formatos de texto que mejoren la legibilidad y accesibilidad:​
-    - Negrita para Énfasis: usar negrita para destacar términos clave o acciones importantes.​
+    Aplicar formatos de texto que mejoren la legibilidad y accesibilidad:
+    - Negrita para énfasis: usar negrita para destacar términos clave o acciones importantes.
 
-        Ejemplo correcto: Para más información, consulte el **catálogo de cursos**.​
+        Ejemplo correcto: Para más información, consulte el **catálogo de cursos**.
 
-    - Listas con viñetas o numeradas: organizar información en listas para facilitar la lectura y comprensión.​
+    - Listas con viñetas o numeradas: organizar información en listas para facilitar la lectura y comprensión.
 
     - Ejemplo correcto:
 
         Se ofrecen:
-        - Programas técnicos​
+        - Programas técnicos
 
-        - Programas tecnológicos​
+        - Programas tecnológicos
 
         - Cursos complementarios
 
@@ -123,15 +123,15 @@ El tono es la manifestación emocional de la voz y debe adaptarse a los distinto
 
 6. Terminología consistente.
 
-    Mantener uniformidad en el uso de términos y nombres propios:​
-    - Nombres de programas y servicios: referirse siempre a los programas y servicios con su nombre oficial completo.​
-        - Ejemplo correcto: SENA Sofía Plus​
+    Mantener uniformidad en el uso de términos y nombres propios:
+    - Nombres de programas y servicios: referirse siempre a los programas y servicios con su nombre oficial completo.
+        - Ejemplo correcto: SENA Sofía Plus
 
         - Ejemplo incorrecto: Sofía Plus
 
 ## Thesaurus
 
-### Palabras claves
+### Palabras clave
 
 - Formación: educación técnica, tecnológica y complementaria que impulsa el desarrollo profesional y personal.
 

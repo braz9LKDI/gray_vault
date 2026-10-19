@@ -1,8 +1,8 @@
-# 2024 Cyber attacks
+# 2024 cyber attacks
 
 - enero: Salud Total EPS.
 
-    El 27 de enero de 2024, la plataforma tecnológica de Salud Total EPS, que cuenta con más de $4.6$ millones de afiliados, fue objeto de un ataque informático externo. Este incidente afectó la prestación de servicios a los usuarios, quienes enfrentaron dificultades para acceder a sus citas y otros servicios de salud. La entidad implementó planes de contingencia para mitigar el impacto y la Superintendencia Nacional de Salud inició un seguimiento para resolver las dudas y reclamaciones de los usuarios afectados.
+    El 27 de enero de 2024, la plataforma tecnológica de Salud Total EPS, que cuenta con más de 4.6 millones de afiliados, fue objeto de un ataque informático externo. Este incidente afectó la prestación de servicios a los usuarios, quienes enfrentaron dificultades para acceder a sus citas y otros servicios de salud. La entidad implementó planes de contingencia para mitigar el impacto y la Superintendencia Nacional de Salud inició un seguimiento para resolver las dudas y reclamaciones de los usuarios afectados.
 
     > <https://www.eltiempo.com/salud/abece-lo-que-deben-saber-los-usuarios-de-la-eps-total-tras-ataque-cibernetico-849784>.
 
@@ -20,7 +20,7 @@
 
 - septiembre: Air-e.
 
-    El 2 de septiembre de 2024, la empresa Air-e, principal proveedora de energía en el Caribe colombiano, sufrió un ciberataque de tipo ransomware que comprometió varios de sus sistemas informáticos. Este ataque afectó la facturación y el recaudo, impidiendo que los usuarios pudieran pagar sus recibos de energía de manera habitual. La empresa denunció el incidente ante la Fiscalía y trabajó en la recuperación de sus sistemas para restablecer el servicio y minimizar el impacto en sus $2.35$ millones de usuarios.
+    El 2 de septiembre de 2024, la empresa Air-e, principal proveedora de energía en el Caribe colombiano, sufrió un ciberataque de tipo ransomware que comprometió varios de sus sistemas informáticos. Este ataque afectó la facturación y el recaudo, impidiendo que los usuarios pudieran pagar sus recibos de energía de manera habitual. La empresa denunció el incidente ante la Fiscalía y trabajó en la recuperación de sus sistemas para restablecer el servicio y minimizar el impacto en sus 2.35 millones de usuarios.
 
     > <https://www.eltiempo.com/colombia/barranquilla/ciberataque-a-air-e-compromete-sistemas-usuarios-afectados-no-pueden-pagar-recibos-3379773>.
     >

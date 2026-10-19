@@ -65,7 +65,7 @@ The folder does not exist yet; it is created with the first project.
 
 - Belongs: inactive material, such as finished college semesters in `college/` and finished projects.
 
-- Rules: the archive is frozen. Its notes keep their links working, but they get no type or status; the style check and the review skip them.
+- Rules: archived notes get no new content, type or status. Their links keep working. They follow the same style rules as the rest of the vault: the style check covers them and the review tracker records them.
 
 ## `templates/`
 

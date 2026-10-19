@@ -4,15 +4,15 @@
 
 ### Alan Turing
 
-Su artículo (computing machinery and intelligence) está fundamentado en la hipótesis positivista de que, si una máquina supera el test de Turing, entonces debe ser **inteligente**.
+Su artículo (Computing Machinery and Intelligence) está fundamentado en la hipótesis positivista de que, si una máquina supera el test de Turing, entonces debe ser inteligente.
 
-### CAPTHA
+### CAPTCHA
 
-es el acrónimo de Completely Automated Public Turing test to tell Computers and Humans Apart.
+Es el acrónimo de Completely Automated Public Turing test to tell Computers and Humans Apart.
 
 > Prueba de Turing inversa.
 
-## Tipos de Inteligencia
+## Tipos de inteligencia
 
 ### Débil
 

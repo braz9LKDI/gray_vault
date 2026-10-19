@@ -1,6 +1,6 @@
 # Greedy programming
 
-La programación dinámica puede resultar costosa (pocos subproblemas repetidos), es aquí cuando podemos usar una **estrategia** voraz para resolver el problema.
+La programación dinámica puede resultar costosa (pocos subproblemas repetidos); en esos casos se puede usar una estrategia voraz para resolver el problema.
 
 ![[01-areas/systems_engineering/fundamentals/algorithms/greedy_algorithm|Algoritmo voraz]]
 
@@ -21,7 +21,7 @@ $$
 #### Definir recursivamente el valor de una solución óptima
 
 $$
-C[i,j] = \begin{cases}
+c[i,j] = \begin{cases}
         0 & S_{ ij } = \emptyset \\
         \max(c[i,k] + c[k,j] + 1 : a_k \in S_{ ij }) & S_{ ij } \neq \emptyset
     \end{cases}
@@ -39,12 +39,12 @@ $$
 
 ## Problema de la mochila 0-1
 
-![[01-areas/systems_engineering/problems/knapsack|knapsack|Problema de la mochila]]
+![[01-areas/systems_engineering/problems/knapsack|Problema de la mochila]]
 
 ### Enfoque voraz (problema de la mochila 0-1)
 
-1. Ordenar los ítems según su ratio beneficio/peso ($\frac{ b_i }{ w_i } }$) de mayor a menor.
+1. Ordenar los ítems según su ratio beneficio/peso ($\frac{ b_i }{ w_i }$) de mayor a menor.
 
 2. Seleccionar ítems en ese orden, añadiéndolos a la mochila si el peso acumulado no excede $M$.
 
-Este enfoque no garantiza optimalidad, una elección localmente óptima (mayor ratio) puede bloquear combinaciones globalmente mejores. Esto no ocurre en el problema de mochila fraccionario porque se puede tomar fracciones de ítems, evitando el **desperdicio de capacidad**.
+Este enfoque no garantiza optimalidad; una elección localmente óptima (mayor ratio) puede bloquear combinaciones globalmente mejores. Esto no ocurre en el problema de mochila fraccionario porque se pueden tomar fracciones de ítems, evitando el desperdicio de capacidad.

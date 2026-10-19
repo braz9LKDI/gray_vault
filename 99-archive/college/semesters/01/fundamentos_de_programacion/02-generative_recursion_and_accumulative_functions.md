@@ -1,6 +1,6 @@
 # Recursión estructural vs. generativa
 
-Para un observador (comúnmente el usuario), las funciones son completamente equivalentes; una función tanto en su versión estructural y generativa produce la misma salida, entonces ¿cuándo deberíamos desarrollar una u otra? La respuesta sencilla es que no lo sabemos, pero comúnmente el desarrollo de una función generativa es **más complejo** que su versión estructural, pues es necesario apoyarse en un teorema matemático referente a números. O, una serie de resultados matemáticos de sistemas de ecuaciones (conocimiento que "desbloquea" una nueva perspectiva).
+Para un observador (comúnmente el usuario), las funciones son completamente equivalentes; una función produce la misma salida tanto en su versión estructural como en la generativa, entonces ¿cuándo conviene desarrollar una u otra? La respuesta sencilla es que no se sabe, pero comúnmente el desarrollo de una función generativa es más complejo que su versión estructural, pues es necesario apoyarse en un teorema matemático referente a números o en una serie de resultados matemáticos de sistemas de ecuaciones (conocimiento que "desbloquea" una nueva perspectiva).
 
 La experiencia muestra que la mayor parte de las funciones en un programa emplean recursión estructural; solamente unas pocas explotan la recursión generativa. Cuando se encuentra con una situación en la que el diseño puede usar tanto recursión estructural como generativa, el mejor enfoque es comenzar con la versión estructural. Si esta es muy lenta, el diseño alternativo usando recursión generativa deberá ser explorado.
 
@@ -8,7 +8,7 @@ La experiencia muestra que la mayor parte de las funciones en un programa emplea
 
 - Estructural.
 
-    ```js
+    ```javascript
     /**
      * Recursively sorts a list of elements in ascending order.
      *
@@ -35,7 +35,7 @@ La experiencia muestra que la mayor parte de las funciones en un programa emplea
 
 - Generativo ([[01-areas/systems_engineering/fundamentals/algorithms/sorting/quick_sort|Quick sort]]).
 
-    ```js
+    ```javascript
     /**
      * Sorts a list of numbers in ascending order using the quick sort algorithm.
      *
@@ -72,32 +72,32 @@ La experiencia muestra que la mayor parte de las funciones en un programa emplea
     }
     ```
 
-### Máximo común divisor
+## Máximo común divisor
 
 - Estructural.
 
-```js
-/**
- * Calculates the greatest common divisor (GCD) of two numbers using a structural approach.
- *
- * @param a A number lesser than "b".
- * @param b A number greater than "a".
- * @returns the greatest common divisor (GCD) of the two input numbers "a" and "b".
- */
-function structural_GCD(a, b) {
-    function first_divisor(c) {
-        if (c === 1) return 1;
-        else if (a % c === 0 && b % c === 0) return c;
-        else return first_divisor(c - 1);
-    }
+    ```javascript
+    /**
+     * Calculates the greatest common divisor (GCD) of two numbers using a structural approach.
+     *
+     * @param a A number lesser than "b".
+     * @param b A number greater than "a".
+     * @returns the greatest common divisor (GCD) of the two input numbers "a" and "b".
+     */
+    function structural_GCD(a, b) {
+        function first_divisor(c) {
+            if (c === 1) return 1;
+            else if (a % c === 0 && b % c === 0) return c;
+            else return first_divisor(c - 1);
+        }
 
-    return first_divisor(Math.min(a, b));
-}
-```
+        return first_divisor(Math.min(a, b));
+    }
+    ```
 
 - Generativa.
 
-    ```js
+    ```javascript
     /**
      * Calculates the greatest common divisor (GCD) of two numbers using a recursive approach.
      *
@@ -123,9 +123,9 @@ En general, agregar un acumulador, es decir, un parámetro que acumula conocimie
 
 1. Conversión de distancias relativas a absolutas.
     - Sin acumulador.
-        1. .
+        1. Recursión directa.
 
-            ```js
+            ```javascript
             /**
              * Calculates the absolute distance by summing consecutive elements in a list.
              *
@@ -153,9 +153,9 @@ En general, agregar un acumulador, es decir, un parámetro que acumula conocimie
             }
             ```
 
-        2. .
+        2. Con una función auxiliar.
 
-            ```js
+            ```javascript
             /**
              * Calculates the absolute distance by summing consecutive elements in a list.
              *
@@ -191,7 +191,7 @@ En general, agregar un acumulador, es decir, un parámetro que acumula conocimie
 
     - Con acumulador.
 
-        ```js
+        ```javascript
         /**
          * Calculates the absolute distance by summing consecutive elements in a list.
          *
@@ -215,23 +215,23 @@ En general, agregar un acumulador, es decir, un parámetro que acumula conocimie
 2. Función Fibonacci.
     - Sin acumulador.
 
-        ```js
+        ```javascript
         /**
          * Calculates the Fibonacci number at a given position using recursion.
          *
          * @param position The position of the Fibonacci number that we want to find.
          * @returns the Fibonacci number at the given position.
          */
-        function fibonnaci(position) {
+        function fibonacci(position) {
             if (position === 1) return 0;
             else if (position === 2) return 1;
-            else return fibonnaci(position - 2) + fibonnaci(position - 1);
+            else return fibonacci(position - 2) + fibonacci(position - 1);
         }
         ```
 
     - Con acumulador.
 
-        ```js
+        ```javascript
         /**
          * Calculates the Fibonacci number at a given position using recursion.
          *
@@ -255,7 +255,7 @@ En general, agregar un acumulador, es decir, un parámetro que acumula conocimie
 3. Función producto de una lista.
     - Sin acumulador.
 
-        ```js
+        ```javascript
         /**
          * Calculates the product of all the numbers in a given list.
          *
@@ -271,7 +271,7 @@ En general, agregar un acumulador, es decir, un parámetro que acumula conocimie
 
     - Con acumulador.
 
-        ```js
+        ```javascript
         /**
          * Calculates the product of all the numbers in a given list.
          *

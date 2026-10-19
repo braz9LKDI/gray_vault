@@ -2,7 +2,7 @@
 
 ![[01-areas/systems_engineering/problems/matrix_chain_multiplication|matrix_chain_multiplication]]
 
-Sea $A$ de dimensiones $p \times q$ y $B$ de dimensiones $q \times r$, la cantidad total de multiplicaciones es $p q r$
+Sea $A$ de dimensiones $p \times q$ y $B$ de dimensiones $q \times r$, la cantidad total de multiplicaciones es $p q r$.
 
 ## Paso 1
 
@@ -23,11 +23,11 @@ $$
 
 ## Paso 3
 
-Calculamos el valor de una solución óptima de manera bottom-up.
+Se calcula el valor de una solución óptima de manera bottom-up.
 
 ## Paso 4
 
-Mientras calculamos la matriz del paso 3 podemos ir llenando una matriz auxiliar con el valor de $k$ que da el mínimo número de multiplicaciones escalares.
+Mientras se calcula la matriz del paso 3, se puede ir llenando una matriz auxiliar con el valor de $k$ que da el mínimo número de multiplicaciones escalares.
 
 ## Complejidad
 

@@ -1,7 +1,7 @@
 # First calculus midterm
 
 1. Encuentre una función $f$ que cumpla con todas las siguientes condiciones:
-    1. $\lim_{ x \to -3^- } f(x) = -1$, $\lim_{ x \to -3^+ } f(x) = 3$, $F$ es continua en todo el conjunto $\mathbb{ R } \setminus \{-3,6\}$. La discontinuidad en $x = 6$ es removible y $f$ es continua por la derecha en $x = -3$.
+    1. $\lim_{ x \to -3^- } f(x) = -1$, $\lim_{ x \to -3^+ } f(x) = 3$, $f$ es continua en todo el conjunto $\mathbb{ R } \setminus \{-3,6\}$. La discontinuidad en $x = 6$ es removible y $f$ es continua por la derecha en $x = -3$.
 
     2. Si $x < -3$, $f$ es constante.
 
@@ -9,7 +9,7 @@
 
     3. Si $-3 < x < 3$, $f$ es una parábola que pasa por el punto $(3,-1)$.
 
-        Recordando que $\lim_{ x \to -3^+ } f(x) = 3$, podríamos decir que la función pasa también pasa por el punto $(-3,3)$. Con dos puntos tendríamos el siguiente sistema:
+        Recordando que $\lim_{ x \to -3^+ } f(x) = 3$, la función también pasa por el punto $(-3,3)$. Con dos puntos se tiene el siguiente sistema:
 
         $$
         \begin{align}
@@ -18,9 +18,9 @@
         \end{align}
         $$
 
-        Por simplicidad, podemos decir que $c = 0$ porque solo necesitamos un sistema $2 \times 2$ para asegurar dos coordenadas.
+        Por simplicidad, se puede tomar $c = 0$, porque un sistema $2 \times 2$ basta para asegurar los dos puntos.
 
-        > Este paso es opcional, si no se hace, al final podías escoger una variable arbitraria.
+        > Este paso es opcional; si no se hace, al final se puede escoger una variable arbitraria.
 
         $$
         \begin{align}
@@ -29,7 +29,7 @@
         \end{align}
         $$
 
-        Sumando las ecuaciones, llegamos a
+        Sumando las ecuaciones, se llega a
 
         $$
         \begin{align}
@@ -38,7 +38,7 @@
         \end{align}
         $$
 
-        Reemplazando esta $a$ que acabamos en cualquiera de las ecuaciones, llegamos a
+        Reemplazando este valor de $a$ en cualquiera de las ecuaciones, se llega a
 
         $$
         \begin{align}
@@ -55,7 +55,7 @@
 
     4. Si $3 < x < 6$, $f$ es una recta que tiene como pendiente $m = \frac{ 1 }{ 3 }$.
 
-        Recordando que $f$ es continua por la derecha en $x = -3$, esta function tiene que "empezar en el punto que terminó la anterior", eso es, en el punto $(3,-1)$. Para hallar la función podemos hacer uso de la fórmula de la pendiente ($m = \frac{ y_2 - y_1 }{ x_2 - x_1 }$) o usar la forma explícita de una ecuación lineal ($y = m x + b$). Por facilidad vamos a usar la segunda.
+        Recordando que $f$ es continua en $x = 3$, esta función tiene que "empezar en el punto que terminó la anterior", esto es, en el punto $(3,-1)$. Para hallar la función se puede usar la fórmula de la pendiente ($m = \frac{ y_2 - y_1 }{ x_2 - x_1 }$) o usar la forma explícita de una ecuación lineal ($y = m x + b$). Por facilidad se usa la segunda.
 
         $$
         \begin{align}
@@ -70,9 +70,9 @@
         f(x) = \frac{ 1 }{ 3 } x - 2
         $$
 
-    5. Si $x > 6$, $f$ es un parábola que tiene su vértice en el punto $(8,-1)$.
+    5. Si $x > 6$, $f$ es una parábola que tiene su vértice en el punto $(8,-1)$.
 
-        Recordando que $f$ tiene una discontinuidad removible en $x = 6$, esto significa que $\lim_{ x \to 6^- } = \lim_{ x \to 6^+ }$. $\lim_{ x \to 6^- }$ corresponde a la función anterior evaluada en 6, es decir $f(6) = \frac{ 1 }{ 3 } (6) - 2 = 0$, es decir que la función que estamos hallando también debe pasar ese punto ($(6,0)$).
+        Recordando que $f$ tiene una discontinuidad removible en $x = 6$, esto significa que $\lim_{ x \to 6^- } f(x) = \lim_{ x \to 6^+ } f(x)$. $\lim_{ x \to 6^- } f(x)$ corresponde a la función anterior evaluada en 6, es decir $f(6) = \frac{ 1 }{ 3 } (6) - 2 = 0$, es decir, la función que se busca también debe pasar por ese punto ($(6,0)$).
 
         Sabiendo que la forma canónica de una función cuadrática corresponde a
 
@@ -100,17 +100,17 @@
     $$
     f(x) = \begin{cases}
             -1                                      & x < -3 \\
-            \frac{ 1 }{ 9 } x^2 - \frac{ 2 }{ 3 } x & -3 < x < 3 \\
-            \frac{ 1 }{ 3 } x - 2                   & 3 < x < 6 \\
+            \frac{ 1 }{ 9 } x^2 - \frac{ 2 }{ 3 } x & -3 \leq x < 3 \\
+            \frac{ 1 }{ 3 } x - 2                   & 3 \leq x < 6 \\
             \frac{ 1 }{ 4 } (x - 8)^2 - 1           & x > 6
         \end{cases}
     $$
 
     ```text
     f(x) = If(x < -3, -1,
-        If(-3 < x < 3, (1/9)x^2 - (2/3)x,
-        If(3 < x < 6, (1/3)x - 2,
+        If(-3 <= x < 3, (1/9)x^2 - (2/3)x,
+        If(3 <= x < 6, (1/3)x - 2,
         If(x > 6, (1/4)(x - 8)^2 - 1))))
     ```
 
-    > Para la visualización, copia y pega esto en GeoGebra.
+    > Para visualizarla, se puede pegar esto en GeoGebra.

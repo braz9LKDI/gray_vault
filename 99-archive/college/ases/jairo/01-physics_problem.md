@@ -2,31 +2,31 @@
 
 ![graph](99-archive/college/ases/jairo/assets/01_01-velocity_graph.jpg)
 
-Podemos identificar tres momentos en la gráfica, el primero de $t = 0$ a $t = 2$, el segundo de $t = 2$ a $t = 6$ y el tercero de $t = 6$ a $t = 8$.
+Se identifican tres momentos en la gráfica: el primero de $t = 0$ a $t = 2$, el segundo de $t = 2$ a $t = 6$ y el tercero de $t = 6$ a $t = 8$.
 
 1. Dibuje la gráfica posición-tiempo con valores numéricos.
 
     $$
     \begin{align}
-        & a_{ 1-2 } = \frac{ 15 - 15 }{ 2 - 0 } = 0 \\
+        & a_{ 0-2 } = \frac{ 15 - 15 }{ 2 - 0 } = 0 \\
         & a_{ 2-6 } = \frac{ -15 - 15 }{ 6 - 2 } = \frac{ -30 }{ 4 } = -\frac{ 15 }{ 2 } \\
         & a_{ 6-8 } = \frac{ -15 - (-15) }{ 8 - 6 } = 0
     \end{align}
     $$
 
-    > Las aceleraciones que hallamos corresponderían a las pendientes ($m$) de cada una de las rectas.
+    > Las aceleraciones halladas corresponden a las pendientes ($m$) de cada una de las rectas.
 
-    Con la aceleración, ahora podemos usar la ecuación de la pendiente ($m = \frac{ y_2 - y_1 }{ x_2 - x_1 }$) para hallar la ecuación del movimiento en cada momento.
+    Con la aceleración, ahora se puede usar la ecuación de la pendiente ($m = \frac{ y_2 - y_1 }{ x_2 - x_1 }$) para hallar la ecuación del movimiento en cada momento.
 
     $$
     \begin{align}
-        & (t_{ 1-2 } - 0) (0) = v_{ 1-2 } - 15 \quad v_{ 1-2 } = 15 \\
+        & (t_{ 0-2 } - 0) (0) = v_{ 0-2 } - 15 \quad v_{ 0-2 } = 15 \\
         & (2 - t_{ 2-6 }) \left (-\frac{ 15 }{ 2 } \right ) = 15 - v_{ 2-6 } \quad v_{ 2-6 } = -\frac{ 15 }{ 2 } t_{ 2-6 } + 30 \\
         & (t_{ 6-8 } - 6) (0) = v_{ 6-8 } - (-15) \quad v_{ 6-8 } = -15
     \end{align}
     $$
 
-    Representándolo como una ecuación a trozos tendríamos:
+    Como función a trozos:
 
     $$
     v(t) = \begin{cases}
@@ -44,7 +44,7 @@ Podemos identificar tres momentos en la gráfica, el primero de $t = 0$ a $t = 2
         \end{cases}
     $$
 
-    Ahora tenemos que hallar las distancias iniciales a las que empezó cada momento (lo que correspondería a la $C$ de una integral).
+    Ahora hay que hallar las posiciones iniciales en las que empezó cada momento (lo que correspondería a la $C$ de una integral).
 
     $$
     \begin{align}
@@ -59,12 +59,12 @@ Podemos identificar tres momentos en la gráfica, el primero de $t = 0$ a $t = 2
     $$
     x(t) = \begin{cases}
             15 t                              & 0 \leq t \leq 2 \\
-            -\frac{ 15 }{ 4 } t^2 + 15 t - 30 & 2 < t \leq 6 \\
+            -\frac{ 15 }{ 4 } t^2 + 30 t - 15 & 2 < t \leq 6 \\
             -15 t + 120                       & 6 < t \leq 8
         \end{cases}
     $$
 
-    Graficando esta función tenemos:
+    La gráfica de esta función es:
 
     ![$x(t)$](99-archive/college/ases/jairo/assets/01_02-distance_graph.jpg) TODO
 
@@ -74,7 +74,7 @@ Podemos identificar tres momentos en la gráfica, el primero de $t = 0$ a $t = 2
     a(t) = \frac{ d }{ dt } v = \begin{cases}
             0                 & 0 \leq t \leq 2 \\
             -\frac{ 15 }{ 2 } & 2 < t \leq 6 \\
-            0                 & 6 < t \leq 8
+            0                 & 6 < t \leq 8
         \end{cases}
     $$
 

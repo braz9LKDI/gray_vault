@@ -20,20 +20,20 @@ Determine si existe un ángulo $\theta$ tal que
     $$
     \begin{align}
         & 1 + \ptan{ \theta }^2 = \sec \theta^2 \\
-        & = 1 + \ptan{ \theta }^2 = \frac{ 1 }{ \pcos{ \theta }^2 } \\
+        & 1 + \ptan{ \theta }^2 = \frac{ 1 }{ \pcos{ \theta }^2 } \\
         & 1 + \left (\frac{ \sqrt{ 5 } }{ 2 } \right )^2 = \frac{ 1 }{ \left (\frac{ 2 }{ 3 } \right )^2 } \\
         & 1 + \frac{ 5 }{ 4 } = \frac{ 1 }{ \frac{ 4 }{ 9 } } \\
         & \frac{ 9 }{ 4 } = \frac{ 9 }{ 4 }
     \end{align}
     $$
 
-3. $\sec \theta = -\frac{ 5 }{ 4 }$ y $\pcos{ \theta } = -\frac{ \sqrt{ 21 } }{ 5 }$.
+3. $\sec \theta = -\frac{ 5 }{ 4 }$ y $\psin{ \theta } = -\frac{ \sqrt{ 21 } }{ 5 }$.
 
     $$
     \begin{align}
         & \psin{ \theta }^2 + \pcos{ \theta }^2 = 1 \\
-        & \psin{ \theta }^2 + \frac{ 1 }{ \sec \theta } = 1 \\
-        & \left (-\frac{ \sqrt{ 21 }  }{ 5 } \right )^2 + \frac{ 1 }{ \left (-\frac{ 5 }{ 4 } \right )^2 } \\
+        & \psin{ \theta }^2 + \frac{ 1 }{ \sec \theta^2 } = 1 \\
+        & \left (-\frac{ \sqrt{ 21 } }{ 5 } \right )^2 + \frac{ 1 }{ \left (-\frac{ 5 }{ 4 } \right )^2 } \\
         & = \frac{ 21 }{ 25 } + \frac{ 1 }{ \frac{ 25 }{ 16 } } \\
         & = \frac{ 37 }{ 25 } \neq 1
     \end{align}
@@ -43,7 +43,7 @@ Determine si existe un ángulo $\theta$ tal que
 
 Halle:
 
-1. $\pcos(1,575 \degree)$.
+1. $\pcos{ 1,575 \degree }$.
 
     $$
     \begin{align}
@@ -54,24 +54,22 @@ Halle:
     \end{align}
     $$
 
-2. $\tan(-2,220 \degree)$.
+2. $\ptan{ -2,220 \degree }$.
 
     $$
     \begin{align}
         & = \ptan{ -(60 \degree + 6 (360 \degree)) } \\
         & = \ptan{ -60 \degree } \\
         & = -\ptan{ 60 \degree } \\
-        & = \ptan{ \frac{ \pi }{ 3 } }
+        & = -\ptan{ \frac{ \pi }{ 3 } }
     \end{align}
     $$
 
 ## 3
 
-Un ángulo $\theta$ se encuentra en posición estándar. Si el lado terminal de $\theta$ esta en el segundo cuadrante sobre la recta $y = -4 x$, determine los valores de las funciones trigonométricas.
+Un ángulo $\theta$ se encuentra en [[01-areas/math/standard_angle|posición estándar]]. Si el lado terminal de $\theta$ está en el segundo cuadrante sobre la recta $y = -4 x$, determine los valores de las funciones trigonométricas.
 
 ![graph](99-archive/college/semesters/01/assets/calculo_i/2_07_01-graph.svg)
-
-TODO: create a standard angle link.
 
 $$
 \begin{align}
@@ -103,7 +101,7 @@ $$
 
 Un ángulo central intercepta un arco de 8 cm de largo, en una circunferencia de 3 cm de radio. Halle la medida del ángulo tanto en radianes, como en grados.
 
-$2 \pi r$ que corresponde al perímetro de un circulo de radio $r$, es también el arco de un $\alpha = 360 \degree$.
+$2 \pi r$ que corresponde al perímetro de un círculo de radio $r$, es también el arco de un $\alpha = 360 \degree$.
 
 $$
 \begin{align}
@@ -124,13 +122,13 @@ $$
 
 ## 5
 
-Use la ley de Senos y la ley de Cosenos para hallar las partes restantes del triangulo
+Use la ley de Senos y la ley de Cosenos para hallar las partes restantes del triángulo:
 
 1. $b = 10$, $c = 5$ y $\gamma = 30^\degree$.
 
     $$
     \begin{align}
-        & \frac{ \psin{ 30^\degree } }{ 5 } = \frac{ \psin{ \beta } }{ 5 } \\
+        & \frac{ \psin{ 30^\degree } }{ 5 } = \frac{ \psin{ \beta } }{ 10 } \\
         & \psin{ \beta } = \frac{ 10 \psin{ 30^\degree } }{ 5 } \\
         & = 2 \psin{ 30^\degree } \\
         & = 2 * \frac{ 1 }{ 2 } \\
@@ -170,16 +168,16 @@ Use la ley de Senos y la ley de Cosenos para hallar las partes restantes del tri
     \begin{align}
         & b^2 = a^2 + c^2 - 2 a c \pcos{ \beta } \\
         & b = \sqrt{ 10^2 + 15^2 - 2 (10) (15) \pcos{ 60^\degree } } \\
-        & = \sqrt{ 100 + 225 - 150 * 0.5 } \\
-        & = \sqrt{ 325 - 75 } \\
-        & = \sqrt{ 250 } \\
-        & = 5 \sqrt{ 10 }
+        & = \sqrt{ 100 + 225 - 300 * 0.5 } \\
+        & = \sqrt{ 325 - 150 } \\
+        & = \sqrt{ 175 } \\
+        & = 5 \sqrt{ 7 }
     \end{align}
     $$
 
 ## 6
 
-Los lados de un terreno triangular miden 350, 300 y 220 pies de longitud. Encuentre el ángulo mas pequeño del terreno.
+Los lados de un terreno triangular miden 350, 300 y 220 pies de longitud. Encuentre el ángulo más pequeño del terreno.
 
 > En cualquier triángulo, el ángulo más pequeño siempre está opuesto al lado más corto.
 
@@ -188,28 +186,28 @@ $$
     & a = 220 \\
     & b = 300 \\
     & c = 350 \\
-    & a^2 = b^2 + c^2 - 2 b c \pcos{ \beta } \\
+    & a^2 = b^2 + c^2 - 2 b c \pcos{ \alpha } \\
     & 220^2 = 300^2 + 350^2 - 2 (300) (350) \pcos{ \alpha } \\
     & 48,400 = 90,000 + 122,500 - 210,000 \pcos{ \alpha } \\
     & \pcos{ \alpha } = \frac{ -164,100 }{ -210,000 } \\
-    & \alpha = \parcsin{ \frac{ 544 }{ 700 } }
+    & \alpha = \parccos{ \frac{ 547 }{ 700 } }
 \end{align}
 $$
 
 ## 7
 
-Evalué:
+Evalúe:
 
 1. $\parcsin{ \pcos{ -\frac{ \pi }{ 2 } } }$.
 
     $$
-    x \in [0,\pi]
+    x \in \left [-\frac{ \pi }{ 2 },\frac{ \pi }{ 2 }\right ]
     $$
 
     $$
     \begin{align}
-        & \pcos{ -\frac{ \pi }{ 2 } } = \pcos{ \frac{ \pi }{ 2 } } \\
-        & \parcsin{ \pcos{ -\frac{ \pi }{ 2 } } } = \frac{ \pi }{ 2 }
+        & \pcos{ -\frac{ \pi }{ 2 } } = \pcos{ \frac{ \pi }{ 2 } } = 0 \\
+        & \parcsin{ \pcos{ -\frac{ \pi }{ 2 } } } = \parcsin{ 0 } = 0
     \end{align}
     $$
 
@@ -288,8 +286,8 @@ Evalué:
         & \ptan{ \beta } = \frac{ \text{CO} }{ \text{CA} } = \frac{ 3 }{ 2 } \\
         & H^2 = 2^2 + 3^2 \\
         & H = \sqrt{ 13 } \\
-        & \psin{ \beta } = -\frac{ 3 }{  \sqrt{ 13 } } = -\frac{ 3 \sqrt{ 13 } }{ 13 } \\
-        & \pcos{ \beta } = -\frac{ 2 }{  \sqrt{ 13 } } = -\frac{ 2 \sqrt{ 13 } }{ 13 }
+        & \psin{ \beta } = -\frac{ 3 }{ \sqrt{ 13 } } = -\frac{ 3 \sqrt{ 13 } }{ 13 } \\
+        & \pcos{ \beta } = -\frac{ 2 }{ \sqrt{ 13 } } = -\frac{ 2 \sqrt{ 13 } }{ 13 }
     \end{align}
     $$
 
@@ -324,8 +322,8 @@ Verifique las siguientes identidades:
         & = \frac{ \pcos{ x }^2 - \psin{ x }^2 }{ \psin{ x } \pcos{ x } } \\
         & \frac{ \frac{ \pcos{ x }^2 - \psin{ x }^2 }{ \psin{ x } \pcos{ x } } }{ \psin{ x } + \pcos{ x } } \\
         & = \frac{ \pcos{ x }^2 - \psin{ x }^2 }{ \psin{ x } \pcos{ x } (\psin{ x } + \pcos{ x }) } \\
-        & = \frac{ \cancel{ (\psin{ x } + \pcos{ x }) } (\psin{ x } - \pcos{ x }) }{ \psin{ x } \pcos{ x } \cancel{ (\psin{ x } + \pcos{ x }) } } \\
-        & =\frac{ \psin{ x } - \pcos{ x } }{ \psin{ x } \pcos{ x } } \\
+        & = \frac{ \cancel{ (\psin{ x } + \pcos{ x }) } (\pcos{ x } - \psin{ x }) }{ \psin{ x } \pcos{ x } \cancel{ (\psin{ x } + \pcos{ x }) } } \\
+        & = \frac{ \pcos{ x } - \psin{ x } }{ \psin{ x } \pcos{ x } } \\
         & = \frac{ \pcos{ x } }{ \psin{ x } \pcos{ x } } - \frac{ \psin{ x } }{ \psin{ x } \pcos{ x } } \\
         & = \frac{ 1 }{ \psin{ x } } - \frac{ 1 }{ \pcos{ x } } \\
         & = \pcsc{ x } - \psec{ x }
@@ -364,7 +362,7 @@ Verifique las siguientes identidades:
         & (\psin{ x } \ptan{ x })^2 = (\ptan{ x } + \psin{ x }) (\ptan{ x } - \psin{ x }) \\
         & \psin{ x }^2 \ptan{ x }^2 = \ptan{ x }^2 - \psin{ x }^2 \\
         & \psin{ x }^2 * \frac{ \psin{ x }^2 }{ \pcos{ x }^2 } = \frac{ \psin{ x }^2 }{ \pcos{ x }^2 } - \psin{ x }^2 \\
-        & \frac{ \psin{ x }^4 }{ \pcos{ x }^2 } = \frac{ \psin{ x^2 } - \psin{ x }^2 \pcos{ x }^2 }{ \pcos{ x }^2 } \\
+        & \frac{ \psin{ x }^4 }{ \pcos{ x }^2 } = \frac{ \psin{ x }^2 - \psin{ x }^2 \pcos{ x }^2 }{ \pcos{ x }^2 } \\
         & = \frac{ \psin{ x }^2 (1 - \pcos{ x }^2) }{ \pcos{ x }^2 } \\
         & = \frac{ \psin{ x }^4 }{ \pcos{ x }^2 }
     \end{align}
@@ -388,7 +386,7 @@ Verifique las siguientes identidades:
     $$
     \begin{align}
         & \pcos{ \frac{ \theta }{ 2 } + \frac{ \theta }{ 2 } } = \pcos{ \frac{ \theta }{ 2 } }^2 - \psin{ \frac{ \theta }{ 2 } }^2 = \pcos{ \theta } \\
-        & \pcos{ \frac{ \theta }{ 2 } }^2 - \left (1 - \pcos{ \frac{ \theta }{ 2 }^2 } \right ) = \pcos{ \theta } \\
+        & \pcos{ \frac{ \theta }{ 2 } }^2 - \left (1 - \pcos{ \frac{ \theta }{ 2 } }^2 \right ) = \pcos{ \theta } \\
         & 2 \pcos{ \frac{ \theta }{ 2 } }^2 - 1 = \pcos{ \theta } \\
         & \pcos{ \frac{ \theta }{ 2 } } = \pm \sqrt{ \frac{ 1 + \pcos{ \theta } }{ 2 } }
     \end{align}
@@ -447,9 +445,9 @@ Resuelva las siguientes ecuaciones:
     $$
     \begin{align}
         & 1 - 2 \psin{ x }^2 = 1 + 4 \psin{ x } \\
-        & - 2 \psin{ x }^2 - 4 \psin{ x } = 0 \\
+        & -2 \psin{ x }^2 - 4 \psin{ x } = 0 \\
         & -2 (\psin{ x }^2 + 2 \psin{ x }) = 0 \\
-        & \psin{ x }^2 + 2 \psin{ x } = 0 \\
+        & \psin{ x }^2 + 2 \psin{ x } = 0
     \end{align}
     $$
 
@@ -509,12 +507,12 @@ Resuelva las siguientes ecuaciones:
 
 6. $\ptan{ \theta } + \psec{ \theta } = 1$.
 
-    Conociendo los rangos de las funciones, podemos decir que existen dos casos:
+    Conociendo los rangos de las funciones, existen dos casos:
 
     $$
     \begin{align}
-        & \ptan{ \theta } = 1 \quad \psec{ \theta } = 0 \quad (1) \\
-        & \ptan{ \theta } = 0 \quad \psec{ \theta } = 1 \quad (2)
+        & \ptan{ \theta } = 0 \quad \psec{ \theta } = 1 \quad (1) \\
+        & \ptan{ \theta } = 1 \quad \psec{ \theta } = 0 \quad (2)
     \end{align}
     $$
 
@@ -554,8 +552,8 @@ Resuelva las siguientes ecuaciones:
     $$
     \begin{align}
         & \frac{ \pcos{ x } }{ \psin{ x } } + \frac{ \psin{ x } }{ \pcos{ x } } = \frac{ 1 }{ \psin{ x } } \frac{ 1 }{ \pcos{ x } } \\
-        & \frac{ \pcos{ x }^2 + \psin{ x }^2 }{ \psin{ x } + \pcos{ x } } = \frac{ 1 }{ \psin{ x } \pcos{ x } } \\
-        & \frac{ 1 }{ \psin{ x } + \pcos{ x } } = \frac{ 1 }{ \psin{ x } \pcos{ x } }
+        & \frac{ \pcos{ x }^2 + \psin{ x }^2 }{ \psin{ x } \pcos{ x } } = \frac{ 1 }{ \psin{ x } \pcos{ x } } \\
+        & \frac{ 1 }{ \psin{ x } \pcos{ x } } = \frac{ 1 }{ \psin{ x } \pcos{ x } }
     \end{align}
     $$
 
@@ -563,7 +561,7 @@ Resuelva las siguientes ecuaciones:
 
     ![problem](99-archive/college/semesters/01/assets/calculo_i/2_07_02-problem.jpg) TODO
 
-    Del primer triangulo, sabemos que:
+    Del primer triángulo se sabe que:
 
     $$
     \begin{align}
@@ -572,7 +570,7 @@ Resuelva las siguientes ecuaciones:
     \end{align}
     $$
 
-    Del primer triangulo, sabemos que:
+    Del segundo triángulo se sabe que:
 
     $$
     \begin{align}

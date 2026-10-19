@@ -6,11 +6,11 @@ Roboflow es una plataforma de software como servicio que agiliza el flujo de tra
 
 ### Annotate
 
-Crear y gestionar anotaciones de tus datasets.
+Crear y gestionar anotaciones de los datasets.
 
 ### Train
 
-Es el motor AutoML para llevar tu dataset a un modelo listo para producción.
+Es el motor AutoML para llevar un dataset a un modelo listo para producción.
 
 > AutoML (Automated Machine Learning) es el conjunto de técnicas y herramientas que automatizan las tareas repetitivas y complejas del ciclo de vida del aprendizaje automático, desde la preparación de datos hasta la optimización de hiperparámetros y la selección de modelos.
 
@@ -46,10 +46,10 @@ Es el repositorio comunitario de datos y modelos.
 
 ## Entrenando un modelo
 
-1. Cargue las imágenes.
+1. Cargar las imágenes.
 
 2. Anotar las imágenes.
 
-3. Generar una versión del conjunto de datos: esto crea una instantánea puntual de sus imágenes procesadas de una manera determinada.
+3. Generar una versión del conjunto de datos: esto crea una instantánea puntual de las imágenes procesadas de una manera determinada.
 
-4. Inicie el entrenamiento en la interfaz web.
+4. Iniciar el entrenamiento en la interfaz web.

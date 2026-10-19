@@ -32,7 +32,7 @@ Con los siguientes datos:
 
 ## 2
 
-Solucione el sistema de ecuaciones y justifique la elección del método. Usé un límite de error de $\varepsilon = 5\%$ y un máximo de 3 iteraciones.
+Solucione el sistema de ecuaciones y justifique la elección del método. Use un límite de error de $\varepsilon = 5\%$ y un máximo de 3 iteraciones.
 
 $$
 \begin{cases}
@@ -46,7 +46,7 @@ $$
 
 Verifique la convergencia de los siguientes sistemas de ecuaciones:
 
-1. .
+1. Primer sistema.
 
     $$
     \begin{cases}
@@ -56,13 +56,13 @@ Verifique la convergencia de los siguientes sistemas de ecuaciones:
     \end{cases}
     $$
 
-2. .
+2. Segundo sistema.
 
     $$
     \begin{cases}
         9 x_1  & + 3 x_2 & + 1 x_3 & = 13 \\
         -6 x_1 &         & + 8 x_3 & = 2 \\
-        2 x    & + 5 x_2 & - 1 x_3 & = 6
+        2 x_1  & + 5 x_2 & - 1 x_3 & = 6
     \end{cases}
     $$
 

@@ -18,9 +18,9 @@ $$
 
 ## 3
 
-Suponga que $p^∗$ debe aproximar $p$ con un error relativo máximo de $10^{ -3 }$ . Encuentre el más grande intervalo en el cual $p^∗$ debe encontrarse para un valor $p$.
+Suponga que $p^*$ debe aproximar $p$ con un error relativo máximo de $10^{ -3 }$. Encuentre el más grande intervalo en el cual $p^*$ debe encontrarse para un valor $p$.
 
-De forma analoga al punto anterior.
+De forma análoga al punto anterior.
 
 $$
 p 10^{ -3 } + p \geq p^* \geq p - p 10^{ -3 }
@@ -44,21 +44,21 @@ Determine:
 
 1. $\frac{ 17 }{ 15 }$.
 
-2. $1.133$.
+2. 1.133.
 
-3. $1.133$.
+3. 1.133.
 
-4. $\frac{ |\frac{ 17 }{ 15 } - 1.133| }{ |\frac{ 17 }{ 15 }| } \approx 2.94 * 10^{ - 4 }$.
+4. $\frac{ |\frac{ 17 }{ 15 } - 1.133| }{ |\frac{ 17 }{ 15 }| } \approx 2.94 * 10^{ -4 }$.
 
 ### $\left ( \frac{ 1 }{ 3 } - \frac{ 3 }{ 11 } \right ) + \frac{ 3 }{ 20 }$
 
 1. $\frac{ 139 }{ 660 }$.
 
-2. $0.210$.
+2. 0.210.
 
-3. $0.211$.
+3. 0.211.
 
-4. .
+4. Errores relativos.
     - Corte: $\frac{ |\frac{ 139 }{ 660 } - 0.210| }{ |\frac{ 139 }{ 660 }| } \approx 2.87 * 10^{ -3 }$.
 
     - Redondeo: $\frac{ |\frac{ 139 }{ 660 } - 0.211| }{ |\frac{ 139 }{ 660 }| } \approx 1.87 * 10^{ -3 }$.
@@ -69,9 +69,9 @@ Determine:
 
 2. $-0.0893$.
 
-3. $-0.084$.
+3. $-0.0894$.
 
-4. .
+4. Errores relativos.
     - Corte: $\frac{ |-\frac{ 59 }{ 660 } - (-0.0893)| }{ |\frac{ 59 }{ 660 }| } \approx 1.05 * 10^{ -3 }$.
 
     - Redondeo: $\frac{ |-\frac{ 59 }{ 660 } - (-0.0894)| }{ |\frac{ 59 }{ 660 }| } \approx 6.73 * 10^{ -4 }$.
@@ -108,11 +108,11 @@ $$
 ### Use los datos $(x_0, y_0) = (1.32,3.24)$ y $(x_1, y_1) = (1.96,4.76)$ y aritmética de redondeo a 3 dígitos para calcular la intersección en el eje x usando ambas fórmulas
 
 $$
-\frac{ 1.32 * 4.76 - 1.96 * 3.24 }{ 4.76 - 3.24 } = -\frac{ 0.0672 }{ 1.52 } \approx 4.42 * 10^{ -2 }
+\frac{ 1.32 * 4.76 - 1.96 * 3.24 }{ 4.76 - 3.24 } = -\frac{ 0.0672 }{ 1.52 } \approx -4.42 * 10^{ -2 }
 $$
 
 $$
-1.32 - \frac{ (1.96 - 1.32) 3.24 }{ 4.76 - 3.24 } \approx 4.42 * 10^{ -2 }
+1.32 - \frac{ (1.96 - 1.32) 3.24 }{ 4.76 - 3.24 } \approx -4.42 * 10^{ -2 }
 $$
 
 ## 7
@@ -131,7 +131,7 @@ $$
 
 $$
 100.15 \leq V_r \leq 100.25 \\[10 pt]
-0.25 \leq E_a \leq 0.15 \\[10 pt]
+0.15 \leq E_a \leq 0.25 \\[10 pt]
 1.5 * 10^{ -3 } \leq E_r \leq 2.5 * 10^{ -3 }
 $$
 
@@ -139,14 +139,14 @@ $$
 
 $$
 99.98 \leq V_r \leq 100.02 \\[10 pt]
-E_a = 0.02 \quad E_r = 2 * 10^{ -4 }
+0 \leq E_a \leq 0.02 \quad 0 \leq E_r \leq 2 * 10^{ -4 }
 $$
 
 ### $99.9 \pm 0.03$ centímetros
 
 $$
 99.87 \leq V_r \leq 99.93 \\[10 pt]
-0.13 \leq E_a \leq 0.07 \\[10 pt]
+0.07 \leq E_a \leq 0.13 \\[10 pt]
 7 * 10^{ -4 } \leq E_r \leq 1.3 * 10^{ -3 }
 $$
 
@@ -160,11 +160,11 @@ $$
 
 ---
 
-La mejor medida es la 3, pues se tiene certeza de su $E_a$ y $E_r$, además de que son los valores más pequeños de todas las mediciones propuestas.
+La mejor medida es la 3, pues sus errores absoluto y relativo son los más pequeños de todas las mediciones propuestas.
 
 ## 8
 
-Un paralelepípedo rectangular tiene dimensiones de 3 centímetros, 4 centímetros y 5 centímetros, medidas con una precisión de $\pm 0.5$ centímetros. ¿Cuáles son los límites superior e inferior más precisos para el volumen de este paralelepípedo?  ¿Cuáles son los límites superior e inferior más precisos para el área superficial?
+Un paralelepípedo rectangular tiene dimensiones de 3 centímetros, 4 centímetros y 5 centímetros, medidas con una precisión de $\pm 0.5$ centímetros. ¿Cuáles son los límites superior e inferior más precisos para el volumen de este paralelepípedo? ¿Cuáles son los límites superior e inferior más precisos para el área superficial?
 
 $$
 V = l * w * h \quad A = 2 (l w + l h + w h)
@@ -192,7 +192,7 @@ $$
 e = \sum_{ n = 0 }^\infty \frac{ 1 }{ n! }
 $$
 
-Haga las siguientes aproximaciones y calcule el error absoluto y relativo de cada aproximación respecto al valor real de $e$ (tomaremos este valor como $2.718281828$).
+Haga las siguientes aproximaciones y calcule el error absoluto y relativo de cada aproximación respecto al valor real de $e$ (se toma este valor como 2.718281828).
 
 ### $\sum_{ n = 0 }^5 \frac{ 1 }{ n! } = \frac{ 163 }{ 60 }$
 

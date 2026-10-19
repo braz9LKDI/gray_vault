@@ -5,12 +5,12 @@
 2. Install yt-dlp.
 
     ```bash
-    sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/
+    sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
     sudo chmod a+x /usr/local/bin/yt-dlp
     ```
 
-3. Download songs from YouTube: `yt-dlp -x --audio-format mp3 --audio-quality 0 <YOUTUBE_URL>`.
-    - `-x`: convert the downloaded video file to audio-only.
+3. Download songs from YouTube: `yt-dlp -x --audio-format mp3 --audio-quality 0 <youtube-url>`.
+    - `-x`: converts the downloaded video file to audio-only.
 
     - `--audio-format mp3`: converts the extracted audio to MP3.
 

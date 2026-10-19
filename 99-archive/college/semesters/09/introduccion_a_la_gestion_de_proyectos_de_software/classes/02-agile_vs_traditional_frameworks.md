@@ -1,13 +1,13 @@
-# Agile vs traditional frameworks
+# Agile vs. traditional frameworks
 
 ## Ciclos de vida de un proyecto
 
 ```mermaid
 flowchart LR
-    analisis --> diseño --> desarrollo --> pruebas --> implantación
+    análisis --> diseño --> desarrollo --> pruebas --> implantación
 ```
 
-La diferencia entre el ciclo de vida de un proyecto y un producto es que para la primera se contemplan fases específicas y gestionadas, mientras que el segundo se enfoca en la operación y mantenimiento continuo.
+La diferencia entre el ciclo de vida de un proyecto y un producto es que para el primero se contemplan fases específicas y gestionadas, mientras que el segundo se enfoca en la operación y mantenimiento continuo.
 
 |   enfoque   | requisitos | actividades                                                             | entrega                               | meta                                                                   |
 | :---------: | :--------: | ----------------------------------------------------------------------- | ------------------------------------- | ---------------------------------------------------------------------- |
@@ -22,7 +22,7 @@ Aprovechan las cosas conocidas y probadas. Esta reducción en incertidumbre y co
 
 ```mermaid
 flowchart LR
-    analisis --> ejecución --> pruebas --> entrega
+    análisis --> ejecución --> pruebas --> entrega
 ```
 
 El plan dirige el trabajo. Por adelantado, se realiza tanta planificación como sea posible. Los requisitos son identificados con el mayor detalle posible. El equipo estima cuándo puede entregar qué entregables.
@@ -48,9 +48,9 @@ Se planifican prototipos y pruebas, pero las salidas pretenden modificar los pla
 
 Proporcionan entregables terminados que el cliente puede utilizar de inmediato.
 
-Planean entregar subconjuntos sucesivos del proyecto en general. Los equipos pueden planificar varias entregas sucesivas de antemano o solo una a la vez. Las entregas informan sobre el futuro trabajo del proyecto
+Planean entregar subconjuntos sucesivos del proyecto en general. Los equipos pueden planificar varias entregas sucesivas de antemano o solo una a la vez. Las entregas informan sobre el futuro trabajo del proyecto.
 
-## Agiles
+## Ágiles
 
 Aprovechan tanto los aspectos de las características iterativas como los de las incrementales. Iteran sobre el producto a fin de crear entregables terminados.
 
@@ -58,7 +58,7 @@ El equipo obtiene retroalimentación temprana y proporciona al cliente visibilid
 
 El equipo también planifica y replanifica a medida que se obtiene más información a partir de la revisión de las entregas frecuentes.
 
-## PMI (project management institute)
+## PMI (Project Management Institute)
 
 Cinco grupos de procesos, que constituyen etapas secuenciales y lógicas por las que pasa un proyecto:
 
@@ -92,11 +92,11 @@ Cinco grupos de procesos, que constituyen etapas secuenciales y lógicas por las
 
 > Aunque se presentan de forma secuencial, estos procesos pueden iterar según las necesidades del proyecto.
 
-## Roles de equipo en el agilísimo
+## Roles de equipo en el agilismo
 
 ### Product Owner
 
-Define qué se debe hacer y en qué orden. Actúa como la voz del cliente, asegurando que el trabajo pendiente sea claro y priorizado, por tal razón debe tener habilidades de negociación, abstracción, facilitación, influencia y comunicación.
+Define qué se debe hacer y en qué orden. Actúa como la voz del cliente, asegurando que el trabajo pendiente sea claro y priorizado; por tal razón, debe tener habilidades de negociación, abstracción, facilitación, influencia y comunicación.
 
 ### Scrum Master
 

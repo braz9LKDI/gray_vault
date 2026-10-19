@@ -35,10 +35,7 @@ If it is also accepted that $x_{ n + 1 }$ tends to the root, it must be satisfie
 
 $$
 0 = f(x_n) + f'(x_n) (x_{ n + 1 } - x_n) \\[10 pt]
-
 f'(x_n) x_{ n + 1 } = f'(x_n) x_n - f(x_n) \\[10 pt]
-
 x_{ n + 1 } = \frac{ f'(x_n) x_n - f(x_n) }{ f'(x_n) } \\[10 pt]
-
 x_{ n + 1 } = x_n - \frac{ f(x_n) }{ f'(x_n) }
 $$

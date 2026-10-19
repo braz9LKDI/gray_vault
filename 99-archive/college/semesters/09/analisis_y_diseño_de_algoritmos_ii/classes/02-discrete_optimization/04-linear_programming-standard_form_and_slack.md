@@ -34,7 +34,7 @@ Un programa lineal no está en forma estándar por cualquiera de las siguientes 
 
 3. Hay restricciones de igualdad.
 
-4. Hay restricciones de desigualdad con el singo $\geq$.
+4. Hay restricciones de desigualdad con el signo $\geq$.
 
 #### Conversión a forma estándar
 
@@ -115,7 +115,7 @@ Las formas son equivalentes porque representan la misma condición de manera alg
 
 2. Introducción de la variable de holgura.
 
-    Para convertirla en igualdad, se agrega una variable no negativa $x_{ n + i }$ (llamada **holgura**).
+    Para convertirla en igualdad, se agrega una variable no negativa $x_{ n + i }$ (llamada holgura).
 
     $$
     \sum_{ j = 1 }^n a_{ ij } x_j + x_{ n + i } = b_i \quad x_{ n + i } \geq 0
@@ -134,11 +134,11 @@ La variable de holgura actúa como un "marcador" no negativo que absorbe la dife
 
 ---
 
-Si tenemos $n$ variables, cada restricción define un semiespacio en un espacio n-dimensional. Se denomina **simplex** a la región factible formada por la intersección de dichos semiespacios. La función objetivo en este caso define un **hiperplano**.
+Con $n$ variables, cada restricción define un semiespacio en un espacio n-dimensional. Se denomina simplex a la región factible formada por la intersección de dichos semiespacios. La función objetivo en este caso define un hiperplano.
 
 ## Simplex
 
-Un hiperplano en un espacio n-dimensional puede ser descrito por una ecuación lineal **no degenerada** con la siguiente forma:
+Un hiperplano en un espacio n-dimensional puede ser descrito por una ecuación lineal no degenerada con la siguiente forma:
 
 $$
 a_1 x_1 + a_2 x_2 + \dots + a_n x_n = b
@@ -146,9 +146,9 @@ $$
 
 Si $b = 0$, se obtiene un hiperplano lineal, que pasa a través del origen.
 
-> No degenerada significa que toda $a_i$ son diferentes a 0.
+> No degenerada significa que no todos los $a_i$ son 0.
 
-Las dos mitades del espacio definidas por un hiperplano en espacios de n-dimensiones son:
+Las dos mitades del espacio definidas por un hiperplano en un espacio n-dimensional son:
 
 $$
 \begin{align}

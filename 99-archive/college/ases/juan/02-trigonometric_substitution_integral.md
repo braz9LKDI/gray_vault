@@ -4,7 +4,7 @@ $$
 \int { \frac{ x }{ \sqrt{ 4 x - x^2 } } } dx
 $$
 
-Completamos el cuadrado de $4 x - x^2$.
+Se completa el cuadrado de $4 x - x^2$.
 
 $$
 \begin{align}
@@ -16,7 +16,7 @@ $$
 \end{align}
 $$
 
-Reemplazamos $(1)$ en la expresión original.
+Se reemplaza $(1)$ en la expresión original.
 
 $$
 \begin{align}

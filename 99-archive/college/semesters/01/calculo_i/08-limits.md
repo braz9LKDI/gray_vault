@@ -2,7 +2,7 @@
 
 ## 1
 
-Dada la gráfica de la función $f$, calcule los siguientes limites:
+Dada la gráfica de la función $f$, calcule los siguientes límites:
 
 ![graph](99-archive/college/semesters/01/assets/calculo_i/2_08_01-graph.jpg)
 
@@ -26,7 +26,7 @@ Dada la gráfica de la función $f$, calcule los siguientes limites:
 
 ## 2
 
-Calcule los siguientes limites si existen:
+Calcule los siguientes límites si existen:
 
 1. $\lim_{ x \to 1 } \frac{ 3 x^5 - x^2 + 7 x }{ x^3 + 1 }$.
 
@@ -42,22 +42,22 @@ Calcule los siguientes limites si existen:
     $$
     \begin{align}
         & = \frac{ (x^3 + 1) (x^3 - 1) }{ x + 1 } \\
-        & = \frac{ \cancel{ (x + 1) } (x - x + 1) (x^3 - 1) }{ \cancel{ x + 1 } } \\
-        & = (x - x + 1) (x^3 - 1) \\
+        & = \frac{ \cancel{ (x + 1) } (x^2 - x + 1) (x^3 - 1) }{ \cancel{ x + 1 } } \\
+        & = (x^2 - x + 1) (x^3 - 1) \\
         & = (3) (-2) \\
         & = -6
     \end{align}
     $$
 
-3. $\lim_{ h \to 0 } = \frac{ (3 + h)^{ -1 } - 3^{ -1 } }{ h }$.
+3. $\lim_{ h \to 0 } \frac{ (3 + h)^{ -1 } - 3^{ -1 } }{ h }$.
 
     $$
     \begin{align}
         & = \frac{ \frac{ 1 }{ 3 + h } - \frac{ 1 }{ 3 } }{ h } \\
         & = \frac{ \frac{ 3 - (3 + h) }{ 3 (3 + h) } }{ h } \\
-        & = \frac{ h }{ h (9 + 3 h) } \\
-        & = \frac{ 1 }{ 9 + 3 h } \\
-        & = \frac{ 1 }{ 9 + 3 (0) } = \frac{ 1 }{  9 }
+        & = -\frac{ h }{ h (9 + 3 h) } \\
+        & = -\frac{ 1 }{ 9 + 3 h } \\
+        & = -\frac{ 1 }{ 9 + 3 (0) } = -\frac{ 1 }{ 9 }
     \end{align}
     $$
 
@@ -66,11 +66,11 @@ Calcule los siguientes limites si existen:
     $$
     \begin{align}
         & = \frac{ \sqrt[3]{ t } - 1 }{ \sqrt{ t } - 1 } * \frac{ \sqrt{ t } + 1 }{ \sqrt{ t } + 1 } \\
-        & = \frac{ (\sqrt[3]{ t } - 1) (\sqrt{ t } - 1) }{ \sqrt{ t }^2 - 1^2 } \\
-        & = \frac{ (\sqrt[3]{ t } - 1) (\sqrt{ t } - 1) }{ t - 1 } \\
-        & = \frac{ (\sqrt[3]{ t } - 1) (\sqrt{ t } - 1) }{ \sqrt[3]{ t }^3 - 1^3 } \\
-        & = \frac{ \cancel{ (\sqrt[3]{ t } - 1) } (\sqrt{ t } - 1) }{ \cancel{ (\sqrt[3]{ t } - 1) } (\sqrt[3]{ t }^2 + \sqrt[3]{ t } + 1) } \\
-        & = \frac{ \sqrt{ t } - 1 }{ \sqrt[3]{ t }^2 + \sqrt[3]{ t } + 1 } \\
+        & = \frac{ (\sqrt[3]{ t } - 1) (\sqrt{ t } + 1) }{ \sqrt{ t }^2 - 1^2 } \\
+        & = \frac{ (\sqrt[3]{ t } - 1) (\sqrt{ t } + 1) }{ t - 1 } \\
+        & = \frac{ (\sqrt[3]{ t } - 1) (\sqrt{ t } + 1) }{ \sqrt[3]{ t }^3 - 1^3 } \\
+        & = \frac{ \cancel{ (\sqrt[3]{ t } - 1) } (\sqrt{ t } + 1) }{ \cancel{ (\sqrt[3]{ t } - 1) } (\sqrt[3]{ t }^2 + \sqrt[3]{ t } + 1) } \\
+        & = \frac{ \sqrt{ t } + 1 }{ \sqrt[3]{ t }^2 + \sqrt[3]{ t } + 1 } \\
         & = \frac{ 1 + 1 }{ 1 + 1 + 1 } \\
         & = \frac{ 2 }{ 3 }
     \end{align}
@@ -91,9 +91,9 @@ Calcule los siguientes limites si existen:
 
     $$
     \begin{align}
-        & = \frac{ \sqrt{ 10 - x } - 3 }{  \sqrt{ 2 - x } - 1 } * \frac{ \sqrt{ 2 - x } + 1 }{ \sqrt{ 2 - x } + 1 } \\
-        & = \frac{ (\sqrt{ 10 - x } - 3) (\sqrt{ 2 - x } + 1) }{  2 - x - 1 } \\
-        & = \frac{ (\sqrt{ 10 - x } - 3) (\sqrt{ 2 - x } + 1) }{  2 - x - 1 } * \frac{ \sqrt{ 10 - x } + 3 }{ \sqrt{ 10 - x } + 3 } \\
+        & = \frac{ \sqrt{ 10 - x } - 3 }{ \sqrt{ 2 - x } - 1 } * \frac{ \sqrt{ 2 - x } + 1 }{ \sqrt{ 2 - x } + 1 } \\
+        & = \frac{ (\sqrt{ 10 - x } - 3) (\sqrt{ 2 - x } + 1) }{ 2 - x - 1 } \\
+        & = \frac{ (\sqrt{ 10 - x } - 3) (\sqrt{ 2 - x } + 1) }{ 2 - x - 1 } * \frac{ \sqrt{ 10 - x } + 3 }{ \sqrt{ 10 - x } + 3 } \\
         & = \frac{ (\sqrt{ 10 - x }^2 - 3^2) (\sqrt{ 2 - x } + 1) }{ (1 - x) (\sqrt{ 10 - x } + 3) } \\
         & = \frac{ \cancel{ (10 - x - 9) } (\sqrt{ 2 - x } + 1) }{ \cancel{ (1 - x) } (\sqrt{ 10 - x } + 3) } \\
         & = \frac{ \sqrt{ 2 - x } + 1 }{ \sqrt{ 10 - x } + 3 } \\
@@ -108,7 +108,7 @@ Calcule los siguientes limites si existen:
     $$
     \begin{align}
         & = \frac{ x }{ \sqrt{ x^2 - 9 } } * \frac{ \sqrt{ x^2 - 9 } }{ \sqrt{ x^2 - 9 } } \\
-        & = \frac{ x\sqrt{ x^2 - 9 } }{ x^2 - 9 } \\
+        & = \frac{ x \sqrt{ x^2 - 9 } }{ x^2 - 9 } \\
         & = \frac{ \text{valores negativos muy pequeños} }{ \text{valores positivos muy pequeños} } \\
         & = -\infty
     \end{align}
@@ -151,7 +151,7 @@ Calcule los siguientes limites si existen:
     $$
     \begin{align}
         & = \frac{ x - 6 }{ \abs{ x - 6 } } \\
-        & = -\frac{ x - 6  }{ x - 6 } \\
+        & = -\frac{ x - 6 }{ x - 6 } \\
         & = -1
     \end{align}
     $$
@@ -177,7 +177,7 @@ Calcule los siguientes limites si existen:
     \lim_{ x \to 0^- }{ \frac{ 1 }{ x } - \frac{ 1 }{ \abs{ x } } } \neq \lim_{ x \to 0^+ }{ \frac{ 1 }{ x } - \frac{ 1 }{ \abs{ x } } }
     $$
 
-12. $\lim_{ x \to -\infty }{ \frac{ 1 }{ x } \sqrt{ 4 x^2 + 1 }}$.
+12. $\lim_{ x \to -\infty }{ \frac{ 1 }{ x } \sqrt{ 4 x^2 + 1 } }$.
 
     $$
     \begin{align}
@@ -193,10 +193,10 @@ Calcule los siguientes limites si existen:
 
     $$
     \begin{align}
-        & = \sqrt{ x } - \sqrt{ x + 1 } * \frac{ \sqrt{ x } + \sqrt{ x + 1 } }{ \sqrt{ x } + \sqrt{ x + 1 } } \\
+        & = (\sqrt{ x } - \sqrt{ x + 1 }) \frac{ \sqrt{ x } + \sqrt{ x + 1 } }{ \sqrt{ x } + \sqrt{ x + 1 } } \\
         & = \frac{ \sqrt{ x }^2 - \sqrt{ x + 1 }^2 }{ \sqrt{ x } + \sqrt{ x + 1 } } \\
         & = \frac{ x - (x + 1) }{ \sqrt{ x } + \sqrt{ x + 1 } } \\
-        & =  -\frac{ 1 }{ \sqrt{ x } + \sqrt{ x + 1 } } \\
+        & = -\frac{ 1 }{ \sqrt{ x } + \sqrt{ x + 1 } } \\
         & = -\frac{ \lim_{ x \to \infty } 1 }{ \lim_{ x \to \infty }{ \sqrt{ x } + \sqrt{ x + 1 } } } \\
         & = -\frac{ 1 }{ \infty } = 0
     \end{align}
@@ -215,7 +215,7 @@ Sea $x$ un número real. Recuerde que la función "parte entera" de $x$, denotad
     \end{align}
     $$
 
-2. Para que valores de $a$ existe $\lim_{ x \to a } [|x|]$.
+2. ¿Para qué valores de $a$ existe $\lim_{ x \to a } [|x|]$?
 
     $$
     [|a|] < a
@@ -301,17 +301,17 @@ Calcule $\lim_{ x \to a } f(x)$, si:
     \begin{align}
         & \lim_{ x \to -3^+ } f(x) \\
         & = 4 (-3) + 6 \\
-        & = 6
+        & = -6
     \end{align}
     $$
 
     $$
-    \lim_{ x \to 0^- } f(x) \neq \lim_{ x \to 0^+ } f(x)
+    \lim_{ x \to -3^- } f(x) = \lim_{ x \to -3^+ } f(x) = -6
     $$
 
 ## 5
 
-Encuentre el valor de la contante $k$, para que el $\lim_{ x \to a } f(x)$ exista.
+Encuentre el valor de la constante $k$, para que el $\lim_{ x \to a } f(x)$ exista.
 
 1. $a = 1$ y $f(x) =
     \begin{cases}
@@ -388,7 +388,7 @@ Encuentre el valor de la contante $k$, para que el $\lim_{ x \to a } f(x)$ exist
     f(x) =
         \begin{cases}
             x^2 - 2 x + 6        & x \leq 3 \\
-            \frac{ k^2 }{ 4 - x } & x > 3, x \neq 4
+            \frac{ 9 }{ 4 - x }  & x > 3, x \neq 4
         \end{cases}
     $$
 
@@ -398,7 +398,7 @@ Encuentre el valor de la contante $k$, para que el $\lim_{ x \to a } f(x)$ exist
     f(x) =
         \begin{cases}
             x^2 - 2 x - 2        & x \leq 3 \\
-            \frac{ k^2 }{ 4 - x } & x > 3, x \neq 4
+            \frac{ 1 }{ 4 - x }  & x > 3, x \neq 4
         \end{cases}
     $$
 
@@ -414,12 +414,12 @@ $$
     & = \frac{ \left (\frac{ 1 - (x + h) }{ x + h } \right ) - \left (\frac{ 1 - x }{ x } \right ) }{ h } \\
     & = \frac{ -\frac{ h }{ x (x + h) } }{ h } \\
     & = -\frac{ h }{ h (x^2 + h x) } \\
-    & = \frac{ 1 }{ x^2 + h x } \\
-    & = \frac{ 1 }{ x^2 }
+    & = -\frac{ 1 }{ x^2 + h x } \\
+    & = -\frac{ 1 }{ x^2 }
 \end{align}
 $$
 
-La pendiente de la recta tangente en $x = 2$ es $m = \frac{ 1 }{ 2^2 } = \frac{ 1 }{ 4 }$.
+La pendiente de la recta tangente en $x = 2$ es $m = -\frac{ 1 }{ 2^2 } = -\frac{ 1 }{ 4 }$.
 
 $$
 \begin{align}
@@ -439,7 +439,7 @@ Sea $f(x) = x^3 - x + 5$.
     $$
     \begin{align}
         & \lim_{ h \to 0 } \frac{ ((x + h)^3 - (x + h) + 5) - (x^3 - x + 5) }{ h } \\
-        & = \frac{ x^3 + 3 x^2 h + 3 x h^2 + h^3 - x - h + 5 }{ h } \\
+        & = \frac{ x^3 + 3 x^2 h + 3 x h^2 + h^3 - x - h + 5 - (x^3 - x + 5) }{ h } \\
         & = \frac{ 3 x^2 h + 3 x h^2 + h^3 - h }{ h } \\
         & = \frac{ h (3 x^2 + 3 x h + h^2 - 1) }{ h } \\
         & = 3 x^2 + 3 x h + h^2 - 1 \\
@@ -526,7 +526,7 @@ Halle:
         & = \frac{ (\sqrt{ x + h }) - (\sqrt{ x }) }{ h } \frac{ \sqrt{ x + h } + \sqrt{ x } }{ \sqrt{ x + h } + \sqrt{ x } } \\
         & = \frac{ (\sqrt{ x + h })^2 - (\sqrt{ x })^2 }{ h (\sqrt{ x + h } + \sqrt{ x }) } \\
         & = \frac{ (x + h) - (x) }{ h (\sqrt{ x + h } + \sqrt{ x }) } \\
-        & = \frac{ 1 }{ \sqrt{ x + h } + \sqrt{ x  } } \\
+        & = \frac{ 1 }{ \sqrt{ x + h } + \sqrt{ x } } \\
         & = \frac{ 1 }{ 2 \sqrt{ x } }
     \end{align}
     $$

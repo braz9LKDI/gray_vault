@@ -18,7 +18,7 @@ El reconocimiento y la generación de voz son fundamentales en la era digital po
 timeline
     title evolución de la síntesis y reconocimiento de voz
     1950 : Audrey (Bell Labs): reconoce dígitos hablados
-    1960 : IBM Shoebox                                              : primeros sistemas de palabras"
+    1960 : IBM Shoebox                                              : primeros sistemas de palabras
     1970 : HMMs y Harpy (CMU)                                       : reconocimiento con hasta 1,000 palabras
     1980 : Algoritmos estadísticos                                 : primeras aplicaciones comerciales
     1990 : Dragon NaturallySpeaking                                : dictado continuo y personalizado
@@ -43,7 +43,7 @@ timeline
 
 - 1980 algoritmos estadísticos: primeras aplicaciones comerciales.
 
-    Durante los 80 se aplicaron algoritmos estadísticos que mejoraron la precisión del reconocimiento de voz. Esto permitió las primeras aplicaciones comerciales, aunque la tecnología seguía funcionando de forma óptima sólo en entornos muy controlados.
+    Durante los 80 se aplicaron algoritmos estadísticos que mejoraron la precisión del reconocimiento de voz. Esto permitió las primeras aplicaciones comerciales, aunque la tecnología seguía funcionando de forma óptima solo en entornos muy controlados.
 
 - 1990 Dragon NaturallySpeaking: dictado continuo y personalizado.
 
@@ -59,4 +59,4 @@ timeline
 
 - 2020 deep learning (Tacotron, WaveNet): síntesis natural, personalización y análisis emocional.
 
-    La aplicación de técnicas de deep learning, como Tacotron y Wavenet, ha permitido generar voces sintetizadas con una calidad muy natural. Estas tecnologías facilitan la personalización de la interacción y permiten analizar el estado emocional del usuario, abriendo nuevas oportunidades en aplicaciones avanzadas.
+    La aplicación de técnicas de deep learning, como Tacotron y WaveNet, ha permitido generar voces sintetizadas con una calidad muy natural. Estas tecnologías facilitan la personalización de la interacción y permiten analizar el estado emocional del usuario, abriendo nuevas oportunidades en aplicaciones avanzadas.

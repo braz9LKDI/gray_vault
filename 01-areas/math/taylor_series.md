@@ -17,7 +17,6 @@ where
 
 $$
 P_n(x) = f(x_0) + f'(x_0) (x - x_0) + \frac{ f''(x_0) }{ 2! } (x - x_0)^2 + \dots + \frac{ f^n(x_0) }{ n! } (x - x_0)^n \\[10 pt]
-
 P_n(x) = \sum_{ k = 0 }^n \frac{ f^k(x_0) }{ k! } (x - x_0)^k
 $$
 

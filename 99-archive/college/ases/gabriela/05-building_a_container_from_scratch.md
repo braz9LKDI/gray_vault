@@ -1,9 +1,9 @@
 # Building a container from scratch
 
-1. Download and extract a Linux system files: `wget https://github.com/ericchiang/containers-from-scratch/releases/download/v0.1.0/rootfs.tar.gz && sudo tar -zxf rootfs.tar.gz`.
+1. Download and extract the files of a Linux system: `wget https://github.com/ericchiang/containers-from-scratch/releases/download/v0.1.0/rootfs.tar.gz && sudo tar -zxf rootfs.tar.gz`.
     - `wget`: command-line utility to download files from the web.
 
-    - `tar`: create, maintain, modify, and extract files from a tar archive file.
+    - `tar`: create, maintain, modify and extract files from a tar archive file.
         - `-z`: filter the archive through gzip (decompress a `.gz` file).
 
         - `-x`: extract the files from the archive.
@@ -29,7 +29,7 @@
 3. Share a PID namespace with the shell.
 
     ```bash
-    sudo nsenter --pid=/proc/<shell from the step 2 PID>/ns/pid \
+    sudo nsenter --pid=/proc/<shell-pid>/ns/pid \
         unshare -f --mount-proc=$PWD/rootfs/proc \
         chroot rootfs /bin/bash
     ```
@@ -43,7 +43,7 @@
     - `nsenter`: run a program with the namespaces of other processes.
         - `--pid`: enter the PID namespace of the specified process.
 
-4. Share file between the host and the container.
+4. Share files between the host and the container.
     1. `sudo mkdir readonlyfiles`.
 
     2. `sudo mkdir -p rootfs/var/readonlyfiles`.
@@ -65,6 +65,6 @@
 
     4. `echo "0" > /sys/fs/cgroup/demo/memory.swap.max`.
 
-    5. `echo <container bash PID> > /sys/fs/cgroup/demo/cgroup.procs`.
+    5. `echo <container-bash-pid> > /sys/fs/cgroup/demo/cgroup.procs`.
 
-    To delete this cgroup you can run the command `sudo rmdir /sys/fs/cgroup/demo`.
+    The command `sudo rmdir /sys/fs/cgroup/demo` deletes this cgroup.

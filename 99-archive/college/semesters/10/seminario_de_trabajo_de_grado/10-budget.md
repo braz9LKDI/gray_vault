@@ -8,7 +8,7 @@ This is typically the most significant cost in a software project. Even for an a
 
 ## Software
 
-This section lists the costs associated with any software tools, licenses, or services required for development.
+This section lists the costs associated with any software tools, licenses or services required for development.
 
 ## Hardware
 

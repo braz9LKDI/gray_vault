@@ -1,6 +1,6 @@
 # Introduction
 
-Optimizar es el proceso de **maximizar** o **minimizar** una función objetivo deseada mientras se satisface un conjunto de **restricciones** predominantes (Belegundu and Chandrupatla, 2019).
+Optimizar es el proceso de maximizar o minimizar una función objetivo deseada mientras se satisface un conjunto de restricciones predominantes (Belegundu and Chandrupatla, 2019).
 
 ## Pasos para resolver un problema de optimización
 
@@ -16,13 +16,13 @@ Optimizar es el proceso de **maximizar** o **minimizar** una función objetivo d
 
 ## El problema de programación no-lineal (NLP)
 
-Se conoce como NLP a La mayoría de problemas de optimización que pueden ser expresados como problemas de mínimos (o máximos) de una **función** sujeta a **restricciones de igualdades y desigualdades**.
+Se conoce como NLP a la mayoría de problemas de optimización que pueden ser expresados como problemas de mínimos (o máximos) de una función sujeta a restricciones de igualdades y desigualdades.
 
 > En este sentido, la palabra "programación" significa "planificación".
 
 ### Modelo
 
-Descripción esquemática de un sistema, teoría, o fenómeno a partir de propiedades conocidas o inferidas y que puede ser utilizado para estudiar sus características.
+Descripción esquemática de un sistema, teoría o fenómeno a partir de propiedades conocidas o inferidas y que puede ser utilizado para estudiar sus características.
 
 ### Modelo matemático
 
@@ -39,7 +39,7 @@ $$
 \end{align}
 $$
 
-donde $x = (x_1,x_2,\dots,x_n)^T$ es un vector columna de $n$ **variables de decisión**. $f(x)$ es la función objetivo o fusión de costo; las $g$'s son restricciones de desigualdad y las $h$'s son restricciones de igualdad. Los vectores $x^L$ y $x^U$ representan cotas o límites inferiores y superiores de las variables $x$.
+donde $x = (x_1,x_2,\dots,x_n)^T$ es un vector columna de $n$ variables de decisión. $f(x)$ es la función objetivo o función de costo; las $g$'s son restricciones de desigualdad y las $h$'s son restricciones de igualdad. Los vectores $x^L$ y $x^U$ representan cotas o límites inferiores y superiores de las variables $x$.
 
 ---
 
@@ -50,17 +50,17 @@ $$
 \end{align}
 $$
 
-donde $\Omega = \{x : g(x) \leq 0,\ h(x) = 0,\ x^L \leq x \leq x^U\}$. $\Omega$ es un subconjunto de $\mathbb{ R }^n$ y se denomina **región factible**.
+donde $\Omega = \{x : g(x) \leq 0,\ h(x) = 0,\ x^L \leq x \leq x^U\}$. $\Omega$ es un subconjunto de $\mathbb{ R }^n$ y se denomina región factible.
 
-## Teorema de Wierstrass (existencia de mínimos y máximos)
+## Teorema de Weierstrass (existencia de mínimos y máximos)
 
-Si $f$ es una función continua, definida sobre un conjunto **cerrado** y **acotado** $\Omega \in D_f$. Entonces existen puntos $x^*$ y $x^{ ** }$ donde $f$ toma sus valores máximo y mínimo.
+Si $f$ es una función continua, definida sobre un conjunto cerrado y acotado $\Omega \subseteq D_f$, entonces existen puntos $x^*$ y $x^{ ** }$ donde $f$ toma sus valores máximo y mínimo.
 
 > Aunque es cierto que puede existir una solución cuando no se cumplen las condiciones, esto es muy poco probable en situaciones prácticas.
 
 ---
 
-Una región $\Omega$ es **acotada** si puede ser contenida dentro de una esfera de radio finito.
+Una región $\Omega$ es acotada si puede ser contenida dentro de una esfera de radio finito.
 
 ## Maximizar vs. minimizar
 
@@ -88,7 +88,7 @@ Dependiendo de las restricciones, los problemas pueden clasificarse en:
 
 - Programación entera mixta (MIP): algunas variables son enteras y otras continuas.
 
-- Programación entera no-lineal (MINLP): cuando se involucran funciones no lineales.
+- Programación entera mixta no lineal (MINLP): cuando se involucran funciones no lineales.
 
 - Programación cuadrática (QP): la función objetivo es cuadrática y las restricciones son lineales.
 
@@ -107,13 +107,13 @@ $$
 
 - $c_j$ y $a_{ ij }$ son coeficientes constantes.
 
-- $b_j$ son constantes reales fijas, las cuales están ajustadas a **valores no negativos**.
+- $b_j$ son constantes reales fijas, las cuales están ajustadas a valores no negativos.
 
-- $x_j$ son **variables de decisión**.
+- $x_j$ son variables de decisión.
 
-Los problemas LP son problemas **convexos**, lo que implica que un máximo local es de hecho un máximo global.
+Los problemas LP son problemas convexos, lo que implica que un máximo local es de hecho un máximo global.
 
-> Un conjunto $C \subseteq \mathbb{R}^n$ es convexo si para cualquier par de puntos $x, y \in C$, el segmento que los une también está contenido en el conjunto.
+> Un conjunto $C \subseteq \mathbb{ R }^n$ es convexo si para cualquier par de puntos $x, y \in C$, el segmento que los une también está contenido en el conjunto.
 
 ### Modelamiento
 

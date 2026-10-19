@@ -4,7 +4,7 @@ Construct a regular expression on $\Sigma = \{0,1\}$ that generates all strings 
 
 ## Understanding the problem
 
-We can translate the statement into the following rule: there cannot be 00 after an 11 or in other words, there cannot be an 11 before a 00.
+The statement translates into the following rule: there cannot be 00 after an 11 or in other words, there cannot be an 11 before a 00.
 
 > It is not asking to put a 00 before every occurrence of 11.
 

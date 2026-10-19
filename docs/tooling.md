@@ -9,7 +9,7 @@ This page lists the tools that keep the vault consistent and how to run them.
 | `npm run format`         | Formats every file with Prettier.                                             |
 | `npm run format:check`   | Lists the files Prettier would change.                                        |
 | `npm run lint:style`     | Runs `style_check.sh`, which flags the style rules markdownlint cannot check. |
-| `npm run review:pending` | Lists the notes outside the archive that are not in the review tracker.       |
+| `npm run review:pending` | Lists the notes that are not in the review tracker.                           |
 | `npm run lint:md`        | Runs markdownlint on every note.                                              |
 | `npm run lint`           | Same as `lint:md`.                                                            |
 | `npm run fix`            | Runs Prettier and then markdownlint with `--fix`.                             |
@@ -19,7 +19,7 @@ This page lists the tools that keep the vault consistent and how to run them.
 
 `style_check.sh` flags the rules of the [style guidelines](style_guidelines.md) that markdownlint cannot check: characters outside the allowlist, fence tags, placeholders, numbers written as mathematics, second person, separator dashes, list periods, bold in lists, blank lines between list items, Oxford comma candidates and heading case candidates. Each line of its output is `<file>:<line>: <rule>: <text>`, and it prints nothing when every note passes.
 
-- It skips `99-archive/`, `docs/style_guidelines.md` (whose bad examples break the rules on purpose), the Kanban boards and the gitignored `journal/`.
+- It skips `docs/style_guidelines.md` (whose bad examples break the rules on purpose), the Kanban boards and the gitignored `journal/`. The archive is checked like any other folder.
 
 - `bash style_check.sh --test` runs its self-test against a planted fixture.
 

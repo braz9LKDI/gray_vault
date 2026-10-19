@@ -1,6 +1,6 @@
 # Entity-relationship problems
 
-1. El gerente de la empresa Uber, una empresa proveedora de movilidad como servicio, le ha pedido que cree un diagrama usando el Modelo ER. Quieren gestionar los incidentes y siniestros de tránsito. Para esta empresa los conductores son propietarios de uno o más vehículos. Cada vehículo está asociado con cero (0) o más accidentes de tránsito del cual se obtiene un porcentaje de daño.
+1. El gerente de la empresa Uber, una empresa proveedora de movilidad como servicio, le ha pedido que cree un diagrama usando el modelo ER. Quieren gestionar los incidentes y siniestros de tránsito. Para esta empresa los conductores son propietarios de uno o más vehículos. Cada vehículo está asociado con cero (0) o más accidentes de tránsito del cual se obtiene un porcentaje de daño.
 
     ```mermaid
     erDiagram
@@ -64,11 +64,11 @@
     ACCIDENT ||--o{ INCIDENT : recorded_in
     ```
 
-    - Un **conductor** puede tener muchos vehículos, pero cada **vehículo** tiene un solo dueño.
+    - Un conductor puede tener muchos vehículos, pero cada vehículo tiene un solo dueño.
 
-    - Un **vehículo** puede estar en múltiples incidentes, pero cada **incidente** se asocia con un solo **vehículo**.
+    - Un vehículo puede estar en múltiples incidentes, pero cada incidente se asocia con un solo vehículo.
 
-    - Un **accidente** puede involucrar múltiples incidentes, pero cada **incidente** pertenece a un solo accidente.
+    - Un accidente puede involucrar múltiples incidentes, pero cada incidente pertenece a un solo accidente.
 
 2. En el colegio Libranos Señor todos los estudiantes tienen un asiento, en alguna posición del salón, estos ven a lo largo del año lectivo varios cursos que son creados por un instructor. Los cursos pueden tener varias clases que pueden o no tener varias secciones de acuerdo a diferentes libros guías elegidos por el profesor.
 
@@ -81,12 +81,12 @@
 
     SEAT {
         int ID_seat PK
-        int Position
+        int position
     }
 
     INSTRUCTOR {
         int ID_instructor PK
-        string Name
+        string name
     }
 
     COURSE {
@@ -121,17 +121,17 @@
     CLASS }|..|{ GUIDE_BOOK : uses
     ```
 
-- Un **estudiante** tiene un **asiento** en el **salón**: $1:1$.
+    - Un estudiante tiene un asiento en el salón: $1:1$.
 
-- Un **estudiante** cursa varios cursos durante el año: $N:M$.
+    - Un estudiante cursa varios cursos durante el año: $N:M$.
 
-- Un **curso** es creado por un **instructor**: $1:N$.
+    - Un curso es creado por un instructor: $1:N$.
 
-- Un **curso** tiene varias clases: $1:N$.
+    - Un curso tiene varias clases: $1:N$.
 
-- Una **clase** puede tener varias secciones: $1:N$.
+    - Una clase puede tener varias secciones: $1:N$.
 
-- Una **clase** puede usar diferentes libros guías: $M:N$.
+    - Una clase puede usar diferentes libros guías: $M:N$.
 
 ---
 
@@ -179,17 +179,17 @@
     PRODUCT ||--o{ TRANSACTION : sold_in
     ```
 
-    - Una **tienda** emplea muchos empleados (al menos 1) y cada **empleado** trabaja en una sola **tienda**: $1:1 \dots N$.
+    - Una tienda emplea muchos empleados (al menos 1) y cada empleado trabaja en una sola tienda: $1:1 \dots N$.
 
-    - Una **tienda** tiene muchos productos en stock y un **producto** puede estar en varias tiendas: $M:N$.
+    - Una tienda tiene muchos productos en stock y un producto puede estar en varias tiendas: $M:N$.
 
-    - Una **tienda** puede registrar muchas transacciones y cada **transacción** ocurre en una sola **tienda**: $1:N$.
+    - Una tienda puede registrar muchas transacciones y cada transacción ocurre en una sola tienda: $1:N$.
 
-    - Un **empleado** puede procesar varias transacciones y cada **transacción** es procesada por un solo **empleado**: $1:N$.
+    - Un empleado puede procesar varias transacciones y cada transacción es procesada por un solo empleado: $1:N$.
 
-    - Un **producto** puede aparecer en muchas transacciones y cada **transacción** involucra un solo **producto**: $1:N$.
+    - Un producto puede aparecer en muchas transacciones y cada transacción involucra un solo producto: $1:N$.
 
-2. En las tiendas de la empresa JAPE-SHOES algunos miembros viven en un código postal distinto al de la tienda, en provincias cercanas e incluso en otras ciudades por esta razón ahora la dirección de un miembro considera. código postal, provincia, ciudad y calle. Considere el diseño inicial para la empresa y haga las modificaciones pertinentes en un nuevo diagrama.
+2. En las tiendas de la empresa JAPE-SHOES algunos miembros viven en un código postal distinto al de la tienda, en provincias cercanas e incluso en otras ciudades por esta razón ahora la dirección de un miembro considera: código postal, provincia, ciudad y calle. Considere el diseño inicial para la empresa y haga las modificaciones pertinentes en un nuevo diagrama.
 
     ```mermaid
     erDiagram
@@ -242,7 +242,7 @@
     ADDRESS ||--o{ EMPLOYEE : located_at
     ```
 
-    - Un **empleado** tiene asociada una sola **dirección** y cada **dirección** pertenece a un solo **empleado**: $1:1$.
+    - Un empleado tiene asociada una sola dirección y cada dirección pertenece a un solo empleado: $1:1$.
 
 3. En las tiendas de la empresa JAPE-SHOES se permiten las devoluciones si no se ha vencido el tiempo de devolución. Una devolución tiene un identificador único, un comentario u observación, un empleado y una relación con la transacción-producto. Considere el diseño inicial para la empresa y haga las modificaciones pertinentes en un nuevo diagrama.
 
@@ -306,9 +306,9 @@
     TRANSACTION ||--o{ RETURN : has
     ```
 
-    - Una **transacción** puede tener cero o una **devolución** y cada **devolución** está asociada a una única transacción: $1:0 \dots 1$.
+    - Una transacción puede tener cero o una devolución y cada devolución está asociada a una única transacción: $1:0 \dots 1$.
 
-    - Un **empleado** puede procesar muchas devoluciones y cada devolución es procesada por un único **empleado**: $1:N$.
+    - Un empleado puede procesar muchas devoluciones y cada devolución es procesada por un único empleado: $1:N$.
 
 4. En la empresa JAPE-SHOES hay existencia de algunos productos que han sido discontinuados en producción a nivel mundial, también hay productos que no tienen existencia en algunas tiendas. Considere el diseño inicial para la empresa y haga las modificaciones pertinentes en un nuevo diagrama.
 
@@ -380,6 +380,6 @@
     PRODUCT ||--o{ STOCK : stored_in
     ```
 
-    - Una **tienda** puede manejar muchos registros de stock y cada registro de **stock** pertenece a una sola tienda: $1:N$.
+    - Una tienda puede manejar muchos registros de stock y cada registro de stock pertenece a una sola tienda: $1:N$.
 
-    - Un **producto** puede estar en varios registros de stock y cada registro de **stock** se asocia a un solo producto: $1:N$.
+    - Un producto puede estar en varios registros de stock y cada registro de stock se asocia a un solo producto: $1:N$.

@@ -1,12 +1,12 @@
-# Letter game
+# Letters game
 
 ## Requested functionality
 
-The user must enter the words that can form the letters of the array (taking into account the frequency of each letter). The program must verify which of the entered words can be formed and in which positions are the letters of that word.
+The user enters words to be formed with the letters of the array (taking into account the frequency of each letter). The program verifies which of the entered words can be formed and the positions of the letters of each one.
 
 ### Possible implementation
 
-1. Create a function that is in charge of verifying if a word can be formed with the array of letters.
+1. Create a function that verifies whether a word can be formed with the array of letters.
 
     ```cpp
     bool is_valid_word(std::string word) {
@@ -14,7 +14,7 @@ The user must enter the words that can form the letters of the array (taking int
     }
     ```
 
-2. Create a function that is in charge of iterating over the array of words entered by the user and using the previous function, verify if the word can be formed with the array of letters and depending if it is possible or not to form the word, gather the positions of the letters required to form the word.
+2. Create a function that iterates over the array of words entered by the user, uses the previous function to verify whether each word can be formed with the array of letters and, if it can, gathers the positions of the letters required to form it.
 
     ```cpp
     std::string valid_words() {
@@ -27,7 +27,9 @@ The user must enter the words that can form the letters of the array (taking int
                 output += information;
             }
         }
+
+        return output;
     }
     ```
 
-    > You can print the information inside the function, in that case the function declaration must be `void valid_words()`.
+    > The information can also be printed inside the function; in that case, the function declaration is `void valid_words()`.

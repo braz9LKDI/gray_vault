@@ -1,4 +1,4 @@
-# Newton Raphson on nonlinear functions
+# Newton-Raphson on nonlinear functions
 
 Considere un sistema de ecuaciones $F$.
 
@@ -14,7 +14,7 @@ $$
 
 > Donde $f$ es una función que depende de varias variables.
 
-Truncado la serie de Taylor a dos términos, tenemos que
+Truncando la serie de Taylor a dos términos, se tiene que
 
 $$
 \begin{align}
@@ -31,7 +31,7 @@ $$
 J(X) H = -F(X)
 $$
 
-Para despejar $H$ tendríamos que multiplicar por la matriz inversa de $J$, pero hallar esta matriz es muy **costoso**, así que vamos a calcular el vector $H$ partiendo de un $X_0$ y a través de iteraciones nos vamos acercando a una mejor aproximación (siguiendo el método de Newton Raphson).
+Para despejar $H$ habría que multiplicar por la matriz inversa de $J$, pero hallar esta matriz es muy costoso, así que el vector $H$ se calcula partiendo de un $X_0$ y, a través de iteraciones, se llega a una mejor aproximación (siguiendo el método de Newton-Raphson).
 
 En general, la matriz jacobiana de una función vectorial de varias variables es la matriz cuyos elementos son las derivadas parciales de primer orden de dicha función.
 

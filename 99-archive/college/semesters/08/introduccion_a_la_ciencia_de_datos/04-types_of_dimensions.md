@@ -1,10 +1,10 @@
-# Type of dimensions
+# Types of dimensions
 
 ## Dimensiones que cambian lentamente
 
-Las dimensiones pueden cambiar con el tiempo (son no estáticas). Si el valor de un atributo cambia en el sistema operacional, ¿como responder a ese cambio en la bodega de datos?
+Las dimensiones pueden cambiar con el tiempo (son no estáticas). Si el valor de un atributo cambia en el sistema operacional, ¿cómo responder a ese cambio en la bodega de datos?
 
-1. Sobreescribir el valor.
+1. Sobrescribir el valor.
 
     El dato reflejará el nuevo valor.
 
@@ -12,7 +12,7 @@ Las dimensiones pueden cambiar con el tiempo (son no estáticas). Si el valor de
 
 2. Adicionar una nueva fila a la dimensión.
 
-    Esta opción es poderosa porque la nueva fila divide automáticamente la historia en la tabla de hechos, sin embargo, no permite asociar el nuevo valor del atributo con la historia de los hechos y viceversa.
+    Esta opción es poderosa porque la nueva fila divide automáticamente la historia en la tabla de hechos; sin embargo, no permite asociar el nuevo valor del atributo con la historia de los hechos y viceversa.
 
     > Representa la historia correctamente.
 
@@ -22,11 +22,11 @@ Las dimensiones pueden cambiar con el tiempo (son no estáticas). Si el valor de
 
 ## Dimensiones que cambian rápidamente
 
-Son dimensiones que se actualizan mensualmente, para implementarlas se separan los atributos que cambian en una o más dimensiones separadas.
+Son dimensiones que se actualizan mensualmente; para implementarlas se separan los atributos que cambian en una o más dimensiones separadas.
 
 > La tabla de hechos tendrá dos llaves foráneas.
 
-Un ejemplo de una dimensión que cambia rápidamente es la dimensión **cliente**.
+Un ejemplo de una dimensión que cambia rápidamente es la dimensión cliente.
 
 ```mermaid
 erDiagram
@@ -57,16 +57,16 @@ erDiagram
     FACT_TABLE ||--o{ RAPIDLY_CHANGING_DIMENSION : tracks
 ```
 
-## Dimensiones Junk
+## Dimensiones junk
 
-Se utilizan para representar banderas o indicadores. Teniendo esos elementos aquí, evitamos tenerlos en la tabla de hechos. En la tabla se van a crear tantos atributos como banderas haya y va a contener un número de registros $n$, donde $n$, es el número total de combinaciones posibles de valores para las $k$ banderas que haya.
+Se utilizan para representar banderas o indicadores. Al tenerlos aquí, se evita tenerlos en la tabla de hechos. En la tabla se van a crear tantos atributos como banderas haya y va a contener un número de registros $n$, donde $n$ es el número total de combinaciones posibles de valores para las $k$ banderas que haya.
 
-> Estas dimensiones no tiene una clave natural.
+> Estas dimensiones no tienen una clave natural.
 
 ## Relación muchos a muchos
 
-Para implementar este tipo de relaciones se hace uso se una **tabla puente**.
+Para implementar este tipo de relaciones se hace uso de una tabla puente.
 
 ### Tabla puente
 
-Se utiliza para resolver relaciones complejas de **muchos a muchos**, agrupando valores de una dimensión y conectándolos a la tabla de hechos a través de llaves foráneas. La dimensión no tiene una clave natural.
+Se utiliza para resolver relaciones complejas de muchos a muchos, agrupando valores de una dimensión y conectándolos a la tabla de hechos a través de llaves foráneas. La dimensión no tiene una clave natural.

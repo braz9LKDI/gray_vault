@@ -31,7 +31,7 @@ Simplifique tanto como sea posible las siguientes expresiones:
     \end{align}
     $$
 
-    Podemos escribir $y - x$ como $-(x - y)$.
+    $y - x$ se puede escribir como $-(x - y)$.
 
     $$
     \begin{align}
@@ -47,7 +47,7 @@ Simplifique tanto como sea posible las siguientes expresiones:
     $$
     \begin{align}
         & = \frac{ \frac{ y (x - y) - x (x + y) }{ x y } }{ \frac{ x (x - y) + y (x + y) }{ x y } } \\
-        & = \frac{ x y (y (x - y) - x (x + y)) }{ x y (x - y) + y (x + y) } \\
+        & = \frac{ y (x - y) - x (x + y) }{ x (x - y) + y (x + y) } \\
         & = \frac{ x y - y^2 - x^2 - x y }{ x^2 - x y + x y + y^2 } \\
         & = \frac{ -x^2 - y^2 }{ x^2 + y^2 } \\
         & = \frac{ -(x^2 + y^2) }{ x^2 + y^2 } \\
@@ -86,7 +86,7 @@ $$
 \end{align}
 $$
 
-Con la condición $x = 2$, nos queda que $c = 4 (2) - 10 = -2$.
+Con la condición $x = 2$, queda que $c = 4 (2) - 10 = -2$.
 
 ## 4
 
@@ -94,22 +94,22 @@ Resuelva las siguientes ecuaciones:
 
 1. $\frac{ 4 }{ 1 - x^2 } = \frac{ 3 }{ x - 1 } + \frac{ 2 }{ x + 1 }$.
 
-    Las condiciones de su solución debe cumplir $x \neq -1 \quad y \quad x \neq 1$.
+    Las condiciones de su solución deben cumplir $x \neq -1 \quad y \quad x \neq 1$.
 
     $$
     \begin{align}
         & \frac{ 4 }{ -(x^2 - 1) } = \frac{ 3 (x + 1) + 2 (x - 1) }{ x^2 -1 } \\
         & 4 = -\frac{ 3 (x + 1) + 2 (x - 1) }{ x^2 - 1 } (x^2 - 1) \\
-        & 4 = -5 x - 1 \\\
+        & 4 = -5 x - 1 \\
         & x = \frac{ 5 }{ -5 } = -1
     \end{align}
     $$
 
-    Como $x = -1$, entonces decimos que la ecuación no tiene solución.
+    Como $x = -1$, entonces la ecuación no tiene solución.
 
 2. $\sqrt{ (x - 2) } - x + 4 = 0$.
 
-    Las condiciones de su solución debe cumplir que $x \in [2, \infty)$.
+    Las condiciones de su solución deben cumplir que $x \in [2, \infty)$.
 
     $$
     \begin{align}
@@ -143,7 +143,7 @@ Resuelva las siguientes ecuaciones:
         \end{align}
         $$
 
-        Como $x = -25$ no está en el intervalo, **no es solución**.
+        Como $x = -25$ no está en el intervalo, no es solución.
 
     2. $3 x + 6 < 0 \quad x - 4 < 0$.
 
@@ -151,7 +151,7 @@ Resuelva las siguientes ecuaciones:
         \begin{align}
             & x < -2             & x < 4 \\
             & x \in (-\infty,-2) & x \in (-\infty,4) \\
-            & x \in [-\infty,-2) \\
+            & x \in (-\infty,-2) \\
         \end{align}
         $$
 
@@ -163,7 +163,7 @@ Resuelva las siguientes ecuaciones:
         \end{align}
         $$
 
-        Como $x = -3$ está en el intervalo, entonces es **solución**.
+        Como $x = -3$ está en el intervalo, entonces es solución.
 
     3. $3 x + 6 \geq 0 \quad x - 4 < 0$.
 
@@ -183,7 +183,7 @@ Resuelva las siguientes ecuaciones:
         \end{align}
         $$
 
-        Como $-\frac{ 9 }{ 5 }$ está en el intervalo, es **solución**.
+        Como $-\frac{ 9 }{ 5 }$ está en el intervalo, es solución.
 
     4. $3 x + 6 < 0 \quad x - 4 \geq 0$.
 
@@ -194,9 +194,9 @@ Resuelva las siguientes ecuaciones:
         \end{align}
         $$
 
-        Ningún número podrá satisfacerla las condiciones, por lo que diremos que **no tiene solución**.
+        Ningún número puede satisfacer las condiciones, por lo que no tiene solución.
 
-    Diremos que $x \in \{ -3,-\frac{ 9 }{ 5 } \}$.
+    Entonces $x \in \{ -3,-\frac{ 9 }{ 5 } \}$.
 
 ## 5
 
@@ -212,7 +212,7 @@ Resuelva las siguientes inecuaciones:
     \end{align}
     $$
 
-    Para que un producto sea menor a cero, sabemos que debe ocurrir alguno de los siguientes casos:
+    Para que un producto sea menor a cero, debe ocurrir alguno de los siguientes casos:
     1. El primer factor es negativo y el segundo es positivo.
 
         $$
@@ -245,7 +245,7 @@ Resuelva las siguientes inecuaciones:
     \end{align}
     $$
 
-    Para que un cociente sea positivo, sabemos que debe ocurrir alguno de los siguientes casos:
+    Para que un cociente sea positivo, debe ocurrir alguno de los siguientes casos:
     1. Tanto el denominador como el numerador son positivos.
 
         $$
@@ -271,10 +271,10 @@ Resuelva las siguientes inecuaciones:
 3. $|5 x - 2| \geq 4$.
 
     Analizando los 2 casos.
-    1. $5 x - 2 \geq 0 \quad x \geq \frac{ 2 }{ 3 }$.
+    1. $5 x - 2 \geq 0 \quad x \geq \frac{ 2 }{ 5 }$.
 
         $$
-        x \in \left [\frac{ 3 }{ 2 },\infty \right )
+        x \in \left [\frac{ 2 }{ 5 },\infty \right )
         $$
 
         $$
@@ -287,7 +287,7 @@ Resuelva las siguientes inecuaciones:
 
         La intersección entre la condición de la ecuación y la solución es $x \in \left [\frac{ 6 }{ 5 },\infty \right )$.
 
-    2. $5 x - 3 < 0 \quad x < \frac{ 2 }{ 5 }$.
+    2. $5 x - 2 < 0 \quad x < \frac{ 2 }{ 5 }$.
 
         $$
         x \in \left (-\infty,\frac{ 2 }{ 5 } \right )
@@ -302,7 +302,7 @@ Resuelva las siguientes inecuaciones:
 
         La intersección entre la condición de la ecuación y la solución es $x \in \left (-\infty, -\frac{ 2 }{ 5 } \right ]$.
 
-    La solución es la **unión** de las soluciones $\mathbb{ R } - \left (-\frac{ 2 }{ 5 }, \frac{ 6 }{ 5 } \right )$.
+    La solución es la unión de las soluciones $\mathbb{ R } - \left (-\frac{ 2 }{ 5 }, \frac{ 6 }{ 5 } \right )$.
 
 4. $|x + 3| - 2|x - 1| < 2$.
 
@@ -315,7 +315,6 @@ Resuelva las siguientes inecuaciones:
             & x \in [-3,\infty) & x \in [1,\infty) \\
             & x \in [1,\infty)
         \end{align}
-         \\[10 pt]
         $$
 
         $$
@@ -327,13 +326,13 @@ Resuelva las siguientes inecuaciones:
         \end{align}
         $$
 
-        La **intersección** del caso y la solución es $x \in (3,\infty)$.
+        La intersección del caso y la solución es $x \in (3,\infty)$.
 
     2. $x + 3 < 0 \quad x - 1 < 0$.
 
         $$
         \begin{align}
-            & 3 x < -3             & x < 1 \\
+            & x < -3               & x < 1 \\
             & x \in (-\infty,-3)   & x \in (-\infty, 1) \\
             & x \in (-\infty,-3)
         \end{align}
@@ -348,7 +347,7 @@ Resuelva las siguientes inecuaciones:
         \end{align}
         $$
 
-        La **intersección** del caso y la solución es $x \in (-\infty,-3)$.
+        La intersección del caso y la solución es $x \in (-\infty,-3)$.
 
     3. $x + 3 \geq 0 \quad x - 1 < 0$.
 
@@ -369,7 +368,7 @@ Resuelva las siguientes inecuaciones:
         \end{align}
         $$
 
-        La **intersección** del caso y la solución es $x \in \left [-3,\frac{ 1 }{ 3 } \right ]$.
+        La intersección del caso y la solución es $x \in \left [-3,\frac{ 1 }{ 3 } \right )$.
 
     4. $x + 3 < 0 \quad x - 1 \geq 0$.
 
@@ -380,9 +379,9 @@ Resuelva las siguientes inecuaciones:
         \end{align}
         $$
 
-        Desde las condiciones del caso podemos ver que es **imposible**.
+        Las condiciones del caso muestran que es imposible.
 
-    La solución de esta inecuación es la **unión** de todos los intervalos en los que encontramos solución.
+    La solución de esta inecuación es la unión de todos los intervalos en los que hay solución.
 
     $$
     \begin{align}
@@ -395,7 +394,7 @@ Resuelva las siguientes inecuaciones:
 
 El perímetro de un terreno rectangular es 58 metros. Si el largo aumenta en 2 metros y el ancho se disminuye en 2 metros, el área se disminuye en 40 metros cuadrados. Halle las dimensiones del terreno.
 
-Sí tenemos un rectángulo de medidas $a * b$.
+Si se tiene un rectángulo de medidas $a * b$.
 
 $$
 \text{área} = a b \quad \text{perímetro} = 2 (a + b) = 58
@@ -415,7 +414,7 @@ $$
     & ((29 - b) + 2) (b - 2) = (29 - b) b - 46 \\
     & (31 - b) (b - 2) = 29 b - b^2 - 46 \\
     & 31 b - b^2 - 62 + 2 b = -b^2 + 29 b - 46 \\
-    & 4 b = 16 \\\
+    & 4 b = 16 \\
     & b = 4
 \end{align}
 $$

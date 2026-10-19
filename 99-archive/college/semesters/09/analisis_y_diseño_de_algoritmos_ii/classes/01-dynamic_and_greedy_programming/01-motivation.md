@@ -9,7 +9,7 @@ Considere el [[01-areas/systems_engineering/problems/coin_change|problema del ca
         & \mathrm{ fun } \; \mathrm{ approach\_1 }(A, P) \\
         & \quad i = A.\text{size} \\
         & \quad \textbf{while} ~ i > 0 \\
-        & \quad \quad m_i = \frac{ p }{ a_i } \\
+        & \quad \quad m_i = \left \lfloor \frac{ p }{ a_i } \right \rfloor \\
         & \quad \quad p = p - m_i * a_i \\
         & \quad \quad i = i - 1 \\
         & \quad \textbf{return} ~ (m_1,\dots,m_n)
@@ -44,7 +44,7 @@ Considere el [[01-areas/systems_engineering/problems/coin_change|problema del ca
     $$
 
     ```cpp
-    int best_count = std::numeric_limits <int>::max();
+    int best_count = std::numeric_limits<int>::max();
     int* best_combination = nullptr;
 
     void coin_change_exhaustive(int denominations[], int n, int index, int remaining, int count, int* current) {
@@ -85,8 +85,8 @@ Considere el [[01-areas/systems_engineering/problems/coin_change|problema del ca
     }
     ```
 
-    > La complejidad de esta implementación del algoritmo es $O((P + 1)^n)$
+    > La complejidad de esta implementación del algoritmo es $O((P + 1)^n)$.
 
-Como se enuncia el problema, la única solución para el problema propuesto es aquella en la que se minimiza el número de monedas utilizadas. El primer enfoque `approach_1` puede llegar a "atascarse" si no hay una moneda de denominación 1 y además no garantiza la solución óptima, en cambio, el segundo `approach_2` enfoque sí lo hace.
+Como se enuncia el problema, la única solución para el problema propuesto es aquella en la que se minimiza el número de monedas utilizadas. El primer enfoque `approach_1` puede llegar a "atascarse" si no hay una moneda de denominación 1 y además no garantiza la solución óptima; en cambio, el segundo enfoque, `approach_2`, sí lo hace.
 
-La complejidad del primer enfoque es $O(n)$ y la del segundo enfoque depende de su implementación, pero estaremos seguros de que es exponencial.
+La complejidad del primer enfoque es $O(n)$ y la del segundo enfoque depende de su implementación, pero en cualquier caso es exponencial.

@@ -12,9 +12,9 @@ La sociedad feudal, marcada por la propiedad de la tierra, la servidumbre y la d
 
 ## Interacción entre germanos y romanos
 
-Las interacciones entre los pueblos germanos y romanos fueron complejas. Aunque en un principio los romanos vieron a los germanos con desconfianza a los germanos, los intereses por mano de obra y bélicos los llevaron a relacionarse con ellos. A pesar de ello, sus migraciones hacia tierras más fértiles fueron impulsadas por la necesidad, ya que su agricultura, aunque avanzada, no era suficiente para sostener a una población en crecimiento. Estas migraciones y el choque con el Imperio Romano contribuyeron a la creación de la sociedad feudal.
+Las interacciones entre los pueblos germanos y romanos fueron complejas. Aunque en un principio los romanos vieron a los germanos con desconfianza, los intereses por mano de obra y bélicos los llevaron a relacionarse con ellos. A pesar de ello, sus migraciones hacia tierras más fértiles fueron impulsadas por la necesidad, ya que su agricultura, aunque avanzada, no era suficiente para sostener a una población en crecimiento. Estas migraciones y el choque con el Imperio Romano contribuyeron a la creación de la sociedad feudal.
 
-Los germanos, junto con otros pueblos del norte de Europa, como los visigodos y los ostrogodos, también trajeron elementos culturales significativos, como los motivos zoomorfos y fitomorfos que influenciaron el arte románico, y el uso de caballos en la guerra, que serían fundamentales para el desarrollo del sistema feudal.
+Los pueblos germánicos, como los visigodos y los ostrogodos, también trajeron elementos culturales significativos, como los motivos zoomorfos y fitomorfos que influenciaron el arte románico, y el uso de caballos en la guerra, que serían fundamentales para el desarrollo del sistema feudal.
 
 ## El saqueo y la agricultura en la Edad Media
 

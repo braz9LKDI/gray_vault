@@ -15,9 +15,9 @@ sources:
 
 ## Introducción
 
-La criptografía es la práctica de desarrollar y utilizar algoritmos codificados para proteger y ocultar la información transmitida para que solo puedan ser leídas por aquellos con permiso y capacidad de descifrarla.
+La criptografía es la práctica de desarrollar y utilizar algoritmos codificados para proteger y ocultar la información transmitida para que solo pueda ser leída por aquellos con permiso y capacidad de descifrarla.
 
-Puede emplearse para ocultar cualquier forma de comunicación digital, incluidos texto, imágenes, video o audio. En la práctica, la criptografía se emplea principalmente para transformar mensajes en un formato ilegible (conocido como texto cifrado) que solo el destinatario autorizado puede descifrar en un formato legible (conocido como texto sin formato) empleando una clave secreta específica.
+Puede emplearse para ocultar cualquier forma de comunicación digital, incluidos texto, imágenes, video o audio. En la práctica, la criptografía se emplea principalmente para transformar mensajes en un formato ilegible (conocido como texto cifrado) que solo el destinatario autorizado puede descifrar en un formato legible (conocido como texto plano) empleando una clave secreta específica.
 
 ## Principios básicos de la criptografía moderna
 
@@ -41,7 +41,7 @@ Algunos de los principales atributos del cifrado simétrico incluyen:
 
 - Eficiencia: el cifrado de clave única es adecuado para grandes cantidades de datos y requiere menos recursos.
 
-- Confidencial: el cifrado simétrico protege eficazmente los datos y evita que cualquier persona que no tenga la clave descifre la información.
+- Confidencialidad: el cifrado simétrico protege eficazmente los datos y evita que cualquier persona que no tenga la clave descifre la información.
 
 #### Sustitución simple
 
@@ -73,17 +73,17 @@ $$
 
 ##### Polialfabético
 
-Se dice que un sistema de cifrado de sustitución simple es polialfabético cuando cada carácter **NO** se sustituye siempre por el mismo carácter. Es decir, en el sistema hay implicados varios alfabetos y dependiendo de las circunstancias se aplicará uno u otro. Los distintos métodos se diferencian entre sí por la forma en que se definen los distintos alfabetos y por el método que se usa para saber en qué momento hay que usar cada uno.
+Se dice que un sistema de cifrado de sustitución simple es polialfabético cuando cada carácter NO se sustituye siempre por el mismo carácter. Es decir, en el sistema hay implicados varios alfabetos y dependiendo de las circunstancias se aplicará uno u otro. Los distintos métodos se diferencian entre sí por la forma en que se definen los distintos alfabetos y por el método que se usa para saber en qué momento hay que usar cada uno.
 
-###### Cifrado de Vigenère
+###### Cifrado de Vigenere
 
-1. Asignamos valores numéricos a las letras.
+1. Asignar valores numéricos a las letras.
 
     $$
     \text{A} = 0,\text{B} = 1,\dots,\text{Z} = 26
     $$
 
-2. Escoge una "clave" y repetirla hasta igualar la longitud del texto plano a cifrar.
+2. Escoger una "clave" y repetirla hasta igualar la longitud del texto plano a cifrar.
 
 3. Cifrar cada letra.
 
@@ -93,7 +93,7 @@ Se dice que un sistema de cifrado de sustitución simple es polialfabético cuan
 
     Donde $X_i$ es la letra en la posición $i$ del texto a cifrar, $K_i$ es el carácter de la clave correspondiente a $X_i$, pues se encuentran en la misma posición, y $L$ es el tamaño del alfabeto.
 
-Para descifrar realizamos la operación inversa:
+Para descifrar se realiza la operación inversa:
 
 - Cuando $(C_i - K_i) \geq 0$.
 
@@ -111,13 +111,13 @@ Donde $C_i$ es el carácter en la posición $i$ del texto cifrado, $K_i$ viene s
 
 ### Criptografía asimétrica
 
-La criptografía asimétrica (también conocida como criptografía de clave pública) utiliza una clave privada y una clave pública. Los datos cifrados con una clave pública y privada requieren que se descifren tanto la clave pública como la clave privada del destinatario.
+La criptografía asimétrica (también conocida como criptografía de clave pública) utiliza una clave privada y una clave pública. Los datos cifrados con la clave pública del destinatario solo se pueden descifrar con su clave privada.
 
-Algunos de los principales atributos del cifrado simétrico incluyen:
+Algunos de los principales atributos del cifrado asimétrico incluyen:
 
 - Seguridad: el cifrado asimétrico se considera más seguro.
 
-- Robusta: la criptografía de clave pública ofrece más beneficios, ya que proporciona confidencialidad, autenticidad y no repudio.
+- Robustez: la criptografía de clave pública ofrece más beneficios, ya que proporciona confidencialidad, autenticidad y no repudio.
 
 - Intensivo en recursos: a diferencia del cifrado de clave única, el cifrado asimétrico es lento y requiere mayores recursos, lo que puede resultar prohibitivo en algunos casos.
 
@@ -129,4 +129,4 @@ La seguridad de este algoritmo radica en el problema de la factorización de nú
 
 ## Funciones hash
 
-Las funciones hash, como el algoritmo de hash seguro 1 (SHA-1), pueden transformar una entrada en una cadena de caracteres de una longitud fija, que es exclusiva de los datos originales. Este valor hash ayuda a verificar la integridad de los datos al hacer que sea computacionalmente inviable encontrar dos entradas diferentes que puedan producir el mismo hash de salida.
+Las funciones hash, como el algoritmo de hash seguro SHA-256, pueden transformar una entrada en una cadena de caracteres de una longitud fija, que es exclusiva de los datos originales. Este valor hash ayuda a verificar la integridad de los datos al hacer que sea computacionalmente inviable encontrar dos entradas diferentes que puedan producir el mismo hash de salida.

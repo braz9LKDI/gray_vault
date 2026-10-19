@@ -13,27 +13,27 @@ $$
 \end{align}
 $$
 
-1. Inicialmente, se busca una solución básica **factible**. En una solución básica se igualan todas las variables en la parte derecha de las ecuaciones (variables no-básicas) a 0 y luego se calcula el valor de las variables en la parte izquierda (variables básicas).
+1. Inicialmente, se busca una solución básica factible. En una solución básica se igualan todas las variables en la parte derecha de las ecuaciones (variables no-básicas) a 0 y luego se calcula el valor de las variables en la parte izquierda (variables básicas).
 
     $$
     (x_1,x_2,\dots,x_n,{ x_1 }',{ x_2 }',\dots,{ x_m }') = (0_1,0_2,\dots,0_n,b_1,b_2,\dots,b_m)
     $$
 
-2. Ahora se debe seleccionar una variable que al modificarse genere que el valor de la función objetivo aumente, llamemos esta variable $x_{ \max }$ y $c_{ \max }$ su respectivo coeficiente.
+2. Ahora se debe seleccionar una variable que al modificarse genere que el valor de la función objetivo aumente; sea $x_{ \max }$ esta variable y $c_{ \max }$ su respectivo coeficiente.
 
     > La variable cuyo coeficiente positivo sea mayor al de las demás.
 
-3. Ahora es necesario seleccionar una variable no-básica para intercambiarla con $x_{ \max }$. Para esto, es necesario determinar cuál es el valor más alto que puede tomar $x_{ \max }$ sin violar las restricciones. Esto es, que la parte derecha de las restricciones alcance un valor mayor o igual a 0.
+3. Ahora es necesario seleccionar una variable básica para intercambiarla con $x_{ \max }$. Para esto, es necesario determinar cuál es el valor más alto que puede tomar $x_{ \max }$ sin violar las restricciones. Esto es, que la parte derecha de las restricciones alcance un valor mayor o igual a 0.
 
     $$
     \begin{align}
         & x_{ n + 1 } = 0 \implies x_{ \max } = \frac{ b_1 }{ \text{coefficient of ${ x_{ \max } }_1$} } \\
         & \vdots \\
-        & x_{ n + m }= 0 \implies x_{ \max } = \frac{ b_m }{ \text{coefficient of ${ x_{ \max } }_m$} }
+        & x_{ n + m } = 0 \implies x_{ \max } = \frac{ b_m }{ \text{coefficient of ${ x_{ \max } }_m$} }
     \end{align}
     $$
 
-    > En caso de que $x_{ \max }$ no se encuentre en el RHS, decimos que esa restricción no impone cota.
+    > En caso de que $x_{ \max }$ no se encuentre en el RHS, se dice que esa restricción no impone cota.
 
 4. Despejar la variable $x_{ \max }$ de la ecuación que haya dado el menor valor positivo del anterior paso, sea esa ecuación $i$.
 
@@ -58,15 +58,15 @@ $$
 \end{align}
 $$
 
-> $c_i$ y $a_{ ij }$ no tiene relación con su significado en el apartado anterior.
+> $c_i$ y $a_{ ij }$ no tienen relación con su significado en el apartado anterior.
 
 La solución
 
 $$
-({ x_1 }',{ x_2 }',\dots,{ x_m }') = (a_{ 10 },a_{ 2,0 },\dots,a_{ m_0 })
+({ x_1 }',{ x_2 }',\dots,{ x_m }') = (a_{ 10 },a_{ 20 },\dots,a_{ m0 })
 $$
 
-> Se asumen que las variables que no aparecen, valen 0.
+> Se asume que las variables que no aparecen valen 0.
 
 es la óptima y su valor corresponde a $c_0$.
 
@@ -90,9 +90,9 @@ $$
 
 2. Cálculo de cotas (razones mínimas).
 
-    Para cada fila $i$, calcular $\theta_i = \frac{ b_i }{ a_ij }$
+    Para cada fila $i$, calcular $\theta_i = \frac{ b_i }{ a_{ ij } }$.
 
-    > $a_ij \neq 0$
+    > $a_{ ij } > 0$.
 
 3. Selección de variable saliente y pivoteo.
 
@@ -114,13 +114,13 @@ $$
 (x_1,x_2,\dots,x_n,{ x_1 }',{ x_2 }',\dots,{ x_m }') = (0_1,0_2,\dots,0_n,b_1,b_2,\dots,b_m)
 $$
 
-no es factible. Para obtener una solución factible se recurre al **método de las variables artificiales**, habitualmente organizado en dos fases:
+no es factible. Para obtener una solución factible se recurre al método de las variables artificiales, habitualmente organizado en dos fases:
 
 ### Fase 1: minimizar la suma de variables artificiales
 
 1. Introducción de variables artificiales.
 
-    Para cada restricción con $b_i < 0$ (o, en general, para todas las restricciones), añadimos una variable artificial $a_i \geq 0$ de forma que la restricción quede
+    Para cada restricción con $b_i < 0$ (o, en general, para todas las restricciones), se añade una variable artificial $a_i \geq 0$ de forma que la restricción quede
 
     $$
     x_{ n + i } + a_i = b_i \quad a_i \geq 0
@@ -128,13 +128,13 @@ no es factible. Para obtener una solución factible se recurre al **método de l
 
 2. Función objetivo auxiliar.
 
-    Definimos
+    Se define
 
     $$
     w = \sum_{ i = 1 }^m a_i
     $$
 
-    y formulamos el problema auxiliar
+    y se formula el problema auxiliar
 
     $$
     \begin{align}
@@ -146,7 +146,7 @@ no es factible. Para obtener una solución factible se recurre al **método de l
 
 3. Tablero inicial de la fase 1.
 
-    En el tablero se incluyen las columnas de las variables originales, de holgura y de las $a_i$, y la fila-objetivo corresponde a $-w$, expresado como
+    En el tablero se incluyen las columnas de las variables originales, de holgura y de las $a_i$, y la fila objetivo corresponde a $-w$, expresado como
 
     $$
     -w + \sum_{ i = 1 }^m a_i = 0
@@ -160,17 +160,17 @@ no es factible. Para obtener una solución factible se recurre al **método de l
 
 5. Fin de la fase 1.
 
-    Si al concluir $w^* = 0$, entonces $\sum_{ i = 1 }^m a_i = 0$, lo que obliga a cada $a_i = 0$; de ahi que la base resultante satisfaga todas las restricciones originales sin necesidad de artificiales.
+    Si al concluir $w^* = 0$, entonces $\sum_{ i = 1 }^m a_i = 0$, lo que obliga a cada $a_i = 0$; de ahí que la base resultante satisfaga todas las restricciones originales sin necesidad de artificiales.
 
 ### Fase 2: optimización del problema original
 
 1. Eliminación de variables artificiales.
 
-    Una vez $w^* = 0$, retiramos las columnas de las $a_i$ del tablero.
+    Una vez $w^* = 0$, se retiran las columnas de las $a_i$ del tablero.
 
 2. Restablecer la función objetivo original.
 
-    Reconstruimos la fila-objetivo ajustando los términos constantes según la base obtenida. Sea $B$ el índice de variables básicas y $N$ el de no básicas; entonces
+    Se reconstruye la fila objetivo ajustando los términos constantes según la base obtenida. Sea $B$ el índice de variables básicas y $N$ el de no básicas; entonces
 
     $$
     \begin{align}

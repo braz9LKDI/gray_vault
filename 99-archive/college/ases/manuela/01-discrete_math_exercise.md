@@ -2,7 +2,7 @@
 
 Determine usando inferencia si la conclusión de la siguiente fórmula proposicional es válida:
 
-> Restricción: para este ejercicio **no** puede hacer uso de las reglas de adición, ni silogismo disyuntivo y **solo** puede usar una vez la regla de resolución.
+> Restricción: para este ejercicio no puede hacer uso de las reglas de adición, ni silogismo disyuntivo y solo puede usar una vez la regla de resolución.
 
 $$
 [(p \implies q) \pand (p \implies (q \implies r)) \pand (q \implies (r \implies s))] \implies (p \implies s)
@@ -10,13 +10,13 @@ $$
 
 ## Negación de la fórmula
 
-Queremos demostrar la validez por contradicción. Negamos la fórmula original.
+La validez se demuestra por contradicción, negando la fórmula original.
 
 $$
 \neg \left( [(p \implies q) \pand (p \implies (q \implies r)) \pand (q \implies (r \implies s))] \implies (p \implies s) \right)
 $$
 
-Aplicamos la negación al condicional.
+Se aplica la negación al condicional.
 
 $$
 [(p \implies q) \pand (p \implies (q \implies r)) \pand (q \implies (r \implies s))] \pand \neg(p \implies s)
@@ -36,7 +36,7 @@ $$
 
 ## Descomponiendo los condicionales
 
-Usamos las equivalencias para los condicionales:
+Se usan las equivalencias de los condicionales:
 
 - $p \implies q \equiv \neg p \por q$.
 
@@ -74,7 +74,7 @@ Las cláusulas obtenidas son:
 
 10. $\blacksquare$: resolvente $(4,9)$.
 
-Es **insatisfactible**, por lo tanto, la fórmula original es **válida**.
+Es insatisfactible, por lo tanto, la fórmula original es válida.
 
 ---
 
@@ -94,7 +94,7 @@ Es **insatisfactible**, por lo tanto, la fórmula original es **válida**.
 
 8. $\neg q \por (\neg p \por s)$.
 
-9. $q \implies (p \por s)$.
+9. $q \implies (\neg p \por s)$.
 
 10. $p \implies (\neg p \por s)$.
 

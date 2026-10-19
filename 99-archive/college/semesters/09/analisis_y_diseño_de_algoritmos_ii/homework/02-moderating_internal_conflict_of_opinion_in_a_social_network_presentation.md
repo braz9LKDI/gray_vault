@@ -24,32 +24,32 @@
     Calculo dos cantidades por agente de ese grupo
     - Conflicto por agente: $(o_{ i,1 } - o_{ i,2 })^2$.
 
-    - Esfuerzo por agente: $\abs{ o_{ i,1 } - o_{ i,2 } } \cdot r$.
+    - Esfuerzo por agente: $\abs{ o_{ i,1 } - o_{ i,2 } } \cdot r_i$.
 
 4. Explorar todas las posibilidades de moderar $k$ agentes.
 
     Para cada posible nivel de esfuerzo $r$ desde 0 hasta $r_{ \max }$, y para cada $k$ entre 0 y $n_i$ (número de agentes que decido moderar en este grupo), hago:
-    1. $\text{required\_effort} = \ceil{ \text{effort\_per\_agent} \cdot k }$
+    1. $\text{required\_effort} = \ceil{ \text{effort\_per\_agent} \cdot k }$.
 
     2. Si el presupuesto parcial $r$ permite tal moderación ($\text{required\_effort} \leq r$), entonces:
 
         El conflicto restante que generan los agentes no moderados de este grupo es
 
         $$
-        (n_i - k_i) \cdot \text{effort\_per\_agent}
+        (n_i - k) \cdot \text{conflict\_per\_agent}
         $$
 
-        El conflicto total si moderamos $k$ aquí y usamos la mejor solución de esfuerzo $r - \text{required\_effort}$ para los anteriores $i − 1$ grupos es
+        El conflicto total si moderamos $k$ aquí y usamos la mejor solución de esfuerzo $r - \text{required\_effort}$ para los anteriores $i - 1$ grupos es
 
         $$
-        \text{storage}[i - 1][r - \text{required\_effort}] + (n_i - k_i) \cdot \text{effort\_per\_agent}
+        \text{storage}[i - 1][r - \text{required\_effort}] + (n_i - k) \cdot \text{conflict\_per\_agent}
         $$
 
         Si esa suma es menor que el valor actual de $\text{storage}[i][r]$, lo actualizo con este nuevo mínimo.
 
 5. Respuesta final.
 
-    Una vez procesados todos los grupos, la celda $\text{storage}[n][r_{ \max }]$ contiene el menor conflicto interno posible moderando de manera óptima hasta $n$ grupos con esfuerzo total menor o igual a $r_{ \max }]$.
+    Una vez procesados todos los grupos, la celda $\text{storage}[n][r_{ \max }]$ contiene el menor conflicto interno posible moderando de manera óptima hasta $n$ grupos con esfuerzo total menor o igual a $r_{ \max }$.
 
 ## Algoritmo para calcular una solución óptima
 
@@ -57,7 +57,7 @@
 
 1. Matriz de decisiones.
 
-    Se crea una matriz decisions de tamaño $(n + 1) \times (r_{ \max } + 1)$ y se inicializa con ceros.
+    Se crea una matriz `decisions` de tamaño $(n + 1) \times (r_{ \max } + 1)$ y se inicializa con ceros.
 
     > $\text{decisions}[i][r]$ almacenará, para los primeros $i$ grupos y presupuesto $r$, el número óptimo de agentes que conviene moderar en el grupo $i$.
 
@@ -67,4 +67,4 @@
 
 ### Reconstrucción de la estrategia óptima (backtracking)
 
-Una vez completas ambas matrices, se recorre decisions en sentido inverso para extraer paso a paso la estrategia que generó el costo mínimo.
+Una vez completas ambas matrices, se recorre `decisions` en sentido inverso para extraer paso a paso la estrategia que generó el costo mínimo.

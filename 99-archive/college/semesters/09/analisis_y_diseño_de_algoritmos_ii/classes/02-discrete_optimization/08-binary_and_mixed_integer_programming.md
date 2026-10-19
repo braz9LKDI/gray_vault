@@ -20,7 +20,7 @@ $$
 \end{align}
 $$
 
-donde $M$ es un número constante grande (big M). De esta forma "activamos" una restricción y "desactivamos" la otra.
+donde $M$ es un número constante grande (big M). De esta forma se "activa" una restricción y se "desactiva" la otra.
 
 ## Satisfacción de $k$ de $p$ restricciones
 
@@ -30,7 +30,7 @@ $$
 g_1(x) \leq 0,g_2(x) \leq 0,\dots,g_p(x) \leq 0, x \in \mathbb{ R }^n
 $$
 
-Queremos que **al menos** $k$ (con $1 \leq k \leq p$) de esas restricciones se cumpla.
+Se busca que al menos $k$ (con $1 \leq k \leq p$) de esas restricciones se cumplan.
 
 ### $y_i = 1$ viola la restricción
 
@@ -42,11 +42,11 @@ $$
 \end{align}
 $$
 
-- $y_i = 0$: **apaga** el término $M * y_i$; la restricción $g_i(x) \leq 0$ debe cumplirse.
+- $y_i = 0$: apaga el término $M * y_i$; la restricción $g_i(x) \leq 0$ debe cumplirse.
 
-- $y_i = 1$: **relaja** la inecuación (añadimos $M$), permitiendo violarla hasta $M$.
+- $y_i = 1$: relaja la inecuación (se añade $M$), permitiendo violarla hasta $M$.
 
-Como a lo sumo $p - k$ variables binarias pueden ser 1, **al menos** $k$ restricciones originales permanecen activas.
+Como a lo sumo $p - k$ variables binarias pueden ser 1, al menos $k$ restricciones originales permanecen activas.
 
 ### $y_i = 1$ cumple la restricción
 
@@ -62,7 +62,7 @@ $$
 
 - $y_i = 1$: obliga $g_i(x) \leq 0$ (porque $M (1 - y_i) = 0$).
 
-Exigir $\sum_{ i = 1 }^p y_i \geq k$ garantiza que se **activen al menos** $k$ restricciones.
+Exigir $\sum_{ i = 1 }^p y_i \geq k$ garantiza que se activen al menos $k$ restricciones.
 
 ---
 
@@ -98,5 +98,5 @@ Exigir $\sum_{ i = 1 }^p y_i \geq k$ garantiza que se **activen al menos** $k$ r
     > Recordando el [[01-areas/math/fundamental_rules_of_propositional_logic#Inverse conditional|condicional inverso]].
 
     $$
-    \neg x_1 \por x_2
+    \neg x_1 \por x_2 \implies (1 - x_1) + x_2 \geq 1 \implies x_1 \leq x_2
     $$

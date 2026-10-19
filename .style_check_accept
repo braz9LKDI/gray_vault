@@ -169,3 +169,92 @@
 02-resources/courses/kubernetes_course.md	## What is Kubernetes?
 02-resources/courses/kubernetes_course.md	### Functions (what is Kubernetes?)
 02-resources/courses/python_django_full_course_for_beginners.md	# Python Django full course for beginners
+99-archive/college/ases/esteban/02-suggested_solution_for_sum_of_multiples_problem.md	# Suggested solution for Sum of Multiples problem
+99-archive/college/ases/gabriela/01-scala_setup_for_vs_code.md	# Scala setup for VS Code
+99-archive/college/ases/gabriela/02-how_to_format_code_in_latex.md	# How to format code in LaTeX
+99-archive/college/ases/gabriela/03-linux_applications_installation.md	## Microsoft Edge
+99-archive/college/ases/gabriela/03-linux_applications_installation.md	### Why install Docker from the official repository (and not `docker.io` from Linux Mint repositories)?
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    2. **El tipo de dato de un puntero debe coincidir (ser equivalente) con el de la variable cuya posición en memoria apunta**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    2. **En 1 se declara un puntero y en 2 se declara una variable**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    3. **Cuando se lanza la excepción en `cast_to_double` entra al `catch(int number)`**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    3. **En 2 se crea una referencia de `v`**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    3. **Hacer polimorfismo en un método**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    4. **El programa no ejecuta, se genera un error de compilación porque no se puede hacer la instrucción `data = data * 4;` dentro de `function_1`**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    4. **Poner antes del nombre del puntero un asterisco (`*`) para indicar que usaremos el valor en la posición de memoria apuntada**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    5. **El `cast_to_double` retorna `-1`**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    5. **En 4 se imprime la dirección de memoria de `v`**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    5. **En 4 se le asigna al puntero la dirección de memoria de `w`**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    5. **Ninguna de las anteriores**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    6. **El `delete`**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    8. **En 5 se cambia el valor de `w` por el valor que tiene `p`**.
+99-archive/college/ases/grosman/02-object_oriented_programming_midterm.md	    9. **En 3 a `p` se le asigna el valor de `1`**.
+99-archive/college/ases/grosman/general_questions.md	### Why React is a library and not a framework
+99-archive/college/semesters/01/calculo_i/08-limits.md	        \abs{ x - 2 } & x < 1 \\
+99-archive/college/semesters/01/calculo_i/08-limits.md	        \frac{ k^2 }{ 4 - x } & x > 3, x \neq 4
+99-archive/college/semesters/01/calculo_i/08-limits.md	        \frac{ x }{ x - 1 } & x < 0 \\
+99-archive/college/semesters/01/calculo_i/08-limits.md	        \frac{ x^2 - 9 }{ x + 3 } & x < -3 \\
+99-archive/college/semesters/01/calculo_i/08-limits.md	        x^2 - 2 x + 2 k      & x \leq 3 \\
+99-archive/college/semesters/01/calculo_i/08-limits.md	1. $a = 0$ y $f(x) =
+99-archive/college/semesters/01/calculo_i/08-limits.md	1. $a = 1$ y $f(x) =
+99-archive/college/semesters/01/calculo_i/08-limits.md	2. $a = -3$ y $f(x) =
+99-archive/college/semesters/01/calculo_i/08-limits.md	2. $a = 3$ y $f(x) =
+99-archive/college/semesters/01/calculo_i/09-limits_and_continuity.md	        \frac{ x^4 - 1 }{ x^2 - 1 } & x \in [0,3], x \neq 1 \\
+99-archive/college/semesters/01/calculo_i/09-limits_and_continuity.md	1. $a = 1$ y $f(x) =
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	        2 b x^2 - 8 a x + 34 & x \leq 3 \\
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	        2 x^2 - 5 x + 1 & x \leq 2 \\
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	        3 x^2 - 9 x + 5 & x > 2
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	        7 x^2 - 5 x     & x > 1
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	        \frac{ 4 }{ x - 2 }  & x > 3
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	        \pcos{ x } - 1 & x > 0
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	1. $x = -1$ y $f(x) =
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	1. $x = 1$ y $f(x) =
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	2. $x = 2$ y $f(x) =
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	2. $x = 3$ y $f(x) =
+99-archive/college/semesters/01/calculo_i/10-intermediate_value_theorem_differentiation_rules_and_chain_rule.md	3. $x = 0$ y $f(x) =
+99-archive/college/semesters/07/inteligencia_artificial/01-artificial_intelligence_history.md	### Alan Turing
+99-archive/college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/02-ui_and_ux.md	### Leyes UX (Jon Yablonski)
+99-archive/college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/02-ui_and_ux.md	#### Efecto von Restorff
+99-archive/college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/02-ui_and_ux.md	#### Ley de Hick
+99-archive/college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/02-ui_and_ux.md	#### Ley de Jakob
+99-archive/college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/02-ui_and_ux.md	#### Ley de Pragnanz
+99-archive/college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/02-ui_and_ux.md	#### Ley de Tesler
+99-archive/college/semesters/08/desarrollo_de_aplicaciones_para_dispositivos_moviles/02-ui_and_ux.md	#### Umbral de Doherty
+99-archive/college/semesters/08/impactos_ambientales/homework/04-summary_of_chapter.md	## El saqueo y la agricultura en la Edad Media
+99-archive/college/semesters/08/introduccion_a_la_ciencia_de_datos/06-data_mining-classification.md	### Clasificación naive Bayes
+99-archive/college/semesters/08/introduccion_a_la_ciencia_de_datos/06-data_mining-classification.md	#### Teorema de Bayes
+99-archive/college/semesters/08/introduccion_a_la_ciencia_de_datos/07-data_mining-association_rules.md	## Algoritmo Apriori
+99-archive/college/semesters/08/simulacion_y_computacion_numerica/classes/03-newton_raphson_method.md	## Teorema para el método de Newton-Raphson
+99-archive/college/semesters/08/simulacion_y_computacion_numerica/classes/05-calculation_of_roots_of_polynomials.md	## Algoritmo de Horner
+99-archive/college/semesters/08/simulacion_y_computacion_numerica/classes/11-interpolation_functions.md	## Método de Lagrange
+99-archive/college/semesters/08/simulacion_y_computacion_numerica/classes/11-interpolation_functions.md	## Método de Newton
+99-archive/college/semesters/08/simulacion_y_computacion_numerica/classes/11-interpolation_functions.md	## Polinomios de Newton
+99-archive/college/semesters/08/simulacion_y_computacion_numerica/homework/03-taylor_series.md	### Calcule $\sin{ 0.5 }$ usando las dos expresiones de Taylor y compare los resultados con el valor exacto
+99-archive/college/semesters/08/simulacion_y_computacion_numerica/homework/03-taylor_series.md	### Encuentre el segundo polinomio de Taylor $P_2(x)$ alrededor de $x_0 = 0$
+99-archive/college/semesters/08/simulacion_y_computacion_numerica/homework/03-taylor_series.md	### Use la fórmula de error en el teorema de Taylor para encontrar un límite superior para el error $|f(0.4) - P_3(0.4)|$. Calcule el error real
+99-archive/college/semesters/08/simulacion_y_computacion_numerica/homework/04-iterative_methods-linear_equation_systems.md	From the following three sets of linear equations, identify which one(s) cannot be solved using an iterative method like Gauss-Seidel. Demonstrate that the solution does not converge, using any number of iterations as needed. Clearly state your convergence criterion (i.e., how you know it is not converging).
+99-archive/college/semesters/09/analisis_y_diseño_de_algoritmos_ii/classes/01-dynamic_and_greedy_programming/02-introduction_to_dynamic_programming-fibonacci_sequence.md	# Introduction to dynamic programming: Fibonacci sequence
+99-archive/college/semesters/09/analisis_y_diseño_de_algoritmos_ii/classes/02-discrete_optimization/01-introduction.md	## Teorema de Weierstrass (existencia de mínimos y máximos)
+99-archive/college/semesters/09/analisis_y_diseño_de_algoritmos_ii/classes/03-np-completeness/06-subset_sum.md	1. Por cada vértice $v \in V$ se crea un $s_v \in S$, tal que
+99-archive/college/semesters/09/analisis_y_diseño_de_algoritmos_ii/classes/03-np-completeness/06-subset_sum.md	2. Por cada arista $e_i \in E$ se crea un $s_{ e_i } \in S$ tal que
+99-archive/college/semesters/09/analisis_y_diseño_de_algoritmos_ii/homework/01-moderating_internal_conflict_of_opinion_in_a_social_network.md	- Cada grupo de agentes $a_i$ contribuye
+99-archive/college/semesters/09/analisis_y_diseño_de_algoritmos_ii/homework/03-minimizing_the_extremism_present_in_a_population.md	- Cost of the movement: the cost of a movement of $x$ people from opinion $i$ to opinion $j$ is
+99-archive/college/semesters/09/analisis_y_diseño_de_algoritmos_ii/homework/03-minimizing_the_extremism_present_in_a_population.md	- Movement: moving a person from opinion $i$ to opinion $j$ will count as $\abs{ j - i }$ movements, so the movement value of a movement of $x$ people from opinion $i$ to opinion $j$ is
+99-archive/college/semesters/09/ciberseguridad/classes/03-cryptography.md	###### Cifrado de Vigenere
+99-archive/college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/02-sena_style_guide.md	        - Cursos complementarios
+99-archive/college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/02-sena_style_guide.md	        - Ejemplo correcto: SENA Sofía Plus
+99-archive/college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/02-sena_style_guide.md	        - Ejemplo incorrecto: Sofía Plus
+99-archive/college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/02-sena_style_guide.md	        - Formación virtual
+99-archive/college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/02-sena_style_guide.md	        - Programas tecnológicos
+99-archive/college/semesters/09/diseño_de_contenido_de_interfaces_de_usuario/homework/02-sena_style_guide.md	        - Programas técnicos
+99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/02-agile_vs_traditional_frameworks.md	## PMI (Project Management Institute)
+99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/02-agile_vs_traditional_frameworks.md	### Product Owner
+99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/02-agile_vs_traditional_frameworks.md	### Product Owner y Business Analyst
+99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/02-agile_vs_traditional_frameworks.md	### Product Owner y Product Manager
+99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/02-agile_vs_traditional_frameworks.md	### Scrum Master
+99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/06-estimations.md	### Wideband Delphi
+99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/06-requirements_engineering.md	#### Clasificación Kano
+99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/06-requirements_engineering.md	#### Matriz de priorización de Wiegers
+99-archive/college/semesters/09/introduccion_a_la_gestion_de_proyectos_de_software/classes/07-risk_management.md	### SEI (Software Engineering Institute)
+99-archive/college/semesters/09/proyecto_integrador_ii/homework/01-github_copilot_presentation.md	# GitHub Copilot presentation
+99-archive/college/semesters/09/proyecto_integrador_ii/homework/01-github_copilot_presentation.md	## Best practices for using GitHub Copilot to generate unit tests
+99-archive/college/semesters/09/proyecto_integrador_ii/homework/01-github_copilot_presentation.md	## Key benefits of using GitHub Copilot

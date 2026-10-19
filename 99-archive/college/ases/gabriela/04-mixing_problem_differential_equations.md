@@ -4,7 +4,7 @@ In a room containing 50 cubic meters of air with a CO content of 0.2%, pure air 
 
 ---
 
-For a time $t$, the rate of change of the air in the room $\frac{ dx }{ dt }$ must be equal to the rate at which the air enters the room minus the rate at which it leaves. That is, the differential equation that models this problem is given by:
+For a time $t$, the rate of change of the amount of CO in the room $\frac{ dx }{ dt }$ must be equal to the rate at which the air enters the room minus the rate at which it leaves. That is, the differential equation that models this problem is given by:
 
 $$
 \frac{ dx }{ dt } = v_i - v_o \quad (1)
@@ -17,13 +17,13 @@ Additionally:
 $$
 \begin{align}
     & v_i = \text{rate of air entry } \left ( \frac{ \text{volume} }{ t } \right ) \times \text{concentration upon entry} \left ( \frac{ \text{amount} }{ \text{volume} } \right ) \\
-    & v_o = \text{rate of air exit } \left ( \frac{ \text{volume} }{ t } \right ) \times \text{concentration upon exit } \left ( \frac{ \text{amount} }{ \text{volume} } \right ) \\
+    & v_o = \text{rate of air exit } \left ( \frac{ \text{volume} }{ t } \right ) \times \text{concentration upon exit } \left ( \frac{ \text{amount} }{ \text{volume} } \right )
 \end{align}
 $$
 
-- We assume that there is no transformation or loss of air in the room.
+- There is no transformation or loss of air in the room.
 
-- If we assume that the mixture in the room is homogeneous, the concentration of the output is equal to the concentration in the room.
+- If the mixture in the room is homogeneous, the concentration of the output is equal to the concentration in the room.
 
     $$
     C(t) = \frac{ x(t) }{ V(t) } \quad (2)
@@ -39,7 +39,7 @@ $$
 \begin{align}
     & v_i = \frac{ 2 \text{m}^3 }{ \text{min} } * 0 = 0 \\
     & v_o = \frac{ 2 \text{m}^3 }{ \text{min} } \frac{ x(t) }{ 50 \text{m}^3 } \\
-    & = \frac{ x(t) }{ 25 \text{min} \text{m}^3 }
+    & = \frac{ x(t) }{ 25 \text{min} }
 \end{align}
 $$
 
@@ -53,13 +53,13 @@ $$
     & \int \frac{ dx }{ x } = \int { -\frac{ 1 }{ 25 } dt } \\
     & \ln | x | = -\frac{ 1 }{ 25 } t + C \\
     & x = e^{ -\frac{ 1 }{ 25 } t + C } \\
-    & = Ce^{ -\frac{ 1 }{ 25 } t } \quad (3)
+    & = C e^{ -\frac{ 1 }{ 25 } t } \quad (3)
 \end{align}
 $$
 
 > In this case $V(t) = 50 \text{m}^3$, i.e., $V(t)$ does not vary, it is a constant.
 
-We also know that:
+Also:
 
 $$
 \begin{align}
@@ -68,10 +68,10 @@ $$
 \end{align}
 $$
 
-With $(3)$ and $(4)$ we can get $C$.
+With $(3)$ and $(4)$, $C$ is found.
 
 $$
-x(0) = Ce^{ -\frac{ 1 }{ 25 } (0) } = \frac{ 1 }{ 10 } \quad C = \frac{ 1 }{ 10 } \\[10 pt]
+x(0) = C e^{ -\frac{ 1 }{ 25 } (0) } = \frac{ 1 }{ 10 } \quad C = \frac{ 1 }{ 10 } \\[10 pt]
 x(t) = \frac{ 1 }{ 10 } e^{ -\frac{ 1 }{ 25 } t }
 $$
 

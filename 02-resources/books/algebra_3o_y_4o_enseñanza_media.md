@@ -423,9 +423,7 @@ $$
 $$
 \begin{array}{rcl}
     a x^2 + b x + c & = & (d x + e) (f x + g) \\[5 pt]
-
                     & = & d f x^2 + d g x + e f x + e g \\[5 pt]
-
                     & = & d f x^2 + (d g + e f) x + e g \\[5 pt]
 \end{array}
 $$
@@ -510,9 +508,7 @@ Se llama proporción a la igualdad de dos razones...
 
     $$
     \frac{ a }{ b } = \frac{ c }{ d } = \frac{ f }{ g } = k \\[10 pt]
-
     a = b k \quad c = d k \quad f = g k \quad a \pm c \pm f = k (b \pm d \pm g) \\[10 pt]
-
     \frac{ a \pm c \pm f }{ b \pm d \pm g } = k = \frac{ a }{ b } = \frac{ c }{ d } = \frac{ f }{ g }
     $$
 
@@ -800,7 +796,6 @@ Para hacer del primer miembro un cuadrado perfecto, multipliquemos todos los té
 
 $$
 4 a^2 x^2 + 4 a b x + b^2 = b^2 - 4 a c \quad (2 a x + b)^2 = b^2 - 4 a c \\[10 pt]
-
 2 a x + b = \pm \sqrt{ b^2 - 4 a c } \quad x = \frac{ -b \pm \sqrt{ b^2 - 4 a c } }{ 2 }
 $$
 
@@ -970,15 +965,10 @@ $$
 
 $$
 a_1 = a \\[10 pt]
-
 a_2 = a + r \\[10 pt]
-
 a_3 = a_2 + r = (a + r) + r = a + 2 r \\[10 pt]
-
 a_4 = a_3 + r = (a + 2 r) + r = a + 3 r \\[10 pt]
-
 a_5 = a_4 + r = (a + 3 r) + r = a + 4 r \\[10 pt]
-
 a_6 = a_5 + r = (a + 4 r) + r = a + 5 r
 $$
 
@@ -998,16 +988,13 @@ Sea $a_{ n_1 }$ y $a_{ n_2 }$ dos términos equidistantes.
 
 $$
 a_{ n_1 } = a + (n_1 - 1) r \\[10 pt]
-
 a_{ n_2 } = a + (n_2 - 1) r \\[10 pt]
-
 n_1 + n_2 = n + 1 \quad n_2 = n + 1 - n_1
 $$
 
 $$
 \begin{array}{lcr}
     a_{ n_1 } + a_{ n_2 } & = & (a + (n_1 - 1) r) + (a + (n + 1 - n_1 - 1) r) \\[5 pt]
-
                           & = & 2 a + (n - 1) r
 \end{array}
 $$
@@ -1027,10 +1014,8 @@ La suma de los términos de una progresión aritmética limitada es igual al pro
 $$
 \begin{array}{lcr}
     S   & = & a_1 + a_2 + \dots + a_n \\[5 pt]
-
     S   & = & a_n + a_{ n - 1 } + \dots + a_1 \\[5 pt]
     \hline \\[5 pt]
-
     2 S & = & (a_1 + a_n) + (a_2 + a_{ n - 1 }) + \dots + (a_n + a_1)
 \end{array}
 $$
@@ -1053,9 +1038,7 @@ podemos despejar cada uno de los elementos de la progresión en función de todo
 
 $$
 a_1 = a_n - (n - 1) r \\[10 pt]
-
 r = \frac{ a_n - a_1 }{ n - 1 } \\[10 pt]
-
 n = \frac{ a_n - a_1 + r }{ r }
 $$
 
@@ -1097,11 +1080,8 @@ Según la definición podemos escribir:
 
 $$
 a_1 = a \\[10 pt]
-
 a_2 = a_1 r = a r \\[10 pt]
-
 a_3 = a_2 r = a r^2 \\[10 pt]
-
 a_n = a r^{ n - 1 }
 $$
 
@@ -1117,16 +1097,13 @@ Sea $a_{ n_1 }$ y $a_{ n_2 }$ dos términos equidistantes.
 
 $$
 a_{ n_1 } = a r^{ n_1 - 1 } \\[10 pt]
-
 a_{ n_2 } = a r^{ n_2 - 1 } \\[10 pt]
-
 n_1 + n_2 = n + 1 \quad n_2 = n + 1 - n_1
 $$
 
 $$
 \begin{array}{lcr}
      a_{ n_1 } * a_{ n_2 } & = & (a r^{ n_1 - 1 }) * (a r^{ n + 1 - n_1 - 1 }) \\[5 pt]
-
                            & = & a^2 r^{ n - 1 }
 \end{array}
 $$
@@ -1151,7 +1128,6 @@ $$
 
 $$
 S = a_1 + a_2 + \dots + a_n \quad (1) \\[10 pt]
-
 S r = a_1 r + a_2 r + \dots + a_n r \quad (2)
 $$
 
@@ -1160,11 +1136,8 @@ Restamos $(2)$ con $(1)$.
 $$
 \begin{array}{lcr}
     S r     & = & a_1 r + a_2 r + \dots + a_n r \\[5 pt]
-
     S       & = & a_1 + a_2 + \dots + a_n  \\[5 pt]
-
     \hline \\[5 pt]
-
     S r - S & = & a_n r - a
 \end{array}
 $$
@@ -1189,9 +1162,7 @@ $$
 
 $$
 a = \frac{ x }{ r^{ n - 1 } } \\[10 pt]
-
 r = \sqrt[ n - 1 ]{ \frac{ x }{ a } } \\[10 pt]
-
 n = \frac{ \log x - \log a }{ \log r } - 1
 $$
 
@@ -1259,13 +1230,11 @@ Siendo pues ilimitado el sistema de números positivos, también lo es el númer
 
     $$
     A = b^x \quad \log A = x \\[10 pt]
-
     B = b^y \quad \log B = y \\[10 pt]
     $$
 
     $$
     A B = b^x b^y = b^{ x + y } \\[10 pt]
-
     \log { A B } = x + y = \log A + \log B
     $$
 
@@ -1279,13 +1248,11 @@ Siendo pues ilimitado el sistema de números positivos, también lo es el númer
 
     $$
     A = b^x \quad \log A = x \\[10 pt]
-
     B = b^y \quad \log B = y \\[10 pt]
     $$
 
     $$
     \frac{ A }{ B } = \frac{ b^x }{ b^y } = b^{ x - y }  \\[10 pt]
-
     \log \frac{ A }{ B } = x - y = \log A - \log B
     $$
 
@@ -1303,7 +1270,6 @@ Siendo pues ilimitado el sistema de números positivos, también lo es el númer
 
     $$
     A^n = b^{ n x } \\[10 pt]
-
     \log A^n = n x = n \log A
     $$
 
@@ -1313,7 +1279,6 @@ Cologaritmo de un número es el logaritmo de su inverso.
 
 $$
 \operatorname { colog }(x) = \log \frac{ 1 }{ x } \\[10 pt]
-
 \log \frac{ 1 }{ x } = \log 1 - \log x = -\log x
 $$
 
@@ -1357,7 +1322,6 @@ Esta es la fórmula fundamental de interés compuesto. De ella podemos deducir:
 
 $$
 c = \frac{ C }{ (1 + r)^t } \\[10 pt]
-
 r = \sqrt[ t ]{ \frac{ C }{ c } } - 1
 $$
 
@@ -1393,7 +1357,6 @@ El segundo miembro de la igualdad anterior es la suma de una progresión geomét
 
 $$
 C (1 + r)^t = \frac{ a (1 + r)^{ t - 1 } (1 + r) - a }{ (1 + r) - 1 } = \frac{ a ((1 + r)^t - 1) }{ r } \\[10 pt]
-
 a = \frac{ r C (1 + r)^t }{ (1 + r)^t - 1 }
 $$
 
@@ -1417,6 +1380,5 @@ El segundo miembro de la igualdad anterior es la suma de una progresión geomét
 
 $$
 C = \frac{ a (1 + r)^t (1 + r) - a (1 + r) }{ r } = \frac{ a((1 + r)^{ t + 1 } - (1 + r)) }{ r }  \\[10 pt]
-
 a = \frac{ r C }{ (1 + r)^{ t + 1 } - (1 + r) }
 $$

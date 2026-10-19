@@ -12,9 +12,9 @@
 
 Es un número que resulta de la realización de un test estandarizado para medir las habilidades cognitivas de una persona, "inteligencia".
 
-## ¿Que es IA?
+## ¿Qué es IA?
 
-Para que una computadora pase la **prueba de Turing**, debe por lo menos:
+Para que una computadora pase la prueba de Turing, debe por lo menos:
 
 - Procesar lenguaje natural.
 
@@ -22,4 +22,4 @@ Para que una computadora pase la **prueba de Turing**, debe por lo menos:
 
 ### Actuar en forma racional
 
-Un **agente racional** es aquel que saca el máximo provecho (objetivo, meta) de una situación dada (restricciones).
+Un agente racional es aquel que saca el máximo provecho (objetivo, meta) de una situación dada (restricciones).

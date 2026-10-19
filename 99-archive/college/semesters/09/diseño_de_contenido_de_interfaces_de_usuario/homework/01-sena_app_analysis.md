@@ -2,11 +2,11 @@
 
 ## Funcionalidad escogida
 
-Se ha seleccionado la página web de **SENA Sofía Plus**, específicamente la funcionalidad de **búsqueda de ofertas educativas**.
+Se ha seleccionado la página web de SENA Sofía Plus, específicamente la funcionalidad de búsqueda de ofertas educativas.
 
 ## Propuesta de storytelling
 
-La búsqueda de tu próxima formación académica es una aventura emocionante que te conecta con tus sueños y aspiraciones. En el portal de SENA Sofia Plus, cada búsqueda se convierte en el inicio de un viaje personal, donde cada clic te acerca a descubrir oportunidades que pueden transformar tu futuro. A continuación, se detalla una propuesta narrativa para acompañar al usuario en cada etapa del proceso:
+La búsqueda de tu próxima formación académica es una aventura emocionante que te conecta con tus sueños y aspiraciones. En el portal de SENA Sofía Plus, cada búsqueda se convierte en el inicio de un viaje personal, donde cada clic te acerca a descubrir oportunidades que pueden transformar tu futuro. A continuación, se detalla una propuesta narrativa para acompañar al usuario en cada etapa del proceso:
 
 1. Inicio del viaje.
 
@@ -18,7 +18,7 @@ La búsqueda de tu próxima formación académica es una aventura emocionante qu
 
     Los filtros y opciones de búsqueda se presentan como herramientas de navegación que ayudan a explorar diversas rutas de aprendizaje. Durante esta etapa, se pueden incorporar testimonios breves y visuales de egresados que ya han recorrido este camino, mostrando historias de éxito y superación. Por ejemplo:
 
-    "Yo José Hernando Mendoza, egresado del SENA que, gracias a mi formación en soldadura, ha destacado en Canadá, demostrando que la educación técnica abre puertas a nivel internacional".
+    "Yo José Hernando Mendoza, egresado del SENA que, gracias a mi formación en soldadura, he destacado en Canadá, demostrando que la educación técnica abre puertas a nivel internacional".
 
 3. Decisión y empoderamiento.
 
@@ -28,6 +28,6 @@ La búsqueda de tu próxima formación académica es una aventura emocionante qu
 
 4. El futuro te espera.
 
-    La narrativa se cierra con un llamado a la acción que invita al usuario a inscribirse y comenzar su formación. Se destaca que este proceso no termina con la búsqueda, sino que es el primer paso hacia un camino lleno de aprendizaje y oportunidades. Además, se sugiere el seguimiento mediante correos personalizados y recursos adicionales que mantengan al usuario comprometido. Por ejemplo
+    La narrativa se cierra con un llamado a la acción que invita al usuario a inscribirse y comenzar su formación. Se destaca que este proceso no termina con la búsqueda, sino que es el primer paso hacia un camino lleno de aprendizaje y oportunidades. Además, se sugiere el seguimiento mediante correos personalizados y recursos adicionales que mantengan al usuario comprometido. Por ejemplo:
 
     "Estás a un clic de iniciar este viaje transformador. Inscríbete ahora y comienza tu aventura con SENA Sofía Plus".

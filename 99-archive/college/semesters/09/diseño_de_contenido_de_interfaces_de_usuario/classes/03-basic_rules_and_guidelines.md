@@ -2,7 +2,7 @@
 
 ## Wireframes
 
-Es un diagrama visual que esboza el esqueleto de un proyecto o pieza tecnológica. A veces se conoce como esquema de la página o plano de la pantalla y muestra cómo se relacionan los elementos entre sí y cómo están estructurados.
+Un wireframe es un diagrama visual que esboza el esqueleto de un proyecto o pieza tecnológica. A veces se conoce como esquema de la página o plano de la pantalla y muestra cómo se relacionan los elementos entre sí y cómo están estructurados.
 
 - Baja fidelidad (low-fidelity): representaciones esquemáticas y simples que capturan la estructura y flujo sin detalles visuales, ideales para iteraciones rápidas.
 
@@ -75,19 +75,19 @@ Simplifica los textos eliminando redundancias y priorizando lo esencial.
 
 ### Etiquetas ALT
 
-Utiliza textos alternativos en imágenes para mejorar la experiencia de usuarios con tecnologías asistivas. Podemos encontrar varios tipos:
+Utiliza textos alternativos en imágenes para mejorar la experiencia de usuarios con tecnologías asistivas. Hay varios tipos:
 
-- Decorativas: función estética, no explican, no brindan información, ni dirigen a ningún lado.
+- Decorativas: función estética, no explican, no brindan información ni dirigen a ningún lado.
 
 - Informativas: contienen información útil para que la persona usuaria entienda la experiencia completa de la página.
 
-- Funcionales: se asocian a una funcionalidad e interacción dentro de un canal digital. Debe tener un texto alternativo que describa la acción que se da al interactuar con ella.
+- Funcionales: se asocian a una funcionalidad e interacción dentro de un canal digital. Deben tener un texto alternativo que describa la acción que se da al interactuar con ella.
 
 ## SEO, AEO y ASO
 
 ### SEO (search engine optimization)
 
-Es una estrategia integral orientada a mejorar la visibilidad de un sitio web en los motores de búsqueda. Esto se logra a través de la optimización de elementos clave como el uso adecuado de palabras clave, meta descripciones, encabezados, enlaces internos y externos, y la mejora de la estructura del sitio.
+Es una estrategia integral orientada a mejorar la visibilidad de un sitio web en los motores de búsqueda. Esto se logra a través de la optimización de elementos clave como el uso adecuado de palabras clave, meta descripciones, encabezados, enlaces internos y externos y la mejora de la estructura del sitio.
 
 ### AEO (answer engine optimization)
 

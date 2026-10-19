@@ -2,23 +2,23 @@
 
 ## Definición de riesgo
 
-Se entiende como un **evento o condición incierta** que, de ocurrir, puede afectar de manera positiva o negativa los objetivos del proyecto. Según ISO 73:2009, es la combinación de la probabilidad de un evento y sus consecuencias.
+Se entiende como un evento o condición incierta que, de ocurrir, puede afectar de manera positiva o negativa los objetivos del proyecto. Según la guía ISO 73:2009, es la combinación de la probabilidad de un evento y sus consecuencias.
 
 ## Características y consideraciones
 
 - Cada proyecto de software es único, por lo que presenta incertidumbres, riesgos y oportunidades propias.
 
-- El riesgo puede impactar el **alcance**, **tiempo**, **costo** y **calidad** del proyecto.
+- El riesgo puede impactar el alcance, tiempo, costo y calidad del proyecto.
 
 - Sus causas suelen encontrarse en los requerimientos, supuestos y restricciones.
 
-- Los riesgos conocidos deben contar con un **plan de respuesta**, mientras que los no conocidos requieren un **plan de contingencia**.
+- Los riesgos conocidos deben contar con un plan de respuesta, mientras que los no conocidos requieren un plan de contingencia.
 
 ## Taxonomía de riesgos
 
-### SEI (software engineering institute)
+### SEI (Software Engineering Institute)
 
-Se agrupan en tres categorías
+Se agrupan en tres categorías:
 
 - Ingeniería de producto: se refiere a los riesgos inherentes al desarrollo y funcionamiento del software, tales como defectos, problemas de rendimiento, dificultades en la integración y desafíos en la calidad del producto.
 
@@ -28,7 +28,7 @@ Se agrupan en tres categorías
 
 ### PMI
 
-el PMI propone una estructura de desglose de riesgos (RBS) que clasifica los riesgos potenciales del proyecto en cuatro grandes categorías:
+El PMI propone una estructura de desglose de riesgos (RBS) que clasifica los riesgos potenciales del proyecto en cuatro grandes categorías:
 
 - Técnico: incluye riesgos relacionados con la definición y desarrollo del producto, como la ambigüedad en los requisitos, dificultades tecnológicas, interfaces complejas, problemas de rendimiento y fiabilidad, así como la calidad del software.
 
@@ -46,7 +46,7 @@ flowchart TD
     B["identificación (registro de riesgos)"]
     C["análisis (calificación de riesgos)"]
     D["respuestas (estrategias para mitigar o responder al riesgo)"]
-    E[Seguimiento y control]
+    E[seguimiento y control]
 
     A --> B
     B --> C

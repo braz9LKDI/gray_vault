@@ -2,7 +2,7 @@
 
 ## 1
 
-A continuación se presentan la gráfica de las funciones $f_1(x) = 2^x$, $f_2(x) = 3^x$, $f_3(x) = 4^x$, $f_4(x) = \left (\frac{ 1 }{ 4 } \right )^x$, $f_5(x) = \left (\frac{ 1 }{ 2 } \right )^x$ y $f_6(x) = \left (\frac{ 3 }{ 4 } \right )^x$. Identifique cada una.
+A continuación se presenta la gráfica de las funciones $f_1(x) = 2^x$, $f_2(x) = 3^x$, $f_3(x) = 4^x$, $f_4(x) = \left (\frac{ 1 }{ 4 } \right )^x$, $f_5(x) = \left (\frac{ 1 }{ 2 } \right )^x$ y $f_6(x) = \left (\frac{ 3 }{ 4 } \right )^x$. Identifique cada una.
 
 ![graph](99-archive/college/semesters/01/assets/calculo_i/2_06_01-graph.svg)
 
@@ -59,7 +59,7 @@ Halle el dominio y rango de estas funciones:
 1. $f(x) = -3 + 2^{ x + 1 }$.
 
     $$
-    D_f \in \mathbb{ R }
+    D_f = \mathbb{ R }
     $$
 
     $$
@@ -72,13 +72,13 @@ Halle el dominio y rango de estas funciones:
     $$
 
     $$
-    y \in (3,\infty)
+    y \in (-3,\infty)
     $$
 
 2. $g(x) = -2 + \left (\frac{ 1 }{ 3 } \right )^{ x + 1 }$.
 
     $$
-    D_f \in \mathbb{ R }
+    D_g = \mathbb{ R }
     $$
 
     $$
@@ -86,12 +86,12 @@ Halle el dominio y rango de estas funciones:
         & -2 + \left (\frac{ 1 }{ 3 } \right )^{ x + 1 } = y \\
         & \left (\frac{ 1 }{ 3 } \right )^{ x + 1 } = y + 2 \\
         & (x + 1) \pln{ \frac{ 1 }{ 3 } } = \pln{ y + 2 } \\
-        & x = \frac{ \pln{ y + 2 } }{ \pln{ \frac{ 1 }{ 3 } } } - 1 \\
+        & x = \frac{ \pln{ y + 2 } }{ \pln{ \frac{ 1 }{ 3 } } } - 1
     \end{align}
     $$
 
     $$
-    y \in (2,\infty)
+    y \in (-2,\infty)
     $$
 
 ## 4
@@ -146,10 +146,10 @@ Calcule el valor de las siguientes expresiones:
 
     $$
     \begin{align}
-        & = (9^{ -2 })^{ \plog[9]{ 2 } } \\
-        & = 9^{ -2 \plog[9]{ 2 } } \\
-        & = 9^{ \plog[9]{ 2^{ -2 } } } \\
-        & = 2^{ -2 }
+        & = (9^\frac{ 1 }{ 2 })^{ \plog[9]{ 2 } } \\
+        & = 9^{ \frac{ 1 }{ 2 } \plog[9]{ 2 } } \\
+        & = 9^{ \plog[9]{ 2^\frac{ 1 }{ 2 } } } \\
+        & = \sqrt{ 2 }
     \end{align}
     $$
 
@@ -179,7 +179,7 @@ Calcule el valor de las siguientes expresiones:
 Simplifique al máximo la siguiente expresión:
 
 $$
-\plog{ 2 } + 16 \plog{ \frac{ 16 }{ 15 } } + 12 \plog{ \frac{ 25 }{ 24 } } + 7 \plog{ \frac{ 81 }{ 82 } }
+\plog{ 2 } + 16 \plog{ \frac{ 16 }{ 15 } } + 12 \plog{ \frac{ 25 }{ 24 } } + 7 \plog{ \frac{ 81 }{ 80 } }
 $$
 
 $$
@@ -196,7 +196,7 @@ $$
 
 ## 6
 
-A continuación se presentan la grafica de las funciones $f_1(x) = \plog[2]{ x }$, $f_2(x) = \plog[3]{ x }$, $f_3(x) = \plog[4]{ x }$, $f_4(x) = \plog[ \rac{ 1 }{ 4 } ]{ x }$, $f_5(x) = \plog[ \rac{ 1 }{ 2 } ]{ x }$ y $f_6(x) = \plog[ \rac{ 3 }{ 4 } ]{ x }$. Identifique cada una.
+A continuación se presenta la gráfica de las funciones $f_1(x) = \plog[2]{ x }$, $f_2(x) = \plog[3]{ x }$, $f_3(x) = \plog[4]{ x }$, $f_4(x) = \plog[ \frac{ 1 }{ 4 } ]{ x }$, $f_5(x) = \plog[ \frac{ 1 }{ 2 } ]{ x }$ y $f_6(x) = \plog[ \frac{ 3 }{ 4 } ]{ x }$. Identifique cada una.
 
 ![graph](99-archive/college/semesters/01/assets/calculo_i/2_06_03-graphs.svg)
 
@@ -208,7 +208,7 @@ Escriba las siguientes expresiones como un solo logaritmo:
 
     $$
     \begin{align}
-        & = \pln{ 2^x } + \pln{ x - 1 }^5 + \pln{ x - 3 }^{ -2 } \\
+        & = \pln{ 2^x } + \pln{ (x - 1)^5 } + \pln{ (x - 3)^{ -2 } } \\
         & = \pln{ 2^x (x - 1)^5 (x - 3)^{ -2 } }
     \end{align}
     $$
@@ -226,18 +226,18 @@ Escriba las siguientes expresiones como un solo logaritmo:
 
 ## 9
 
-Determine para que valores de $x$ se cumple la igualdad:
+Determine para qué valores de $x$ se cumple la igualdad:
 
 1. $\plog{ x + 5 } = \plog{ x } + \plog{ 5 }$.
 
     $$
     \begin{align}
         & x + 5 > 0 \\
-        & = x > -5
+        & x > -5
     \end{align}
     $$
 
-2. $\pln{ 3 }^3 = 3 \pln x$.
+2. $\pln{ x^3 } = 3 \pln x$.
 
     $$
     x > 0
@@ -261,9 +261,9 @@ Resuelva las siguientes ecuaciones:
 
     $$
     \begin{align}
-        & = \plog[3]{ 3^{ 2 x + 1 } } = \plog[3]{ 3^{ \pi x + 4 } } \\
-        & = 2 x + 1 = \pi x + 4 \\
-        & = 2 x - \pi x = 3 \\
+        & \plog[3]{ 3^{ 2 x + 1 } } = \plog[3]{ 3^{ \pi x + 4 } } \\
+        & 2 x + 1 = \pi x + 4 \\
+        & 2 x - \pi x = 3 \\
         & x = \frac{ 3 }{ 2 - \pi }
     \end{align}
     $$
@@ -272,7 +272,7 @@ Resuelva las siguientes ecuaciones:
 
     $$
     \begin{align}
-        & = \pln{ e^{ 4 x - 2 } } = \pln{ 2^{ x + 3 } } \\
+        & \pln{ e^{ 4 x - 2 } } = \pln{ 2^{ x + 3 } } \\
         & 4 x - 2 = (x + 3) \pln 2 \\
         & 4 x - 2 = x \pln 2 + 3 \pln 2 \\
         & 4 x - x \pln 2 = 3 \pln 2 + 2 \\
@@ -298,7 +298,7 @@ Resuelva las siguientes ecuaciones:
     \begin{align}
         & e^x - \frac{ 14 }{ e^x } = 5 \\
         & \frac{ e^{ 2 x } - 14 }{ e^x } = 5 \\
-        & e^{ 2 x } - 5 e^x - 14 \quad w = e^x \\
+        & e^{ 2 x } - 5 e^x - 14 = 0 \quad w = e^x \\
         & w^2 - 5 w - 14 = 0 \\
         & (w - 7) (w + 2) = 0 \quad w_1 = 7 \; w_2 = -2 \\
         & w_1 \quad 7 = e^x \\
@@ -309,7 +309,7 @@ Resuelva las siguientes ecuaciones:
 
 5. $\plog{ \abs{ 3 x - 1 } } = 2$.
 
-    Tenemos dos casos:
+    Hay dos casos:
     1. $3 x - 1 < 0$.
 
         $$
@@ -352,9 +352,9 @@ Resuelva las siguientes ecuaciones:
             & \plog{ \frac{ x^2 + 4 }{ x + 2 } } = \plog{ 10^3 (x - 2) } \\
         & \frac{ x^2 + 4 }{ x + 2 } = 10^3 (x - 2) \\
         & x^2 + 4 = 10^3 (x^2 - 4) \\
-        & x^2 = \frac{ 4006 }{ 999 } \\
-        & x = \pm \sqrt{ \frac{ 4006 }{ 999 } } \\
-        & x = \sqrt{ \frac{ 4006 }{ 999 } } \; \text{por la condición inicial}
+        & x^2 = \frac{ 4004 }{ 999 } \\
+        & x = \pm \sqrt{ \frac{ 4004 }{ 999 } } \\
+        & x = \sqrt{ \frac{ 4004 }{ 999 } } \; \text{por la condición inicial}
     \end{align}
     $$
 
@@ -366,7 +366,7 @@ Resuelva las siguientes ecuaciones:
 
     $$
         \begin{align}
-            & \plog[x]{ x^\sqrt{ \plog{ x } } } = \plog{ 10^8 } \\
+            & \plog[x]{ x^\sqrt{ \plog{ x } } } = \plog[x]{ 10^8 } \\
             & \sqrt{ \plog{ x } } = 8 \plog[x]{ 10 } \\
             & \plog{ x } = 64 (\plog[x]{ 10 })^2 \\
             & \plog[x]{ 10 } = \frac{ \plog{ 10 } }{ \plog{ x } } \\
@@ -381,7 +381,7 @@ Resuelva las siguientes ecuaciones:
 
 ## 11
 
-Con cada una de las siguientes funciones
+Con cada una de las siguientes funciones:
 
 $$
 \begin{align}
@@ -391,7 +391,7 @@ $$
 $$
 
 1. halle dominio y rango.
-    1. $D_{ f_1 } \in \mathbb{ R }$.
+    1. $D_{ f_1 } = \mathbb{ R }$.
 
     2. $R_{ f_1 }$.
 
@@ -404,7 +404,7 @@ $$
         \end{align}
         $$
 
-    3. $D_{ f_2 } \in (-4,\infty)$.
+    3. $D_{ f_2 } = (-4,\infty)$.
 
     4. $R_{ f_2 }$.
 
@@ -417,7 +417,7 @@ $$
         \end{align}
         $$
 
-2. Pruebe que es una función [[01-areas/math/functions/function_properties#Injectivity|inyectiva]].
+2. Pruebe que es una función [[01-areas/math/functions/function_properties#Injective|inyectiva]].
     1. $f_1$.
 
         $$
@@ -429,7 +429,7 @@ $$
         \end{align}
         $$
 
-    2. $f_1$.
+    2. $f_2$.
 
         $$
         \begin{align}
@@ -481,11 +481,11 @@ $$
     \begin{align}
         & B \left (\frac{ 2 }{ 3 } \right ) = 180 e^{ \frac{ \pln 2 }{ 3 } * \frac{ 2 }{ 3 } } \\
         & = 180 e^{ \frac{ 2 \pln 2 }{ 9 } } \\
-        & = 180 * 2^\frac{ 2 }{ 9 } \\
+        & = 180 * 2^\frac{ 2 }{ 9 }
     \end{align}
     $$
 
-4. ¿Cuánto tiempo tarda en aumentar la población a $1,000$ bacterias?
+4. ¿Cuánto tiempo tarda en aumentar la población a 1,000 bacterias?
 
     $$
     \begin{align}
@@ -500,13 +500,13 @@ $$
 
 ## 13
 
-Suponga que se invierten $\$100,000$ a un tipo de interés anual de $5\%$. Calcule el sado después de 8 años si el interés:
+Suponga que se invierten \$100,000 a un tipo de interés anual de 5%. Calcule el saldo después de 8 años si el interés:
 
 1. es simple.
 
     $$
     \begin{align}
-        & 100,000 + \left ( 1 + \frac{ 5 }{ 100 } * 8 \right ) \\
+        & 100,000 \left ( 1 + \frac{ 5 }{ 100 } * 8 \right ) \\
         & = 100,000 + 5,000 * 8 \\
         & = \$140,000
     \end{align}
@@ -534,7 +534,7 @@ Suponga que se invierten $\$100,000$ a un tipo de interés anual de $5\%$. Calcu
 
 ## 14
 
-La tasa de interés anual efectiva corresponde a una tasa anual compuesta una vez al año. La tasa nominal corresponde a una tasa de interés compuesta $k$ veces al año. Encuentre la tasa de interés anual efectiva equivalente a $6\%$ de tasa nominal de capitalización semestral.
+La tasa de interés anual efectiva corresponde a una tasa anual compuesta una vez al año. La tasa nominal corresponde a una tasa de interés compuesta $k$ veces al año. Encuentre la tasa de interés anual efectiva equivalente a 6% de tasa nominal de capitalización semestral.
 
 $$
 \begin{align}

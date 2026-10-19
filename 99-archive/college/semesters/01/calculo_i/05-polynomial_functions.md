@@ -9,7 +9,7 @@ Sean $z = -4 + 3 i$ y $w = 1 - 2 i$ números complejos, escriba en la forma $a +
     $$
     \begin{align}
         & 3 i (1 - 2 i) - 2 (-4 + 3 i)^2 \\
-        & = 3 i - 6 i^2 - 2 (16 + 2 (-4) ( 3 i) + 9 i^2) \\
+        & = 3 i - 6 i^2 - 2 (16 + 2 (-4) (3 i) + 9 i^2) \\
         & = 3 i + 6 - 2 (7 - 24 i) \\
         & = 3 i + 6 - 14 + 48 i \\
         & = -8 + 51 i
@@ -33,11 +33,11 @@ Sean $z = -4 + 3 i$ y $w = 1 - 2 i$ números complejos, escriba en la forma $a +
     $$
     \begin{align}
         & \frac{ \overline{ w } }{ \overline{ z } } + \overline{ z } \overline{ w } \\
-        & = \frac{ 1 + 2 i }{ -4 - 3 i } + (-4 + 3 i) (1 - 2 i) \\
-        & = \frac{ 1 + 2 i }{ -4 - 3 i } \frac{ -4 + 3 i }{ -4 + 3 i } + 2 + 11 i \\
-        & = \frac{ -10 - 5 i }{ 25 } + 2 + 11 i \\
-        & = \left (-\frac{ 2 }{ 5 } + 2 \right ) + i \left (-\frac{ 1 }{ 5 } + 11 \right ) \\
-        & = \frac{ 8 }{ 5 } + i \frac{ 54 }{ 5 }
+        & = \frac{ 1 + 2 i }{ -4 - 3 i } + (-4 - 3 i) (1 + 2 i) \\
+        & = \frac{ 1 + 2 i }{ -4 - 3 i } \frac{ -4 + 3 i }{ -4 + 3 i } + 2 - 11 i \\
+        & = \frac{ -10 - 5 i }{ 25 } + 2 - 11 i \\
+        & = \left (-\frac{ 2 }{ 5 } + 2 \right ) + i \left (-\frac{ 1 }{ 5 } - 11 \right ) \\
+        & = \frac{ 8 }{ 5 } - i \frac{ 56 }{ 5 }
     \end{align}
     $$
 
@@ -126,7 +126,7 @@ Halle los ceros de los siguientes polinomios y factorice en los números reales 
     $$
     \begin{align}
         & (x - 5) (x - (3 + 2 i)) (x - (3 - 2 i)) \\
-        & (x - 5) [(x - 3) - 2 i] [(x - 3) + 2 i)] \\
+        & (x - 5) [(x - 3) - 2 i] [(x - 3) + 2 i] \\
         & (x - 5) [(x - 3)^2 + 2^2] \\
         & (x - 5) (x^2 - 6 x + 9 + 4) \\
         & (x - 5) (x^2 - 6 x + 13) \\
@@ -135,7 +135,7 @@ Halle los ceros de los siguientes polinomios y factorice en los números reales 
     \end{align}
     $$
 
-2. Halle un polinomio de grado 5 con coeficientes reales, que tenga entre sus raíces a 4, $-3 i$ y $2 - i$, cuya grafica pase por el punto $P(-1,1)$.
+2. Halle un polinomio de grado 5 con coeficientes reales, que tenga entre sus raíces a 4, $-3 i$ y $2 - i$, cuya gráfica pase por el punto $P(-1,1)$.
 
     $$
     \begin{align}
@@ -146,39 +146,39 @@ Halle los ceros de los siguientes polinomios y factorice en los números reales 
         & (x - 4) (x^4 - 4 x^3 + 5 x^2 + 9 x^2 - 36 x + 45) \\
         & (x - 4) (x^4 - 4 x^3 + 14 x^2 - 36 x + 45) \\
         & x^5 - 4 x^4 + 14 x^3 - 36 x^2 + 45 x - 4 x^4 + 16 x^3 - 56 x^2 + 144 x - 180 \\
-        & x^5 - 8 x^4 +30 x^3 - 92 x^2 + 189 x - 180
+        & x^5 - 8 x^4 + 30 x^3 - 92 x^2 + 189 x - 180
     \end{align}
     $$
 
-    Para que se cumpla la condición de que pase por el punto $P(-1,1)$, haremos uso de otro factor.
+    Para que se cumpla la condición de que pase por el punto $P(-1,1)$, se usa otro factor.
 
     $$
     \begin{align}
-        & p(x) = a (x^5 - 8 x^4 +30 x^3 - 92 x^2 + 189 x - 180) \\
-        & p(-1) = a (-1 - 8 -30 - 92 - 189 - 180) = 1 \\
-        & -500 a = -1 \\
-        & a = \frac{ 1 }{ 500 }
+        & p(x) = a (x^5 - 8 x^4 + 30 x^3 - 92 x^2 + 189 x - 180) \\
+        & p(-1) = a (-1 - 8 - 30 - 92 - 189 - 180) = 1 \\
+        & -500 a = 1 \\
+        & a = -\frac{ 1 }{ 500 }
     \end{align}
     $$
 
-    El polinomio final es
+    El polinomio final es:
 
     $$
     \begin{align}
-        & p(x) = \frac{ 1 }{ 500 } (x^5 - 8 x^4 + 30 x^3 - 92 x^2 + 189 x - 180) \\
-        & = \frac{ 1 }{ 500 } x^5 - \frac{ 2 }{ 125 } x^4 + \frac{ 3 }{ 50 } x^3 - \frac{ 23 }{ 125 } x^2 + \frac{ 189 }{ 500 } x - \frac{ 9 }{ 25 }
+        & p(x) = -\frac{ 1 }{ 500 } (x^5 - 8 x^4 + 30 x^3 - 92 x^2 + 189 x - 180) \\
+        & = -\frac{ 1 }{ 500 } x^5 + \frac{ 2 }{ 125 } x^4 - \frac{ 3 }{ 50 } x^3 + \frac{ 23 }{ 125 } x^2 - \frac{ 189 }{ 500 } x + \frac{ 9 }{ 25 }
     \end{align}
     $$
 
 ## 4
 
-Encuentre el residuo de dividir $f(x) = -2 x^{ 103 } - x^{ 35 } + 5 x^{ 18 } - x +6$ entre $x + 1$.
+Encuentre el residuo de dividir $f(x) = -2 x^{ 103 } - x^{ 35 } + 5 x^{ 18 } - x + 6$ entre $x + 1$.
 
-Usando el [[01-areas/math/remainder_theorem|remainder_theorem|teorema del residuo]], el residuo corresponde al resultado de evaluar $f(-1)$.
+Usando el [[01-areas/math/remainder_theorem|teorema del residuo]], el residuo corresponde al resultado de evaluar $f(-1)$.
 
 $$
 \begin{align}
-    & f(-1) = -2 (-1)^{ 103 } - (-1)^{ 35 } + 5 (-1)^{ 18 } - (-1) +6 \\
+    & f(-1) = -2 (-1)^{ 103 } - (-1)^{ 35 } + 5 (-1)^{ 18 } - (-1) + 6 \\
     & = 2 + 1 + 5 + 1 + 6 \\
     & = 15
 \end{align}
@@ -199,15 +199,15 @@ $$
 
 ## 6
 
-Encuentre a los valores de la constante $k$, para que el polinomio $p(x) = x^3 + k^2 x^2 - x -2 k$ tenga a $-4$ como raíz.
+Encuentre los valores de la constante $k$, para que el polinomio $p(x) = x^3 + k^2 x^2 - x - 2 k$ tenga a $-4$ como raíz.
 
 $$
 \begin{align}
     & p(-4) = (-4)^3 + k^2 (-4)^2 - (-4) - 2 k = 0 \\
     & -64 + 16 k^2 + 4 - 2 k = 0 \\
-    & 16 k^2 - 2 k- 60 = 0 \\
-    & 2 (8 k^2 - k- 30) = 0 \\
-    & 8 k^2 - k- 30 = 0 \\
+    & 16 k^2 - 2 k - 60 = 0 \\
+    & 2 (8 k^2 - k - 30) = 0 \\
+    & 8 k^2 - k - 30 = 0 \\
     & \frac{ 1 \pm \sqrt{ 1 - 4 (8) (-30) } }{ 16 } \\
     & \frac{ 1 \pm \sqrt{ 1 + 960 } }{ 16 } \\
     & k_1 = \frac{ 1 + 31 }{ 16 } = 2 \quad k_2 = \frac{ 1 - 31 }{ 16 } = -\frac{ 15 }{ 8 }

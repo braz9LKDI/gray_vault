@@ -1,6 +1,6 @@
 # Moderating internal conflict of opinion in a social network
 
-Una red social $SN$ es una pareja $\langle SA,R_{ \max } \rangle$, donde $SA$ es una secuencia de grupo de agentes $SA = \langle a_0,\dots,a_{ n - 1 } \rangle$ y $R_{ \max } > 0 \pand R_{ \max } \in \mathbb{ N }$ representa el valor entero máximo con el que se cuenta para moderar las opiniones de la red $SN$.
+Una red social $SN$ es una pareja $\langle SA,R_{ \max } \rangle$, donde $SA$ es una secuencia de grupos de agentes $SA = \langle a_0,\dots,a_{ n - 1 } \rangle$ y $R_{ \max } > 0 \pand R_{ \max } \in \mathbb{ N }$ representa el valor entero máximo con el que se cuenta para moderar las opiniones de la red $SN$.
 
 Un grupo de agentes $a_i$ es una tupla
 
@@ -32,13 +32,13 @@ $$
 
 > $n$ es el número de grupos de agentes que hay en la red social $SN$.
 
-Una **estrategia de cambio de opinión** de una red $SN$ es una secuencia:
+Una estrategia de cambio de opinión de una red $SN$ es una secuencia:
 
 $$
 E = \langle e_0,e_1,\dots,e_{ n - 1 } \rangle
 $$
 
-donde $e_i$ indica el número de agentes del grupo $i$ cuya opinión será modificada, además se cumplen las siguientes restricciones:
+donde $e_i$ indica el número de agentes del grupo $i$ cuya opinión será modificada; además, se cumplen las siguientes restricciones:
 
 - $e_i \in \mathbb{ N }$.
 
@@ -52,13 +52,13 @@ $$
 
 Se asume que los agentes con opiniones ajustadas por $E$ ya no forman parte de la red resultante ${ SN }'$.
 
-El **esfuerzo** necesario para ajustar las opiniones sobre $SN$ con la estrategia $E$ se define como:
+El esfuerzo necesario para ajustar las opiniones sobre $SN$ con la estrategia $E$ se define como:
 
 $$
 \operatorname{ Effort }(SN,E) = \sum_{ i = 0 }^{ n - 1 } \left \lceil |o_{ i,1 } - o_{ i,2 }| \cdot r_i \cdot e_i \right \rceil
 $$
 
-Una estrategia $E$ es **aplicable** si:
+Una estrategia $E$ es aplicable si:
 
 $$
 \operatorname{ Effort }(SN,E) \leq R_{ \max }
@@ -92,7 +92,7 @@ sea mínimo.
     n_i * (o_{ i,1 } - o_{ i,2 })^2
     $$
 
-    al conflicto interno. Si a ese grupo de agentes se le **moderan** $k$ agentes, esta contribución pasa a ser
+    al conflicto interno. Si a ese grupo de agentes se le moderan $k$ agentes, esta contribución pasa a ser
 
     $$
     (n_i - k) * (o_{ i,1 } - o_{ i,2 })^2
@@ -102,12 +102,12 @@ sea mínimo.
 
 ### Caracterización de la subestructura óptima
 
-Definimos la notación $\operatorname{ IC }(i,r)$ como el problema de minimizar el conflicto interno utilizando los primeros $i$ grupos de agentes con un esfuerzo disponible $r$. La notación $\operatorname{ modIC }(i,r)$ denota la secuencia de decisiones óptimas (es decir, el número de agentes a moderar en cada grupo) para los grupos $i$ hasta $n$ utilizando $r$ de esfuerzo, donde la secuencia vacía $\langle \rangle$ indica que no se realizan más moderaciones.
+Se define la notación $\operatorname{ IC }(i,r)$ como el problema de minimizar el conflicto interno utilizando los primeros $i$ grupos de agentes con un esfuerzo disponible $r$. La notación $\operatorname{ modIC }(i,r)$ denota la secuencia de decisiones óptimas (es decir, el número de agentes a moderar en cada grupo) para los grupos $i$ hasta $n$ utilizando $r$ de esfuerzo, donde la secuencia vacía $\langle \rangle$ indica que no se realizan más moderaciones.
 
 $$
 \operatorname{ modIC }(i,r) = \begin{cases}
         \langle \rangle                                                             & i = n + 1 \\
-        k_i :: \operatorname{ modIC }(i + 1,r - \operatorname{ e\_effort }(i,k_i))  & i \neq n
+        k_i :: \operatorname{ modIC }(i + 1,r - \operatorname{ e\_effort }(i,k_i))  & i \leq n
     \end{cases}
 $$
 
@@ -117,9 +117,9 @@ $$
 
 ### Valor recursivo de la solución óptima
 
-- $\operatorname{ e\_effort }(i,k)$: es el esfuerzo requerido para **moderar** $k$ agentes del grupo $i$ ($\left \lceil |o_{ i,1 } - o_{ i,2 }| \cdot r_i \cdot k \right \rceil$).
+- $\operatorname{ e\_effort }(i,k)$: es el esfuerzo requerido para moderar $k$ agentes del grupo $i$ ($\left \lceil |o_{ i,1 } - o_{ i,2 }| \cdot r_i \cdot k \right \rceil$).
 
-- $\operatorname{ conflict }(i,k)$: es la contribución al conflicto interno del grupo $i$ luego de **moderar** $k$ agentes ($(n_i - k) * (o_{ i,1 } - o_{ i,2 })^2$).
+- $\operatorname{ conflict }(i,k)$: es la contribución al conflicto interno del grupo $i$ luego de moderar $k$ agentes ($(n_i - k) * (o_{ i,1 } - o_{ i,2 })^2$).
 
 #### Normalización en cada paso
 
@@ -155,7 +155,7 @@ Ambas formulaciones calculan el mismo valor $\operatorname{ valueIC }(n,R_{ \max
 
 - Caso base: para $i = 0$, ambas definiciones retornan 0.
 
-- Paso inductivo: supongamos que para $i - 1$, $\operatorname{ { recIC }_1 }(i,r') = \frac{ F(i - 1,r') }{ i - 1 }$ y $\operatorname{ { recIC }_2 }(i,r') =F(i - 1,r')$.
+- Paso inductivo: se supone que para $i - 1$, $\operatorname{ { recIC }_1 }(i - 1,r') = \frac{ F(i - 1,r') }{ i - 1 }$ y $\operatorname{ { recIC }_2 }(i - 1,r') = F(i - 1,r')$.
     - $\operatorname{ { recIC }_1 }$.
 
         $$
@@ -176,4 +176,4 @@ Ambas formulaciones calculan el mismo valor $\operatorname{ valueIC }(n,R_{ \max
 
 Al final $\operatorname{ valueIC }(n,R_{ \max }) = \frac{ \operatorname{ { recIC }_2 }(n,R_{ \max }) }{ n } = \frac{ F(n,R_{ \max }) }{ n }$, que coincide con $\operatorname{ { recIC }_1 }(n,R_{ \max })$.
 
-Lo cual tiene sentido, minimizar para $\frac{ F(i - 1,r') + \operatorname{ conflict }(i,k_i) }{ i }$ es equivalente a minimizar $F(i - 1,r') + \operatorname{ conflict }(i,k_i)$ porque dividir por una constante positiva ($i$) no cambia la elección del $k_i$ que da el mínimo valor.
+Esto tiene sentido: minimizar $\frac{ F(i - 1,r') + \operatorname{ conflict }(i,k_i) }{ i }$ es equivalente a minimizar $F(i - 1,r') + \operatorname{ conflict }(i,k_i)$ porque dividir por una constante positiva ($i$) no cambia la elección del $k_i$ que da el mínimo valor.

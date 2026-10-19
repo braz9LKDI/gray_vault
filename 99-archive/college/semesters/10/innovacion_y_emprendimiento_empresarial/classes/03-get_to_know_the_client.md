@@ -18,7 +18,7 @@ Los consumidores representan segmentos porque comparten necesidades, deseos o co
 
 ### Técnicas facilitadoras
 
-Su objetivo es obtener información verbal y directa de los consumidores. Buscan conocer sus opiniones, percepciones. Algunas de estas técnicas son:
+Su objetivo es obtener información verbal y directa de los consumidores. Buscan conocer sus opiniones y percepciones. Algunas de estas técnicas son:
 
 - Entrevistas en profundidad.
 
@@ -40,7 +40,7 @@ Su objetivo es explorar las emociones, motivaciones y deseos ocultos del consumi
 
 Su objetivo es acceder a pensamientos más profundos y emocionales que no siempre se expresan directamente.
 
-### Técnicas etnograficas
+### Técnicas etnográficas
 
 Su objetivo es observar directamente al consumidor en su vida cotidiana para entender su comportamiento real en contextos naturales. Algunas de estas técnicas son:
 
@@ -54,7 +54,7 @@ Su objetivo es comprender cómo actúa realmente un consumidor sin la influencia
 
 ## Jobs to be done
 
-Jobs to be Done (JTBD) es un enfoque que parte del principio de que los clientes no compran productos o servicios por sus características, sino para **resolver tareas específicas o "trabajos" que necesitan cumplir en circunstancias particulares**. Este marco ayuda a los emprendedores a comprender el resultado que el consumidor realmente desea lograr, más allá de **las funcionalidades superficiales del producto**.
+Jobs to be Done (JTBD) es un enfoque que parte del principio de que los clientes no compran productos o servicios por sus características, sino para resolver tareas específicas o "trabajos" que necesitan cumplir en circunstancias particulares. Este marco ayuda a los emprendedores a comprender el resultado que el consumidor realmente desea lograr, más allá de las funcionalidades superficiales del producto.
 
 Para aplicarlo en la práctica, es necesario identificar quién es el consumidor específico, cuáles son las tareas prioritarias que necesita resolver, cuál sería la lista de resultados concretos que indicarían que cada tarea se ha cumplido desde el punto de vista del consumidor, y cuáles son las barreras o restricciones que deben considerarse en el diseño de la solución.
 
@@ -70,14 +70,14 @@ Es necesario definir cada JTBD en una frase precisa que sintetice:
 
 - ¿Cuáles son las circunstancias del contexto que son relevantes?
 
-> El **consumidor** necesita **resolver un problema** en **una circunstancia específica**.
+> El consumidor necesita resolver un problema en una circunstancia específica.
 
 ### Resultados
 
-No basta con identificar los JTBD, es clave entender:
+No basta con identificar los JTBD; es clave entender:
 
 - ¿Cómo sabe el consumidor que se han cumplido?
 
 - ¿Qué evidencias concretas necesita ver?
 
-Los consumidores no reaccionan ante abstracciones, sino ante las realidades medibles y tangibles. **Si el consumidor no ve estas pruebas claras, el producto pierde atractivo y competitividad**.
+Los consumidores no reaccionan ante abstracciones, sino ante las realidades medibles y tangibles. Si el consumidor no ve estas pruebas claras, el producto pierde atractivo y competitividad.

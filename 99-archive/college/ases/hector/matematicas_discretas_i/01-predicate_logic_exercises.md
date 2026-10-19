@@ -1,4 +1,4 @@
-# Discrete math exercises
+# Predicate logic exercises
 
 1. Represente en lógica de predicados.
     1. Un estudiante de tu escuela ha vivido en Palmira.
@@ -15,7 +15,7 @@
     3. Ningún chico rubio quiere cantar. No hay ningún chico alto que no quiere cantar. Todos mis profesores son rubios. Por lo tanto, todos los profesores míos no son altos.
 
     4. Si Dios fuera capaz de evitar el mal y quisiera hacerlo, lo haría. Si Dios fuera incapaz de evitar el mal, no sería omnipotente; si no quisiera evitar el mal sería malévolo. Dios no evita el mal. Si Dios existe, es omnipotente y no es malévolo. Luego, Dios no existe.
-        - Argumentos a variables preposicionales.
+        - Argumentos a variables proposicionales.
             - $C$: Dios es capaz de evitar el mal.
 
             - $Q$: Dios quiere evitar el mal.
@@ -79,7 +79,7 @@
 
         5. $\lnot E \por O$.
 
-        6. $\lnot E \por \lnot M$
+        6. $\lnot E \por \lnot M$.
 
         7. $E$.
 
@@ -93,7 +93,7 @@
 
         12. $\blacksquare$: resolvente $(8,11)$.
 
-        Es **insatisfactible**, por lo tanto la fórmula original es **válida**.
+        Es insatisfactible, por lo tanto la fórmula original es válida.
 
 3. Indique el valor de verdad de la expresión.
     1. $\exists x \; \exists y \quad (x + y = 6 \pand x - y = 5)$.
@@ -102,7 +102,7 @@
 
     3. $\exists x \; \forall y \quad (x + y = 0)$.
 
-4. Simboliza la siguiente expresión en lógica de predicados.
+4. Simbolice la siguiente expresión en lógica de predicados.
 
     Los números con el mismo sucesor son idénticos.
 

@@ -15,14 +15,14 @@
 
 ## Solución de LPs de dos variables
 
-La resolución de problemas de programación lineal (LP) de **dos variables** se puede abordar mediante el **método gráfico**, una técnica intuitiva que aprovecha la representación geométrica de las restricciones y la función objetivo.
+La resolución de problemas de programación lineal (LP) de dos variables se puede abordar mediante el método gráfico, una técnica intuitiva que aprovecha la representación geométrica de las restricciones y la función objetivo.
 
 1. Graficar las restricciones.
 
-    Cada restricción se representa como una recta en el plano $x_1x_2$. Las desigualdades definen un **semiplano** (región a un lado de la recta).
+    Cada restricción se representa como una recta en el plano $x_1x_2$. Las desigualdades definen un semiplano (región a un lado de la recta).
 
 2. Determinar la región factible ($\Omega$).
-    - La región factible es la **intersección** de todos los semiplanos definidos por las restricciones.
+    - La región factible es la intersección de todos los semiplanos definidos por las restricciones.
 
     - Es un conjunto convexo que puede ser:
         - Acotado: forma un polígono cerrado.
@@ -52,5 +52,4 @@ Sea $\Omega$ la región factible (de un polígono convexo) de un LP y sea $f = a
 
 #### Explicación intuitiva
 
-La función objetivo $f = a x + b y$ representa una "pendiente" en el plano $xy$.
-Si dibujas $f$ para diferentes valores, se obtiene rectas que se desplazan en la dirección de crecimiento de $f$. En ese desplazamiento debe haber un último punto de contacto (con $\Omega$) que corresponderá a un vértice.
+La función objetivo $f = a x + b y$ representa una "pendiente" en el plano $xy$. Si se dibuja $f$ para diferentes valores, se obtienen rectas que se desplazan en la dirección de crecimiento de $f$. En ese desplazamiento debe haber un último punto de contacto (con $\Omega$) que corresponderá a un vértice.

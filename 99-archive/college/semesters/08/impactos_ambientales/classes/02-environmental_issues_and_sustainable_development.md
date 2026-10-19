@@ -6,9 +6,9 @@
 
 ### Cambio climático
 
-Una parte de la radiación solar que incide sobre el planeta se refleja a la atmósfera. Los gases de invernadero (GEN) devuelven a la Tierra parte de la radiación, lo que permite que su temperatura promedio sea aproximadamente $35 \degree\text{C}$. El problema aparece cuando, por efecto de la acción de los seres humanos, aumenta la concentración de algunos de estos gases, y el fenómeno se refuerza, elevando la temperatura promedio de la Tierra.
+Una parte de la radiación solar que incide sobre el planeta se refleja a la atmósfera. Los gases de efecto invernadero (GEI) devuelven a la Tierra parte de la radiación, lo que permite que su temperatura promedio sea aproximadamente $35 \degree\text{C}$. El problema aparece cuando, por efecto de la acción de los seres humanos, aumenta la concentración de algunos de estos gases, y el fenómeno se refuerza, elevando la temperatura promedio de la Tierra.
 
-### Perdida de diversidad biológica
+### Pérdida de diversidad biológica
 
 - Diversidad genética: la suma de información genética que existe en el interior de cada especie.
 
@@ -18,23 +18,23 @@ Una parte de la radiación solar que incide sobre el planeta se refleja a la atm
 
 ### Alteración del ciclo del nitrógeno
 
-La humanidad está fertilizando abusivamente el planeta mediante una agricultura intensiva, la quema de combustibles fósiles y el cultivo de leguminosas, esto hace que cantidades excesivas de nitrógeno se depositen en los ecosistemas terrestre y acuático.
+La humanidad está fertilizando abusivamente el planeta mediante una agricultura intensiva, la quema de combustibles fósiles y el cultivo de leguminosas; esto hace que cantidades excesivas de nitrógeno se depositen en los ecosistemas terrestres y acuáticos.
 
 ### Contaminación atmosférica
 
-La actividad antrópica supone la emisión a la atmósfera de sustancias que han deteriorado su calidad de forma peligrosa. Las fuentes principales de emisión de estos contaminantes son la **producción de energía** (dióxido de azufre), las emisiones de los **vehículos de motor** (monóxido de carbono, óxidos de nitrógeno, plomo y partículas) y la **producción industrial**.
+La actividad antrópica supone la emisión a la atmósfera de sustancias que han deteriorado su calidad de forma peligrosa. Las fuentes principales de emisión de estos contaminantes son la producción de energía (dióxido de azufre), las emisiones de los vehículos de motor (monóxido de carbono, óxidos de nitrógeno, plomo y partículas) y la producción industrial.
 
 ### Contaminación hídrica y el acceso al agua potable
 
-Algunas de las fuentes de contaminación hídrica son: la utilización de fertilizantes nitrogenados en la agricultura y la lluvia ácida. Las cargas contaminantes provenientes de la industria (metales pesados, compuestos orgánicos persistentes); las originadas en los grandes núcleos urbanos (aguas residuales sin tratamiento); y la intrusión marina en acuíferos sobreexplotados.
+Algunas de las fuentes de contaminación hídrica son la utilización de fertilizantes nitrogenados en la agricultura, la lluvia ácida, las cargas contaminantes provenientes de la industria (metales pesados, compuestos orgánicos persistentes), las originadas en los grandes núcleos urbanos (aguas residuales sin tratamiento) y la intrusión marina en acuíferos sobreexplotados.
 
-### Contaminación y perdida del suelo
+### Contaminación y pérdida del suelo
 
-Los incendios son una de las causas fundamentales de esta pérdida de bosque tropical, la mayoría de ellos están causados por la quema intencionada de árboles para la conversión del terreno en cultivos o pastizales. El cambio climático ha incrementado las sequías que han permitido el incremento de incendios naturales.
+Los incendios son una de las causas fundamentales de esta pérdida de bosque tropical; la mayoría de ellos están causados por la quema intencionada de árboles para la conversión del terreno en cultivos o pastizales. El cambio climático ha incrementado las sequías que han permitido el incremento de incendios naturales.
 
 ### Generación de residuos
 
-1. Los metales pesados: plomo, mercurio, etc. Su impacto negativo sobre la salud de las personas, y su persistencia, así como su paso por la cadena trófica.
+1. Los metales pesados: plomo, mercurio, etc. Destacan por su impacto negativo sobre la salud de las personas, su persistencia y su paso por la cadena trófica.
 
 2. Los contaminantes orgánicos persistentes (COP), las dioxinas y los furanos. Producen grandes impactos en la salud.
 
@@ -46,12 +46,11 @@ Los océanos constituyen los mayores ecosistemas de la Tierra, albergando tanta 
 
 ### Contaminación acústica
 
-La elevación de los niveles de vida, un mayor conocimiento de los impactos que sobre la salud y el bienestar de las personas ha permitido que la contaminación acústica se haya incorporado al catálogo de las agresiones ambientales.
+La elevación de los niveles de vida y un mayor conocimiento de los impactos sobre la salud y el bienestar de las personas han permitido que la contaminación acústica se haya incorporado al catálogo de las agresiones ambientales.
 
 ### Clasificación
 
-Se pueden clasificar en función del ámbito de
-incidencia:
+Se pueden clasificar en función del ámbito de incidencia:
 
 #### Globales
 
@@ -59,9 +58,9 @@ Son problemas que afectan a todo el mundo. Por ejemplo:
 
 - Calentamiento global.
 
-- Perdida de la capa de ozono.
+- Pérdida de la capa de ozono.
 
-- Perdida de la diversidad biológica.
+- Pérdida de la diversidad biológica.
 
 - Agotamiento y contaminación de los recursos de los mares extracontinentales.
 
@@ -81,7 +80,7 @@ Sus efectos y el origen están limitados a las fronteras de un Estado. Podrían 
 
 #### Locales
 
-Su nivel de dispersión geográfica es muy limitado, y concentran, por tanto, sus efectos en un espacio muy reducido.
+Su nivel de dispersión geográfica es muy limitado y, por tanto, concentran sus efectos en un espacio muy reducido.
 
 ## Desarrollo sostenible (DS)
 
@@ -145,7 +144,7 @@ Autonomía, capacidad de tomar decisiones y la independencia.
 
 #### Tipo I
 
-Satisfacen una necesidad sin agotar o dañar los RN. Por ejemplo: intercambio de conocimiento.
+Satisfacen una necesidad sin agotar o dañar los recursos naturales (RN). Por ejemplo: intercambio de conocimiento.
 
 #### Tipo II
 

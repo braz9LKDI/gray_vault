@@ -1,6 +1,6 @@
 # Methodology
 
-This chapter details the systematic plan that will be followed to execute the project and achieve the defined objectives. It answers the "how" question by outlining the development process, tasks, and timeline.
+This chapter details the systematic plan that will be followed to execute the project and achieve the defined objectives. It answers the "how" question by outlining the development process, tasks and timeline.
 
 ## Activities to be carried out
 

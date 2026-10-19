@@ -1,16 +1,16 @@
-# Data mining - clustering
+# Data mining: clustering
 
-Es el proceso de dividir un conjunto de datos en subconjuntos. Cada subconjunto es un grupo, de modo que los objetos de un grupo son **similares** entre sí, pero **diferentes** a los datos de otros grupos.
+Es el proceso de dividir un conjunto de datos en subconjuntos. Cada subconjunto es un grupo, de modo que los objetos de un grupo son similares entre sí, pero diferentes a los datos de otros grupos.
 
-> A estos grupos les llamamos **clústeres**.
+> A estos grupos se les llama clústeres.
 
-Cuando vamos a aplicar este tipo de técnicas, tenemos que proveer el número de clústeres y el número de iteraciones. Podemos decir que el modelo arrojó buenos resultados (clústeres de calidad) si hay:
+Al aplicar técnicas como las k-medias, se debe proveer el número de clústeres y el número de iteraciones. El modelo arroja buenos resultados (clústeres de calidad) si hay:
 
-- **Alta** similitud entre datos de la misma clase.
+- Alta similitud entre datos de la misma clase.
 
-- **Baja** similitud entre datos de diferentes clases.
+- Baja similitud entre datos de diferentes clases.
 
-> Por lo tanto, la **calidad** dependerá de la medida de similitud que se utilice.
+> Por lo tanto, la calidad dependerá de la medida de similitud que se utilice.
 
 ## Similitud entre objetos
 
@@ -34,7 +34,7 @@ $$
 \cos(\theta) = \frac{ A \cdot B }{ ||A|| ||B|| } = \frac{ \sum_{ i = 1 }^n { A_i B_i } }{ \sqrt{ \sum_{ i = 1 }^n { A_i }^2 } \sqrt{ \sum_{ i = 1 }^n { B_i }^2 } }
 $$
 
-Podemos encontrarnos tres casos:
+Hay tres casos:
 
 1. $\theta \to 0$: $\cos(\theta) \to 1$ (vectores similares).
 
@@ -46,13 +46,13 @@ Podemos encontrarnos tres casos:
 
 ### Basado en centroides
 
-El clustering basado en centroides es un tipo de método de clustering que divide o divide un conjunto de datos en grupos similares en función de la distancia entre sus centroides. El centroide de cada clúster es la media o la mediana de todos los puntos del clúster, en función de los datos.
+El clustering basado en centroides es un tipo de método de clustering que divide un conjunto de datos en grupos similares en función de la distancia entre sus centroides. El centroide de cada clúster es la media o la mediana de todos los puntos del clúster, en función de los datos.
 
 #### Método de las K-medias
 
 ![K-means algorithm](99-archive/college/semesters/08/introduccion_a_la_ciencia_de_datos/assets/08_01-k-means_algorithm.svg)
 
-El método asume que el centro de cada clúster define el clúster utilizando una medida de distancia, normalmente la distancia euclidiana, al centroide. Para inicializar el clustering, se proporciona un número de clústeres esperados, que representa la $K$ medias, y el algoritmo intenta encontrar clusters razonables a través de los datos para que coincidan con ese número. Los $k$ clústeres óptimos de un conjunto de datos determinado se identifican minimizando de forma iterativa la distancia total entre cada punto y su centroide de clúster asignado.
+El método asume que el centro de cada clúster define el clúster utilizando una medida de distancia, normalmente la distancia euclidiana, al centroide. Para inicializar el clustering, se proporciona el número esperado de clústeres ($K$), y el algoritmo intenta encontrar clústeres razonables en los datos que coincidan con ese número. Los $k$ clústeres óptimos de un conjunto de datos determinado se identifican minimizando de forma iterativa la distancia total entre cada punto y su centroide de clúster asignado.
 
 ### Jerárquicos
 
@@ -66,4 +66,4 @@ Es un enfoque ascendente que comienza con puntos de datos individuales y fusiona
 
 ### Basados en densidad
 
-El clustering basado en la densidad funciona mediante la detección de áreas donde se concentran puntos y donde están separados por áreas que están vacías o escasas. El clustering basado en la densidad también puede distinguir entre los puntos de datos que forman parte de un clúster y los que deben etiquetarse como ruido. El clustering basado en la densidad es especialmente útil cuando se trabaja con conjuntos de datos con ruido o valores atípicos o cuando no tenemos conocimiento previo sobre el número de clústeres en los datos.
+El clustering basado en la densidad funciona mediante la detección de áreas donde se concentran puntos y donde están separados por áreas que están vacías o escasas. El clustering basado en la densidad también puede distinguir entre los puntos de datos que forman parte de un clúster y los que deben etiquetarse como ruido. El clustering basado en la densidad es especialmente útil cuando se trabaja con conjuntos de datos con ruido o valores atípicos o cuando no se tiene conocimiento previo sobre el número de clústeres en los datos.

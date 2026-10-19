@@ -4,7 +4,7 @@
 
 Es un conjunto de elementos que funcionan de manera interrelacionada y que cumplen una función u objetivo común.
 
-Entre algunas de sus características tenemos:
+Entre sus características están:
 
 - El conjunto es de interés para alguien.
 
@@ -16,15 +16,15 @@ Entre algunas de sus características tenemos:
 
 #### Aislado
 
-No intercambia con el entorno: materia, energía, ni información.
+No intercambia materia, energía ni información con el entorno.
 
 #### Cerrado
 
-Intercambia energía e información, pero **no** materia con el entorno.
+Intercambia energía e información, pero no materia con el entorno.
 
 #### Abierto
 
-Intercambia materia y **puede** intercambiar energía o información con el entorno.
+Intercambia materia y puede intercambiar energía o información con el entorno.
 
 ### Complejidad (tipo de sistema)
 
@@ -42,7 +42,7 @@ Existen pocos elementos y la interrelación es directa.
 
 Está compuesto por elementos tangibles.
 
-#### Abstractos
+#### Abstracto
 
 Está compuesto por elementos intangibles.
 
@@ -52,7 +52,7 @@ Está compuesto por elementos intangibles.
 
 A partir de las variables de entrada se conocen cuáles serán las salidas.
 
-#### Probabilísticos
+#### Probabilístico
 
 La interrelación de los elementos produce un resultado aleatorio (ante las mismas variables de entrada).
 
@@ -74,11 +74,11 @@ Su comportamiento cambia o evoluciona con el paso del tiempo.
 
 #### Estático
 
-Su comportamiento **no** cambia o evoluciona con el paso del tiempo.
+Su comportamiento no cambia o evoluciona con el paso del tiempo.
 
 ## ¿Qué es la teoría general de sistemas?
 
-Es el estudio interdisciplinario de los sistemas en general, que busca **principios que puedan aplicarse a cualquier sistema**. El enfoque de sistemas es una forma de ver al mundo que implica una visión global, amplia e interrelacionada (holística) de los diferentes elementos de un fenómeno dado.
+Es el estudio interdisciplinario de los sistemas en general, que busca principios que puedan aplicarse a cualquier sistema. El enfoque de sistemas es una forma de ver al mundo que implica una visión global, amplia e interrelacionada (holística) de los diferentes elementos de un fenómeno dado.
 
 > El holismo es una doctrina que propugna la concepción de cada realidad como un todo distinto de la suma de las partes que lo componen.
 
@@ -98,7 +98,7 @@ Se refiere a las diferentes partes (elementos) que conforman el sistema y a sus 
 
 ### Recursividad
 
-Se refiere al hecho de que un sistema este compuesto por elementos que poseen características que los convierten en sistemas.
+Se refiere al hecho de que un sistema esté compuesto por elementos que poseen características que los convierten en sistemas.
 
 ### Jerarquía
 
@@ -150,9 +150,9 @@ Es la energía que el sistema importa para mantener su organización y funcionam
 
 ### Retroalimentación
 
-Se produce cuando las salidas del sistema o la influencia de las salidas del sistema en el entorno, vuelven a ingresar al sistema como recursos o información, permitiéndole el control y la toma de medidas correctivas con base en la información retroalimentada.
+Se produce cuando las salidas del sistema o la influencia de las salidas del sistema en el entorno vuelven a ingresar al sistema como recursos o información, permitiéndole el control y la toma de medidas correctivas con base en la información retroalimentada.
 
-> Principio que deriva la multicausalidad.
+> Principio del que se deriva la multicausalidad.
 
 ### Multicausalidad
 

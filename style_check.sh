@@ -1,6 +1,6 @@
 #!/bin/bash
 # Flags docs/style_guidelines.md violations that markdownlint cannot check.
-# Usage: bash style_check.sh [note.md ...]   (no arguments: every note outside 99-archive)
+# Usage: bash style_check.sh [note.md ...]   (no arguments: every note except docs/style_guidelines.md)
 #        bash style_check.sh --test           (self-check against a planted fixture)
 # Output: file:line: rule: text. Rules marked "candidate" need a human decision.
 # A reviewed line (a quotation, a kept candidate) is skipped by adding "<file><TAB><exact line>" to .style_check_accept.
@@ -18,7 +18,7 @@ check() {
             printf "%s:%d: %s: %s\n", FILENAME, FNR, rule, $0 }
         BEGIN {
             while ((getline l < accept) > 0) accepted[l]
-            split("bash ps1 javascript dockerfile md text python c cpp cs java mermaid json yaml xml ini http", t)
+            split("bash ps1 javascript dockerfile md text python c cpp cs java mermaid json yaml xml ini http latex racket scala", t)
             for (i in t) tags[t[i]]
             # Generics and includes look like placeholders, so these fences skip that check.
             split("c cpp cs java javascript python xml md mermaid", s)
@@ -129,7 +129,7 @@ if [[ ${1:-} == --test ]]; then self_test; exit; fi
 if (($#)); then
     files=("$@")
 else
-    mapfile -d '' -t files < <(git ls-files -z -co --exclude-standard -- '*.md' ':!99-archive' ':!docs/style_guidelines.md')
+    mapfile -d '' -t files < <(git ls-files -z -co --exclude-standard -- '*.md' ':!docs/style_guidelines.md')
 fi
 mapfile -d '' -t files < <(grep -LZ '^kanban-plugin:' -- "${files[@]}") # Kanban boards are exempt
 out=$(check "${files[@]}")

@@ -2,7 +2,7 @@
 
 ## Descripción
 
-**Cult & Underground Movies** es una **red social** exclusiva para amantes del cine de culto y películas underground. Un espacio donde puedas descubrir, discutir y compartir películas raras e icónicas con una comunidad apasionada.
+Cult & Underground Movies es una red social exclusiva para amantes del cine de culto y películas underground. Un espacio para descubrir, discutir y compartir películas raras e icónicas con una comunidad apasionada.
 
 ## Problema que resuelve
 
@@ -10,25 +10,25 @@ Las películas de culto y underground suelen pasar desapercibidas en plataformas
 
 Cult & Underground Movies es una red social diseñada para fanáticos del cine alternativo, donde pueden:
 
-- **Encontrar** recomendaciones personalizadas.
+- Encontrar recomendaciones personalizadas.
 
-- **Compartir** y debatir sobre películas de culto.
+- Compartir y debatir sobre películas de culto.
 
--️ **Conectar** con una comunidad de cinéfilos.
+- Conectar con una comunidad de cinéfilos.
 
 ## Audiencia objetivo
 
-- **Cinéfilos** apasionados por el cine de culto, indie y underground.
+- Cinéfilos apasionados por el cine de culto, indie y underground.
 
-- **Estudiantes y críticos de cine** que buscan títulos fuera del mainstream.
+- Estudiantes y críticos de cine que buscan títulos fuera del mainstream.
 
-- **Creadores y distribuidores de cine** alternativo en busca de feedback.
+- Creadores y distribuidores de cine alternativo en busca de feedback.
 
 ## Funcionalidades principales
 
 ### Perfiles de usuarios
 
-Perfiles de usuarios: cada usuario tendrá un perfil personal donde podrá gestionar su actividad en la plataforma.
+Cada usuario tendrá un perfil personal donde podrá gestionar su actividad en la plataforma.
 
 - Sistemas de registro y login.
     - Autenticación con email/contraseña y opciones de login con Google.

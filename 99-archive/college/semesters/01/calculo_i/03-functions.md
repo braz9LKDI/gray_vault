@@ -6,7 +6,7 @@ Considere las gráficas de las funciones $f$ y $g$.
 
 ![graphs](99-archive/college/semesters/01/assets/calculo_i/2_03_01-graphs.jpg)
 
-1. Determine él
+1. Determine el:
     - dominio de $g$:
 
         $$
@@ -55,13 +55,13 @@ Considere las gráficas de las funciones $f$ y $g$.
     x \in ((-4,0) \cup (3,4))
     $$
 
-5. ¿La función $f$ es [[01-areas/math/functions/function_properties#Injectivity|inyectiva]]?
+5. ¿La función $f$ es [[01-areas/math/functions/function_properties#Injective|inyectiva]]?
 
     No es inyectiva, $f(-4) = f(0)$, pero $-4 \neq 0$.
 
 ## 2
 
-Pruebe que la función $f(x) = \frac{ 2 x^4 - x^2 - 1 }{ |1 - x^2| }$ es [[01-areas/math/functions/even|par]] y que la función $g(x) = \frac{ 1 }{ x } + x^3$ es [[01-areas/math/functions/even|impar]].
+Pruebe que la función $f(x) = \frac{ 2 x^4 - x^2 - 1 }{ |1 - x^2| }$ es [[01-areas/math/functions/even|par]] y que la función $g(x) = \frac{ 1 }{ x } + x^3$ es [[01-areas/math/functions/odd|impar]].
 
 ### $f(x)$ (2)
 
@@ -77,8 +77,8 @@ $$
 
 $$
 \begin{align}
-    & -g(x) = -\frac{ 1 }{ x } - x^3
-    & = \frac{ 1 }{ -x } + (-x)^3
+    & -g(x) = -\frac{ 1 }{ x } - x^3 \\
+    & = \frac{ 1 }{ -x } + (-x)^3 \\
     & = g(-x)
 \end{align}
 $$
@@ -150,11 +150,11 @@ Dadas las funciones $f(x) = \frac{ x^2 }{ 1 - 3 x^2 }$ y $g(x) = \sqrt{ 2 x - 1 
         & \frac{ x^2 }{ 1 - 3 x^2 } = 1 \\
         & x^2 = 1 - 3 x^2 \\
         & 4 x^2 = 1 \\
-        & x = \pm \sqrt{ \frac{ 4 }{ 1 } }
+        & x = \pm \frac{ 1 }{ 2 }
     \end{align}
     $$
 
-    Como $\sqrt{ \frac{ 4 }{ 1 } } \neq \pm \sqrt{ \frac{ 1 }{ 3 } }$, 1 está en el rango de $f$.
+    Como $\pm \frac{ 1 }{ 2 } \neq \pm \sqrt{ \frac{ 1 }{ 3 } }$, 1 está en el rango de $f$.
 
 3. Determine la función $f o g$, si existe, indique su dominio.
 
@@ -248,12 +248,12 @@ Sea $f(x) = \frac{ x^2 }{ x - 2 }$ y $g(x) = \frac{ x^2 - 4 }{ x^2 + 2 }$. Deter
 
 ## 6
 
-Sea $f(x) = \frac{ x + 1 }{ x }$ y $g(x) = 3 x - 5$. Encuentre una función $h$ tal que $g o h = f$.
+Sea $f(x) = \frac{ x + 1 }{ x }$ y $g(x) = 3 x - 5$. Encuentre una función $h$ tal que $g \circ h = f$.
 
 $$
 \begin{align}
     & 3 h - 5 = \frac{ x + 1 }{ x } \\
-    & h = \frac{ \frac{ x + 1 }{ x } - 5 }{ 3 } \\
+    & h = \frac{ \frac{ x + 1 }{ x } + 5 }{ 3 } \\
     & h = \frac{ 6 x + 1 }{ 3 x }
 \end{align}
 $$
@@ -299,7 +299,7 @@ $$
 
 ## 10
 
-Se dispone de $1,000$ metros de cerca para construir un corral rectangular, parte de la cerca se usará para construir tres cercas internas de división paralelas entre sí y perpendiculares a uno de los lados del corral. Exprese el área del corral como función de $x$, indicando su dominio.
+Se dispone de 1,000 metros de cerca para construir un corral rectangular, parte de la cerca se usará para construir tres cercas internas de división paralelas entre sí y perpendiculares a uno de los lados del corral. Exprese el área del corral como función de $x$, indicando su dominio.
 
 TODO: redo the image.
 

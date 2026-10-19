@@ -43,11 +43,11 @@ Write a function called "down" that takes one argument: a list $l$. The function
 
 ## 3
 
-Write a function called "replace_nth" that takes three arguments: a list $l$, a number $n$, and an element $x$. The function should return a list similar to $l$ but with the element at position $n$ (indexed from zero) replaced by $x$.
+Write a function called "replace_nth" that takes three arguments: a list $l$, a number $n$ and an element $x$. The function should return a list similar to $l$ but with the element at position $n$ (indexed from zero) replaced by $x$.
 
 ```racket
-; list-set: list integer any -> list
-; purpose: replaces the nth element of lst with x.
+; replace_nth: list integer any -> list
+; purpose: replaces the nth element of list_ with x.
 (define (replace_nth list_ n x)
     (if (= n 0)
         (cons x (cdr list_))
@@ -88,7 +88,7 @@ Write a function called "find_index" that takes two arguments: a predicate $P$ a
 
 ## 6
 
-Write a function called "swapper" that takes three arguments: an element $e_1$, another element $e_2$, and a list $l$. The function should return a list similar to $l$ but with every occurrence of $e_1$ replaced by $e_2$ and every occurrence of $e_2$ replaced by $e_1$.
+Write a function called "swapper" that takes three arguments: an element $e_1$, another element $e_2$ and a list $l$. The function should return a list similar to $l$ but with every occurrence of $e_1$ replaced by $e_2$ and every occurrence of $e_2$ replaced by $e_1$.
 
 ```racket
 ; swapper: any any list -> list
@@ -129,12 +129,12 @@ Write a function called "cartesian_product" that takes two arguments: two lists 
     (cond
         [(empty? list_1) empty]
         [else (append_ (combine_with_all (car list_1) list_2)
-                    (cartesian-product (cdr list_1) list_2))])))
+                    (cartesian_product (cdr list_1) list_2))])))
 ```
 
 ## 8
 
-Write a function called "filter_pairs" that takes three arguments: a unary function $f$ (which accepts a single argument), and two lists of numbers $l_1$ and $l_2$. The function should return a list of pairs $(a, b)$, where $a$ is an element of $l_1$ and $b$ is an element of $l_2$, such that applying $f$ to a yields $b$.
+Write a function called "filter_pairs" that takes three arguments: a unary function $f$ (which accepts a single argument), and two lists of numbers $l_1$ and $l_2$. The function should return a list of pairs $(a, b)$, where $a$ is an element of $l_1$ and $b$ is an element of $l_2$, such that applying $f$ to $a$ yields $b$.
 
 ```racket
 ; filter_pairs: (any -> any) list list -> list

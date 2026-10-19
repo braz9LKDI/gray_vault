@@ -2,7 +2,7 @@
 
 ## Reflexión post-validación
 
-Después de validar un prototipo, es fundamental realizar una reflexión crítica que responda dos preguntas esenciales que pueden haber cambiado a partir de la retroalimentación recibida. Primero, **¿quién es realmente tu cliente?** La validación puede revelar que el segmento de mercado inicialmente identificado no es el correcto o que existe un grupo de usuarios más relevante. Segundo, **¿qué necesidad estás resolviendo verdaderamente?** Los usuarios pueden indicar que el problema que pensabas resolver no es tan importante como otro que identificaron durante la interacción con el prototipo.
+Después de validar un prototipo, es fundamental realizar una reflexión crítica que responda dos preguntas esenciales que pueden haber cambiado a partir de la retroalimentación recibida. Primero, ¿quién es realmente el cliente? La validación puede revelar que el segmento de mercado inicialmente identificado no es el correcto o que existe un grupo de usuarios más relevante. Segundo, ¿qué necesidad se está resolviendo verdaderamente? Los usuarios pueden indicar que el problema que se pensaba resolver no es tan importante como otro que identificaron durante la interacción con el prototipo.
 
 ## Proceso de evolución del prototipo
 
@@ -80,12 +80,12 @@ Existen cinco métodos principales para evaluar prototipos, cada uno con ventaja
 
 ## Metodología para crear POC usando IA
 
-Teniendo la idea inicial de una aplicación, se pueden realizar los siguientes pasos parar crear un POC usando IA.
+Teniendo la idea inicial de una aplicación, se pueden realizar los siguientes pasos para crear una POC usando IA.
 
 1. Investigar tendencias: esta investigación debe incluir tanto aspectos técnicos como de mercado.
 
 2. Identificar frustraciones: examinar reseñas sobre las aplicaciones existentes.
 
-3. Sintetizar insights: relacionando la información recolectada de los dos puntos anteriores.
+3. Sintetizar insights: relacionar la información recolectada de los dos puntos anteriores.
 
 4. Diseñar prototipo funcional usando IA.

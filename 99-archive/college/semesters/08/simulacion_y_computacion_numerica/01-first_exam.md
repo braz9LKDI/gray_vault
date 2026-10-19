@@ -2,7 +2,7 @@
 
 ## 1
 
-¿Cuál de las siguientes afirmaciones  describen mejor la relación entre las diferencias finitas y la serie de Taylor?
+¿Cuál de las siguientes afirmaciones describe mejor la relación entre las diferencias finitas y la serie de Taylor?
 
 - [ ] Las diferencias finitas no están relacionadas con la serie de Taylor porque se usan para otros tipos de métodos numéricos y no aproximaciones.
 
@@ -32,11 +32,11 @@ $$
 
 ## 3
 
-Una persona realiza mediciones en dos escenarios diferentes. Se conoce que en el primer escenario obtuvo un error de 30 metros, valor real 120 metros, y en el segundo escenario obtuvo un error de 50 centímetros, valor real 500 centímetros ¿Dónde se cometió un mayor error?
+Una persona realiza mediciones en dos escenarios diferentes. Se conoce que en el primer escenario obtuvo un error de 30 metros, valor real 120 metros, y en el segundo escenario obtuvo un error de 50 centímetros, valor real 500 centímetros. ¿Dónde se cometió un mayor error?
 
 $$
 \begin{align}
-    & E_{ r_1 } = \frac{ 130 }{ 120 } \\
+    & E_{ r_1 } = \frac{ 30 }{ 120 } \\
     & = \frac{ 1 }{ 4 } \\
     & E_{ r_2 } = \frac{ 50 }{ 500 } \\
     & = \frac{ 1 }{ 10 } \\
@@ -71,7 +71,7 @@ Considere un dataset de prueba con los siguientes pacientes:
 
 Aplique la regla de propagación sobre la red y haga la predicción de los dos pacientes. Calcule el error de la red con respecto a estos dos pacientes.
 
-1. .
+1. Paciente 1.
 
     $$
     \begin{align}
@@ -80,7 +80,7 @@ Aplique la regla de propagación sobre la red y haga la predicción de los dos p
     \end{align}
     $$
 
-    Ahora le aplicamos la función de activación.
+    Ahora se aplica la función de activación.
 
     $$
     myActivation(0.87) = 0.87
@@ -90,7 +90,7 @@ Aplique la regla de propagación sobre la red y haga la predicción de los dos p
     E_a = |1 - 0.87| = 0.13
     $$
 
-2. .
+2. Paciente 2.
 
     $$
     \begin{align}
@@ -99,14 +99,14 @@ Aplique la regla de propagación sobre la red y haga la predicción de los dos p
     \end{align}
     $$
 
-    Ahora le aplicamos la función de activación.
+    Ahora se aplica la función de activación.
 
     $$
     myActivation(0.07) = 0.07
     $$
 
     $$
-    E_a = |1 - 0.07| = 0.07
+    E_a = |0 - 0.07| = 0.07
     $$
 
 ## 5
@@ -118,24 +118,24 @@ Hay una fuente de calor en un extremo de una barra de ancho 1 como se muestra a 
 Resulta que la distribución de la temperatura está dada por la ecuación diferencial:
 
 $$
-\frac{ \partial^2 u }{ dx^2 } = 0 \quad (1)
+\frac{ \partial^2 u }{ \partial x^2 } = 0 \quad (1)
 $$
 
-Haga una discretización de diferencias finitas con el medio discreteado en 5 partes y determine las ecuaciones resultantes.
+Haga una discretización de diferencias finitas con el medio discretizado en 5 partes y determine las ecuaciones resultantes.
 
-Para hacer la discretización vamos a usar este [[01-areas/math/finite_differences#Second derivate|resultado]] donde tenemos que la segunda derivada corresponde a:
+Para hacer la discretización se usa este [[01-areas/math/finite_differences#Second derivative|resultado]], donde la segunda derivada corresponde a:
 
 $$
 y''(x_i) = \frac{ y(x_i + \Delta{ x }) - 2 y(x_i) + y(x_i - \Delta{ x }) }{ \Delta{ x }^2 }
 $$
 
-Para facilitar la escritura, diremos que eso es equivalente a:
+Para facilitar la escritura, se abrevia como:
 
 $$
 { y'' }_i = \frac{ y_{ i + 1 } - 2 y_i + y_{ i - 1 } }{ \Delta{ x }^2 }
 $$
 
-Si la barra de ancho 1 se divide en 5 partes encontraremos que
+Si la barra de ancho 1 se divide en 5 partes, entonces
 
 $$
 \Delta{ x } = \frac{ 1 }{ 5 }

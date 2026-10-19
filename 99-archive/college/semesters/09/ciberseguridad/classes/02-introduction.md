@@ -55,7 +55,7 @@ Implica que todas las acciones y transacciones dentro de un sistema sean atribui
 
 ## ¿Qué es la tríada CID?
 
-Las tres letras de la "tríada de la CID" significan confidencialidad, integridad y disponibilidad. La tríada de la CID es un modelo común que constituye la base para el desarrollo de sistemas de seguridad. Se utilizan para encontrar vulnerabilidades y métodos para crear soluciones.
+Las tres letras de la "tríada de la CID" significan confidencialidad, integridad y disponibilidad. La tríada de la CID es un modelo común que constituye la base para el desarrollo de sistemas de seguridad. Se utiliza para encontrar vulnerabilidades y métodos para crear soluciones.
 
 ```mermaid
 mindmap
@@ -73,7 +73,7 @@ La seguridad de la red se centra en evitar el acceso no autorizado a las redes y
 
 ### Nube
 
-La seguridad en la nube protege los servicios y activos basados en la nube de una organización, incluyendo aplicaciones, datos, virtual servers y otra infraestructura.
+La seguridad en la nube protege los servicios y activos basados en la nube de una organización, incluyendo aplicaciones, datos, servidores virtuales y otra infraestructura.
 
 En términos generales, la seguridad en la nube funciona según el modelo de responsabilidad compartida. El proveedor de la nube es responsable de proteger los servicios que presta y la infraestructura que los presta. El cliente es responsable de proteger sus datos, código y otros activos que almacena o ejecuta en la nube.
 

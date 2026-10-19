@@ -187,12 +187,12 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
             $$
 
             $$
-            x \in \left (1,\frac{ 5 }{ 3 } \right ]
+            x \in \emptyset
             $$
 
         $$
         \begin{align}
-            & x \in \left (1,\frac{ 5 }{ 3 } \right ] \cup \left (1,\frac{ 5 }{ 3 } \right ] \\
+            & x \in \left (1,\frac{ 5 }{ 3 } \right ] \cup \emptyset \\
             & x \in \left (1,\frac{ 5 }{ 3 } \right ]
         \end{align}
         $$
@@ -203,7 +203,7 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
         \begin{align}
             & x + 1 \geq 0 \\
             & x \geq -1 \\
-            & x \in (-1,\infty)
+            & x \in [-1,\infty)
         \end{align}
         $$
 
@@ -218,7 +218,7 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
 
     $$
     \begin{align}
-        & x \in (-1,\infty) \cap [15,\infty) \\
+        & x \in [-1,\infty) \cap [15,\infty) \\
         & x \in [15,\infty)
     \end{align}
     $$
@@ -227,7 +227,7 @@ Sean $f(x) = \frac{ x + 1 }{ x - 1 }$ y $f(x) = \sqrt{ x + 1 }$.
 
 Sea $f(x) = 1 - \sqrt{ \frac{ 3 }{ x^2 } + 1 }$. Determine si 6 y $-4$ están en el [[01-areas/math/functions/range|rango]] de $f$.
 
-- $6$.
+- Para 6.
 
     $$
     \begin{align}
@@ -238,7 +238,7 @@ Sea $f(x) = 1 - \sqrt{ \frac{ 3 }{ x^2 } + 1 }$. Determine si 6 y $-4$ están en
 
     Esa igualdad no es posible, porque una raíz cuadrada nunca puede dar un número negativo (al menos en los números reales).
 
-- $-4$.
+- Para $-4$.
 
     $$
     \begin{align}
@@ -280,7 +280,7 @@ Determine el rango de las siguientes funciones:
         $$
         \begin{align}
             & x \leq 0          & x \geq 6 \\
-            & x \in [-\infty,0] & x \in [6,\infty) \\
+            & x \in (-\infty,0] & x \in [6,\infty) \\
             & x \in \emptyset
         \end{align}
         $$
@@ -289,9 +289,9 @@ Determine el rango de las siguientes funciones:
 
         $$
         \begin{align}
-            & x \leq 0         & x \leq 6 \\
+            & x \geq 0         & x \leq 6 \\
             & x \in [0,\infty) & x \in (-\infty,6] \\
-            x \in [0,6]
+            & x \in [0,6]
         \end{align}
         $$
 
@@ -319,7 +319,7 @@ Determine el rango de las siguientes funciones:
 
 Determine si las siguientes gráficas corresponden a la gráfica de una función $y = f(x)$.
 
-Podemos usar el criterio de la línea vertical para determinar si la gráfica corresponde a una función o no, si encontramos una línea que intercepta más de un punto, entonces diremos que no es una función.
+El criterio de la línea vertical determina si la gráfica corresponde a una función: si una línea vertical intercepta la gráfica en más de un punto, no es una función.
 
 > Un $x$ no puede tener más de una imagen asociada a él.
 
@@ -358,7 +358,7 @@ $$
         \end{align}
         $$
 
-    2. $f(−1)$.
+    2. $f(-1)$.
 
         $$
         -1 \notin D_f
@@ -389,7 +389,7 @@ $$
         \end{align}
         $$
 
-    6. $f(−2 a) \quad a > 0$.
+    6. $f(-2 a) \quad a > 0$.
 
         $$
         a > 0 \quad -2 a < 0 \\[10 pt]
@@ -404,7 +404,7 @@ $$
         $$
 
         $$
-        \forall a \in \left (\frac{ 1 }{ 2 }, 1 \right ] \quad f(−2 a) = 4 a - 4 = 4 (a - 1)
+        \forall a \in \left (\frac{ 1 }{ 2 }, 1 \right ] \quad f(-2 a) = 4 a - 4 = 4 (a - 1)
         $$
 
 3. Grafique $f(x)$.
@@ -540,7 +540,7 @@ $$
 $$
 
 $$
-h^2 = 6^2 + b^2 \quad b = \sqrt{ h^2 - 36 }
+c^2 = 6^2 + b^2 \quad b = \sqrt{ c^2 - 36 }
 $$
 
 $$

@@ -1,4 +1,4 @@
-# Intermediate value theorem, differentiation rules, and chain rule
+# Intermediate value theorem, differentiation rules and chain rule
 
 ## 1
 
@@ -44,27 +44,27 @@
     $$
     \begin{align}
         & f(2) = (2)^4 + 2 (2)^3 - 8 \\
-        & = 8
+        & = 24
     \end{align}
     $$
 
     $$
-    -5 \leq 0 \leq 8
+    -5 \leq 0 \leq 24
     $$
 
-    Se concluye que la solución tiene **al menos** un cero real.
+    Se concluye que la función tiene **al menos** un cero real.
 
 ## 2
 
-Sea $f$ una función continue en $[0,1]$, tal que $0 \leq f(x) \leq 1$. Muestre que existe $c \in [0,1]$ tal que $f(c) = c$.
+Sea $f$ una función continua en $[0,1]$, tal que $0 \leq f(x) \leq 1$. Muestre que existe $c \in [0,1]$ tal que $f(c) = c$.
 
 $$
 g(x) = f(x) - x
 $$
 
-Si se puede demostrar que existe un valor $c$ para el cual $g(c) = 0$, entonces habremos probado que $f(c) - c = 0$, lo que significa que $f(c) = c$.
+Si se puede demostrar que existe un valor $c$ para el cual $g(c) = 0$, entonces queda probado que $f(c) - c = 0$, lo que significa que $f(c) = c$.
 
-Como $y = x$ es continua en $\mathbb{ R }$ y la diferencia de dos funciones continues también es continua, concluimos que $g(x)$ es continue en el intervalo $[0,1]$.
+Como $y = x$ es continua en $\mathbb{ R }$ y la diferencia de dos funciones continuas también es continua, $g(x)$ es continua en el intervalo $[0,1]$.
 
 $$
 \begin{align}
@@ -82,10 +82,10 @@ $$
 $$
 
 $$
-g(0) \leq 0 \leq g(1)
+g(1) \leq 0 \leq g(0)
 $$
 
-Como el número 0 esta entre esos dos valores, debe existir al menos un número $c$ en el intervalo $[0,1]$ tal que:
+Como el número 0 está entre esos dos valores, debe existir al menos un número $c$ en el intervalo $[0,1]$ tal que:
 
 $$
 g(c) = 0 \implies f(c) - c = 0 \quad f(c) = c
@@ -111,7 +111,7 @@ Halle $f^\prime$ si:
     $$
 
     $$
-    f^\prime(x) = -42 x^6 + 44 x^4 + 6 x^2 + 10
+    f^\prime(x) = -42 x^6 + 44 x^3 + 6 x^2 + 10
     $$
 
 3. $f(x) = \frac{ 3 }{ x } + \frac{ 1 }{ x^3 }$.
@@ -129,7 +129,7 @@ Halle $f^\prime$ si:
     $$
     \begin{align}
         & f^\prime(x) = \frac{ (x^4 + 2)^\prime (x - 1) - (x^4 + 2) (x - 1)^\prime }{ (x - 1)^2 } \\
-        & = \frac{ (4 x^3) (x - 1) - (x^4 + 2) (1)}{ (x - 1)^2 } \\
+        & = \frac{ (4 x^3) (x - 1) - (x^4 + 2) (1) }{ (x - 1)^2 } \\
         & = \frac{ 4 x^4 - 4 x^3 - x^4 - 2 }{ (x - 1)^2 } \\
         & = \frac{ 3 x^4 - 4 x^3 - 2 }{ (x - 1)^2 }
     \end{align}
@@ -296,7 +296,7 @@ Encuentre los valores de las constantes $a$ y $b$, para los cuales la función e
 1. $x = -1$ y $f(x) =
     \begin{cases}
         a x^2 + 3 x + 5 & x < -1 \\
-        -b x + 1        & x \geq 1
+        -b x + 1        & x \geq -1
     \end{cases}$.
 
     $$
@@ -326,7 +326,7 @@ Encuentre los valores de las constantes $a$ y $b$, para los cuales la función e
     f^\prime(x) =
         \begin{cases}
             2 a x + 3  & x < -1 \\
-            -b         & x > 1
+            -b         & x > -1
         \end{cases}
     $$
 
@@ -347,7 +347,7 @@ Encuentre los valores de las constantes $a$ y $b$, para los cuales la función e
     f(x) =
     \begin{cases}
         4 x^2 + 3 x + 5 & x < -1 \\
-        -5 x + 1        & x \geq 1
+        -5 x + 1        & x \geq -1
     \end{cases}
     $$
 
@@ -360,7 +360,7 @@ Encuentre los valores de las constantes $a$ y $b$, para los cuales la función e
     $$
     \begin{align}
         & \lim_{ x \to 3^- } f(x) = 2 b (3)^2 - 8 a (3) + 34 \\
-        & = 18 b - 24 a + 34 \\
+        & = 18 b - 24 a + 34
     \end{align}
     $$
 
@@ -382,7 +382,7 @@ Encuentre los valores de las constantes $a$ y $b$, para los cuales la función e
     $$
 
     $$
-    f\prime(x) =
+    f^\prime(x) =
         \begin{cases}
             4 b x - 8 a               & x < 3 \\
             -\frac{ 4 }{ (x - 2)^2 }  & x > 3
@@ -453,7 +453,7 @@ Halle $\frac{ dy }{ dx }$ si:
     $$
     \begin{align}
         & \pprime{ (3 x^4 - x)^3 } (2 x + 1)^5 + (3 x^4 - x)^3 \pprime{ (2 x + 1)^5 } \\
-        & = (x^4 - x)^2 (36 x^3 - 3) (2 x + 1)^5 + 10 (3 x^4 - x)^3 (2 x + 1)^4
+        & = (3 x^4 - x)^2 (36 x^3 - 3) (2 x + 1)^5 + 10 (3 x^4 - x)^3 (2 x + 1)^4
     \end{align}
     $$
 
@@ -463,7 +463,7 @@ Halle $\frac{ dy }{ dx }$ si:
     \begin{align}
         & -\frac{ 5 }{ x^6 } + \frac{ (x + 1)^\prime \sqrt{ 2 x } - (x + 1) (\sqrt{ 2 x })^\prime }{ 2 x } \\
         & = -\frac{ 5 }{ x^6 } + \frac{ \sqrt{ 2 x } - \frac{ x + 1 }{ \sqrt{ 2 x } } }{ 2 x } \\
-        = -\frac{ 5 }{ x^6 } + \frac{ x - 1 }{ 2 x \sqrt{ 2 x } }
+        & = -\frac{ 5 }{ x^6 } + \frac{ x - 1 }{ 2 x \sqrt{ 2 x } }
     \end{align}
     $$
 
@@ -471,7 +471,7 @@ Halle $\frac{ dy }{ dx }$ si:
 
     $$
     \begin{align}
-        & \frac{ \pprime{ (3 x - 1)^2 } \ptan{ x }^2 - (3 x - 1)^2 \ptan{ x }^\prime }{ \ptan{ x }^4 } \\
+        & \frac{ \pprime{ (3 x - 1)^2 } \ptan{ x }^2 - (3 x - 1)^2 \pprime{ \ptan{ x }^2 } }{ \ptan{ x }^4 } \\
         & = \frac{ (18 x - 6) \ptan{ x }^2 - 2 (3 x - 1)^2 \ptan{ x } \psec{ x }^2 }{ \ptan{ x }^4 }
     \end{align}
     $$
@@ -481,7 +481,7 @@ Halle $\frac{ dy }{ dx }$ si:
     $$
     \begin{align}
         & x^\prime \sqrt{ (x^2 - 3)^3 } + x \pprime{ \sqrt{ (x^2 - 3)^3 } } \\
-        & = \sqrt{ (x^2 - 3)^3 } + \frac{ 3 x^4 - 9 x^2 }{ \sqrt{ (x^2 - 3)^3 } }
+        & = \sqrt{ (x^2 - 3)^3 } + \frac{ 3 x^2 (x^2 - 3)^2 }{ \sqrt{ (x^2 - 3)^3 } }
     \end{align}
     $$
 
@@ -491,7 +491,7 @@ Halle $\frac{ dy }{ dx }$ si:
     \begin{align}
         & 3 \psin{ 5 x - 2 }^2 (\psin{ 5 x - 2 })^\prime \\
         & = 3 \psin{ 5 x - 2 }^2 \pcos{ 5 x - 2 } (5 x - 2)^\prime \\
-        & = 15 \psin{ 5 x - 2 }^2 \pcos{ 5 x - 2  }
+        & = 15 \psin{ 5 x - 2 }^2 \pcos{ 5 x - 2 }
     \end{align}
     $$
 
@@ -531,7 +531,7 @@ Sea $g$ una función derivable. Halle $f^\prime(x)$ si:
     $$
     \begin{align}
         & x^\prime g^2(x^3 - 1) + x (g^2(x^3 - 1))^\prime \\
-        & = g^2(x^3 - 1) + 6 x^2 g(x^3 - 1) g^\prime(x^3 - 1)
+        & = g^2(x^3 - 1) + 6 x^3 g(x^3 - 1) g^\prime(x^3 - 1)
     \end{align}
     $$
 
@@ -554,7 +554,7 @@ $$
     & f^\prime(t) = 4 (g^2(-t) - 3 t)^3 (-2 g(-t) g^\prime(-t) - 3) \\
     & f^\prime(1) = 4 (g^2(-1) - 3)^3 (-2 g(-1) g^\prime(-1) - 3) \\
     & = 4 (-1) (1) \\
-    & = 4
+    & = -4
 \end{align}
 $$
 
@@ -568,7 +568,7 @@ $$
 
 $$
 \begin{align}
-    & f^\prime(x) = \frac{ x }{ \sqrt{ 2 x + 4 } } \\
+    & f^\prime(x) = \frac{ 1 }{ \sqrt{ 2 x + 4 } } \\
     & \frac{ 1 }{ \sqrt{ 2 x + 4 } } = \frac{ 1 }{ 4 } \\
     & 4 = \sqrt{ 2 x + 4 } \\
     & 2 x + 4 = 16 \\

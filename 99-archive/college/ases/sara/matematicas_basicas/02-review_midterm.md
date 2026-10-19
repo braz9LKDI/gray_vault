@@ -12,7 +12,7 @@
         \end{align}
         $$
 
-        La **intersección** del caso es $x \in \emptyset$, por lo que no llegamos a ninguna solución.
+        La intersección del caso es $x \in \emptyset$, por lo que este caso no aporta solución.
 
     - $3 x - 1 < 0 \quad 2 x - 4 < 0$.
 
@@ -25,7 +25,7 @@
         \end{align}
         $$
 
-        La **intersección** del caso y la solución es $x \in \left (-3,\frac{ 1 }{ 3 } \right )$.
+        La intersección del caso y la solución es $x \in \left (-3,\frac{ 1 }{ 3 } \right )$.
 
 2. Encontrar la solución de $\abs{ x - \sqrt{ 2 } } \geq 1$.
     - $x - \sqrt{ 2 } > 0$.
@@ -37,7 +37,7 @@
         \end{align}
         $$
 
-        La **intersección** del caso y la solución es $x \in [1 + \sqrt{ 2 }, \infty)$.
+        La intersección del caso y la solución es $x \in [1 + \sqrt{ 2 }, \infty)$.
 
     - $x - \sqrt{ 2 } < 0$.
 
@@ -48,9 +48,9 @@
         \end{align}
         $$
 
-        La **intersección** del caso y la solución es $x \in (-\infty,\sqrt{ 2 } - 1]$.
+        La intersección del caso y la solución es $x \in (-\infty,\sqrt{ 2 } - 1]$.
 
-    La solución de esta inecuación es la **unión** de todos los intervalos en los que encontramos solución.
+    La solución de esta inecuación es la unión de todos los intervalos en los que hay solución.
 
     $$
     x \in [1 + \sqrt{ 2 }, \infty) \cup (-\infty,\sqrt{ 2 } - 1]
@@ -180,18 +180,18 @@
         No hay solución en este caso.
 
     $$
-    x \in \{7\} \cap (7,\infty) \quad x \in [7,\infty)
+    x \in \{7\} \cup (7,\infty) \quad x \in [7,\infty)
     $$
 
-    La **intersección** de los casos y la solución es $x \in [7,\infty)$.
+    La unión de los casos es $x \in [7,\infty)$.
 
 4. Resolver $4 y^4 - 2 y^2 = 4$.
 
     $$
     \begin{align}
         & y^2 = x \quad 4 x^2 - 2 x = 4 \quad 4 x^2 - 2 x - 4 = 0 \\
-        & x = \frac{ 2 \pm \sqrt{ 4 - 4 (4) (-4)} }{ 2 (4) } = \frac{ 2 \pm \sqrt{ 68 } }{ 8 } = \frac{ 2 \pm \sqrt{ 2^2 * 17 } }{ 8 } = \frac{ 1 \pm \sqrt{ 17 } }{ 4 } \\
-        & y^2 = \frac{ 1 \pm \sqrt{ 17 } }{ 4 } \quad y = \pm \sqrt{ \frac{ 1 \pm \sqrt{ 17 } }{ 4 } }
+        & x = \frac{ 2 \pm \sqrt{ 4 - 4 (4) (-4) } }{ 2 (4) } = \frac{ 2 \pm \sqrt{ 68 } }{ 8 } = \frac{ 2 \pm \sqrt{ 2^2 * 17 } }{ 8 } = \frac{ 1 \pm \sqrt{ 17 } }{ 4 } \\
+        & y^2 = \frac{ 1 \pm \sqrt{ 17 } }{ 4 } \quad y = \pm \sqrt{ \frac{ 1 + \sqrt{ 17 } }{ 4 } }
     \end{align}
     $$
 

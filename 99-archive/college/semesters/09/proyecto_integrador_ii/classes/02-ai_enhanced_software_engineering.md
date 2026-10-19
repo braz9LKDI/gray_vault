@@ -1,6 +1,6 @@
-# AI enhanced software engineering
+# AI-enhanced software engineering
 
-Es la integración de técnicas de inteligencia artificial en el ciclo de desarrollo de software para **mejorar la productividad, calidad y eficiencia del código**. Representa la fusión de las metodologías de desarrollo tradicionales con capacidades avanzadas de inteligencia artificial. En esta práctica, las herramientas de IA actúan como asistentes inteligentes (copilots) que colaboran con los desarrolladores de software para optimizar cada fase del ciclo de vida del desarrollo de software.
+Es la integración de técnicas de inteligencia artificial en el ciclo de desarrollo de software para mejorar la productividad, calidad y eficiencia del código. Representa la fusión de las metodologías de desarrollo tradicionales con capacidades avanzadas de inteligencia artificial. En esta práctica, las herramientas de IA actúan como asistentes inteligentes (copilots) que colaboran con los desarrolladores de software para optimizar cada fase del ciclo de vida del desarrollo de software.
 
 ## Evolución del ciclo de vida del desarrollo con IA
 
@@ -43,15 +43,15 @@ Es la integración de técnicas de inteligencia artificial en el ciclo de desarr
 
 - Ética y privacidad: el manejo de grandes volúmenes de datos personales y sensibles plantea desafíos en términos de ética y privacidad.
 
-## Scrum con Ingeniería de Software Aumentada con IA
+## Scrum con ingeniería de software aumentada con IA
 
 ### Smart BPM (business process modeling)
 
-El **Smart BPM** es una evolución del modelado de procesos de negocio que incorpora la clasificación de las funcionalidades por tradicional o IA (respecto a su desarrollo).
+El Smart BPM es una evolución del modelado de procesos de negocio que incorpora la clasificación de las funcionalidades por tradicional o IA (respecto a su desarrollo).
 
 ### Smart product backlog
 
-El **Smart Product Backlog** es una versión mejorada del backlog tradicional de Scrum, que incorpora inteligencia artificial para optimizar la priorización y gestión de historias de usuario (HU). Sus características incluyen:
+El smart product backlog es una versión mejorada del backlog tradicional de Scrum, que incorpora inteligencia artificial para optimizar la priorización y gestión de historias de usuario (HU). Sus características incluyen:
 
 - Clasificación automática de HU en función de su relevancia, complejidad y relación con otras tareas.
 
