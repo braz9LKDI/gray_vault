@@ -23,7 +23,7 @@ Every note in `01-areas/` and `02-resources/` declares a `type` and a `status` i
 
 A note becomes `draft` when it gets its first content, and `stable` after a review that checks its facts, its links and its style. The steps are in [workflows](workflows.md).
 
-## Concept
+## `concept`
 
 - Title: the name of the idea, in sentence case (`# Merge sort`).
 
@@ -31,7 +31,7 @@ A note becomes `draft` when it gets its first content, and `stable` after a revi
 
 - Links: it is linked from its folder note or from another note, and it links the concepts it builds on.
 
-## Howto
+## `howto`
 
 - Title: the task (`# Undo last commit`).
 
@@ -39,7 +39,7 @@ A note becomes `draft` when it gets its first content, and `stable` after a revi
 
 - Links: it links the concepts it uses, so the steps stay short.
 
-## Reference
+## `reference`
 
 - Title: what is looked up (`# LaTeX cheatsheet`).
 
@@ -47,17 +47,17 @@ A note becomes `draft` when it gets its first content, and `stable` after a revi
 
 - Prompts for AI tools are references too. They address the AI in second person on purpose, which the [style guidelines](style_guidelines.md) allow for quotations.
 
-## Source
+## `source`
 
 - Title: the title of the source, or the title of the chapter for chapter notes.
 
 - Frontmatter: `sources` names the author, the address and the language.
 
-- Body: it follows the order of the source. Quotations keep their original wording, and excerpts are marked with `...`.
+- Body: it follows the order of the source. Quotations keep their original wording.
 
 - Links: it links the concept notes extracted from it.
 
-## Index
+## `index`
 
 - Title: the topic or collection of its folder (`# Books`).
 
@@ -65,7 +65,7 @@ A note becomes `draft` when it gets its first content, and `stable` after a revi
 
 - A folder note that mainly explains its topic is a `concept` instead, as `scrum/scrum.md` is.
 
-## Project
+## `project`
 
 - Location: `03-projects/<name>/<name>.md`.
 

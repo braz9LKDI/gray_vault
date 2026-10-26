@@ -8,7 +8,7 @@ This page covers how files are named, linked and described. How the text inside 
 
 - Outside `99-archive/`, every filename is unique, so a link never depends on which folder a note is in. Numbered chapter notes inside a source folder are the only exception (`01-introduction.md`).
 
-- A folder's main note has the folder's name: `scrum/scrum.md`, `books/books.md`. There are no `definition.md` or `index.md` notes.
+- A folder's main note has the folder's name: `scrum/scrum.md`, `books/books.md`.
 
 - Ordered notes start with a two-digit number and a hyphen: `01-introduction.md`, `02-navigation.md`.
 

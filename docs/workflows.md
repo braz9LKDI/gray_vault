@@ -34,7 +34,7 @@ A note with nothing worth keeping is deleted instead. The Inbox view of `notes.b
 
 1. While the book is planned or being read, it is a card on the `bookshelf.md` board.
 
-2. With the first notes, create `02-resources/books/<title>.md`, or a folder `02-resources/books/<title>/` with one numbered note per chapter. Give it `type: source` and fill in `sources`.
+2. With the first notes, create `02-resources/books/<title>.md`, or a folder `02-resources/books/<title>/` with one numbered note per chapter. Give it `type: source`.
 
 3. Add the book to `books/books.md`.
 
