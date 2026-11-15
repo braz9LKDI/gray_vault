@@ -91,3 +91,15 @@ All five steps are mandatory parts of a booking.
 - `HE`: online help, how each command works, with examples.
 
 ### Enconde and decode
+
+- DAN: city or airport name to code.
+
+- DAC: code to airport name.
+
+- DC: country name to code.
+
+- DNA: airline name to code.
+
+- DNE: aircraft type to code.
+
+### Time, dates and connections
