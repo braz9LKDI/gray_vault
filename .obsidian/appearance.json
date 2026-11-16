@@ -4,5 +4,6 @@
   "textFontFamily": "ComicShannsMono Nerd Font Mono",
   "monospaceFontFamily": "ComicShannsMono Nerd Font Mono",
   "cssTheme": "Minimal",
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "showRibbon": true
 }

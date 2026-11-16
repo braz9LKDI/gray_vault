@@ -1,0 +1,10 @@
+{
+  "id": "discord-rpc",
+  "name": "Discord RPC",
+  "version": "1.5.1",
+  "minAppVersion": "1.4.0",
+  "description": "Show your activity on Discord via Rich Presence.",
+  "author": "30jannik06",
+  "authorUrl": "https://github.com/30jannik06",
+  "isDesktopOnly": true
+}

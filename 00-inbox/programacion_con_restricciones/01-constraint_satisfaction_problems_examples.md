@@ -16,7 +16,7 @@ A solution is a tuple $(d_1,\dots,d_n)$, with one value per variable taken from 
 
 ## SEND + MORE = MONEY
 
-TODO: convert this problem in a note
+TODO: convert this problem in a note.
 
 Each letter must be replaced by a different digit so that the following sum is correct:
 
@@ -98,8 +98,24 @@ The trick works because $z_{ x,y }$, acts as a switch:
 
 - When $z_{ x,y } = 0$, the first line becomes $x - y \leq 10$, which is always true because two digits differ by at most 9. The second line becomes $y - x \leq -1$, which means that $y$ is at least 1 smaller than $x$, so $x > y$.
 
-- When $z_{ x,y } = 1$, $y - x \leq \1$, which means $x < y$. The second line becomes $y - x \leq 10$, which is always true.
+- When $z_{ x,y } = 1$, $y - x \leq 1$, which means $x < y$. The second line becomes $y - x \leq 10$, which is always true.
 
 Either way $x$ and $y$ end up different, and the solver picks which one is larger by picking $z_{ x,y }$. The numbers 10 and 11 are chosen so that one of the two lines always switches off. This is a common IP technique, usually called big-M formulation. Its disadvantage here is 28 new variables, one $z$ for each pair of letters.
 
 ## N queens
+
+TODO: convert this problem in a note.
+
+The problem is to place $n$ queens on a $n \times n$ chessboard so that no two of them attack each other. A queen attacks along its row, its column and both of its diagonals.
+
+The model uses one variable per column: $x_i$ is the row of the queen in column $i$, so every domain is $[1..n]$. This choce already guarantees one queen per column, because each column has exactly one variable, so no column constraints are needed. Only rows and diagonals remain.
+
+The constraints are stated "for $i \in [1..n - 1]$ and $j \in [i + 1..n]$". This covers every pair of columns $i$ and $j$ with $i < j$, each pair once.
+
+Each pair of colums gets three constraints:
+
+- $x_i \neq x_j$: the two queens are in different rows.
+
+- $x_i - x_j \neq i - j$: the two queens are not on the same south-west to north-east diagonal, the one going up and to the right.
+
+- $x_i - x_j \neq j - i$: the two queens are not on the same north-west to south-east diagonal, the one going down and to the right.
